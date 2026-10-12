@@ -7,7 +7,7 @@ HERE = os.path.dirname(os.path.abspath(__file__)); DATA = os.path.join(HERE, "da
 ARGS = [a for a in sys.argv[1:] if not a.startswith("--")]
 LEDGER_ONLY = "--ledger-only" in sys.argv
 SRC = ARGS[0] if ARGS else "/cursor/stores/store-9d60204b-cf80-460e-a058-55dafdd15548/call-ledger.csv"
-CRYPTO = {"BTC","ETH","SOL","XRP","BNB","DOGE","ADA","AVAX","LINK","LTC","APE","ICP","PAXG","CRV","SEI","NEAR","QNT","S","RSR","PHA","IO","STBL","BTR","Q","BULL"}
+CRYPTO = {"BTC","ETH","SOL","XRP","BNB","DOGE","ADA","AVAX","LINK","LTC","APE","ICP","PAXG","CRV","SEI","NEAR","QNT","S","RSR","PHA","IO","STBL","BTR","Q","BULL","TAO","FET","HYPE","ZEC","ENA","SUI","EIGEN","ATOM","OP","W","ONDO","PLUME","INJ","ZRO","PUMP","VVV"}
 ALIAS = {"QQQ/SPY":"QQQ","SPY/QQQ":"SPY"}  # multi-ticker calls -> first ticker
 NONPRICE = {"FED","FOMC","FEDFUNDS","RATES","CPI"}  # macro calls, not tradable assets
 NP_NOTE = "not a tradable asset"
