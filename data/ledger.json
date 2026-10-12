@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-12T21:02:19+01:00",
+  "generated_at": "2026-10-12T21:19:32+01:00",
   "calls": [
     {
       "id": "1",
@@ -15,7 +15,9 @@
       "resolved_at": "",
       "notes": "likely never filled (low 84720)",
       "after_the_fact": false,
-      "source": "X"
+      "source": "X",
+      "copy_of": "",
+      "spam_farm": false
     },
     {
       "id": "2",
@@ -31,7 +33,9 @@
       "resolved_at": "2026-10-07",
       "notes": "",
       "after_the_fact": false,
-      "source": "X"
+      "source": "X",
+      "copy_of": "",
+      "spam_farm": false
     },
     {
       "id": "3",
@@ -47,7 +51,9 @@
       "resolved_at": "2026-10-12",
       "notes": "self-reported stop",
       "after_the_fact": false,
-      "source": "X"
+      "source": "X",
+      "copy_of": "",
+      "spam_farm": false
     },
     {
       "id": "4",
@@ -63,7 +69,9 @@
       "resolved_at": "2026-10-12",
       "notes": "stop 180.66 hit; day low ~177.37 close/last ~178.37; source following",
       "after_the_fact": false,
-      "source": "X"
+      "source": "X",
+      "copy_of": "",
+      "spam_farm": false
     },
     {
       "id": "5",
@@ -79,7 +87,9 @@
       "resolved_at": "",
       "notes": "instrument unclear; affiliate link",
       "after_the_fact": false,
-      "source": "X"
+      "source": "X",
+      "copy_of": "",
+      "spam_farm": false
     },
     {
       "id": "6",
@@ -95,7 +105,9 @@
       "resolved_at": "2026-10-12",
       "notes": "source following; wanted long on dip; BTC later ~82.3-82.7k so 1h close below 83.2k likely",
       "after_the_fact": false,
-      "source": "X"
+      "source": "X",
+      "copy_of": "",
+      "spam_farm": false
     },
     {
       "id": "7",
@@ -109,9 +121,11 @@
       "target": "2582.53",
       "status": "open",
       "resolved_at": "",
-      "notes": "source discovery; low-follower signal account; skip alert; 20:47 check ETH 2514-2521, still open",
+      "notes": "source discovery; low-follower signal account; skip alert; 21:07 check ETH ~2519-2525, still open; 21:17 check ETH ~2525 high 2527.5; still open",
       "after_the_fact": false,
-      "source": "X"
+      "source": "X",
+      "copy_of": "",
+      "spam_farm": false
     },
     {
       "id": "8",
@@ -125,9 +139,11 @@
       "target": "4175/4160/4120",
       "status": "open",
       "resolved_at": "",
-      "notes": "source discovery; entry zone not reached (PAXG proxy ~4166-4171); strategy link promo; low followers",
+      "notes": "source discovery; entry zone not reached (PAXG ~4164-4167); strategy link promo; low followers",
       "after_the_fact": false,
-      "source": "X"
+      "source": "X",
+      "copy_of": "",
+      "spam_farm": false
     },
     {
       "id": "9",
@@ -143,7 +159,9 @@
       "resolved_at": "2026-10-12",
       "notes": "source discovery; self-reported stop of earlier buy signal (orig post 2109518645768712373)",
       "after_the_fact": false,
-      "source": "X"
+      "source": "X",
+      "copy_of": "",
+      "spam_farm": false
     },
     {
       "id": "10",
@@ -157,9 +175,11 @@
       "target": "4217",
       "status": "open",
       "resolved_at": "",
-      "notes": "source discovery; 10 followers; gold checked via PAXG proxy only",
+      "notes": "source discovery; 10 followers; PAXG ~4164-4167 near entry; stop 4148 not hit (24h low ~4153)",
       "after_the_fact": false,
-      "source": "X"
+      "source": "X",
+      "copy_of": "",
+      "spam_farm": false
     },
     {
       "id": "11",
@@ -173,9 +193,11 @@
       "target": "0.15571/0.15835/0.16132/0.16983",
       "status": "open",
       "resolved_at": "",
-      "notes": "source discovery; community promo link; entry not yet reached (high 0.1529 since post)",
+      "notes": "source discovery; community promo link; entry 0.15415 not reached (last ~0.1526); 21:17 check APE high 0.1529 below entry 0.15415; not reached",
       "after_the_fact": false,
-      "source": "X"
+      "source": "X",
+      "copy_of": "",
+      "spam_farm": false
     },
     {
       "id": "12",
@@ -187,11 +209,13 @@
       "entry": "4163-4165",
       "stop": "4150",
       "target": "4172/4181/4190/4200",
-      "status": "open",
-      "resolved_at": "",
-      "notes": "source discovery; 9 followers; PAXG proxy only",
+      "status": "hit_target",
+      "resolved_at": "2026-10-12 21:17",
+      "notes": "source discovery; 9 followers; PAXG ~4164-4167 in/near entry zone; 21:17 check PAXG proxy hi ~4172.3 touched TP1 4172 (marginal; spot XAU unconfirmed)",
       "after_the_fact": false,
-      "source": "X"
+      "source": "X",
+      "copy_of": "",
+      "spam_farm": false
     },
     {
       "id": "13",
@@ -207,7 +231,9 @@
       "resolved_at": "",
       "notes": "source discovery; Telegram VIP promo; price ~0.0556-0.0562 at post, far below entry, stale/recycled signal",
       "after_the_fact": false,
-      "source": "X"
+      "source": "X",
+      "copy_of": "",
+      "spam_farm": true
     },
     {
       "id": "14",
@@ -223,7 +249,9 @@
       "resolved_at": "",
       "notes": "source discovery; identical copy of @jugsdetilingua post; Telegram promo; entry far above market",
       "after_the_fact": false,
-      "source": "X"
+      "source": "X",
+      "copy_of": "13",
+      "spam_farm": true
     },
     {
       "id": "15",
@@ -239,7 +267,9 @@
       "resolved_at": "",
       "notes": "source discovery; Telegram promo; price ~3.23-3.24 at post, already below stop; stale/recycled signal",
       "after_the_fact": false,
-      "source": "X"
+      "source": "X",
+      "copy_of": "",
+      "spam_farm": true
     },
     {
       "id": "16",
@@ -255,7 +285,9 @@
       "resolved_at": "",
       "notes": "source discovery; identical copy of @jugsdetilingua post; price already below stop at post",
       "after_the_fact": false,
-      "source": "X"
+      "source": "X",
+      "copy_of": "15",
+      "spam_farm": true
     },
     {
       "id": "17",
@@ -269,9 +301,11 @@
       "target": "4090",
       "status": "open",
       "resolved_at": "",
-      "notes": "source discovery; Telegram promo; PAXG proxy only",
+      "notes": "source discovery; Telegram promo; PAXG ~4164-4167; 24h high ~4205 may predate post so stop unverified",
       "after_the_fact": false,
-      "source": "X"
+      "source": "X",
+      "copy_of": "",
+      "spam_farm": false
     },
     {
       "id": "18",
@@ -285,9 +319,11 @@
       "target": "4150/4130/4100/4080/4050/4000",
       "status": "open",
       "resolved_at": "",
-      "notes": "source discovery; claims 'targets getting smashed' so likely after_the_fact; 36 followers",
+      "notes": "source discovery; claims 'targets getting smashed' so likely after_the_fact; 36 followers; PAXG ~4164",
       "after_the_fact": false,
-      "source": "X"
+      "source": "X",
+      "copy_of": "",
+      "spam_farm": false
     },
     {
       "id": "19",
@@ -299,11 +335,13 @@
       "entry": "4160-4165",
       "stop": "4155",
       "target": "4170/4175/4180/4185-4190",
-      "status": "open",
-      "resolved_at": "",
-      "notes": "source discovery; 5 followers; PAXG proxy only",
+      "status": "hit_target",
+      "resolved_at": "2026-10-12 21:17",
+      "notes": "source discovery; 5 followers; PAXG ~4164-4167 in entry zone; 21:17 check PAXG proxy ~4170.4-4171.8 above TP1 4170",
       "after_the_fact": false,
-      "source": "X"
+      "source": "X",
+      "copy_of": "",
+      "spam_farm": false
     },
     {
       "id": "20",
@@ -317,9 +355,11 @@
       "target": "81550",
       "status": "open",
       "resolved_at": "",
-      "notes": "source discovery; conditional, not triggered (BTC 82.4-82.8k since); long scenario truncated",
+      "notes": "source discovery; conditional, not triggered (BTC 24h low ~82272-82311 still above 82250); long scenario truncated; 21:17 check BTC low ~82408 still above 82250; not triggered; BTC ~83070",
       "after_the_fact": false,
-      "source": "X"
+      "source": "X",
+      "copy_of": "",
+      "spam_farm": true
     },
     {
       "id": "21",
@@ -331,11 +371,13 @@
       "entry": "4160-4166",
       "stop": "4145",
       "target": "4170/4180/4190/4200/4210",
-      "status": "open",
-      "resolved_at": "",
-      "notes": "source discovery; 0 followers; Telegram promo; PAXG proxy only",
+      "status": "hit_target",
+      "resolved_at": "2026-10-12 21:17",
+      "notes": "source discovery; 0 followers; Telegram promo; PAXG ~4164-4167 in entry zone; 21:17 check PAXG proxy ~4170.4-4171.8 above TP1 4170",
       "after_the_fact": false,
-      "source": "X"
+      "source": "X",
+      "copy_of": "",
+      "spam_farm": false
     },
     {
       "id": "22",
@@ -349,9 +391,11 @@
       "target": "4176/4169/4162",
       "status": "open",
       "resolved_at": "",
-      "notes": "source discovery; x100 leverage; Telegram promo; entry not reached",
+      "notes": "source discovery; x100 leverage; Telegram promo; entry 4185 not reached (PAXG ~4164)",
       "after_the_fact": false,
-      "source": "X"
+      "source": "X",
+      "copy_of": "",
+      "spam_farm": false
     },
     {
       "id": "23",
@@ -363,11 +407,13 @@
       "entry": "2508.14-2510.9",
       "stop": "2524.43",
       "target": "2494/2482/2470",
-      "status": "open",
-      "resolved_at": "",
-      "notes": "source discovery; x50 leverage; Telegram promo; ETH ~2514-2521 since, entry not filled, stop not hit",
+      "status": "stopped",
+      "resolved_at": "2026-10-12 21:07",
+      "notes": "source discovery; x50 leverage; Telegram promo; entry likely filled (ETH low ~2502); stop 2524.43 hit (Binance ~2525); stopped",
       "after_the_fact": false,
-      "source": "X"
+      "source": "X",
+      "copy_of": "",
+      "spam_farm": false
     },
     {
       "id": "24",
@@ -381,9 +427,11 @@
       "target": "537.909/539.092/540.274",
       "status": "unclear",
       "resolved_at": "",
-      "notes": "source discovery; Telegram promo; no XMR price source available",
+      "notes": "source discovery; Telegram promo; XMR ~536.61 near entry 535.9-536.4; levels too tight to score cleanly; unclear",
       "after_the_fact": false,
-      "source": "X"
+      "source": "X",
+      "copy_of": "",
+      "spam_farm": false
     },
     {
       "id": "25",
@@ -395,11 +443,13 @@
       "entry": "82670",
       "stop": "82564",
       "target": "82828/82881",
-      "status": "open",
-      "resolved_at": "",
-      "notes": "source discovery; scalp; BTC 82748-82802 since post, neither level hit",
+      "status": "hit_target",
+      "resolved_at": "2026-10-12 21:07",
+      "notes": "source discovery; scalp; BTC ~82900; targets 82828/82881 hit; hit_target",
       "after_the_fact": false,
-      "source": "X"
+      "source": "X",
+      "copy_of": "",
+      "spam_farm": false
     },
     {
       "id": "26",
@@ -413,9 +463,11 @@
       "target": "83665.8",
       "status": "open",
       "resolved_at": "",
-      "notes": "source discovery; BTC already ~82.56k at post; low followers",
+      "notes": "source discovery; BTC already above entry at post; target 83665 not hit; BTC ~82900; still open; low followers",
       "after_the_fact": false,
-      "source": "X"
+      "source": "X",
+      "copy_of": "",
+      "spam_farm": false
     },
     {
       "id": "27",
@@ -429,9 +481,11 @@
       "target": "",
       "status": "open",
       "resolved_at": "",
-      "notes": "source discovery; bot account 0 followers; no levels",
+      "notes": "source discovery; bot account 0 followers; no levels; BTC ~82900",
       "after_the_fact": false,
-      "source": "X"
+      "source": "X",
+      "copy_of": "",
+      "spam_farm": false
     },
     {
       "id": "28",
@@ -447,7 +501,9 @@
       "resolved_at": "",
       "notes": "source discovery; investment view, price target only; 151 followers",
       "after_the_fact": false,
-      "source": "X"
+      "source": "X",
+      "copy_of": "",
+      "spam_farm": false
     },
     {
       "id": "29",
@@ -463,7 +519,9 @@
       "resolved_at": "",
       "notes": "source discovery; 'best dip buy'; no levels; reposted 20:40",
       "after_the_fact": false,
-      "source": "X"
+      "source": "X",
+      "copy_of": "",
+      "spam_farm": false
     },
     {
       "id": "30",
@@ -479,7 +537,379 @@
       "resolved_at": "",
       "notes": "early-signal; end-of-day flow summary posted 20:34 PT: $QQQ ~$40M put premium vs $SPX ~$57M calls; no levels, could be hedging; 3.9k followers",
       "after_the_fact": false,
-      "source": "X"
+      "source": "X",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "31",
+      "logged_at_lisbon": "2026-10-12 21:07",
+      "account": "@KyleXCM",
+      "post_url": "https://x.com/KyleXCM/status/2109737044100485196",
+      "asset": "BTC",
+      "direction": "short (conditional)",
+      "entry": "below 82250 after breakdown",
+      "stop": "82650",
+      "target": "81550",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "source discovery; identical levels to @OGemHODL #20; not triggered (BTC low ~82272); 1k followers; long scenario truncated; 21:17 check BTC low ~82408 still above 82250; not triggered; BTC ~83070",
+      "after_the_fact": false,
+      "source": "X",
+      "copy_of": "20",
+      "spam_farm": true
+    },
+    {
+      "id": "32",
+      "logged_at_lisbon": "2026-10-12 21:07",
+      "account": "@TradeWithNeel",
+      "post_url": "https://x.com/TradeWithNeel/status/2109735425447510211",
+      "asset": "BTC",
+      "direction": "long",
+      "entry": "",
+      "stop": "",
+      "target": "83145/83421/84200",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "source discovery; targets only no entry/stop; 133 followers; BTC ~82900 below TP1; 21:17 check BTC high ~83080 below TP1 83145; open",
+      "after_the_fact": false,
+      "source": "X",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "33",
+      "logged_at_lisbon": "2026-10-12 21:07",
+      "account": "@andrew_robrt",
+      "post_url": "https://x.com/andrew_robrt/status/2109736532508848571",
+      "asset": "RSR",
+      "direction": "long",
+      "entry": "0.002299-0.002325",
+      "stop": "0.001486",
+      "target": "0.003138/0.003965",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "source discovery; Telegram VIP promo; spam farm account",
+      "after_the_fact": false,
+      "source": "X",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "34",
+      "logged_at_lisbon": "2026-10-12 21:07",
+      "account": "@andrew_robrt",
+      "post_url": "https://x.com/andrew_robrt/status/2109736417102381384",
+      "asset": "PHA",
+      "direction": "long",
+      "entry": "0.0620-0.0640",
+      "stop": "0.0595",
+      "target": "0.0662/0.0668/0.0690",
+      "status": "unclear",
+      "resolved_at": "",
+      "notes": "source discovery; Telegram VIP promo; spam farm account; 21:17 check PHA ~0.0581-0.0587 already below stop 0.0595 and entry zone; stale/illogical at post",
+      "after_the_fact": false,
+      "source": "X",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "35",
+      "logged_at_lisbon": "2026-10-12 21:07",
+      "account": "@andrew_robrt",
+      "post_url": "https://x.com/andrew_robrt/status/2109736295710818718",
+      "asset": "IO",
+      "direction": "long",
+      "entry": "0.188522-0.189467",
+      "stop": "0.181435",
+      "target": "0.194664/0.202224/0.211674",
+      "status": "unclear",
+      "resolved_at": "",
+      "notes": "source discovery; Telegram VIP promo; spam farm account; 21:17 check IO ~0.168-0.170 already below stop 0.1814 and entry zone; stale/illogical at post",
+      "after_the_fact": false,
+      "source": "X",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "36",
+      "logged_at_lisbon": "2026-10-12 21:07",
+      "account": "@John__manlove",
+      "post_url": "https://x.com/John__manlove/status/2109735993616236984",
+      "asset": "ICP",
+      "direction": "long",
+      "entry": "3.45-3.51",
+      "stop": "3.25",
+      "target": "3.57/3.65",
+      "status": "unclear",
+      "resolved_at": "",
+      "notes": "source discovery; Telegram promo; same stale ICP levels as #15/#16; ICP ~3.26 already near/below stop",
+      "after_the_fact": false,
+      "source": "X",
+      "copy_of": "15",
+      "spam_farm": true
+    },
+    {
+      "id": "37",
+      "logged_at_lisbon": "2026-10-12 21:07",
+      "account": "@John__manlove",
+      "post_url": "https://x.com/John__manlove/status/2109735921947902306",
+      "asset": "QNT",
+      "direction": "long",
+      "entry": "236",
+      "stop": "228",
+      "target": "244/254",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "source discovery; Telegram promo; spam-style account; 21:17 check QNT ~229-230 below entry 236; entry not reached; stop 228 not hit since post",
+      "after_the_fact": false,
+      "source": "X",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "38",
+      "logged_at_lisbon": "2026-10-12 21:07",
+      "account": "@John__manlove",
+      "post_url": "https://x.com/John__manlove/status/2109735766624489623",
+      "asset": "BULL",
+      "direction": "short",
+      "entry": "0.07367-0.07411",
+      "stop": "0.07593",
+      "target": "0.07214/0.07098/0.06952",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "source discovery; Telegram promo; obscure token",
+      "after_the_fact": false,
+      "source": "X",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "39",
+      "logged_at_lisbon": "2026-10-12 21:07",
+      "account": "@John__manlove",
+      "post_url": "https://x.com/John__manlove/status/2109735604317536522",
+      "asset": "BTR",
+      "direction": "short",
+      "entry": "0.04898-0.04914",
+      "stop": "0.05110",
+      "target": "0.04753/0.04650/0.04497",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "source discovery; Telegram promo; duplicate identical post also at 2109735519974302037",
+      "after_the_fact": false,
+      "source": "X",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "40",
+      "logged_at_lisbon": "2026-10-12 21:07",
+      "account": "@John__manlove",
+      "post_url": "https://x.com/John__manlove/status/2109735405822124404",
+      "asset": "Q",
+      "direction": "long",
+      "entry": "0.03296-0.03315",
+      "stop": "0.03182",
+      "target": "0.03411/0.03482/0.03570",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "source discovery; Telegram promo; obscure token",
+      "after_the_fact": false,
+      "source": "X",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "41",
+      "logged_at_lisbon": "2026-10-12 21:07",
+      "account": "@John__manlove",
+      "post_url": "https://x.com/John__manlove/status/2109735341179494804",
+      "asset": "S",
+      "direction": "short",
+      "entry": "0.06050",
+      "stop": "0.06550",
+      "target": "0.055/0.050/0.043",
+      "status": "unclear",
+      "resolved_at": "",
+      "notes": "source discovery; Telegram promo; identical recycled S short as #13/#14; entry far above market",
+      "after_the_fact": false,
+      "source": "X",
+      "copy_of": "13",
+      "spam_farm": true
+    },
+    {
+      "id": "42",
+      "logged_at_lisbon": "2026-10-12 21:07",
+      "account": "@John__manlove",
+      "post_url": "https://x.com/John__manlove/status/2109735273500148205",
+      "asset": "SEI",
+      "direction": "short",
+      "entry": "0.0689-0.0711",
+      "stop": "0.0760",
+      "target": "0.0676/0.0658/0.0644",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "source discovery; Telegram promo",
+      "after_the_fact": false,
+      "source": "X",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "43",
+      "logged_at_lisbon": "2026-10-12 21:07",
+      "account": "@fatihbey1608",
+      "post_url": "https://x.com/fatihbey1608/status/2109735514953986363",
+      "asset": "NEAR",
+      "direction": "long",
+      "entry": "5.40-5.45",
+      "stop": "4.85",
+      "target": "6.00/7.50",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "source discovery; 68 followers; NEAR ~5.12 earlier in spam feed so entry may be above market; 21:17 check NEAR ~5.49-5.54; open",
+      "after_the_fact": false,
+      "source": "X",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "44",
+      "logged_at_lisbon": "2026-10-12 21:07",
+      "account": "@BankersCandle11",
+      "post_url": "https://x.com/BankersCandle11/status/2109736737824297197",
+      "asset": "TXG",
+      "direction": "long",
+      "entry": "dip/unspecified",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "source discovery; journal 'Entry $TXG $AFRM'; also lists PLTR OSCR etc still on; 232 followers; no levels",
+      "after_the_fact": false,
+      "source": "X",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "45",
+      "logged_at_lisbon": "2026-10-12 21:07",
+      "account": "@BankersCandle11",
+      "post_url": "https://x.com/BankersCandle11/status/2109736737824297197#AFRM",
+      "asset": "AFRM",
+      "direction": "long",
+      "entry": "dip/unspecified",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "source discovery; same post as TXG entry journal; 232 followers; no levels",
+      "after_the_fact": false,
+      "source": "X",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "46",
+      "logged_at_lisbon": "2026-10-12 21:07",
+      "account": "@JSM_0X",
+      "post_url": "https://x.com/JSM_0X/status/2109737000836210992",
+      "asset": "BTC",
+      "direction": "short",
+      "entry": "",
+      "stop": "",
+      "target": "79000",
+      "status": "unclear",
+      "resolved_at": "",
+      "notes": "source discovery; after_the_fact claim already +$700k; Telegram premium promo; skip alert",
+      "after_the_fact": false,
+      "source": "X",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "47",
+      "logged_at_lisbon": "2026-10-12 21:07",
+      "account": "@JSM_0X",
+      "post_url": "https://x.com/JSM_0X/status/2109736748611686674",
+      "asset": "STBL",
+      "direction": "long",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "unclear",
+      "resolved_at": "",
+      "notes": "source discovery; pump-style 'strong surge coming'; Telegram promo; skip alert",
+      "after_the_fact": false,
+      "source": "X",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "48",
+      "logged_at_lisbon": "2026-10-12 21:07",
+      "account": "@QuesoTrades",
+      "post_url": "https://x.com/QuesoTrades/status/2109737269380653316",
+      "asset": "QQQ/SPY",
+      "direction": "short",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "source discovery; vague short bias no levels; 146 followers",
+      "after_the_fact": false,
+      "source": "X",
+      "copy_of": "",
+      "spam_farm": false
     }
+  ],
+  "clusters": [
+    {
+      "fingerprint": "S|short|0.06050|0.06550|0.055,0.050,0.043",
+      "first": "13",
+      "copies": [
+        "14",
+        "41"
+      ],
+      "accounts": [
+        "@John__manlove",
+        "@andrew_robrt",
+        "@jugsdetilingua"
+      ]
+    },
+    {
+      "fingerprint": "ICP|long|3.45,3.51|3.25|3.57,3.65",
+      "first": "15",
+      "copies": [
+        "16",
+        "36"
+      ],
+      "accounts": [
+        "@John__manlove",
+        "@andrew_robrt",
+        "@jugsdetilingua"
+      ]
+    },
+    {
+      "fingerprint": "BTC|short|82250|82650|81550",
+      "first": "20",
+      "copies": [
+        "31"
+      ],
+      "accounts": [
+        "@KyleXCM",
+        "@OGemHODL"
+      ]
+    }
+  ],
+  "spam_farm_accounts": [
+    "@John__manlove",
+    "@KyleXCM",
+    "@OGemHODL",
+    "@andrew_robrt",
+    "@jugsdetilingua"
   ]
 }
