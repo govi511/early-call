@@ -7,7 +7,7 @@ HERE = os.path.dirname(os.path.abspath(__file__)); DATA = os.path.join(HERE, "da
 ARGS = [a for a in sys.argv[1:] if not a.startswith("--")]
 LEDGER_ONLY = "--ledger-only" in sys.argv
 SRC = ARGS[0] if ARGS else "/cursor/stores/store-9d60204b-cf80-460e-a058-55dafdd15548/call-ledger.csv"
-CRYPTO = {"BTC","ETH","SOL","XRP","BNB","DOGE","ADA","AVAX","LINK","LTC","APE","ICP","PAXG"}
+CRYPTO = {"BTC","ETH","SOL","XRP","BNB","DOGE","ADA","AVAX","LINK","LTC","APE","ICP","PAXG","CRV","SEI","NEAR","QNT","S","RSR","PHA","IO"}
 KRAKEN = {"XMR":"XMRUSD"}  # Binance XMR pair is delisted/stale
 YAHOO_MAP = {"NATGAS":"NG=F","NG":"NG=F","GOLD":"GC=F","XAU":"GC=F","XAUUSD":"GC=F","XAGUSD":"SI=F","SILVER":"SI=F","OIL":"CL=F","WTI":"CL=F","BRENT":"BZ=F","SPX":"^GSPC","NDX":"^NDX"}
 now = lambda: datetime.datetime.now().astimezone().isoformat(timespec="seconds")
@@ -104,6 +104,61 @@ def mark_clusters(rows):
         clusters.append({"fingerprint": fp, "first": first["id"], "copies": [r["id"] for r in members], "accounts": sorted(accts)})
     return clusters
 SOURCE_USED = {}
+WATCH_ACC = os.path.join(os.path.dirname(SRC), "watchlist-accounts.json")
+def add_feed(rows):
+    """feed = following | famous | discovery (derived; CSV schema unchanged)."""
+    try: calls = {a["handle"].lower() for a in json.load(open(WATCH_ACC)) if a.get("role") == "call"}
+    except Exception: calls = set()
+    for r in rows:
+        n = r.get("notes", "").lower(); acc = r.get("account", "").lstrip("@").lower()
+        r["feed"] = "following" if "source following" in n else "famous" if acc in calls else "discovery"
+def _ts_utc(r):
+    try:
+        from zoneinfo import ZoneInfo
+        return int(datetime.datetime.strptime(r["logged_at_lisbon"], "%Y-%m-%d %H:%M").replace(tzinfo=ZoneInfo("Europe/Lisbon")).timestamp())
+    except Exception: return None
+def _hist(asset, ts):
+    a = asset.upper()
+    if a in KRAKEN:
+        r = get(f"https://api.kraken.com/0/public/OHLC?pair={KRAKEN[a]}&interval=1&since={ts-60}")
+        rows = next(v for k, v in r["result"].items() if k != "last")
+        if rows: return float(rows[0][1]), "Kraken"
+    if a in CRYPTO:
+        k = get(f"https://api.binance.com/api/v3/klines?symbol={a}USDT&interval=1m&startTime={ts*1000}&limit=1", tries=1)
+        if k: return float(k[0][1]), "Binance"
+    sym = YAHOO_MAP.get(a, a)
+    res = get("https://query1.finance.yahoo.com/v8/finance/chart/" + urllib.parse.quote(sym) + f"?period1={ts-3600}&period2={ts+4*86400}&interval=5m", tries=1)["chart"]["result"][0]
+    pts = [(t, c) for t, c in zip(res.get("timestamp") or [], (res.get("indicators", {}).get("quote") or [{}])[0].get("close") or []) if c is not None]
+    after = [c for t, c in pts if t >= ts - 300]
+    if after: return float(after[0]), "Yahoo Finance"
+    # posted outside market hours: last close before the post
+    res = get("https://query1.finance.yahoo.com/v8/finance/chart/" + urllib.parse.quote(sym) + f"?period1={ts-5*86400}&period2={ts}&interval=5m", tries=1)["chart"]["result"][0]
+    pts = [c for t, c in zip(res.get("timestamp") or [], res["indicators"]["quote"][0]["close"]) if c is not None and t <= ts]
+    if pts: return float(pts[-1]), "Yahoo Finance (last close)"
+    raise RuntimeError("no history")
+def add_baselines(rows):
+    """Calls without a numeric entry: baseline = price at post time. Cached in data/baselines.json."""
+    import re
+    bp = os.path.join(DATA, "baselines.json")
+    try: cache = json.load(open(bp))
+    except Exception: cache = {}
+    changed = False
+    for r in rows:
+        if re.findall(r"\d+(?:\.\d+)?", re.sub(r"\(.*?\)", "", r.get("entry", ""))) or not r.get("asset"): continue
+        key = f'{r["id"]}|{r["asset"].upper()}|{r.get("logged_at_lisbon","")}'
+        if key not in cache:
+            ts = _ts_utc(r)
+            try:
+                if ts is None: raise RuntimeError("bad time")
+                px, src = _hist(r["asset"], ts); cache[key] = {"price": px, "source": src, "at": r["logged_at_lisbon"]}
+            except Exception as e:
+                log(f"baseline {key} failed: {str(e)[:60]}")
+                if "404" in str(e) or "400" in str(e): cache[key] = {"price": None, "source": "unavailable", "at": r.get("logged_at_lisbon")}; changed = True
+                continue
+            changed = True
+        if cache[key]["price"] is None: continue
+        r["baseline"] = cache[key]["price"]; r["baseline_source"] = cache[key]["source"]
+    if changed: write_json(bp, cache)
 def pick(asset, ref):
     """Fetch price; if a ledger entry level exists, the price must be within 3x of it (catches ticker clashes,
     e.g. NEAR token vs NEAR stock). Tries the default source, then the other one; otherwise raises -> n/a."""
@@ -135,6 +190,7 @@ def main():
                 rows.append(r)
     except Exception as e:
         log(f"ERROR reading ledger {SRC}: {e}"); return 1
+    add_feed(rows); add_baselines(rows)
     clusters = mark_clusters(rows)
     farm = sorted({a for c in clusters for a in c["accounts"]})
     out = {"generated_at": now(), "calls": rows, "clusters": clusters, "spam_farm_accounts": farm}

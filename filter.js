@@ -17,5 +17,7 @@ const countsForRecord=c=>!isSpam(c)&&!isEarlySignal(c);
 function srcOf(c){const n=(c.notes||'').toLowerCase();return/early[- ]signal|\bsec\b|filing|13f|form 4/.test(n)?['Early signal','filing']:/source following|watchlist/.test(n)?['Following','watchlist']:/source discovery/.test(n)?['X search','x']:null}
 function srcHTML(c){const s=srcOf(c);return s?`<span class="src ${s[1]}">${s[0]}</span>`:''}
 const MIN_CLOSED=10;
-function recordOf(acc){const r=(typeof LEDGER!=='undefined'&&LEDGER?LEDGER.calls:[]).filter(c=>c.account===acc&&countsForRecord(c)&&['hit_target','stopped'].includes(c.status));const w=r.filter(c=>c.status==='hit_target').length;return{n:r.length,w,rate:r.length>=MIN_CLOSED?w/r.length:null}}
+function recordOf(acc){const r=(typeof LEDGER!=='undefined'&&LEDGER?LEDGER.calls:[]).filter(c=>c.account===acc&&countsForRecord(c)&&['hit_target','stopped'].includes(c.status)&&(typeof callRes!=='function'||callRes(c).p!=null));const w=r.filter(c=>c.status==='hit_target').length;return{n:r.length,w,rate:r.length>=MIN_CLOSED?w/r.length:null}}
 function winrateHTML(acc){const r=recordOf(acc);return r.rate==null?`<span class="winrate" title="${r.n}/${MIN_CLOSED} closed calls before a win rate is shown">Win rate <b>new</b> · ${r.n}/${MIN_CLOSED} closed</span>`:`<span class="winrate" title="${r.w} of ${r.n} closed calls hit target">Win rate <b>${Math.round(r.rate*100)}%</b></span>`}
+const FEED=()=>localStorage.getItem('ec-feed')||'all';
+function feedOf(c){if(c.feed)return c.feed;return /source following/i.test(c.notes||'')?'following':'discovery'}

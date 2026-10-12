@@ -1,15 +1,181 @@
 [
- {"date":"2026-10-13","title":"Big bank earnings","detail":"JPMorgan (JPM), Goldman Sachs (GS), Citigroup (C)","tag":"Confirmed","co":"macro"},
- {"date":"2026-10-14","title":"US CPI (September)","detail":"BLS, 13:30 PT (8:30 ET). bls.gov/schedule","tag":"Confirmed","co":"macro"},
- {"date":"2026-10-15","title":"US PPI (September)","detail":"BLS, 13:30 PT (8:30 ET)","tag":"Confirmed","co":"macro"},
- {"date":"2026-10-21","title":"Tesla Q3 2026 earnings","detail":"After US close; Q&A webcast 22:30 PT (5:30pm ET). Q3 deliveries were 486,532. ir.tesla.com","tag":"Confirmed","co":"tesla"},
- {"date":"2026-10-28","title":"FOMC rate decision","detail":"Fed meeting Oct 27–28; statement 18:00 PT (2pm ET), press conference 18:30 PT. federalreserve.gov","tag":"Confirmed","co":"macro"},
- {"date":"2026-11-06","title":"US jobs report (October)","detail":"BLS Employment Situation, 13:30 PT (8:30 ET)","tag":"Confirmed","co":"macro"},
- {"date":"2026-11-10","title":"US CPI (October)","detail":"BLS, 13:30 PT (8:30 ET)","tag":"Confirmed","co":"macro"},
- {"date":"2026-11-13","title":"US PPI (October)","detail":"BLS, 13:30 PT (8:30 ET)","tag":"Confirmed","co":"macro"},
- {"date":"2026-12-09","title":"FOMC rate decision + projections","detail":"Fed meeting Dec 8–9 with Summary of Economic Projections; statement 19:00 PT (2pm ET)","tag":"Confirmed","co":"macro"},
- {"date":"2026-12-10","title":"US CPI (November)","detail":"BLS, 13:30 PT (8:30 ET)","tag":"Confirmed","co":"macro"},
- {"date":"2026-11-03","title":"SpaceX Q3 2026 earnings (expected)","detail":"~21:30 PT after US close — estimate, not confirmed by SpaceX","tag":"TBC","co":"spacex"},
- {"date":"2026-11-08","title":"Starship Flight 15 (tentative NET)","detail":"FAA planning date; no official SpaceX launch date","tag":"TBC","co":"spacex"},
- {"date":"","title":"Tesla 2026 annual shareholder meeting","detail":"Not scheduled yet (2025's was Nov 6). Watch for a Tesla–SpaceX merger vote","tag":"TBC","co":"tesla"}
+  {
+    "date": "2026-10-13",
+    "title": "Big bank earnings",
+    "detail": "JPMorgan (JPM), Goldman Sachs (GS), Citigroup (C)",
+    "tag": "Confirmed",
+    "co": "macro",
+    "affects": [
+      "Banks",
+      "S&P 500"
+    ]
+  },
+  {
+    "date": "2026-10-14",
+    "title": "US CPI (September)",
+    "detail": "BLS, 13:30 PT (8:30 ET). bls.gov/schedule",
+    "tag": "Confirmed",
+    "co": "macro",
+    "affects": [
+      "USD",
+      "S&P 500",
+      "Nasdaq",
+      "BTC",
+      "Gold",
+      "Bonds"
+    ]
+  },
+  {
+    "date": "2026-10-15",
+    "title": "US PPI (September)",
+    "detail": "BLS, 13:30 PT (8:30 ET)",
+    "tag": "Confirmed",
+    "co": "macro",
+    "affects": [
+      "USD",
+      "S&P 500",
+      "Nasdaq",
+      "BTC",
+      "Gold",
+      "Bonds"
+    ]
+  },
+  {
+    "date": "2026-10-21",
+    "title": "Tesla Q3 2026 earnings",
+    "detail": "After US close; Q&A webcast 22:30 PT (5:30pm ET). Q3 deliveries were 486,532. ir.tesla.com",
+    "tag": "Confirmed",
+    "co": "tesla",
+    "affects": [
+      "TSLA",
+      "Nasdaq",
+      "EV stocks"
+    ]
+  },
+  {
+    "date": "2026-10-28",
+    "title": "FOMC rate decision",
+    "detail": "Fed meeting Oct 27–28; statement 18:00 PT (2pm ET), press conference 18:30 PT. federalreserve.gov",
+    "tag": "Confirmed",
+    "co": "macro",
+    "affects": [
+      "USD",
+      "S&P 500",
+      "Nasdaq",
+      "BTC",
+      "Gold",
+      "Bonds"
+    ]
+  },
+  {
+    "date": "2026-11-06",
+    "title": "US jobs report (October)",
+    "detail": "BLS Employment Situation, 13:30 PT (8:30 ET)",
+    "tag": "Confirmed",
+    "co": "macro",
+    "affects": [
+      "USD",
+      "S&P 500",
+      "Nasdaq",
+      "BTC",
+      "Gold",
+      "Bonds"
+    ]
+  },
+  {
+    "date": "2026-11-10",
+    "title": "US CPI (October)",
+    "detail": "BLS, 13:30 PT (8:30 ET)",
+    "tag": "Confirmed",
+    "co": "macro",
+    "affects": [
+      "USD",
+      "S&P 500",
+      "Nasdaq",
+      "BTC",
+      "Gold",
+      "Bonds"
+    ]
+  },
+  {
+    "date": "2026-11-13",
+    "title": "US PPI (October)",
+    "detail": "BLS, 13:30 PT (8:30 ET)",
+    "tag": "Confirmed",
+    "co": "macro",
+    "affects": [
+      "USD",
+      "S&P 500",
+      "Nasdaq",
+      "BTC",
+      "Gold",
+      "Bonds"
+    ]
+  },
+  {
+    "date": "2026-12-09",
+    "title": "FOMC rate decision + projections",
+    "detail": "Fed meeting Dec 8–9 with Summary of Economic Projections; statement 19:00 PT (2pm ET)",
+    "tag": "Confirmed",
+    "co": "macro",
+    "affects": [
+      "USD",
+      "S&P 500",
+      "Nasdaq",
+      "BTC",
+      "Gold",
+      "Bonds"
+    ]
+  },
+  {
+    "date": "2026-12-10",
+    "title": "US CPI (November)",
+    "detail": "BLS, 13:30 PT (8:30 ET)",
+    "tag": "Confirmed",
+    "co": "macro",
+    "affects": [
+      "USD",
+      "S&P 500",
+      "Nasdaq",
+      "BTC",
+      "Gold",
+      "Bonds"
+    ]
+  },
+  {
+    "date": "2026-11-03",
+    "title": "SpaceX Q3 2026 earnings (expected)",
+    "detail": "~21:30 PT after US close — estimate, not confirmed by SpaceX",
+    "tag": "TBC",
+    "co": "spacex",
+    "affects": [
+      "SpaceX",
+      "TSLA (sentiment)",
+      "Space stocks"
+    ]
+  },
+  {
+    "date": "2026-11-08",
+    "title": "Starship Flight 15 (tentative NET)",
+    "detail": "FAA planning date; no official SpaceX launch date",
+    "tag": "TBC",
+    "co": "spacex",
+    "affects": [
+      "SpaceX",
+      "TSLA (sentiment)",
+      "Space stocks"
+    ]
+  },
+  {
+    "date": "",
+    "title": "Tesla 2026 annual shareholder meeting",
+    "detail": "Not scheduled yet (2025's was Nov 6). Watch for a Tesla–SpaceX merger vote",
+    "tag": "TBC",
+    "co": "tesla",
+    "affects": [
+      "TSLA",
+      "Nasdaq",
+      "EV stocks"
+    ]
+  }
 ]
