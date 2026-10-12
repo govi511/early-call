@@ -1,93 +1,125 @@
 {
-  "fetched_at": "2026-10-12T20:52:22+01:00",
+  "fetched_at": "2026-10-12T21:02:24+01:00",
   "prices": {
     "APE": {
-      "price": null,
-      "error": "HTTP Error 404: Not Found"
+      "price": 0.1522,
+      "change_pct": -3.365,
+      "symbol": "APEUSDT",
+      "currency": "USDT",
+      "source": "Binance",
+      "as_of": "2026-10-12T21:02:20+01:00"
     },
     "APP": {
-      "price": 270.66,
+      "price": 270.87,
+      "change_pct": -2.227115218019064,
       "symbol": "APP",
       "currency": "USD",
       "source": "Yahoo Finance",
-      "as_of": "2026-10-12T20:52:00+01:00"
+      "as_of": "2026-10-12T21:00:01+01:00"
     },
     "BTC": {
-      "price": 82822.0,
+      "price": 82862.11,
+      "change_pct": -0.971,
       "symbol": "BTCUSDT",
       "currency": "USDT",
       "source": "Binance",
-      "as_of": "2026-10-12T20:52:01+01:00"
+      "as_of": "2026-10-12T21:02:21+01:00"
     },
     "COIN": {
-      "price": 177.725,
+      "price": 180.39,
+      "change_pct": 0.5574446736161437,
       "symbol": "COIN",
       "currency": "USD",
       "source": "Yahoo Finance",
-      "as_of": "2026-10-12T20:52:00+01:00"
+      "as_of": "2026-10-12T21:00:02+01:00"
     },
     "ETH": {
-      "price": 2519.84,
+      "price": 2522.5,
+      "change_pct": -0.568,
       "symbol": "ETHUSDT",
       "currency": "USDT",
       "source": "Binance",
-      "as_of": "2026-10-12T20:52:02+01:00"
+      "as_of": "2026-10-12T21:02:22+01:00"
     },
     "ICP": {
-      "price": null,
-      "error": "HTTP Error 404: Not Found"
+      "price": 3.252,
+      "change_pct": -2.78,
+      "symbol": "ICPUSDT",
+      "currency": "USDT",
+      "source": "Binance",
+      "as_of": "2026-10-12T21:02:23+01:00"
     },
     "NATGAS": {
-      "price": 3.175,
+      "price": 3.17,
+      "change_pct": -1.5527950310559087,
       "symbol": "NG=F",
       "currency": "USD",
       "source": "Yahoo Finance",
-      "as_of": "2026-10-12T20:41:52+01:00"
+      "as_of": "2026-10-12T20:51:40+01:00"
     },
     "NBIS": {
-      "price": 208.71,
+      "price": 210.06,
+      "change_pct": -4.9803229746234186,
       "symbol": "NBIS",
       "currency": "USD",
       "source": "Yahoo Finance",
-      "as_of": "2026-10-12T20:52:11+01:00"
+      "as_of": "2026-10-12T21:00:01+01:00"
+    },
+    "QQQ": {
+      "price": 746.04,
+      "change_pct": -0.6961545116935347,
+      "symbol": "QQQ",
+      "currency": "USD",
+      "source": "Yahoo Finance",
+      "as_of": "2026-10-12T21:00:00+01:00"
     },
     "S": {
-      "price": 25.765,
+      "price": 25.655,
+      "change_pct": -2.3410734678340255,
       "symbol": "S",
       "currency": "USD",
       "source": "Yahoo Finance",
-      "as_of": "2026-10-12T20:52:10+01:00"
+      "as_of": "2026-10-12T20:59:59+01:00"
     },
     "TSLA": {
-      "price": 378.43,
+      "price": 378.03,
+      "change_pct": -1.220276979357203,
       "symbol": "TSLA",
       "currency": "USD",
       "source": "Yahoo Finance",
-      "as_of": "2026-10-12T20:52:11+01:00"
+      "as_of": "2026-10-12T21:00:00+01:00"
     },
     "XAUUSD": {
-      "price": null,
-      "error": "HTTP Error 404: Not Found"
+      "price": 4192.2,
+      "change_pct": -0.5715912055593854,
+      "symbol": "GC=F",
+      "currency": "USD",
+      "source": "Yahoo Finance",
+      "as_of": "2026-10-12T20:52:14+01:00"
     },
     "XMR": {
-      "price": null,
-      "error": "'NoneType' object cannot be interpreted as an integer"
+      "price": 535.97,
+      "change_pct": -0.18994767127879136,
+      "symbol": "XMRUSD",
+      "currency": "USD",
+      "source": "Kraken",
+      "as_of": "2026-10-12T21:02:24+01:00"
     }
   },
   "ok": [
+    "APE",
     "APP",
     "BTC",
     "COIN",
     "ETH",
+    "ICP",
     "NATGAS",
     "NBIS",
+    "QQQ",
     "S",
-    "TSLA"
-  ],
-  "failed": [
-    "APE",
-    "ICP",
+    "TSLA",
     "XAUUSD",
     "XMR"
-  ]
+  ],
+  "failed": []
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-12T20:51:51+01:00",
+  "generated_at": "2026-10-12T21:02:19+01:00",
   "calls": [
     {
       "id": "1",
@@ -462,6 +462,22 @@
       "status": "open",
       "resolved_at": "",
       "notes": "source discovery; 'best dip buy'; no levels; reposted 20:40",
+      "after_the_fact": false,
+      "source": "X"
+    },
+    {
+      "id": "30",
+      "logged_at_lisbon": "2026-10-12 21:03",
+      "account": "@TMA_MarketIntel",
+      "post_url": "https://x.com/TMA_MarketIntel/status/2109729393254035532",
+      "asset": "QQQ",
+      "direction": "short (options-flow tilt)",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "early-signal; end-of-day flow summary posted 20:34 PT: $QQQ ~$40M put premium vs $SPX ~$57M calls; no levels, could be hedging; 3.9k followers",
       "after_the_fact": false,
       "source": "X"
     }
