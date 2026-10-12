@@ -31,7 +31,7 @@
   const rows=d&&d[r];if(!rows||!rows.length){box.innerHTML='<p class="mut">No chart data for this asset (n/a).</p>';return}
   box.innerHTML='';const h=box.clientHeight||Math.min(380,Math.round(window.innerHeight*0.5));
   chart=L.createChart(box,{height:h,width:box.clientWidth||320,layout:{background:{color:'transparent'},textColor:'#9ca3af'},grid:{vertLines:{color:GRID},horzLines:{color:GRID}},rightPriceScale:{borderColor:GRID},timeScale:{borderColor:GRID,timeVisible:r!=='1M'},crosshair:{mode:0}});
-  const s=chart.addCandlestickSeries({upColor:UP,downColor:DN,borderUpColor:UP,borderDownColor:DN,wickUpColor:UP,wickDownColor:DN});
+  const lv=levels(c).map(x=>x[1]);const s=chart.addCandlestickSeries({autoscaleInfoProvider:orig=>{const r=orig();if(!r||!r.priceRange)return r;let{minValue:mn,maxValue:mx}=r.priceRange;lv.forEach(v=>{if(v>mn*0.85&&v<mx*1.15){mn=Math.min(mn,v);mx=Math.max(mx,v)}});return{...r,priceRange:{minValue:mn,maxValue:mx}}},upColor:UP,downColor:DN,borderUpColor:UP,borderDownColor:DN,wickUpColor:UP,wickDownColor:DN});
   s.setData(rows.map(x=>({time:x[0],open:x[1],high:x[2],low:x[3],close:x[4]})));
   levels(c).forEach(([t,p,col])=>s.createPriceLine({price:p,color:col,lineWidth:1,lineStyle:2,axisLabelVisible:true,title:t}));
   chart.timeScale().fitContent();
