@@ -40,7 +40,7 @@ function callRes(c){const e=lvl(c.entry),d=c.direction==='short'?-1:1;let x=null
  if(c.status==='open')x=PRICES[c.asset]?.price??null;else if(c.status==='hit_target')x=lvl(c.target);else if(c.status==='stopped')x=lvl(c.stop);
  return{e,x,p:e&&x!=null?d*(x-e)/e*100:null}}
 const SP=c=>{if(c.locked_pct!=null)return c.locked_pct;const b=c.baseline,p=PRICES[c.asset]?.price,d=String(c.direction).startsWith('short')?-1:1;return b&&p!=null?d*(p-b)/b*100:null};
-const SPL=c=>{if(c.locked_pct!=null)return'final (7d)';const t=Date.parse(String(c.logged_at_lisbon).replace(' ','T'));if(!t)return'since post';const d=Math.max(0,Math.ceil((t+7*864e5-Date.now())/864e5));return'since post · <span class="countdown">scores in '+d+'d</span>'};
+const SPL=c=>(/^Nasdaq daily/.test(c.baseline_source||"")?"≈ ":"")+SPL0(c),SPL0=c=>{if(c.locked_pct!=null)return'final (7d)';const t=Date.parse(String(c.logged_at_lisbon).replace(' ','T'));if(!t)return'since post';const d=Math.max(0,Math.ceil((t+7*864e5-Date.now())/864e5));return'since post · <span class="countdown">scores in '+d+'d</span>'};
 const fmtP=v=>v==null?'n/a':v.toLocaleString('en-US',{maximumFractionDigits:v<10?4:2});
 const LBPREV={};
 const avFail=img=>{const s=document.createElement('div');s.className='lb-avatar';s.style.cssText='display:flex;align-items:center;justify-content:center;font-weight:800;color:#fff';s.textContent=img.alt;img.replaceWith(s)};

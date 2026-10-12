@@ -190,8 +190,27 @@ def _hist(asset, ts):
     try: return _yhist(a, ts)
     except Exception:
         import time as _t
+        try: return _nhist(a, ts)
+        except Exception: pass
         if _t.time() - ts < 2*86400: return _nasdaq(a)["price"], "Nasdaq (approx)"
         raise
+def _nhist(a, ts):
+    import urllib.request, json as _j, datetime as _d
+    sym = {"QQQ/SPY":"QQQ"}.get(a, a)
+    day = _d.datetime.fromtimestamp(ts, _d.timezone(_d.timedelta(hours=-4)))
+    f = (day - _d.timedelta(days=6)).strftime("%Y-%m-%d"); t = day.strftime("%Y-%m-%d")
+    for cls in ("stocks", "etf"):
+        try:
+            req = urllib.request.Request(f"https://api.nasdaq.com/api/quote/{sym}/historical?assetclass={cls}&fromdate={f}&todate={t}&limit=10", headers={"User-Agent":"Mozilla/5.0","Accept":"application/json"})
+            rows = (((_j.load(urllib.request.urlopen(req, timeout=15)).get("data") or {}).get("tradesTable") or {}).get("rows")) or []
+            num = lambda x: float(x.replace("$","").replace(",",""))
+            ds = day.strftime("%m/%d/%Y")
+            for r in rows:
+                if r["date"] == ds and day.hour < 16: return num(r["open"]), "Nasdaq daily (open)"
+            prior = [r for r in rows if r["date"] != ds or day.hour >= 16]
+            if prior: return num(prior[0]["close"]), "Nasdaq daily (close)"
+        except Exception: continue
+    raise RuntimeError("no nasdaq history")
 def _yhist(a, ts):
     sym = YAHOO_MAP.get(a, a)
     res = ychart(sym, f"period1={ts-3600}&period2={ts+4*86400}&interval=5m")["chart"]["result"][0]
