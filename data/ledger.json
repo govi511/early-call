@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-12T21:19:32+01:00",
+  "generated_at": "2026-10-12T21:24:40+01:00",
   "calls": [
     {
       "id": "1",
@@ -862,6 +862,60 @@
       "notes": "source discovery; vague short bias no levels; 146 followers",
       "after_the_fact": false,
       "source": "X",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "49",
+      "logged_at_lisbon": "2026-10-12 21:22",
+      "account": "cboe_unusual_volume",
+      "post_url": "https://www.cboe.com/delayed_quotes/nvda/quote_table",
+      "asset": "NVDA",
+      "direction": "put-flow (bearish tilt / hedge)",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "early-signal; CBOE unusual vol NVDA270416P00225000 Apr-16-2027 $225 put: vol 7450 vs OI 2158 (3.5x), last $19.75, ~$14.7M premium; as_of 2026-10-12 20:21 UTC; public tape not MNPI; not financial advice",
+      "after_the_fact": false,
+      "source": "other",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "50",
+      "logged_at_lisbon": "2026-10-12 21:22",
+      "account": "cboe_unusual_volume",
+      "post_url": "https://www.cboe.com/delayed_quotes/spy/quote_table",
+      "asset": "SPY",
+      "direction": "call-flow (bullish tilt)",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "early-signal; CBOE unusual vol SPY261023C00778000 Oct-23 $778 call: vol 7235 vs OI 2372 (3.1x), last $6.00, ~$4.3M premium; as_of 2026-10-12 20:22 UTC; public tape; not financial advice",
+      "after_the_fact": false,
+      "source": "other",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "51",
+      "logged_at_lisbon": "2026-10-12 21:22",
+      "account": "cboe_unusual_volume",
+      "post_url": "https://www.cboe.com/delayed_quotes/spy/quote_table",
+      "asset": "SPY",
+      "direction": "put-flow",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "early-signal; CBOE unusual vol SPY261016P00781000 Oct-16 $781 put: vol 3089 vs OI 955 (3.2x), last $4.88, ~$1.5M premium; as_of 2026-10-12 20:22 UTC; public tape; not financial advice",
+      "after_the_fact": false,
+      "source": "other",
       "copy_of": "",
       "spam_farm": false
     }
