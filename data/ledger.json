@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-12T20:32:09+01:00",
+  "generated_at": "2026-10-12T20:41:22+01:00",
   "calls": [
     {
       "id": "1",
@@ -59,9 +59,9 @@
       "entry": "182",
       "stop": "180.66",
       "target": "188",
-      "status": "open",
-      "resolved_at": "",
-      "notes": "",
+      "status": "stopped",
+      "resolved_at": "2026-10-12",
+      "notes": "stop 180.66 hit; day low ~177.37 close/last ~178.37; source following",
       "after_the_fact": false,
       "source": "X"
     },
@@ -78,6 +78,38 @@
       "status": "unclear",
       "resolved_at": "",
       "notes": "instrument unclear; affiliate link",
+      "after_the_fact": false,
+      "source": "X"
+    },
+    {
+      "id": "6",
+      "logged_at_lisbon": "2026-10-12 17:45",
+      "account": "@pedrosilva",
+      "post_url": "https://x.com/pedrosilva/status/2109686900273344825",
+      "asset": "BTC",
+      "direction": "long",
+      "entry": "dip (unspecified)",
+      "stop": "83200 (1h close)",
+      "target": "",
+      "status": "stopped",
+      "resolved_at": "2026-10-12",
+      "notes": "source following; wanted long on dip; BTC later ~82.3-82.7k so 1h close below 83.2k likely",
+      "after_the_fact": false,
+      "source": "X"
+    },
+    {
+      "id": "7",
+      "logged_at_lisbon": "2026-10-12 20:28",
+      "account": "@ridewithshamim",
+      "post_url": "https://x.com/ridewithshamim/status/2109727832620576880",
+      "asset": "ETH",
+      "direction": "long",
+      "entry": "2516.40",
+      "stop": "2483.98",
+      "target": "2582.53",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "source discovery; low-follower signal account; skip alert",
       "after_the_fact": false,
       "source": "X"
     }
