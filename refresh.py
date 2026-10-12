@@ -31,11 +31,13 @@ YH = ("https://query2.finance.yahoo.com", "https://query1.finance.yahoo.com")
 UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
 def ychart(sym, qs):
     err = None
-    for h in YH:
+    for h in YH * 2:
         try:
             req = urllib.request.Request(f"{h}/v8/finance/chart/{urllib.parse.quote(sym)}?{qs}", headers={"User-Agent": UA, "Accept": "application/json"})
             with urllib.request.urlopen(req, timeout=10) as r: return json.loads(r.read())
-        except Exception as e: err = e
+        except Exception as e:
+            err = e
+            if "429" in str(e): time.sleep(3)
     raise err
 def norm(asset):
     a = asset.upper().strip()
@@ -207,6 +209,15 @@ def add_baselines(rows):
             changed = True
         if cache[key]["price"] is None: continue
         r["baseline"] = cache[key]["price"]; r["baseline_source"] = cache[key]["source"]
+        # fixed scoring point: price 7 days after post, locked once and never changed
+        c = cache[key]; ts = _ts_utc(r)
+        if "locked_pct" not in c and ts and time.time() >= ts + 7 * 86400:
+            try:
+                px7, _ = _hist(r["asset"], ts + 7 * 86400); d = -1 if r.get("direction", "").lower().startswith("short") else 1
+                c["locked_pct"] = round(d * (px7 - c["price"]) / c["price"] * 100, 4); c["locked_price"] = px7
+                c["locked_at"] = datetime.datetime.fromtimestamp(ts + 7 * 86400).astimezone().isoformat(timespec="minutes"); changed = True
+            except Exception as e: log(f"lock {key} failed: {str(e)[:60]}")
+        if "locked_pct" in c: r["locked_pct"] = c["locked_pct"]; r["locked_at"] = c["locked_at"]
     if changed: write_json(bp, cache)
 def pick(asset, ref):
     """Fetch price; if a ledger entry level exists, the price must be within 3x of it (catches ticker clashes,
@@ -272,6 +283,10 @@ def main():
             if prev.get("price") is not None and ref and not (1/3 <= prev["price"] / ref <= 3): prev = {}  # don't keep a mismatched old price
             prices[asset] = {**prev, "stale": prev.get("price") is not None, "error": str(e)[:120]} if prev.get("price") is not None else {"price": None, "error": str(e)[:120]}
             bad.append(asset)
+    for asset in list(bad):  # alias (e.g. QQQ/SPY) failed but its mapped ticker priced: reuse it
+        m = norm(asset)
+        if m != asset and prices.get(m, {}).get("price") is not None:
+            prices[asset] = {**prices[m], "symbol": f'{prices[m].get("symbol")} (from {asset})'}; bad.remove(asset); ok.append(asset)
     write_json(ppath, {"fetched_at": now(), "prices": prices, "ok": ok, "failed": bad})
     log(f"prices ok={ok} failed={bad}")
     write_candles(sorted(a for a in {r["asset"].upper() for r in rows if r.get("asset")} if prices.get(a, {}).get("price") is not None and not prices[a].get("nonpriceable") and not prices[a].get("stale")))
