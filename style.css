@@ -34,3 +34,21 @@ footer{max-width:1100px;margin:20px auto;padding:16px;color:var(--mut);font-size
 .meter{display:block;height:8px;border-radius:4px;background:var(--card2);overflow:hidden}.meter i{display:block;height:100%;border-radius:4px}
 header{padding-top:env(safe-area-inset-top)}footer{padding-bottom:calc(16px + env(safe-area-inset-bottom))}
 input,select,.btn,nav button{min-height:40px}
+/* GG BOT refresh v1 */
+:root{--bg:#07090d;--card:#10141b;--card2:#171d26;--b:#1f2732;--acc:#3b82f6;--acc2:#8b5cf6}
+body{font-family:Inter,-apple-system,Segoe UI,Roboto,sans-serif;font-feature-settings:"tnum" 1,"cv11" 1;background:radial-gradient(1200px 600px at 10% -10%,#132036 0,transparent 60%),var(--bg);background-attachment:fixed}
+.logo span{background:linear-gradient(90deg,var(--acc),var(--acc2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.card,.sum div{background:linear-gradient(180deg,rgba(255,255,255,.025),transparent),var(--card);border-color:var(--b);border-radius:16px;box-shadow:0 1px 0 rgba(255,255,255,.03) inset,0 8px 24px rgba(0,0,0,.25);transition:transform .15s,border-color .15s}
+.card:hover{border-color:#2c3746;transform:translateY(-1px)}
+nav button{transition:background .15s,color .15s}nav button:hover{color:var(--txt)}
+nav button.on{background:linear-gradient(90deg,var(--acc),var(--acc2));border-color:transparent;box-shadow:0 4px 14px rgba(59,130,246,.35)}
+.btn{background:linear-gradient(90deg,var(--acc),var(--acc2));transition:filter .15s}.btn:hover{filter:brightness(1.1)}.btn.g{background:var(--card2)}
+.asset,.big,.sum b{letter-spacing:-.3px}
+input:focus,select:focus{outline:none;border-color:var(--acc);box-shadow:0 0 0 3px rgba(59,130,246,.25)}
+.bar{height:6px}.bar i{width:3px}
+@media(max-width:700px){
+ nav{position:fixed;bottom:0;left:0;right:0;z-index:10;background:rgba(10,13,18,.94);backdrop-filter:blur(12px);border-top:1px solid var(--b);padding:8px 10px calc(8px + env(safe-area-inset-bottom));max-width:none}
+ nav button{border:0;background:transparent}
+ main{padding-bottom:90px}footer{margin-bottom:70px}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
