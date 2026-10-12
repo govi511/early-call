@@ -1,14 +1,14 @@
 // ===== Early score (heuristic, 0-100) =====
 function earlyScore(c,l){let s=50;const why=[];const e=lvl(c.entry),st=lvl(c.stop),t=lvl(c.target),n=(c.notes||'').toLowerCase();
- if(e!=null&&st!=null&&t!=null){s+=15;why.push('+15 full plan');const rr=Math.abs(t-e)/Math.abs(e-st);if(isFinite(rr)){if(rr>=2){s+=10;why.push(`+10 R:R ${rr.toFixed(1)}`)}else if(rr<1){s-=10;why.push(`−10 R:R ${rr.toFixed(1)}`)}}}else{s-=15;why.push('−15 incomplete levels')}
+ if(e!=null&&st!=null&&t!=null){s+=15;why.push('+15 clear buy/exit/target');const rr=Math.abs(t-e)/Math.abs(e-st);if(isFinite(rr)){if(rr>=2){s+=10;why.push(`+10 reward ${rr.toFixed(1)}× the risk`)}else if(rr<1){s-=10;why.push(`−10 reward only ${rr.toFixed(1)}× the risk`)}}}else{s-=15;why.push('−15 missing price levels')}
  if(c.after_the_fact){s-=35;why.push('−35 posted after the fact')}
  if(/affiliate|ref link|promo/.test(n)){s-=10;why.push('−10 affiliate')}
  if(/unclear|never filled/.test(n)||c.status==='unclear'){s-=10;why.push('−10 unclear')}
- if(c.status==='open'&&l.p!=null){if(Math.abs(l.move)<=1){s+=15;why.push('+15 still near entry')}else if(l.toTgt!=null&&l.toTgt<=0){s-=20;why.push('−20 target already hit')}}
+ if(c.status==='open'&&l.p!=null){if(Math.abs(l.move)<=1){s+=15;why.push('+15 price still near buy level')}else if(l.toTgt!=null&&l.toTgt<=0){s-=20;why.push('−20 target already hit')}}
  if(c.status==='hit_target'){s+=10;why.push('+10 hit target')}if(c.status==='stopped'){s-=5;why.push('−5 stopped')}
  s=Math.max(0,Math.min(100,s));return{s,why}}
 function earlyHTML(c,l){const{s,why}=earlyScore(c,l);const col=s>=65?'var(--up)':s>=40?'var(--warn)':'var(--dn)';
- return`<div class="row" style="margin-top:8px" title="${why.join(' · ')}"><span class="mut">Early score</span><span style="flex:1;margin:0 8px" class="meter"><i style="width:${s}%;background:${col}"></i></span><b style="color:${col}">${s}</b></div><div class="mut" style="font-size:11px">${why.join(' · ')}</div>`}
+ return`<div class="row" style="margin-top:8px" title="${why.join(' · ')}"><span class="mut">Early score (how timely &amp; clear)</span><span style="flex:1;margin:0 8px" class="meter"><i style="width:${s}%;background:${col}"></i></span><b style="color:${col}">${s}</b></div><details class="why show"><summary>Why this score</summary>${why.map(w=>`<div>${esc(w)}</div>`).join('')}</details>`}
 // ===== Hype meter per account =====
 function renderHype(){if(!LEDGER)return;const by={};LEDGER.calls.forEach(c=>(by[c.account]??=[]).push(c));
  $('#hype').innerHTML=Object.entries(by).map(([a,cs])=>{const days=new Set(cs.map(c=>c.logged_at_lisbon.slice(0,10))).size,perDay=cs.length/Math.max(days,1);

@@ -59,3 +59,16 @@ input:focus,select:focus{outline:none;border-color:var(--acc);box-shadow:0 0 0 3
  nav button{padding:7px 11px;font-size:12px}
  nav::after{content:"";flex:0 0 8px}
 }
+/* readability pass */
+:root{--mut:#a9b4c2;--txt:#f1f5f9}
+body{font-size:16px;line-height:1.55}
+.mut,.tag,.lv small,.sum small,label,th{font-size:13px}
+.lv div{padding:8px 10px}.lv div b,.lv div{font-size:15px}
+.asset{font-size:21px}.sum b{font-size:18px}
+.card{padding:16px}.grid{gap:14px}
+.up{color:#34d399}.dn{color:#ff6b78}
+/* pre-styled hooks for G BOT's JS */
+.headline{font-size:22px;font-weight:800;letter-spacing:-.4px;margin:2px 0 8px}
+.why{display:none;font-size:13px;color:var(--mut);margin-top:6px}
+.why.show,details[open] .why{display:block}
+details summary{cursor:pointer;color:var(--acc);font-size:13px;list-style:none}
