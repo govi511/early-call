@@ -78,5 +78,15 @@
     "price": 0.022895,
     "source": "Kraken",
     "at": "2026-10-12 21:07"
+  },
+  "55|FED|2026-10-12 22:55": {
+    "price": null,
+    "source": "not a tradable asset",
+    "at": "2026-10-12 22:55"
+  },
+  "56|BTC|2026-10-12 22:55": {
+    "price": 82707.9,
+    "source": "Binance",
+    "at": "2026-10-12 22:55"
   }
 }

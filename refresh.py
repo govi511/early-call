@@ -70,7 +70,22 @@ def fetch(asset, force=None):
         t = next(iter(r["result"].values())); p, o = float(t["c"][0]), float(t["o"])
         return {"price": p, "change_pct": (p - o) / o * 100, "symbol": KRAKEN[a], "currency": "USD", "source": "Kraken", "as_of": now()}
     if a in CRYPTO: return _binance(a)
-    return _yahoo(a)
+    try: return _yahoo(a)
+    except Exception as e:
+        log(f"yahoo failed for {a}: {e}; trying Nasdaq")
+        return _nasdaq(a)
+def _nasdaq(a):
+    import urllib.request, json as _j
+    for cls in ("stocks","etf"):
+        try:
+            req=urllib.request.Request(f"https://api.nasdaq.com/api/quote/{a}/info?assetclass={cls}",headers={"User-Agent":"Mozilla/5.0","Accept":"application/json"})
+            d=_j.load(urllib.request.urlopen(req,timeout=15)).get("data") or {}
+            pd=d.get("primaryData") or {}
+            p=float(pd["lastSalePrice"].replace("$","").replace(",",""))
+            ch=float(pd.get("percentageChange","0").replace("%","").replace("+","") or 0)
+            return {"price":p,"change_pct":ch,"symbol":a,"currency":"USD","source":"Nasdaq","as_of":now()}
+        except Exception: continue
+    raise RuntimeError("no nasdaq price")
 def _binance(a):
         p = get(f"https://api.binance.com/api/v3/ticker/24hr?symbol={a}USDT", tries=1)
         if float(p["lastPrice"]) <= 0: raise RuntimeError("binance pair dead (price 0)")
