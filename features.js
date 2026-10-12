@@ -10,7 +10,7 @@ function earlyScore(c,l){let s=50;const why=[];const e=lvl(c.entry),st=lvl(c.sto
 function earlyHTML(c,l){const{s,why}=earlyScore(c,l);const col=s>=65?'var(--up)':s>=40?'var(--warn)':'var(--dn)';
  return`<div class="row" style="margin-top:8px" title="${why.join(' · ')}"><span class="mut">Early score (how timely &amp; clear)</span><span style="flex:1;margin:0 8px" class="meter"><i style="width:${s}%;background:${col}"></i></span><b style="color:${col}">${s}</b></div><details class="why show"><summary>Why this score</summary>${why.map(w=>`<div>${esc(w)}</div>`).join('')}</details>`}
 // ===== Hype meter per account =====
-function renderHype(){if(!LEDGER)return;const by={};LEDGER.calls.forEach(c=>(by[c.account]??=[]).push(c));
+function renderHype(){if(!LEDGER)return;const by={};LEDGER.calls.filter(c=>!isSpam(c)).forEach(c=>(by[c.account]??=[]).push(c));
  $('#hype').innerHTML=Object.entries(by).map(([a,cs])=>{const days=new Set(cs.map(c=>c.logged_at_lisbon.slice(0,10))).size,perDay=cs.length/Math.max(days,1);
   const flags=cs.filter(c=>/affiliate|unclear|never filled/.test((c.notes||'').toLowerCase())).length,res=cs.filter(c=>['hit_target','stopped'].includes(c.status)),wr=res.length?res.filter(c=>c.status==='hit_target').length/res.length:null;
   const assets=new Set(cs.map(c=>c.asset)).size;let h=Math.min(30,perDay*10)+flags/cs.length*30+(wr==null?10:(1-wr)*25)+Math.min(15,(assets-1)*5);h=Math.round(Math.min(100,h));

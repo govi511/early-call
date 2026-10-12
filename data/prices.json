@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-12T21:20:15+01:00",
+  "fetched_at": "2026-10-12T21:23:17+01:00",
   "prices": {
     "AFRM": {
       "price": 78.63,
@@ -10,12 +10,12 @@
       "as_of": "2026-10-12T21:00:01+01:00"
     },
     "APE": {
-      "price": 0.152,
-      "change_pct": -3.553,
+      "price": 0.1519,
+      "change_pct": -3.556,
       "symbol": "APEUSDT",
       "currency": "USDT",
       "source": "Binance",
-      "as_of": "2026-10-12T21:19:33+01:00"
+      "as_of": "2026-10-12T21:21:59+01:00"
     },
     "APP": {
       "price": 270.87,
@@ -26,28 +26,20 @@
       "as_of": "2026-10-12T21:00:01+01:00"
     },
     "BTC": {
-      "price": 83082.01,
-      "change_pct": -0.719,
+      "price": 83060.48,
+      "change_pct": -0.728,
       "symbol": "BTCUSDT",
       "currency": "USDT",
       "source": "Binance",
-      "as_of": "2026-10-12T21:19:34+01:00"
+      "as_of": "2026-10-12T21:22:00+01:00"
     },
     "BTR": {
-      "price": 25.59,
-      "change_pct": -0.2778503037648163,
-      "symbol": "BTR",
-      "currency": "USD",
-      "source": "Yahoo Finance",
-      "as_of": "2026-09-23T14:45:00+01:00"
+      "price": null,
+      "error": "no matching price: Yahoo Finance 25.59 far from entry 0.04906; binance: HTTP Error 400: Bad Request; Yahoo Finance 25.59"
     },
     "BULL": {
-      "price": 6.3,
-      "change_pct": -0.15847860538826922,
-      "symbol": "BULL",
-      "currency": "USD",
-      "source": "Yahoo Finance",
-      "as_of": "2026-10-12T21:00:01+01:00"
+      "price": null,
+      "error": "no matching price: Yahoo Finance 6.3 far from entry 0.07389; Binance 0.0 far from entry 0.07389; Yahoo Finance 6.3 far f"
     },
     "COIN": {
       "price": 180.39,
@@ -58,32 +50,36 @@
       "as_of": "2026-10-12T21:00:02+01:00"
     },
     "ETH": {
-      "price": 2525.77,
-      "change_pct": -0.446,
+      "price": 2524.18,
+      "change_pct": -0.484,
       "symbol": "ETHUSDT",
       "currency": "USDT",
       "source": "Binance",
-      "as_of": "2026-10-12T21:19:35+01:00"
+      "as_of": "2026-10-12T21:22:05+01:00"
     },
     "ICP": {
-      "price": 3.263,
-      "change_pct": -2.451,
+      "price": 3.261,
+      "change_pct": -2.773,
       "symbol": "ICPUSDT",
       "currency": "USDT",
       "source": "Binance",
-      "as_of": "2026-10-12T21:19:36+01:00"
+      "as_of": "2026-10-12T21:22:06+01:00"
     },
     "IO": {
-      "price": null,
-      "error": "HTTP Error 404: Not Found"
+      "price": 0.1701,
+      "change_pct": -7.1,
+      "symbol": "IOUSDT",
+      "currency": "USDT",
+      "source": "Binance",
+      "as_of": "2026-10-12T21:22:16+01:00"
     },
     "NATGAS": {
-      "price": 3.165,
-      "change_pct": -1.7080745341614956,
+      "price": 3.167,
+      "change_pct": -1.6459627329192663,
       "symbol": "NG=F",
       "currency": "USD",
       "source": "Yahoo Finance",
-      "as_of": "2026-10-12T21:09:42+01:00"
+      "as_of": "2026-10-12T21:11:59+01:00"
     },
     "NBIS": {
       "price": 210.06,
@@ -94,32 +90,32 @@
       "as_of": "2026-10-12T21:00:01+01:00"
     },
     "NEAR": {
-      "price": 49.93,
-      "change_pct": 0.06012024048096421,
-      "symbol": "NEAR",
-      "currency": "USD",
-      "source": "Yahoo Finance",
-      "as_of": "2026-10-12T20:59:59+01:00"
+      "price": 5.515,
+      "change_pct": -2.562,
+      "symbol": "NEARUSDT",
+      "currency": "USDT",
+      "source": "Binance",
+      "as_of": "2026-10-12T21:22:17+01:00"
     },
     "PHA": {
-      "price": null,
-      "error": "HTTP Error 404: Not Found"
+      "price": 0.0582,
+      "change_pct": -1.188,
+      "symbol": "PHAUSDT",
+      "currency": "USDT",
+      "source": "Binance",
+      "as_of": "2026-10-12T21:22:27+01:00"
     },
     "Q": {
-      "price": 123.21,
-      "change_pct": -2.677725118483413,
-      "symbol": "Q",
-      "currency": "USD",
-      "source": "Yahoo Finance",
-      "as_of": "2026-10-12T21:00:02+01:00"
+      "price": null,
+      "error": "no matching price: Yahoo Finance 123.21 far from entry 0.033055; binance: HTTP Error 400: Bad Request; Yahoo Finance 123"
     },
     "QNT": {
-      "price": 39.52,
-      "change_pct": -4.309927360774804,
-      "symbol": "QNT",
-      "currency": "USD",
-      "source": "Yahoo Finance",
-      "as_of": "2026-10-12T21:00:00+01:00"
+      "price": 230.04,
+      "change_pct": -4.698,
+      "symbol": "QNTUSDT",
+      "currency": "USDT",
+      "source": "Binance",
+      "as_of": "2026-10-12T21:22:31+01:00"
     },
     "QQQ": {
       "price": 746.04,
@@ -131,31 +127,35 @@
     },
     "QQQ/SPY": {
       "price": null,
-      "error": "HTTP Error 404: Not Found"
+      "error": "no matching price: default: HTTP Error 404: Not Found; binance: HTTP Error 400: Bad Request; yahoo: HTTP Error 404: Not "
     },
     "RSR": {
-      "price": null,
-      "error": "no price"
+      "price": 0.002287,
+      "change_pct": 39.792,
+      "symbol": "RSRUSDT",
+      "currency": "USDT",
+      "source": "Binance",
+      "as_of": "2026-10-12T21:22:53+01:00"
     },
     "S": {
-      "price": 25.66,
-      "change_pct": -2.3220403502093623,
-      "symbol": "S",
-      "currency": "USD",
-      "source": "Yahoo Finance",
-      "as_of": "2026-10-12T21:00:02+01:00"
+      "price": 0.05628,
+      "change_pct": -13.215,
+      "symbol": "SUSDT",
+      "currency": "USDT",
+      "source": "Binance",
+      "as_of": "2026-10-12T21:22:54+01:00"
     },
     "SEI": {
-      "price": 79.28,
-      "change_pct": 3.769633507853397,
-      "symbol": "SEI",
-      "currency": "USD",
-      "source": "Yahoo Finance",
-      "as_of": "2026-10-12T21:00:02+01:00"
+      "price": 0.06623,
+      "change_pct": -5.588,
+      "symbol": "SEIUSDT",
+      "currency": "USDT",
+      "source": "Binance",
+      "as_of": "2026-10-12T21:22:56+01:00"
     },
     "STBL": {
       "price": null,
-      "error": "HTTP Error 404: Not Found"
+      "error": "no matching price: default: HTTP Error 404: Not Found; binance: HTTP Error 400: Bad Request; yahoo: HTTP Error 404: Not "
     },
     "TSLA": {
       "price": 378.03,
@@ -174,20 +174,20 @@
       "as_of": "2026-10-12T21:00:00+01:00"
     },
     "XAUUSD": {
-      "price": 4193.7,
-      "change_pct": -0.5360149894457312,
+      "price": 4193.8,
+      "change_pct": -0.5336432417048123,
       "symbol": "GC=F",
       "currency": "USD",
       "source": "Yahoo Finance",
-      "as_of": "2026-10-12T21:10:12+01:00"
+      "as_of": "2026-10-12T21:13:15+01:00"
     },
     "XMR": {
-      "price": 538.0,
-      "change_pct": 0.18808543920743231,
+      "price": 537.48,
+      "change_pct": 0.09124937149667761,
       "symbol": "XMRUSD",
       "currency": "USD",
       "source": "Kraken",
-      "as_of": "2026-10-12T21:20:15+01:00"
+      "as_of": "2026-10-12T21:23:17+01:00"
     }
   },
   "ok": [
@@ -195,17 +195,17 @@
     "APE",
     "APP",
     "BTC",
-    "BTR",
-    "BULL",
     "COIN",
     "ETH",
     "ICP",
+    "IO",
     "NATGAS",
     "NBIS",
     "NEAR",
-    "Q",
+    "PHA",
     "QNT",
     "QQQ",
+    "RSR",
     "S",
     "SEI",
     "TSLA",
@@ -214,10 +214,10 @@
     "XMR"
   ],
   "failed": [
-    "IO",
-    "PHA",
+    "BTR",
+    "BULL",
+    "Q",
     "QQQ/SPY",
-    "RSR",
     "STBL"
   ]
 }

@@ -17,10 +17,11 @@
  const rp=$('#rp');if(rp)rp.style.display='none';
  const ind=document.createElement('span');ind.className='live';ind.innerHTML='<span class="live-dot"></span><span class="live-text">Live</span>';
  (rp?rp.parentNode:$('#signals')).appendChild(ind);
- let lastOk=null;
+ let lastOk=Date.now();
  function tickLabel(){const at=PRICES._at?new Date(PRICES._at):null;const m=at?Math.max(0,Math.round((Date.now()-at)/60000)):null;
-  ind.querySelector('.live-text').textContent=m==null?'Live · waiting for data':`Live · updated ${m<1?'just now':m+'m ago'}`;
-  ind.querySelector('.live-dot').style.background=lastOk&&Date.now()-lastOk<150000?'':'#f5b73b'}
+  const fresh=!!(lastOk&&Date.now()-lastOk<150000&&m!=null&&m<=20);
+  ind.querySelector('.live-text').textContent=m==null?'Delayed · waiting for data':`${fresh?'Live':'Delayed'} · updated ${m<1?'just now':m+'m ago'}`;
+  ind.querySelector('.live-dot').style.background=fresh?'':'#f5b73b';ind.classList.toggle('stale',!fresh)}
  async function poll(){try{await loadLedger();await loadPrices();lastOk=Date.now()}catch(e){}renderTicker();tickLabel();saveSeen()}
  // first poll: if no stored ids yet, mark everything seen before rendering
  if(seen0===null){window.isNew=()=>false}

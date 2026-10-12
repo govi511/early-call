@@ -32,7 +32,7 @@ $('#showspam').onchange=e=>{localStorage.setItem('ec-showspam',e.target.checked?
 $('#simple').onchange=e=>{localStorage.setItem('ec-simple',e.target.checked?'1':'0');renderSignals()};
 function loadLedger(){return fetch('data/ledger.json?t='+Date.now()).then(r=>r.json()).then(d=>{LEDGER=d;
  $('#gen').textContent='Ledger '+d.generated_at.replace('T',' ').slice(0,16);loadPrices();
- const acc={};d.calls.forEach(c=>{const a=acc[c.account]??={hit:0,stop:0,other:0,atf:0};c.status==='hit_target'?a.hit++:c.status==='stopped'?a.stop++:a.other++;if(c.after_the_fact)a.atf++});
+ const acc={};d.calls.filter(countsForRecord).forEach(c=>{const a=acc[c.account]??={hit:0,stop:0,other:0,atf:0};c.status==='hit_target'?a.hit++:c.status==='stopped'?a.stop++:a.other++;if(c.after_the_fact)a.atf++});
  const rk=a=>{const r=a.hit+a.stop;return r>=MIN_CLOSED?a.hit/r:-1};let rank=0;
  $('#lb').innerHTML=Object.entries(acc).sort((x,y)=>rk(y[1])-rk(x[1])||(y[1].hit+y[1].stop)-(x[1].hit+x[1].stop)).map(([n,a])=>{const r=a.hit+a.stop,ranked=r>=MIN_CLOSED;return`<tr><td>${ranked?`<b>#${++rank}</b> `:'<span class="mut">–</span> '}<b>${esc(n)}</b></td><td>${winrateHTML(n)}</td><td class="up">${a.hit}</td><td class="dn">${a.stop}</td><td>${a.other}</td><td>${a.atf}</td></tr>`}).join('');
 })}

@@ -4,7 +4,9 @@ Unattended-safe: retries, timeouts, lock file, atomic writes, keeps last good pr
 Exit code 0 = ok (even if some prices failed), 1 = ledger could not be read, 2 = another run in progress."""
 import csv, json, os, sys, time, datetime, urllib.request, urllib.parse, fcntl, tempfile
 HERE = os.path.dirname(os.path.abspath(__file__)); DATA = os.path.join(HERE, "data")
-SRC = sys.argv[1] if len(sys.argv) > 1 else "/cursor/stores/store-9d60204b-cf80-460e-a058-55dafdd15548/call-ledger.csv"
+ARGS = [a for a in sys.argv[1:] if not a.startswith("--")]
+LEDGER_ONLY = "--ledger-only" in sys.argv
+SRC = ARGS[0] if ARGS else "/cursor/stores/store-9d60204b-cf80-460e-a058-55dafdd15548/call-ledger.csv"
 CRYPTO = {"BTC","ETH","SOL","XRP","BNB","DOGE","ADA","AVAX","LINK","LTC","APE","ICP","PAXG"}
 KRAKEN = {"XMR":"XMRUSD"}  # Binance XMR pair is delisted/stale
 YAHOO_MAP = {"NATGAS":"NG=F","NG":"NG=F","GOLD":"GC=F","XAU":"GC=F","XAUUSD":"GC=F","XAGUSD":"SI=F","SILVER":"SI=F","OIL":"CL=F","WTI":"CL=F","BRENT":"BZ=F","SPX":"^GSPC","NDX":"^NDX"}
@@ -22,16 +24,21 @@ def get(url, tries=3):
         except Exception as e:
             err = e; time.sleep(1.5 * (i + 1))
     raise err
-def fetch(asset):
+def fetch(asset, force=None):
     a = asset.upper()
+    if force == 'yahoo': return _yahoo(a)
+    if force == 'binance': return _binance(a)
     if a in KRAKEN:
         r = get(f"https://api.kraken.com/0/public/Ticker?pair={KRAKEN[a]}")
         if r.get("error"): raise RuntimeError(r["error"])
         t = next(iter(r["result"].values())); p, o = float(t["c"][0]), float(t["o"])
         return {"price": p, "change_pct": (p - o) / o * 100, "symbol": KRAKEN[a], "currency": "USD", "source": "Kraken", "as_of": now()}
-    if a in CRYPTO:
-        p = get(f"https://api.binance.com/api/v3/ticker/24hr?symbol={a}USDT")
+    if a in CRYPTO: return _binance(a)
+    return _yahoo(a)
+def _binance(a):
+        p = get(f"https://api.binance.com/api/v3/ticker/24hr?symbol={a}USDT", tries=1)
         return {"price": float(p["lastPrice"]), "change_pct": float(p["priceChangePercent"]), "symbol": a+"USDT", "currency": "USDT", "source": "Binance", "as_of": now()}
+def _yahoo(a):
     sym = YAHOO_MAP.get(a, a)
     m = get("https://query1.finance.yahoo.com/v8/finance/chart/" + urllib.parse.quote(sym) + "?range=1d&interval=5m")["chart"]["result"][0]["meta"]
     p = m.get("regularMarketPrice")
@@ -51,7 +58,7 @@ def candles(asset):
             r = get(f"https://api.kraken.com/0/public/OHLC?pair={KRAKEN[a]}&interval={km}")
             rows = next(v for kk, v in r["result"].items() if kk != "last")[-lim:]
             out[k] = [[int(x[0]), r4(float(x[1])), r4(float(x[2])), r4(float(x[3])), r4(float(x[4]))] for x in rows]
-        elif a in CRYPTO:
+        elif SOURCE_USED.get(a, 'binance' if a in CRYPTO else 'yahoo') == 'binance':
             rows = get(f"https://api.binance.com/api/v3/klines?symbol={a}USDT&interval={bi}&limit={lim}")
             out[k] = [[int(x[0]) // 1000, r4(float(x[1])), r4(float(x[2])), r4(float(x[3])), r4(float(x[4]))] for x in rows]
         else:
@@ -70,6 +77,47 @@ def write_candles(assets):
             os.chmod(tmp, 0o644); os.replace(tmp, os.path.join(d, a + ".json"))
         except Exception as e: bad.append(a)
     log(f"candles ok={len(assets)-len(bad)} failed={bad}")
+def fingerprint(r):
+    """asset+direction+entry+stop+target, numbers only (labels like '(1h close)' ignored)"""
+    import re
+    n = lambda v: ",".join(re.findall(r"\d+(?:\.\d+)?", v or "")) or (v or "").strip().lower()
+    return "|".join([r.get("asset","").upper(), r.get("direction","").lower().split()[0] if r.get("direction") else "", n(r.get("entry")), n(r.get("stop")), n(r.get("target"))])
+def mark_clusters(rows):
+    """Same fingerprint from different accounts within 48h: all but earliest -> copy_of; all accounts -> spam_farm."""
+    def ts(r):
+        try: return datetime.datetime.strptime(r.get("logged_at_lisbon",""), "%Y-%m-%d %H:%M")
+        except ValueError: return None
+    groups = {}
+    for r in rows:
+        r["copy_of"] = ""; r["spam_farm"] = False
+        if not any(c.isdigit() for c in r.get("entry","")): continue  # no numeric levels -> can't fingerprint
+        groups.setdefault(fingerprint(r), []).append(r)
+    clusters = []
+    for fp, g in groups.items():
+        g = sorted(g, key=lambda r: (ts(r) or datetime.datetime.max, int(r["id"]) if r["id"].isdigit() else 0))
+        first = g[0]; t0 = ts(first)
+        members = [r for r in g[1:] if r["account"] != first["account"] and (t0 is None or ts(r) is None or ts(r) - t0 <= datetime.timedelta(hours=48))]
+        if not members: continue
+        for r in members: r["copy_of"] = first["id"]
+        accts = {first["account"], *(r["account"] for r in members)}
+        for r in [first, *members]: r["spam_farm"] = True
+        clusters.append({"fingerprint": fp, "first": first["id"], "copies": [r["id"] for r in members], "accounts": sorted(accts)})
+    return clusters
+SOURCE_USED = {}
+def pick(asset, ref):
+    """Fetch price; if a ledger entry level exists, the price must be within 3x of it (catches ticker clashes,
+    e.g. NEAR token vs NEAR stock). Tries the default source, then the other one; otherwise raises -> n/a."""
+    a = asset.upper(); tried = []
+    order = [None, 'binance', 'yahoo'] if a not in KRAKEN else [None]
+    for src in order:
+        try: p = fetch(a, src)
+        except Exception as e: tried.append(f"{src or 'default'}: {str(e)[:40]}"); continue
+        if ref is None or ref <= 0 or 1/3 <= p["price"] / ref <= 3:
+            SOURCE_USED[a] = 'kraken' if p["source"] == "Kraken" else 'binance' if p["source"] == "Binance" else 'yahoo'
+            return p
+        tried.append(f"{p['source']} {p['price']} far from entry {ref:g}")
+        if ref is None: break
+    raise RuntimeError("no matching price: " + "; ".join(tried))
 def main():
     os.makedirs(DATA, exist_ok=True)
     lock = open(os.path.join(DATA, ".refresh.lock"), "w")
@@ -87,21 +135,38 @@ def main():
                 rows.append(r)
     except Exception as e:
         log(f"ERROR reading ledger {SRC}: {e}"); return 1
-    write_json(os.path.join(DATA, "ledger.json"), {"generated_at": now(), "calls": rows}); log(f"ledger: {len(rows)} calls")
+    clusters = mark_clusters(rows)
+    farm = sorted({a for c in clusters for a in c["accounts"]})
+    out = {"generated_at": now(), "calls": rows, "clusters": clusters, "spam_farm_accounts": farm}
+    lp = os.path.join(DATA, "ledger.json")
+    try:
+        old = json.load(open(lp)); same = {k: v for k, v in old.items() if k != "generated_at"} == {k: v for k, v in out.items() if k != "generated_at"}
+    except Exception: same = False
+    if not same: write_json(lp, out)
+    log(f"ledger: {len(rows)} calls, {len(clusters)} copy clusters, farm={farm}{' (unchanged)' if same else ''}")
+    if LEDGER_ONLY: return 0
     try: watch = json.load(open(os.path.join(DATA, "watchlist.json")))
     except Exception: watch = []
     ppath = os.path.join(DATA, "prices.json")
     try: old = json.load(open(ppath)).get("prices", {})
     except Exception: old = {}
+    import re
+    refs = {}
+    for r in rows:
+        n = [float(x) for x in re.findall(r"\d+(?:\.\d+)?", re.sub(r"\(.*?\)", "", r.get("entry", "")))]
+        if n and r.get("asset"): refs.setdefault(r["asset"].upper(), sum(n[:2]) / len(n[:2]))
     prices, ok, bad = {}, [], []
     for asset in sorted({r["asset"].upper() for r in rows if r.get("asset")} | {w.upper() for w in watch}):
-        try: prices[asset] = fetch(asset); ok.append(asset)
+        try:
+            prices[asset] = pick(asset, refs.get(asset)); ok.append(asset)
         except Exception as e:
             prev = old.get(asset) or {}
+            ref = refs.get(asset)
+            if prev.get("price") is not None and ref and not (1/3 <= prev["price"] / ref <= 3): prev = {}  # don't keep a mismatched old price
             prices[asset] = {**prev, "stale": prev.get("price") is not None, "error": str(e)[:120]} if prev.get("price") is not None else {"price": None, "error": str(e)[:120]}
             bad.append(asset)
     write_json(ppath, {"fetched_at": now(), "prices": prices, "ok": ok, "failed": bad})
     log(f"prices ok={ok} failed={bad}")
-    write_candles(sorted({r["asset"].upper() for r in rows if r.get("asset")}))
+    write_candles(sorted(a for a in {r["asset"].upper() for r in rows if r.get("asset")} if prices.get(a, {}).get("price") is not None and not prices[a].get("stale")))
     return 0
 if __name__ == "__main__": sys.exit(main())

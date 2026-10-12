@@ -133,3 +133,7 @@ main{padding-bottom:96px!important}
 @media(min-width:900px){.more-sheet{left:50%;right:auto;width:480px;margin-left:-240px;padding-bottom:96px}}
 .tabbar{flex-direction:row;z-index:31}
 .winrate.new b{color:var(--mut);font-style:italic}
+/* freeze fixes: kill old sidebar leftovers, keep tabbar off content */
+@media(min-width:900px){.ticker{margin-left:0!important}main{padding-bottom:110px!important}}
+footer{margin-bottom:90px}
+.spark svg text{font-family:inherit;paint-order:stroke;stroke:#0d0d0d;stroke-width:3px}

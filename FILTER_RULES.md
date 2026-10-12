@@ -22,8 +22,11 @@ Also filtered if the ledger's `after_the_fact` flag is true.
 ## Duplicates
 If another account posted the same **asset + direction + entry** (entry compared with whitespace removed) **earlier in the ledger**, the later copy is filtered as `duplicate of @first`. The earliest poster is kept (unless another rule hits it).
 
-## Not affected
-Leaderboard win rates still count every resolved call. Filtering is display-only; the ledger isn't changed.
+## Copy-paste clusters (computed in `refresh.py` when building ledger.json)
+Fingerprint = asset + direction + numbers in entry/stop/target (labels ignored). Same fingerprint from **different accounts within 48h** of the earliest post → every later post gets `copy_of: <earliest id>`, and every account in the cluster is listed in `spam_farm_accounts`. All calls from spam-farm accounts are filtered (`spam-farm account`), including the earliest.
+
+## Where spam is excluded
+Filtered calls are excluded from the summary strip, leaderboard, win rates and hype meter. Rows whose notes contain `early-signal` are additionally excluded from win rates and the leaderboard (they are not trade calls). The ledger CSV itself is never changed.
 
 ## Badges
 - Source `<span class="src …">`: `watchlist` = Following (notes "source following"/"watchlist"), `x` = X search ("source discovery"), `filing` = Early signal ("early-signal", SEC/filing/13F/Form 4).
