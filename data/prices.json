@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-12T22:35:03+01:00",
+  "fetched_at": "2026-10-12T22:59:16+01:00",
   "prices": {
     "AFRM": {
       "price": 78.63,
@@ -12,12 +12,12 @@
       "error": "no matching price: default: HTTP Error 429: Too Many Requests; binance: HTTP Error 400: Bad Request; alt: HTTP Error 400"
     },
     "APE": {
-      "price": 0.1522,
-      "change_pct": -2.059,
+      "price": 0.1496,
+      "change_pct": -4.287,
       "symbol": "APEUSDT",
       "currency": "USDT",
       "source": "Binance",
-      "as_of": "2026-10-12T22:29:17+01:00"
+      "as_of": "2026-10-12T22:53:27+01:00"
     },
     "APP": {
       "price": 270.87,
@@ -30,20 +30,20 @@
       "error": "no matching price: default: HTTP Error 429: Too Many Requests; binance: HTTP Error 400: Bad Request; alt: HTTP Error 400"
     },
     "BTC": {
-      "price": 82929.48,
-      "change_pct": -0.618,
+      "price": 82694.0,
+      "change_pct": -1.01,
       "symbol": "BTCUSDT",
       "currency": "USDT",
       "source": "Binance",
-      "as_of": "2026-10-12T22:29:48+01:00"
+      "as_of": "2026-10-12T22:53:58+01:00"
     },
     "BTR": {
-      "price": 0.05071,
-      "change_pct": 1.6028851933480164,
+      "price": 0.0503,
+      "change_pct": 0.7814065317571518,
       "symbol": "BTRUSD",
       "currency": "USD",
       "source": "Kraken",
-      "as_of": "2026-10-12T22:29:53+01:00"
+      "as_of": "2026-10-12T22:54:03+01:00"
     },
     "BULL": {
       "price": null,
@@ -58,43 +58,43 @@
       "as_of": "2026-10-12T21:00:02+01:00"
     },
     "CRV": {
-      "price": 0.3583,
-      "change_pct": -3.084,
+      "price": 0.3514,
+      "change_pct": -5.942,
       "symbol": "CRVUSDT",
       "currency": "USDT",
       "source": "Binance",
-      "as_of": "2026-10-12T22:30:38+01:00"
+      "as_of": "2026-10-12T22:54:25+01:00"
     },
     "ETH": {
-      "price": 2514.33,
-      "change_pct": -0.371,
+      "price": 2492.89,
+      "change_pct": -1.445,
       "symbol": "ETHUSDT",
       "currency": "USDT",
       "source": "Binance",
-      "as_of": "2026-10-12T22:30:39+01:00"
+      "as_of": "2026-10-12T22:54:25+01:00"
     },
     "FED": {
       "price": null,
       "nonpriceable": true,
       "note": "not a tradable asset",
       "source": "not a tradable asset",
-      "as_of": "2026-10-12T22:30:39+01:00"
+      "as_of": "2026-10-12T22:54:25+01:00"
     },
     "ICP": {
-      "price": 3.244,
-      "change_pct": -4.84,
+      "price": 3.177,
+      "change_pct": -8.365,
       "symbol": "ICPUSDT",
       "currency": "USDT",
       "source": "Binance",
-      "as_of": "2026-10-12T22:30:40+01:00"
+      "as_of": "2026-10-12T22:54:26+01:00"
     },
     "IO": {
-      "price": 0.1665,
-      "change_pct": -5.344,
+      "price": 0.1636,
+      "change_pct": -7.935,
       "symbol": "IOUSDT",
       "currency": "USDT",
       "source": "Binance",
-      "as_of": "2026-10-12T22:30:41+01:00"
+      "as_of": "2026-10-12T22:54:27+01:00"
     },
     "NATGAS": {
       "price": 3.173,
@@ -117,12 +117,12 @@
       "error": "no matching price: default: HTTP Error 429: Too Many Requests; binance: HTTP Error 400: Bad Request; alt: HTTP Error 400"
     },
     "NEAR": {
-      "price": 5.387,
-      "change_pct": -4.129,
+      "price": 5.151,
+      "change_pct": -10.167,
       "symbol": "NEARUSDT",
       "currency": "USDT",
       "source": "Binance",
-      "as_of": "2026-10-12T22:31:43+01:00"
+      "as_of": "2026-10-12T22:55:29+01:00"
     },
     "NVDA": {
       "price": 226.32,
@@ -135,28 +135,28 @@
       "error": "no matching price: default: HTTP Error 429: Too Many Requests; binance: HTTP Error 400: Bad Request; alt: HTTP Error 400"
     },
     "PHA": {
-      "price": 0.0569,
-      "change_pct": -3.396,
+      "price": 0.0564,
+      "change_pct": -5.051,
       "symbol": "PHAUSDT",
       "currency": "USDT",
       "source": "Binance",
-      "as_of": "2026-10-12T22:32:14+01:00"
+      "as_of": "2026-10-12T22:56:00+01:00"
     },
     "Q": {
-      "price": 0.030101,
-      "change_pct": -0.18569486354743672,
+      "price": 0.029748,
+      "change_pct": -1.3562356998375158,
       "symbol": "QUSD",
       "currency": "USD",
       "source": "Kraken",
-      "as_of": "2026-10-12T22:32:19+01:00"
+      "as_of": "2026-10-12T22:56:05+01:00"
     },
     "QNT": {
-      "price": 228.79,
-      "change_pct": -4.103,
+      "price": 226.92,
+      "change_pct": -5.233,
       "symbol": "QNTUSDT",
       "currency": "USDT",
       "source": "Binance",
-      "as_of": "2026-10-12T22:32:20+01:00"
+      "as_of": "2026-10-12T22:56:06+01:00"
     },
     "QQQ": {
       "price": 746.04,
@@ -164,7 +164,9 @@
       "symbol": "QQQ",
       "currency": "USD",
       "source": "Yahoo Finance",
-      "as_of": "2026-10-12T21:00:00+01:00"
+      "as_of": "2026-10-12T21:00:00+01:00",
+      "stale": true,
+      "error": "no matching price: default: HTTP Error 429: Too Many Requests; binance: HTTP Error 400: Bad Request; alt: HTTP Error 400"
     },
     "QQQ/SPY": {
       "price": 746.04,
@@ -172,31 +174,33 @@
       "symbol": "QQQ (from QQQ/SPY)",
       "currency": "USD",
       "source": "Yahoo Finance",
-      "as_of": "2026-10-12T21:00:00+01:00"
+      "as_of": "2026-10-12T21:00:00+01:00",
+      "stale": true,
+      "error": "no matching price: default: HTTP Error 429: Too Many Requests; binance: HTTP Error 400: Bad Request; alt: HTTP Error 400"
     },
     "RSR": {
-      "price": 0.00224,
-      "change_pct": 36.087,
+      "price": 0.002202,
+      "change_pct": 33.374,
       "symbol": "RSRUSDT",
       "currency": "USDT",
       "source": "Binance",
-      "as_of": "2026-10-12T22:32:55+01:00"
+      "as_of": "2026-10-12T22:57:08+01:00"
     },
     "S": {
-      "price": 0.05717,
-      "change_pct": -7.131,
+      "price": 0.05652,
+      "change_pct": -8.558,
       "symbol": "SUSDT",
       "currency": "USDT",
       "source": "Binance",
-      "as_of": "2026-10-12T22:32:56+01:00"
+      "as_of": "2026-10-12T22:57:09+01:00"
     },
     "SEI": {
-      "price": 0.06577,
-      "change_pct": -5.53,
+      "price": 0.06468,
+      "change_pct": -7.349,
       "symbol": "SEIUSDT",
       "currency": "USDT",
       "source": "Binance",
-      "as_of": "2026-10-12T22:32:57+01:00"
+      "as_of": "2026-10-12T22:57:09+01:00"
     },
     "SPY": {
       "price": 778.1,
@@ -209,12 +213,12 @@
       "error": "no matching price: default: HTTP Error 429: Too Many Requests; binance: HTTP Error 400: Bad Request; alt: HTTP Error 400"
     },
     "STBL": {
-      "price": 0.022997,
-      "change_pct": -1.6928140896849506,
+      "price": 0.022723,
+      "change_pct": -2.8641046466891824,
       "symbol": "STBLUSD",
       "currency": "USD",
       "source": "Kraken",
-      "as_of": "2026-10-12T22:33:32+01:00"
+      "as_of": "2026-10-12T22:57:45+01:00"
     },
     "TSLA": {
       "price": 378.03,
@@ -247,12 +251,12 @@
       "error": "no matching price: default: HTTP Error 429: Too Many Requests; binance: HTTP Error 400: Bad Request; alt: HTTP Error 400"
     },
     "XMR": {
-      "price": 538.46,
-      "change_pct": 0.27374811449003283,
+      "price": 534.77,
+      "change_pct": -0.41341551984208785,
       "symbol": "XMRUSD",
       "currency": "USD",
       "source": "Kraken",
-      "as_of": "2026-10-12T22:35:03+01:00"
+      "as_of": "2026-10-12T22:59:16+01:00"
     }
   },
   "ok": [
@@ -269,7 +273,6 @@
     "PHA",
     "Q",
     "QNT",
-    "QQQ",
     "RSR",
     "S",
     "SEI",
@@ -284,6 +287,7 @@
     "NATGAS",
     "NBIS",
     "NVDA",
+    "QQQ",
     "SPY",
     "TSLA",
     "TXG",
