@@ -1,0 +1,48 @@
+{
+  "fetched_at": "2026-10-12T20:32:11+01:00",
+  "prices": {
+    "BTC": {
+      "price": 82713.72,
+      "symbol": "BTCUSDT",
+      "currency": "USDT",
+      "source": "Binance",
+      "as_of": "2026-10-12T20:32:10+01:00"
+    },
+    "COIN": {
+      "price": 178.24,
+      "symbol": "COIN",
+      "currency": "USD",
+      "source": "Yahoo Finance",
+      "as_of": "2026-10-12T20:32:07+01:00"
+    },
+    "ETH": {
+      "price": 2519.1,
+      "symbol": "ETHUSDT",
+      "currency": "USDT",
+      "source": "Binance",
+      "as_of": "2026-10-12T20:32:11+01:00"
+    },
+    "NATGAS": {
+      "price": 3.169,
+      "symbol": "NG=F",
+      "currency": "USD",
+      "source": "Yahoo Finance",
+      "as_of": "2026-10-12T20:21:48+01:00"
+    },
+    "TSLA": {
+      "price": 377.935,
+      "symbol": "TSLA",
+      "currency": "USD",
+      "source": "Yahoo Finance",
+      "as_of": "2026-10-12T20:32:10+01:00"
+    }
+  },
+  "ok": [
+    "BTC",
+    "COIN",
+    "ETH",
+    "NATGAS",
+    "TSLA"
+  ],
+  "failed": []
+}

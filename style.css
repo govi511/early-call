@@ -1,0 +1,36 @@
+:root{--bg:#0b0e13;--card:#151a22;--card2:#1c232d;--txt:#e8edf3;--mut:#8a96a6;--acc:#2f9bff;--up:#21c37a;--dn:#ff4d5e;--warn:#f5b73b;--b:#232b36}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--txt);font:15px/1.45 -apple-system,Segoe UI,Roboto,Inter,sans-serif}
+header{position:sticky;top:0;z-index:5;background:rgba(11,14,19,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--b)}
+.top{display:flex;align-items:center;justify-content:space-between;padding:14px 16px 6px;max-width:1100px;margin:auto}
+.logo{font-weight:800;font-size:20px;letter-spacing:-.3px}.logo span{color:var(--acc)}.sub{color:var(--mut);font-size:12px}
+nav{display:flex;gap:4px;overflow-x:auto;padding:6px 12px 10px;max-width:1100px;margin:auto;scrollbar-width:none}
+nav button{flex:0 0 auto;background:var(--card);color:var(--mut);border:1px solid var(--b);border-radius:999px;padding:7px 14px;font-size:13px;cursor:pointer}
+nav button.on{background:var(--acc);color:#fff;border-color:var(--acc)}
+main{max-width:1100px;margin:auto;padding:16px}section{display:none}section.on{display:block}
+h2{font-size:18px;margin:4px 0 12px}.grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(300px,1fr))}
+.card{background:var(--card);border:1px solid var(--b);border-radius:14px;padding:14px}
+.row{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.badge{font-size:11px;font-weight:700;padding:3px 8px;border-radius:6px;text-transform:uppercase}
+.long{background:rgba(33,195,122,.15);color:var(--up)}.short{background:rgba(255,77,94,.15);color:var(--dn)}
+.st-open{color:var(--acc)}.st-hit_target{color:var(--up)}.st-stopped{color:var(--dn)}.st-unclear{color:var(--warn)}
+.asset{font-size:19px;font-weight:700}.lv{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin:10px 0}
+.lv div{background:var(--card2);border-radius:8px;padding:6px 8px}.lv small{display:block;color:var(--mut);font-size:11px}
+.mut{color:var(--mut);font-size:12px}a{color:var(--acc);text-decoration:none}
+.tag{background:var(--card2);color:var(--mut);font-size:11px;padding:2px 7px;border-radius:6px}
+table{width:100%;border-collapse:collapse}td,th{padding:9px 6px;border-bottom:1px solid var(--b);text-align:left;font-size:14px}th{color:var(--mut);font-weight:500;font-size:12px}
+.warn{background:rgba(245,183,59,.12);border:1px solid rgba(245,183,59,.4);color:var(--warn);border-radius:12px;padding:10px 12px;margin:12px 0;font-size:14px}
+input,select{background:var(--card2);color:var(--txt);border:1px solid var(--b);border-radius:8px;padding:9px;font-size:14px;width:100%}
+label{font-size:12px;color:var(--mut)}.form{display:grid;gap:8px;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));align-items:end}
+.btn{background:var(--acc);color:#fff;border:0;border-radius:8px;padding:10px 14px;font-weight:600;cursor:pointer}.btn.g{background:var(--card2);color:var(--txt)}
+.big{font-size:28px;font-weight:800}.up{color:var(--up)}.dn{color:var(--dn)}
+.two{display:grid;gap:12px;grid-template-columns:1fr}@media(min-width:800px){.two{grid-template-columns:1fr 1fr}}
+.chartbox{position:relative;height:260px}
+footer{max-width:1100px;margin:20px auto;padding:16px;color:var(--mut);font-size:12px;border-top:1px solid var(--b)}
+.sum{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-bottom:12px}@media(min-width:800px){.sum{grid-template-columns:repeat(4,1fr)}}
+.sum div{background:var(--card);border:1px solid var(--b);border-radius:12px;padding:10px}.sum small{display:block;color:var(--mut);font-size:11px}.sum b{font-size:16px}
+.bar{position:relative;height:8px;border-radius:4px;background:linear-gradient(90deg,var(--dn),#3a4350 50%,var(--up))}
+.bar i{position:absolute;top:-4px;width:4px;height:16px;margin-left:-2px;background:#fff;border-radius:2px;box-shadow:0 0 6px #fff8}
+.card{overflow-x:auto}
+.meter{display:block;height:8px;border-radius:4px;background:var(--card2);overflow:hidden}.meter i{display:block;height:100%;border-radius:4px}
+header{padding-top:env(safe-area-inset-top)}footer{padding-bottom:calc(16px + env(safe-area-inset-bottom))}
+input,select,.btn,nav button{min-height:40px}
