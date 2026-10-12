@@ -44,16 +44,6 @@
     "source": "Yahoo Finance (last close)",
     "at": "2026-10-12 21:07"
   },
-  "47|STBL|2026-10-12 21:07": {
-    "price": null,
-    "source": "unavailable",
-    "at": "2026-10-12 21:07"
-  },
-  "48|QQQ/SPY|2026-10-12 21:07": {
-    "price": null,
-    "source": "unavailable",
-    "at": "2026-10-12 21:07"
-  },
   "49|NVDA|2026-10-12 21:22": {
     "price": 226.32000732421875,
     "source": "Yahoo Finance (last close)",
@@ -76,12 +66,17 @@
   },
   "54|FED|2026-10-12 21:54": {
     "price": null,
-    "source": "unavailable",
+    "source": "not a tradable asset",
     "at": "2026-10-12 21:54"
   },
   "52|CRV|2026-10-12 20:48": {
     "price": 0.3488,
     "source": "Binance",
     "at": "2026-10-12 20:48"
+  },
+  "47|STBL|2026-10-12 21:07": {
+    "price": 0.022895,
+    "source": "Kraken",
+    "at": "2026-10-12 21:07"
   }
 }

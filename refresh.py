@@ -7,7 +7,10 @@ HERE = os.path.dirname(os.path.abspath(__file__)); DATA = os.path.join(HERE, "da
 ARGS = [a for a in sys.argv[1:] if not a.startswith("--")]
 LEDGER_ONLY = "--ledger-only" in sys.argv
 SRC = ARGS[0] if ARGS else "/cursor/stores/store-9d60204b-cf80-460e-a058-55dafdd15548/call-ledger.csv"
-CRYPTO = {"BTC","ETH","SOL","XRP","BNB","DOGE","ADA","AVAX","LINK","LTC","APE","ICP","PAXG","CRV","SEI","NEAR","QNT","S","RSR","PHA","IO"}
+CRYPTO = {"BTC","ETH","SOL","XRP","BNB","DOGE","ADA","AVAX","LINK","LTC","APE","ICP","PAXG","CRV","SEI","NEAR","QNT","S","RSR","PHA","IO","STBL","BTR","Q","BULL"}
+ALIAS = {"QQQ/SPY":"QQQ","SPY/QQQ":"SPY"}  # multi-ticker calls -> first ticker
+NONPRICE = {"FED","FOMC","FEDFUNDS","RATES","CPI"}  # macro calls, not tradable assets
+NP_NOTE = "not a tradable asset"
 KRAKEN = {"XMR":"XMRUSD"}  # Binance XMR pair is delisted/stale
 YAHOO_MAP = {"NATGAS":"NG=F","NG":"NG=F","GOLD":"GC=F","XAU":"GC=F","XAUUSD":"GC=F","XAGUSD":"SI=F","SILVER":"SI=F","OIL":"CL=F","WTI":"CL=F","BRENT":"BZ=F","SPX":"^GSPC","NDX":"^NDX"}
 now = lambda: datetime.datetime.now().astimezone().isoformat(timespec="seconds")
@@ -24,8 +27,39 @@ def get(url, tries=3):
         except Exception as e:
             err = e; time.sleep(1.5 * (i + 1))
     raise err
+YH = ("https://query2.finance.yahoo.com", "https://query1.finance.yahoo.com")
+UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+def ychart(sym, qs):
+    err = None
+    for h in YH:
+        try:
+            req = urllib.request.Request(f"{h}/v8/finance/chart/{urllib.parse.quote(sym)}?{qs}", headers={"User-Agent": UA, "Accept": "application/json"})
+            with urllib.request.urlopen(req, timeout=10) as r: return json.loads(r.read())
+        except Exception as e: err = e
+    raise err
+def norm(asset):
+    a = asset.upper().strip()
+    if a in ALIAS: return ALIAS[a]
+    return a.split("/")[0] if "/" in a and not a.endswith("/USD") else a
+def kraken_pair(a):
+    """Kraken pair for a token (static map or discovered at runtime via public Ticker)."""
+    if a in KRAKEN: return KRAKEN[a]
+    r = get(f"https://api.kraken.com/0/public/Ticker?pair={a}USD", tries=1)
+    if r.get("error") or not r.get("result"): raise RuntimeError(f"kraken: {r.get('error')}")
+    KRAKEN[a] = next(iter(r["result"])); return KRAKEN[a]
+def _alt(a):
+    """Crypto fallback when Binance lacks the pair: Kraken, then Gate.io (public, no key)."""
+    try:
+        pair = kraken_pair(a); r = get(f"https://api.kraken.com/0/public/Ticker?pair={pair}", tries=1)
+        t = next(iter(r["result"].values())); p, o = float(t["c"][0]), float(t["o"])
+        if p > 0: return {"price": p, "change_pct": (p - o) / o * 100, "symbol": pair, "currency": "USD", "source": "Kraken", "as_of": now()}
+    except Exception: KRAKEN.pop(a, None)
+    t = get(f"https://api.gateio.ws/api/v4/spot/tickers?currency_pair={a}_USDT", tries=1)
+    if not isinstance(t, list) or not t or float(t[0]["last"]) <= 0: raise RuntimeError("no alt source")
+    return {"price": float(t[0]["last"]), "change_pct": float(t[0].get("change_percentage") or 0), "symbol": a+"_USDT", "currency": "USDT", "source": "Gate.io", "as_of": now()}
 def fetch(asset, force=None):
-    a = asset.upper()
+    a = norm(asset)
+    if force == 'alt': return _alt(a)
     if force == 'yahoo': return _yahoo(a)
     if force == 'binance': return _binance(a)
     if a in KRAKEN:
@@ -37,10 +71,11 @@ def fetch(asset, force=None):
     return _yahoo(a)
 def _binance(a):
         p = get(f"https://api.binance.com/api/v3/ticker/24hr?symbol={a}USDT", tries=1)
+        if float(p["lastPrice"]) <= 0: raise RuntimeError("binance pair dead (price 0)")
         return {"price": float(p["lastPrice"]), "change_pct": float(p["priceChangePercent"]), "symbol": a+"USDT", "currency": "USDT", "source": "Binance", "as_of": now()}
 def _yahoo(a):
     sym = YAHOO_MAP.get(a, a)
-    m = get("https://query1.finance.yahoo.com/v8/finance/chart/" + urllib.parse.quote(sym) + "?range=1d&interval=5m")["chart"]["result"][0]["meta"]
+    m = ychart(sym, "range=1d&interval=5m")["chart"]["result"][0]["meta"]
     p = m.get("regularMarketPrice")
     if p is None: raise RuntimeError("no price")
     pc = m.get("chartPreviousClose") or m.get("previousClose")
@@ -52,7 +87,7 @@ def _yahoo(a):
 RANGES = {"1D": ("15m", 96, "1d", "15m", 15), "1W": ("1h", 168, "5d", "60m", 60), "1M": ("4h", 180, "1mo", "1d", 240)}
 def r4(x): return float(f"{x:.6g}")
 def candles(asset):
-    a = asset.upper(); out = {}
+    a = norm(asset); out = {}
     for k, (bi, lim, yr, yi, km) in RANGES.items():
         if a in KRAKEN:
             r = get(f"https://api.kraken.com/0/public/OHLC?pair={KRAKEN[a]}&interval={km}")
@@ -63,13 +98,14 @@ def candles(asset):
             out[k] = [[int(x[0]) // 1000, r4(float(x[1])), r4(float(x[2])), r4(float(x[3])), r4(float(x[4]))] for x in rows]
         else:
             sym = YAHOO_MAP.get(a, a)
-            res = get("https://query1.finance.yahoo.com/v8/finance/chart/" + urllib.parse.quote(sym) + f"?range={yr}&interval={yi}")["chart"]["result"][0]
+            res = ychart(sym, f"range={yr}&interval={yi}")["chart"]["result"][0]
             q = res["indicators"]["quote"][0]
             out[k] = [[t, r4(o), r4(h), r4(l), r4(c)] for t, o, h, l, c in zip(res.get("timestamp", []), q["open"], q["high"], q["low"], q["close"]) if None not in (o, h, l, c)]
     return out
 def write_candles(assets):
     d = os.path.join(DATA, "candles"); os.makedirs(d, exist_ok=True); bad = []
     for a in assets:
+        if "/" in a: continue  # alias like QQQ/SPY: candles live under the mapped ticker
         try:
             c = candles(a)
             fd, tmp = tempfile.mkstemp(dir=d, suffix=".tmp")
@@ -118,21 +154,29 @@ def _ts_utc(r):
         return int(datetime.datetime.strptime(r["logged_at_lisbon"], "%Y-%m-%d %H:%M").replace(tzinfo=ZoneInfo("Europe/Lisbon")).timestamp())
     except Exception: return None
 def _hist(asset, ts):
-    a = asset.upper()
+    a = norm(asset)
+    if a in CRYPTO:
+        try:
+            k = get(f"https://api.binance.com/api/v3/klines?symbol={a}USDT&interval=1m&startTime={ts*1000}&limit=1", tries=1)
+            if k and float(k[0][1]) > 0: return float(k[0][1]), "Binance"
+        except Exception: pass
+        try: kraken_pair(a)
+        except Exception: pass
     if a in KRAKEN:
         r = get(f"https://api.kraken.com/0/public/OHLC?pair={KRAKEN[a]}&interval=1&since={ts-60}")
         rows = next(v for k, v in r["result"].items() if k != "last")
         if rows: return float(rows[0][1]), "Kraken"
     if a in CRYPTO:
-        k = get(f"https://api.binance.com/api/v3/klines?symbol={a}USDT&interval=1m&startTime={ts*1000}&limit=1", tries=1)
-        if k: return float(k[0][1]), "Binance"
+        g = get(f"https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair={a}_USDT&interval=1m&from={ts}&to={ts+600}", tries=1)
+        if isinstance(g, list) and g: return float(g[0][5]), "Gate.io"
+        raise RuntimeError("no crypto history")
     sym = YAHOO_MAP.get(a, a)
-    res = get("https://query1.finance.yahoo.com/v8/finance/chart/" + urllib.parse.quote(sym) + f"?period1={ts-3600}&period2={ts+4*86400}&interval=5m", tries=1)["chart"]["result"][0]
+    res = ychart(sym, f"period1={ts-3600}&period2={ts+4*86400}&interval=5m")["chart"]["result"][0]
     pts = [(t, c) for t, c in zip(res.get("timestamp") or [], (res.get("indicators", {}).get("quote") or [{}])[0].get("close") or []) if c is not None]
     after = [c for t, c in pts if t >= ts - 300]
     if after: return float(after[0]), "Yahoo Finance"
     # posted outside market hours: last close before the post
-    res = get("https://query1.finance.yahoo.com/v8/finance/chart/" + urllib.parse.quote(sym) + f"?period1={ts-5*86400}&period2={ts}&interval=5m", tries=1)["chart"]["result"][0]
+    res = ychart(sym, f"period1={ts-5*86400}&period2={ts}&interval=5m")["chart"]["result"][0]
     pts = [c for t, c in zip(res.get("timestamp") or [], res["indicators"]["quote"][0]["close"]) if c is not None and t <= ts]
     if pts: return float(pts[-1]), "Yahoo Finance (last close)"
     raise RuntimeError("no history")
@@ -146,6 +190,11 @@ def add_baselines(rows):
     for r in rows:
         if re.findall(r"\d+(?:\.\d+)?", re.sub(r"\(.*?\)", "", r.get("entry", ""))) or not r.get("asset"): continue
         key = f'{r["id"]}|{r["asset"].upper()}|{r.get("logged_at_lisbon","")}'
+        if norm(r["asset"]) in NONPRICE:
+            r["nonpriceable"] = True
+            if cache.get(key, {}).get("source") != NP_NOTE: cache[key] = {"price": None, "source": NP_NOTE, "at": r.get("logged_at_lisbon")}; changed = True
+            continue
+        if key in cache and cache[key].get("source") == "unavailable": del cache[key]  # retry with new mappings
         if key not in cache:
             ts = _ts_utc(r)
             try:
@@ -162,12 +211,14 @@ def add_baselines(rows):
 def pick(asset, ref):
     """Fetch price; if a ledger entry level exists, the price must be within 3x of it (catches ticker clashes,
     e.g. NEAR token vs NEAR stock). Tries the default source, then the other one; otherwise raises -> n/a."""
-    a = asset.upper(); tried = []
-    order = [None, 'binance', 'yahoo'] if a not in KRAKEN else [None]
+    a = norm(asset); tried = []
+    if a in NONPRICE: return {"price": None, "nonpriceable": True, "note": NP_NOTE, "source": NP_NOTE, "as_of": now()}
+    order = [None, 'binance', 'alt', 'yahoo'] if a not in KRAKEN else [None]
     for src in order:
         try: p = fetch(a, src)
         except Exception as e: tried.append(f"{src or 'default'}: {str(e)[:40]}"); continue
         if ref is None or ref <= 0 or 1/3 <= p["price"] / ref <= 3:
+            if a != asset.upper(): p["symbol"] = f'{p.get("symbol")} (from {asset.upper()})'
             SOURCE_USED[a] = 'kraken' if p["source"] == "Kraken" else 'binance' if p["source"] == "Binance" else 'yahoo'
             return p
         tried.append(f"{p['source']} {p['price']} far from entry {ref:g}")
@@ -223,6 +274,6 @@ def main():
             bad.append(asset)
     write_json(ppath, {"fetched_at": now(), "prices": prices, "ok": ok, "failed": bad})
     log(f"prices ok={ok} failed={bad}")
-    write_candles(sorted(a for a in {r["asset"].upper() for r in rows if r.get("asset")} if prices.get(a, {}).get("price") is not None and not prices[a].get("stale")))
+    write_candles(sorted(a for a in {r["asset"].upper() for r in rows if r.get("asset")} if prices.get(a, {}).get("price") is not None and not prices[a].get("nonpriceable") and not prices[a].get("stale")))
     return 0
 if __name__ == "__main__": sys.exit(main())

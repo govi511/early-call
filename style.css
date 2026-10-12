@@ -160,3 +160,4 @@ footer{margin-bottom:90px}
 input[type=checkbox]{appearance:none;-webkit-appearance:none;width:40px!important;min-height:0!important;height:22px;padding:0;border-radius:999px;background:#2a2a2a;border:0;position:relative;vertical-align:middle;margin-right:8px;cursor:pointer;transition:background .2s;flex:0 0 40px}
 input[type=checkbox]::after{content:"";position:absolute;top:3px;left:3px;width:16px;height:16px;border-radius:50%;background:#8b8b8b;transition:transform .2s,background .2s}
 input[type=checkbox]:checked{background:#fff}input[type=checkbox]:checked::after{transform:translateX(18px);background:#000}
+.lb-call.np.up{color:#4ade80;border-color:rgba(74,222,128,.4)}.lb-call.np.dn{color:#f87171;border-color:rgba(248,113,113,.4)}

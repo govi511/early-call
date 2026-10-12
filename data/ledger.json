@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-12T22:10:31+01:00",
+  "generated_at": "2026-10-12T22:16:51+01:00",
   "calls": [
     {
       "id": "1",
@@ -909,6 +909,8 @@
       "after_the_fact": false,
       "source": "X",
       "feed": "discovery",
+      "baseline": 0.022895,
+      "baseline_source": "Kraken",
       "copy_of": "",
       "spam_farm": false
     },
@@ -1052,6 +1054,7 @@
       "after_the_fact": false,
       "source": "other",
       "feed": "discovery",
+      "nonpriceable": true,
       "copy_of": "",
       "spam_farm": false
     }
