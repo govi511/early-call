@@ -132,3 +132,4 @@ main{padding-bottom:96px!important}
 .tabbar button.on{background:none!important;color:#fff!important}
 @media(min-width:900px){.more-sheet{left:50%;right:auto;width:480px;margin-left:-240px;padding-bottom:96px}}
 .tabbar{flex-direction:row;z-index:31}
+.winrate.new b{color:var(--mut);font-style:italic}

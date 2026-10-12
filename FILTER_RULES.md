@@ -26,5 +26,6 @@ If another account posted the same **asset + direction + entry** (entry compared
 Leaderboard win rates still count every resolved call. Filtering is display-only; the ledger isn't changed.
 
 ## Badges
-- `.src-badge`: `Following` (notes contain "source following"), `X search` ("source discovery"), `Early signal` ("early-signal").
-- `.winrate`: the account's resolved record from the ledger, e.g. `0/4 wins` (hit_target / (hit_target+stopped)).
+- Source `<span class="src …">`: `watchlist` = Following (notes "source following"/"watchlist"), `x` = X search ("source discovery"), `filing` = Early signal ("early-signal", SEC/filing/13F/Form 4).
+- `<span class="winrate">`: `Win rate <b>NN%</b>` only once the account has **≥10 closed calls** (hit_target + stopped); otherwise `Win rate <b>new</b> · n/10 closed`. Leaderboard ranks (#1, #2…) follow the same rule; unranked accounts are listed after, by closed-call count.
+- Filtered cards get class `hidden-spam` when "Show filtered" is on.

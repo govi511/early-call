@@ -8,5 +8,8 @@ function spamWhy(c){const n=c.notes||'',why=SPAM_RULES.filter(([re])=>re.test(n)
  const e=normEntry(c.entry);if(e&&typeof LEDGER!=='undefined'&&LEDGER){const first=LEDGER.calls.find(o=>o.asset===c.asset&&o.direction===c.direction&&normEntry(o.entry)===e);if(first&&first.account!==c.account&&first!==c)why.push(`duplicate of ${first.account}`)}
  return[...new Set(why)]}
 const isSpam=c=>spamWhy(c).length>0;
-function srcOf(c){const n=(c.notes||'').toLowerCase();return/early[- ]signal/.test(n)?'Early signal':/source following/.test(n)?'Following':/source discovery/.test(n)?'X search':'—'}
-function winrateOf(acc){if(typeof LEDGER==='undefined'||!LEDGER)return'';const r=LEDGER.calls.filter(c=>c.account===acc&&['hit_target','stopped'].includes(c.status));return r.length?`${r.filter(c=>c.status==='hit_target').length}/${r.length} wins`:'no resolved calls'}
+function srcOf(c){const n=(c.notes||'').toLowerCase();return/early[- ]signal|\bsec\b|filing|13f|form 4/.test(n)?['Early signal','filing']:/source following|watchlist/.test(n)?['Following','watchlist']:/source discovery/.test(n)?['X search','x']:null}
+function srcHTML(c){const s=srcOf(c);return s?`<span class="src ${s[1]}">${s[0]}</span>`:''}
+const MIN_CLOSED=10;
+function recordOf(acc){const r=(typeof LEDGER!=='undefined'&&LEDGER?LEDGER.calls:[]).filter(c=>c.account===acc&&['hit_target','stopped'].includes(c.status));const w=r.filter(c=>c.status==='hit_target').length;return{n:r.length,w,rate:r.length>=MIN_CLOSED?w/r.length:null}}
+function winrateHTML(acc){const r=recordOf(acc);return r.rate==null?`<span class="winrate" title="${r.n}/${MIN_CLOSED} closed calls before a win rate is shown">Win rate <b>new</b> · ${r.n}/${MIN_CLOSED} closed</span>`:`<span class="winrate" title="${r.w} of ${r.n} closed calls hit target">Win rate <b>${Math.round(r.rate*100)}%</b></span>`}
