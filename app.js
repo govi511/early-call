@@ -10,26 +10,28 @@ const cls=v=>v==null?'':v>=0?'up':'dn';
 function live(c){const p=PRICES[c.asset]?.price,e=lvl(c.entry),s=lvl(c.stop),t=lvl(c.target),d=c.direction==='short'?-1:1;
  if(p==null||e==null)return{p:null};return{p,move:d*(p-e)/e*100,toStop:s==null?null:d*(p-s)/p*100,toTgt:t==null?null:d*(t-p)/p*100,prog:(s==null||t==null||t===s)?null:Math.max(0,Math.min(1,(p-s)/(t-s)))}}
 const SIMPLE=()=>localStorage.getItem('ec-simple')==='1';
-function renderSignals(){if(!LEDGER)return;const simple=SIMPLE();$('#simple').checked=simple;$('#sum').style.display=simple?'none':'';const calls=[...LEDGER.calls].reverse().filter(c=>!simple||c.status==='open');
+function renderSignals(){if(!LEDGER)return;const simple=SIMPLE();$('#simple').checked=simple;$('#sum').style.display=simple?'none':'';const sc=c=>typeof earlyScore==='function'?earlyScore(c,live(c)).s:0;const calls=[...LEDGER.calls].reverse().filter(c=>!simple||c.status==='open').map((c,i)=>({c,i,o:c.status==='open'?0:1,s:sc(c)})).sort((a,b)=>a.o-b.o||(a.o===0?b.s-a.s:a.i-b.i)).map(x=>x.c);
  const open=calls.filter(c=>c.status==='open').map(c=>({c,l:live(c)})),ok=open.filter(o=>o.l.p!=null);
  const avg=ok.length?ok.reduce((s,o)=>s+o.l.move,0)/ok.length:null,sorted=[...ok].sort((a,b)=>b.l.move-a.l.move);
  const bw=o=>o?`${esc(o.c.asset)} <span class="${cls(o.l.move)}">${pct(o.l.move)}</span>`:'n/a';
  $('#sum').innerHTML=`<div><small>Open calls</small><b>${open.length}</b></div><div><small>Average change (open calls)</small><b class="${cls(avg)}">${pct(avg)}</b></div><div><small>Doing best</small><b>${bw(sorted[0])}</b></div><div><small>Doing worst</small><b>${bw(sorted[sorted.length-1])}</b></div>`;
  $('#pupd').textContent=PRICES._at?'Prices '+PRICES._at.replace('T',' ').slice(0,16)+' PT':'Prices n/a';
- $('#feed').innerHTML=calls.map(c=>{const l=live(c),pi=PRICES[c.asset]||{};return`<div class="card"><div class="row"><div><span class="asset">${esc(c.asset)}</span> <span class="badge ${c.direction==='short'?'short':'long'}">${esc(c.direction)}</span></div><b class="st-${esc(c.status)}">● ${esc(c.status.replace('_',' '))}</b></div>
+ $('#feed').innerHTML=calls.map(c=>{const l=live(c),pi=PRICES[c.asset]||{};return`<div class="card" data-id="${esc(c.id)}"><div class="row"><div><span class="asset">${esc(c.asset)}</span>${isNew(c)?' <span class="new-badge">NEW</span>':''} <span class="badge ${c.direction==='short'?'short':'long'}">${esc(c.direction)}</span></div><b class="st-${esc(c.status)}">● ${esc(c.status.replace('_',' '))}</b></div>
  <div class="headline">${esc(c.asset)} ${l.p==null?'n/a':`<span class="${cls(l.move)}">${pct(l.move)}</span>`} · ${esc(c.status.replace('_',' '))}</div>
+ <div class="spark" data-asset="${esc(c.asset)}" data-id="${esc(c.id)}"></div>
  <div class="row" style="margin-top:6px"><div><small class="mut">Price now</small> <b style="font-size:17px">${l.p==null?'n/a':l.p.toLocaleString('en-US',{maximumFractionDigits:4})}</b> <span class="${cls(l.move)}" style="font-weight:700">${l.p==null?'':pct(l.move)+' since buy price'}</span></div><span class="tag" title="${esc(pi.symbol||'')}">${esc(pi.source||'no price')}</span></div>
  ${simple?'':earlyHTML(c,l)}<div class="lv"><div><small>Bought at</small>${esc(c.entry)}</div><div><small>Exit if loss</small>${esc(c.stop)}</div><div><small>Take profit at</small>${esc(c.target)}</div></div>
  <div class="bar">${l.prog==null?'':`<i style="left:${(l.prog*100).toFixed(1)}%"></i>`}</div><div class="row mut" style="margin:4px 0 8px"><span>Loss if stopped: ${l.p==null?'n/a':pct(l.toStop)} away</span><span>Gain to target: ${l.p==null?'n/a':pct(l.toTgt)}</span></div>
  ${c.notes?`<div class="mut">📝 ${esc(c.notes)}</div>`:''}<div class="row" style="margin-top:8px"><span class="mut">${esc(c.account)} · ${esc(c.logged_at_lisbon)} PT${c.resolved_at?' · resolved '+esc(c.resolved_at):''}</span><span><span class="tag">${esc(c.source)}</span>${c.after_the_fact?' <span class="tag" style="color:var(--warn)">after-the-fact</span>':''} <a href="${esc(c.post_url)}" target="_blank" rel="noopener">Post ↗</a></span></div></div>`}).join('')||'<p class="mut">No calls yet.</p>'}
 function loadPrices(){return fetch('data/prices.json?t='+Date.now()).then(r=>r.json()).then(d=>{PRICES=d.prices||{};PRICES._at=d.fetched_at}).catch(()=>{PRICES={}}).then(renderSignals)}
-$('#rp').onclick=()=>loadPrices();
+
 $('#simple').onchange=e=>{localStorage.setItem('ec-simple',e.target.checked?'1':'0');renderSignals()};
-fetch('data/ledger.json').then(r=>r.json()).then(d=>{LEDGER=d;
+function loadLedger(){return fetch('data/ledger.json?t='+Date.now()).then(r=>r.json()).then(d=>{LEDGER=d;
  $('#gen').textContent='Ledger '+d.generated_at.replace('T',' ').slice(0,16);loadPrices();
  const acc={};d.calls.forEach(c=>{const a=acc[c.account]??={hit:0,stop:0,other:0,atf:0};c.status==='hit_target'?a.hit++:c.status==='stopped'?a.stop++:a.other++;if(c.after_the_fact)a.atf++});
  $('#lb').innerHTML=Object.entries(acc).sort((x,y)=>(y[1].hit/(y[1].hit+y[1].stop||1))-(x[1].hit/(x[1].hit+x[1].stop||1))).map(([n,a])=>{const r=a.hit+a.stop;return`<tr><td><b>${esc(n)}</b>${r<5?' <span class="badge" style="background:rgba(245,183,59,.15);color:var(--warn)">small sample</span>':''}</td><td><b>${r?Math.round(a.hit/r*100)+'%':'—'}</b> <span class="mut">(${r} resolved)</span></td><td class="up">${a.hit}</td><td class="dn">${a.stop}</td><td>${a.other}</td><td>${a.atf}</td></tr>`}).join('');
-}).catch(e=>$('#feed').innerHTML='<p class="mut">Could not load data/ledger.json — run refresh.py and serve over http.</p>');
+})}
+loadLedger().catch(e=>$('#feed').innerHTML='<p class="mut">Could not load data/ledger.json — run refresh.py and serve over http.</p>');
 // Portfolio
 const H=[['SpaceX',389.02,'#2f9bff'],['Tesla',244.00,'#ff4d5e'],['Cyber segurança pie',107.06,'#21c37a'],['Pelosi pie',96.70,'#a66bff'],['Bancos tugas pie',49.14,'#f5b73b'],['iShares NASDAQ 100',29.63,'#20c5d6'],['iShares S&P 500 IT',29.36,'#ff8a3d']];
 const tot=H.reduce((s,h)=>s+h[1],0),musk=(389.02+244)/tot*100;
