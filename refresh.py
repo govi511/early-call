@@ -187,6 +187,12 @@ def _hist(asset, ts):
         g = get(f"https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair={a}_USDT&interval=1m&from={ts}&to={ts+600}", tries=1)
         if isinstance(g, list) and g: return float(g[0][5]), "Gate.io"
         raise RuntimeError("no crypto history")
+    try: return _yhist(a, ts)
+    except Exception:
+        import time as _t
+        if _t.time() - ts < 2*86400: return _nasdaq(a)["price"], "Nasdaq (approx)"
+        raise
+def _yhist(a, ts):
     sym = YAHOO_MAP.get(a, a)
     res = ychart(sym, f"period1={ts-3600}&period2={ts+4*86400}&interval=5m")["chart"]["result"][0]
     pts = [(t, c) for t, c in zip(res.get("timestamp") or [], (res.get("indicators", {}).get("quote") or [{}])[0].get("close") or []) if c is not None]
