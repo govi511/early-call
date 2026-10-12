@@ -100,3 +100,35 @@ h2{font-size:22px;font-weight:800;letter-spacing:-.3px}
 .chart-modal .chartbox{height:min(60vh,420px)}
 .ranges{display:flex;gap:6px;margin:8px 0 12px}.ranges button{background:var(--card2);color:var(--mut);border:0;border-radius:999px;padding:6px 14px;cursor:pointer}
 .ranges button.on{background:var(--acc);color:#fff}
+/* Grok monochrome theme + Instagram-style bottom bar (all screens) */
+:root{--bg:#000;--card:#0d0d0d;--card2:#171717;--b:#222;--txt:#fafafa;--mut:#8b8b8b;--acc:#fff;--acc2:#d4d4d4;--up:#4ade80;--dn:#f87171}
+body{background:#000;padding-left:0!important}
+.logo span{background:none;color:var(--mut);-webkit-text-fill-color:currentColor}
+header{position:sticky!important;width:auto!important;bottom:auto!important;border-right:0!important;background:rgba(0,0,0,.85)!important;border-bottom:1px solid var(--b)!important}
+.top{flex-direction:row!important;align-items:center!important;padding:14px 16px!important}
+.card,.sum div{background:var(--card);border:1px solid var(--b);box-shadow:none}
+.card:hover{transform:none;border-color:#3a3a3a;box-shadow:none}
+.grid>.card:first-child{background:var(--card)}
+.btn,nav button.on,.ranges button.on{background:#fff!important;color:#000!important;box-shadow:none!important}
+.btn.g{background:var(--card2)!important;color:var(--txt)!important}
+input:focus,select:focus{border-color:#fff;box-shadow:0 0 0 3px rgba(255,255,255,.15)}
+a{color:#fff;text-decoration:underline;text-underline-offset:3px}
+/* bottom bar */
+.tabbar{position:fixed;left:0;right:0;bottom:0;z-index:20;display:flex;justify-content:space-around;background:rgba(0,0,0,.92);backdrop-filter:blur(14px);border-top:1px solid var(--b);padding:6px 4px calc(6px + env(safe-area-inset-bottom))}
+.tabbar button{flex:1;display:flex;flex-direction:column;align-items:center;gap:2px;background:none!important;border:0;color:var(--mut)!important;font-size:10px;padding:6px 0;min-height:48px;cursor:pointer;box-shadow:none!important}
+.tabbar button svg{width:24px;height:24px;stroke:currentColor;fill:none;stroke-width:1.8}
+.tabbar button.on{color:#fff!important}.tabbar button.on svg{stroke-width:2.4}
+.more-sheet{position:fixed;left:0;right:0;bottom:0;z-index:30;background:#0d0d0d;border-top:1px solid var(--b);border-radius:18px 18px 0 0;padding:10px 12px calc(70px + env(safe-area-inset-bottom));transform:translateY(100%);transition:transform .25s}
+.more-sheet.open{transform:none}
+.more-sheet button{display:block;width:100%;text-align:left;background:none;border:0;color:var(--txt);padding:14px 10px;font-size:16px;border-bottom:1px solid var(--b)}
+main{padding-bottom:96px!important}
+@media(min-width:900px){.tabbar{left:50%;right:auto;transform:translateX(-50%);bottom:16px;width:480px;border:1px solid var(--b);border-radius:20px;padding:6px}}
+/* source badge + win rate */
+.src{display:inline-flex;align-items:center;gap:4px;font-size:11px;font-weight:600;padding:2px 8px;border-radius:999px;border:1px solid #333;color:#d4d4d4;background:#141414}
+.src.watchlist{border-color:#fff;color:#fff}.src.filing{border-style:dashed}
+.winrate{font-size:12px;color:var(--mut)}.winrate b{color:var(--txt)}
+.hidden-spam{opacity:.45}
+/* minimal fixes: old nav button rules leaked onto nav.tabbar */
+.tabbar button.on{background:none!important;color:#fff!important}
+@media(min-width:900px){.more-sheet{left:50%;right:auto;width:480px;margin-left:-240px;padding-bottom:96px}}
+.tabbar{flex-direction:row;z-index:31}

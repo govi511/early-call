@@ -1,6 +1,9 @@
 const $=s=>document.querySelector(s),eur=v=>'€'+v.toLocaleString('pt-PT',{minimumFractionDigits:2,maximumFractionDigits:2});
 const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-document.querySelectorAll('#nav button').forEach(b=>b.onclick=()=>{document.querySelectorAll('#nav button,section').forEach(e=>e.classList.remove('on'));b.classList.add('on');$('#'+b.dataset.t).classList.add('on')});
+function showTab(t){if(!document.getElementById(t))return;document.querySelectorAll('section').forEach(e=>e.classList.toggle('on',e.id===t));const main=['signals','port','alerts','leader'];document.querySelectorAll('.tabbar button').forEach(b=>b.classList.toggle('on',b.dataset.t===t||(b.dataset.t==='more'&&!main.includes(t))));document.querySelectorAll('.more-sheet button').forEach(b=>b.classList.toggle('on',b.dataset.t===t));$('.more-sheet').classList.remove('open');scrollTo(0,0)}
+document.querySelectorAll('.tabbar button').forEach(b=>b.onclick=e=>{e.stopPropagation();b.dataset.t==='more'?$('.more-sheet').classList.toggle('open'):showTab(b.dataset.t)});
+document.querySelectorAll('.more-sheet button').forEach(b=>b.onclick=()=>showTab(b.dataset.t));
+document.addEventListener('click',e=>{if(!e.target.closest('.more-sheet,.tabbar'))$('.more-sheet').classList.remove('open')});
 // Signals + leaderboard + live prices
 let LEDGER=null,PRICES={};
 const nums=s=>(String(s).match(/\d+(?:\.\d+)?/g)||[]).map(Number);
@@ -10,13 +13,13 @@ const cls=v=>v==null?'':v>=0?'up':'dn';
 function live(c){const p=PRICES[c.asset]?.price,e=lvl(c.entry),s=lvl(c.stop),t=lvl(c.target),d=c.direction==='short'?-1:1;
  if(p==null||e==null)return{p:null};return{p,move:d*(p-e)/e*100,toStop:s==null?null:d*(p-s)/p*100,toTgt:t==null?null:d*(t-p)/p*100,prog:(s==null||t==null||t===s)?null:Math.max(0,Math.min(1,(p-s)/(t-s)))}}
 const SIMPLE=()=>localStorage.getItem('ec-simple')==='1';
-function renderSignals(){if(!LEDGER)return;const simple=SIMPLE();$('#simple').checked=simple;$('#sum').style.display=simple?'none':'';const sc=c=>typeof earlyScore==='function'?earlyScore(c,live(c)).s:0;const calls=[...LEDGER.calls].reverse().filter(c=>!simple||c.status==='open').map((c,i)=>({c,i,o:c.status==='open'?0:1,s:sc(c)})).sort((a,b)=>a.o-b.o||(a.o===0?b.s-a.s:a.i-b.i)).map(x=>x.c);
- const open=calls.filter(c=>c.status==='open').map(c=>({c,l:live(c)})),ok=open.filter(o=>o.l.p!=null);
+function renderSignals(){if(!LEDGER)return;const simple=SIMPLE();$('#simple').checked=simple;$('#sum').style.display=simple?'none':'';const sc=c=>typeof earlyScore==='function'?earlyScore(c,live(c)).s:0;const showSpam=localStorage.getItem('ec-showspam')==='1',nSpam=LEDGER.calls.filter(isSpam).length;$('#showspam').checked=showSpam;$('#spamlbl').textContent=`Show filtered (${nSpam})`;const calls=[...LEDGER.calls].reverse().filter(c=>(!simple||c.status==='open')&&(showSpam||!isSpam(c))).map((c,i)=>({c,i,o:c.status==='open'?0:1,s:sc(c)})).sort((a,b)=>a.o-b.o||(a.o===0?b.s-a.s:a.i-b.i)).map(x=>x.c);
+ const open=calls.filter(c=>c.status==='open'&&!isSpam(c)).map(c=>({c,l:live(c)})),ok=open.filter(o=>o.l.p!=null);
  const avg=ok.length?ok.reduce((s,o)=>s+o.l.move,0)/ok.length:null,sorted=[...ok].sort((a,b)=>b.l.move-a.l.move);
  const bw=o=>o?`${esc(o.c.asset)} <span class="${cls(o.l.move)}">${pct(o.l.move)}</span>`:'n/a';
  $('#sum').innerHTML=`<div><small>Open calls</small><b>${open.length}</b></div><div><small>Average change (open calls)</small><b class="${cls(avg)}">${pct(avg)}</b></div><div><small>Doing best</small><b>${bw(sorted[0])}</b></div><div><small>Doing worst</small><b>${bw(sorted[sorted.length-1])}</b></div>`;
  $('#pupd').textContent=PRICES._at?'Prices '+PRICES._at.replace('T',' ').slice(0,16)+' PT':'Prices n/a';
- $('#feed').innerHTML=calls.map(c=>{const l=live(c),pi=PRICES[c.asset]||{};return`<div class="card" data-id="${esc(c.id)}"><div class="row"><div><span class="asset">${esc(c.asset)}</span>${isNew(c)?' <span class="new-badge">NEW</span>':''} <span class="badge ${c.direction==='short'?'short':'long'}">${esc(c.direction)}</span></div><b class="st-${esc(c.status)}">● ${esc(c.status.replace('_',' '))}</b></div>
+ $('#feed').innerHTML=calls.map(c=>{const l=live(c),pi=PRICES[c.asset]||{};return`<div class="card" data-id="${esc(c.id)}"><div class="row"><div><span class="asset">${esc(c.asset)}</span>${isSpam(c)?` <span class="badge" title="${esc(spamWhy(c).join('; '))}" style="background:rgba(255,107,120,.15);color:#ff6b78">filtered</span>`:''} <span class="src src-badge">${esc(srcOf(c))}</span> <span class="winrate">${esc(winrateOf(c.account))}</span>${isNew(c)?' <span class="new-badge">NEW</span>':''} <span class="badge ${c.direction==='short'?'short':'long'}">${esc(c.direction)}</span></div><b class="st-${esc(c.status)}">● ${esc(c.status.replace('_',' '))}</b></div>
  <div class="headline">${esc(c.asset)} ${l.p==null?'n/a':`<span class="${cls(l.move)}">${pct(l.move)}</span>`} · ${esc(c.status.replace('_',' '))}</div>
  <div class="spark" data-asset="${esc(c.asset)}" data-id="${esc(c.id)}"></div>
  <div class="row" style="margin-top:6px"><div><small class="mut">Price now</small> <b style="font-size:17px">${l.p==null?'n/a':l.p.toLocaleString('en-US',{maximumFractionDigits:4})}</b> <span class="${cls(l.move)}" style="font-weight:700">${l.p==null?'':pct(l.move)+' since buy price'}</span></div><span class="tag" title="${esc(pi.symbol||'')}">${esc(pi.source||'no price')}</span></div>
@@ -25,6 +28,7 @@ function renderSignals(){if(!LEDGER)return;const simple=SIMPLE();$('#simple').ch
  ${c.notes?`<div class="mut">📝 ${esc(c.notes)}</div>`:''}<div class="row" style="margin-top:8px"><span class="mut">${esc(c.account)} · ${esc(c.logged_at_lisbon)} PT${c.resolved_at?' · resolved '+esc(c.resolved_at):''}</span><span><span class="tag">${esc(c.source)}</span>${c.after_the_fact?' <span class="tag" style="color:var(--warn)">after-the-fact</span>':''} <a href="${esc(c.post_url)}" target="_blank" rel="noopener">Post ↗</a></span></div></div>`}).join('')||'<p class="mut">No calls yet.</p>'}
 function loadPrices(){return fetch('data/prices.json?t='+Date.now()).then(r=>r.json()).then(d=>{PRICES=d.prices||{};PRICES._at=d.fetched_at}).catch(()=>{PRICES={}}).then(renderSignals)}
 
+$('#showspam').onchange=e=>{localStorage.setItem('ec-showspam',e.target.checked?'1':'0');renderSignals()};
 $('#simple').onchange=e=>{localStorage.setItem('ec-simple',e.target.checked?'1':'0');renderSignals()};
 function loadLedger(){return fetch('data/ledger.json?t='+Date.now()).then(r=>r.json()).then(d=>{LEDGER=d;
  $('#gen').textContent='Ledger '+d.generated_at.replace('T',' ').slice(0,16);loadPrices();
@@ -70,6 +74,6 @@ window.delJ=i=>{const j=ls('ec-journal');j.splice(i,1);ls('ec-journal',j);rJ()};
 window.edJ=i=>{const t=ls('ec-journal')[i];edit=i;$('#j-a').value=t.asset;$('#j-s').value=t.side;$('#j-e').value=t.entry;$('#j-x').value=t.exit;$('#j-q').value=t.size;$('#j-add').textContent='Update'};
 $('#j-add').onclick=()=>{const t={asset:$('#j-a').value.trim().toUpperCase(),side:$('#j-s').value,entry:+$('#j-e').value,exit:$('#j-x').value===''?'':+$('#j-x').value,size:+$('#j-q').value||0};if(!t.asset||!t.entry)return;const j=ls('ec-journal');edit>=0?j[edit]=t:j.push(t);edit=-1;$('#j-add').textContent='Save';ls('ec-journal',j);['#j-a','#j-e','#j-x'].forEach(s=>$(s).value='');rJ()};rJ();
 
-if(location.hash){const b=document.querySelector(`#nav button[data-t="${location.hash.slice(1)}"]`);b&&b.click()}
-if(location.hash==='#plan'){document.querySelector('#nav button[data-t="port"]').click();setTimeout(()=>document.getElementById('plan').scrollIntoView(),300)}
-{const t=new URLSearchParams(location.search).get('tab');const b=t&&document.querySelector(`#nav button[data-t="${t}"]`);b&&b.click()}
+if(location.hash&&location.hash!=='#plan')showTab(location.hash.slice(1))
+if(location.hash==='#plan'){showTab('port');setTimeout(()=>document.getElementById('plan').scrollIntoView(),300)}
+{const t=new URLSearchParams(location.search).get('tab');t&&showTab(t)}
