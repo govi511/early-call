@@ -164,3 +164,4 @@ input[type=checkbox]:checked{background:#fff}input[type=checkbox]:checked::after
 .countdown{font-size:11px;color:var(--mut);margin-left:4px}.lb-call.locked{border-style:solid}.lb-call.locked::after{content:" 🔒";font-size:10px}
 /* remove duplicate asset name: headline already shows it */
 #feed .card .row .asset{display:none}
+.ago{color:var(--mut);font-weight:600;background:var(--card2);padding:1px 6px;border-radius:6px}.empty-scan{text-align:center;padding:32px 12px}
