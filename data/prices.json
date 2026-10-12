@@ -1,48 +1,93 @@
 {
-  "fetched_at": "2026-10-12T20:41:39+01:00",
+  "fetched_at": "2026-10-12T20:52:22+01:00",
   "prices": {
+    "APE": {
+      "price": null,
+      "error": "HTTP Error 404: Not Found"
+    },
+    "APP": {
+      "price": 270.66,
+      "symbol": "APP",
+      "currency": "USD",
+      "source": "Yahoo Finance",
+      "as_of": "2026-10-12T20:52:00+01:00"
+    },
     "BTC": {
-      "price": 82748.83,
+      "price": 82822.0,
       "symbol": "BTCUSDT",
       "currency": "USDT",
       "source": "Binance",
-      "as_of": "2026-10-12T20:41:38+01:00"
+      "as_of": "2026-10-12T20:52:01+01:00"
     },
     "COIN": {
-      "price": 177.775,
+      "price": 177.725,
       "symbol": "COIN",
       "currency": "USD",
       "source": "Yahoo Finance",
-      "as_of": "2026-10-12T20:41:34+01:00"
+      "as_of": "2026-10-12T20:52:00+01:00"
     },
     "ETH": {
-      "price": 2518.26,
+      "price": 2519.84,
       "symbol": "ETHUSDT",
       "currency": "USDT",
       "source": "Binance",
-      "as_of": "2026-10-12T20:41:39+01:00"
+      "as_of": "2026-10-12T20:52:02+01:00"
+    },
+    "ICP": {
+      "price": null,
+      "error": "HTTP Error 404: Not Found"
     },
     "NATGAS": {
-      "price": 3.17,
+      "price": 3.175,
       "symbol": "NG=F",
       "currency": "USD",
       "source": "Yahoo Finance",
-      "as_of": "2026-10-12T20:31:30+01:00"
+      "as_of": "2026-10-12T20:41:52+01:00"
+    },
+    "NBIS": {
+      "price": 208.71,
+      "symbol": "NBIS",
+      "currency": "USD",
+      "source": "Yahoo Finance",
+      "as_of": "2026-10-12T20:52:11+01:00"
+    },
+    "S": {
+      "price": 25.765,
+      "symbol": "S",
+      "currency": "USD",
+      "source": "Yahoo Finance",
+      "as_of": "2026-10-12T20:52:10+01:00"
     },
     "TSLA": {
-      "price": 377.88,
+      "price": 378.43,
       "symbol": "TSLA",
       "currency": "USD",
       "source": "Yahoo Finance",
-      "as_of": "2026-10-12T20:41:38+01:00"
+      "as_of": "2026-10-12T20:52:11+01:00"
+    },
+    "XAUUSD": {
+      "price": null,
+      "error": "HTTP Error 404: Not Found"
+    },
+    "XMR": {
+      "price": null,
+      "error": "'NoneType' object cannot be interpreted as an integer"
     }
   },
   "ok": [
+    "APP",
     "BTC",
     "COIN",
     "ETH",
     "NATGAS",
+    "NBIS",
+    "S",
     "TSLA"
   ],
-  "failed": []
+  "failed": [
+    "APE",
+    "ICP",
+    "XAUUSD",
+    "XMR"
+  ]
 }
