@@ -2,7 +2,7 @@
 """Early Call refresh: ledger CSV -> data/ledger.json, live prices -> data/prices.json.
 Unattended-safe: retries, timeouts, lock file, atomic writes, keeps last good price on failure.
 Exit code 0 = ok (even if some prices failed), 1 = ledger could not be read, 2 = another run in progress."""
-import csv, json, os, sys, time, datetime, urllib.request, urllib.parse, fcntl, tempfile
+import re, csv, json, os, sys, time, datetime, urllib.request, urllib.parse, fcntl, tempfile
 HERE = os.path.dirname(os.path.abspath(__file__)); DATA = os.path.join(HERE, "data")
 ARGS = [a for a in sys.argv[1:] if not a.startswith("--")]
 LEDGER_ONLY = "--ledger-only" in sys.argv
@@ -35,7 +35,10 @@ def get(url, tries=3):
     raise err
 YH = ("https://query2.finance.yahoo.com", "https://query1.finance.yahoo.com")
 UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+YAHOO_429 = False  # once Yahoo rate-limits us, skip it for the rest of this run
 def ychart(sym, qs):
+    global YAHOO_429
+    if YAHOO_429: raise RuntimeError("yahoo skipped (429 earlier this run)")
     err = None
     for h in YH * 2:
         try:
@@ -43,7 +46,7 @@ def ychart(sym, qs):
             with urllib.request.urlopen(req, timeout=10) as r: return json.loads(r.read())
         except Exception as e:
             err = e
-            if "429" in str(e): time.sleep(3)
+            if "429" in str(e): YAHOO_429 = True; break
     raise err
 def norm(asset):
     a = asset.upper().strip()
@@ -312,6 +315,8 @@ def main():
                 if not r.get("id"): continue
                 n = r.get("notes", "").lower()
                 r["after_the_fact"] = "after the fact" in n or "after-the-fact" in n
+                m = re.search(r"\b(\d+(?:[.,]\d+)?)\s*([km]?)\s+followers\b", r.get("notes", ""), re.I)
+                r["followers"] = int(float(m.group(1).replace(",", ".")) * {"": 1, "k": 1e3, "m": 1e6}[m.group(2).lower()]) if m else None
                 r["source"] = "X" if any(d in r.get("post_url", "") for d in ("x.com", "twitter.com")) else "other"
                 rows.append(r)
     except Exception as e:

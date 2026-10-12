@@ -8,6 +8,7 @@ const normEntry=e=>String(e||'').replace(/\s+/g,'').toLowerCase();
 function spamWhy(c){const n=c.notes||'',why=SPAM_RULES.filter(([re])=>re.test(n)).map(r=>r[1]);
  const m=n.match(/\b(\d+) followers\b/i);if(m&&+m[1]<50)why.push(`only ${m[1]} followers`);
  if(/^(filtered|excluded)$/.test(c.status||''))why.push('excluded by rule ('+c.status+')');
+ if(feedOf(c)==='discovery'&&c.followers!=null&&c.followers<5000)why.push(`discovery account under 5,000 followers (${c.followers})`);
  if(c.after_the_fact)why.push('after the fact');
  if(c.copy_of)why.push(`copy of #${c.copy_of}`);
  if(c.spam_farm||(typeof LEDGER!=='undefined'&&LEDGER&&(LEDGER.spam_farm_accounts||[]).includes(c.account)))why.push('spam-farm account (copy-paste cluster)');
