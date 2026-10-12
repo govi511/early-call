@@ -10,8 +10,8 @@ const pct=v=>v==null||!isFinite(v)?'n/a':(v>0?'+':'')+v.toFixed(2)+'%';
 const cls=v=>v==null?'':v>=0?'up':'dn';
 function live(c){const p=PRICES[c.asset]?.price,e=lvl(c.entry),s=lvl(c.stop),t=lvl(c.target),d=c.direction==='short'?-1:1;
  if(e==null){const b=c.baseline;return p==null||!b?{p,ne:1,move:null}:{p,ne:1,move:d*(p-b)/b*100,toStop:null,toTgt:null,prog:null}}if(p==null)return{p:null};return{p,move:d*(p-e)/e*100,toStop:s==null?null:d*(p-s)/p*100,toTgt:t==null?null:d*(t-p)/p*100,prog:(s==null||t==null||t===s)?null:Math.max(0,Math.min(1,(p-s)/(t-s)))}}
-const SIMPLE=()=>localStorage.getItem('ec-simple')==='1';
-function renderSignals(){if(!LEDGER)return;const simple=SIMPLE();$('#simple').checked=simple;$('#sum').style.display=simple?'none':'';const sc=c=>typeof earlyScore==='function'?earlyScore(c,live(c)).s:0;const showSpam=localStorage.getItem('ec-showspam')==='1',nSpam=LEDGER.calls.filter(isSpam).length;$('#showspam').checked=showSpam;$('#spamlbl').textContent=`Show filtered (${nSpam})`;const feed=FEED();document.querySelectorAll('#seg button').forEach(b=>b.classList.toggle('on',b.dataset.f===feed));const calls=[...LEDGER.calls].reverse().filter(c=>(feed==='all'||feedOf(c)===feed)&&(!simple||c.status==='open')&&(showSpam||!isSpam(c))).map((c,i)=>({c,i,o:c.status==='open'?0:1,s:sc(c)})).sort((a,b)=>a.o-b.o||(a.o===0?b.s-a.s:a.i-b.i)).map(x=>x.c);
+const STF=()=>localStorage.getItem('ec-st')||'all';const SIMPLE=()=>false;
+function renderSignals(){if(!LEDGER)return;const simple=SIMPLE();document.querySelectorAll('#stseg button').forEach(b=>b.classList.toggle('on',b.dataset.s===STF()));$('#sum').style.display=simple?'none':'';const sc=c=>typeof earlyScore==='function'?earlyScore(c,live(c)).s:0;const showSpam=localStorage.getItem('ec-showspam')==='1',nSpam=LEDGER.calls.filter(isSpam).length;$('#showspam').checked=showSpam;$('#spamlbl').textContent=`Show filtered (${nSpam})`;const feed=FEED();document.querySelectorAll('#seg button').forEach(b=>b.classList.toggle('on',b.dataset.f===feed));const calls=[...LEDGER.calls].reverse().filter(c=>(feed==='all'||feedOf(c)===feed)&&(STF()==='all'||(STF()==='open')===(c.status==='open'))&&(showSpam||!isSpam(c))).map((c,i)=>({c,i,o:c.status==='open'?0:1,s:sc(c)})).sort((a,b)=>a.o-b.o||(a.o===0?b.s-a.s:a.i-b.i)).map(x=>x.c);
  const open=calls.filter(c=>c.status==='open'&&!isSpam(c)).map(c=>({c,l:live(c)})),ok=open.filter(o=>o.l.p!=null&&!o.l.ne);
  const avg=ok.length?ok.reduce((s,o)=>s+o.l.move,0)/ok.length:null,sorted=[...ok].sort((a,b)=>b.l.move-a.l.move);
  const bw=o=>o?`${esc(o.c.asset)} <span class="${cls(o.l.move)}">${pct(o.l.move)}</span>`:'n/a';
@@ -27,7 +27,7 @@ function renderSignals(){if(!LEDGER)return;const simple=SIMPLE();$('#simple').ch
 function loadPrices(){return fetch('data/prices.json?t='+Date.now()).then(r=>r.json()).then(d=>{PRICES=d.prices||{};PRICES._at=d.fetched_at}).catch(()=>{PRICES={}}).then(()=>{typeof applyLive==='function'&&applyLive()}).then(renderSignals)}
 
 $('#showspam').onchange=e=>{localStorage.setItem('ec-showspam',e.target.checked?'1':'0');renderSignals()};
-$('#simple').onchange=e=>{localStorage.setItem('ec-simple',e.target.checked?'1':'0');renderSignals()};
+document.querySelectorAll('#stseg button').forEach(b=>b.onclick=()=>{localStorage.setItem('ec-st',b.dataset.s);renderSignals()});
 function loadLedger(){return fetch('data/ledger.json?t='+Date.now()).then(r=>r.json()).then(d=>{LEDGER=d;
  $('#gen').textContent='Ledger '+d.generated_at.replace('T',' ').slice(0,16);loadPrices();
 })}
