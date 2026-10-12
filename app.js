@@ -1,9 +1,7 @@
 const $=s=>document.querySelector(s),eur=v=>'€'+v.toLocaleString('pt-PT',{minimumFractionDigits:2,maximumFractionDigits:2});
 const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-function showTab(t){if(!document.getElementById(t))return;document.querySelectorAll('section').forEach(e=>e.classList.toggle('on',e.id===t));const main=['signals','port','alerts','leader'];document.querySelectorAll('.tabbar button').forEach(b=>b.classList.toggle('on',b.dataset.t===t||(b.dataset.t==='more'&&!main.includes(t))));document.querySelectorAll('.more-sheet button').forEach(b=>b.classList.toggle('on',b.dataset.t===t));$('.more-sheet').classList.remove('open');scrollTo(0,0)}
-document.querySelectorAll('.tabbar button').forEach(b=>b.onclick=e=>{e.stopPropagation();b.dataset.t==='more'?$('.more-sheet').classList.toggle('open'):showTab(b.dataset.t)});
-document.querySelectorAll('.more-sheet button').forEach(b=>b.onclick=()=>showTab(b.dataset.t));
-document.addEventListener('click',e=>{if(!e.target.closest('.more-sheet,.tabbar'))$('.more-sheet').classList.remove('open')});
+function showTab(t){if(!document.getElementById(t))return;document.querySelectorAll('main>section').forEach(e=>e.classList.toggle('on',e.id===t));document.querySelectorAll('.tabbar button').forEach(b=>b.classList.toggle('on',b.dataset.t===t));scrollTo(0,0)}
+document.querySelectorAll('.tabbar button').forEach(b=>b.onclick=()=>showTab(b.dataset.t));
 // Signals + leaderboard + live prices
 let LEDGER=null,PRICES={};
 const nums=s=>(String(s).match(/\d+(?:\.\d+)?/g)||[]).map(Number);
@@ -25,17 +23,33 @@ function renderSignals(){if(!LEDGER)return;const simple=SIMPLE();$('#simple').ch
  <div class="row" style="margin-top:6px"><div><small class="mut">Price now</small> <b style="font-size:17px">${l.p==null?'n/a':l.p.toLocaleString('en-US',{maximumFractionDigits:4})}</b> <span class="${cls(l.move)}" style="font-weight:700">${l.p==null?'':pct(l.move)+' since buy price'}</span></div><span class="tag" title="${esc(pi.symbol||'')}">${esc(pi.source||'no price')}</span></div>
  ${simple?'':earlyHTML(c,l)}<div class="lv"><div><small>Bought at</small>${esc(c.entry)}</div><div><small>Exit if loss</small>${esc(c.stop)}</div><div><small>Take profit at</small>${esc(c.target)}</div></div>
  <div class="bar">${l.prog==null?'':`<i style="left:${(l.prog*100).toFixed(1)}%"></i>`}</div><div class="row mut" style="margin:4px 0 8px"><span>Loss if stopped: ${l.p==null?'n/a':pct(l.toStop)} away</span><span>Gain to target: ${l.p==null?'n/a':pct(l.toTgt)}</span></div>
- ${c.notes?`<div class="mut">📝 ${esc(c.notes)}</div>`:''}<div class="row" style="margin-top:8px"><span class="mut">${esc(c.account)} · ${esc(c.logged_at_lisbon)} PT${c.resolved_at?' · resolved '+esc(c.resolved_at):''}</span><span><span class="tag">${esc(c.source)}</span>${c.after_the_fact?' <span class="tag" style="color:var(--warn)">after-the-fact</span>':''} <a href="${esc(c.post_url)}" target="_blank" rel="noopener">Post ↗</a></span></div></div>`}).join('')||'<p class="mut">No calls yet.</p>'}
+ ${c.notes?`<div class="mut">📝 ${esc(c.notes)}</div>`:''}<div class="row" style="margin-top:8px"><span class="mut">${esc(c.account)} · ${esc(c.logged_at_lisbon)} PT${c.resolved_at?' · resolved '+esc(c.resolved_at):''}</span><span><span class="tag">${esc(c.source)}</span>${c.after_the_fact?' <span class="tag" style="color:var(--warn)">after-the-fact</span>':''} <a href="${esc(c.post_url)}" target="_blank" rel="noopener">Post ↗</a></span></div></div>`}).join('')||'<p class="mut">No calls yet.</p>';renderLeader()}
 function loadPrices(){return fetch('data/prices.json?t='+Date.now()).then(r=>r.json()).then(d=>{PRICES=d.prices||{};PRICES._at=d.fetched_at}).catch(()=>{PRICES={}}).then(renderSignals)}
 
 $('#showspam').onchange=e=>{localStorage.setItem('ec-showspam',e.target.checked?'1':'0');renderSignals()};
 $('#simple').onchange=e=>{localStorage.setItem('ec-simple',e.target.checked?'1':'0');renderSignals()};
 function loadLedger(){return fetch('data/ledger.json?t='+Date.now()).then(r=>r.json()).then(d=>{LEDGER=d;
  $('#gen').textContent='Ledger '+d.generated_at.replace('T',' ').slice(0,16);loadPrices();
- const acc={};d.calls.filter(countsForRecord).forEach(c=>{const a=acc[c.account]??={hit:0,stop:0,other:0,atf:0};c.status==='hit_target'?a.hit++:c.status==='stopped'?a.stop++:a.other++;if(c.after_the_fact)a.atf++});
- const rk=a=>{const r=a.hit+a.stop;return r>=MIN_CLOSED?a.hit/r:-1};let rank=0;
- $('#lb').innerHTML=Object.entries(acc).sort((x,y)=>rk(y[1])-rk(x[1])||(y[1].hit+y[1].stop)-(x[1].hit+x[1].stop)).map(([n,a])=>{const r=a.hit+a.stop,ranked=r>=MIN_CLOSED;return`<tr><td>${ranked?`<b>#${++rank}</b> `:'<span class="mut">–</span> '}<b>${esc(n)}</b></td><td>${winrateHTML(n)}</td><td class="up">${a.hit}</td><td class="dn">${a.stop}</td><td>${a.other}</td><td>${a.atf}</td></tr>`}).join('');
 })}
+
+// Leaderboard (FOMO style, live)
+const ST={open:'open',hit_target:'hit',stopped:'stopped',unclear:'expired',expired:'expired'};
+function callRes(c){const e=lvl(c.entry),d=c.direction==='short'?-1:1;let x=null;
+ if(c.status==='open')x=PRICES[c.asset]?.price??null;else if(c.status==='hit_target')x=lvl(c.target);else if(c.status==='stopped')x=lvl(c.stop);
+ return{e,x,p:e&&x!=null?d*(x-e)/e*100:null}}
+const fmtP=v=>v==null?'n/a':v.toLocaleString('en-US',{maximumFractionDigits:v<10?4:2});
+const LBPREV={};
+const avFail=img=>{const s=document.createElement('div');s.className='lb-avatar';s.style.cssText='display:flex;align-items:center;justify-content:center;font-weight:800;color:#fff';s.textContent=img.alt;img.replaceWith(s)};
+function renderLeader(){if(!LEDGER||!$('#lb'))return;const by={};LEDGER.calls.filter(c=>!isSpam(c)).forEach(c=>(by[c.account]??=[]).push(c));
+ const rows=Object.entries(by).map(([n,cs])=>{const r=recordOf(n),res=cs.map(c=>({c,...callRes(c)})).reverse(),v=res.filter(x=>x.p!=null);return{n,cs:res,r,avg:v.length?v.reduce((s,x)=>s+x.p,0)/v.length:null}});
+ const byAvg=(a,b)=>(b.avg??-1e9)-(a.avg??-1e9);
+ const ranked=rows.filter(o=>o.r.rate!=null).sort((a,b)=>b.r.rate-a.r.rate||byAvg(a,b)),fresh=rows.filter(o=>o.r.rate==null).sort(byAvg);
+ const item=(o,i)=>{const h=o.n.replace(/^@/,''),ini=(h[0]||'?').toUpperCase();return`<div class="lb-row" data-acc="${esc(o.n)}"><div class="lb-rank">${i==null?'–':i+1}</div><img class="lb-avatar" src="https://unavatar.io/x/${encodeURIComponent(h)}" alt="${esc(ini)}" loading="lazy" onerror="avFail(this)"><div class="lb-name"><b>${esc(h)}</b><small>@${esc(h)} · ${o.r.rate!=null?'win rate '+Math.round(o.r.rate*100)+'%':'win rate new ('+o.r.n+'/10 closed)'} · ${o.cs.length} calls</small></div><div class="lb-pnl ${cls(o.avg)}" title="Average % per call">${pct(o.avg)}</div></div>
+ <div class="lb-calls">${o.cs.filter(x=>x.p!=null).map(x=>`<span class="lb-call ${cls(x.p)}">${esc(x.c.asset)} ${pct(x.p)}</span>`).join('')||'<span class="mut">No priced calls yet</span>'}</div>
+ <details class="lbd"${LBOPEN.has(o.n)?' open':''} data-acc="${esc(o.n)}"><summary>All calls (${o.cs.length})</summary>${o.cs.map(x=>`<div class="lbr"><div><b>${esc(x.c.asset)}</b> <span class="badge ${x.c.direction==='short'?'short':'long'}">${esc(x.c.direction)}</span><div class="mut">Entry ${esc(x.c.entry)} → ${x.c.status==='open'?'now':'exit'} ${fmtP(x.x)}</div></div><div style="text-align:right"><b class="${cls(x.p)}">${pct(x.p)}</b><div class="stp st-${esc(x.c.status)}">${ST[x.c.status]||esc(x.c.status)}</div></div></div>`).join('')}</details>`};
+ $('#lb').innerHTML=`<div class="lb">${ranked.map(item).join('')||'<p class="mut">No account has 10 closed calls yet.</p>'}</div>${fresh.length?`<div class="lb-section">New callers</div><div class="lb">${fresh.map(o=>item(o,null)).join('')}</div>`:''}`;
+ rows.forEach(o=>{const p=LBPREV[o.n];if(p!=null&&o.avg!=null&&Math.abs(o.avg-p)>1e-9){const el=document.querySelector(`.lb-row[data-acc="${CSS.escape(o.n)}"]`);el&&el.classList.add(o.avg>p?'flash-up':'flash-dn');el&&setTimeout(()=>el.classList.remove('flash-up','flash-dn'),1200)}LBPREV[o.n]=o.avg})}
+const LBOPEN=new Set();document.addEventListener('toggle',e=>{const d=e.target;if(d.classList&&d.classList.contains('lbd'))d.open?LBOPEN.add(d.dataset.acc):LBOPEN.delete(d.dataset.acc)},true);
 loadLedger().catch(e=>$('#feed').innerHTML='<p class="mut">Could not load data/ledger.json — run refresh.py and serve over http.</p>');
 // Portfolio
 const H=[['SpaceX',389.02,'#2f9bff'],['Tesla',244.00,'#ff4d5e'],['Cyber segurança pie',107.06,'#21c37a'],['Pelosi pie',96.70,'#a66bff'],['Bancos tugas pie',49.14,'#f5b73b'],['iShares NASDAQ 100',29.63,'#20c5d6'],['iShares S&P 500 IT',29.36,'#ff8a3d']];
@@ -45,36 +59,31 @@ $('#pwarn').innerHTML=`<div class="warn">⚠️ Concentration: SpaceX + Tesla (M
 $('#ptab').innerHTML=H.map(h=>`<tr><td><span style="color:${h[2]}">●</span> ${h[0]}</td><td>${eur(h[1])}</td><td class="mut">${(h[1]/tot*100).toFixed(1)}%</td></tr>`).join('');
 const C=window.Chart;Chart&&(Chart.defaults.color='#8a96a6');
 C&&new Chart($('#donut'),{type:'doughnut',data:{labels:H.map(h=>h[0]),datasets:[{data:H.map(h=>h[1]),backgroundColor:H.map(h=>h[2]),borderWidth:0}]},options:{cutout:'68%',maintainAspectRatio:false,plugins:{legend:{display:false}}}});
-$('#pj-s').value=tot.toFixed(0);let pjc;
+const PJ=JSON.parse(localStorage.getItem('ec-proj')||'{}');$('#pj-s').value=PJ.s??tot.toFixed(0);$('#pj-m').value=PJ.m??'';if(PJ.y)$('#pj-y').value=PJ.y;let pjc;
 function proj(){const s=+$('#pj-s').value||0,m=+$('#pj-m').value||0,y=+$('#pj-y').value,n=y*12;const sc=[[-25,'#ff4d5e'],[8,'#2f9bff'],[25,'#21c37a']];
  const series=sc.map(([r])=>{const mr=Math.pow(1+r/100,1/12)-1;let v=s,a=[v];for(let i=0;i<n;i++){v=v*(1+mr)+m;a.push(v)}return a});
  $('#pj-out').innerHTML=sc.map(([r],i)=>`<tr><td class="${r<0?'dn':'up'}">${r>0?'+':''}${r}%/yr</td><td>${eur(s+m*n)}</td><td><b>${eur(series[i][n])}</b></td></tr>`).join('');
  if(!C)return;pjc&&pjc.destroy();pjc=new Chart($('#pjc'),{type:'line',data:{labels:[...Array(n+1).keys()].map(i=>'M'+i),datasets:sc.map(([r,c],i)=>({label:(r>0?'+':'')+r+'%',data:series[i],borderColor:c,pointRadius:0,tension:.2}))},options:{maintainAspectRatio:false,scales:{x:{grid:{color:'#1c232d'}},y:{grid:{color:'#1c232d'}}}}})}
-['#pj-s','#pj-m','#pj-y'].forEach(i=>$(i).oninput=proj);proj();
-// Monthly plan
-(()=>{const plan=[['SpaceX',200],['Tesla',80],['S&P 500 index',120]];
- const target={'SpaceX':50,'Tesla':22.5,'S&P 500 index':17.5,'Other (pies + ETFs)':10};
- const cur={'SpaceX':389.02,'Tesla':244,'S&P 500 index':0,'Other (pies + ETFs)':107.06+96.70+49.14+29.63+29.36};
- const after={...cur};plan.forEach(([k,v])=>after[k]+=v*12);const ta=Object.values(after).reduce((a,b)=>a+b,0);
- $('#plan').innerHTML=`<h2>Monthly plan · €400/mo</h2><div class="lv">${plan.map(([k,v])=>`<div><small>${k}</small>${eur(v)}</div>`).join('')}</div>
- <p class="mut">Target: ~70–75% SpaceX + Tesla (high-conviction), rest diversified. Note: the iShares S&P 500 IT ETF you hold is tech-only, not a broad S&P 500 index.</p>
- <table><thead><tr><th>Bucket</th><th>Current</th><th>After 12 mo*</th><th>Target</th></tr></thead><tbody>${Object.keys(target).map(k=>`<tr><td>${k}</td><td>${(cur[k]/tot*100).toFixed(1)}%</td><td>${(after[k]/ta*100).toFixed(1)}%</td><td><b>${target[k]}%</b></td></tr>`).join('')}
- <tr><td><b>SpaceX + Tesla</b></td><td><b>${musk.toFixed(1)}%</b></td><td><b>${((after.SpaceX+after.Tesla)/ta*100).toFixed(1)}%</b></td><td><b>72.5%</b></td></tr></tbody></table>
- <p class="mut">*Deposits only, assuming no price changes.</p>`})();
+['#pj-s','#pj-m','#pj-y'].forEach(i=>$(i).oninput=()=>{localStorage.setItem('ec-proj',JSON.stringify({s:$('#pj-s').value,m:$('#pj-m').value,y:$('#pj-y').value}));proj();rebal()});proj();
+// How to rebalance (theory) — computed from holdings
+function rebal(){const big=H.filter(h=>/SpaceX|Tesla/.test(h[0])),bt=big.reduce((s,h)=>s+h[1],0),m=+$('#pj-m').value||0,tgt=50;
+ const need=bt/(tgt/100)-tot,months=m>0&&need>0?Math.ceil(need/m):null;
+ $('#rebal').innerHTML=`<h2>How to rebalance (theory)</h2><p>SpaceX + Tesla are <b>${(bt/tot*100).toFixed(0)}%</b> of your portfolio (${eur(bt)} of ${eur(tot)}). A generic way people reduce concentration:</p>
+ <ol class="steps"><li><b>Send new money elsewhere.</b> Put new monthly contributions into a broad S&amp;P 500 fund/ETF (not the tech-only one) until a target split is reached — no selling needed.</li><li><b>Set a max % per holding</b> (e.g. 20–25% for any single stock) and a target for the two combined.</li><li><b>Rebalance periodically</b> (e.g. every 6–12 months), not after every headline.</li><li><b>Avoid selling at a loss just to rebalance</b> — redirecting contributions is usually gentler (and taxes/fees matter).</li></ol>
+ <div class="lv"><div><small>Example target</small>${tgt}% combined</div><div><small>New money needed*</small>${need>0?eur(need):'already there'}</div><div><small>Months at your monthly</small>${months??(m>0?'0':'enter monthly')}</div></div>
+ <p class="mut">*If all new money goes to other holdings and prices don't move. Educational illustration only — not financial advice.</p>`}
+rebal();
+// Trade size helper
+const TS=JSON.parse(localStorage.getItem('ec-ts')||'{}');['bal','risk','e','s'].forEach(k=>{const el=$('#ts-'+k);if(TS[k]!=null)el.value=TS[k];el.oninput=()=>{TS[k]=el.value;localStorage.setItem('ec-ts',JSON.stringify(TS));tsz()}});
+function tsz(){const b=+$('#ts-bal').value,r=+$('#ts-risk').value,e=+$('#ts-e').value,s=+$('#ts-s').value;if(!b||!r||!e||!s||e===s){$('#ts-out').innerHTML='<p class="mut">Fill all four fields.</p>';return}
+ const risk=b*r/100,u=risk/Math.abs(e-s);$('#ts-out').innerHTML=`<div class="lv"><div><small>Max loss</small><span class="dn">${eur(risk)}</span></div><div><small>Size (units)</small>${u.toLocaleString('en-US',{maximumFractionDigits:4})}</div><div><small>Position value</small>${eur(u*e)}</div></div>${r>2?'<div class="warn">Above 2% risk per trade is aggressive.</div>':''}${u*e>b?'<div class="warn">Position value is bigger than your balance.</div>':''}`}
+tsz();
 // Alerts
 const ls=(k,v)=>v===undefined?JSON.parse(localStorage.getItem(k)||'[]'):localStorage.setItem(k,JSON.stringify(v));
-function rAl(){const a=ls('ec-alerts');$('#al-list').innerHTML=a.map((x,i)=>`<tr><td><b>${esc(x.asset)}</b></td><td class="${x.dir==='above'?'up':'dn'}">${x.dir==='above'?'▲ above':'▼ below'} ${x.level}</td><td class="mut">${esc(x.at)}</td><td><button class="btn g" onclick="delAl(${i})">✕</button></td></tr>`).join('')||'<tr><td class="mut">No alerts yet.</td></tr>'}
+function rAl(){const a=ls('ec-alerts');$('#al-list').innerHTML=a.map((x,i)=>{const p=PRICES[x.asset]?.price,hit=p==null?null:x.dir==='above'?p>=x.level:p<=x.level;
+ return`<div class="alr"><div><b>${esc(x.asset)}</b> <span class="mut">${x.dir} ${x.level}</span><div class="mut">Now ${p==null?'n/a':p.toLocaleString('en-US',{maximumFractionDigits:4})}${hit?' · <b class="up">crossed</b>':''}</div></div><button class="btn g" aria-label="Delete" onclick="delAl(${i})">✕</button></div>`}).join('')||'<p class="mut">No alerts yet.</p>'}
 window.delAl=i=>{const a=ls('ec-alerts');a.splice(i,1);ls('ec-alerts',a);rAl()};
 $('#al-add').onclick=()=>{const asset=$('#al-a').value.trim().toUpperCase(),level=+$('#al-l').value;if(!asset||!level)return;const a=ls('ec-alerts');a.push({asset,level,dir:$('#al-d').value,at:new Date().toLocaleDateString('pt-PT')});ls('ec-alerts',a);$('#al-a').value=$('#al-l').value='';rAl()};rAl();
-// Journal
-let edit=-1;const pl=t=>t.exit===''||t.exit==null?null:(t.side==='long'?1:-1)*(t.exit-t.entry)/t.entry*t.size;
-function rJ(){const j=ls('ec-journal');let tot=0,w=0,c=0;
- $('#j-list').innerHTML=j.map((t,i)=>{const p=pl(t);if(p!=null){tot+=p;c++;if(p>0)w++}return`<tr><td><b>${esc(t.asset)}</b></td><td><span class="badge ${t.side}">${t.side}</span></td><td>${t.entry}</td><td>${t.exit===''?'<span class="mut">open</span>':t.exit}</td><td class="${p>0?'up':p<0?'dn':''}">${p==null?'—':eur(p)}</td><td style="white-space:nowrap"><button class="btn g" onclick="edJ(${i})">✎</button> <button class="btn g" onclick="delJ(${i})">✕</button></td></tr>`}).join('')||'<tr><td class="mut" colspan="6">No practice trades yet.</td></tr>';
- $('#j-pl').textContent=eur(tot);$('#j-pl').className='big '+(tot>=0?'up':'dn');$('#j-wr').textContent=c?Math.round(w/c*100)+'% ('+w+'/'+c+')':'—'}
-window.delJ=i=>{const j=ls('ec-journal');j.splice(i,1);ls('ec-journal',j);rJ()};
-window.edJ=i=>{const t=ls('ec-journal')[i];edit=i;$('#j-a').value=t.asset;$('#j-s').value=t.side;$('#j-e').value=t.entry;$('#j-x').value=t.exit;$('#j-q').value=t.size;$('#j-add').textContent='Update'};
-$('#j-add').onclick=()=>{const t={asset:$('#j-a').value.trim().toUpperCase(),side:$('#j-s').value,entry:+$('#j-e').value,exit:$('#j-x').value===''?'':+$('#j-x').value,size:+$('#j-q').value||0};if(!t.asset||!t.entry)return;const j=ls('ec-journal');edit>=0?j[edit]=t:j.push(t);edit=-1;$('#j-add').textContent='Save';ls('ec-journal',j);['#j-a','#j-e','#j-x'].forEach(s=>$(s).value='');rJ()};rJ();
 
-if(location.hash&&location.hash!=='#plan')showTab(location.hash.slice(1))
-if(location.hash==='#plan'){showTab('port');setTimeout(()=>document.getElementById('plan').scrollIntoView(),300)}
+if(location.hash)showTab(location.hash==='#plan'?'port':location.hash.slice(1))
 {const t=new URLSearchParams(location.search).get('tab');t&&showTab(t)}
