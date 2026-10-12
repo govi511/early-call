@@ -7,8 +7,14 @@ HERE = os.path.dirname(os.path.abspath(__file__)); DATA = os.path.join(HERE, "da
 ARGS = [a for a in sys.argv[1:] if not a.startswith("--")]
 LEDGER_ONLY = "--ledger-only" in sys.argv
 SRC = ARGS[0] if ARGS else "/cursor/stores/store-9d60204b-cf80-460e-a058-55dafdd15548/call-ledger.csv"
-CRYPTO = {"BTC","ETH","SOL","XRP","BNB","DOGE","ADA","AVAX","LINK","LTC","APE","ICP","PAXG","CRV","SEI","NEAR","QNT","S","RSR","PHA","IO","STBL","BTR","Q","BULL","TAO","FET","HYPE","ZEC","ENA","SUI","EIGEN","ATOM","OP","W","ONDO","PLUME","INJ","ZRO","PUMP","VVV"}
-ALIAS = {"QQQ/SPY":"QQQ","SPY/QQQ":"SPY"}  # multi-ticker calls -> first ticker
+CRYPTO = {"BTC","ETH","SOL","XRP","BNB","DOGE","ADA","AVAX","LINK","LTC","APE","ICP","PAXG","CRV","SEI","NEAR","QNT","S","RSR","PHA","IO","STBL","BTR","Q","BULL","TAO","FET","HYPE","ZEC","ENA","SUI","EIGEN","ATOM","OP","W","ONDO","PLUME","INJ","ZRO","PUMP","VVV","BAT","ETHBTC"}
+PAIRS = {"ETHBTC": "ETHBTC"}  # Binance cross pairs priced as the real ratio (not USDT)
+def bsym(a): return PAIRS.get(a, a + "USDT")
+def is_short(d):
+    """Shared short-direction rule (mirrors isShort in filter.js)."""
+    d = (d or "").strip().lower()
+    return d.startswith(("short", "bear", "put", "hike")) or "short" in d
+ALIAS = {"QQQ/SPY":"QQQ","SPY/QQQ":"SPY","ETH/BTC":"ETHBTC"}  # multi-ticker calls -> first ticker
 NONPRICE = {"FED","FOMC","FEDFUNDS","RATES","CPI"}  # macro calls, not tradable assets
 NP_NOTE = "not a tradable asset"
 KRAKEN = {"XMR":"XMRUSD"}  # Binance XMR pair is delisted/stale
@@ -76,6 +82,7 @@ def fetch(asset, force=None):
         return _nasdaq(a)
 def _nasdaq(a):
     import urllib.request, json as _j
+    errs = []
     for cls in ("stocks","etf"):
         try:
             req=urllib.request.Request(f"https://api.nasdaq.com/api/quote/{a}/info?assetclass={cls}",headers={"User-Agent":"Mozilla/5.0","Accept":"application/json"})
@@ -84,12 +91,12 @@ def _nasdaq(a):
             p=float(pd["lastSalePrice"].replace("$","").replace(",",""))
             ch=float(pd.get("percentageChange","0").replace("%","").replace("+","") or 0)
             return {"price":p,"change_pct":ch,"symbol":a,"currency":"USD","source":"Nasdaq","as_of":now()}
-        except Exception: continue
-    raise RuntimeError("no nasdaq price")
+        except Exception as e: errs.append(f"{cls}: {e}")
+    raise RuntimeError("no nasdaq price (" + ", ".join(errs) + ")")
 def _binance(a):
-        p = get(f"https://api.binance.com/api/v3/ticker/24hr?symbol={a}USDT", tries=1)
+        p = get(f"https://api.binance.com/api/v3/ticker/24hr?symbol={bsym(a)}", tries=1)
         if float(p["lastPrice"]) <= 0: raise RuntimeError("binance pair dead (price 0)")
-        return {"price": float(p["lastPrice"]), "change_pct": float(p["priceChangePercent"]), "symbol": a+"USDT", "currency": "USDT", "source": "Binance", "as_of": now()}
+        return {"price": float(p["lastPrice"]), "change_pct": float(p["priceChangePercent"]), "symbol": bsym(a), "currency": "BTC" if a in PAIRS else "USDT", "source": "Binance", "as_of": now()}
 def _yahoo(a):
     sym = YAHOO_MAP.get(a, a)
     m = ychart(sym, "range=1d&interval=5m")["chart"]["result"][0]["meta"]
@@ -111,7 +118,7 @@ def candles(asset):
             rows = next(v for kk, v in r["result"].items() if kk != "last")[-lim:]
             out[k] = [[int(x[0]), r4(float(x[1])), r4(float(x[2])), r4(float(x[3])), r4(float(x[4]))] for x in rows]
         elif SOURCE_USED.get(a, 'binance' if a in CRYPTO else 'yahoo') == 'binance':
-            rows = get(f"https://api.binance.com/api/v3/klines?symbol={a}USDT&interval={bi}&limit={lim}")
+            rows = get(f"https://api.binance.com/api/v3/klines?symbol={bsym(a)}&interval={bi}&limit={lim}")
             out[k] = [[int(x[0]) // 1000, r4(float(x[1])), r4(float(x[2])), r4(float(x[3])), r4(float(x[4]))] for x in rows]
         else:
             sym = YAHOO_MAP.get(a, a)
@@ -134,7 +141,7 @@ def fingerprint(r):
     """asset+direction+entry+stop+target, numbers only (labels like '(1h close)' ignored)"""
     import re
     n = lambda v: ",".join(re.findall(r"\d+(?:\.\d+)?", v or "")) or (v or "").strip().lower()
-    return "|".join([r.get("asset","").upper(), r.get("direction","").lower().split()[0] if r.get("direction") else "", n(r.get("entry")), n(r.get("stop")), n(r.get("target"))])
+    return "|".join([r.get("asset","").upper(), ("short" if is_short(r.get("direction")) else "long") if r.get("direction") else "", n(r.get("entry")), n(r.get("stop")), n(r.get("target"))])
 def mark_clusters(rows):
     """Same fingerprint from different accounts within 48h: all but earliest -> copy_of; all accounts -> spam_farm."""
     def ts(r):
@@ -171,33 +178,43 @@ def _ts_utc(r):
         return int(datetime.datetime.strptime(r["logged_at_lisbon"], "%Y-%m-%d %H:%M").replace(tzinfo=ZoneInfo("Europe/Lisbon")).timestamp())
     except Exception: return None
 def _hist(asset, ts):
-    a = norm(asset)
+    """Price at post time. Tries every source; on total failure raises with every reason joined."""
+    a = norm(asset); errs = []
     if a in CRYPTO:
         try:
-            k = get(f"https://api.binance.com/api/v3/klines?symbol={a}USDT&interval=1m&startTime={ts*1000}&limit=1", tries=1)
+            k = get(f"https://api.binance.com/api/v3/klines?symbol={bsym(a)}&interval=1m&startTime={ts*1000}&limit=1", tries=1)
             if k and float(k[0][1]) > 0: return float(k[0][1]), "Binance"
-        except Exception: pass
+            errs.append("binance: no candle")
+        except Exception as e: errs.append(f"binance: {e}")
+        if a in PAIRS: raise RuntimeError("; ".join(errs))  # ratio pairs: no USD fallback
         try: kraken_pair(a)
-        except Exception: pass
+        except Exception as e: errs.append(f"kraken pair: {e}")
     if a in KRAKEN:
-        r = get(f"https://api.kraken.com/0/public/OHLC?pair={KRAKEN[a]}&interval=1&since={ts-60}")
-        rows = next(v for k, v in r["result"].items() if k != "last")
-        if rows: return float(rows[0][1]), "Kraken"
+        try:
+            r = get(f"https://api.kraken.com/0/public/OHLC?pair={KRAKEN[a]}&interval=1&since={ts-60}")
+            rows = next(v for k, v in r["result"].items() if k != "last")
+            if rows: return float(rows[0][1]), "Kraken"
+            errs.append("kraken: no rows")
+        except Exception as e: errs.append(f"kraken: {e}")
     if a in CRYPTO:
-        g = get(f"https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair={a}_USDT&interval=1m&from={ts}&to={ts+600}", tries=1)
-        if isinstance(g, list) and g: return float(g[0][5]), "Gate.io"
-        raise RuntimeError("no crypto history")
-    try: return _yhist(a, ts)
-    except Exception:
-        import time as _t
-        try: return _nhist(a, ts)
-        except Exception: pass
-        if _t.time() - ts < 2*86400: return _nasdaq(a)["price"], "Nasdaq (approx)"
-        raise
+        try:
+            g = get(f"https://api.gateio.ws/api/v4/spot/candlesticks?currency_pair={a}_USDT&interval=1m&from={ts}&to={ts+600}", tries=1)
+            if isinstance(g, list) and g: return float(g[0][5]), "Gate.io"
+            errs.append("gate.io: no candles")
+        except Exception as e: errs.append(f"gate.io: {e}")
+        raise RuntimeError("; ".join(errs))
+    for name, fn in (("yahoo", _yhist), ("nasdaq hist", _nhist)):
+        try: return fn(a, ts)
+        except Exception as e: errs.append(f"{name}: {e}")
+    if time.time() - ts < 2*86400:
+        try: return _nasdaq(a)["price"], "Nasdaq (approx)"
+        except Exception as e: errs.append(f"nasdaq quote: {e}")
+    raise RuntimeError("; ".join(errs))
 def _nhist(a, ts):
     import urllib.request, json as _j, datetime as _d
     sym = {"QQQ/SPY":"QQQ"}.get(a, a)
     day = _d.datetime.fromtimestamp(ts, _d.timezone(_d.timedelta(hours=-4)))
+    errs = []
     f = (day - _d.timedelta(days=6)).strftime("%Y-%m-%d"); t = day.strftime("%Y-%m-%d")
     for cls in ("stocks", "etf"):
         try:
@@ -209,8 +226,9 @@ def _nhist(a, ts):
                 if r["date"] == ds and day.hour < 16: return num(r["open"]), "Nasdaq daily (open)"
             prior = [r for r in rows if r["date"] != ds or day.hour >= 16]
             if prior: return num(prior[0]["close"]), "Nasdaq daily (close)"
-        except Exception: continue
-    raise RuntimeError("no nasdaq history")
+            errs.append(f"{cls}: no rows")
+        except Exception as e: errs.append(f"{cls}: {e}")
+    raise RuntimeError("no nasdaq history (" + ", ".join(errs) + ")")
 def _yhist(a, ts):
     sym = YAHOO_MAP.get(a, a)
     res = ychart(sym, f"period1={ts-3600}&period2={ts+4*86400}&interval=5m")["chart"]["result"][0]
@@ -236,15 +254,15 @@ def add_baselines(rows):
             r["nonpriceable"] = True
             if cache.get(key, {}).get("source") != NP_NOTE: cache[key] = {"price": None, "source": NP_NOTE, "at": r.get("logged_at_lisbon")}; changed = True
             continue
-        if key in cache and cache[key].get("source") == "unavailable": del cache[key]  # retry with new mappings
+        if key in cache and cache[key].get("price") is None: del cache[key]  # every failed baseline is retried on each run
         if key not in cache:
             ts = _ts_utc(r)
             try:
                 if ts is None: raise RuntimeError("bad time")
                 px, src = _hist(r["asset"], ts); cache[key] = {"price": px, "source": src, "at": r["logged_at_lisbon"]}
             except Exception as e:
-                log(f"baseline {key} failed: {str(e)[:60]}")
-                if "404" in str(e) or "400" in str(e): cache[key] = {"price": None, "source": "unavailable", "at": r.get("logged_at_lisbon")}; changed = True
+                log(f"baseline {key} failed: {str(e)[:400]}")
+                cache[key] = {"price": None, "source": "unavailable", "error": str(e)[:400], "at": r.get("logged_at_lisbon")}; changed = True  # retried next run
                 continue
             changed = True
         if cache[key]["price"] is None: continue
@@ -253,10 +271,10 @@ def add_baselines(rows):
         c = cache[key]; ts = _ts_utc(r)
         if "locked_pct" not in c and ts and time.time() >= ts + 7 * 86400:
             try:
-                px7, _ = _hist(r["asset"], ts + 7 * 86400); d = -1 if r.get("direction", "").lower().startswith("short") else 1
+                px7, _ = _hist(r["asset"], ts + 7 * 86400); d = -1 if is_short(r.get("direction")) else 1
                 c["locked_pct"] = round(d * (px7 - c["price"]) / c["price"] * 100, 4); c["locked_price"] = px7
                 c["locked_at"] = datetime.datetime.fromtimestamp(ts + 7 * 86400).astimezone().isoformat(timespec="minutes"); changed = True
-            except Exception as e: log(f"lock {key} failed: {str(e)[:60]}")
+            except Exception as e: log(f"lock {key} failed: {str(e)[:400]}")
         if "locked_pct" in c: r["locked_pct"] = c["locked_pct"]; r["locked_at"] = c["locked_at"]
     if changed: write_json(bp, cache)
 def pick(asset, ref):
@@ -277,9 +295,15 @@ def pick(asset, ref):
     raise RuntimeError("no matching price: " + "; ".join(tried))
 def main():
     os.makedirs(DATA, exist_ok=True)
-    lock = open(os.path.join(DATA, ".refresh.lock"), "w")
-    try: fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
-    except OSError: log("another refresh running; skip"); return 2
+    # Shared lock with sync-ledger.sh / push-data.sh (data/.git.lock). Those scripts take it first and set
+    # EARLYCALL_LOCK_HELD=1; standalone runs wait up to 240s instead of skipping.
+    if os.environ.get("EARLYCALL_LOCK_HELD") != "1":
+        lock = open(os.path.join(DATA, ".git.lock"), "w"); t0 = time.time()
+        while True:
+            try: fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB); break
+            except OSError:
+                if time.time() - t0 > 240: log("lock busy for 240s; giving up"); return 2
+                time.sleep(2)
     try:
         with open(SRC, newline="", encoding="utf-8") as f: rows = []
         with open(SRC, newline="", encoding="utf-8") as f:

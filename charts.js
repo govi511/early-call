@@ -9,7 +9,7 @@
   const W=300,H=72,cl=rows.map(r=>r[4]),lv=c?levels(c).map(x=>x[1]):[];let mn=Math.min(...cl),mx=Math.max(...cl);
   // include levels only if they're reasonably near, so the line isn't flattened
   lv.forEach(v=>{if(v>mn*0.9&&v<mx*1.1){mn=Math.min(mn,v);mx=Math.max(mx,v)}});const pad=(mx-mn)*0.08||1;mn-=pad;mx+=pad;
-  const y=v=>(H-(v-mn)/(mx-mn)*H).toFixed(1),x=i=>(i/(cl.length-1)*W).toFixed(1),_e=c?lvl(c.entry):null,col=(_e!=null?(/short/i.test(c.direction||"")?cl[cl.length-1]<=_e:cl[cl.length-1]>=_e):cl[cl.length-1]>=cl[0])?UP:DN;
+  const y=v=>(H-(v-mn)/(mx-mn)*H).toFixed(1),x=i=>(i/(cl.length-1)*W).toFixed(1),_e=c?lvl(c.entry):null,col=(_e!=null?(isShort(c.direction)?cl[cl.length-1]<=_e:cl[cl.length-1]>=_e):cl[cl.length-1]>=cl[0])?UP:DN;
   const pts=cl.map((v,i)=>x(i)+','+y(v)).join(' ');
   const lines=c?levels(c).filter(l=>l[1]>=mn&&l[1]<=mx).map(l=>`<line x1="0" x2="${W}" y1="${y(l[1])}" y2="${y(l[1])}" stroke="${l[2]}" stroke-width="1" stroke-dasharray="4 3" opacity=".8"/><text x="4" y="${Math.max(9,y(l[1])-3)}" text-anchor="start" font-size="9" fill="${l[2]}">${l[0]}</text>`).join(''):'';
   el.innerHTML=`<svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" width="100%" height="100%" aria-label="24h price"><title>Colour = change since entry · tap card for bigger chart</title>${lines}<polyline points="${pts}" fill="none" stroke="${col}" stroke-width="1.6" vector-effect="non-scaling-stroke"/></svg>`})}

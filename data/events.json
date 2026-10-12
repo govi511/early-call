@@ -68,6 +68,18 @@
     ]
   },
   {
+    "date": "2026-11-03",
+    "title": "SpaceX Q3 2026 earnings (expected)",
+    "detail": "~21:30 PT after US close — estimate, not confirmed by SpaceX",
+    "tag": "TBC",
+    "co": "spacex",
+    "affects": [
+      "SpaceX",
+      "TSLA (sentiment)",
+      "Space stocks"
+    ]
+  },
+  {
     "date": "2026-11-06",
     "title": "US jobs report (October)",
     "detail": "BLS Employment Situation, 13:30 PT (8:30 ET)",
@@ -80,6 +92,18 @@
       "BTC",
       "Gold",
       "Bonds"
+    ]
+  },
+  {
+    "date": "2026-11-08",
+    "title": "Starship Flight 15 (tentative NET)",
+    "detail": "FAA planning date; no official SpaceX launch date",
+    "tag": "TBC",
+    "co": "spacex",
+    "affects": [
+      "SpaceX",
+      "TSLA (sentiment)",
+      "Space stocks"
     ]
   },
   {
@@ -140,42 +164,6 @@
       "BTC",
       "Gold",
       "Bonds"
-    ]
-  },
-  {
-    "date": "2026-11-03",
-    "title": "SpaceX Q3 2026 earnings (expected)",
-    "detail": "~21:30 PT after US close — estimate, not confirmed by SpaceX",
-    "tag": "TBC",
-    "co": "spacex",
-    "affects": [
-      "SpaceX",
-      "TSLA (sentiment)",
-      "Space stocks"
-    ]
-  },
-  {
-    "date": "2026-11-08",
-    "title": "Starship Flight 15 (tentative NET)",
-    "detail": "FAA planning date; no official SpaceX launch date",
-    "tag": "TBC",
-    "co": "spacex",
-    "affects": [
-      "SpaceX",
-      "TSLA (sentiment)",
-      "Space stocks"
-    ]
-  },
-  {
-    "date": "",
-    "title": "Tesla 2026 annual shareholder meeting",
-    "detail": "Not scheduled yet (2025's was Nov 6). Watch for a Tesla–SpaceX merger vote",
-    "tag": "TBC",
-    "co": "tesla",
-    "affects": [
-      "TSLA",
-      "Nasdaq",
-      "EV stocks"
     ]
   }
 ]

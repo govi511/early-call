@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-13T00:17:50+01:00",
+  "generated_at": "2026-10-13T00:26:40+01:00",
   "calls": [
     {
       "id": "1",
@@ -821,9 +821,9 @@
       "entry": "5.40-5.45",
       "stop": "4.85",
       "target": "6.00/7.50",
-      "status": "open",
+      "status": "filtered",
       "resolved_at": "",
-      "notes": "source discovery; 68 followers; 22:08 check NEAR ~5.382 (post-time hi ~5.53); in/near entry earlier then pulled back; stop 4.85 not hit; open",
+      "notes": "source discovery; 68 followers; 22:08 check NEAR ~5.382 (post-time hi ~5.53); in/near entry earlier then pulled back; stop 4.85 not hit; open; filtered: author 68 followers < 5,000 discovery rule",
       "after_the_fact": false,
       "source": "X",
       "feed": "discovery",
@@ -1201,6 +1201,8 @@
       "after_the_fact": false,
       "source": "X",
       "feed": "famous",
+      "baseline": 19.29,
+      "baseline_source": "Nasdaq daily (close)",
       "copy_of": "",
       "spam_farm": false
     },
@@ -1220,6 +1222,8 @@
       "after_the_fact": false,
       "source": "X",
       "feed": "famous",
+      "baseline": 209.05,
+      "baseline_source": "Nasdaq daily (close)",
       "copy_of": "",
       "spam_farm": false
     },
@@ -1260,6 +1264,8 @@
       "after_the_fact": false,
       "source": "X",
       "feed": "famous",
+      "baseline": 54.895,
+      "baseline_source": "Nasdaq daily (open)",
       "copy_of": "",
       "spam_farm": false
     },
@@ -1460,6 +1466,8 @@
       "after_the_fact": false,
       "source": "X",
       "feed": "famous",
+      "baseline": 76.5,
+      "baseline_source": "Nasdaq daily (open)",
       "copy_of": "",
       "spam_farm": false
     },
@@ -1563,6 +1571,8 @@
       "after_the_fact": false,
       "source": "X",
       "feed": "famous",
+      "baseline": 169.99,
+      "baseline_source": "Nasdaq daily (open)",
       "copy_of": "",
       "spam_farm": false
     },
@@ -1620,6 +1630,8 @@
       "after_the_fact": false,
       "source": "X",
       "feed": "famous",
+      "baseline": 25.23,
+      "baseline_source": "Nasdaq daily (open)",
       "copy_of": "",
       "spam_farm": false
     },
@@ -1639,6 +1651,8 @@
       "after_the_fact": false,
       "source": "X",
       "feed": "famous",
+      "baseline": 752.55,
+      "baseline_source": "Nasdaq daily (open)",
       "copy_of": "",
       "spam_farm": false
     },
@@ -1658,6 +1672,8 @@
       "after_the_fact": false,
       "source": "X",
       "feed": "famous",
+      "baseline": 97.33,
+      "baseline_source": "Nasdaq daily (open)",
       "copy_of": "",
       "spam_farm": false
     },
@@ -1677,6 +1693,8 @@
       "after_the_fact": false,
       "source": "X",
       "feed": "famous",
+      "baseline": 167.465,
+      "baseline_source": "Nasdaq daily (open)",
       "copy_of": "",
       "spam_farm": false
     },
@@ -1696,6 +1714,8 @@
       "after_the_fact": false,
       "source": "X",
       "feed": "famous",
+      "baseline": 64.78,
+      "baseline_source": "Nasdaq daily (open)",
       "copy_of": "",
       "spam_farm": false
     },
@@ -1736,6 +1756,8 @@
       "after_the_fact": false,
       "source": "X",
       "feed": "famous",
+      "baseline": 33.07,
+      "baseline_source": "Nasdaq daily (open)",
       "copy_of": "",
       "spam_farm": false
     },
@@ -1755,6 +1777,8 @@
       "after_the_fact": false,
       "source": "X",
       "feed": "famous",
+      "baseline": 242.33,
+      "baseline_source": "Nasdaq daily (open)",
       "copy_of": "",
       "spam_farm": false
     },
@@ -1774,6 +1798,8 @@
       "after_the_fact": false,
       "source": "X",
       "feed": "famous",
+      "baseline": 237.22,
+      "baseline_source": "Nasdaq daily (open)",
       "copy_of": "",
       "spam_farm": false
     },
@@ -1793,6 +1819,8 @@
       "after_the_fact": false,
       "source": "X",
       "feed": "famous",
+      "baseline": 367.03,
+      "baseline_source": "Nasdaq daily (open)",
       "copy_of": "",
       "spam_farm": false
     },
@@ -2274,6 +2302,8 @@
       "after_the_fact": false,
       "source": "X",
       "feed": "famous",
+      "baseline": 221.48,
+      "baseline_source": "Nasdaq daily (open)",
       "copy_of": "",
       "spam_farm": false
     },
@@ -2331,6 +2361,8 @@
       "after_the_fact": false,
       "source": "X",
       "feed": "famous",
+      "baseline": 43.545,
+      "baseline_source": "Nasdaq daily (open)",
       "copy_of": "",
       "spam_farm": false
     },
@@ -2350,6 +2382,8 @@
       "after_the_fact": false,
       "source": "X",
       "feed": "famous",
+      "baseline": 1700.0,
+      "baseline_source": "Nasdaq daily (open)",
       "copy_of": "",
       "spam_farm": false
     },
@@ -2369,6 +2403,8 @@
       "after_the_fact": false,
       "source": "X",
       "feed": "famous",
+      "baseline": 1099.81,
+      "baseline_source": "Nasdaq daily (open)",
       "copy_of": "",
       "spam_farm": false
     },
@@ -2409,6 +2445,8 @@
       "after_the_fact": false,
       "source": "X",
       "feed": "famous",
+      "baseline": 11.24,
+      "baseline_source": "Nasdaq daily (open)",
       "copy_of": "",
       "spam_farm": false
     },
@@ -2596,7 +2634,7 @@
       "after_the_fact": false,
       "source": "X",
       "feed": "famous",
-      "baseline": 2566.19,
+      "baseline": 0.03099,
       "baseline_source": "Binance",
       "copy_of": "",
       "spam_farm": false
@@ -2806,6 +2844,8 @@
       "after_the_fact": false,
       "source": "X",
       "feed": "famous",
+      "baseline": 85.33,
+      "baseline_source": "Nasdaq daily (close)",
       "copy_of": "",
       "spam_farm": false
     },
@@ -2825,6 +2865,8 @@
       "after_the_fact": false,
       "source": "X",
       "feed": "famous",
+      "baseline": 35.19,
+      "baseline_source": "Nasdaq daily (close)",
       "copy_of": "",
       "spam_farm": false
     },
@@ -2926,6 +2968,8 @@
       "after_the_fact": false,
       "source": "X",
       "feed": "famous",
+      "baseline": 256.5,
+      "baseline_source": "Nasdaq daily (open)",
       "copy_of": "",
       "spam_farm": false
     },
@@ -3193,6 +3237,8 @@
       "after_the_fact": false,
       "source": "X",
       "feed": "famous",
+      "baseline": 399.305,
+      "baseline_source": "Nasdaq daily (open)",
       "copy_of": "",
       "spam_farm": false
     },
@@ -3212,6 +3258,8 @@
       "after_the_fact": false,
       "source": "X",
       "feed": "famous",
+      "baseline": 107.08,
+      "baseline_source": "Nasdaq daily (close)",
       "copy_of": "",
       "spam_farm": false
     },
@@ -3231,6 +3279,8 @@
       "after_the_fact": false,
       "source": "X",
       "feed": "famous",
+      "baseline": 747.58,
+      "baseline_source": "Nasdaq daily (close)",
       "copy_of": "",
       "spam_farm": false
     },
@@ -3250,6 +3300,8 @@
       "after_the_fact": false,
       "source": "X",
       "feed": "famous",
+      "baseline": 774.86,
+      "baseline_source": "Nasdaq daily (open)",
       "copy_of": "",
       "spam_farm": false
     },
@@ -3269,6 +3321,8 @@
       "after_the_fact": false,
       "source": "X",
       "feed": "famous",
+      "baseline": 639.36,
+      "baseline_source": "Nasdaq daily (open)",
       "copy_of": "",
       "spam_farm": false
     },
@@ -3330,6 +3384,48 @@
       "after_the_fact": false,
       "source": "X",
       "feed": "famous",
+      "baseline": 0.1548,
+      "baseline_source": "Binance",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "167",
+      "logged_at_lisbon": "2026-10-13 00:16",
+      "account": "@WatcherGuru",
+      "post_url": "https://x.com/WatcherGuru/status/2109783792206434815",
+      "asset": "BTC",
+      "direction": "bearish (liquidation cascade)",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "early-signal; BTC broke below $82k at 00:10 PT, ~$120M crypto longs liquidated in 15 min (WatcherGuru); Coinbase spot ~$81.93k, 24h low $81.67k, about -2.1% from 24h open $83.68k; Polymarket \"BTC above $82k on Oct 13\" fell 29pt in 1h to ~50.5% (vol24h ~$59k); follows row 56 dip-odds jump; public markets; not financial advice",
+      "after_the_fact": false,
+      "source": "X",
+      "feed": "discovery",
+      "baseline": 82056.6,
+      "baseline_source": "Binance",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "168",
+      "logged_at_lisbon": "2026-10-13 00:16",
+      "account": "@SawyerMerritt",
+      "post_url": "https://x.com/SawyerMerritt/status/2109780382870610030",
+      "asset": "SPACEX",
+      "direction": "product news (context)",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "early-signal; SpaceX introduced an X subscription bundling Grok, X and Cursor (Plus $8, Premium $30, Super $100, Ultra $200/month) per SawyerMerritt 23:56 PT; context for SpaceX holding, not a trade call; public post; not financial advice",
+      "after_the_fact": false,
+      "source": "X",
+      "feed": "discovery",
       "copy_of": "",
       "spam_farm": false
     }
