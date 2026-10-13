@@ -1,0 +1,17 @@
+{
+ "updated_lisbon": "2026-10-13 02:22",
+ "note": "X feed trading-call scan state; use newest ids as since_id next run",
+ "following_timeline_newest_id": "2109815130720547079",
+ "watchlist_traders_newest_id": "2109814988214809064",
+ "watchlist_signals_newest_id": "2109760093403463709",
+ "discovery_newest_id": "2109815480567669186",
+ "last_scan_utc": "2026-10-13T01:22:08Z",
+ "alerted_post_ids": [
+  "2109699116100116872:hit_target",
+  "2109795375720583367:new_call",
+  "2109801169212276798:new_call",
+  "2109811365192007717:new_call",
+  "2109730580401213566:stopped"
+ ],
+ "x_reads_left_today_at_last_scan": 988
+}
