@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-13T08:17:57+01:00",
+  "generated_at": "2026-10-13T08:24:11+01:00",
   "calls": [
     {
       "id": "1",
@@ -4147,6 +4147,26 @@
       "feed": "following",
       "baseline": 83.22,
       "baseline_source": "Binance",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "195",
+      "logged_at_lisbon": "2026-10-13 08:00",
+      "account": "@Kalshi",
+      "post_url": "https://x.com/Kalshi/status/2109901953270468853",
+      "asset": "SpaceX/Starlink",
+      "direction": "headline risk (unconfirmed)",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "early-signal; type=catalyst; Kalshi 08:00 PT 'JUST IN: US is considering cutting Starlink access for Ukraine' (BRICSinfo 07:51 PT, ~1k likes, plus many small reposts); unconfirmed: no wire (Reuters/BBG/FirstSquawk/DeItaone) carries it; appears to stem from Politico Oct 13 analysis saying Zelenskyy risks Trump 'pressuring Musk to disable Starlink' (not an active US decision) plus recycled Feb-2025 Reuters report; Ukraine adviser Beskrestnov (Oct 10-12) says no one will disconnect Starlink; SpaceX headline risk context only; not alerted (rumor, unconfirmed, no odds move); Polymarket Fed Oct no change ~80.5%/hike ~19.5% flat 1h; no sharp Kalshi/Polymarket market-relevant moves; Elon/Tesla/SpaceX no new posts; wires: Kalshi new WH press sec first briefing 9:30 ET; UK growth upgraded; DXY toward 103 forecast; German SPD co-leader quits; filings new=0; not financial advice",
+      "after_the_fact": false,
+      "followers": null,
+      "source": "X",
+      "feed": "discovery",
       "copy_of": "",
       "spam_farm": false
     }
