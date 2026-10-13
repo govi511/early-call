@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-13T13:14:33+01:00",
+  "generated_at": "2026-10-13T13:26:14+01:00",
   "calls": [
     {
       "id": "1",
@@ -4427,6 +4427,26 @@
       "feed": "famous",
       "baseline": 340.97,
       "baseline_source": "Nasdaq daily (close)",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "208",
+      "logged_at_lisbon": "2026-10-13 13:26",
+      "account": "@DeItaone/@FirstSquawk",
+      "post_url": "https://x.com/DeItaone/status/2109980783934918722",
+      "asset": "S&P 500/Oil/Fed",
+      "direction": "context",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "early-signal; type=context; Hassett (WH) dovish-leaning vs earlier hawkish Fed speakers: Fed may see inflation slowdown as reason to hold; keep inflation in control without killing economy; market confidence in new Fed chair. Middle East escalation continuation of row 205: Saudi-led coalition to issue civilian evacuation warning for site in Sanaa ahead of special operation; Houthis warn any attack on Sanaa met with harsh response in Riyadh; Iran says consequences beyond region if US takes more military action (Kalshi). Also: Citi Q3 slight beat (rev $23.85B vs $23.72B); OPEC cuts 2026 oil demand growth to 180k bpd / raises 2027 to 2.55M; Saudi production ~8.4M bpd Sept (highest since war); ADP private jobs +24.75k/wk. Odds: Polymarket Oct Fed hold ~80.5% (flat 1h, -3pt 1d), hike-25 ~18.5% (+2pt 1d) — no sharp move; US-Iran ceasefire thru Oct 31 ~81.5% (+1pt 1h); BTC>$82k Oct 13 ~92.6% (-2pt 1h) / >$84k ~13% Yes (-6 to -16pt 1h) continuation fade of rows 179/199 — not re-alerted. Filings new=0. Elon only 'Obv'/'Yes' replies (not market-moving); Tesla/SpaceX/Starlink/SEC/FCC/Fed official quiet; no QuiverQuant/lookonchain/Pelosi/options alerts. Not alerted; not financial advice",
+      "after_the_fact": false,
+      "followers": null,
+      "source": "X",
+      "feed": "discovery",
       "copy_of": "",
       "spam_farm": false
     }

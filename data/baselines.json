@@ -804,5 +804,11 @@
     "source": "unavailable",
     "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: URL can't contain control characters. '/api/quote/S&P 500/historical?assetclass=stocks&fromdate=2026-10-07&todate=2026-10-13&limit=10' (found at least ' '), etf: URL can't contain control characters. '/api/quote/S&P 500/historical?assetclass=etf&fromdate=2026-10-07&todate=2026-10-13&limit=10' (found at least ' '))",
     "at": "2026-10-13 12:47"
+  },
+  "208|S&P 500/OIL/FED|2026-10-13 13:26": {
+    "price": null,
+    "source": "unavailable",
+    "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: URL can't contain control characters. '/api/quote/S&P 500/historical?assetclass=stocks&fromdate=2026-10-07&todate=2026-10-13&limit=10' (found at least ' '), etf: URL can't contain control characters. '/api/quote/S&P 500/historical?assetclass=etf&fromdate=2026-10-07&todate=2026-10-13&limit=10' (found at least ' '))",
+    "at": "2026-10-13 13:26"
   }
 }
