@@ -772,6 +772,21 @@
     "source": "Nasdaq daily (close)",
     "at": "2026-10-13 15:06"
   },
+  "221|META|2026-10-13 16:36": {
+    "price": 742.96,
+    "source": "Nasdaq daily (close)",
+    "at": "2026-10-13 16:36"
+  },
+  "222|SPY/NVDA/MSFT/AMZN/GOOGL|2026-10-13 16:36": {
+    "price": 778.1,
+    "source": "Nasdaq daily (close)",
+    "at": "2026-10-13 16:36"
+  },
+  "224|TSLA/NVDA|2026-10-13 16:36": {
+    "price": 378.03,
+    "source": "Nasdaq daily (close)",
+    "at": "2026-10-13 16:36"
+  },
   "168|SPACEX|2026-10-13 00:16": {
     "price": null,
     "source": "unavailable",
@@ -880,25 +895,10 @@
     "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-13 15:07"
   },
-  "221|META|2026-10-13 16:36": {
-    "price": 742.96,
-    "source": "Nasdaq daily (close)",
-    "at": "2026-10-13 16:36"
-  },
-  "222|SPY/NVDA/MSFT/AMZN/GOOGL|2026-10-13 16:36": {
-    "price": 778.1,
-    "source": "Nasdaq daily (close)",
-    "at": "2026-10-13 16:36"
-  },
   "223|OIL/WTI|2026-10-13 16:36": {
     "price": null,
     "source": "unavailable",
     "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
-    "at": "2026-10-13 16:36"
-  },
-  "224|TSLA/NVDA|2026-10-13 16:36": {
-    "price": 378.03,
-    "source": "Nasdaq daily (close)",
     "at": "2026-10-13 16:36"
   }
 }
