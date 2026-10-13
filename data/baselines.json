@@ -663,6 +663,11 @@
     "source": "Nasdaq daily (close)",
     "at": "2026-10-13 04:59"
   },
+  "191|ETH|2026-10-13 06:34": {
+    "price": 2526.64,
+    "source": "Binance",
+    "at": "2026-10-13 06:34"
+  },
   "168|SPACEX|2026-10-13 00:16": {
     "price": null,
     "source": "unavailable",
@@ -722,10 +727,5 @@
     "source": "unavailable",
     "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: URL can't contain control characters. '/api/quote/US HOUSING/historical?assetclass=stocks&fromdate=2026-10-07&todate=2026-10-13&limit=10' (found at least ' '), etf: URL can't contain control characters. '/api/quote/US HOUSING/historical?assetclass=etf&fromdate=2026-10-07&todate=2026-10-13&limit=10' (found at least",
     "at": "2026-10-13 06:11"
-  },
-  "191|ETH|2026-10-13 06:34": {
-    "price": 2526.64,
-    "source": "Binance",
-    "at": "2026-10-13 06:34"
   }
 }
