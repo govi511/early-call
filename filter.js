@@ -5,7 +5,7 @@ const isShort=d=>{d=String(d||'').trim().toLowerCase();return/^(short|bear|put|h
 // One scored call per source link: earliest row wins
 const dupOfLink=c=>{if(!c.post_url||typeof LEDGER==='undefined'||!LEDGER)return null;const f=LEDGER.calls.filter(o=>o.post_url===c.post_url).sort((a,b)=>String(a.logged_at_lisbon).localeCompare(String(b.logged_at_lisbon))||(+a.id)-(+b.id))[0];return f&&f!==c?f:null};
 const normEntry=e=>String(e||'').replace(/\s+/g,'').toLowerCase();
-function spamWhy(c){const n=c.notes||'',why=SPAM_RULES.filter(([re])=>re.test(n)).map(r=>r[1]);
+function spamWhy(c){const n=c.notes||'',why=SPAM_RULES.filter(([re])=>re.test(n)).map(r=>r[1]);if(/^early-signal/i.test(n)||/\(context\)/i.test(c.direction||''))why.push('news post, not a buy/sell call');
  const m=n.match(/\b(\d+) followers\b/i);if(m&&+m[1]<50)why.push(`only ${m[1]} followers`);
  if(/^(filtered|excluded)$/.test(c.status||''))why.push('excluded by rule ('+c.status+')');
  if(feedOf(c)==='discovery'&&c.followers!=null&&c.followers<5000)why.push(`discovery account under 5,000 followers (${c.followers})`);
