@@ -1,0 +1,38 @@
+{
+  "balance": 100.0,
+  "starting_balance": 100.0,
+  "currency": "EUR",
+  "goal": 1000.0,
+  "risk_per_trade_pct": [
+    2.0,
+    3.0
+  ],
+  "max_open": 1,
+  "trades": [
+    {
+      "id": 1,
+      "symbol": "BTC",
+      "side": "SHORT",
+      "entry": 83300.0,
+      "sl": 83750.0,
+      "tp": 82700.0,
+      "size_btc": 0.005,
+      "risk_eur": 2.25,
+      "reward_eur": 3.0,
+      "status": "open",
+      "opened_at": "2026-10-13T11:48:00+01:00",
+      "opened_at_utc": "2026-10-13T10:48:00Z",
+      "venue": "Trading 212 CFD",
+      "notes": "Call #1 challenge. Size ~0.005 BTC \u2248 -\u20ac2.25 at SL, +\u20ac3 at TP (prompt \u2248+\u20ac2.70).",
+      "resolved_at": null,
+      "exit_price": null,
+      "pnl_eur": null,
+      "resolution": null
+    }
+  ],
+  "last_check_at": "2026-10-13T11:58:30+01:00",
+  "last_check_btc": 83310.5,
+  "last_proposal_at": null,
+  "last_alert_trade_id": null,
+  "last_resolution_alerted_id": null
+}
