@@ -1,11 +1,11 @@
 {
- "updated_lisbon": "2026-10-13 04:14",
+ "updated_lisbon": "2026-10-13 04:44",
  "note": "X feed trading-call scan state; use newest ids as since_id next run",
- "following_timeline_newest_id": "2109844348477030587",
- "watchlist_traders_newest_id": "2109841564860309870",
+ "following_timeline_newest_id": "2109851628081738040",
+ "watchlist_traders_newest_id": "2109845533611421870",
  "watchlist_signals_newest_id": "2109760093403463709",
- "discovery_newest_id": "2109844324087394438",
- "last_scan_utc": "2026-10-13T03:14:00Z",
+ "discovery_newest_id": "2109852343239868722",
+ "last_scan_utc": "2026-10-13T03:44:00Z",
  "alerted_post_ids": [
   "2109699116100116872:hit_target",
   "2109795375720583367:new_call",
@@ -13,6 +13,6 @@
   "2109811365192007717:new_call",
   "2109730580401213566:stopped"
  ],
- "x_reads_left_today_at_last_scan": 934,
- "store_write_note": "2026-10-13 04:14 PT: no new calls; Following non-trading (Polymarket/Kalshi news, Getty bankruptcy, Robinhood CEO meme); watchlist only scottmelker STRC 5-month high headline; discovery all sub-5k gold spam/after-the-fact/AI bot; no open-call resolutions"
+ "x_reads_left_today_at_last_scan": 921,
+ "store_write_note": "2026-10-13 04:44 PT: no new calls; Following non-trading + Kalshi Hammack Fed headline (left to early-signal); watchlist only Mr_Derivatives '$QQQ connecting the dots' chart (no direction, not logged); discovery all sub-5k gold/SOL signal spam, XYZCryptos after-the-fact. No resolutions (BTC 82.7-83.6k last 1h; ICP lo 3.074 vs stop 3.00; FET 0.214)."
 }
