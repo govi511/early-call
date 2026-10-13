@@ -337,7 +337,6 @@ def main():
     ppath = os.path.join(DATA, "prices.json")
     try: old = json.load(open(ppath)).get("prices", {})
     except Exception: old = {}
-    import re
     refs = {}
     for r in rows:
         n = [float(x) for x in re.findall(r"\d+(?:\.\d+)?", re.sub(r"\(.*?\)", "", r.get("entry", "")))]

@@ -405,7 +405,10 @@
   "158|HYPE|2026-10-06 00:55": {
     "price": 94.09,
     "source": "Binance",
-    "at": "2026-10-06 00:55"
+    "at": "2026-10-06 00:55",
+    "locked_pct": -13.891,
+    "locked_price": 81.02,
+    "locked_at": "2026-10-13T00:55+01:00"
   },
   "164|NEAR|2026-10-07 21:53": {
     "price": 5.423,
@@ -597,5 +600,16 @@
     "source": "unavailable",
     "error": "yahoo: HTTP Error 429: Too Many Requests; nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-13 00:16"
+  },
+  "169|PELOSI|2026-10-13 00:48": {
+    "price": null,
+    "source": "unavailable",
+    "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
+    "at": "2026-10-13 00:48"
+  },
+  "170|TSLA|2026-10-13 00:48": {
+    "price": 382.7,
+    "source": "Nasdaq daily (close)",
+    "at": "2026-10-13 00:48"
   }
 }
