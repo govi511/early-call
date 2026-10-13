@@ -528,7 +528,10 @@
   "91|AVGO|2026-10-06 14:52": {
     "price": 367.03,
     "source": "Nasdaq daily (open)",
-    "at": "2026-10-06 14:52"
+    "at": "2026-10-06 14:52",
+    "locked_pct": -3.3512,
+    "locked_price": 354.73,
+    "locked_at": "2026-10-13T14:52+01:00"
   },
   "114|ZS|2026-10-09 14:37": {
     "price": 221.48,
@@ -728,10 +731,15 @@
     "source": "Binance",
     "at": "2026-10-13 14:35"
   },
+  "213|BTC|2026-10-13 14:44": {
+    "price": 83374.01,
+    "source": "Binance",
+    "at": "2026-10-13 14:44"
+  },
   "168|SPACEX|2026-10-13 00:16": {
     "price": null,
     "source": "unavailable",
-    "error": "yahoo: HTTP Error 429: Too Many Requests; nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
+    "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-13 00:16"
   },
   "169|PELOSI|2026-10-13 00:48": {
@@ -830,9 +838,9 @@
     "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-13 14:00"
   },
-  "213|BTC|2026-10-13 14:44": {
-    "price": 83374.01,
-    "source": "Binance",
-    "at": "2026-10-13 14:44"
+  "214|SMH|2026-10-13 15:04": {
+    "price": 590.99,
+    "source": "Nasdaq daily (close)",
+    "at": "2026-10-13 15:04"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-13T14:49:40+01:00",
+  "generated_at": "2026-10-13T15:07:25+01:00",
   "calls": [
     {
       "id": "1",
@@ -1914,6 +1914,8 @@
       "feed": "famous",
       "baseline": 367.03,
       "baseline_source": "Nasdaq daily (open)",
+      "locked_pct": -3.3512,
+      "locked_at": "2026-10-13T14:52+01:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -4555,6 +4557,28 @@
       "feed": "famous",
       "baseline": 83374.01,
       "baseline_source": "Binance",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "214",
+      "logged_at_lisbon": "2026-10-13 15:04",
+      "account": "@OptionsHawk",
+      "post_url": "https://x.com/OptionsHawk/status/2110008781421879758",
+      "asset": "SMH",
+      "direction": "long (calls)",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "source watchlist+following; role call; priority OptionsHawk; Semi $SMH buyer 2500 November $615 calls $12.96 into the dip to the 50-MA; bullish options flow on VanEck Semiconductor ETF; no stock SL/TP; SMH ETF not confirmed T212 CFD — log only, not alerted; not financial advice",
+      "after_the_fact": false,
+      "followers": null,
+      "source": "X",
+      "feed": "famous",
+      "baseline": 590.99,
+      "baseline_source": "Nasdaq daily (close)",
       "copy_of": "",
       "spam_farm": false
     }
