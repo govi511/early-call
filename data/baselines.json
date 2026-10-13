@@ -643,6 +643,21 @@
     "source": "Binance",
     "at": "2026-10-13 04:17"
   },
+  "185|FED|2026-10-13 04:30": {
+    "price": null,
+    "source": "not a tradable asset",
+    "at": "2026-10-13 04:30"
+  },
+  "186|TSLA|2026-10-13 04:40": {
+    "price": 378.03,
+    "source": "Nasdaq daily (close)",
+    "at": "2026-10-13 04:40"
+  },
+  "187|BTC|2026-10-13 03:27": {
+    "price": 82790.01,
+    "source": "Binance",
+    "at": "2026-10-13 03:27"
+  },
   "168|SPACEX|2026-10-13 00:16": {
     "price": null,
     "source": "unavailable",
@@ -690,20 +705,5 @@
     "source": "unavailable",
     "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-13 03:51"
-  },
-  "185|FED|2026-10-13 04:30": {
-    "price": null,
-    "source": "not a tradable asset",
-    "at": "2026-10-13 04:30"
-  },
-  "186|TSLA|2026-10-13 04:40": {
-    "price": 378.03,
-    "source": "Nasdaq daily (close)",
-    "at": "2026-10-13 04:40"
-  },
-  "187|BTC|2026-10-13 03:27": {
-    "price": 82790.01,
-    "source": "Binance",
-    "at": "2026-10-13 03:27"
   }
 }
