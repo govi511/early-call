@@ -1,0 +1,68 @@
+{
+  "updated_at_lisbon": "2026-10-13 09:31:08",
+  "xrp_short": {
+    "status": "watching",
+    "alerted": false,
+    "plan_url": "https://x.com/pedrosilva/status/2109917147354853526",
+    "valid_date_lisbon": "2026-10-13",
+    "zone": [
+      1.3866,
+      1.3944
+    ],
+    "stop_close_above": 1.3996,
+    "tp": [
+      1.3362,
+      1.3181
+    ],
+    "last_closed_1h": {
+      "open_lisbon": "2026-10-13 08:00",
+      "close": 1.3779,
+      "high": 1.3811
+    }
+  },
+  "btc_long_breakout": {
+    "status": "watching",
+    "alerted": false,
+    "trigger_close_above": 84350,
+    "stop": 83700,
+    "tp": [
+      85100,
+      86100
+    ],
+    "last_closed_1h": {
+      "open_lisbon": "2026-10-13 08:00",
+      "close": 83870.89,
+      "high": 84059.69
+    }
+  },
+  "btc_trader_longs_alerted": [],
+  "known_btc_long_ledger_ids": [
+    "1",
+    "2",
+    "3",
+    "6",
+    "25",
+    "26",
+    "27",
+    "32",
+    "66",
+    "92",
+    "95",
+    "98",
+    "104",
+    "112",
+    "115",
+    "123",
+    "133",
+    "142",
+    "156",
+    "171",
+    "196",
+    "198"
+  ],
+  "last_check_lisbon": "2026-10-13 09:31:08",
+  "last_prices": {
+    "XRPUSDT": 1.3784,
+    "BTCUSDT": 83938.91
+  }
+}
