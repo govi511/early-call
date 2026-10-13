@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-13T03:53:39+01:00",
+  "generated_at": "2026-10-13T04:18:04+01:00",
   "calls": [
     {
       "id": "1",
@@ -3914,6 +3914,28 @@
       "followers": null,
       "source": "X",
       "feed": "discovery",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "184",
+      "logged_at_lisbon": "2026-10-13 04:17",
+      "account": "@lookonchain",
+      "post_url": "https://x.com/lookonchain/status/2109842072492748902",
+      "asset": "SOL",
+      "direction": "bearish risk (large holder selling)",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "early-signal; type=catalyst; lookonchain 04:02 PT: SkyAI (held 2M SOL, ~$214M) disclosed selling 1M SOL (~$107M) and may keep selling; on-chain shows 1.57M SOL (~$175M) moved out in October; supply overhang context for SOL; public on-chain data; not re-alerted (gradual, not a sharp new move); not financial advice",
+      "after_the_fact": false,
+      "followers": null,
+      "source": "X",
+      "feed": "discovery",
+      "baseline": 106.55,
+      "baseline_source": "Binance",
       "copy_of": "",
       "spam_farm": false
     }
