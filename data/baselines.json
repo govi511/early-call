@@ -529,7 +529,10 @@
   "90|NBIS|2026-10-06 20:23": {
     "price": 237.22,
     "source": "Nasdaq daily (open)",
-    "at": "2026-10-06 20:23"
+    "at": "2026-10-06 20:23",
+    "locked_pct": -11.4493,
+    "locked_price": 210.06,
+    "locked_at": "2026-10-13T20:23+01:00"
   },
   "91|AVGO|2026-10-06 14:52": {
     "price": 367.03,
@@ -795,7 +798,7 @@
   "168|SPACEX|2026-10-13 00:16": {
     "price": null,
     "source": "unavailable",
-    "error": "yahoo: HTTP Error 429: Too Many Requests; nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
+    "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-13 00:16"
   },
   "169|PELOSI|2026-10-13 00:48": {
@@ -917,5 +920,15 @@
     "source": "unavailable",
     "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-13 18:36"
+  },
+  "230|LTC|2026-10-13 20:25": {
+    "price": 61.9,
+    "source": "Binance",
+    "at": "2026-10-13 20:25"
+  },
+  "231|TSM|2026-10-13 20:25": {
+    "price": 444.35,
+    "source": "Nasdaq daily (close)",
+    "at": "2026-10-13 20:25"
   }
 }
