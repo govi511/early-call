@@ -633,6 +633,11 @@
     "source": "Binance",
     "at": "2026-10-13 02:55"
   },
+  "182|TSLA|2026-10-13 03:51": {
+    "price": 378.03,
+    "source": "Nasdaq daily (close)",
+    "at": "2026-10-13 03:51"
+  },
   "168|SPACEX|2026-10-13 00:16": {
     "price": null,
     "source": "unavailable",
@@ -674,11 +679,6 @@
     "source": "unavailable",
     "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-13 02:55"
-  },
-  "182|TSLA|2026-10-13 03:51": {
-    "price": 378.03,
-    "source": "Nasdaq daily (close)",
-    "at": "2026-10-13 03:51"
   },
   "183|OIL|2026-10-13 03:51": {
     "price": null,
