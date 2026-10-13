@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-13T14:45:21+01:00",
+  "generated_at": "2026-10-13T14:49:40+01:00",
   "calls": [
     {
       "id": "1",
@@ -4532,6 +4532,28 @@
       "source": "X",
       "feed": "discovery",
       "baseline": 83316.55,
+      "baseline_source": "Binance",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "213",
+      "logged_at_lisbon": "2026-10-13 14:44",
+      "account": "@AltcoinSherpa",
+      "post_url": "https://x.com/AltcoinSherpa/status/2109998421075501289",
+      "asset": "BTC",
+      "direction": "long",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "source watchlist; role call; '$BTC looks fine for now, wouldn't be surprised to see another wick down to that green box again though. Dips are still for buying but there's intense volatility in the short term'; long bias on dips; no entry given (scored from price at post time, BTC ~83313); no stop/target; soft commentary so not alerted; not financial advice",
+      "after_the_fact": false,
+      "followers": null,
+      "source": "X",
+      "feed": "famous",
+      "baseline": 83374.01,
       "baseline_source": "Binance",
       "copy_of": "",
       "spam_farm": false
