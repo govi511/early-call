@@ -174,3 +174,9 @@ header .top>div>.sub{display:none}
 #signals>.row h2{white-space:nowrap}
 .mktc{font-size:12px;font-weight:600;color:var(--mut);background:var(--card2);border:1px solid var(--b);padding:2px 8px;border-radius:999px;vertical-align:middle}
 #stseg,#seg{margin-bottom:8px!important}
+/* merged filter row */
+.filters{display:flex;align-items:center;gap:6px;overflow-x:auto;scrollbar-width:none;margin:0 -4px 10px;padding:0 4px;-webkit-overflow-scrolling:touch}
+.filters::-webkit-scrollbar{display:none}
+.filters .seg{flex:0 0 auto;margin:0!important;overflow:visible}
+.filters .fdiv{flex:0 0 1px;height:22px;background:var(--b)}
+#signals label:has(#showspam){margin:0 0 10px!important}
