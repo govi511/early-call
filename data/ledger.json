@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-13T05:08:54+01:00",
+  "generated_at": "2026-10-13T05:23:18+01:00",
   "calls": [
     {
       "id": "1",
@@ -4001,6 +4001,28 @@
       "feed": "discovery",
       "baseline": 82790.01,
       "baseline_source": "Binance",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "188",
+      "logged_at_lisbon": "2026-10-13 04:59",
+      "account": "@Kalshi",
+      "post_url": "https://x.com/Kalshi/status/2109856402424639906",
+      "asset": "AI/semis",
+      "direction": "risk context (capex funding)",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "early-signal; type=catalyst; Kalshi 04:59 PT: Intel and Broadcom CEOs warn capital, not chips, could become AI's biggest bottleneck; FirstSquawk 04:48 PT IMF's Vamvakidis warns an AI market pullback could spill into the real economy; AI-capex sentiment context for NVDA/Nasdaq/S&P; public remarks; not alerted (commentary, no odds spike); Polymarket BTC above $82k Oct 13 ~89% Yes (+8pt 1h) still continuation of row 179, not re-alerted; not financial advice",
+      "after_the_fact": false,
+      "followers": null,
+      "source": "X",
+      "feed": "discovery",
+      "baseline": 11.61,
+      "baseline_source": "Nasdaq daily (close)",
       "copy_of": "",
       "spam_farm": false
     }
