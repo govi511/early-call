@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-13T05:23:18+01:00",
+  "generated_at": "2026-10-13T05:51:11+01:00",
   "calls": [
     {
       "id": "1",
@@ -4023,6 +4023,26 @@
       "feed": "discovery",
       "baseline": 11.61,
       "baseline_source": "Nasdaq daily (close)",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "189",
+      "logged_at_lisbon": "2026-10-13 05:48",
+      "account": "@FirstSquawk",
+      "post_url": "https://x.com/FirstSquawk/status/2109864065569042752",
+      "asset": "SKHYNIX/semis",
+      "direction": "bearish risk (Asia tech continuation)",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "early-signal; type=catalyst; FirstSquawk 05:29 PT: SK Hynix shares slide further, falling 10.3%; continuation of row 180 Asia tech/KOSPI selloff (Samsung/SK Hynix); context for Nasdaq/NVDA/S&P; public news; not re-alerted; Polymarket BTC above $82k Oct 13 ~91.5% Yes (+5pt 1h) and above $84k ~30.6% (+8pt 1h) still continuation of row 179 bounce, not re-alerted; Elon posted Grok bot memory transfer / Of course quotes (not market-moving); Kalshi Trump says China/Russia not helping Iran (geopolitics only); filings new=0; not financial advice",
+      "after_the_fact": false,
+      "followers": null,
+      "source": "X",
+      "feed": "discovery",
       "copy_of": "",
       "spam_farm": false
     }
