@@ -560,7 +560,10 @@
   "119|LITE|2026-10-06 20:40": {
     "price": 1099.81,
     "source": "Nasdaq daily (open)",
-    "at": "2026-10-06 20:40"
+    "at": "2026-10-06 20:40",
+    "locked_pct": -9.4925,
+    "locked_price": 995.41,
+    "locked_at": "2026-10-13T20:40+01:00"
   },
   "121|AI|2026-10-06 14:39": {
     "price": 11.24,
@@ -805,10 +808,15 @@
     "source": "Nasdaq daily (close)",
     "at": "2026-10-13 20:25"
   },
+  "233|NVDA/META/AAPL/SPY/MSFT/AMZN|2026-10-13 20:27": {
+    "price": 226.32,
+    "source": "Nasdaq daily (close)",
+    "at": "2026-10-13 20:27"
+  },
   "168|SPACEX|2026-10-13 00:16": {
     "price": null,
     "source": "unavailable",
-    "error": "yahoo: HTTP Error 429: Too Many Requests; nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
+    "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-13 00:16"
   },
   "169|PELOSI|2026-10-13 00:48": {
@@ -930,11 +938,6 @@
     "source": "unavailable",
     "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-13 18:36"
-  },
-  "233|NVDA/META/AAPL/SPY/MSFT/AMZN|2026-10-13 20:27": {
-    "price": 226.32,
-    "source": "Nasdaq daily (close)",
-    "at": "2026-10-13 20:27"
   },
   "234|OIL/S&P 500/BTC|2026-10-13 20:27": {
     "price": null,
