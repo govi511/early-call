@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-13T12:57:17+01:00",
+  "generated_at": "2026-10-13T13:14:33+01:00",
   "calls": [
     {
       "id": "1",
@@ -4405,6 +4405,28 @@
       "followers": null,
       "source": "X",
       "feed": "following",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "207",
+      "logged_at_lisbon": "2026-10-13 12:59",
+      "account": "@Mr_Derivatives",
+      "post_url": "https://x.com/Mr_Derivatives/status/2109977233142202466",
+      "asset": "AAPL",
+      "direction": "long",
+      "entry": "",
+      "stop": "",
+      "target": "350-360",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "source watchlist; role call; 'if it closes today at the current price it will be a new ATH closing price. Technically looks good to go for $350-$360 very near term'; reaffirms his open #172 AAPL long, now with a near-term target 350-360; no entry given (scored from price at post time, AAPL premarket ~343.3); no stop; edited post (first version 2109977013129986208 said $350); not alerted (same thesis already alerted with #172, no stop); not financial advice",
+      "after_the_fact": false,
+      "followers": null,
+      "source": "X",
+      "feed": "famous",
+      "baseline": 340.97,
+      "baseline_source": "Nasdaq daily (close)",
       "copy_of": "",
       "spam_farm": false
     }
