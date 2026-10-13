@@ -69,6 +69,12 @@
    "name": "USA Tech 100",
    "type": "index",
    "evidence": "https://www.trading212.com/trading-instruments/cfd/TECH100.DEC26"
+  },
+  {
+   "symbol": "GOOGL",
+   "name": "Alphabet (Class A)",
+   "type": "stock",
+   "evidence": "https://www.trading212.com/trading-instruments/cfd/GOOGL.US"
   }
  ],
  "excluded_confirmed": [
