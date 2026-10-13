@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-14T00:08:41+01:00",
+  "generated_at": "2026-10-14T00:19:45+01:00",
   "calls": [
     {
       "id": "1",
@@ -5333,6 +5333,26 @@
       "followers": null,
       "source": "X",
       "feed": "famous",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "249",
+      "logged_at_lisbon": "2026-10-14 00:18",
+      "account": "@elonmusk/@SpaceX/@SawyerMerritt/@FirstSquawk/Polymarket",
+      "post_url": "https://x.com/SpaceX/status/2110126570233094527",
+      "asset": "SpaceX/MSFT/Oil",
+      "direction": "context (quiet window)",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "early-signal; type=context; 21:15-23:18Z quiet window. Filings: fetch_filings new=0 (no new SEC Form 4, House PTR or CBOE unusual batch; no Pelosi). Elon: Grok Bot/Starlink promo posts + Starship Ship 40 return-to-launch-site (SpaceX 21:52Z, first flown Starship back at Starbase, heatshield/Raptor data) = SpaceX positive context, not market-moving; SawyerMerritt 21:18Z Morgan Stanley Jonas note on SpaceX 'Distributed Inference Cloud' upside. Tesla/Starlink/SEC/FCC/Fed quiet. Wires: Microsoft cloud president asks leaders for 20% cost cuts (The Information via FirstSquawk 22:32Z, MSFT context); Aramco building attack limited fire no casualties (21:35Z); Houthi threat to Saudi oil 'tonight' (21:30Z); Ryan Cohen bought another ~844k GME (~$22.6M, unusual_whales 23:01Z; not his names, logged by X scan); Kalshi: gold ETF record $30.7B Q3 inflows, long Treasuries bid pre-CPI. Odds: Polymarket WTI hit $95 week-of-Oct-12 resolved ~100% Yes (already alerted #215/#223), $100 ~10% (-0.5pt 1h); no sharp >8pt 1h moves on high-volume market-relevant markets. Not alerted. Public news; not financial advice",
+      "after_the_fact": false,
+      "followers": null,
+      "source": "X",
+      "feed": "discovery",
       "copy_of": "",
       "spam_farm": false
     }
