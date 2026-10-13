@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-13T07:49:04+01:00",
+  "generated_at": "2026-10-13T08:17:57+01:00",
   "calls": [
     {
       "id": "1",
@@ -4125,6 +4125,28 @@
       "followers": null,
       "source": "X",
       "feed": "discovery",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "194",
+      "logged_at_lisbon": "2026-10-13 07:54",
+      "account": "@bestcryptotoken",
+      "post_url": "https://x.com/bestcryptotoken/status/2109900608882843666",
+      "asset": "HYPE",
+      "direction": "long",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "source following; 20k followers, acct 2021; 'good day to add more HYPE at discount while market is correcting... trade it much higher very soon'; quotes own earlier post; bio lists project affiliations (NakamotoGames/AstraLabs) and holds $HYPE; no entry given (scored from price at post time, HYPE ~83.0 Binance); vague, no levels, so no alert; not financial advice",
+      "after_the_fact": false,
+      "followers": 20000,
+      "source": "X",
+      "feed": "following",
+      "baseline": 83.22,
+      "baseline_source": "Binance",
       "copy_of": "",
       "spam_farm": false
     }
