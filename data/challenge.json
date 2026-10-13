@@ -35,26 +35,26 @@
    "sl_hit_candle_high": 83819.61
   }
  ],
- "last_check_at": "2026-10-13T21:18:00+01:00",
- "last_check_btc": 83268.01,
+ "last_check_at": "2026-10-13T22:48:43+0100",
+ "last_check_btc": 83421.97,
  "last_proposal_at": null,
  "last_alert_trade_id": null,
  "last_resolution_alerted_id": 1,
  "open_trade_id": null,
  "last_setup_eval": {
-  "at": "2026-10-13T20:33:00+01:00",
-  "btc": 83268.01,
-  "funding_pct": 0.0039,
-  "lsr_global": 1.2676,
-  "top_trader_lsr": 1.3299,
-  "oi_btc": 93854,
+  "at": "2026-10-13T21:56:00+01:00",
+  "btc": 83421.97,
+  "funding_pct": 0.0024,
+  "lsr_global": 1.2681,
+  "top_trader_position_lsr": 1.5722,
+  "oi_btc": 93580,
   "range_24h": [
    81033.66,
    84168.0
   ],
-  "range_pos_pct": 71.3,
+  "range_pos_pct": 76.2,
   "decision": "no_proposal",
-  "reason": "Grind mid-chop ~83230\u201383270 after bounce from 82913; funding flat +0.0039%, LSR ~1.27 (mild long bias), top LSR eased to ~1.33, OI soft (~93.9k). No break of 82900/83850 structure; US CPI Oct 14 ahead. No clean setup."
+  "reason": "Slow grind up to ~83420 (20:00 1h high 83424), still below 83850/84168 resistance and above 82900 support; funding flat +0.0024%, LSR ~1.27 steady, OI soft (~93.6k). Mid-range chop into US CPI Oct 14; no clean setup."
  },
- "last_check_note": "No open trade; last fresh read 20:33 (<1h); skip re-read; silent."
+ "last_check_note": "No open trade; last market read 21:56 (under 1h); no fresh read; silent."
 }
