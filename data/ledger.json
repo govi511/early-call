@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-13T09:24:51+01:00",
+  "generated_at": "2026-10-13T09:46:05+01:00",
   "calls": [
     {
       "id": "1",
@@ -4255,6 +4255,48 @@
       "feed": "discovery",
       "baseline": 84125.01,
       "baseline_source": "Binance",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "200",
+      "logged_at_lisbon": "2026-10-13 09:19",
+      "account": "@CryptoTony__",
+      "post_url": "https://x.com/CryptoTony__/status/2109921833470525751",
+      "asset": "ZEC",
+      "direction": "short",
+      "entry": "",
+      "stop": "",
+      "target": "1040",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "source watchlist; role call (also seen in Following); '$ZEC Update: $1040 is the main target on this drop, not here. I will wait for shorts on sweeps of higher levels as mapped out'; target 1040 (~-15%); no entry given (scored from price at post time, ZEC ~1226 Binance); no stop; plans to add shorts only on sweeps of higher levels (chart-only); conflicts with his own open #135 ZEC long tgt 1450; not financial advice",
+      "after_the_fact": false,
+      "followers": null,
+      "source": "X",
+      "feed": "famous",
+      "baseline": 1227.4,
+      "baseline_source": "Binance",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "201",
+      "logged_at_lisbon": "2026-10-13 09:14",
+      "account": "@ShaneStoffer",
+      "post_url": "https://x.com/ShaneStoffer/status/2109920574910988613",
+      "asset": "MRNA",
+      "direction": "long (calls)",
+      "entry": "217.38 (stock ref); option limit 17.50",
+      "stop": "",
+      "target": "297.50 (call breakeven at expiry)",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "source following; 119k followers, acct May 2024; personal trade disclosure 'I really hope I did this right. Order placed for tmr' with screenshot: BUY 60x MRNA $280 Call 1/15/27 limit $17.50 (~$105k), queued for market open Oct 13, expires if unfilled by 1 PM; MRNA stock 217.38 on screenshot, prior close 213.74; far OTM long-dated calls, no stop (max loss = premium); fill unconfirmed; score on MRNA stock direction; not financial advice",
+      "after_the_fact": false,
+      "followers": 119000,
+      "source": "X",
+      "feed": "following",
       "copy_of": "",
       "spam_farm": false
     }
