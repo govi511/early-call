@@ -900,5 +900,22 @@
     "source": "unavailable",
     "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-13 16:36"
+  },
+  "226|NVDA/AAPL/SPY|2026-10-13 18:36": {
+    "price": 226.32,
+    "source": "Nasdaq daily (close)",
+    "at": "2026-10-13 18:36"
+  },
+  "227|OIL/GOLD/S&P 500|2026-10-13 18:36": {
+    "price": null,
+    "source": "unavailable",
+    "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
+    "at": "2026-10-13 18:36"
+  },
+  "228|SPACEX/STARLINK/NVDA/GOOGL|2026-10-13 18:36": {
+    "price": null,
+    "source": "unavailable",
+    "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
+    "at": "2026-10-13 18:36"
   }
 }
