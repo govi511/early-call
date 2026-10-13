@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-13T13:36:37+01:00",
+  "generated_at": "2026-10-13T13:57:39+01:00",
   "calls": [
     {
       "id": "1",
@@ -4467,6 +4467,28 @@
       "followers": null,
       "source": "X",
       "feed": "famous",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "210",
+      "logged_at_lisbon": "2026-10-13 13:37",
+      "account": "@sspencer_smb",
+      "post_url": "https://x.com/sspencer_smb/status/2109986865449406506",
+      "asset": "MU",
+      "direction": "long (short puts)",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "source watchlist; role call; 'short put orders already entered for the Open. $MU' = bullish options trade (sells puts); no strikes/expiry/levels given; no entry given (scored from price at post time, MU premarket ~940); no stop; options trade — log only, not alerted; not financial advice",
+      "after_the_fact": false,
+      "followers": null,
+      "source": "X",
+      "feed": "famous",
+      "baseline": 989.04,
+      "baseline_source": "Nasdaq daily (close)",
       "copy_of": "",
       "spam_farm": false
     }
