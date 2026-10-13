@@ -35,7 +35,7 @@
    "sl_hit_candle_high": 83819.61
   }
  ],
- "last_check_at": "2026-10-13T20:33:00+01:00",
+ "last_check_at": "2026-10-13T21:18:00+01:00",
  "last_check_btc": 83268.01,
  "last_proposal_at": null,
  "last_alert_trade_id": null,
@@ -56,5 +56,5 @@
   "decision": "no_proposal",
   "reason": "Grind mid-chop ~83230\u201383270 after bounce from 82913; funding flat +0.0039%, LSR ~1.27 (mild long bias), top LSR eased to ~1.33, OI soft (~93.9k). No break of 82900/83850 structure; US CPI Oct 14 ahead. No clean setup."
  },
- "last_check_note": "No open trade; fresh read 20:33; no clean setup; silent."
+ "last_check_note": "No open trade; last fresh read 20:33 (<1h); skip re-read; silent."
 }
