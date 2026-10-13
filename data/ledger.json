@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-13T12:54:32+01:00",
+  "generated_at": "2026-10-13T12:57:17+01:00",
   "calls": [
     {
       "id": "1",
@@ -4385,6 +4385,26 @@
       "followers": null,
       "source": "X",
       "feed": "discovery",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "206",
+      "logged_at_lisbon": "2026-10-13 12:40",
+      "account": "@pedrosilva",
+      "post_url": "https://x.com/pedrosilva/status/2109972496040513823",
+      "asset": "GOOGL",
+      "direction": "long",
+      "entry": "350.65-351.60",
+      "stop": "349.85 (1h close)",
+      "target": "356.95",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "source following; conditional limit plan: waiting for pullback into 350.65-351.60, needs a 1H body close inside the box, 'no entry yet', won't chase if it runs without retest; invalidation 1H close below 349.85; target 356.95 (R:R ~4.6 from box mid); GOOGL premarket ~353.7 at log time (not yet triggered; treat as expired end of US session Oct 13 if box never filled); follow-up reply 2109972966368780776 promotes his CryptoWhales community link (promo, not logged); his prior ledger record 0 hits, 4 stopped, 2 unclear; GOOGL confirmed T212 CFD (GOOGL.US); alerted; not financial advice",
+      "after_the_fact": false,
+      "followers": null,
+      "source": "X",
+      "feed": "following",
       "copy_of": "",
       "spam_farm": false
     }
