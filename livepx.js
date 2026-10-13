@@ -10,7 +10,7 @@
  async function tick(){if(document.hidden||!LEDGER)return;const assets=Object.keys(PRICES).filter(a=>a[0]!=='_'&&isCrypto(a));if(!assets.length)return;let got=0;
   try{const r=await fetch('https://api.binance.com/api/v3/ticker/price');if(r.ok){const m=new Map((await r.json()).map(x=>[x.symbol,+x.price]));
    assets.forEach(a=>{if(a in KR)return;const p=m.get(a+'USDT');if(p&&sane(a,p)){LIVE[a]={price:p,src:'Binance'};got++}})}}catch(e){}
-  for(const a of assets.filter(a=>a in KR||!LIVE[a])){const pair=KR[a]||a+'USD';try{const r=await fetch('https://api.kraken.com/0/public/Ticker?pair='+pair);const j=await r.json();const t=j.result&&Object.values(j.result)[0];const p=t&&+t.c[0];if(p&&sane(a,p)){LIVE[a]={price:p,src:'Kraken'};got++}}catch(e){}}
+  for(const a of assets.filter(a=>!a.includes('/')&&(a in KR||!LIVE[a]))){const pair=KR[a]||a+'USD';try{const r=await fetch('https://api.kraken.com/0/public/Ticker?pair='+pair);const j=await r.json();const t=j.result&&Object.values(j.result)[0];const p=t&&+t.c[0];if(p&&sane(a,p)){LIVE[a]={price:p,src:'Kraken'};got++}}catch(e){}}
   if(got){liveAt=Date.now();applyLive();renderSignals();typeof rAl==='function'&&rAl()}}
  const start=()=>{clearInterval(timer);timer=setInterval(tick,30000);tick()};
  document.addEventListener('visibilitychange',()=>{if(document.hidden)clearInterval(timer);else start()});
