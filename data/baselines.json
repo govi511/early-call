@@ -821,5 +821,10 @@
     "source": "unavailable",
     "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-13 14:00"
+  },
+  "212|BTC/ETH/S&P 500/OIL|2026-10-13 14:35": {
+    "price": 83316.55,
+    "source": "Binance",
+    "at": "2026-10-13 14:35"
   }
 }

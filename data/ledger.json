@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-13T14:00:42+01:00",
+  "generated_at": "2026-10-13T14:35:21+01:00",
   "calls": [
     {
       "id": "1",
@@ -4509,6 +4509,28 @@
       "followers": null,
       "source": "X",
       "feed": "discovery",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "212",
+      "logged_at_lisbon": "2026-10-13 14:35",
+      "account": "@lookonchain/@FirstSquawk/@zerohedge",
+      "post_url": "https://x.com/lookonchain/status/2110000672154546397",
+      "asset": "BTC/ETH/S&P 500/Oil",
+      "direction": "context",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "early-signal; type=context; quiet window 12:55-13:34Z. lookonchain Oct 13 ETF flows: BTC ETFs 1D -788 BTC (-$65.6M), 7D -8,267 BTC (-$687M); ETH ETFs 1D -29,926 ETH (-$74.8M), 7D -$542.5M (bearish flow context for BTC/ETH). Geopolitics continuation of rows 205/208/211: UK PM says airbase terror plot 'almost certainly' Iran-directed; Saudi-led coalition tells people to leave Sanaa oil co. site; Zelensky says partner intel support stopped amid overnight strikes. US open: Dow +0.8% 52,266, S&P -0.09% 7,800, Nasdaq -0.38%; 2y 4.797%, 2s10s +40.6bp; Goldman CEO says US economy solid; Marvell/Microsoft/Oracle OCP working group; Apple HomeView $299 pre-orders (not EU). Odds steady: Polymarket Oct Fed hold ~80% (flat 1h), hike-25 ~18%; US-Iran ceasefire thru Oct 31 ~82% flat; US-Yemen thru Oct 15 ~98.9%; BTC>$84k Oct 13 ~12% (-2.5pt 1h) continuation fade of #199. Kalshi top volume = sports only. Filings new=0. Elon/Tesla/Starlink/SEC/FCC/Fed quiet; SpaceX CRS-35 launch/landing only. Public news; not alerted; not financial advice",
+      "after_the_fact": false,
+      "followers": null,
+      "source": "X",
+      "feed": "discovery",
+      "baseline": 83316.55,
+      "baseline_source": "Binance",
       "copy_of": "",
       "spam_farm": false
     }
