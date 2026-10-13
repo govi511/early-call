@@ -641,5 +641,21 @@
     "source": "unavailable",
     "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-13 02:00"
+  },
+  "176|ENA|2026-10-13 02:00": {
+    "price": 0.2015,
+    "source": "Binance",
+    "at": "2026-10-13 02:00"
+  },
+  "177|WLD|2026-10-13 02:00": {
+    "price": null,
+    "source": "unavailable",
+    "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
+    "at": "2026-10-13 02:00"
+  },
+  "178|PUMP|2026-10-13 02:00": {
+    "price": 0.004875,
+    "source": "Binance",
+    "at": "2026-10-13 02:00"
   }
 }
