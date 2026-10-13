@@ -1,60 +1,59 @@
 {
- "balance": 97.75,
- "starting_balance": 100.0,
- "currency": "EUR",
- "goal": 1000.0,
- "risk_per_trade_pct": [
-  2.0,
-  3.0
- ],
- "max_open": 1,
- "trades": [
-  {
-   "id": 1,
-   "symbol": "BTC",
-   "side": "SHORT",
-   "entry": 83300.0,
-   "sl": 83750.0,
-   "tp": 82700.0,
-   "size_btc": 0.005,
-   "risk_eur": 2.25,
-   "reward_eur": 3.0,
-   "status": "closed",
-   "opened_at": "2026-10-13T11:48:00+01:00",
-   "opened_at_utc": "2026-10-13T10:48:00Z",
-   "venue": "Trading 212 CFD",
-   "notes": "Call #1 challenge. Size ~0.005 BTC \u2248 -\u20ac2.25 at SL, +\u20ac3 at TP (prompt \u2248+\u20ac2.70).",
-   "resolved_at": "2026-10-13T14:42:23Z",
-   "exit_price": 83750.0,
-   "pnl_eur": -2.25,
-   "resolution": "stopped",
-   "last_check_max_high": 83850.0,
-   "last_check_min_low": 83122.95,
-   "resolved_at_pt": "2026-10-13T15:42:23+0100",
-   "sl_hit_at_utc": "2026-10-13T14:11:00Z",
-   "sl_hit_candle_high": 83819.61
-  }
- ],
- "last_check_at": "2026-10-13T23:19:00+0100",
- "last_check_btc": 83400.0,
- "last_proposal_at": null,
- "last_alert_trade_id": null,
- "last_resolution_alerted_id": 1,
- "open_trade_id": null,
- "last_setup_eval": {
-  "at": "2026-10-13T23:19:00+01:00",
-  "btc": 83400.0,
-  "funding_pct": 0.0006,
-  "lsr_global": 1.2831,
-  "top_trader_position_lsr": 1.5691,
-  "oi_btc": 93432,
-  "range_24h": [
-   81033.66,
-   84168.0
+  "balance": 97.75,
+  "starting_balance": 100.0,
+  "currency": "EUR",
+  "goal": 1000.0,
+  "risk_per_trade_pct": [
+    2.0,
+    3.0
   ],
-  "range_pos_pct": 75.5,
-  "decision": "no_proposal",
-  "reason": "Tight 83300-83535 drift; rejected 83534 then back to 83400. Funding flat, LSR creeping up 1.27->1.28, OI flat ~93.4k. Mid/upper range under 83850/84168 resistance into US CPI Oct 14; no clean setup."
- },
- "last_check_note": "No open trade; fresh read 23:19, no clean setup; silent."
+  "max_open": 1,
+  "trades": [
+    {
+      "id": 1,
+      "symbol": "BTC",
+      "side": "SHORT",
+      "entry": 83300.0,
+      "sl": 83750.0,
+      "tp": 82700.0,
+      "size_btc": 0.005,
+      "risk_eur": 2.25,
+      "reward_eur": 3.0,
+      "status": "closed",
+      "opened_at": "2026-10-13T11:48:00+01:00",
+      "opened_at_utc": "2026-10-13T10:48:00Z",
+      "venue": "Trading 212 CFD",
+      "notes": "Call #1 challenge. Size ~0.005 BTC \u2248 -\u20ac2.25 at SL, +\u20ac3 at TP (prompt \u2248+\u20ac2.70).",
+      "resolved_at": "2026-10-13T14:42:23Z",
+      "exit_price": 83750.0,
+      "pnl_eur": -2.25,
+      "resolution": "stopped",
+      "last_check_max_high": 83850.0,
+      "last_check_min_low": 83122.95,
+      "resolved_at_pt": "2026-10-13T15:42:23+0100",
+      "sl_hit_at_utc": "2026-10-13T14:11:00Z",
+      "sl_hit_candle_high": 83819.61
+    }
+  ],
+  "last_check_at": "2026-10-14T00:50:00+01:00",
+  "last_check_btc": 83195.0,
+  "last_proposal_at": null,
+  "last_alert_trade_id": null,
+  "last_resolution_alerted_id": 1,
+  "open_trade_id": null,
+  "last_setup_eval": {
+    "at": "2026-10-14T00:26:00+01:00",
+    "btc": 83195.0,
+    "funding_pct": -0.0008,
+    "lsr_global": 1.2857,
+    "oi_btc": 92726,
+    "range_24h": [
+      81033.66,
+      84168.0
+    ],
+    "range_pos_pct": 69.0,
+    "decision": "no_proposal",
+    "reason": "Rejected 83549 at 23:45-00:00, dropped to 83170. Funding flipped slightly negative, LSR 1.286 creeping up, OI down ~700 BTC (longs closing). Mid-range chop, no level to lean on, US CPI later Oct 14; no clean setup."
+  },
+  "last_check_note": "00:50 check: no open trade; last fresh read 00:26 (<1h ago), so no new read; silent."
 }
