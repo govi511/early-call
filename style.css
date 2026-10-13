@@ -165,3 +165,12 @@ input[type=checkbox]:checked{background:#fff}input[type=checkbox]:checked::after
 /* remove duplicate asset name: headline already shows it */
 #feed .card .row .asset{display:none}
 .ago{color:var(--mut);font-weight:600;background:var(--card2);padding:1px 6px;border-radius:6px}.empty-scan{text-align:center;padding:32px 12px}
+/* GG BOT card cleanup */
+#feed .card .note{display:none}
+#feed .card.nolv .lv,#feed .card.nolv .bar,#feed .card.nolv .bar+.row{display:none}
+#pupd,#pupd+.mut{display:none}
+header .top>div>.sub{display:none}
+#signals label small.mut{display:none}
+#signals>.row h2{white-space:nowrap}
+.mktc{font-size:12px;font-weight:600;color:var(--mut);background:var(--card2);border:1px solid var(--b);padding:2px 8px;border-radius:999px;vertical-align:middle}
+#stseg,#seg{margin-bottom:8px!important}
