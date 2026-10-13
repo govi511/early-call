@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-13T15:07:25+01:00",
+  "generated_at": "2026-10-13T15:07:51+01:00",
   "calls": [
     {
       "id": "1",
@@ -4579,6 +4579,48 @@
       "feed": "famous",
       "baseline": 590.99,
       "baseline_source": "Nasdaq daily (close)",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "214",
+      "logged_at_lisbon": "2026-10-13 15:07",
+      "account": "cboe_unusual_volume",
+      "post_url": "https://www.cboe.com/delayed_quotes/tsla/quote_table",
+      "asset": "TSLA/AAPL/MSFT",
+      "direction": "mixed options flow (TSLA calls / AAPL puts)",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "early-signal; type=unusual-options; filings new=18 (first CBOE flags this session for these contracts). Standouts (as_of ~14:03–14:04 UTC): AAPL261014P00345000 Oct-14 $345 put vol 12597 vs OI 514 (24.5x) last $3.40 (~$4.3M premium); AAPL261014P00347500 Oct-14 $347.5 put vol 3796 vs OI 61 (62x) last $5.54 (~$2.1M); TSLA261014C00375000 Oct-14 $375 call vol 11952 vs OI 1460 (8.2x) last $3.57 (~$4.3M); TSLA261014C00372500 Oct-14 $372.5 call vol 6365 vs OI 345 (18.4x) last $4.99 (~$3.2M); also MSFT Oct-14 $550 put 54x OI and cluster of MSFT Oct-14 calls; META/GOOGL/NVDA smaller. Public CBOE delayed tape, not MNPI. Alerted (big unusual options flow in names Gonçalo holds/trades). Not financial advice",
+      "after_the_fact": false,
+      "followers": null,
+      "source": "other",
+      "feed": "discovery",
+      "baseline": 378.03,
+      "baseline_source": "Nasdaq daily (close)",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "215",
+      "logged_at_lisbon": "2026-10-13 15:07",
+      "account": "@FirstSquawk/@DeItaone/@QuiverQuant",
+      "post_url": "https://x.com/FirstSquawk/status/2110005383284879847",
+      "asset": "Oil/S&P 500/RIG",
+      "direction": "bullish oil odds (geo escalation)",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "early-signal; type=catalyst; sharp Polymarket oil-odds move with Middle East escalation continuation of rows 205/208/211. Polymarket WTI hit $95 week-of-Oct-12 Yes ~65% (+18.5pt 1h, -13.5pt 1d); WTI hit $100 in Oct ~38% (+4.5pt 1h, -5.5pt 1d). Spot did NOT spike: WTI ~93.31 (-0.5% d/d), Brent ~105.65 (-0.9%). Wires: Sanaa explosions/airstrikes (FirstSquawk/DeItaone ~13:51Z); Houthi TV reports attack on Yemen oil co. in Sanaa; Houthis say dealing with Saudi attacks on Sanaa; Iranian navy: tanker fire east of Hormuz (FirstSquawk). Also: QuiverQuant 14:01Z Rep. Lisa McClain filed RIG (Transocean) purchase — first Congress trade in RIG in 5+ yrs (NOT Pelosi; logged only, not alerted as Pelosi). US Sept existing home sales 3.99M vs 3.95M est (minor beat). Chip/memory selloff continuation (MU -4.7%, WDC -6.5%, MRVL -4.2%, NVDA -1.1%). Other odds steady-ish: Polymarket Oct Fed hold ~79.5% (-2pt 1h), hike-25 ~19.5% (+2pt 1h); US-Iran ceasefire Oct 31 ~81.5% flat; BTC>$84k Oct 13 ~10% continuation fade of #199; BTC spot ~83510. Elon/Tesla/SEC/FCC/Fed quiet; SpaceX CRS-35 only (already logged). Alerted for sharp oil odds move (+18pt 1h). Public news; not financial advice",
+      "after_the_fact": false,
+      "followers": null,
+      "source": "X",
+      "feed": "discovery",
       "copy_of": "",
       "spam_farm": false
     }

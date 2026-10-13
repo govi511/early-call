@@ -736,10 +736,15 @@
     "source": "Binance",
     "at": "2026-10-13 14:44"
   },
+  "214|SMH|2026-10-13 15:04": {
+    "price": 590.99,
+    "source": "Nasdaq daily (close)",
+    "at": "2026-10-13 15:04"
+  },
   "168|SPACEX|2026-10-13 00:16": {
     "price": null,
     "source": "unavailable",
-    "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
+    "error": "yahoo: HTTP Error 429: Too Many Requests; nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-13 00:16"
   },
   "169|PELOSI|2026-10-13 00:48": {
@@ -838,9 +843,15 @@
     "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-13 14:00"
   },
-  "214|SMH|2026-10-13 15:04": {
-    "price": 590.99,
+  "214|TSLA/AAPL/MSFT|2026-10-13 15:07": {
+    "price": 378.03,
     "source": "Nasdaq daily (close)",
-    "at": "2026-10-13 15:04"
+    "at": "2026-10-13 15:07"
+  },
+  "215|OIL/S&P 500/RIG|2026-10-13 15:07": {
+    "price": null,
+    "source": "unavailable",
+    "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
+    "at": "2026-10-13 15:07"
   }
 }
