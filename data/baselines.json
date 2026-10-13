@@ -658,6 +658,11 @@
     "source": "Binance",
     "at": "2026-10-13 03:27"
   },
+  "188|AI/SEMIS|2026-10-13 04:59": {
+    "price": 11.61,
+    "source": "Nasdaq daily (close)",
+    "at": "2026-10-13 04:59"
+  },
   "168|SPACEX|2026-10-13 00:16": {
     "price": null,
     "source": "unavailable",
@@ -705,10 +710,5 @@
     "source": "unavailable",
     "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-13 03:51"
-  },
-  "188|AI/SEMIS|2026-10-13 04:59": {
-    "price": 11.61,
-    "source": "Nasdaq daily (close)",
-    "at": "2026-10-13 04:59"
   }
 }
