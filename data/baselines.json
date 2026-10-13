@@ -263,7 +263,10 @@
   "120|INJ|2026-10-06 21:13": {
     "price": 8.047,
     "source": "Binance",
-    "at": "2026-10-06 21:13"
+    "at": "2026-10-06 21:13",
+    "locked_pct": 2.0505,
+    "locked_price": 8.212,
+    "locked_at": "2026-10-13T21:13+01:00"
   },
   "122|ETH|2026-10-06 16:02": {
     "price": 2721.04,
@@ -550,12 +553,18 @@
   "117|EWZ|2026-10-06 20:57": {
     "price": 43.545,
     "source": "Nasdaq daily (open)",
-    "at": "2026-10-06 20:57"
+    "at": "2026-10-06 20:57",
+    "locked_pct": -0.0115,
+    "locked_price": 43.54,
+    "locked_at": "2026-10-13T20:57+01:00"
   },
   "118|SNDK|2026-10-06 20:51": {
     "price": 1700.0,
     "source": "Nasdaq daily (open)",
-    "at": "2026-10-06 20:51"
+    "at": "2026-10-06 20:51",
+    "locked_pct": 12.51,
+    "locked_price": 1487.33,
+    "locked_at": "2026-10-13T20:51+01:00"
   },
   "119|LITE|2026-10-06 20:40": {
     "price": 1099.81,
@@ -944,5 +953,10 @@
     "source": "unavailable",
     "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-13 20:27"
+  },
+  "235|BTC|2026-10-13 21:01": {
+    "price": 83304.82,
+    "source": "Binance",
+    "at": "2026-10-13 21:01"
   }
 }

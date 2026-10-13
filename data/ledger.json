@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-13T20:47:32+01:00",
+  "generated_at": "2026-10-13T21:13:51+01:00",
   "calls": [
     {
       "id": "1",
@@ -2488,6 +2488,8 @@
       "feed": "famous",
       "baseline": 43.545,
       "baseline_source": "Nasdaq daily (open)",
+      "locked_pct": -0.0115,
+      "locked_at": "2026-10-13T20:57+01:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -2510,6 +2512,8 @@
       "feed": "famous",
       "baseline": 1700.0,
       "baseline_source": "Nasdaq daily (open)",
+      "locked_pct": 12.51,
+      "locked_at": "2026-10-13T20:51+01:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -2556,6 +2560,8 @@
       "feed": "famous",
       "baseline": 8.047,
       "baseline_source": "Binance",
+      "locked_pct": 2.0505,
+      "locked_at": "2026-10-13T21:13+01:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -4410,9 +4416,9 @@
       "entry": "350.65-351.60",
       "stop": "349.85 (1h close)",
       "target": "356.95",
-      "status": "open",
-      "resolved_at": "",
-      "notes": "source following; conditional limit plan: waiting for pullback into 350.65-351.60, needs a 1H body close inside the box, 'no entry yet', won't chase if it runs without retest; invalidation 1H close below 349.85; target 356.95 (R:R ~4.6 from box mid); GOOGL premarket ~353.7 at log time (not yet triggered; treat as expired end of US session Oct 13 if box never filled); follow-up reply 2109972966368780776 promotes his CryptoWhales community link (promo, not logged); his prior ledger record 0 hits, 4 stopped, 2 unclear; GOOGL confirmed T212 CFD (GOOGL.US); alerted; not financial advice",
+      "status": "expired",
+      "resolved_at": "2026-10-13 21:13",
+      "notes": "source following; conditional limit plan: waiting for pullback into 350.65-351.60, needs a 1H body close inside the box, 'no entry yet', won't chase if it runs without retest; invalidation 1H close below 349.85; target 356.95 (R:R ~4.6 from box mid); GOOGL premarket ~353.7 at log time (not yet triggered; treat as expired end of US session Oct 13 if box never filled); follow-up reply 2109972966368780776 promotes his CryptoWhales community link (promo, not logged); his prior ledger record 0 hits, 4 stopped, 2 unclear; GOOGL confirmed T212 CFD (GOOGL.US); alerted; not financial advice; EXPIRED 2026-10-13 21:13 PT: US session Oct 13 closed; GOOGL~353.78 never pulled into 350.65-351.60 box (no fill); per original plan",
       "after_the_fact": false,
       "followers": null,
       "source": "X",
@@ -5025,6 +5031,28 @@
       "followers": null,
       "source": "X",
       "feed": "discovery",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "235",
+      "logged_at_lisbon": "2026-10-13 21:01",
+      "account": "@DaanCrypto",
+      "post_url": "https://x.com/DaanCrypto/status/2110098497840333003",
+      "asset": "BTC",
+      "direction": "long",
+      "entry": "",
+      "stop": "",
+      "target": "87000+",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "source watchlist; role call; '$BTC Testing the breakout level again. The wicks make it look decent but it is key to close the weekly at or above this area. You don't want to be hanging around the same support for too long. Needs to get going at some point, above $87K it should ignite some excitement again.'; soft long/breakout-hold bias; no entry given (scored from price at post time, BTC ~83316 Binance); no stop; soft commentary so NOT alerted; not financial advice",
+      "after_the_fact": false,
+      "followers": null,
+      "source": "X",
+      "feed": "famous",
+      "baseline": 83304.82,
+      "baseline_source": "Binance",
       "copy_of": "",
       "spam_farm": false
     }
