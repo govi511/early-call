@@ -400,7 +400,10 @@
   "157|ZEC|2026-10-06 01:23": {
     "price": 1342.18,
     "source": "Binance",
-    "at": "2026-10-06 01:23"
+    "at": "2026-10-06 01:23",
+    "locked_pct": -14.4362,
+    "locked_price": 1148.42,
+    "locked_at": "2026-10-13T01:23+01:00"
   },
   "158|HYPE|2026-10-06 00:55": {
     "price": 94.09,
@@ -600,6 +603,16 @@
     "source": "Nasdaq daily (close)",
     "at": "2026-10-13 00:48"
   },
+  "171|BTC|2026-10-13 00:56": {
+    "price": 81858.08,
+    "source": "Binance",
+    "at": "2026-10-13 00:56"
+  },
+  "172|AAPL|2026-10-13 01:19": {
+    "price": 336.64,
+    "source": "Nasdaq daily (close)",
+    "at": "2026-10-13 01:19"
+  },
   "168|SPACEX|2026-10-13 00:16": {
     "price": null,
     "source": "unavailable",
@@ -612,14 +625,21 @@
     "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-13 00:48"
   },
-  "171|BTC|2026-10-13 00:56": {
-    "price": 81858.08,
-    "source": "Binance",
-    "at": "2026-10-13 00:56"
+  "173|SPX|2026-10-13 02:00": {
+    "price": null,
+    "source": "unavailable",
+    "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
+    "at": "2026-10-13 02:00"
   },
-  "172|AAPL|2026-10-13 01:19": {
-    "price": 336.64,
-    "source": "Nasdaq daily (close)",
-    "at": "2026-10-13 01:19"
+  "174|BTC|2026-10-13 02:00": {
+    "price": 81442.57,
+    "source": "Binance",
+    "at": "2026-10-13 02:00"
+  },
+  "175|OIL|2026-10-13 02:00": {
+    "price": null,
+    "source": "unavailable",
+    "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
+    "at": "2026-10-13 02:00"
   }
 }
