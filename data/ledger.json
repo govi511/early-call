@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-13T04:58:07+01:00",
+  "generated_at": "2026-10-13T05:08:54+01:00",
   "calls": [
     {
       "id": "1",
@@ -1300,7 +1300,7 @@
       "stop": "",
       "target": "80000-81000",
       "status": "open",
-      "resolved_at": "2026-10-13 04:56",
+      "resolved_at": "",
       "notes": "source watchlist; role call; backfill 7d; expects revisit of 80-81k short term; no entry given (scored from price at post time); 03:00 check: BTC lo 81033.66 (~01:00 PT) — within 0.05% of 81k but not through; left open (near-miss); 05:00 recheck: Binance 24h low 81033.66 (01:45 PT), not inside 80-81k; reverted to open",
       "after_the_fact": false,
       "followers": null,
@@ -2648,7 +2648,7 @@
       "stop": "",
       "target": "80000-81000",
       "status": "open",
-      "resolved_at": "2026-10-13 04:56",
+      "resolved_at": "",
       "notes": "source watchlist; role call; backfill 7d; revisits 81-80k at minimum; no entry given (scored from price at post time); 03:00 check: BTC lo 81033.66 (~01:00 PT) — within 0.05% of 81k but not through; left open (near-miss); 05:00 recheck: Binance 24h low 81033.66 (01:45 PT), not inside 80-81k; reverted to open",
       "after_the_fact": false,
       "followers": null,
