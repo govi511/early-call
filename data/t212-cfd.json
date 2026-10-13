@@ -1,0 +1,23 @@
+{
+  "partial": true,
+  "note": "Full CFD sitemap (https://www.trading212.com/en-trading-instruments-cfd-sitemap.xml) blocked by Cloudflare; entries below are only those confirmed via indexed T212 CFD instrument pages or user confirmation. Absence from this list != not tradable.",
+  "source": "https://www.trading212.com/trading-instruments/cfd",
+  "generated": "2026-10-13",
+  "instruments": [
+    {"symbol": "MRNA", "name": "Moderna", "type": "stock", "evidence": "user-confirmed"},
+    {"symbol": "TSLA", "name": "Tesla", "type": "stock", "evidence": "https://www.trading212.com/trading-instruments/cfd/TSLA.US"},
+    {"symbol": "NVDA", "name": "Nvidia", "type": "stock", "evidence": "https://www.trading212.com/trading-instruments/cfd/NVDA.US"},
+    {"symbol": "BTC", "name": "Bitcoin", "type": "crypto", "evidence": "https://www.trading212.com/trading-instruments/cfd/BTC"},
+    {"symbol": "ETH", "name": "Ethereum", "type": "crypto", "evidence": "https://www.trading212.com/trading-instruments/cfd/ETH"},
+    {"symbol": "SOL", "name": "Solana", "type": "crypto", "evidence": "https://www.trading212.com/trading-instruments/cfd/SOL"},
+    {"symbol": "AVAX", "name": "Avalanche", "type": "crypto", "evidence": "https://www.trading212.com/trading-instruments/cfd/AVAX"},
+    {"symbol": "EOS", "name": "EOS", "type": "crypto", "evidence": "https://www.trading212.com/trading-instruments/cfd/EOS"},
+    {"symbol": "XAUUSD", "name": "Gold", "type": "commodity", "evidence": "https://www.trading212.com/trading-instruments/cfd/XAUUSD"},
+    {"symbol": "USA500", "name": "USA 500", "type": "index", "evidence": "https://www.trading212.com/trading-instruments/cfd/USA500.DEC26"},
+    {"symbol": "TECH100", "name": "USA Tech 100", "type": "index", "evidence": "https://www.trading212.com/trading-instruments/cfd/TECH100.DEC26"}
+  ],
+  "excluded_confirmed": [
+    {"symbol": "ZEC", "name": "Zcash", "reason": "user-confirmed NOT available as T212 CFD (a stale indexed cfd/ZEC page exists)"}
+  ],
+  "unconfirmed": ["XRP", "ICP", "FET", "HYPE", "TAO", "OIL"]
+}
