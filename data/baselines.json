@@ -958,5 +958,21 @@
     "source": "unavailable",
     "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-13 20:27"
+  },
+  "236|NVDA/META/AAPL/SPY|2026-10-13 22:14": {
+    "price": 226.32,
+    "source": "Nasdaq daily (close)",
+    "at": "2026-10-13 22:14"
+  },
+  "237|OIL/BAC/OPENAI/S&P 500|2026-10-13 22:14": {
+    "price": null,
+    "source": "unavailable",
+    "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
+    "at": "2026-10-13 22:14"
+  },
+  "238|NVDA/ABT/ADI/CACI|2026-10-13 22:14": {
+    "price": 226.32,
+    "source": "Nasdaq daily (close)",
+    "at": "2026-10-13 22:14"
   }
 }
