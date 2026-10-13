@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-13T04:57:07+01:00",
+  "generated_at": "2026-10-13T04:58:07+01:00",
   "calls": [
     {
       "id": "1",
@@ -1299,9 +1299,9 @@
       "entry": "",
       "stop": "",
       "target": "80000-81000",
-      "status": "hit_target",
+      "status": "open",
       "resolved_at": "2026-10-13 04:56",
-      "notes": "source watchlist; role call; backfill 7d; expects revisit of 80-81k short term; no entry given (scored from price at post time); 03:00 check: BTC lo 81033.66 (~01:00 PT) — within 0.05% of 81k but not through; left open (near-miss); resolved 2026-10-13 04:56 PT: BTC day lo ~80960 entered 80-81k target zone (hi~83478, last~83230)",
+      "notes": "source watchlist; role call; backfill 7d; expects revisit of 80-81k short term; no entry given (scored from price at post time); 03:00 check: BTC lo 81033.66 (~01:00 PT) — within 0.05% of 81k but not through; left open (near-miss); 05:00 recheck: Binance 24h low 81033.66 (01:45 PT), not inside 80-81k; reverted to open",
       "after_the_fact": false,
       "followers": null,
       "source": "X",
@@ -2647,9 +2647,9 @@
       "entry": "",
       "stop": "",
       "target": "80000-81000",
-      "status": "hit_target",
+      "status": "open",
       "resolved_at": "2026-10-13 04:56",
-      "notes": "source watchlist; role call; backfill 7d; revisits 81-80k at minimum; no entry given (scored from price at post time); 03:00 check: BTC lo 81033.66 (~01:00 PT) — within 0.05% of 81k but not through; left open (near-miss); resolved 2026-10-13 04:56 PT: BTC day lo ~80960 entered 80-81k target zone (hi~83478, last~83230)",
+      "notes": "source watchlist; role call; backfill 7d; revisits 81-80k at minimum; no entry given (scored from price at post time); 03:00 check: BTC lo 81033.66 (~01:00 PT) — within 0.05% of 81k but not through; left open (near-miss); 05:00 recheck: Binance 24h low 81033.66 (01:45 PT), not inside 80-81k; reverted to open",
       "after_the_fact": false,
       "followers": null,
       "source": "X",
