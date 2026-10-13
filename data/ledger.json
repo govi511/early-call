@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-13T08:24:11+01:00",
+  "generated_at": "2026-10-13T08:54:34+01:00",
   "calls": [
     {
       "id": "1",
@@ -1542,6 +1542,8 @@
       "feed": "famous",
       "baseline": 76.5,
       "baseline_source": "Nasdaq daily (open)",
+      "locked_pct": 0.4183,
+      "locked_at": "2026-10-13T08:49+01:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -4167,6 +4169,28 @@
       "followers": null,
       "source": "X",
       "feed": "discovery",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "196",
+      "logged_at_lisbon": "2026-10-13 08:49",
+      "account": "@cozypront",
+      "post_url": "https://x.com/cozypront/status/2109914524631630066",
+      "asset": "BTC",
+      "direction": "long",
+      "entry": "",
+      "stop": "",
+      "target": "90000",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "source following; 208k followers, acct 2017; 'so back, longing more altcoins, we will finish this week at $90k+ #Bitcoin'; target 90000 by end of week (expire after Oct 18); no stop; no entry given (scored from price at post time, BTC ~83.9k); bio 'Enjoying @Rollbit' (crypto casino sponsorship) + 'Social Media & Marketing'; alerted; not financial advice",
+      "after_the_fact": false,
+      "followers": 208000,
+      "source": "X",
+      "feed": "following",
+      "baseline": 83964.01,
+      "baseline_source": "Binance",
       "copy_of": "",
       "spam_farm": false
     }
