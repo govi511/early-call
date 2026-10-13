@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-13T13:26:14+01:00",
+  "generated_at": "2026-10-13T13:36:37+01:00",
   "calls": [
     {
       "id": "1",
@@ -4447,6 +4447,26 @@
       "followers": null,
       "source": "X",
       "feed": "discovery",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "209",
+      "logged_at_lisbon": "2026-10-13 13:28",
+      "account": "@CryptoKaleo",
+      "post_url": "https://x.com/CryptoKaleo/status/2109984737872040447",
+      "asset": "STONK",
+      "direction": "long",
+      "entry": "80M-100M mcap",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "source watchlist; role call; take-profit above 240M mcap earlier, now bids 80M-100M as solid spot if bullish on the eco; no stop; small meme/alt — log only, do not alert (not T212 CFD); not financial advice",
+      "after_the_fact": false,
+      "followers": null,
+      "source": "X",
+      "feed": "famous",
       "copy_of": "",
       "spam_farm": false
     }
