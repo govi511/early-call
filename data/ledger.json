@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-13T18:38:34+01:00",
+  "generated_at": "2026-10-13T19:25:06+01:00",
   "calls": [
     {
       "id": "1",
@@ -4895,6 +4895,26 @@
       "followers": null,
       "source": "X",
       "feed": "discovery",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "229",
+      "logged_at_lisbon": "2026-10-13 18:21",
+      "account": "@CryptoBullet1",
+      "post_url": "https://x.com/CryptoBullet1/status/2110073340434194902",
+      "asset": "SUI",
+      "direction": "long",
+      "entry": "0.90-1.00",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "source following; '$0.9-1 is the Buy The Dip zone' on SUI 1D (pulling back as expected); conditional dip-buy zone, no stop/target given; SUI ~1.046 at scan (zone not yet reached, 4.6% above top); SUI not a T212 CFD — log only, NOT alerted; not financial advice",
+      "after_the_fact": false,
+      "followers": null,
+      "source": "X",
+      "feed": "following",
       "copy_of": "",
       "spam_farm": false
     }
