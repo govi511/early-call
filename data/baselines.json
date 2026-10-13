@@ -715,6 +715,11 @@
     "source": "Nasdaq daily (close)",
     "at": "2026-10-13 12:59"
   },
+  "210|MU|2026-10-13 13:37": {
+    "price": 989.04,
+    "source": "Nasdaq daily (close)",
+    "at": "2026-10-13 13:37"
+  },
   "168|SPACEX|2026-10-13 00:16": {
     "price": null,
     "source": "unavailable",
@@ -811,9 +816,10 @@
     "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: URL can't contain control characters. '/api/quote/S&P 500/historical?assetclass=stocks&fromdate=2026-10-07&todate=2026-10-13&limit=10' (found at least ' '), etf: URL can't contain control characters. '/api/quote/S&P 500/historical?assetclass=etf&fromdate=2026-10-07&todate=2026-10-13&limit=10' (found at least ' '))",
     "at": "2026-10-13 13:26"
   },
-  "210|MU|2026-10-13 13:37": {
-    "price": 989.04,
-    "source": "Nasdaq daily (close)",
-    "at": "2026-10-13 13:37"
+  "211|OIL/S&P 500/BTC|2026-10-13 14:00": {
+    "price": null,
+    "source": "unavailable",
+    "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
+    "at": "2026-10-13 14:00"
   }
 }

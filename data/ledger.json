@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-13T13:57:39+01:00",
+  "generated_at": "2026-10-13T14:00:42+01:00",
   "calls": [
     {
       "id": "1",
@@ -4489,6 +4489,26 @@
       "feed": "famous",
       "baseline": 989.04,
       "baseline_source": "Nasdaq daily (close)",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "211",
+      "logged_at_lisbon": "2026-10-13 14:00",
+      "account": "@DeItaone/@FirstSquawk",
+      "post_url": "https://x.com/DeItaone/status/2109987518322217249",
+      "asset": "Oil/S&P 500/BTC",
+      "direction": "context",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "early-signal; type=context; continuation of rows 205/208 Middle East escalation: DeItaone 12:40Z Houthi military warns employees/civilians to evacuate areas near Aramco oil facilities, calling them legitimate targets; 12:53Z repeated warning re Saudi oil facilities + airlines/airports; US travel notice cites Iran/Houthi/terrorism risks; zerohedge overnight: Iran hinting land incursions into neighbours. Oil did NOT spike (WTI ~92.6 vs 93.74 prev close, Brent ~105.0 vs 106.65) and odds steady: Polymarket US-Yemen ceasefire thru Oct 31 ~85.5% (+1.5pt 1h), US-Iran ceasefire thru Oct 31 ~81.5% flat, WTI hit $100 in Oct ~32.5% (+1pt 1h, -12pt 1d). Also: Strive buys 3,311 BTC (~$275M, WatcherGuru); global MMF inflows +$166.4B wk (largest since Apr 2020, Kobeissi); Nasdaq futs slide on AI/Kospi hangover, S&P flat after JPM FICC miss; Apple HomeView launch ($299, pre-orders today); Polymarket Oct Fed hold ~80.5% flat; BTC>$84k Oct 13 ~15.9% (-2.8pt 1h) continuation of #199 fade. Filings new=0. Elon/Tesla/Starlink/SEC/FCC/Fed quiet; SpaceX CRS-35 launch only. Public news; not alerted (no sharp price/odds reaction); not financial advice",
+      "after_the_fact": false,
+      "followers": null,
+      "source": "X",
+      "feed": "discovery",
       "copy_of": "",
       "spam_farm": false
     }
