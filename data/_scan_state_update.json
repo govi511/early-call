@@ -1,11 +1,11 @@
 {
- "updated_lisbon": "2026-10-13 03:39",
+ "updated_lisbon": "2026-10-13 03:58",
  "note": "X feed trading-call scan state; use newest ids as since_id next run",
- "following_timeline_newest_id": "2109835495756968158",
- "watchlist_traders_newest_id": "2109831962311749877",
+ "following_timeline_newest_id": "2109840044869534090",
+ "watchlist_traders_newest_id": "2109837628963217875",
  "watchlist_signals_newest_id": "2109760093403463709",
- "discovery_newest_id": "2109835748543189164",
- "last_scan_utc": "2026-10-13T02:39:00Z",
+ "discovery_newest_id": "2109840802977563015",
+ "last_scan_utc": "2026-10-13T02:56:28Z",
  "alerted_post_ids": [
   "2109699116100116872:hit_target",
   "2109795375720583367:new_call",
@@ -13,6 +13,6 @@
   "2109811365192007717:new_call",
   "2109730580401213566:stopped"
  ],
- "x_reads_left_today_at_last_scan": 958,
- "store_write_note": "03:39 PT: no ledger changes this run"
+ "x_reads_left_today_at_last_scan": 937,
+ "store_write_note": "2026-10-13 03:58 PT: no new calls; watchlist only Mr_Derivatives KOSPI commentary (not a call); discovery all spam/sub-5k; no open-call resolutions"
 }
