@@ -676,10 +676,15 @@
     "source": "Binance",
     "at": "2026-10-13 07:54"
   },
+  "196|BTC|2026-10-13 08:49": {
+    "price": 83964.01,
+    "source": "Binance",
+    "at": "2026-10-13 08:49"
+  },
   "168|SPACEX|2026-10-13 00:16": {
     "price": null,
     "source": "unavailable",
-    "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
+    "error": "yahoo: HTTP Error 429: Too Many Requests; nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-13 00:16"
   },
   "169|PELOSI|2026-10-13 00:48": {
@@ -747,10 +752,5 @@
     "source": "unavailable",
     "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-13 08:00"
-  },
-  "196|BTC|2026-10-13 08:49": {
-    "price": 83964.01,
-    "source": "Binance",
-    "at": "2026-10-13 08:49"
   }
 }
