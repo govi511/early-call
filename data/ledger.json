@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-13T09:46:05+01:00",
+  "generated_at": "2026-10-13T09:57:30+01:00",
   "calls": [
     {
       "id": "1",
@@ -4297,6 +4297,26 @@
       "followers": 119000,
       "source": "X",
       "feed": "following",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "202",
+      "logged_at_lisbon": "2026-10-13 09:52",
+      "account": "@Kalshi",
+      "post_url": "https://x.com/Kalshi/status/2109927118347895197",
+      "asset": "Oil/Gold/S&P 500",
+      "direction": "risk-off (context)",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "early-signal; type=context; Kalshi relay 08:40Z: UK PM says security incident at a US air base was 'almost certainly directed by Iran'; no wire detail yet; Polymarket US x Iran ceasefire thru Oct 15 ~97.4% (-0.4pt 1h) and thru Oct 31 ~80.5% (flat) so no sharp odds reaction; also noted Polymarket BTC above $84k Oct 13 faded to ~39.9% Yes (-3.9pt 1h) from 54.4% alerted at 09:14 PT (row 199), BTC ~$83615; not alerted; not financial advice",
+      "after_the_fact": false,
+      "followers": null,
+      "source": "X",
+      "feed": "discovery",
       "copy_of": "",
       "spam_farm": false
     }
