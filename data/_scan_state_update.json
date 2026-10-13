@@ -1,11 +1,11 @@
 {
- "updated_lisbon": "2026-10-13 03:00",
+ "updated_lisbon": "2026-10-13 03:26",
  "note": "X feed trading-call scan state; use newest ids as since_id next run",
- "following_timeline_newest_id": "2109823442392612884",
- "watchlist_traders_newest_id": "2109824064047206660",
+ "following_timeline_newest_id": "2109832196521357635",
+ "watchlist_traders_newest_id": "2109831962311749877",
  "watchlist_signals_newest_id": "2109760093403463709",
- "discovery_newest_id": "2109823594494923166",
- "last_scan_utc": "2026-10-13T02:00:30Z",
+ "discovery_newest_id": "2109829702752129352",
+ "last_scan_utc": "2026-10-13T02:26:00Z",
  "alerted_post_ids": [
   "2109699116100116872:hit_target",
   "2109795375720583367:new_call",
@@ -13,6 +13,6 @@
   "2109811365192007717:new_call",
   "2109730580401213566:stopped"
  ],
- "x_reads_left_today_at_last_scan": 971,
- "store_write_note": "03:00 PT: store call-ledger.csv cp hung and was SIGKILLed (exit 137); store state uncertain; workspace copies are source of truth; live app synced from workspace CSV (commit 5fb50dd)"
+ "x_reads_left_today_at_last_scan": 962,
+ "store_write_note": "03:26 PT: no ledger changes this run"
 }
