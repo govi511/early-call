@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-13T06:57:48+01:00",
+  "generated_at": "2026-10-13T07:49:04+01:00",
   "calls": [
     {
       "id": "1",
@@ -4103,6 +4103,26 @@
       "notes": "source discovery; 65k followers, acct 2021; hourly TF 'shorted again' at 83.8k, 'TPs will be aggressive', no stop/target given; quotes own earlier short; not financial advice",
       "after_the_fact": false,
       "followers": 65000,
+      "source": "X",
+      "feed": "discovery",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "193",
+      "logged_at_lisbon": "2026-10-13 07:34",
+      "account": "@FirstSquawk",
+      "post_url": "https://x.com/FirstSquawk/status/2109895508416442579",
+      "asset": "KOSPI/semis",
+      "direction": "bearish risk (Asia tech/chips continuation)",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "early-signal; type=catalyst; FirstSquawk 07:34 PT: Kospi closes -5.46%, weakest close since Jul 30 (07:43 PT Yonhap: renewed AI-sector concerns + inflation pressure tech); FirstSquawk/LiveSquawk 07:17-07:18 PT (FT): chipmakers' shares decline after Broadcom CEO describes market as a 'casino'; continuation of rows 180/188/189 Asia tech + AI-capex selloff; risk context for NVDA/Nasdaq/S&P open; public news; not alerted (continuation, no odds spike); Polymarket BTC above $84k Oct 13 ~38% (+4pt 1h), above $82k ~94.5% - continuation of row 179, not re-alerted; Polymarket Fed Oct no change ~80.5% / hike 25bp ~19.5% (+3pt 1d, not sharp); Elon no new posts since 06:37 PT (Grok Bot promo); filings new=0; not financial advice",
+      "after_the_fact": false,
+      "followers": null,
       "source": "X",
       "feed": "discovery",
       "copy_of": "",
