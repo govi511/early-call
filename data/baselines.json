@@ -716,5 +716,11 @@
     "source": "unavailable",
     "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-13 05:48"
+  },
+  "190|US HOUSING/MACRO|2026-10-13 06:11": {
+    "price": null,
+    "source": "unavailable",
+    "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: URL can't contain control characters. '/api/quote/US HOUSING/historical?assetclass=stocks&fromdate=2026-10-07&todate=2026-10-13&limit=10' (found at least ' '), etf: URL can't contain control characters. '/api/quote/US HOUSING/historical?assetclass=etf&fromdate=2026-10-07&todate=2026-10-13&limit=10' (found at least",
+    "at": "2026-10-13 06:11"
   }
 }
