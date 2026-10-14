@@ -35,7 +35,7 @@
       "sl_hit_candle_high": 83819.61
     }
   ],
-  "last_check_at": "2026-10-14T07:21:08+01:00",
+  "last_check_at": "2026-10-14T07:52:07+01:00",
   "last_check_btc": 83540.01,
   "last_proposal_at": null,
   "last_alert_trade_id": null,
@@ -57,5 +57,5 @@
     "decision": "no_proposal",
     "reason": "Mid 24h range (~47.5% of 82973\u201384168); overnight chop 83137\u201383958 then fade; hour lows ~83352 / highs ~83628. Funding ~flat (\u22120.00087%), LSR global 1.28 / top 1.35 easing, OI soft ~91.9k. US CPI later today \u2014 no clean level; no proposal."
   },
-  "last_check_note": "07:20 check: no open trade; fresh read; no clean setup (mid-range chop + CPI risk); silent."
+  "last_check_note": "07:51 check: no open trade; last fresh read 07:21 (under an hour ago); no new read and no proposal; silent."
 }
