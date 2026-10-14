@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-14T12:22:34+01:00",
+  "generated_at": "2026-10-14T14:02:46+01:00",
   "calls": [
     {
       "id": "1",
@@ -4654,9 +4654,9 @@
       "entry": "4201-4212",
       "stop": "4222.53 (1h close)",
       "target": "4160/4138",
-      "status": "open",
-      "resolved_at": "",
-      "notes": "source following; conditional limit plan: eyeing short from 4201-4212 supply, wants 1H close inside zone first (price still below at post; GC=F ~4190 / PAXG ~4170 at scan — not yet triggered); invalidation 1H close above 4222.53; TP1 4160 TP2 4138; XAUUSD confirmed T212 CFD; his prior ledger 0 hits/4 stopped/2 unclear; alerted; not financial advice",
+      "status": "expired",
+      "resolved_at": "2026-10-14 14:02",
+      "notes": "source following; conditional limit plan: eyeing short from 4201-4212 supply, wants 1H close inside zone first (price still below at post; GC=F ~4190 / PAXG ~4170 at scan — not yet triggered); invalidation 1H close above 4222.53; TP1 4160 TP2 4138; XAUUSD confirmed T212 CFD; his prior ledger 0 hits/4 stopped/2 unclear; alerted; not financial advice; EXPIRED Oct 14: box never filled (max 1H close ~4177), CPI-hour 13:00 PT 1H candle fell to 4107.2 low / 4119.9 close, well below TP2 4138 without trigger — no trade, no alert",
       "after_the_fact": false,
       "followers": null,
       "source": "X",
