@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-14T20:48:16+01:00",
+  "generated_at": "2026-10-14T21:23:57+01:00",
   "calls": [
     {
       "id": "1",
@@ -1854,6 +1854,8 @@
       "feed": "famous",
       "baseline": 33.07,
       "baseline_source": "Nasdaq daily (open)",
+      "locked_pct": 14.4844,
+      "locked_at": "2026-10-14T20:50+01:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -6025,6 +6027,46 @@
       "source": "other",
       "feed": "discovery",
       "nonpriceable": true,
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "281",
+      "logged_at_lisbon": "2026-10-14 20:51",
+      "account": "@DaanCrypto",
+      "post_url": "https://x.com/DaanCrypto/status/2110458368934522991",
+      "asset": "BTC",
+      "direction": "long",
+      "entry": "72000-75000",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "source watchlist; role call; 2026-10-14 20:51 PT post: lots of confluence between $72K-$75K (bull market support band, 2024 summer range high, 0.5/0.618 fib, daily 200MA/EMA) = soft higher-timeframe support/buy-zone idea, not an explicit entry; no stop/target; BTC ~81.9k now (zone ~9-12% below); not alerted; not financial advice",
+      "after_the_fact": false,
+      "followers": null,
+      "source": "X",
+      "feed": "famous",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "282",
+      "logged_at_lisbon": "2026-10-14 20:38",
+      "account": "@cryptugapt",
+      "post_url": "https://x.com/cryptugapt/status/2110455330832552013",
+      "asset": "DOPE",
+      "direction": "long",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "source following; 2.5k followers (small account); 'Update on $dope Higher' = soft memecoin long update, no levels (scored from price at post time); memecoin not on T212 CFDs so not alerted; low quality; not financial advice",
+      "after_the_fact": false,
+      "followers": 2500,
+      "source": "X",
+      "feed": "following",
       "copy_of": "",
       "spam_farm": false
     }
