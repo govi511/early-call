@@ -35,31 +35,31 @@
       "sl_hit_candle_high": 83819.61
     }
   ],
-  "last_check_at": "2026-10-14T11:24:00+01:00",
-  "last_check_btc": 83244.0,
+  "last_check_at": "2026-10-14T12:19:22+01:00",
+  "last_check_btc": 83439.0,
   "last_proposal_at": null,
   "last_alert_trade_id": null,
   "last_resolution_alerted_id": 1,
   "open_trade_id": null,
   "last_setup_eval": {
-    "at": "2026-10-14T10:48+01:00",
-    "btc": 83244.0,
-    "funding_pct": 0.003917,
-    "funding_rate": 3.917e-05,
-    "lsr_global": 1.2936,
-    "lsr_top": 1.3657,
-    "oi_btc": 90852,
+    "at": "2026-10-14T11:49+01:00",
+    "btc": 83439.0,
+    "funding_pct": 0.004006,
+    "funding_rate": 4.006e-05,
+    "lsr_global": 1.2967,
+    "lsr_top": 1.5145,
+    "oi_btc": 90843,
     "range_24h": [
-      82912.8,
-      84117.6
+      82972.7,
+      84146.7
     ],
-    "range_pos_pct": 27.5,
+    "range_pos_pct": 39.6,
     "recent_3h": [
-      83152.5,
-      84117.6
+      83028.7,
+      84146.7
     ],
     "decision": "no_proposal",
-    "reason": "Post-spike dump from 84117 to ~83244 (~27.5% of 24h 82913-84118); funding ~flat (+0.0039%), LSR still long-biased global 1.29 / top 1.37, OI soft ~90.9k. No clean bounce/rejection level; CPI event risk; no proposal."
+    "reason": "Mid-range chop ~83439 (~40% of 24h 82973-84147); funding flat (+0.004%), top-trader LSR up to 1.51 (crowded long), OI drifting lower ~90.8k. No clean level; CPI event risk; no proposal."
   },
-  "last_check_note": "11:24 check: no open trade; last fresh read 10:48 (<1h ago); no new read, no proposal; silent."
+  "last_check_note": "12:19 check: no open trade; last fresh read 11:49 (under 1h); no new read; silent."
 }
