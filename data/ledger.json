@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-14T01:15:23+01:00",
+  "generated_at": "2026-10-14T02:09:05+01:00",
   "calls": [
     {
       "id": "1",
@@ -5394,6 +5394,28 @@
       "source": "X",
       "feed": "famous",
       "baseline": 0.005025,
+      "baseline_source": "Binance",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "252",
+      "logged_at_lisbon": "2026-10-14 01:40",
+      "account": "@Nebraskangooner",
+      "post_url": "https://x.com/Nebraskangooner/status/2110168904006078773",
+      "asset": "BTC",
+      "direction": "long",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "source watchlist; role call; Still holding locally bullish structure with that green support box.. Hopefully CPI doesn't ruin the fun. Would like to see a test of that dotted yellow line.; soft long/hold bias; no entry given (scored from price at post time, BTC ~83354 Binance); no stop/target; soft commentary so NOT alerted; not financial advice",
+      "after_the_fact": false,
+      "followers": null,
+      "source": "X",
+      "feed": "famous",
+      "baseline": 83667.47,
       "baseline_source": "Binance",
       "copy_of": "",
       "spam_farm": false
