@@ -180,3 +180,16 @@ header .top>div>.sub{display:none}
 .filters .seg{flex:0 0 auto;margin:0!important;overflow:visible}
 .filters .fdiv{flex:0 0 1px;height:22px;background:var(--b)}
 #signals label:has(#showspam){margin:0 0 10px!important}
+/* GG BOT data health */
+.live{cursor:pointer}
+.live[data-h=amber] .live-text{color:#f5b73b}
+.live[data-h=red] .live-text{color:#f87171}
+.live[data-h=red] .live-dot{animation:none}
+.hsheet{position:fixed;inset:0;background:rgba(0,0,0,.6);display:none;align-items:flex-end;justify-content:center;z-index:200}
+.hsheet.on{display:flex}
+.hs-card{background:var(--card);border:1px solid var(--b);border-radius:18px 18px 0 0;width:100%;max-width:520px;padding:16px 18px calc(24px + env(safe-area-inset-bottom));max-height:75vh;overflow:auto}
+.hs-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;font-size:17px}
+.hs-x{background:var(--card2);border:1px solid var(--b);color:var(--txt);border-radius:999px;width:32px;height:32px}
+.hs-row{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--b);font-size:14px}
+.hs-sec{color:var(--mut);font-size:12px;text-transform:uppercase;letter-spacing:.06em;margin:14px 0 6px}
+.hs-chips{display:flex;flex-wrap:wrap;gap:6px}.hs-chips span{background:var(--card2);border:1px solid var(--b);border-radius:999px;padding:3px 10px;font-size:13px;font-weight:600}
