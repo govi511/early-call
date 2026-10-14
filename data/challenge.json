@@ -23,7 +23,7 @@
    "opened_at": "2026-10-13T11:48:00+01:00",
    "opened_at_utc": "2026-10-13T10:48:00Z",
    "venue": "Trading 212 CFD",
-   "notes": "Call #1 challenge. Size ~0.005 BTC ≈ -€2.25 at SL, +€3 at TP (prompt ≈+€2.70).",
+   "notes": "Call #1 challenge. Size ~0.005 BTC \u2248 -\u20ac2.25 at SL, +\u20ac3 at TP (prompt \u2248+\u20ac2.70).",
    "resolved_at": "2026-10-13T14:42:23Z",
    "exit_price": 83750.0,
    "pnl_eur": -2.25,
@@ -35,31 +35,31 @@
    "sl_hit_candle_high": 83819.61
   }
  ],
- "last_check_at": "2026-10-14T13:26+01:00",
- "last_check_btc": 83446.13,
+ "last_check_at": "2026-10-14T14:51+01:00",
+ "last_check_btc": 82686,
  "last_proposal_at": null,
  "last_alert_trade_id": null,
  "last_resolution_alerted_id": 1,
  "open_trade_id": null,
  "last_setup_eval": {
-  "at": "2026-10-14T12:55+01:00",
-  "btc": 83446.13,
-  "funding_pct": 0.003362,
-  "funding_rate": 3.362e-05,
-  "lsr_global": 1.3294,
-  "lsr_top": 1.4877,
-  "oi_btc": 91083,
+  "at": "2026-10-14T14:51+01:00",
+  "btc": 82686,
+  "funding_pct": 0.002648,
+  "funding_rate": 2.648e-05,
+  "lsr_global": 1.3832,
+  "lsr_top": 1.5059,
+  "oi_btc": 92187.1,
   "range_24h": [
-   82972.74,
+   82364.49,
    84146.72
   ],
-  "range_pos_pct": 40.3,
-  "recent_3h": [
-   83028.7,
-   83532.41
+  "range_pos_pct": 18.7,
+  "recent_1h": [
+   82290.7,
+   83072.7
   ],
   "decision": "no_proposal",
-  "reason": "Mid-range chop ~83446 (~40.3% of 24h range); funding flat (+0.0034%), global LSR 1.33 / top 1.49, OI flat ~91.1k. No clean level; no proposal."
+  "reason": "Post-CPI drift lower: BTC ~82686 near bottom of 24h range (~19%), 13:00 PT candle low 82291. Funding flat +0.0026%, longs crowding further (global LSR 1.38, top 1.51) with OI up to ~92.2k, so downside long-liquidation risk, but price is already at the lows mid-move; shorting here is a chase and no clean retest level has formed. No proposal."
  },
- "last_check_note": "13:26 check: no open trade; last fresh read 12:55 (<1h), no new read; silent."
+ "last_check_note": "14:51 check: no open trade; fresh read done; no clean setup; silent."
 }
