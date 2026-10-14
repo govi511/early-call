@@ -17,7 +17,21 @@ def is_short(d):
 ALIAS = {"QQQ/SPY":"QQQ","SPY/QQQ":"SPY","ETH/BTC":"ETHBTC"}  # multi-ticker calls -> first ticker
 NONPRICE = {"FED","FOMC","FEDFUNDS","RATES","CPI"}  # macro calls, not tradable assets
 NP_NOTE = "not a tradable asset"
+NP_LABEL = "multi-asset/context label, no price expected"
+CONTEXT_ONLY = set()  # assets whose ledger rows are all early-signal context rows (filled in main)
+def is_label(asset): return "/" in asset and " " in asset.strip()
 KRAKEN = {"XMR":"XMRUSD"}  # Binance XMR pair is delisted/stale
+CNBC_MAP = {"NATGAS":"@NG.1","NG":"@NG.1","GOLD":"@GC.1","XAU":"@GC.1","XAUUSD":"@GC.1","XAGUSD":"@SI.1","SILVER":"@SI.1","OIL":"@CL.1","WTI":"@CL.1","BRENT":"@LCO.1","SPX":".SPX","NDX":".NDX"}
+def _cnbc(a):
+    """Free no-key CNBC quote feed (front-month futures / indices); used first for CNBC_MAP so Yahoo 429s don't matter."""
+    sym = CNBC_MAP[a]
+    q = get("https://quote.cnbc.com/quote-html-webservice/restQuote/symbolType/symbol?symbols=" + urllib.parse.quote(sym) + "&requestMethod=itv&noform=1&partnerId=2&fund=1&exthrs=1&output=json", tries=2)
+    q = q["FormattedQuoteResult"]["FormattedQuote"][0]
+    p = float(str(q["last"]).replace(",", ""))
+    if p <= 0: raise RuntimeError("cnbc: no price")
+    try: ch = float(str(q.get("change_pct", "")).replace("%", "").replace("+", ""))
+    except ValueError: ch = None
+    return {"price": p, "change_pct": ch, "symbol": sym, "currency": q.get("currencyCode") or "USD", "source": "CNBC", "as_of": now()}
 YAHOO_MAP = {"NATGAS":"NG=F","NG":"NG=F","GOLD":"GC=F","XAU":"GC=F","XAUUSD":"GC=F","XAGUSD":"SI=F","SILVER":"SI=F","OIL":"CL=F","WTI":"CL=F","BRENT":"BZ=F","SPX":"^GSPC","NDX":"^NDX"}
 now = lambda: datetime.datetime.now().astimezone().isoformat(timespec="seconds")
 def log(m): print(f"[{now()}] {m}", flush=True)
@@ -79,6 +93,9 @@ def fetch(asset, force=None):
         t = next(iter(r["result"].values())); p, o = float(t["c"][0]), float(t["o"])
         return {"price": p, "change_pct": (p - o) / o * 100, "symbol": KRAKEN[a], "currency": "USD", "source": "Kraken", "as_of": now()}
     if a in CRYPTO: return _binance(a)
+    if a in CNBC_MAP:
+        try: return _cnbc(a)
+        except Exception as e: log(f"cnbc failed for {a}: {e}; trying Yahoo")
     try: return _yahoo(a)
     except Exception as e:
         log(f"yahoo failed for {a}: {e}; trying Nasdaq")
@@ -133,6 +150,11 @@ def write_candles(assets):
     d = os.path.join(DATA, "candles"); os.makedirs(d, exist_ok=True); bad = []
     for a in assets:
         if "/" in a: continue  # alias like QQQ/SPY: candles live under the mapped ticker
+        fp = os.path.join(d, a + ".json")
+        if a not in CRYPTO and a not in KRAKEN and SOURCE_USED.get(a) not in ('binance', 'kraken'):
+            try:  # Yahoo-sourced (stocks/futures): refresh daily candles at most once per day to avoid 429s
+                if json.load(open(fp)).get("as_of", "")[:10] == now()[:10]: continue
+            except Exception: pass
         try:
             c = candles(a)
             fd, tmp = tempfile.mkstemp(dir=d, suffix=".tmp")
@@ -284,6 +306,7 @@ def pick(asset, ref):
     """Fetch price; if a ledger entry level exists, the price must be within 3x of it (catches ticker clashes,
     e.g. NEAR token vs NEAR stock). Tries the default source, then the other one; otherwise raises -> n/a."""
     a = norm(asset); tried = []
+    if is_label(asset): return {"price": None, "nonpriceable": True, "note": NP_LABEL, "source": NP_LABEL, "as_of": now()}
     if a in NONPRICE: return {"price": None, "nonpriceable": True, "note": NP_NOTE, "source": NP_NOTE, "as_of": now()}
     order = [None, 'binance', 'alt', 'yahoo'] if a not in KRAKEN else [None]
     for src in order:
@@ -341,11 +364,19 @@ def main():
     for r in rows:
         n = [float(x) for x in re.findall(r"\d+(?:\.\d+)?", re.sub(r"\(.*?\)", "", r.get("entry", "")))]
         if n and r.get("asset"): refs.setdefault(r["asset"].upper(), sum(n[:2]) / len(n[:2]))
+    ctx = {}
+    for r in rows:
+        if r.get("asset"):
+            k = r["asset"].upper(); c = bool(re.match(r"early[- ]signal", r.get("notes") or "", re.I) or "(context)" in (r.get("direction") or "").lower())
+            ctx[k] = ctx.get(k, True) and c
+    CONTEXT_ONLY.update(k for k, v in ctx.items() if v)
     prices, ok, bad = {}, [], []
     for asset in sorted({r["asset"].upper() for r in rows if r.get("asset")} | {w.upper() for w in watch}):
         try:
             prices[asset] = pick(asset, refs.get(asset)); ok.append(asset)
         except Exception as e:
+            if asset in CONTEXT_ONLY:  # early-signal context row that isn't a priceable ticker: not a failure
+                prices[asset] = {"price": None, "nonpriceable": True, "note": NP_LABEL, "source": NP_LABEL, "as_of": now(), "error": str(e)[:120]}; continue
             prev = old.get(asset) or {}
             ref = refs.get(asset)
             if prev.get("price") is not None and ref and not (1/3 <= prev["price"] / ref <= 3): prev = {}  # don't keep a mismatched old price
