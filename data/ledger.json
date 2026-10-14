@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-14T14:02:46+01:00",
+  "generated_at": "2026-10-14T14:18:37+01:00",
   "calls": [
     {
       "id": "1",
@@ -5701,6 +5701,27 @@
       "followers": null,
       "source": "X",
       "feed": "discovery",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "266",
+      "logged_at_lisbon": "2026-10-14 14:18",
+      "account": "@FirstSquawk/@Kalshi/@DeItaone/Polymarket",
+      "post_url": "https://x.com/DeItaone/status/2110357224761536984",
+      "asset": "Fed/USD/SPX/BTC/Gold",
+      "direction": "alert (hot CPI / hike odds)",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "early-signal; type=alert; ALERT. Hot Sep CPI + sharp Fed-hike odds spike. Print (08:30 ET / 13:30 PT): CPI YoY 3.7% (est 3.6%, prev 3.4%); MoM 0.6% (est 0.6%); Core YoY 2.6% (est 2.5%, prev 2.4%); Core MoM 0.3% (est 0.2%). Gasoline +9.1% MoM drove >half of headline. Odds: Kalshi Oct 25bp hike ~21%→55% (~+34pt); Polymarket Oct 25bp hike ~19.5%→~52%, hold ~78.5%→~48% (hike overtook hold). Could move: USD, S&P 500, Nasdaq, BTC, Gold, Treasuries. Links: FirstSquawk CPI https://x.com/FirstSquawk/status/2110347579548713225 ; Kalshi hike odds https://x.com/Kalshi/status/2110349874105614617 ; DeItaone Kalshi 55% https://x.com/DeItaone/status/2110357224761536984 ; zerohedge https://x.com/zerohedge/status/2110350939064320190 ; Kobeissi https://x.com/KobeissiLetter/status/2110347809308455363 ; Polymarket https://polymarket.com/event/fed-decision-in-october-20260617190323537 ; CBS https://www.cbsnews.com/news/september-cpi-report-inflation-energy-costs/ . Filings window: fetch_filings new=0. Elon/Tesla/SpaceX/Starlink/SEC/FCC/Fed/QuiverQuant quiet; OptionsHawk BSP fluff only; unusual_whales non-market fluff. Public BLS data; not financial advice.",
+      "after_the_fact": false,
+      "followers": null,
+      "source": "X",
+      "feed": "discovery",
+      "nonpriceable": true,
       "copy_of": "",
       "spam_farm": false
     }
