@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-14T04:15:17+01:00",
+  "generated_at": "2026-10-14T06:17:19+01:00",
   "calls": [
     {
       "id": "1",
@@ -5527,6 +5527,28 @@
       "feed": "discovery",
       "baseline": 83723.34,
       "baseline_source": "Binance",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "258",
+      "logged_at_lisbon": "2026-10-14 06:15",
+      "account": "@LiveSquawk/@FirstSquawk/@Kalshi/@elonmusk/Polymarket",
+      "post_url": "https://x.com/LiveSquawk/status/2110234943653544016",
+      "asset": "ASML/NVDA/Semis/Oil/Fed",
+      "direction": "context (quiet window)",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "early-signal; type=context; 04:14-06:15 PT quiet window. Filings: fetch_filings new=0 (no new SEC Form 4, House PTR/Pelosi, or CBOE unusual batch). X: LiveSquawk ASML Q3 2026 rev EUR11.66B (est 11.72B) but net income EUR4.96B (est 4.05B), Q4 rev guide EUR14.2-15.2B (est 14.19B), FY EUR44-45B (est 43.65B) = semis read-through for NVDA/Nasdaq; FirstSquawk SK Hynix defers part of HBM4 back-end equipment orders to next year (DealSite) = mild semis-capex negative; Trump Greenland oil/gas/mineral exploration; Kalshi CME note Fed usually skips near elections but Warsh hiked Sep, Oct next; UK no tariffs on Chinese EVs; Finland Sep CPI 2.5%; Kobeissi 10 stocks = 70% of S&P gain since Mar 30 (NVDA 13%); NTT/Anthropic Japan DC (repeat); Iran shipping-attack tactics = geopolitics continuum already alerted #175/#183/#215/#223. Elon: Grok promo, 'Timing is everything' quoting Tesla Roadster livestream Thu (context #253), replies only; Tesla/SpaceX/Starlink/SEC/FCC/Fed/QuiverQuant/OptionsHawk quiet. Odds: Polymarket scan of ~700 fed/crypto/economy/geopolitics markets found no 1h move >=7pt with >$20k vol (top movers all sports); Kalshi no sharp move. US CPI due later today. Not alerted. Public news; not financial advice",
+      "after_the_fact": false,
+      "followers": null,
+      "source": "X",
+      "feed": "discovery",
+      "baseline": 1717.76,
+      "baseline_source": "Nasdaq daily (close)",
       "copy_of": "",
       "spam_farm": false
     }
