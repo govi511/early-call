@@ -193,3 +193,6 @@ header .top>div>.sub{display:none}
 .hs-row{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--b);font-size:14px}
 .hs-sec{color:var(--mut);font-size:12px;text-transform:uppercase;letter-spacing:.06em;margin:14px 0 6px}
 .hs-chips{display:flex;flex-wrap:wrap;gap:6px}.hs-chips span{background:var(--card2);border:1px solid var(--b);border-radius:999px;padding:3px 10px;font-size:13px;font-weight:600}
+/* GG BOT group by trader */
+#feed .card.grp-hidden{display:none}
+.grp-more-btn{grid-column:1/-1;width:100%;background:var(--card2);border:1px solid var(--b);color:var(--txt);border-radius:12px;padding:10px;font-weight:600;font-size:14px;margin:-4px 0 8px}
