@@ -958,10 +958,45 @@
     "source": "not a tradable asset",
     "at": "2026-10-14 14:18"
   },
+  "268|SOXX|2026-10-14 16:33": {
+    "price": 543.9,
+    "source": "Nasdaq daily (close)",
+    "at": "2026-10-14 16:33"
+  },
+  "269|PRGO|2026-10-14 16:04": {
+    "price": 15.37,
+    "source": "Nasdaq daily (close)",
+    "at": "2026-10-14 16:04"
+  },
+  "272|ETH|2026-10-14 19:01": {
+    "price": 2430.11,
+    "source": "Binance",
+    "at": "2026-10-14 19:01"
+  },
+  "273|QQQ|2026-10-14 18:29": {
+    "price": 743.57,
+    "source": "Nasdaq daily (close)",
+    "at": "2026-10-14 18:29"
+  },
+  "274|SOXX/SMH|2026-10-14 19:46": {
+    "price": 543.9,
+    "source": "Nasdaq daily (close)",
+    "at": "2026-10-14 19:46"
+  },
+  "275|TLT|2026-10-14 19:25": {
+    "price": 78.37,
+    "source": "Nasdaq daily (close)",
+    "at": "2026-10-14 19:25"
+  },
+  "278|BNB|2026-10-14 15:02": {
+    "price": 736.55,
+    "source": "Binance",
+    "at": "2026-10-14 15:02"
+  },
   "168|SPACEX|2026-10-13 00:16": {
     "price": null,
     "source": "unavailable",
-    "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
+    "error": "yahoo: HTTP Error 429: Too Many Requests; nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-13 00:16"
   },
   "169|PELOSI|2026-10-13 00:48": {
@@ -1144,39 +1179,9 @@
     "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-14 12:21"
   },
-  "268|SOXX|2026-10-14 16:33": {
-    "price": 543.9,
-    "source": "Nasdaq daily (close)",
-    "at": "2026-10-14 16:33"
-  },
-  "269|PRGO|2026-10-14 16:04": {
-    "price": 15.37,
-    "source": "Nasdaq daily (close)",
-    "at": "2026-10-14 16:04"
-  },
-  "272|ETH|2026-10-14 19:01": {
-    "price": 2430.11,
-    "source": "Binance",
-    "at": "2026-10-14 19:01"
-  },
-  "273|QQQ|2026-10-14 18:29": {
-    "price": 743.57,
-    "source": "Nasdaq daily (close)",
-    "at": "2026-10-14 18:29"
-  },
-  "274|SOXX/SMH|2026-10-14 19:46": {
-    "price": 543.9,
-    "source": "Nasdaq daily (close)",
-    "at": "2026-10-14 19:46"
-  },
-  "275|TLT|2026-10-14 19:25": {
-    "price": 78.37,
-    "source": "Nasdaq daily (close)",
-    "at": "2026-10-14 19:25"
-  },
-  "278|BNB|2026-10-14 15:02": {
-    "price": 736.55,
-    "source": "Binance",
-    "at": "2026-10-14 15:02"
+  "280|FED/USD/SPX/BTC|2026-10-14 20:22": {
+    "price": null,
+    "source": "not a tradable asset",
+    "at": "2026-10-14 20:22"
   }
 }

@@ -35,28 +35,24 @@
    "sl_hit_candle_high": 83819.61
   }
  ],
- "last_check_at": "2026-10-14T16:12+01:00",
+ "last_check_at": "2026-10-14T20:54+01:00",
  "last_check_btc": 81866,
  "last_proposal_at": null,
  "last_alert_trade_id": null,
  "last_resolution_alerted_id": 1,
  "open_trade_id": null,
  "last_setup_eval": {
-  "at": "2026-10-14T16:11+01:00",
-  "source": "OKX BTC-USDT-SWAP (Binance DNS failed / 451)",
-  "btc": 81866,
-  "funding_pct": 0.007637,
-  "funding_rate": 7.637e-05,
-  "lsr_global": 1.58,
-  "lsr_global_trend": "1.32->1.58 over ~7h (OKX accounts)",
-  "oi_btc": null,
+  "at": "2026-10-14T19:57+01:00",
+  "source": "OKX BTC-USDT-SWAP (recorded from run memory; earlier write dropped)",
+  "btc": 81650,
+  "funding_pct": 0.0053,
+  "lsr_global": 1.71,
   "range_24h": [
-   81629.3,
-   84116.3
+   81453,
+   84116
   ],
-  "range_pos_pct": 9.5,
   "decision": "no_proposal",
-  "reason": "BTC ~81866 pressing new 24h low (~9.5% of 81629-84116) in post-CPI drift. Longs crowding sharply (OKX LSR 1.32->1.58), funding mildly positive, so long-liquidation risk below, but shorting at the lows is a chase with no retest level; longing against crowding flow is unclean. No proposal."
+  "reason": "BTC chopping in 4h base 81450-82060 at 24h lows; LSR 1.71 rising (long-flush risk) but no confirmed breakdown/retest. No proposal."
  },
- "last_check_note": "16:12 check: no open trade; fresh read (OKX, Binance unreachable); no clean setup; no proposal; silent."
+ "last_check_note": "20:54 check: no open trade; last fresh read 19:57 (<1h, usage slowed), no new read; no proposal; silent."
 }

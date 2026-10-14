@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-14T20:42:58+01:00",
+  "generated_at": "2026-10-14T20:48:16+01:00",
   "calls": [
     {
       "id": "1",
@@ -6004,6 +6004,27 @@
       "followers": 39800,
       "source": "X",
       "feed": "discovery",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "280",
+      "logged_at_lisbon": "2026-10-14 20:22",
+      "account": "@unusual_whales/@Kalshi/@federalreserve/Polymarket",
+      "post_url": "https://polymarket.com/event/fed-decision-in-october-20260617190323537",
+      "asset": "Fed/USD/SPX/BTC",
+      "direction": "context (quiet window)",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "early-signal; type=context; 18:22-20:22 PT window. Filings: fetch_filings ran (summary truncated); CBOE unusual = Oct 14 SPY delayed-volume batch (e.g. SPY 261231P750 15.6k vol, 261023P748 14.2k, 261023C785 13.1k) = index hedging, not alert-scale; no new large insider Form 4 in watchlist names, no Pelosi PTR seen. Odds: Polymarket Oct Fed hold rebounded to ~65.5% (from ~48% at #266 alert), 25bp hike faded to ~33.5% (-5pt 1h) = partial reversal of the already-alerted hot-CPI hike spike (#266); not re-alerted. X: Fed Beige Book released https://x.com/federalreserve/status/2110431369247756477 ; Kalshi S&P 500 banks index 4-month low https://x.com/Kalshi/status/2110445539129229418 ; Kalshi Cramer 'no stopping the bears', 13% odds SPX <7800 YE https://x.com/Kalshi/status/2110435114622607422 ; unusual_whales Bending Spoons pre-news calls (possible informed flow, not in watchlist, NOT tradeable as possibly non-public info) https://x.com/unusual_whales/status/2110433752224788755 ; QuiverQuant Trump Mar 2 MRNA purchase filing (old) https://x.com/QuiverQuant/status/2110426196563435820 ; Tesla 'Anything happening tomorrow?' teaser (Roadster event continuum) https://x.com/Tesla/status/2110420241104953532 ; Elon only Grok Voice promo. SEC/FCC/SpaceX/Starlink/OptionsHawk quiet. Not alerted. Public info; not financial advice",
+      "after_the_fact": false,
+      "followers": null,
+      "source": "other",
+      "feed": "discovery",
+      "nonpriceable": true,
       "copy_of": "",
       "spam_farm": false
     }
