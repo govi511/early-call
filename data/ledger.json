@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-14T12:16:39+01:00",
+  "generated_at": "2026-10-14T12:22:34+01:00",
   "calls": [
     {
       "id": "1",
@@ -3338,6 +3338,8 @@
       "feed": "famous",
       "baseline": 0.00641,
       "baseline_source": "Binance",
+      "locked_pct": -20.8424,
+      "locked_at": "2026-10-14T12:21+01:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -5679,6 +5681,26 @@
       "feed": "famous",
       "baseline": 1.0524,
       "baseline_source": "Binance",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "265",
+      "logged_at_lisbon": "2026-10-14 12:21",
+      "account": "@DeItaone/@zerohedge/@FirstSquawk/Polymarket",
+      "post_url": "https://x.com/DeItaone/status/2110329712526401793",
+      "asset": "Oil/SpaceX/BAC/Fed",
+      "direction": "context (quiet window)",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "early-signal; type=context; 10:20-12:21 PT quiet window. Filings: fetch_filings new=0 (no new SEC Form 4, House PTR/Pelosi, or CBOE unusual batch). X: DeItaone 11:19Z Reuters: Iran changing tactics to intensify Hormuz ship attacks to keep oil high ahead of Nov 3 US midterms https://x.com/DeItaone/status/2110329712526401793 = geopolitics continuum already alerted #175/#183/#215/#223/#234/#237; zerohedge: SpaceX reportedly caps Starlink speed as Kyiv defies Trump on refinery strikes https://x.com/zerohedge/status/2110329811201601908 (continuum of #259); BofA Q3 adj EPS 1.08 vs 1.16 est miss, revenue miss, $1.2B settlement charge https://x.com/FirstSquawk/status/2110321914866753863; US 30y MBA mortgage rate 7.50% (+53bp in 4 wks); EU to lift sanction on Chinese firm to save ASML supplier; EU warns of very difficult winter on energy prices; Russia-US diesel contract talks; Lufthansa wins TAP partial privatisation; OptionsHawk ES_F bull flag above 8MA, 7840 support (index commentary, not a trade call) https://x.com/OptionsHawk/status/2110330161153671568. Elon/Tesla/SpaceX/Starlink/SEC/FCC/Fed: no original posts this window. Odds: Polymarket Oct Fed hold ~78.5% (-2pt 1h), 25bp hike ~19.5% (+1pt), US-Iran ceasefire thru Oct 31 ~80.5% flat, Israel-Iran ~86% flat, no Hormuz agreement ~90.8% flat; no >=7pt 1h move on market-relevant events. US CPI later today. Not alerted. Public news; not financial advice",
+      "after_the_fact": false,
+      "followers": null,
+      "source": "X",
+      "feed": "discovery",
       "copy_of": "",
       "spam_farm": false
     }

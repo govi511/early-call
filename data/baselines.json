@@ -408,7 +408,10 @@
   "155|PUMP|2026-10-07 12:21": {
     "price": 0.00641,
     "source": "Binance",
-    "at": "2026-10-07 12:21"
+    "at": "2026-10-07 12:21",
+    "locked_pct": -20.8424,
+    "locked_price": 0.005074,
+    "locked_at": "2026-10-14T12:21+01:00"
   },
   "156|BTC|2026-10-07 12:10": {
     "price": 83818.0,
@@ -928,6 +931,16 @@
     "source": "Binance",
     "at": "2026-10-14 11:04"
   },
+  "263|TAO|2026-10-14 12:08": {
+    "price": 277.8,
+    "source": "Binance",
+    "at": "2026-10-14 12:08"
+  },
+  "264|SUI|2026-10-14 12:00": {
+    "price": 1.0524,
+    "source": "Binance",
+    "at": "2026-10-14 12:00"
+  },
   "168|SPACEX|2026-10-13 00:16": {
     "price": null,
     "source": "unavailable",
@@ -1108,14 +1121,10 @@
     "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-14 10:20"
   },
-  "263|TAO|2026-10-14 12:08": {
-    "price": 277.8,
-    "source": "Binance",
-    "at": "2026-10-14 12:08"
-  },
-  "264|SUI|2026-10-14 12:00": {
-    "price": 1.0524,
-    "source": "Binance",
-    "at": "2026-10-14 12:00"
+  "265|OIL/SPACEX/BAC/FED|2026-10-14 12:21": {
+    "price": null,
+    "source": "unavailable",
+    "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
+    "at": "2026-10-14 12:21"
   }
 }
