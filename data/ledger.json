@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-14T10:22:23+01:00",
+  "generated_at": "2026-10-14T11:09:39+01:00",
   "calls": [
     {
       "id": "1",
@@ -5589,6 +5589,50 @@
       "followers": null,
       "source": "X",
       "feed": "discovery",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "261",
+      "logged_at_lisbon": "2026-10-14 11:00",
+      "account": "@CryptoMichNL",
+      "post_url": "https://x.com/CryptoMichNL/status/2110309638788804780",
+      "asset": "BTC",
+      "direction": "long",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "source watchlist; role call; 'markets keep trying to break out upwards... matter of time until we'll be seeing a lot of power coming from #Bitcoin'; BTC ~83150 Binance at scan; no entry given (scored from price at post time); no stop/target; repeats his open BTC longs (#112/#123) with no levels so not alerted; not financial advice",
+      "after_the_fact": false,
+      "followers": null,
+      "source": "X",
+      "feed": "famous",
+      "baseline": 83251.82,
+      "baseline_source": "Binance",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "262",
+      "logged_at_lisbon": "2026-10-14 11:04",
+      "account": "@Okpara081",
+      "post_url": "https://x.com/Okpara081/status/2110310697686999424",
+      "asset": "BTC",
+      "direction": "short",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "source discovery; 41k followers, acct 2022; 'Actually took a double short on $BTC. TP or SL..?'; no levels; low-quality/vague; BTC ~83150 at scan; no entry given (scored from price at post time); discovery source so not alerted; not financial advice",
+      "after_the_fact": false,
+      "followers": 41000,
+      "source": "X",
+      "feed": "discovery",
+      "baseline": 83225.28,
+      "baseline_source": "Binance",
       "copy_of": "",
       "spam_farm": false
     }
