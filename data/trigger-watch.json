@@ -1,5 +1,5 @@
 {
-  "updated_at_lisbon": "2026-10-14 10:37:43",
+  "updated_at_lisbon": "2026-10-14 11:33:27",
   "xrp_short": {
     "status": "watching",
     "alerted": false,
@@ -30,9 +30,9 @@
       86100
     ],
     "last_closed_1h": {
-      "open_lisbon": "2026-10-14 09:00",
-      "close": 83432.24,
-      "high": 84146.72
+      "open_lisbon": "2026-10-14 10:00",
+      "close": 83251.82,
+      "high": 83532.41
     }
   },
   "btc_trader_longs_alerted": [],
@@ -66,11 +66,12 @@
     "235",
     "252",
     "254",
-    "256"
+    "256",
+    "261"
   ],
-  "last_check_lisbon": "2026-10-14 10:37:43",
+  "last_check_lisbon": "2026-10-14 11:33:27",
   "last_prices": {
-    "BTCUSDT": 83288.01
+    "BTCUSDT": 83421.68
   },
-  "max_ledger_id_checked": 260
+  "max_ledger_id_checked": 262
 }
