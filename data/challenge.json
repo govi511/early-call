@@ -1,65 +1,65 @@
 {
-  "balance": 97.75,
-  "starting_balance": 100.0,
-  "currency": "EUR",
-  "goal": 1000.0,
-  "risk_per_trade_pct": [
-    2.0,
-    3.0
+ "balance": 97.75,
+ "starting_balance": 100.0,
+ "currency": "EUR",
+ "goal": 1000.0,
+ "risk_per_trade_pct": [
+  2.0,
+  3.0
+ ],
+ "max_open": 1,
+ "trades": [
+  {
+   "id": 1,
+   "symbol": "BTC",
+   "side": "SHORT",
+   "entry": 83300.0,
+   "sl": 83750.0,
+   "tp": 82700.0,
+   "size_btc": 0.005,
+   "risk_eur": 2.25,
+   "reward_eur": 3.0,
+   "status": "closed",
+   "opened_at": "2026-10-13T11:48:00+01:00",
+   "opened_at_utc": "2026-10-13T10:48:00Z",
+   "venue": "Trading 212 CFD",
+   "notes": "Call #1 challenge. Size ~0.005 BTC ≈ -€2.25 at SL, +€3 at TP (prompt ≈+€2.70).",
+   "resolved_at": "2026-10-13T14:42:23Z",
+   "exit_price": 83750.0,
+   "pnl_eur": -2.25,
+   "resolution": "stopped",
+   "last_check_max_high": 83850.0,
+   "last_check_min_low": 83122.95,
+   "resolved_at_pt": "2026-10-13T15:42:23+0100",
+   "sl_hit_at_utc": "2026-10-13T14:11:00Z",
+   "sl_hit_candle_high": 83819.61
+  }
+ ],
+ "last_check_at": "2026-10-14T13:26+01:00",
+ "last_check_btc": 83446.13,
+ "last_proposal_at": null,
+ "last_alert_trade_id": null,
+ "last_resolution_alerted_id": 1,
+ "open_trade_id": null,
+ "last_setup_eval": {
+  "at": "2026-10-14T12:55+01:00",
+  "btc": 83446.13,
+  "funding_pct": 0.003362,
+  "funding_rate": 3.362e-05,
+  "lsr_global": 1.3294,
+  "lsr_top": 1.4877,
+  "oi_btc": 91083,
+  "range_24h": [
+   82972.74,
+   84146.72
   ],
-  "max_open": 1,
-  "trades": [
-    {
-      "id": 1,
-      "symbol": "BTC",
-      "side": "SHORT",
-      "entry": 83300.0,
-      "sl": 83750.0,
-      "tp": 82700.0,
-      "size_btc": 0.005,
-      "risk_eur": 2.25,
-      "reward_eur": 3.0,
-      "status": "closed",
-      "opened_at": "2026-10-13T11:48:00+01:00",
-      "opened_at_utc": "2026-10-13T10:48:00Z",
-      "venue": "Trading 212 CFD",
-      "notes": "Call #1 challenge. Size ~0.005 BTC \u2248 -\u20ac2.25 at SL, +\u20ac3 at TP (prompt \u2248+\u20ac2.70).",
-      "resolved_at": "2026-10-13T14:42:23Z",
-      "exit_price": 83750.0,
-      "pnl_eur": -2.25,
-      "resolution": "stopped",
-      "last_check_max_high": 83850.0,
-      "last_check_min_low": 83122.95,
-      "resolved_at_pt": "2026-10-13T15:42:23+0100",
-      "sl_hit_at_utc": "2026-10-13T14:11:00Z",
-      "sl_hit_candle_high": 83819.61
-    }
+  "range_pos_pct": 40.3,
+  "recent_3h": [
+   83028.7,
+   83532.41
   ],
-  "last_check_at": "2026-10-14T12:19:22+01:00",
-  "last_check_btc": 83439.0,
-  "last_proposal_at": null,
-  "last_alert_trade_id": null,
-  "last_resolution_alerted_id": 1,
-  "open_trade_id": null,
-  "last_setup_eval": {
-    "at": "2026-10-14T11:49+01:00",
-    "btc": 83439.0,
-    "funding_pct": 0.004006,
-    "funding_rate": 4.006e-05,
-    "lsr_global": 1.2967,
-    "lsr_top": 1.5145,
-    "oi_btc": 90843,
-    "range_24h": [
-      82972.7,
-      84146.7
-    ],
-    "range_pos_pct": 39.6,
-    "recent_3h": [
-      83028.7,
-      84146.7
-    ],
-    "decision": "no_proposal",
-    "reason": "Mid-range chop ~83439 (~40% of 24h 82973-84147); funding flat (+0.004%), top-trader LSR up to 1.51 (crowded long), OI drifting lower ~90.8k. No clean level; CPI event risk; no proposal."
-  },
-  "last_check_note": "12:19 check: no open trade; last fresh read 11:49 (under 1h); no new read; silent."
+  "decision": "no_proposal",
+  "reason": "Mid-range chop ~83446 (~40.3% of 24h range); funding flat (+0.0034%), global LSR 1.33 / top 1.49, OI flat ~91.1k. No clean level; no proposal."
+ },
+ "last_check_note": "13:26 check: no open trade; last fresh read 12:55 (<1h), no new read; silent."
 }
