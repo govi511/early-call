@@ -35,7 +35,7 @@
       "sl_hit_candle_high": 83819.61
     }
   ],
-  "last_check_at": "2026-10-14T09:26:07+01:00",
+  "last_check_at": "2026-10-14T10:21:40+01:00",
   "last_check_btc": 83783.5,
   "last_proposal_at": null,
   "last_alert_trade_id": null,
@@ -62,5 +62,5 @@
     "decision": "no_proposal",
     "reason": "Spike to 84117 then pullback to ~83784; ~72.3% of 24h (82913-84118); funding ~flat (+0.0015%), LSR global 1.26 / top 1.33, OI soft ~91.8k. US CPI later today; no clean level; no proposal."
   },
-  "last_check_note": "09:25 check: no open trade; fresh read; spike/rejection into CPI; no clean setup; silent."
+  "last_check_note": "10:21 check: no open trade; last fresh read 09:26 (under 1h); skip fresh read; no proposal; silent."
 }
