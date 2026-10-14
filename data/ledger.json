@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-14T02:09:05+01:00",
+  "generated_at": "2026-10-14T02:24:18+01:00",
   "calls": [
     {
       "id": "1",
@@ -5417,6 +5417,28 @@
       "feed": "famous",
       "baseline": 83667.47,
       "baseline_source": "Binance",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "253",
+      "logged_at_lisbon": "2026-10-14 02:23",
+      "account": "@Tesla/@elonmusk/@FirstSquawk/@SawyerMerritt/Polymarket",
+      "post_url": "https://x.com/Tesla/status/2110165104713183485",
+      "asset": "TSLA/Oil/BTC",
+      "direction": "context (quiet window)",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "early-signal; type=context; 00:18-02:23 PT quiet window. Filings: fetch_filings new=158 (2 PLTR Form4 sells: director Stat Lauren ~5.0k @$199 on 10/08; officer Taylor Ryan D. ~18k @$201.15 on 10/08 — small not alert-scale; 0 new House PTR/Pelosi; 156 CBOE unusual-volume flags Oct14 mostly SPY/NVDA/META/AAPL/TSLA delayed session noise not directional whale alerts). X: Tesla confirms Roadster event livestream Thu 7:55pm CST / 8:55pm ET (SawyerMerritt/StockMKTNewz amplify); Elon quotes Paul Graham on FSD magic + @chamath Yikes — promo not market-moving; FirstSquawk WTI +$1 to $95.22 on Saudi supply-disruption weigh (oil geopolitics continuum already alerted #175/#183/#215/#223); LiveSquawk Iran shipping-attack tactics before midterms (RTRS) = Hormuz continuum; Goldman overweight equities 3m (unusual_whales); SpaceX/Starlink/QuiverQuant/DeItaone/Kobeissi/lookonchain quiet this window. Odds: thin Polymarket BTC Oct $85k / Oct13 day markets showed |1h|>=8pt but look like low-liquidity/settling noise — not a clean new signal; BTC>$82k Oct14 continuum already alerted #179 (−1pt 1h / +34pt 1d); Fed Oct hold ~80.5% stable; Kalshi CPI/WTI no sharp move. Not alerted. Public news; not financial advice",
+      "after_the_fact": false,
+      "followers": null,
+      "source": "X",
+      "feed": "discovery",
+      "baseline": 378.03,
+      "baseline_source": "Nasdaq daily (close)",
       "copy_of": "",
       "spam_farm": false
     }
