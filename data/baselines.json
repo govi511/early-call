@@ -469,7 +469,10 @@
   "61|CORN|2026-10-07 02:30": {
     "price": 19.29,
     "source": "Nasdaq daily (close)",
-    "at": "2026-10-07 02:30"
+    "at": "2026-10-07 02:30",
+    "locked_pct": -4.1991,
+    "locked_price": 18.48,
+    "locked_at": "2026-10-14T02:30+01:00"
   },
   "62|PLTR|2026-10-10 13:21": {
     "price": 209.05,
@@ -887,10 +890,15 @@
     "source": "Binance",
     "at": "2026-10-14 01:40"
   },
+  "253|TSLA/OIL/BTC|2026-10-14 02:23": {
+    "price": 378.03,
+    "source": "Nasdaq daily (close)",
+    "at": "2026-10-14 02:23"
+  },
   "168|SPACEX|2026-10-13 00:16": {
     "price": null,
     "source": "unavailable",
-    "error": "yahoo: HTTP Error 429: Too Many Requests; nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
+    "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-13 00:16"
   },
   "169|PELOSI|2026-10-13 00:48": {
@@ -1048,10 +1056,5 @@
     "source": "unavailable",
     "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-14 00:16"
-  },
-  "253|TSLA/OIL/BTC|2026-10-14 02:23": {
-    "price": 378.03,
-    "source": "Nasdaq daily (close)",
-    "at": "2026-10-14 02:23"
   }
 }

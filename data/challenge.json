@@ -1,60 +1,60 @@
 {
-  "balance": 97.75,
-  "starting_balance": 100.0,
-  "currency": "EUR",
-  "goal": 1000.0,
-  "risk_per_trade_pct": [
-    2.0,
-    3.0
+ "balance": 97.75,
+ "starting_balance": 100.0,
+ "currency": "EUR",
+ "goal": 1000.0,
+ "risk_per_trade_pct": [
+  2.0,
+  3.0
+ ],
+ "max_open": 1,
+ "trades": [
+  {
+   "id": 1,
+   "symbol": "BTC",
+   "side": "SHORT",
+   "entry": 83300.0,
+   "sl": 83750.0,
+   "tp": 82700.0,
+   "size_btc": 0.005,
+   "risk_eur": 2.25,
+   "reward_eur": 3.0,
+   "status": "closed",
+   "opened_at": "2026-10-13T11:48:00+01:00",
+   "opened_at_utc": "2026-10-13T10:48:00Z",
+   "venue": "Trading 212 CFD",
+   "notes": "Call #1 challenge. Size ~0.005 BTC \u2248 -\u20ac2.25 at SL, +\u20ac3 at TP (prompt \u2248+\u20ac2.70).",
+   "resolved_at": "2026-10-13T14:42:23Z",
+   "exit_price": 83750.0,
+   "pnl_eur": -2.25,
+   "resolution": "stopped",
+   "last_check_max_high": 83850.0,
+   "last_check_min_low": 83122.95,
+   "resolved_at_pt": "2026-10-13T15:42:23+0100",
+   "sl_hit_at_utc": "2026-10-13T14:11:00Z",
+   "sl_hit_candle_high": 83819.61
+  }
+ ],
+ "last_check_at": "2026-10-14T02:17:00+01:00",
+ "last_check_btc": 83423.0,
+ "last_proposal_at": null,
+ "last_alert_trade_id": null,
+ "last_resolution_alerted_id": 1,
+ "open_trade_id": null,
+ "last_setup_eval": {
+  "at": "2026-10-14T01:26:00+01:00",
+  "btc": 83423.0,
+  "funding_pct": -0.001135,
+  "lsr_global": 1.3015,
+  "lsr_top": 1.3574,
+  "oi_btc": 92175,
+  "range_24h": [
+   81033.66,
+   84168.0
   ],
-  "max_open": 1,
-  "trades": [
-    {
-      "id": 1,
-      "symbol": "BTC",
-      "side": "SHORT",
-      "entry": 83300.0,
-      "sl": 83750.0,
-      "tp": 82700.0,
-      "size_btc": 0.005,
-      "risk_eur": 2.25,
-      "reward_eur": 3.0,
-      "status": "closed",
-      "opened_at": "2026-10-13T11:48:00+01:00",
-      "opened_at_utc": "2026-10-13T10:48:00Z",
-      "venue": "Trading 212 CFD",
-      "notes": "Call #1 challenge. Size ~0.005 BTC \u2248 -\u20ac2.25 at SL, +\u20ac3 at TP (prompt \u2248+\u20ac2.70).",
-      "resolved_at": "2026-10-13T14:42:23Z",
-      "exit_price": 83750.0,
-      "pnl_eur": -2.25,
-      "resolution": "stopped",
-      "last_check_max_high": 83850.0,
-      "last_check_min_low": 83122.95,
-      "resolved_at_pt": "2026-10-13T15:42:23+0100",
-      "sl_hit_at_utc": "2026-10-13T14:11:00Z",
-      "sl_hit_candle_high": 83819.61
-    }
-  ],
-  "last_check_at": "2026-10-14T01:26:00+01:00",
-  "last_check_btc": 83423.0,
-  "last_proposal_at": null,
-  "last_alert_trade_id": null,
-  "last_resolution_alerted_id": 1,
-  "open_trade_id": null,
-  "last_setup_eval": {
-    "at": "2026-10-14T01:26:00+01:00",
-    "btc": 83423.0,
-    "funding_pct": -0.001135,
-    "lsr_global": 1.3015,
-    "lsr_top": 1.3574,
-    "oi_btc": 92175,
-    "range_24h": [
-      81033.66,
-      84168.0
-    ],
-    "range_pos_pct": 76.2,
-    "decision": "no_proposal",
-    "reason": "Bounced from ~83137 to ~83423 after 83549 reject. Funding mildly negative, LSR ~1.30 rising, OI down to ~92.2k. ~76% of 24h range, still mid-chop 83123\u201383850; US CPI later Oct 14. No clean level; no proposal."
-  },
-  "last_check_note": "01:26 check: no open trade; fresh read done; no clean setup; silent."
+  "range_pos_pct": 76.2,
+  "decision": "no_proposal",
+  "reason": "Bounced from ~83137 to ~83423 after 83549 reject. Funding mildly negative, LSR ~1.30 rising, OI down to ~92.2k. ~76% of 24h range, still mid-chop 83123\u201383850; US CPI later Oct 14. No clean level; no proposal."
+ },
+ "last_check_note": "02:17 check: no open trade; last fresh read 01:26 (<1h); skipped read; silent."
 }
