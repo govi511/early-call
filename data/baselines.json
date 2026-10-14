@@ -895,6 +895,16 @@
     "source": "Nasdaq daily (close)",
     "at": "2026-10-14 02:23"
   },
+  "254|BTC|2026-10-14 03:12": {
+    "price": 83344.0,
+    "source": "Binance",
+    "at": "2026-10-14 03:12"
+  },
+  "256|ETH/BTC|2026-10-14 04:07": {
+    "price": 0.03003,
+    "source": "Binance",
+    "at": "2026-10-14 04:07"
+  },
   "168|SPACEX|2026-10-13 00:16": {
     "price": null,
     "source": "unavailable",
@@ -1057,20 +1067,15 @@
     "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-14 00:16"
   },
-  "254|BTC|2026-10-14 03:12": {
-    "price": 83344.0,
-    "source": "Binance",
-    "at": "2026-10-14 03:12"
-  },
   "255|HMM|2026-10-14 03:39": {
     "price": null,
     "source": "unavailable",
     "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-14 03:39"
   },
-  "256|ETH/BTC|2026-10-14 04:07": {
-    "price": 0.03003,
+  "257|BTC/ETH/OIL/CHINA/FED|2026-10-14 04:15": {
+    "price": 83723.34,
     "source": "Binance",
-    "at": "2026-10-14 04:07"
+    "at": "2026-10-14 04:15"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-14T04:10:54+01:00",
+  "generated_at": "2026-10-14T04:15:17+01:00",
   "calls": [
     {
       "id": "1",
@@ -5504,6 +5504,28 @@
       "source": "X",
       "feed": "famous",
       "baseline": 0.03003,
+      "baseline_source": "Binance",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "257",
+      "logged_at_lisbon": "2026-10-14 04:15",
+      "account": "@lookonchain/@LiveSquawk/@FirstSquawk/@zerohedge/@Kalshi/Polymarket",
+      "post_url": "https://x.com/lookonchain/status/2110203143443382404",
+      "asset": "BTC/ETH/Oil/China/Fed",
+      "direction": "context (quiet window)",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "early-signal; type=context; 02:23-04:14 PT quiet window. Filings: fetch_filings new=0 (no new SEC Form 4, House PTR/Pelosi, or CBOE unusual batch). X: lookonchain whale bought 1,162 BTC (~$96.8M) via Wintermute (5 new wallets / 12h); mysterious whale continues BTC→ETH rotation (3d: sold 1,074 BTC ~$89.5M / bought 36.2k ETH ~$90.6M); Worthalter dumped another 10k ETH (~$25M) into Gemini (continuation). LiveSquawk/zerohedge China Sep trade beat: exports +36.3% y/y (est 25.7%), imports +31.0% (est 25.0%), surplus $133.5B (est $118.1B); China CPI +0.9%/PPI +5.0% (hot PPI). ECB Wunsch: probably have to hike again. Trump Iran rhetoric + Houthis advanced missile w/ Chinese parts (WSJ) = geopolitics continuum already alerted #175/#183/#215/#223 — oil odds did NOT spike. SawyerMerritt RT: FSD Supervised v14 Lite rolling to Intel Model S&X (minor). Kalshi: CryptoQuant founder says BTC bear cycle over (EOY ~$83.5k); Chilean pensions wrong-way UST yield bets (BBG). unusual_whales fluff only; Elon/Tesla/SpaceX/Starlink/SEC/FCC/Fed/QuiverQuant/DeItaone/Kobeissi quiet this window. Odds: Polymarket Oct Fed hold ~80.5% / hike-25 ~19.5% flat; US-Iran ceasefire thru Oct 31 ~80.5% flat; WTI hit $100 in Oct ~49.5% (−2pt 1h); BTC>$82k Oct14 / short-window Up-Down markets mostly settling/low-liq noise not a clean new signal (continuation of #179/#253). BTC spot ~83723 / ETH ~2514 Binance. Not alerted. Public news; not financial advice",
+      "after_the_fact": false,
+      "followers": null,
+      "source": "X",
+      "feed": "discovery",
+      "baseline": 83723.34,
       "baseline_source": "Binance",
       "copy_of": "",
       "spam_farm": false
