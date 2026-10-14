@@ -127,7 +127,10 @@
   "67|CRV|2026-10-07 18:35": {
     "price": 0.3497,
     "source": "Binance",
-    "at": "2026-10-07 18:35"
+    "at": "2026-10-07 18:35",
+    "locked_pct": -5.622,
+    "locked_price": 0.33004,
+    "locked_at": "2026-10-14T18:35+01:00"
   },
   "68|CRV|2026-10-09 06:33": {
     "price": 0.3462,
@@ -542,7 +545,10 @@
   "89|NBIS|2026-10-07 20:41": {
     "price": 242.33,
     "source": "Nasdaq daily (open)",
-    "at": "2026-10-07 20:41"
+    "at": "2026-10-07 20:41",
+    "locked_pct": -14.6371,
+    "locked_price": 206.86,
+    "locked_at": "2026-10-14T20:41+01:00"
   },
   "90|NBIS|2026-10-06 20:23": {
     "price": 237.22,
@@ -955,7 +961,7 @@
   "168|SPACEX|2026-10-13 00:16": {
     "price": null,
     "source": "unavailable",
-    "error": "yahoo: HTTP Error 429: Too Many Requests; nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
+    "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-13 00:16"
   },
   "169|PELOSI|2026-10-13 00:48": {
@@ -1137,5 +1143,40 @@
     "source": "unavailable",
     "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-14 12:21"
+  },
+  "268|SOXX|2026-10-14 16:33": {
+    "price": 543.9,
+    "source": "Nasdaq daily (close)",
+    "at": "2026-10-14 16:33"
+  },
+  "269|PRGO|2026-10-14 16:04": {
+    "price": 15.37,
+    "source": "Nasdaq daily (close)",
+    "at": "2026-10-14 16:04"
+  },
+  "272|ETH|2026-10-14 19:01": {
+    "price": 2430.11,
+    "source": "Binance",
+    "at": "2026-10-14 19:01"
+  },
+  "273|QQQ|2026-10-14 18:29": {
+    "price": 743.57,
+    "source": "Nasdaq daily (close)",
+    "at": "2026-10-14 18:29"
+  },
+  "274|SOXX/SMH|2026-10-14 19:46": {
+    "price": 543.9,
+    "source": "Nasdaq daily (close)",
+    "at": "2026-10-14 19:46"
+  },
+  "275|TLT|2026-10-14 19:25": {
+    "price": 78.37,
+    "source": "Nasdaq daily (close)",
+    "at": "2026-10-14 19:25"
+  },
+  "278|BNB|2026-10-14 15:02": {
+    "price": 736.55,
+    "source": "Binance",
+    "at": "2026-10-14 15:02"
   }
 }
