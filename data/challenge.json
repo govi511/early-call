@@ -35,26 +35,26 @@
    "sl_hit_candle_high": 83819.61
   }
  ],
- "last_check_at": "2026-10-14T04:23:56+01:00",
- "last_check_btc": 83504.0,
+ "last_check_at": "2026-10-14T05:18:00+01:00",
+ "last_check_btc": 83800.0,
  "last_proposal_at": null,
  "last_alert_trade_id": null,
  "last_resolution_alerted_id": 1,
  "open_trade_id": null,
  "last_setup_eval": {
-  "at": "2026-10-14T03:50:00+01:00",
-  "btc": 83504.0,
-  "funding_pct": -0.004385,
-  "lsr_global": 1.324,
-  "lsr_top": 1.5059,
-  "oi_btc": 91984,
+  "at": "2026-10-14T04:54:00+01:00",
+  "btc": 83800.0,
+  "funding_pct": -0.00303,
+  "lsr_global": 1.3175,
+  "lsr_top": 1.5348,
+  "oi_btc": 92269,
   "range_24h": [
-   82782.95,
+   82972.74,
    84168.0
   ],
-  "range_pos_pct": 51.6,
+  "range_pos_pct": 69.2,
   "decision": "no_proposal",
-  "reason": "Still chopping 83137-83710 for ~4h; funding slightly negative, global LSR 1.32, top LSR 1.51, OI flat ~92.0k. Mid-range ahead of US CPI today; no clean level; no proposal."
+  "reason": "Grinding up out of 83137-83710 chop (04:00 high 83958) toward 24h high 84168; funding slightly negative, top LSR rising 1.53, OI flat ~92.3k. Upper-mid range, no clean level, US CPI later today; no proposal."
  },
- "last_check_note": "04:23 check: no open trade; last fresh read 03:50 (under 1h); no new read; no proposal; silent."
+ "last_check_note": "05:18 check: no open trade; last fresh read 04:54 (under 1h); skip new read; no proposal; silent."
 }
