@@ -196,3 +196,12 @@ header .top>div>.sub{display:none}
 /* GG BOT group by trader */
 #feed .card.grp-hidden{display:none}
 .grp-more-btn{grid-column:1/-1;width:100%;background:var(--card2);border:1px solid var(--b);color:var(--txt);border-radius:12px;padding:10px;font-weight:600;font-size:14px;margin:-4px 0 8px}
+/* GG BOT best right now */
+#best{margin:0 0 12px}
+.best-h{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--mut);margin:0 0 6px;font-weight:700}
+.best-row{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none}.best-row::-webkit-scrollbar{display:none}
+.best-card{flex:0 0 72%;max-width:260px;background:var(--card);border:1px solid #fafafa;border-radius:14px;padding:10px 12px;color:var(--txt);text-decoration:none}
+.best-top{display:flex;align-items:center;gap:6px;font-size:17px}
+.best-mv{font-size:22px;font-weight:800;margin:2px 0}
+.best-why{font-size:12px;color:var(--mut);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#feed .card.best-flash{outline:2px solid #fafafa;outline-offset:2px}
