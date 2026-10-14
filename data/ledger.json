@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-14T00:19:45+01:00",
+  "generated_at": "2026-10-14T01:15:23+01:00",
   "calls": [
     {
       "id": "1",
@@ -5353,6 +5353,48 @@
       "followers": null,
       "source": "X",
       "feed": "discovery",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "250",
+      "logged_at_lisbon": "2026-10-14 00:16",
+      "account": "@AltcoinSherpa",
+      "post_url": "https://x.com/AltcoinSherpa/status/2110147653849813010",
+      "asset": "PENGU",
+      "direction": "long",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "source watchlist; role call; '$PENGU is a slow cook and it's still 1 of my longer term holds... overall chart looks fantastic- all the 1d EMAs are tightening and it's been in this trading range for ~9 months now'; longer-term hold = soft long; no entry given (scored from price at post time, PENGU ~0.00786 Binance at scan); memecoin, not on T212 CFD list so not alerted; not financial advice",
+      "after_the_fact": false,
+      "followers": null,
+      "source": "X",
+      "feed": "famous",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "251",
+      "logged_at_lisbon": "2026-10-14 00:54",
+      "account": "@AltcoinSherpa",
+      "post_url": "https://x.com/AltcoinSherpa/status/2110157342524285171",
+      "asset": "PUMP",
+      "direction": "long",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "source watchlist; role call; '$PUMP this is a pretty interesting spot that should provide as a bounce area. 4h 200 ema + high volume node + S/R region'; bounce-area long bias; no entry given (scored from price at post time, PUMP ~0.00503 Binance); no stop/target; small altcoin, not on T212 CFD list so not alerted; not financial advice",
+      "after_the_fact": false,
+      "followers": null,
+      "source": "X",
+      "feed": "famous",
+      "baseline": 0.005025,
+      "baseline_source": "Binance",
       "copy_of": "",
       "spam_farm": false
     }
