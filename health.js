@@ -1,11 +1,11 @@
 // ===== GG BOT: data health on the Live dot (green / amber / red + tap for details) =====
 (function(){
  const NOPX=/^(OIL|S&P|SPX|ALT|ALTS|MARKET|CRYPTO)\b|\//i;
- let failed=[];
+ let failed=[];const UNCOVERED=new Set(['BULL','HMM','STONK']);// no price source exists; don't keep the dot amber forever
  const sheet=document.createElement('div');sheet.className='hsheet';sheet.innerHTML='<div class="hs-card"><div class="hs-head"><b>Data health</b><button class="hs-x" aria-label="Close">✕</button></div><div class="hs-body"></div></div>';
  document.body.appendChild(sheet);
  sheet.onclick=e=>{if(e.target===sheet||e.target.classList.contains('hs-x'))sheet.classList.remove('on')};
- function missing(){if(!LEDGER)return[];const s=new Set();LEDGER.calls.forEach(c=>{if(c.status!=='open'||!c.asset||NOPX.test(c.asset))return;const p=PRICES[c.asset];if(!p||p.price==null)s.add(c.asset)});return[...s].sort()}
+ function missing(){if(!LEDGER)return[];const s=new Set();LEDGER.calls.forEach(c=>{if(c.status!=='open'||!c.asset||NOPX.test(c.asset)||(typeof NP==='function'&&NP(c))||UNCOVERED.has(String(c.asset).toUpperCase()))return;const p=PRICES[c.asset];if(!p||p.price==null)s.add(c.asset)});return[...s].sort()}
  function age(){return PRICES._at?Math.max(0,Math.round((Date.now()-new Date(PRICES._at))/60000)):null}
  function apply(){const ind=document.querySelector('.live');if(!ind)return;const m=age(),miss=missing();
   const lvl=m==null||m>60?'red':(m>20||miss.length)?'amber':'green';
