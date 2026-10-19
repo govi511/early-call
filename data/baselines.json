@@ -1217,10 +1217,55 @@
     "source": "not a tradable asset",
     "at": "2026-10-14 20:22"
   },
+  "284|AMZN|2026-10-19 19:22": {
+    "price": 250.0,
+    "source": "Nasdaq daily (close)",
+    "at": "2026-10-19 19:22"
+  },
+  "285|GOOGL|2026-10-19 19:23": {
+    "price": 340.59,
+    "source": "Nasdaq daily (close)",
+    "at": "2026-10-19 19:23"
+  },
+  "286|IWM|2026-10-19 18:05": {
+    "price": 270.44,
+    "source": "Nasdaq daily (close)",
+    "at": "2026-10-19 18:05"
+  },
+  "287|BTC|2026-10-19 20:03": {
+    "price": 81820.2,
+    "source": "Kraken",
+    "at": "2026-10-19 20:03"
+  },
+  "288|AEHR|2026-10-19 18:19": {
+    "price": 60.6,
+    "source": "Nasdaq daily (close)",
+    "at": "2026-10-19 18:19"
+  },
+  "289|DELL|2026-10-19 18:19": {
+    "price": 451.71,
+    "source": "Nasdaq daily (close)",
+    "at": "2026-10-19 18:19"
+  },
+  "290|NBIS|2026-10-19 18:19": {
+    "price": 165.47,
+    "source": "Nasdaq daily (close)",
+    "at": "2026-10-19 18:19"
+  },
+  "291|MU|2026-10-19 18:19": {
+    "price": 878.84,
+    "source": "Nasdaq daily (close)",
+    "at": "2026-10-19 18:19"
+  },
+  "292|AAOI|2026-10-19 18:19": {
+    "price": 75.57,
+    "source": "Nasdaq daily (close)",
+    "at": "2026-10-19 18:19"
+  },
   "168|SPACEX|2026-10-13 00:16": {
     "price": null,
     "source": "unavailable",
-    "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
+    "error": "yahoo: HTTP Error 429: Too Many Requests; nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
     "at": "2026-10-13 00:16"
   },
   "169|PELOSI|2026-10-13 00:48": {
@@ -1414,50 +1459,5 @@
     "source": "unavailable",
     "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-19 18:15"
-  },
-  "284|AMZN|2026-10-19 19:22": {
-    "price": 250.0,
-    "source": "Nasdaq daily (close)",
-    "at": "2026-10-19 19:22"
-  },
-  "285|GOOGL|2026-10-19 19:23": {
-    "price": 340.59,
-    "source": "Nasdaq daily (close)",
-    "at": "2026-10-19 19:23"
-  },
-  "286|IWM|2026-10-19 18:05": {
-    "price": 270.44,
-    "source": "Nasdaq daily (close)",
-    "at": "2026-10-19 18:05"
-  },
-  "287|BTC|2026-10-19 20:03": {
-    "price": 81820.2,
-    "source": "Kraken",
-    "at": "2026-10-19 20:03"
-  },
-  "288|AEHR|2026-10-19 18:19": {
-    "price": 60.6,
-    "source": "Nasdaq daily (close)",
-    "at": "2026-10-19 18:19"
-  },
-  "289|DELL|2026-10-19 18:19": {
-    "price": 451.71,
-    "source": "Nasdaq daily (close)",
-    "at": "2026-10-19 18:19"
-  },
-  "290|NBIS|2026-10-19 18:19": {
-    "price": 165.47,
-    "source": "Nasdaq daily (close)",
-    "at": "2026-10-19 18:19"
-  },
-  "291|MU|2026-10-19 18:19": {
-    "price": 878.84,
-    "source": "Nasdaq daily (close)",
-    "at": "2026-10-19 18:19"
-  },
-  "292|AAOI|2026-10-19 18:19": {
-    "price": 75.57,
-    "source": "Nasdaq daily (close)",
-    "at": "2026-10-19 18:19"
   }
 }
