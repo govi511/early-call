@@ -1,5 +1,5 @@
 {
-  "updated_at_lisbon": "2026-10-19 20:05",
+  "updated_at_lisbon": "2026-10-19 20:35",
   "xrp_short": {
     "status": "watching",
     "alerted": false,
@@ -74,12 +74,13 @@
     "261",
     "267",
     "276",
-    "281"
+    "281",
+    "287"
   ],
-  "last_check_lisbon": "2026-10-19 20:05",
+  "last_check_lisbon": "2026-10-19 20:35",
   "last_prices": {
-    "BTCUSDT": 81975.1
+    "BTCUSDT": 81952.02
   },
-  "max_ledger_id_checked": 282,
+  "max_ledger_id_checked": 295,
   "data_source_note": "Binance fapi geo-blocked; using spot data-api.binance.vision klines"
 }

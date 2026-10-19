@@ -10,17 +10,26 @@
   "27|BTC|2026-10-12 20:43": {
     "price": 82751.33,
     "source": "Binance",
-    "at": "2026-10-12 20:43"
+    "at": "2026-10-12 20:43",
+    "locked_pct": -0.9775,
+    "locked_price": 81942.4,
+    "locked_at": "2026-10-19T20:43+01:00"
   },
   "28|APP|2026-10-12 20:21": {
     "price": 272.07000732421875,
     "source": "Yahoo Finance",
-    "at": "2026-10-12 20:21"
+    "at": "2026-10-12 20:21",
+    "locked_pct": -2.1833,
+    "locked_price": 266.13,
+    "locked_at": "2026-10-19T20:21+01:00"
   },
   "29|NBIS|2026-10-12 20:29": {
     "price": 208.57000732421875,
     "source": "Yahoo Finance",
-    "at": "2026-10-12 20:29"
+    "at": "2026-10-12 20:29",
+    "locked_pct": -20.6645,
+    "locked_price": 165.47,
+    "locked_at": "2026-10-19T20:29+01:00"
   },
   "30|QQQ|2026-10-12 21:03": {
     "price": 746.0399780273438,
@@ -1275,7 +1284,7 @@
   "168|SPACEX|2026-10-13 00:16": {
     "price": null,
     "source": "unavailable",
-    "error": "yahoo: HTTP Error 429: Too Many Requests; nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
+    "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
     "at": "2026-10-13 00:16"
   },
   "169|PELOSI|2026-10-13 00:48": {
