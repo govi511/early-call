@@ -1,59 +1,58 @@
 {
- "balance": 97.75,
- "starting_balance": 100.0,
- "currency": "EUR",
- "goal": 1000.0,
- "risk_per_trade_pct": [
-  2.0,
-  3.0
- ],
- "max_open": 1,
- "trades": [
-  {
-   "id": 1,
-   "symbol": "BTC",
-   "side": "SHORT",
-   "entry": 83300.0,
-   "sl": 83750.0,
-   "tp": 82700.0,
-   "size_btc": 0.005,
-   "risk_eur": 2.25,
-   "reward_eur": 3.0,
-   "status": "closed",
-   "opened_at": "2026-10-13T11:48:00+01:00",
-   "opened_at_utc": "2026-10-13T10:48:00Z",
-   "venue": "Trading 212 CFD",
-   "notes": "Call #1 challenge. Size ~0.005 BTC \u2248 -\u20ac2.25 at SL, +\u20ac3 at TP (prompt \u2248+\u20ac2.70).",
-   "resolved_at": "2026-10-13T14:42:23Z",
-   "exit_price": 83750.0,
-   "pnl_eur": -2.25,
-   "resolution": "stopped",
-   "last_check_max_high": 83850.0,
-   "last_check_min_low": 83122.95,
-   "resolved_at_pt": "2026-10-13T15:42:23+0100",
-   "sl_hit_at_utc": "2026-10-13T14:11:00Z",
-   "sl_hit_candle_high": 83819.61
-  }
- ],
- "last_check_at": "2026-10-19T22:20+01:00",
- "last_check_btc": 82094,
- "last_proposal_at": null,
- "last_alert_trade_id": null,
- "last_resolution_alerted_id": 1,
- "open_trade_id": null,
- "last_setup_eval": {
-  "at": "2026-10-19T22:20+01:00",
-  "source": "Binance spot data-api 1h klines + OKX BTC-USDT-SWAP funding/OI/LSR",
-  "btc": 82094,
-  "funding_pct": 0.0092,
-  "lsr_okx_1h": 1.7,
-  "oi_okx_btc": 29882,
-  "range_last_6h": [
-   81748,
-   82546
+  "balance": 97.75,
+  "starting_balance": 100.0,
+  "currency": "EUR",
+  "goal": 1000.0,
+  "risk_per_trade_pct": [
+    2.0,
+    3.0
   ],
-  "decision": "no_proposal",
-  "reason": "Still 81.75-82.22k chop (~8h), no breakdown below 81.75k or reclaim of 82.8k; LSR 1.70 flat, funding neutral, OI flat. No clean edge."
- },
- "last_check_note": "22:20 Oct 19 check: no open trade, balance 97.75; BTC ~82.09k chop; LSR 1.70, funding ~0.01%, OI flat; no_proposal; silent."
+  "max_open": 1,
+  "trades": [
+    {
+      "id": 1,
+      "symbol": "BTC",
+      "side": "SHORT",
+      "entry": 83300.0,
+      "sl": 83750.0,
+      "tp": 82700.0,
+      "size_btc": 0.005,
+      "risk_eur": 2.25,
+      "reward_eur": 3.0,
+      "status": "closed",
+      "opened_at": "2026-10-13T11:48:00+01:00",
+      "opened_at_utc": "2026-10-13T10:48:00Z",
+      "venue": "Trading 212 CFD",
+      "notes": "Call #1 challenge. Size ~0.005 BTC \u2248 -\u20ac2.25 at SL, +\u20ac3 at TP (prompt \u2248+\u20ac2.70).",
+      "resolved_at": "2026-10-13T14:42:23Z",
+      "exit_price": 83750.0,
+      "pnl_eur": -2.25,
+      "resolution": "stopped",
+      "last_check_max_high": 83850.0,
+      "last_check_min_low": 83122.95,
+      "resolved_at_pt": "2026-10-13T15:42:23+0100",
+      "sl_hit_at_utc": "2026-10-13T14:11:00Z",
+      "sl_hit_candle_high": 83819.61
+    }
+  ],
+  "last_check_at": "2026-10-19T23:18+01:00",
+  "last_check_btc": 82211,
+  "last_proposal_at": null,
+  "last_alert_trade_id": null,
+  "last_resolution_alerted_id": 1,
+  "open_trade_id": null,
+  "last_setup_eval": {
+    "at": "2026-10-19T23:18+01:00",
+    "source": "Binance data-api 1h klines + OKX BTC-USDT-SWAP funding/LSR",
+    "btc": 82211,
+    "funding_pct": 0.0087,
+    "lsr_okx_1h": 1.72,
+    "range_last_10h": [
+      81749,
+      82757
+    ],
+    "decision": "no_proposal",
+    "reason": "Still 81.75-82.22k chop (~10h); current hour testing 82.22k top but no break/reclaim of 82.8k; LSR 1.72 flat, funding neutral. No clean edge."
+  },
+  "last_check_note": "23:18 Oct 19 check: no open trade, balance 97.75; BTC ~82.21k at top of chop; LSR 1.72, funding ~0.009%; no_proposal; silent."
 }
