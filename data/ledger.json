@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-19T23:41:58+01:00",
+  "generated_at": "2026-10-20T00:20:32+01:00",
   "calls": [
     {
       "id": "1",
@@ -3800,6 +3800,8 @@
       "feed": "discovery",
       "baseline": 82056.6,
       "baseline_source": "Binance",
+      "locked_pct": 0.1534,
+      "locked_at": "2026-10-20T00:16+01:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -6656,6 +6658,28 @@
       "source": "X",
       "feed": "discovery",
       "baseline": 214.13,
+      "baseline_source": "Nasdaq daily (close)",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "302",
+      "logged_at_lisbon": "2026-10-20 00:18",
+      "account": "SEC/House Clerk/Polymarket/@LiveSquawk/@unusual_whales",
+      "post_url": "https://x.com/LiveSquawk/status/2112299628154486818",
+      "asset": "AAPL/CAD (USD/CAD)/BA/BTC",
+      "direction": "context (quiet window, log only)",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "early-signal; type=context; window ~22:20-00:18 Lisbon. Filings: 2 new AAPL Form 4s filed Oct 19 = routine RSU vest tax-withholding + small Oct 16 sales at ~$342-347 (CFO Kevan Parekh ~1.4k sh ~$0.48M, PAO Ben Borders ~1.3k sh ~$0.44M; https://www.sec.gov/Archives/edgar/data/320193/000114036126040126/xslF345X06/form4.xml), not alert-scale; no House PTRs; no Pelosi; no new CBOE rows. Odds: Polymarket BoC Oct 28 +25bp hike ~70% -> ~85% (+12pt in 1h, thin ~$6.7k liquidity) = continuation of #300, Polymarket catching up to swaps (~80-87%) after BMO/RBC/Desjardins flipped to hike calls and Macklem hawkish remarks (https://x.com/TheMacroMemo_/status/2112302213964169246), so a lagging not early signal; not re-alerted. Tesla-SpaceX merger by Dec 31 ~17% flat. News: US set to certify Boeing 737 MAX 10 Tuesday per Reuters (https://x.com/LiveSquawk/status/2112299628154486818, BA); BlackRock filed for another Bitcoin ETF (https://x.com/unusual_whales/status/2112309860595585138); China new export curbs on drones/industrial machinery; Trump reportedly withholding interceptor transfers to Ukraine; Witkoff/Kushner to Norway for Ukraine talks; Hegseth unannounced Israel visit. Elon quiet; Tesla Roadster fluff only; SpaceX/Starlink/SEC/FCC/Fed quiet. Public info; not financial advice",
+      "after_the_fact": false,
+      "followers": null,
+      "source": "X",
+      "feed": "discovery",
+      "baseline": 343.46,
       "baseline_source": "Nasdaq daily (close)",
       "copy_of": "",
       "spam_farm": false

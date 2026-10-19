@@ -929,7 +929,10 @@
   "167|BTC|2026-10-13 00:16": {
     "price": 82056.6,
     "source": "Binance",
-    "at": "2026-10-13 00:16"
+    "at": "2026-10-13 00:16",
+    "locked_pct": 0.1534,
+    "locked_price": 81930.7,
+    "locked_at": "2026-10-20T00:16+01:00"
   },
   "170|TSLA|2026-10-13 00:48": {
     "price": 382.7,
@@ -1561,5 +1564,10 @@
     "source": "unavailable",
     "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: URL can't contain control characters. '/api/quote/CAD (USD/historical?assetclass=stocks&fromdate=2026-10-13&todate=2026-10-19&limit=10' (found at least ' '), etf: URL can't contain control characters. '/api/quote/CAD (USD/historical?assetclass=etf&fromdate=2026-10-13&todate=2026-10-19&limit=10' (found at least ' '",
     "at": "2026-10-19 22:20"
+  },
+  "302|AAPL/CAD (USD/CAD)/BA/BTC|2026-10-20 00:18": {
+    "price": 343.46,
+    "source": "Nasdaq daily (close)",
+    "at": "2026-10-20 00:18"
   }
 }
