@@ -98,7 +98,10 @@
   "53|SPY|2026-10-12 21:54": {
     "price": 778.0999755859375,
     "source": "Yahoo Finance (last close)",
-    "at": "2026-10-12 21:54"
+    "at": "2026-10-12 21:54",
+    "locked_pct": -1.9085,
+    "locked_price": 763.25,
+    "locked_at": "2026-10-19T21:54+01:00"
   },
   "54|FED|2026-10-12 21:54": {
     "price": null,
@@ -1525,5 +1528,21 @@
     "source": "unavailable",
     "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-19 20:18"
+  },
+  "297|WLD|2026-10-19 21:16": {
+    "price": null,
+    "source": "unavailable",
+    "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
+    "at": "2026-10-19 21:16"
+  },
+  "298|GOLD|2026-10-19 22:00": {
+    "price": 39.35,
+    "source": "Nasdaq daily (close)",
+    "at": "2026-10-19 22:00"
+  },
+  "299|BTC|2026-10-19 22:00": {
+    "price": 81922.6,
+    "source": "Kraken",
+    "at": "2026-10-19 22:00"
   }
 }
