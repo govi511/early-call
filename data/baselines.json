@@ -1335,6 +1335,11 @@
     "source": "Kraken",
     "at": "2026-10-19 22:00"
   },
+  "301|NVDA/AMZN/TSLA/SPY|2026-10-19 22:20": {
+    "price": 214.13,
+    "source": "Nasdaq daily (close)",
+    "at": "2026-10-19 22:20"
+  },
   "168|SPACEX|2026-10-13 00:16": {
     "price": null,
     "source": "unavailable",
@@ -1549,11 +1554,6 @@
     "price": null,
     "source": "unavailable",
     "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: URL can't contain control characters. '/api/quote/CAD (USD/historical?assetclass=stocks&fromdate=2026-10-13&todate=2026-10-19&limit=10' (found at least ' '), etf: URL can't contain control characters. '/api/quote/CAD (USD/historical?assetclass=etf&fromdate=2026-10-13&todate=2026-10-19&limit=10' (found at least ' '",
-    "at": "2026-10-19 22:20"
-  },
-  "301|NVDA/AMZN/TSLA/SPY|2026-10-19 22:20": {
-    "price": 214.13,
-    "source": "Nasdaq daily (close)",
     "at": "2026-10-19 22:20"
   }
 }
