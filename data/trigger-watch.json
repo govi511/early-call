@@ -1,5 +1,5 @@
 {
-  "updated_at_lisbon": "2026-10-14 20:41",
+  "updated_at_lisbon": "2026-10-19 20:05",
   "xrp_short": {
     "status": "watching",
     "alerted": false,
@@ -30,9 +30,13 @@
       86100
     ],
     "last_closed_1h": {
-      "open_lisbon": "2026-10-14 19:00",
-      "close": 81724.0,
-      "high": 81786.61
+      "open_lisbon": "2026-10-19 19:00",
+      "close": 81966.0,
+      "high": 82152.34
+    },
+    "max_close_since_last_check": {
+      "close": 82852.62,
+      "open_lisbon": "2026-10-19 07:00"
     }
   },
   "btc_trader_longs_alerted": [],
@@ -67,11 +71,15 @@
     "252",
     "254",
     "256",
-    "261"
+    "261",
+    "267",
+    "276",
+    "281"
   ],
-  "last_check_lisbon": "2026-10-14 20:41",
+  "last_check_lisbon": "2026-10-19 20:05",
   "last_prices": {
-    "BTCUSDT": 81719.0
+    "BTCUSDT": 81975.1
   },
-  "max_ledger_id_checked": 266
+  "max_ledger_id_checked": 282,
+  "data_source_note": "Binance fapi geo-blocked; using spot data-api.binance.vision klines"
 }
