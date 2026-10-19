@@ -1325,10 +1325,20 @@
     "source": "Nasdaq daily (close)",
     "at": "2026-10-19 20:39"
   },
+  "298|GOLD|2026-10-19 22:00": {
+    "price": 39.35,
+    "source": "Nasdaq daily (close)",
+    "at": "2026-10-19 22:00"
+  },
+  "299|BTC|2026-10-19 22:00": {
+    "price": 81922.6,
+    "source": "Kraken",
+    "at": "2026-10-19 22:00"
+  },
   "168|SPACEX|2026-10-13 00:16": {
     "price": null,
     "source": "unavailable",
-    "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
+    "error": "yahoo: HTTP Error 429: Too Many Requests; nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
     "at": "2026-10-13 00:16"
   },
   "169|PELOSI|2026-10-13 00:48": {
@@ -1535,14 +1545,15 @@
     "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-19 21:16"
   },
-  "298|GOLD|2026-10-19 22:00": {
-    "price": 39.35,
-    "source": "Nasdaq daily (close)",
-    "at": "2026-10-19 22:00"
+  "300|CAD (USD/CAD)|2026-10-19 22:20": {
+    "price": null,
+    "source": "unavailable",
+    "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: URL can't contain control characters. '/api/quote/CAD (USD/historical?assetclass=stocks&fromdate=2026-10-13&todate=2026-10-19&limit=10' (found at least ' '), etf: URL can't contain control characters. '/api/quote/CAD (USD/historical?assetclass=etf&fromdate=2026-10-13&todate=2026-10-19&limit=10' (found at least ' '",
+    "at": "2026-10-19 22:20"
   },
-  "299|BTC|2026-10-19 22:00": {
-    "price": 81922.6,
-    "source": "Kraken",
-    "at": "2026-10-19 22:00"
+  "301|NVDA/AMZN/TSLA/SPY|2026-10-19 22:20": {
+    "price": 214.13,
+    "source": "Nasdaq daily (close)",
+    "at": "2026-10-19 22:20"
   }
 }

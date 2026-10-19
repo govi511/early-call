@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-19T22:12:27+01:00",
+  "generated_at": "2026-10-19T22:20:49+01:00",
   "calls": [
     {
       "id": "1",
@@ -6611,6 +6611,48 @@
       "feed": "discovery",
       "baseline": 81922.6,
       "baseline_source": "Kraken",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "300",
+      "logged_at_lisbon": "2026-10-19 22:20",
+      "account": "Polymarket/@FirstSquawk/@LiveSquawk",
+      "post_url": "https://polymarket.com/event/will-the-bank-of-canada-increase-the-target-for-the-overnight-rate-by-25-bps-at-the-october-interest-rate-announcement-20260715203359316",
+      "asset": "CAD (USD/CAD)",
+      "direction": "BoC hike odds up (CAD-bullish if priced)",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "early-signal; type=odds-move; Polymarket BoC Oct 28 +25bp hike odds ~33% (15:00 UTC) -> ~70% by 18:00 UTC, steady ~70% since; no-change ~28%. Catalyst: Scotiabank says it expects BoC to hike 25bp next week (https://x.com/FirstSquawk/status/2112223923610030164, 16:46 UTC); BBG later: hike bets grow among economists/traders (https://x.com/LiveSquawk/status/2112271012964204777). Missed by the 20:18 run, alerted ~22:20 Lisbon; could move USD/CAD and CAD crosses. Public info; not financial advice",
+      "after_the_fact": false,
+      "followers": null,
+      "source": "other",
+      "feed": "discovery",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "301",
+      "logged_at_lisbon": "2026-10-19 22:20",
+      "account": "cboe_unusual_volume/@unusual_whales/@FirstSquawk/Polymarket/SEC/House Clerk",
+      "post_url": "https://x.com/unusual_whales/status/2112287169381294235",
+      "asset": "NVDA/AMZN/TSLA/SPY",
+      "direction": "context (quiet window, log only)",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "early-signal; type=context; window ~20:15-22:20 Lisbon. Filings: 48 new CBOE end-of-day unusual-volume rows (mostly SPY 0-1DTE puts/calls and TSLA Oct-23 pre-earnings strikes, two-way, continuum of #294); no new Form 4s; no new House PTRs; no Pelosi. News: DeepSeek & Huawei teaming up on AI chip designs to challenge Nvidia per The Information (NVDA headwind); 3M issues Amazon subsidiary warrant for 3.16M shares at $164.89 (https://x.com/FirstSquawk/status/2112288639917150517); Trump praises Musk SpaceX share pledge to kids (continuum); 10y yield +7bp to 5.14%, WTI ~$103.78, gold -0.6% ~$4,140; NAHB homebuilder sentiment 29 (14-yr low). Odds: Tesla-SpaceX merger by Dec 31 ~17.5% (-9pt on day, drifted 12:00-13:00 UTC); WTI $105 Oct ~36% (-10pt day); BTC>$80k Oct 20 ~96%. Elon/Tesla/SpaceX/Starlink quiet; SEC = Nov 9 data roundtable; FCC = robocall order. Not financial advice",
+      "after_the_fact": false,
+      "followers": null,
+      "source": "X",
+      "feed": "discovery",
+      "baseline": 214.13,
+      "baseline_source": "Nasdaq daily (close)",
       "copy_of": "",
       "spam_farm": false
     }
