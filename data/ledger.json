@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-19T21:10:58+01:00",
+  "generated_at": "2026-10-19T21:39:23+01:00",
   "calls": [
     {
       "id": "1",
@@ -1024,6 +1024,8 @@
       "feed": "discovery",
       "baseline": 226.32000732421875,
       "baseline_source": "Yahoo Finance (last close)",
+      "locked_pct": 5.3862,
+      "locked_at": "2026-10-19T21:22+01:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -1046,6 +1048,8 @@
       "feed": "discovery",
       "baseline": 778.0999755859375,
       "baseline_source": "Yahoo Finance (last close)",
+      "locked_pct": -1.9085,
+      "locked_at": "2026-10-19T21:22+01:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -1068,6 +1072,8 @@
       "feed": "discovery",
       "baseline": 778.0999755859375,
       "baseline_source": "Yahoo Finance (last close)",
+      "locked_pct": 1.9085,
+      "locked_at": "2026-10-19T21:22+01:00",
       "copy_of": "",
       "spam_farm": false
     },

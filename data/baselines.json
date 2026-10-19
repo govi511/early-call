@@ -74,17 +74,26 @@
   "49|NVDA|2026-10-12 21:22": {
     "price": 226.32000732421875,
     "source": "Yahoo Finance (last close)",
-    "at": "2026-10-12 21:22"
+    "at": "2026-10-12 21:22",
+    "locked_pct": 5.3862,
+    "locked_price": 214.13,
+    "locked_at": "2026-10-19T21:22+01:00"
   },
   "50|SPY|2026-10-12 21:22": {
     "price": 778.0999755859375,
     "source": "Yahoo Finance (last close)",
-    "at": "2026-10-12 21:22"
+    "at": "2026-10-12 21:22",
+    "locked_pct": -1.9085,
+    "locked_price": 763.25,
+    "locked_at": "2026-10-19T21:22+01:00"
   },
   "51|SPY|2026-10-12 21:22": {
     "price": 778.0999755859375,
     "source": "Yahoo Finance (last close)",
-    "at": "2026-10-12 21:22"
+    "at": "2026-10-12 21:22",
+    "locked_pct": 1.9085,
+    "locked_price": 763.25,
+    "locked_at": "2026-10-19T21:22+01:00"
   },
   "53|SPY|2026-10-12 21:54": {
     "price": 778.0999755859375,
@@ -1308,6 +1317,11 @@
     "source": "Nasdaq daily (close)",
     "at": "2026-10-19 20:18"
   },
+  "296|SNDK|2026-10-19 20:39": {
+    "price": 1299.3,
+    "source": "Nasdaq daily (close)",
+    "at": "2026-10-19 20:39"
+  },
   "168|SPACEX|2026-10-13 00:16": {
     "price": null,
     "source": "unavailable",
@@ -1511,10 +1525,5 @@
     "source": "unavailable",
     "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-19 20:18"
-  },
-  "296|SNDK|2026-10-19 20:39": {
-    "price": 1299.3,
-    "source": "Nasdaq daily (close)",
-    "at": "2026-10-19 20:39"
   }
 }
