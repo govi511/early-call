@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-19T20:43:55+01:00",
+  "generated_at": "2026-10-19T21:10:58+01:00",
   "calls": [
     {
       "id": "1",
@@ -616,6 +616,8 @@
       "feed": "discovery",
       "baseline": 746.0399780273438,
       "baseline_source": "Yahoo Finance",
+      "locked_pct": 4.8576,
+      "locked_at": "2026-10-19T21:03+01:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -658,6 +660,8 @@
       "feed": "discovery",
       "baseline": 82986.01,
       "baseline_source": "Binance",
+      "locked_pct": -1.4131,
+      "locked_at": "2026-10-19T21:07+01:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -900,6 +904,8 @@
       "feed": "discovery",
       "baseline": 75.19000244140625,
       "baseline_source": "Yahoo Finance (last close)",
+      "locked_pct": -7.0887,
+      "locked_at": "2026-10-19T21:07+01:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -922,6 +928,8 @@
       "feed": "discovery",
       "baseline": 78.62999725341797,
       "baseline_source": "Yahoo Finance (last close)",
+      "locked_pct": -5.8756,
+      "locked_at": "2026-10-19T21:07+01:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -944,6 +952,8 @@
       "feed": "discovery",
       "baseline": 82986.01,
       "baseline_source": "Binance",
+      "locked_pct": 1.4131,
+      "locked_at": "2026-10-19T21:07+01:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -966,6 +976,8 @@
       "feed": "discovery",
       "baseline": 0.022895,
       "baseline_source": "Kraken",
+      "locked_pct": 6.2459,
+      "locked_at": "2026-10-19T21:07+01:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -988,6 +1000,8 @@
       "feed": "discovery",
       "baseline": 744.7414,
       "baseline_source": "Nasdaq (approx)",
+      "locked_pct": 4.6917,
+      "locked_at": "2026-10-19T21:07+01:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -1076,6 +1090,8 @@
       "feed": "famous",
       "baseline": 0.3488,
       "baseline_source": "Binance",
+      "locked_pct": 4.5269,
+      "locked_at": "2026-10-19T20:48+01:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -1996,6 +2012,8 @@
       "feed": "famous",
       "baseline": 82886.91,
       "baseline_source": "Binance",
+      "locked_pct": -1.344,
+      "locked_at": "2026-10-19T21:01+01:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -6499,6 +6517,28 @@
       "followers": null,
       "source": "other",
       "feed": "discovery",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "296",
+      "logged_at_lisbon": "2026-10-19 20:39",
+      "account": "@ripster47",
+      "post_url": "https://x.com/ripster47/status/2112267513971269791#SNDK",
+      "asset": "SNDK",
+      "direction": "long",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "source watchlist; role call; repeats shopping list $NBIS $AAOI $AEHR $DELL $MU $SNDK (others already logged #288-292 from 2112232139320148292), says 1HR clouds are big resistance and nothing moves until they break, after being stopped out of many adds since last week = soft swing-long watchlist, no levels; no entry given (scored from price at post time); not alerted; not financial advice",
+      "after_the_fact": false,
+      "followers": null,
+      "source": "X",
+      "feed": "famous",
+      "baseline": 1299.3,
+      "baseline_source": "Nasdaq daily (close)",
       "copy_of": "",
       "spam_farm": false
     }
