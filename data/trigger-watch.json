@@ -1,5 +1,5 @@
 {
-  "updated_at_lisbon": "2026-10-20 14:37",
+  "updated_at_lisbon": "2026-10-20 15:35",
   "xrp_short": {
     "status": "watching",
     "alerted": false,
@@ -30,8 +30,8 @@
       86100
     ],
     "last_closed_1h": {
-      "open_lisbon": "2026-10-20 13:00",
-      "close": 81619.8
+      "open_lisbon": "2026-10-20 14:00",
+      "close": 82154.9
     },
     "max_close_since_last_check": {
       "close": 82852.62,
@@ -77,17 +77,19 @@
     "287",
     "303",
     "308",
-    "312"
+    "312",
+    "323"
   ],
-  "last_check_lisbon": "2026-10-20 14:37",
+  "last_check_lisbon": "2026-10-20 15:35",
   "last_prices": {
-    "BTCUSDT": 81660.8
+    "BTCUSDT": 83016.6
   },
-  "max_ledger_id_checked": 322,
+  "max_ledger_id_checked": 330,
   "data_source_note": "Binance geo-blocked; using OKX BTC-USDT 1H candles (confirmed only)",
   "skipped_btc_long_ledger_ids": {
     "303": "discovery source, already stopped 02:09 before check",
     "308": "CryptoTony__ invalidation-only update, no explicit entry",
-    "312": "pedrosilva conditional long; already alerted to Gon\u00e7alo by the X scan at ~09:12, skipped to avoid a duplicate"
+    "312": "pedrosilva conditional long; already alerted to Gon\u00e7alo by the X scan at ~09:12, skipped to avoid a duplicate",
+    "323": "DaanCrypto squeeze long toward 84K, no explicit entry/stop; already alerted by X scan ~15:20"
   }
 }

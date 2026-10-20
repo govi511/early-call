@@ -1,5 +1,5 @@
 {
-  "balance": 97.75,
+  "balance": 95.59,
   "starting_balance": 100.0,
   "currency": "EUR",
   "goal": 1000.0,
@@ -44,27 +44,33 @@
       "size_btc": 0.005,
       "risk_eur": 2.16,
       "reward_eur": 2.96,
-      "status": "open",
+      "status": "closed",
       "opened_at": "2026-10-20T07:18:00+01:00",
       "opened_at_utc": "2026-10-20T06:18:00Z",
       "venue": "Trading 212 CFD",
       "notes": "Call #2. Trigger: 06:00 Lisbon 1h candle (OKX) closed 81,718 below 81,900 after rejection at 82,269. SL above 06:00 candle high 82,119; TP 81,050 below 24h low 81,200 (long liquidity, OKX L/S 1.74). EURUSD 1.1225. Assumed filled at proposal price ~81,715.",
-      "last_check_max_high": 81880.0,
-      "last_check_min_low": 81332.0
+      "last_check_max_high": 83350.0,
+      "last_check_min_low": 81319.2,
+      "resolution": "stopped",
+      "exit_price": 82200.0,
+      "pnl_eur": -2.16,
+      "sl_hit_at_utc": "2026-10-20T14:01:00Z",
+      "sl_hit_candle_high": 82400.0,
+      "resolved_at_pt": "2026-10-20T15:01+0100"
     }
   ],
-  "last_check_at": "2026-10-20T14:23+01:00",
-  "last_check_btc": 81514.9,
+  "last_check_at": "2026-10-20T15:25+01:00",
+  "last_check_btc": 82947.8,
   "last_proposal_at": "2026-10-20T07:18+01:00",
   "last_alert_trade_id": 2,
-  "last_resolution_alerted_id": 1,
-  "open_trade_id": 2,
+  "last_resolution_alerted_id": 2,
+  "open_trade_id": null,
   "last_setup_eval": {
-    "at": "2026-10-20T07:18+01:00",
-    "source": "OKX BTC-USDT 1h/15m candles, funding, L/S ratio",
-    "btc": 81714,
-    "decision": "proposed_short",
-    "reason": "06:00 1h candle closed 81,718 (<81,900). Tightened SL to 82,200 (above that candle's high) and TP 81,050 for ~1.4R instead of the earlier 82,450/81,250 plan. L/S 1.74 crowded longs, funding +0.009%."
+    "at": "2026-10-20T15:25+01:00",
+    "source": "OKX 1m/1h candles, funding, L/S, OI",
+    "btc": 82948,
+    "decision": "no_call",
+    "reason": "BTC just squeezed 82,155->83,350 and is pulling back to ~82,950 mid-range with the 15:00 1h candle unclosed. Funding +0.004%, L/S 1.67 (falling from 1.86), OI flat ~3.36B. No clean level; avoid chasing. Recheck in 1-2h."
   },
-  "last_check_note": "14:23 Oct 20: call #2 still open. OKX 1m since entry: max high 81,880 (< SL 82,200), min low 81,332 (> TP 81,050); 13:50-14:23 Lisbon range 81,415.1-81,699.7. BTC ~81,515. No message."
+  "last_check_note": "15:25 Oct 20: call #2 stopped at 15:01 Lisbon (1m high 82,400 >= SL 82,200; no TP touch). Balance 95.59. Resolution alerted."
 }
