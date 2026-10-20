@@ -59,18 +59,18 @@
    "resolved_at_pt": "2026-10-20T15:01+0100"
   }
  ],
- "last_check_at": "2026-10-20T16:18+01:00",
- "last_check_btc": 82592.1,
+ "last_check_at": "2026-10-20T17:27+01:00",
+ "last_check_btc": 82377.1,
  "last_proposal_at": "2026-10-20T07:18+01:00",
  "last_alert_trade_id": 2,
  "last_resolution_alerted_id": 2,
  "open_trade_id": null,
  "last_setup_eval": {
-  "at": "2026-10-20T15:25+01:00",
-  "source": "OKX 1m/1h candles, funding, L/S, OI",
-  "btc": 82948,
+  "at": "2026-10-20T16:52+01:00",
+  "source": "OKX 1h/5m candles, funding, L/S, OI",
+  "btc": 82408.8,
   "decision": "no_call",
-  "reason": "BTC just squeezed 82,155->83,350 and is pulling back to ~82,950 mid-range with the 15:00 1h candle unclosed. Funding +0.004%, L/S 1.67 (falling from 1.86), OI flat ~3.36B. No clean level; avoid chasing. Recheck in 1-2h."
+  "reason": "Squeeze high 83,437 at 15:00 then a sharp 16:00 dump to 82,152 low; now ~82,400 mid-range between 81,300 and 83,437. Funding +0.005%, L/S 1.62 (down from 1.86), OI ~$2.39B and falling (deleveraging both ways). No clean level; two stops today, don't chase. Recheck in 1-2h."
  },
- "last_check_note": "16:18 Oct 20: no open trade, balance 95.59. Last setup eval 15:25 (~53 min ago), so next fresh read due ~16:47-17:25. No message."
+ "last_check_note": "17:27 Oct 20: no open trade, balance 95.59. BTC ~82,377 still mid-range. Last fresh read 16:52, skipped new read. No message. Next fresh read due ~17:47-18:52."
 }
