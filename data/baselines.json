@@ -1779,5 +1779,37 @@
     "source": "unavailable",
     "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-20 15:10"
+  },
+  "335|XAUUSD|2026-10-20 16:44": {
+    "price": null,
+    "source": "unavailable",
+    "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
+    "at": "2026-10-20 16:44"
+  },
+  "336|SILVER|2026-10-20 16:44": {
+    "price": null,
+    "source": "unavailable",
+    "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
+    "at": "2026-10-20 16:44"
+  },
+  "337|AEHR|2026-10-20 17:00": {
+    "price": 63.33,
+    "source": "Nasdaq daily (close)",
+    "at": "2026-10-20 17:00"
+  },
+  "339|HD|2026-10-20 16:46": {
+    "price": 309.88,
+    "source": "Nasdaq daily (close)",
+    "at": "2026-10-20 16:46"
+  },
+  "340|SYK|2026-10-20 17:17": {
+    "price": 297.94,
+    "source": "Nasdaq daily (close)",
+    "at": "2026-10-20 17:17"
+  },
+  "341|CVX|2026-10-20 17:56": {
+    "price": 224.37,
+    "source": "Nasdaq daily (close)",
+    "at": "2026-10-20 17:56"
   }
 }
