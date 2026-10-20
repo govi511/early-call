@@ -1110,7 +1110,10 @@
   "212|BTC/ETH/S&P 500/OIL|2026-10-13 14:35": {
     "price": 83316.55,
     "source": "Binance",
-    "at": "2026-10-13 14:35"
+    "at": "2026-10-13 14:35",
+    "locked_pct": -2.4967,
+    "locked_price": 81236.4,
+    "locked_at": "2026-10-20T14:35+01:00"
   },
   "213|BTC|2026-10-13 14:44": {
     "price": 83374.01,
@@ -1467,6 +1470,21 @@
     "source": "Nasdaq daily (close)",
     "at": "2026-10-20 14:18"
   },
+  "319|BTC|2026-10-20 13:25": {
+    "price": 81535.2,
+    "source": "Kraken",
+    "at": "2026-10-20 13:25"
+  },
+  "320|AVAX|2026-10-20 14:00": {
+    "price": 9.465,
+    "source": "Kraken",
+    "at": "2026-10-20 14:00"
+  },
+  "321|ZEC|2026-10-20 13:30": {
+    "price": 1153.36,
+    "source": "Kraken",
+    "at": "2026-10-20 13:30"
+  },
   "168|SPACEX|2026-10-13 00:16": {
     "price": null,
     "source": "unavailable",
@@ -1694,20 +1712,5 @@
     "source": "unavailable",
     "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-20 12:18"
-  },
-  "319|BTC|2026-10-20 13:25": {
-    "price": 81535.2,
-    "source": "Kraken",
-    "at": "2026-10-20 13:25"
-  },
-  "320|AVAX|2026-10-20 14:00": {
-    "price": 9.465,
-    "source": "Kraken",
-    "at": "2026-10-20 14:00"
-  },
-  "321|ZEC|2026-10-20 13:30": {
-    "price": 1153.36,
-    "source": "Kraken",
-    "at": "2026-10-20 13:30"
   }
 }

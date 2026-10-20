@@ -53,8 +53,8 @@
       "last_check_min_low": 81332.0
     }
   ],
-  "last_check_at": "2026-10-20T13:23+01:00",
-  "last_check_btc": 81625.2,
+  "last_check_at": "2026-10-20T14:23+01:00",
+  "last_check_btc": 81514.9,
   "last_proposal_at": "2026-10-20T07:18+01:00",
   "last_alert_trade_id": 2,
   "last_resolution_alerted_id": 1,
@@ -66,5 +66,5 @@
     "decision": "proposed_short",
     "reason": "06:00 1h candle closed 81,718 (<81,900). Tightened SL to 82,200 (above that candle's high) and TP 81,050 for ~1.4R instead of the earlier 82,450/81,250 plan. L/S 1.74 crowded longs, funding +0.009%."
   },
-  "last_check_note": "13:23 Oct 20: call #2 still open. OKX 1m since entry: max high 81,880 (< SL 82,200), min low 81,332 (> TP 81,050); since 12:45 Lisbon range 81,342.8-81,625.2. BTC ~81,625. No message."
+  "last_check_note": "14:23 Oct 20: call #2 still open. OKX 1m since entry: max high 81,880 (< SL 82,200), min low 81,332 (> TP 81,050); 13:50-14:23 Lisbon range 81,415.1-81,699.7. BTC ~81,515. No message."
 }
