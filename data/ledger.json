@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T12:18:06+01:00",
+  "generated_at": "2026-10-20T12:42:09+01:00",
   "calls": [
     {
       "id": "1",
@@ -4597,6 +4597,8 @@
       "feed": "discovery",
       "baseline": 83543.93,
       "baseline_source": "Binance",
+      "locked_pct": 2.5377,
+      "locked_at": "2026-10-20T12:26+01:00",
       "copy_of": "",
       "spam_farm": false
     },
