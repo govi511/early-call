@@ -1416,6 +1416,21 @@
     "source": "Nasdaq daily (close)",
     "at": "2026-10-20 06:19"
   },
+  "308|BTC|2026-10-20 07:59": {
+    "price": 81709.5,
+    "source": "Kraken",
+    "at": "2026-10-20 07:59"
+  },
+  "309|HYPE|2026-10-20 08:07": {
+    "price": 78.86,
+    "source": "Kraken",
+    "at": "2026-10-20 08:07"
+  },
+  "310|CHAT|2026-10-20 07:16": {
+    "price": 80.35,
+    "source": "Nasdaq daily (close)",
+    "at": "2026-10-20 07:16"
+  },
   "168|SPACEX|2026-10-13 00:16": {
     "price": null,
     "source": "unavailable",
@@ -1632,19 +1647,10 @@
     "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: URL can't contain control characters. '/api/quote/CAD (USD/historical?assetclass=stocks&fromdate=2026-10-13&todate=2026-10-19&limit=10' (found at least ' '), etf: URL can't contain control characters. '/api/quote/CAD (USD/historical?assetclass=etf&fromdate=2026-10-13&todate=2026-10-19&limit=10' (found at least ' '",
     "at": "2026-10-19 22:20"
   },
-  "308|BTC|2026-10-20 07:59": {
-    "price": 81709.5,
-    "source": "Kraken",
-    "at": "2026-10-20 07:59"
-  },
-  "309|HYPE|2026-10-20 08:07": {
-    "price": 78.86,
-    "source": "Kraken",
-    "at": "2026-10-20 08:07"
-  },
-  "310|CHAT|2026-10-20 07:16": {
-    "price": 80.35,
-    "source": "Nasdaq daily (close)",
-    "at": "2026-10-20 07:16"
+  "311|GBP/EUR/CAD/BTC|2026-10-20 08:17": {
+    "price": null,
+    "source": "unavailable",
+    "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
+    "at": "2026-10-20 08:17"
   }
 }

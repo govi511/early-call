@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T08:15:05+01:00",
+  "generated_at": "2026-10-20T08:16:51+01:00",
   "calls": [
     {
       "id": "1",
@@ -6882,6 +6882,26 @@
       "feed": "following",
       "baseline": 80.35,
       "baseline_source": "Nasdaq daily (close)",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "311",
+      "logged_at_lisbon": "2026-10-20 08:17",
+      "account": "SEC/House Clerk/CBOE/Polymarket/Kalshi/@FirstSquawk/@LiveSquawk/@unusual_whales/@elonmusk",
+      "post_url": "https://x.com/FirstSquawk/status/2112425047625523383",
+      "asset": "GBP/EUR/CAD/BTC",
+      "direction": "context (quiet window, log only)",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "early-signal; type=context; window ~06:17-08:17 Lisbon. Filings: fetch_filings new=0 (no new Form 4s, no House PTRs, no Pelosi, no new CBOE rows). Odds: no market-relevant Polymarket move >=5pt in 1h (only tennis, GTA VI trailer views, BTC up/down Oct 20 +5.5pt noise); BTC>$84k Oct 20 ~2% (lagging price); US-Iran ceasefire through Oct 28 ~82% flat; Kalshi no sharp moves. News: UK jobs beat (ILO unemployment 4.7% vs 4.9% est, employment +102K vs 5K est, https://x.com/FirstSquawk/status/2112425047625523383; GBP); Germany Sep PPI hot 6.7% y/y vs 6.3% est (EUR/Bund); Albertans voted to stay in Canada per CBC projection (CAD); China opposes US agencies removing DeepSeek AI tools; Gulf states commit diesel supplies to France; ING: Brent risk premium sustained; Zelenskiy discussed Starlink with Rubio. Elon: only political retweets, a robotaxi-poll retweet and a Grok reply (not market-moving). OptionsHawk/Tesla/SpaceX/Starlink/SEC/FCC/Fed quiet. No alerts. Public info; not financial advice",
+      "after_the_fact": false,
+      "followers": null,
+      "source": "X",
+      "feed": "discovery",
       "copy_of": "",
       "spam_farm": false
     }
