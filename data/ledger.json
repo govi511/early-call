@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T18:17:38+01:00",
+  "generated_at": "2026-10-20T18:23:29+01:00",
   "calls": [
     {
       "id": "1",
@@ -7567,6 +7567,28 @@
       "source": "X",
       "feed": "famous",
       "baseline": 224.37,
+      "baseline_source": "Nasdaq daily (close)",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "342",
+      "logged_at_lisbon": "2026-10-20 18:22",
+      "account": "SEC/House Clerk/CBOE/Polymarket/Kalshi/@LiveSquawk/@DeItaone/@elonmusk/@SpaceX",
+      "post_url": "https://x.com/LiveSquawk/status/2112588819048358004",
+      "asset": "WTI/TSLA/SPY/GOOG/MRNA",
+      "direction": "context (quiet window, log only)",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "early-signal; type=context; window ~16:22-18:22 Lisbon. Filings: fetch_filings new=27: 2 House PTRs filed Oct 19 (Jonathan Jackson IL01: bought DDOG $50-100k, EL $50-100k, GH $15-50k, sold WMT $50-100k, VSAT $50-100k on 09/28, https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035551.pdf; Michael Rulli OH06: sold GOOG $50-100k on 10/16 in Roth IRA, https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035671.pdf) = small, no Pelosi; no new Form 4s; 25 CBOE intraday rows, mostly short-dated two-way: TSLA Oct-23 $375P 9.2k vol vs 2.5k OI (~$11.6M at 12.65, pre-earnings hedge-like, alongside 342.5C/417.5C), SPY Oct-21 776/779C (13k/10k vol, cheap lottos), SPY Nov-20 360P 15k at $0.03 (tail hedge), NVDA Oct-28 202.5C/212.5P, MSFT/GOOGL/AAPL Oct-21 weeklies. News: IRGC Navy says a 'violating' supertanker (2M+ bbl) hit a mine south of Hormuz (https://x.com/LiveSquawk/status/2112588819048358004) but WTI only drifted ~97.9 -> 98.2; Iran security chief: no talks unless US builds trust; OpenAI raising $30B at $1.4T (SoftBank CDS 4y high 432); Goldman risk-appetite gauge negative; Wells Fargo sentiment buy signal; Adidas Q3 record + guide raise; GM $20B buyback; Goldman raises copper forecasts; ADP weekly private hiring slowing; Zelenskiy hopes Starlink connection restored in 48h. Elon: Ken Paxton endorsement, politics, Terafab GDP claim, Grok promos (nothing market-moving); SpaceX: Falcon 9 Bandwagon-5 launch; Tesla/SEC/FCC/Fed quiet; QuiverQuant: Trump MRNA purchase +343% (old disclosure). Odds: Polymarket no sharp market-relevant moves (top 1h movers all sports/esports); Fed Oct hold ~86.5% (+2pt day), US-Iran ceasefire thru Oct 22 ~95%, thru Oct 31 ~81.5%, end of Iranian blockade by Oct 31 ~9.5% (-4pt 1h, small); Kalshi no >=10c movers with volume. Not alerted. Not financial advice.",
+      "after_the_fact": false,
+      "followers": null,
+      "source": "X",
+      "feed": "discovery",
+      "baseline": 3.85,
       "baseline_source": "Nasdaq daily (close)",
       "copy_of": "",
       "spam_farm": false
