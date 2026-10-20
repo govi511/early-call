@@ -1173,12 +1173,18 @@
   "222|SPY/NVDA/MSFT/AMZN/GOOGL|2026-10-13 16:36": {
     "price": 778.1,
     "source": "Nasdaq daily (close)",
-    "at": "2026-10-13 16:36"
+    "at": "2026-10-13 16:36",
+    "locked_pct": -1.4934,
+    "locked_price": 766.48,
+    "locked_at": "2026-10-20T16:36+01:00"
   },
   "224|TSLA/NVDA|2026-10-13 16:36": {
     "price": 378.03,
     "source": "Nasdaq daily (close)",
-    "at": "2026-10-13 16:36"
+    "at": "2026-10-13 16:36",
+    "locked_pct": -2.6374,
+    "locked_price": 368.06,
+    "locked_at": "2026-10-20T16:36+01:00"
   },
   "226|NVDA/AAPL/SPY|2026-10-13 18:36": {
     "price": 226.32,
@@ -1535,6 +1541,11 @@
     "source": "Kraken",
     "at": "2026-10-20 15:17"
   },
+  "333|NVDA/SPY/TSLA/SPACEX/WTI|2026-10-20 16:22": {
+    "price": 217.09,
+    "source": "Nasdaq daily (close)",
+    "at": "2026-10-20 16:22"
+  },
   "168|SPACEX|2026-10-13 00:16": {
     "price": null,
     "source": "unavailable",
@@ -1768,10 +1779,5 @@
     "source": "unavailable",
     "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-20 15:10"
-  },
-  "333|NVDA/SPY/TSLA/SPACEX/WTI|2026-10-20 16:22": {
-    "price": 217.09,
-    "source": "Nasdaq daily (close)",
-    "at": "2026-10-20 16:22"
   }
 }
