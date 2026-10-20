@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T04:45:17+01:00",
+  "generated_at": "2026-10-20T05:16:26+01:00",
   "calls": [
     {
       "id": "1",
@@ -4269,6 +4269,8 @@
       "feed": "discovery",
       "baseline": 11.61,
       "baseline_source": "Nasdaq daily (close)",
+      "locked_pct": -2.8424,
+      "locked_at": "2026-10-20T04:59+01:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -6766,6 +6768,28 @@
       "source": "X",
       "feed": "discovery",
       "nonpriceable": true,
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "306",
+      "logged_at_lisbon": "2026-10-20 04:38",
+      "account": "@CredibleCrypto",
+      "post_url": "https://x.com/CredibleCrypto/status/2112388051888656641",
+      "asset": "CRV",
+      "direction": "long",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "source watchlist; role call; \"Ok now she's starting to look like she just wants to take off...\" with the CRV (Curve DAO) Ethereum contract address 0xd533...cd52 = bullish take on CRV, continuation of his Oct 9 CRV long (#68); posted 04:38 Lisbon; CRV ~0.3737 at log time (OKX spot, near 24h high 0.3775); no entry given (scored from price at post time); CRV not a T212 CFD so not alerted; not financial advice",
+      "after_the_fact": false,
+      "followers": null,
+      "source": "X",
+      "feed": "famous",
+      "baseline": 0.3678,
+      "baseline_source": "Kraken",
       "copy_of": "",
       "spam_farm": false
     }
