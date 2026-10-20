@@ -1001,7 +1001,10 @@
   "184|SOL|2026-10-13 04:17": {
     "price": 106.55,
     "source": "Binance",
-    "at": "2026-10-13 04:17"
+    "at": "2026-10-13 04:17",
+    "locked_pct": 1.4829,
+    "locked_price": 104.97,
+    "locked_at": "2026-10-20T04:17+01:00"
   },
   "185|FED|2026-10-13 04:30": {
     "price": null,
@@ -1601,5 +1604,10 @@
     "source": "unavailable",
     "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: URL can't contain control characters. '/api/quote/CAD (USD/historical?assetclass=stocks&fromdate=2026-10-13&todate=2026-10-19&limit=10' (found at least ' '), etf: URL can't contain control characters. '/api/quote/CAD (USD/historical?assetclass=etf&fromdate=2026-10-13&todate=2026-10-19&limit=10' (found at least ' '",
     "at": "2026-10-19 22:20"
+  },
+  "305|FED/ORCL/NVDA/BTC|2026-10-20 04:22": {
+    "price": null,
+    "source": "not a tradable asset",
+    "at": "2026-10-20 04:22"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T04:17:01+01:00",
+  "generated_at": "2026-10-20T04:22:23+01:00",
   "calls": [
     {
       "id": "1",
@@ -4176,6 +4176,8 @@
       "feed": "discovery",
       "baseline": 106.55,
       "baseline_source": "Binance",
+      "locked_pct": 1.4829,
+      "locked_at": "2026-10-20T04:17+01:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -6741,6 +6743,27 @@
       "feed": "discovery",
       "baseline": 194.15,
       "baseline_source": "Nasdaq daily (close)",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "305",
+      "logged_at_lisbon": "2026-10-20 04:22",
+      "account": "SEC/House Clerk/CBOE/Polymarket/Kalshi/@unusual_whales/@zerohedge/@elonmusk",
+      "post_url": "https://x.com/unusual_whales/status/2112383383968063979",
+      "asset": "FED/ORCL/NVDA/BTC",
+      "direction": "context (quiet window, log only)",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "early-signal; type=context; window ~02:18-04:22 Lisbon. Filings: fetch_filings new=0 (no new Form 4s, no House PTRs, no Pelosi, no new CBOE rows). Odds: Polymarket Fed hold next week ~85% (unusual_whales relay, flat after hot CPI/PPI); no relevant Polymarket market moved >=5pt in 1h (only NFL/tennis); Kalshi no sharp moves. News: ORCL CDS 322 +22 all-time wide (https://x.com/zerohedge/status/2112371124197847113, AI-credit stress); DeepSeek designing Huawei AI chips as DHS orders it out of federal systems (NVDA headwind continuum); Asian equities slide on AI worries (Kospi/Nikkei lower), gold eases on higher yields, CAD firmer on oil; Citi calls AAVE key tokenization use case. Elon: X timeline ranking-model update + USB-C quips (not market-moving). OptionsHawk: follow-up on RTO (Rentokil) calls already +30-40% (stale, not alerted). Tesla/SpaceX/Starlink/SEC/FCC/Fed quiet. No alerts. Public info; not financial advice",
+      "after_the_fact": false,
+      "followers": null,
+      "source": "X",
+      "feed": "discovery",
+      "nonpriceable": true,
       "copy_of": "",
       "spam_farm": false
     }
