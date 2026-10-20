@@ -1758,5 +1758,15 @@
     "source": "unavailable",
     "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-20 15:10"
+  },
+  "331|QQQ|2026-10-20 15:42": {
+    "price": 718.36,
+    "source": "Nasdaq daily (close)",
+    "at": "2026-10-20 15:42"
+  },
+  "332|BTC|2026-10-20 15:17": {
+    "price": 83116.4,
+    "source": "Kraken",
+    "at": "2026-10-20 15:17"
   }
 }
