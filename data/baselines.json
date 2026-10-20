@@ -1589,6 +1589,26 @@
     "source": "Kraken",
     "at": "2026-10-20 18:52"
   },
+  "347|BTC|2026-10-20 19:29": {
+    "price": 82442.7,
+    "source": "Kraken",
+    "at": "2026-10-20 19:29"
+  },
+  "348|BTC|2026-10-20 19:41": {
+    "price": 82448.7,
+    "source": "Kraken",
+    "at": "2026-10-20 19:41"
+  },
+  "349|SOL|2026-10-20 19:54": {
+    "price": 105.75,
+    "source": "Kraken",
+    "at": "2026-10-20 19:54"
+  },
+  "351|XBI|2026-10-20 19:59": {
+    "price": 147.86,
+    "source": "Nasdaq daily (close)",
+    "at": "2026-10-20 19:59"
+  },
   "168|SPACEX|2026-10-13 00:16": {
     "price": null,
     "source": "unavailable",
@@ -1835,30 +1855,15 @@
     "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-20 16:44"
   },
-  "347|BTC|2026-10-20 19:29": {
-    "price": 82442.7,
-    "source": "Kraken",
-    "at": "2026-10-20 19:29"
-  },
-  "348|BTC|2026-10-20 19:41": {
-    "price": 82448.7,
-    "source": "Kraken",
-    "at": "2026-10-20 19:41"
-  },
-  "349|SOL|2026-10-20 19:54": {
-    "price": 105.75,
-    "source": "Kraken",
-    "at": "2026-10-20 19:54"
-  },
   "350|WLD|2026-10-20 19:26": {
     "price": null,
     "source": "unavailable",
     "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-20 19:26"
   },
-  "351|XBI|2026-10-20 19:59": {
-    "price": 147.86,
+  "352|TSLA/META/AAPL/SPY/WTI/BRENT|2026-10-20 20:14": {
+    "price": 368.06,
     "source": "Nasdaq daily (close)",
-    "at": "2026-10-20 19:59"
+    "at": "2026-10-20 20:14"
   }
 }

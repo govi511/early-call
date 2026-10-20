@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T20:10:43+01:00",
+  "generated_at": "2026-10-20T20:15:55+01:00",
   "calls": [
     {
       "id": "1",
@@ -7785,6 +7785,28 @@
       "source": "X",
       "feed": "following",
       "baseline": 147.86,
+      "baseline_source": "Nasdaq daily (close)",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "352",
+      "logged_at_lisbon": "2026-10-20 20:14",
+      "account": "SEC/House Clerk/CBOE/Polymarket/Kalshi/@FirstSquawk/@LiveSquawk/@OptionsHawk/@elonmusk",
+      "post_url": "https://x.com/FirstSquawk/status/2112615024237871549",
+      "asset": "TSLA/META/AAPL/SPY/WTI/BRENT",
+      "direction": "context (quiet window, log only)",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "early-signal; type=context; window ~18:22-20:14 Lisbon. Filings: fetch_filings new=22, all CBOE intraday unusual-volume rows (no new Form 4s, no House PTRs, no Pelosi). CBOE flow mostly earnings-week/short-dated: TSLA Oct-23 $375C 20.9k vol vs 6.3k OI at 12.60 (~$26M, ATM pre-earnings, IV ~89%) alongside Oct-23 377.5P/407.5C and Nov-20 375P 8.8k vs 2.4k OI (~$16.5M, hedge-like); AAPL Oct-21 335P 29.8k at $0.46 (cheap 1DTE); META Oct-23 690C/700C (~$17M combined, IV ~99% pre-earnings); NVDA Oct-26 215C/220P two-way; GOOGL/MSFT Oct-21 weeklies; SPY Oct-21..27 two-way short-dated lottos. Same pattern as earlier TSLA pre-earnings rows (#314, #342), so not alerted. News: FirstSquawk 'oil climbs amid global market sell-off as AI investment concerns deepen'; Business Insider: Amazon buying billions in Nvidia systems it can't yet turn on; Brent settles -0.69% at $108.79; Trump: oil will drop sharply when Iran war ends, India trade deal 'pretty close', Putin/Zelenskiy needn't meet to sign deal; Rubio: Iran deal extremely difficult; Kan: Israeli jets exercising near Iranian border; CBC: no Canada-US deal before midterms (https://x.com/FirstSquawk/status/2112615024237871549). Elon: Bach post, AI compute/electricity comment, Isaacson RT (nothing market-moving); Tesla/SpaceX/Starlink/SEC/FCC/Fed quiet; OptionsHawk: XBI June 185C buyer, APOG Nov 45C, SPY range comment (already in X scan #343/#351). Odds: Polymarket top 1h movers all sports/esports; Fed Oct hold ~86% (-1pt 1h), US-Iran ceasefire thru Oct 22 ~95%, thru Oct 31 ~82% (+2pt 1h), end of blockade by Oct 31 ~10%, Russia-Ukraine ceasefire by Oct 31 ~3%; Kalshi no movers with volume. Not alerted. Not financial advice.",
+      "after_the_fact": false,
+      "followers": null,
+      "source": "X",
+      "feed": "discovery",
+      "baseline": 368.06,
       "baseline_source": "Nasdaq daily (close)",
       "copy_of": "",
       "spam_farm": false
