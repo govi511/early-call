@@ -1046,7 +1046,10 @@
   "194|HYPE|2026-10-13 07:54": {
     "price": 83.22,
     "source": "Binance",
-    "at": "2026-10-13 07:54"
+    "at": "2026-10-13 07:54",
+    "locked_pct": -5.2151,
+    "locked_price": 78.88,
+    "locked_at": "2026-10-20T07:54+01:00"
   },
   "196|BTC|2026-10-13 08:49": {
     "price": 83964.01,
@@ -1628,5 +1631,20 @@
     "source": "unavailable",
     "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: URL can't contain control characters. '/api/quote/CAD (USD/historical?assetclass=stocks&fromdate=2026-10-13&todate=2026-10-19&limit=10' (found at least ' '), etf: URL can't contain control characters. '/api/quote/CAD (USD/historical?assetclass=etf&fromdate=2026-10-13&todate=2026-10-19&limit=10' (found at least ' '",
     "at": "2026-10-19 22:20"
+  },
+  "308|BTC|2026-10-20 07:59": {
+    "price": 81709.5,
+    "source": "Kraken",
+    "at": "2026-10-20 07:59"
+  },
+  "309|HYPE|2026-10-20 08:07": {
+    "price": 78.86,
+    "source": "Kraken",
+    "at": "2026-10-20 08:07"
+  },
+  "310|CHAT|2026-10-20 07:16": {
+    "price": 80.35,
+    "source": "Nasdaq daily (close)",
+    "at": "2026-10-20 07:16"
   }
 }
