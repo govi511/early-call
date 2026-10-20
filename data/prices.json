@@ -1,84 +1,84 @@
 {
-  "fetched_at": "2026-10-20T18:48:25+01:00",
+  "fetched_at": "2026-10-20T19:47:53+01:00",
   "prices": {
     "AAOI": {
-      "price": 77.1456,
-      "change_pct": -1.35,
+      "price": 76.315,
+      "change_pct": -2.41,
       "symbol": "AAOI",
       "currency": "USD",
       "source": "Nasdaq",
-      "as_of": "2026-10-20T18:44:50+01:00"
+      "as_of": "2026-10-20T19:44:21+01:00"
     },
     "AAPL": {
-      "price": 340.445,
-      "change_pct": -0.73,
+      "price": 340.15,
+      "change_pct": -0.81,
       "symbol": "AAPL",
       "currency": "USD",
       "source": "Nasdaq",
-      "as_of": "2026-10-20T18:44:51+01:00"
+      "as_of": "2026-10-20T19:44:21+01:00"
     },
     "AAPL/CAD (USD/CAD)/BA/BTC": {
       "price": null,
       "nonpriceable": true,
       "note": "multi-asset/context label, no price expected",
       "source": "multi-asset/context label, no price expected",
-      "as_of": "2026-10-20T18:44:51+01:00"
+      "as_of": "2026-10-20T19:44:21+01:00"
     },
     "ADA": {
-      "price": 0.222661,
-      "change_pct": 2.0594220967327916,
+      "price": 0.220334,
+      "change_pct": 0.9928128781489499,
       "symbol": "ADAUSD",
       "currency": "USD",
       "source": "Kraken",
-      "as_of": "2026-10-20T18:44:54+01:00"
+      "as_of": "2026-10-20T19:44:24+01:00"
     },
     "AEHR": {
-      "price": 62.59,
-      "change_pct": -1.17,
+      "price": 62.37,
+      "change_pct": -1.52,
       "symbol": "AEHR",
       "currency": "USD",
       "source": "Nasdaq",
-      "as_of": "2026-10-20T18:44:54+01:00"
+      "as_of": "2026-10-20T19:44:25+01:00"
     },
     "AFRM": {
-      "price": 74.45,
-      "change_pct": 2.27,
+      "price": 73.67,
+      "change_pct": 1.2,
       "symbol": "AFRM",
       "currency": "USD",
       "source": "Nasdaq",
-      "as_of": "2026-10-20T18:44:54+01:00"
+      "as_of": "2026-10-20T19:44:25+01:00"
     },
     "AI": {
-      "price": 11.785,
-      "change_pct": 4.48,
+      "price": 11.765,
+      "change_pct": 4.3,
       "symbol": "AI",
       "currency": "USD",
       "source": "Nasdaq",
-      "as_of": "2026-10-20T18:44:54+01:00"
+      "as_of": "2026-10-20T19:44:25+01:00"
     },
     "AI/SEMIS": {
-      "price": 11.785,
-      "change_pct": 4.48,
+      "price": 11.765,
+      "change_pct": 4.3,
       "symbol": "AI (from AI/SEMIS)",
       "currency": "USD",
       "source": "Nasdaq",
-      "as_of": "2026-10-20T18:44:54+01:00"
+      "as_of": "2026-10-20T19:44:25+01:00"
     },
     "AMD": {
-      "price": 540.59,
-      "change_pct": 0.47,
+      "price": 537.845,
+      "change_pct": -0.04,
       "symbol": "AMD",
       "currency": "USD",
       "source": "Nasdaq",
-      "as_of": "2026-10-20T18:44:54+01:00"
+      "as_of": "2026-10-20T19:44:25+01:00"
     },
     "AMZN": {
-      "price": 263.11,
-      "change_pct": 0.25,
+      "price": 262.33,
+      "change_pct": -0.05,
       "symbol": "AMZN",
       "currency": "USD",
       "source": "Nasdaq",
-      "as_of": "2026-10-20T18:44:54+01:00"
+      "as_of": "2026-10-20T19:44:25+01:00"
     },
     "APE": {
       "price": 0.1466,
@@ -86,142 +86,150 @@
       "symbol": "APEUSD",
       "currency": "USD",
       "source": "Kraken",
-      "as_of": "2026-10-20T18:44:57+01:00"
+      "as_of": "2026-10-20T19:44:29+01:00"
+    },
+    "APOG": {
+      "price": 42.63,
+      "change_pct": 2.95,
+      "symbol": "APOG",
+      "currency": "USD",
+      "source": "Nasdaq",
+      "as_of": "2026-10-20T19:44:29+01:00"
     },
     "APP": {
-      "price": 273.34,
-      "change_pct": 1.57,
+      "price": 272.64,
+      "change_pct": 1.31,
       "symbol": "APP",
       "currency": "USD",
       "source": "Nasdaq",
-      "as_of": "2026-10-20T18:44:57+01:00"
+      "as_of": "2026-10-20T19:44:29+01:00"
     },
     "ASML/NVDA/SEMIS/OIL/FED": {
-      "price": 1635.715,
-      "change_pct": -0.69,
+      "price": 1632.45,
+      "change_pct": -0.89,
       "symbol": "ASML (from ASML/NVDA/SEMIS/OIL/FED)",
       "currency": "USD",
       "source": "Nasdaq",
-      "as_of": "2026-10-20T18:44:57+01:00"
+      "as_of": "2026-10-20T19:44:29+01:00"
     },
     "ASTS": {
-      "price": 41.63,
-      "change_pct": -0.57,
+      "price": 41.24,
+      "change_pct": -1.5,
       "symbol": "ASTS",
       "currency": "USD",
       "source": "Nasdaq",
-      "as_of": "2026-10-20T18:44:57+01:00"
+      "as_of": "2026-10-20T19:44:29+01:00"
     },
     "ATOM": {
-      "price": 1.7606,
-      "change_pct": 0.9113314609961614,
+      "price": 1.744,
+      "change_pct": -0.040121510861461734,
       "symbol": "ATOMUSD",
       "currency": "USD",
       "source": "Kraken",
-      "as_of": "2026-10-20T18:45:01+01:00"
+      "as_of": "2026-10-20T19:44:32+01:00"
     },
     "AVAX": {
-      "price": 9.681,
-      "change_pct": 0.8647634923942321,
+      "price": 9.612,
+      "change_pct": 0.14586372160866165,
       "symbol": "AVAXUSD",
       "currency": "USD",
       "source": "Kraken",
-      "as_of": "2026-10-20T18:45:04+01:00"
+      "as_of": "2026-10-20T19:44:36+01:00"
     },
     "AVGO": {
-      "price": 335.05,
-      "change_pct": 0.14,
+      "price": 334.29,
+      "change_pct": -0.09,
       "symbol": "AVGO",
       "currency": "USD",
       "source": "Nasdaq",
-      "as_of": "2026-10-20T18:45:04+01:00"
+      "as_of": "2026-10-20T19:44:36+01:00"
     },
     "BAT": {
-      "price": 0.20529,
-      "change_pct": 5.99989673155367,
+      "price": 0.20352,
+      "change_pct": 5.085970981566581,
       "symbol": "BATUSD",
       "currency": "USD",
       "source": "Kraken",
-      "as_of": "2026-10-20T18:45:07+01:00"
+      "as_of": "2026-10-20T19:44:39+01:00"
     },
     "BIDU": {
-      "price": 80.78,
-      "change_pct": 1.25,
+      "price": 80.5,
+      "change_pct": 0.9,
       "symbol": "BIDU",
       "currency": "USD",
       "source": "Nasdaq",
-      "as_of": "2026-10-20T18:45:08+01:00"
+      "as_of": "2026-10-20T19:44:40+01:00"
     },
     "BIIB": {
-      "price": 242.835,
-      "change_pct": 4.01,
+      "price": 242.62,
+      "change_pct": 3.91,
       "symbol": "BIIB",
       "currency": "USD",
       "source": "Nasdaq",
-      "as_of": "2026-10-20T18:45:08+01:00"
+      "as_of": "2026-10-20T19:44:40+01:00"
     },
     "BJ": {
-      "price": 101.91,
-      "change_pct": -0.68,
+      "price": 102.62,
+      "change_pct": 0.01,
       "symbol": "BJ",
       "currency": "USD",
       "source": "Nasdaq",
-      "as_of": "2026-10-20T18:45:08+01:00"
+      "as_of": "2026-10-20T19:44:40+01:00"
     },
     "BNB": {
-      "price": 737.18,
-      "change_pct": 0.8454172366620999,
+      "price": 736.08,
+      "change_pct": 0.6949384404924817,
       "symbol": "BNBUSD",
       "currency": "USD",
       "source": "Kraken",
-      "as_of": "2026-10-20T18:45:11+01:00"
+      "as_of": "2026-10-20T19:44:43+01:00"
     },
     "BRENT": {
-      "price": 108.67,
-      "change_pct": -0.8,
+      "price": 108.78,
+      "change_pct": -0.7,
       "symbol": "@LCO.1",
       "currency": "USD",
       "source": "CNBC",
-      "as_of": "2026-10-20T18:45:11+01:00"
+      "as_of": "2026-10-20T19:44:43+01:00"
     },
     "BSP": {
-      "price": 45.1,
-      "change_pct": -1.2,
+      "price": 44.285,
+      "change_pct": -2.99,
       "symbol": "BSP",
       "currency": "USD",
       "source": "Nasdaq",
-      "as_of": "2026-10-20T18:45:12+01:00"
+      "as_of": "2026-10-20T19:44:43+01:00"
     },
     "BTC": {
-      "price": 82742.7,
-      "change_pct": 1.0992998790366886,
+      "price": 82380.9,
+      "change_pct": 0.6572339723617099,
       "symbol": "XXBTZUSD",
       "currency": "USD",
       "source": "Kraken",
-      "as_of": "2026-10-20T18:45:15+01:00"
+      "as_of": "2026-10-20T19:44:47+01:00"
     },
     "BTC/ETH/OIL/CHINA/FED": {
-      "price": 82742.7,
-      "change_pct": 1.0992998790366886,
+      "price": 82380.9,
+      "change_pct": 0.6572339723617099,
       "symbol": "XXBTZUSD (from BTC/ETH/OIL/CHINA/FED)",
       "currency": "USD",
       "source": "Kraken",
-      "as_of": "2026-10-20T18:45:15+01:00"
+      "as_of": "2026-10-20T19:44:47+01:00"
     },
     "BTC/ETH/S&P 500/OIL": {
       "price": null,
       "nonpriceable": true,
       "note": "multi-asset/context label, no price expected",
       "source": "multi-asset/context label, no price expected",
-      "as_of": "2026-10-20T18:45:15+01:00"
+      "as_of": "2026-10-20T19:44:47+01:00"
     },
     "BTR": {
-      "price": 0.04431,
-      "change_pct": 2.356202356202356,
+      "price": 0.04486,
+      "change_pct": 3.6267036267036152,
       "symbol": "BTRUSD",
       "currency": "USD",
       "source": "Kraken",
-      "as_of": "2026-10-20T18:45:18+01:00"
+      "as_of": "2026-10-20T19:44:50+01:00"
     },
     "BULL": {
       "price": null,
@@ -232,99 +240,99 @@
       "nonpriceable": true,
       "note": "multi-asset/context label, no price expected",
       "source": "multi-asset/context label, no price expected",
-      "as_of": "2026-10-20T18:45:24+01:00"
+      "as_of": "2026-10-20T19:44:55+01:00"
     },
     "CBRS": {
-      "price": 121.01,
-      "change_pct": 0.29,
+      "price": 119.15,
+      "change_pct": -1.25,
       "symbol": "CBRS",
       "currency": "USD",
       "source": "Nasdaq",
-      "as_of": "2026-10-20T18:45:24+01:00"
+      "as_of": "2026-10-20T19:44:56+01:00"
     },
     "CHAT": {
-      "price": 80.005,
-      "change_pct": -0.43,
+      "price": 79.6922,
+      "change_pct": -0.82,
       "symbol": "CHAT",
       "currency": "USD",
       "source": "Nasdaq",
-      "as_of": "2026-10-20T18:45:25+01:00"
+      "as_of": "2026-10-20T19:44:56+01:00"
     },
     "COIN": {
-      "price": 171.8654,
-      "change_pct": 2.03,
+      "price": 169.6475,
+      "change_pct": 0.71,
       "symbol": "COIN",
       "currency": "USD",
       "source": "Nasdaq",
-      "as_of": "2026-10-20T18:45:25+01:00"
+      "as_of": "2026-10-20T19:44:56+01:00"
     },
     "CORN": {
-      "price": 17.9,
-      "change_pct": -0.61,
+      "price": 17.885,
+      "change_pct": -0.69,
       "symbol": "CORN",
       "currency": "USD",
       "source": "Nasdaq",
-      "as_of": "2026-10-20T18:45:26+01:00"
+      "as_of": "2026-10-20T19:44:57+01:00"
     },
     "CRV": {
-      "price": 0.38149,
-      "change_pct": 3.9199128302914774,
+      "price": 0.3719,
+      "change_pct": 1.307545627894314,
       "symbol": "CRVUSD",
       "currency": "USD",
       "source": "Kraken",
-      "as_of": "2026-10-20T18:45:29+01:00"
+      "as_of": "2026-10-20T19:45:00+01:00"
     },
     "CRWV": {
-      "price": 62.26,
-      "change_pct": 1.87,
+      "price": 61.7582,
+      "change_pct": 1.04,
       "symbol": "CRWV",
       "currency": "USD",
       "source": "Nasdaq",
-      "as_of": "2026-10-20T18:45:29+01:00"
+      "as_of": "2026-10-20T19:45:00+01:00"
     },
     "CVX": {
-      "price": 224.44,
-      "change_pct": 0.03,
+      "price": 225.01,
+      "change_pct": 0.29,
       "symbol": "CVX",
       "currency": "USD",
       "source": "Nasdaq",
-      "as_of": "2026-10-20T18:45:29+01:00"
+      "as_of": "2026-10-20T19:45:01+01:00"
     },
     "DELL": {
-      "price": 464.5,
-      "change_pct": 2.13,
+      "price": 462.615,
+      "change_pct": 1.72,
       "symbol": "DELL",
       "currency": "USD",
       "source": "Nasdaq",
-      "as_of": "2026-10-20T18:45:30+01:00"
+      "as_of": "2026-10-20T19:45:01+01:00"
     },
     "DOPE": {
       "price": null,
       "error": "no matching price: default: no nasdaq price (stocks: 'lastSalePrice'; binance: HTTP Error 451: ; alt: HTTP Error 400: Ba"
     },
     "EIGEN": {
-      "price": 0.2415,
-      "change_pct": 2.460755197284684,
+      "price": 0.2392,
+      "change_pct": 1.4849384811200692,
       "symbol": "EIGENUSD",
       "currency": "USD",
       "source": "Kraken",
-      "as_of": "2026-10-20T18:45:37+01:00"
+      "as_of": "2026-10-20T19:45:09+01:00"
     },
     "ENA": {
-      "price": 0.1946,
-      "change_pct": 2.908514013749342,
+      "price": 0.1927,
+      "change_pct": 1.9037546271813963,
       "symbol": "ENAUSD",
       "currency": "USD",
       "source": "Kraken",
-      "as_of": "2026-10-20T18:45:40+01:00"
+      "as_of": "2026-10-20T19:45:12+01:00"
     },
     "ETH": {
-      "price": 2448.67,
-      "change_pct": 1.7975995975771584,
+      "price": 2433.79,
+      "change_pct": 1.1789991810196152,
       "symbol": "XETHZUSD",
       "currency": "USD",
       "source": "Kraken",
-      "as_of": "2026-10-20T18:45:44+01:00"
+      "as_of": "2026-10-20T19:45:15+01:00"
     },
     "ETH/BTC": {
       "price": 0.02972,
@@ -337,440 +345,440 @@
       "error": "no matching price: default: HTTP Error 451: ; binance: HTTP Error 451: ; alt: HTTP Error 400: Bad Request; yahoo: yahoo "
     },
     "EWZ": {
-      "price": 43.0205,
-      "change_pct": 2.6,
+      "price": 42.9101,
+      "change_pct": 2.34,
       "symbol": "EWZ",
       "currency": "USD",
       "source": "Nasdaq",
-      "as_of": "2026-10-20T18:45:50+01:00"
+      "as_of": "2026-10-20T19:45:21+01:00"
     },
     "FED": {
       "price": null,
       "nonpriceable": true,
       "note": "not a tradable asset",
       "source": "not a tradable asset",
-      "as_of": "2026-10-20T18:45:50+01:00"
+      "as_of": "2026-10-20T19:45:21+01:00"
     },
     "FED/ORCL/NVDA/BTC": {
       "price": null,
       "nonpriceable": true,
       "note": "not a tradable asset",
       "source": "not a tradable asset",
-      "as_of": "2026-10-20T18:45:50+01:00"
+      "as_of": "2026-10-20T19:45:21+01:00"
     },
     "FED/USD/SPX/BTC": {
       "price": null,
       "nonpriceable": true,
       "note": "not a tradable asset",
       "source": "not a tradable asset",
-      "as_of": "2026-10-20T18:45:50+01:00"
+      "as_of": "2026-10-20T19:45:21+01:00"
     },
     "FED/USD/SPX/BTC/GOLD": {
       "price": null,
       "nonpriceable": true,
       "note": "not a tradable asset",
       "source": "not a tradable asset",
-      "as_of": "2026-10-20T18:45:50+01:00"
+      "as_of": "2026-10-20T19:45:21+01:00"
     },
     "FET": {
-      "price": 0.1954,
-      "change_pct": 1.9832985386221285,
+      "price": 0.1932,
+      "change_pct": 0.8350730688935376,
       "symbol": "FETUSD",
       "currency": "USD",
       "source": "Kraken",
-      "as_of": "2026-10-20T18:45:54+01:00"
+      "as_of": "2026-10-20T19:45:24+01:00"
     },
     "GBP/EUR/CAD/BTC": {
-      "price": 1.33786,
-      "change_pct": 0.4972807307472785,
+      "price": 1.33811,
+      "change_pct": 0.5160602145368177,
       "symbol": "ZGBPZUSD (from GBP/EUR/CAD/BTC)",
       "currency": "USD",
       "source": "Kraken",
-      "as_of": "2026-10-20T18:45:56+01:00"
+      "as_of": "2026-10-20T19:45:26+01:00"
     },
     "GME": {
-      "price": 25.935,
-      "change_pct": -1.91,
+      "price": 25.9,
+      "change_pct": -2.04,
       "symbol": "GME",
       "currency": "USD",
       "source": "Nasdaq",
-      "as_of": "2026-10-20T18:45:56+01:00"
+      "as_of": "2026-10-20T19:45:26+01:00"
     },
     "GOLD": {
-      "price": 4142.8,
-      "change_pct": -0.42,
+      "price": 4142.4,
+      "change_pct": -0.43,
       "symbol": "@GC.1",
       "currency": "USD",
       "source": "CNBC",
-      "as_of": "2026-10-20T18:45:56+01:00"
+      "as_of": "2026-10-20T19:45:26+01:00"
     },
     "GOOGL": {
-      "price": 341.33,
-      "change_pct": -0.83,
+      "price": 339.36,
+      "change_pct": -1.4,
       "symbol": "GOOGL",
       "currency": "USD",
       "source": "Nasdaq",
-      "as_of": "2026-10-20T18:45:56+01:00"
+      "as_of": "2026-10-20T19:45:26+01:00"
     },
     "GS": {
-      "price": 887.01,
-      "change_pct": 1.28,
+      "price": 882.36,
+      "change_pct": 0.75,
       "symbol": "GS",
       "currency": "USD",
       "source": "Nasdaq",
-      "as_of": "2026-10-20T18:45:56+01:00"
+      "as_of": "2026-10-20T19:45:26+01:00"
     },
     "HD": {
-      "price": 315.755,
-      "change_pct": 1.9,
+      "price": 315.855,
+      "change_pct": 1.93,
       "symbol": "HD",
       "currency": "USD",
       "source": "Nasdaq",
-      "as_of": "2026-10-20T18:45:57+01:00"
+      "as_of": "2026-10-20T19:45:26+01:00"
     },
     "HMM": {
       "price": null,
       "error": "no matching price: default: no nasdaq price (stocks: 'lastSalePrice'; binance: HTTP Error 451: ; alt: HTTP Error 400: Ba"
     },
     "HURN": {
-      "price": 181.32,
-      "change_pct": 3.78,
+      "price": 180.84,
+      "change_pct": 3.5,
       "symbol": "HURN",
       "currency": "USD",
       "source": "Nasdaq",
-      "as_of": "2026-10-20T18:46:01+01:00"
+      "as_of": "2026-10-20T19:45:31+01:00"
     },
     "HYPE": {
-      "price": 80.29,
-      "change_pct": 1.3890642757924088,
+      "price": 79.67,
+      "change_pct": 0.606137138527597,
       "symbol": "HYPEUSD",
       "currency": "USD",
       "source": "Kraken",
-      "as_of": "2026-10-20T18:46:05+01:00"
+      "as_of": "2026-10-20T19:45:34+01:00"
     },
     "ICP": {
-      "price": 2.906,
-      "change_pct": 1.6083916083916177,
+      "price": 2.903,
+      "change_pct": 1.5034965034965087,
       "symbol": "ICPUSD",
       "currency": "USD",
       "source": "Kraken",
-      "as_of": "2026-10-20T18:46:08+01:00"
+      "as_of": "2026-10-20T19:45:37+01:00"
     },
     "INJ": {
-      "price": 8.558,
-      "change_pct": -0.2912734475125289,
+      "price": 8.533,
+      "change_pct": -0.5825468950250579,
       "symbol": "INJUSD",
       "currency": "USD",
       "source": "Kraken",
-      "as_of": "2026-10-20T18:46:11+01:00"
+      "as_of": "2026-10-20T19:45:41+01:00"
     },
     "INTC": {
-      "price": 92.515,
-      "change_pct": 0.53,
+      "price": 92.0053,
+      "change_pct": -0.03,
       "symbol": "INTC",
       "currency": "USD",
       "source": "Nasdaq",
-      "as_of": "2026-10-20T18:46:11+01:00"
+      "as_of": "2026-10-20T19:45:41+01:00"
     },
     "IO": {
-      "price": 0.16728,
-      "change_pct": 11.7,
+      "price": 0.16444,
+      "change_pct": 8.97,
       "symbol": "IO_USDT",
       "currency": "USDT",
       "source": "Gate.io",
-      "as_of": "2026-10-20T18:46:15+01:00"
+      "as_of": "2026-10-20T19:45:45+01:00"
     },
     "IREN": {
-      "price": 26.6999,
-      "change_pct": -3.71,
+      "price": 26.33,
+      "change_pct": -5.05,
       "symbol": "IREN",
       "currency": "USD",
       "source": "Nasdaq",
-      "as_of": "2026-10-20T18:46:15+01:00"
+      "as_of": "2026-10-20T19:45:45+01:00"
     },
     "IWM": {
-      "price": 275.86,
-      "change_pct": 1.69,
+      "price": 275.58,
+      "change_pct": 1.59,
       "symbol": "IWM",
       "currency": "USD",
       "source": "Nasdaq",
-      "as_of": "2026-10-20T18:46:15+01:00"
+      "as_of": "2026-10-20T19:45:45+01:00"
     },
     "KOSPI/SEMIS": {
       "price": null,
       "nonpriceable": true,
       "note": "multi-asset/context label, no price expected",
       "source": "multi-asset/context label, no price expected",
-      "as_of": "2026-10-20T18:46:19+01:00",
+      "as_of": "2026-10-20T19:45:50+01:00",
       "error": "no matching price: default: no nasdaq price (stocks: 'lastSalePrice'; binance: HTTP Error 451: ; alt: HTTP Error 400: Ba"
     },
     "LHX": {
-      "price": 249.775,
-      "change_pct": 2.43,
+      "price": 249.6201,
+      "change_pct": 2.37,
       "symbol": "LHX",
       "currency": "USD",
       "source": "Nasdaq",
-      "as_of": "2026-10-20T18:46:20+01:00"
+      "as_of": "2026-10-20T19:45:50+01:00"
     },
     "LINK": {
-      "price": 12.24013,
-      "change_pct": 1.6018726420771747,
+      "price": 12.16694,
+      "change_pct": 0.9943430603918774,
       "symbol": "LINKUSD",
       "currency": "USD",
       "source": "Kraken",
-      "as_of": "2026-10-20T18:46:23+01:00"
+      "as_of": "2026-10-20T19:45:53+01:00"
     },
     "LITE": {
-      "price": 826.37,
-      "change_pct": -0.98,
+      "price": 825.57,
+      "change_pct": -1.07,
       "symbol": "LITE",
       "currency": "USD",
       "source": "Nasdaq",
-      "as_of": "2026-10-20T18:46:23+01:00"
+      "as_of": "2026-10-20T19:45:53+01:00"
     },
     "LTC": {
-      "price": 60.39,
-      "change_pct": 1.223600402279591,
+      "price": 60.16,
+      "change_pct": 0.8380824673147838,
       "symbol": "XLTCZUSD",
       "currency": "USD",
       "source": "Kraken",
-      "as_of": "2026-10-20T18:46:26+01:00"
+      "as_of": "2026-10-20T19:45:56+01:00"
     },
     "META": {
-      "price": 691.04,
-      "change_pct": -2.04,
+      "price": 689.6601,
+      "change_pct": -2.24,
       "symbol": "META",
       "currency": "USD",
       "source": "Nasdaq",
-      "as_of": "2026-10-20T18:46:27+01:00"
+      "as_of": "2026-10-20T19:45:56+01:00"
     },
     "MRNA": {
-      "price": 241.34,
-      "change_pct": 6.37,
+      "price": 240.5599,
+      "change_pct": 6.02,
       "symbol": "MRNA",
       "currency": "USD",
       "source": "Nasdaq",
-      "as_of": "2026-10-20T18:46:27+01:00"
+      "as_of": "2026-10-20T19:45:57+01:00"
     },
     "MSFT": {
-      "price": 533.93,
-      "change_pct": 0.08,
+      "price": 531.935,
+      "change_pct": -0.3,
       "symbol": "MSFT",
       "currency": "USD",
       "source": "Nasdaq",
-      "as_of": "2026-10-20T18:46:27+01:00"
+      "as_of": "2026-10-20T19:45:57+01:00"
     },
     "MU": {
-      "price": 909.88,
-      "change_pct": 0.55,
+      "price": 902.0,
+      "change_pct": -0.32,
       "symbol": "MU",
       "currency": "USD",
       "source": "Nasdaq",
-      "as_of": "2026-10-20T18:46:27+01:00"
+      "as_of": "2026-10-20T19:45:57+01:00"
     },
     "NATGAS": {
-      "price": 2.971,
-      "change_pct": -2.84,
+      "price": 3.004,
+      "change_pct": -1.77,
       "symbol": "@NG.1",
       "currency": "USD",
       "source": "CNBC",
-      "as_of": "2026-10-20T18:46:27+01:00"
+      "as_of": "2026-10-20T19:45:57+01:00"
     },
     "NBIS": {
-      "price": 170.145,
-      "change_pct": -0.06,
+      "price": 168.95,
+      "change_pct": -0.76,
       "symbol": "NBIS",
       "currency": "USD",
       "source": "Nasdaq",
-      "as_of": "2026-10-20T18:46:27+01:00"
+      "as_of": "2026-10-20T19:45:57+01:00"
     },
     "NDX": {
-      "price": 29577.838,
-      "change_pct": 0.16,
+      "price": 29507.103,
+      "change_pct": -0.08,
       "symbol": ".NDX",
       "currency": "USD",
       "source": "CNBC",
-      "as_of": "2026-10-20T18:46:28+01:00"
+      "as_of": "2026-10-20T19:45:57+01:00"
     },
     "NEAR": {
-      "price": 4.969,
-      "change_pct": 1.4330040009798464,
+      "price": 4.8968,
+      "change_pct": -0.040826324814235725,
       "symbol": "NEARUSD",
       "currency": "USD",
       "source": "Kraken",
-      "as_of": "2026-10-20T18:46:31+01:00"
+      "as_of": "2026-10-20T19:46:01+01:00"
     },
     "NVDA": {
-      "price": 217.298,
-      "change_pct": 0.1,
+      "price": 216.54,
+      "change_pct": -0.25,
       "symbol": "NVDA",
       "currency": "USD",
       "source": "Nasdaq",
-      "as_of": "2026-10-20T18:46:31+01:00"
+      "as_of": "2026-10-20T19:46:01+01:00"
     },
     "NVDA/AAPL/SPY": {
-      "price": 217.298,
-      "change_pct": 0.1,
+      "price": 216.54,
+      "change_pct": -0.25,
       "symbol": "NVDA (from NVDA/AAPL/SPY)",
       "currency": "USD",
       "source": "Nasdaq",
-      "as_of": "2026-10-20T18:46:31+01:00"
+      "as_of": "2026-10-20T19:46:01+01:00"
     },
     "NVDA/ABT/ADI/CACI": {
-      "price": 217.298,
-      "change_pct": 0.1,
+      "price": 216.54,
+      "change_pct": -0.25,
       "symbol": "NVDA (from NVDA/ABT/ADI/CACI)",
       "currency": "USD",
       "source": "Nasdaq",
-      "as_of": "2026-10-20T18:46:31+01:00"
+      "as_of": "2026-10-20T19:46:01+01:00"
     },
     "NVDA/AMZN/TSLA/SPY": {
-      "price": 217.298,
-      "change_pct": 0.1,
+      "price": 216.54,
+      "change_pct": -0.25,
       "symbol": "NVDA (from NVDA/AMZN/TSLA/SPY)",
       "currency": "USD",
       "source": "Nasdaq",
-      "as_of": "2026-10-20T18:46:31+01:00"
+      "as_of": "2026-10-20T19:46:01+01:00"
     },
     "NVDA/META/AAPL/SPY": {
-      "price": 217.298,
-      "change_pct": 0.1,
+      "price": 216.54,
+      "change_pct": -0.25,
       "symbol": "NVDA (from NVDA/META/AAPL/SPY)",
       "currency": "USD",
       "source": "Nasdaq",
-      "as_of": "2026-10-20T18:46:31+01:00"
+      "as_of": "2026-10-20T19:46:01+01:00"
     },
     "NVDA/META/AAPL/SPY/MSFT/AMZN": {
-      "price": 217.298,
-      "change_pct": 0.1,
+      "price": 216.54,
+      "change_pct": -0.25,
       "symbol": "NVDA (from NVDA/META/AAPL/SPY/MSFT/AMZN)",
       "currency": "USD",
       "source": "Nasdaq",
-      "as_of": "2026-10-20T18:46:31+01:00"
+      "as_of": "2026-10-20T19:46:01+01:00"
     },
     "NVDA/SPY/TSLA/SPACEX/WTI": {
-      "price": 217.298,
-      "change_pct": 0.1,
+      "price": 216.54,
+      "change_pct": -0.25,
       "symbol": "NVDA (from NVDA/SPY/TSLA/SPACEX/WTI)",
       "currency": "USD",
       "source": "Nasdaq",
-      "as_of": "2026-10-20T18:46:31+01:00"
+      "as_of": "2026-10-20T19:46:01+01:00"
     },
     "NVDA/WTI/TSLA/SPY/EUR": {
-      "price": 217.298,
-      "change_pct": 0.1,
+      "price": 216.54,
+      "change_pct": -0.25,
       "symbol": "NVDA (from NVDA/WTI/TSLA/SPY/EUR)",
       "currency": "USD",
       "source": "Nasdaq",
-      "as_of": "2026-10-20T18:46:31+01:00"
+      "as_of": "2026-10-20T19:46:01+01:00"
     },
     "OIL": {
-      "price": 103.13,
-      "change_pct": -0.51,
+      "price": 101.09,
+      "change_pct": -2.48,
       "symbol": "@CL.1",
       "currency": "USD",
       "source": "CNBC",
-      "as_of": "2026-10-20T18:46:31+01:00"
+      "as_of": "2026-10-20T19:46:01+01:00"
     },
     "OIL/BAC/OPENAI/S&P 500": {
       "price": null,
       "nonpriceable": true,
       "note": "multi-asset/context label, no price expected",
       "source": "multi-asset/context label, no price expected",
-      "as_of": "2026-10-20T18:46:31+01:00"
+      "as_of": "2026-10-20T19:46:01+01:00"
     },
     "OIL/GOLD/S&P 500": {
       "price": null,
       "nonpriceable": true,
       "note": "multi-asset/context label, no price expected",
       "source": "multi-asset/context label, no price expected",
-      "as_of": "2026-10-20T18:46:31+01:00"
+      "as_of": "2026-10-20T19:46:01+01:00"
     },
     "OIL/IRAN/FED/BTC": {
-      "price": 103.13,
-      "change_pct": -0.51,
+      "price": 101.09,
+      "change_pct": -2.48,
       "symbol": "@CL.1 (from OIL/IRAN/FED/BTC)",
       "currency": "USD",
       "source": "CNBC",
-      "as_of": "2026-10-20T18:46:31+01:00"
+      "as_of": "2026-10-20T19:46:01+01:00"
     },
     "OIL/S&P 500/BTC": {
       "price": null,
       "nonpriceable": true,
       "note": "multi-asset/context label, no price expected",
       "source": "multi-asset/context label, no price expected",
-      "as_of": "2026-10-20T18:46:31+01:00"
+      "as_of": "2026-10-20T19:46:01+01:00"
     },
     "OIL/S&P 500/RIG": {
       "price": null,
       "nonpriceable": true,
       "note": "multi-asset/context label, no price expected",
       "source": "multi-asset/context label, no price expected",
-      "as_of": "2026-10-20T18:46:31+01:00"
+      "as_of": "2026-10-20T19:46:01+01:00"
     },
     "OIL/SAUDI/CHINA/FED": {
-      "price": 103.13,
-      "change_pct": -0.51,
+      "price": 101.09,
+      "change_pct": -2.48,
       "symbol": "@CL.1 (from OIL/SAUDI/CHINA/FED)",
       "currency": "USD",
       "source": "CNBC",
-      "as_of": "2026-10-20T18:46:31+01:00"
+      "as_of": "2026-10-20T19:46:01+01:00"
     },
     "OIL/SPACEX/BAC/FED": {
-      "price": 103.13,
-      "change_pct": -0.51,
+      "price": 101.09,
+      "change_pct": -2.48,
       "symbol": "@CL.1 (from OIL/SPACEX/BAC/FED)",
       "currency": "USD",
       "source": "CNBC",
-      "as_of": "2026-10-20T18:46:31+01:00"
+      "as_of": "2026-10-20T19:46:01+01:00"
     },
     "OIL/WTI": {
-      "price": 103.13,
-      "change_pct": -0.51,
+      "price": 101.09,
+      "change_pct": -2.48,
       "symbol": "@CL.1 (from OIL/WTI)",
       "currency": "USD",
       "source": "CNBC",
-      "as_of": "2026-10-20T18:46:31+01:00"
+      "as_of": "2026-10-20T19:46:01+01:00"
     },
     "ONDO": {
-      "price": 0.45187,
-      "change_pct": 3.9044356044057107,
+      "price": 0.44726,
+      "change_pct": 2.844397433833841,
       "symbol": "ONDOUSD",
       "currency": "USD",
       "source": "Kraken",
-      "as_of": "2026-10-20T18:46:35+01:00"
+      "as_of": "2026-10-20T19:46:05+01:00"
     },
     "OP": {
-      "price": 0.1307,
-      "change_pct": 5.064308681672037,
+      "price": 0.1294,
+      "change_pct": 4.0192926045016,
       "symbol": "OPUSD",
       "currency": "USD",
       "source": "Kraken",
-      "as_of": "2026-10-20T18:46:38+01:00"
+      "as_of": "2026-10-20T19:46:08+01:00"
     },
     "PCVX": {
-      "price": 66.775,
-      "change_pct": 4.86,
+      "price": 66.79,
+      "change_pct": 4.88,
       "symbol": "PCVX",
       "currency": "USD",
       "source": "Nasdaq",
-      "as_of": "2026-10-20T18:46:39+01:00"
+      "as_of": "2026-10-20T19:46:08+01:00"
     },
     "PELOSI": {
       "price": null,
       "nonpriceable": true,
       "note": "multi-asset/context label, no price expected",
       "source": "multi-asset/context label, no price expected",
-      "as_of": "2026-10-20T18:46:43+01:00",
+      "as_of": "2026-10-20T19:46:13+01:00",
       "error": "no matching price: default: no nasdaq price (stocks: 'lastSalePrice'; binance: HTTP Error 451: ; alt: HTTP Error 400: Ba"
     },
     "PENGU": {
-      "price": 0.007988,
-      "change_pct": 5.675353882788736,
+      "price": 0.008046,
+      "change_pct": 6.442651144331256,
       "symbol": "PENGUUSD",
       "currency": "USD",
       "source": "Kraken",
-      "as_of": "2026-10-20T18:46:45+01:00"
+      "as_of": "2026-10-20T19:46:15+01:00"
     },
     "PHA": {
       "price": 0.05766,
@@ -778,55 +786,55 @@
       "symbol": "PHAUSD",
       "currency": "USD",
       "source": "Kraken",
-      "as_of": "2026-10-20T18:46:49+01:00"
+      "as_of": "2026-10-20T19:46:19+01:00"
     },
     "PLTR": {
-      "price": 195.375,
-      "change_pct": 0.63,
+      "price": 194.305,
+      "change_pct": 0.08,
       "symbol": "PLTR",
       "currency": "USD",
       "source": "Nasdaq",
-      "as_of": "2026-10-20T18:46:49+01:00"
+      "as_of": "2026-10-20T19:46:19+01:00"
     },
     "PLTR/OIL/BTC": {
-      "price": 195.375,
-      "change_pct": 0.63,
+      "price": 194.305,
+      "change_pct": 0.08,
       "symbol": "PLTR (from PLTR/OIL/BTC)",
       "currency": "USD",
       "source": "Nasdaq",
-      "as_of": "2026-10-20T18:46:49+01:00"
+      "as_of": "2026-10-20T19:46:19+01:00"
     },
     "PLUME": {
-      "price": 0.01842,
-      "change_pct": 5.017103762827816,
+      "price": 0.0181,
+      "change_pct": 3.1927023945268043,
       "symbol": "PLUMEUSD",
       "currency": "USD",
       "source": "Kraken",
-      "as_of": "2026-10-20T18:46:53+01:00"
+      "as_of": "2026-10-20T19:46:22+01:00"
     },
     "PONS": {
-      "price": 0.2804,
-      "change_pct": 1.59420289855071,
+      "price": 0.2755,
+      "change_pct": -0.18115942028985524,
       "symbol": "PONSUSD",
       "currency": "USD",
       "source": "Kraken",
-      "as_of": "2026-10-20T18:46:55+01:00"
+      "as_of": "2026-10-20T19:46:24+01:00"
     },
     "PRGO": {
-      "price": 16.145,
-      "change_pct": 0.34,
+      "price": 16.14,
+      "change_pct": 0.31,
       "symbol": "PRGO",
       "currency": "USD",
       "source": "Nasdaq",
-      "as_of": "2026-10-20T18:46:55+01:00"
+      "as_of": "2026-10-20T19:46:24+01:00"
     },
     "PUMP": {
-      "price": 0.004671,
-      "change_pct": 4.263392857142862,
+      "price": 0.004584,
+      "change_pct": 2.3214285714285894,
       "symbol": "PUMPUSD",
       "currency": "USD",
       "source": "Kraken",
-      "as_of": "2026-10-20T18:46:58+01:00"
+      "as_of": "2026-10-20T19:46:28+01:00"
     },
     "Q": {
       "price": 0.050954,
@@ -836,171 +844,171 @@
       "source": "Kraken",
       "as_of": "2026-10-14T20:54:09+01:00",
       "stale": true,
-      "error": "no matching price: default: HTTP Error 451: ; binance: HTTP Error 451: ; Kraken 0.125488 far from entry 0.033055; yahoo:"
+      "error": "no matching price: default: HTTP Error 451: ; binance: HTTP Error 451: ; Kraken 0.124047 far from entry 0.033055; yahoo:"
     },
     "QNT": {
-      "price": 197.08,
-      "change_pct": 1.331688004524656,
+      "price": 194.6,
+      "change_pct": 0.05655817779833679,
       "symbol": "QNTUSD",
       "currency": "USD",
       "source": "Kraken",
-      "as_of": "2026-10-20T18:47:05+01:00"
+      "as_of": "2026-10-20T19:46:34+01:00"
     },
     "QQQ": {
-      "price": 719.4227,
-      "change_pct": 0.15,
+      "price": 717.9,
+      "change_pct": -0.06,
       "symbol": "QQQ",
       "currency": "USD",
       "source": "Nasdaq",
-      "as_of": "2026-10-20T18:47:05+01:00"
+      "as_of": "2026-10-20T19:46:34+01:00"
     },
     "QQQ/SPY": {
-      "price": 719.4227,
-      "change_pct": 0.15,
+      "price": 717.9,
+      "change_pct": -0.06,
       "symbol": "QQQ (from QQQ/SPY)",
       "currency": "USD",
       "source": "Nasdaq",
-      "as_of": "2026-10-20T18:47:05+01:00"
+      "as_of": "2026-10-20T19:46:34+01:00"
     },
     "RSR": {
-      "price": 0.001921,
-      "change_pct": 3.8939967550027053,
+      "price": 0.001916,
+      "change_pct": 3.6235803136830724,
       "symbol": "RSRUSD",
       "currency": "USD",
       "source": "Kraken",
-      "as_of": "2026-10-20T18:47:09+01:00"
+      "as_of": "2026-10-20T19:46:38+01:00"
     },
     "S": {
-      "price": 0.0563,
-      "change_pct": -4.088586030664394,
+      "price": 0.0568,
+      "change_pct": -3.236797274275978,
       "symbol": "SUSD",
       "currency": "USD",
       "source": "Kraken",
-      "as_of": "2026-10-20T18:47:13+01:00"
+      "as_of": "2026-10-20T19:46:41+01:00"
     },
     "S&P 500/NASDAQ/USD": {
       "price": null,
       "nonpriceable": true,
       "note": "multi-asset/context label, no price expected",
       "source": "multi-asset/context label, no price expected",
-      "as_of": "2026-10-20T18:47:13+01:00"
+      "as_of": "2026-10-20T19:46:41+01:00"
     },
     "S&P 500/OIL": {
       "price": null,
       "nonpriceable": true,
       "note": "multi-asset/context label, no price expected",
       "source": "multi-asset/context label, no price expected",
-      "as_of": "2026-10-20T18:47:13+01:00"
+      "as_of": "2026-10-20T19:46:41+01:00"
     },
     "S&P 500/OIL/FED": {
       "price": null,
       "nonpriceable": true,
       "note": "multi-asset/context label, no price expected",
       "source": "multi-asset/context label, no price expected",
-      "as_of": "2026-10-20T18:47:13+01:00"
+      "as_of": "2026-10-20T19:46:41+01:00"
     },
     "SDOW": {
-      "price": 23.9,
-      "change_pct": -3.08,
+      "price": 24.0003,
+      "change_pct": -2.68,
       "symbol": "SDOW",
       "currency": "USD",
       "source": "Nasdaq",
-      "as_of": "2026-10-20T18:47:14+01:00"
+      "as_of": "2026-10-20T19:46:42+01:00"
     },
     "SECZ": {
-      "price": 9.55,
-      "change_pct": 1.92,
+      "price": 9.34,
+      "change_pct": -0.32,
       "symbol": "SECZ",
       "currency": "USD",
       "source": "Nasdaq",
-      "as_of": "2026-10-20T18:47:15+01:00"
+      "as_of": "2026-10-20T19:46:42+01:00"
     },
     "SEI": {
-      "price": 0.06172,
-      "change_pct": 2.016528925619833,
+      "price": 0.06106,
+      "change_pct": 0.925619834710752,
       "symbol": "SEIUSD",
       "currency": "USD",
       "source": "Kraken",
-      "as_of": "2026-10-20T18:47:18+01:00"
+      "as_of": "2026-10-20T19:46:45+01:00"
     },
     "SILVER": {
-      "price": 58.025,
-      "change_pct": 1.31,
+      "price": 57.985,
+      "change_pct": 1.24,
       "symbol": "@SI.1",
       "currency": "USD",
       "source": "CNBC",
-      "as_of": "2026-10-20T18:47:19+01:00"
+      "as_of": "2026-10-20T19:46:45+01:00"
     },
     "SKHY": {
-      "price": 140.42,
-      "change_pct": -1.71,
+      "price": 139.705,
+      "change_pct": -2.22,
       "symbol": "SKHY",
       "currency": "USD",
       "source": "Nasdaq",
-      "as_of": "2026-10-20T18:47:19+01:00"
+      "as_of": "2026-10-20T19:46:46+01:00"
     },
     "SKHYNIX/SEMIS": {
       "price": null,
       "nonpriceable": true,
       "note": "multi-asset/context label, no price expected",
       "source": "multi-asset/context label, no price expected",
-      "as_of": "2026-10-20T18:47:23+01:00",
+      "as_of": "2026-10-20T19:46:50+01:00",
       "error": "no matching price: default: no nasdaq price (stocks: 'lastSalePrice'; binance: HTTP Error 451: ; alt: HTTP Error 400: Ba"
     },
     "SLV": {
-      "price": 52.245,
-      "change_pct": 1.37,
+      "price": 52.17,
+      "change_pct": 1.22,
       "symbol": "SLV",
       "currency": "USD",
       "source": "Nasdaq",
-      "as_of": "2026-10-20T18:47:23+01:00"
+      "as_of": "2026-10-20T19:46:50+01:00"
     },
     "SMH": {
-      "price": 549.08,
-      "change_pct": 0.11,
+      "price": 547.945,
+      "change_pct": -0.09,
       "symbol": "SMH",
       "currency": "USD",
       "source": "Nasdaq",
-      "as_of": "2026-10-20T18:47:23+01:00"
+      "as_of": "2026-10-20T19:46:51+01:00"
     },
     "SNDK": {
-      "price": 1379.17,
-      "change_pct": 0.59,
+      "price": 1368.74,
+      "change_pct": -0.17,
       "symbol": "SNDK",
       "currency": "USD",
       "source": "Nasdaq",
-      "as_of": "2026-10-20T18:47:23+01:00"
+      "as_of": "2026-10-20T19:46:51+01:00"
     },
     "SOL": {
-      "price": 106.65,
-      "change_pct": 1.6198189614101979,
+      "price": 105.76,
+      "change_pct": 0.7717960933778011,
       "symbol": "SOLUSD",
       "currency": "USD",
       "source": "Kraken",
-      "as_of": "2026-10-20T18:47:27+01:00"
+      "as_of": "2026-10-20T19:46:54+01:00"
     },
     "SOXX": {
-      "price": 503.47,
-      "change_pct": 0.31,
+      "price": 502.485,
+      "change_pct": 0.11,
       "symbol": "SOXX",
       "currency": "USD",
       "source": "Nasdaq",
-      "as_of": "2026-10-20T18:47:27+01:00"
+      "as_of": "2026-10-20T19:46:55+01:00"
     },
     "SOXX/SMH": {
-      "price": 503.47,
-      "change_pct": 0.31,
+      "price": 502.485,
+      "change_pct": 0.11,
       "symbol": "SOXX (from SOXX/SMH)",
       "currency": "USD",
       "source": "Nasdaq",
-      "as_of": "2026-10-20T18:47:27+01:00"
+      "as_of": "2026-10-20T19:46:55+01:00"
     },
     "SPACEX": {
       "price": null,
       "nonpriceable": true,
       "note": "multi-asset/context label, no price expected",
       "source": "multi-asset/context label, no price expected",
-      "as_of": "2026-10-20T18:47:32+01:00",
+      "as_of": "2026-10-20T19:46:59+01:00",
       "error": "no matching price: default: no nasdaq price (stocks: 'lastSalePrice'; binance: HTTP Error 451: ; alt: HTTP Error 400: Ba"
     },
     "SPACEX/MSFT/OIL": {
@@ -1008,7 +1016,7 @@
       "nonpriceable": true,
       "note": "multi-asset/context label, no price expected",
       "source": "multi-asset/context label, no price expected",
-      "as_of": "2026-10-20T18:47:36+01:00",
+      "as_of": "2026-10-20T19:47:03+01:00",
       "error": "no matching price: default: no nasdaq price (stocks: 'lastSalePrice'; binance: HTTP Error 451: ; alt: HTTP Error 400: Ba"
     },
     "SPACEX/OIL/BTC/FED": {
@@ -1016,7 +1024,7 @@
       "nonpriceable": true,
       "note": "multi-asset/context label, no price expected",
       "source": "multi-asset/context label, no price expected",
-      "as_of": "2026-10-20T18:47:40+01:00",
+      "as_of": "2026-10-20T19:47:08+01:00",
       "error": "no matching price: default: no nasdaq price (stocks: 'lastSalePrice'; binance: HTTP Error 451: ; alt: HTTP Error 400: Ba"
     },
     "SPACEX/STARLINK": {
@@ -1024,7 +1032,7 @@
       "nonpriceable": true,
       "note": "multi-asset/context label, no price expected",
       "source": "multi-asset/context label, no price expected",
-      "as_of": "2026-10-20T18:47:44+01:00",
+      "as_of": "2026-10-20T19:47:12+01:00",
       "error": "no matching price: default: no nasdaq price (stocks: 'lastSalePrice'; binance: HTTP Error 451: ; alt: HTTP Error 400: Ba"
     },
     "SPACEX/STARLINK/NVDA/GOOGL": {
@@ -1032,140 +1040,140 @@
       "nonpriceable": true,
       "note": "multi-asset/context label, no price expected",
       "source": "multi-asset/context label, no price expected",
-      "as_of": "2026-10-20T18:47:49+01:00",
+      "as_of": "2026-10-20T19:47:16+01:00",
       "error": "no matching price: default: no nasdaq price (stocks: 'lastSalePrice'; binance: HTTP Error 451: ; alt: HTTP Error 400: Ba"
     },
     "SPCX": {
-      "price": 147.69,
-      "change_pct": -0.18,
+      "price": 147.16,
+      "change_pct": -0.54,
       "symbol": "SPCX",
       "currency": "USD",
       "source": "Nasdaq",
-      "as_of": "2026-10-20T18:47:49+01:00"
+      "as_of": "2026-10-20T19:47:16+01:00"
     },
     "SPX": {
-      "price": 7722.71,
-      "change_pct": 0.42,
+      "price": 7712.91,
+      "change_pct": 0.29,
       "symbol": ".SPX",
       "currency": "USD",
       "source": "CNBC",
-      "as_of": "2026-10-20T18:47:49+01:00"
+      "as_of": "2026-10-20T19:47:16+01:00"
     },
     "SPX/NDX/GM/RTX/CAD/WTI": {
-      "price": 7722.66,
-      "change_pct": 0.42,
+      "price": 7712.91,
+      "change_pct": 0.29,
       "symbol": ".SPX (from SPX/NDX/GM/RTX/CAD/WTI)",
       "currency": "USD",
       "source": "CNBC",
-      "as_of": "2026-10-20T18:47:49+01:00"
+      "as_of": "2026-10-20T19:47:17+01:00"
     },
     "SPY": {
-      "price": 769.7,
-      "change_pct": 0.42,
+      "price": 768.66,
+      "change_pct": 0.28,
       "symbol": "SPY",
       "currency": "USD",
       "source": "Nasdaq",
-      "as_of": "2026-10-20T18:47:49+01:00"
+      "as_of": "2026-10-20T19:47:17+01:00"
     },
     "SPY/NVDA/MSFT/AMZN/GOOGL": {
-      "price": 769.6725,
-      "change_pct": 0.42,
+      "price": 768.66,
+      "change_pct": 0.28,
       "symbol": "SPY (from SPY/NVDA/MSFT/AMZN/GOOGL)",
       "currency": "USD",
       "source": "Nasdaq",
-      "as_of": "2026-10-20T18:47:49+01:00"
+      "as_of": "2026-10-20T19:47:17+01:00"
     },
     "STBL": {
-      "price": 0.024681,
-      "change_pct": 0.36598755642309494,
+      "price": 0.024719,
+      "change_pct": 0.5205156358017288,
       "symbol": "STBLUSD",
       "currency": "USD",
       "source": "Kraken",
-      "as_of": "2026-10-20T18:47:53+01:00"
+      "as_of": "2026-10-20T19:47:20+01:00"
     },
     "STONK": {
       "price": null,
-      "error": "no matching price: default: no nasdaq price (stocks: 'lastSalePrice'; binance: HTTP Error 451: ; Gate.io 0.1201 far from"
+      "error": "no matching price: default: no nasdaq price (stocks: 'lastSalePrice'; binance: HTTP Error 451: ; Gate.io 0.1169 far from"
     },
     "STX": {
-      "price": 675.21,
-      "change_pct": 2.18,
+      "price": 675.565,
+      "change_pct": 2.23,
       "symbol": "STX",
       "currency": "USD",
       "source": "Nasdaq",
-      "as_of": "2026-10-20T18:47:55+01:00"
+      "as_of": "2026-10-20T19:47:24+01:00"
     },
     "SUI": {
-      "price": 1.022,
-      "change_pct": 2.3945496443242194,
+      "price": 1.0136,
+      "change_pct": 1.5529506061516951,
       "symbol": "SUIUSD",
       "currency": "USD",
       "source": "Kraken",
-      "as_of": "2026-10-20T18:47:58+01:00"
+      "as_of": "2026-10-20T19:47:27+01:00"
     },
     "SYK": {
-      "price": 304.67,
-      "change_pct": 2.26,
+      "price": 304.1475,
+      "change_pct": 2.08,
       "symbol": "SYK",
       "currency": "USD",
       "source": "Nasdaq",
-      "as_of": "2026-10-20T18:47:59+01:00"
+      "as_of": "2026-10-20T19:47:27+01:00"
     },
     "TAO": {
-      "price": 273.8056,
-      "change_pct": 2.253985788555187,
+      "price": 271.9195,
+      "change_pct": 1.5496128955398731,
       "symbol": "TAOUSD",
       "currency": "USD",
       "source": "Kraken",
-      "as_of": "2026-10-20T18:48:02+01:00"
+      "as_of": "2026-10-20T19:47:30+01:00"
     },
     "TLT": {
-      "price": 80.045,
-      "change_pct": 0.74,
+      "price": 80.065,
+      "change_pct": 0.76,
       "symbol": "TLT",
       "currency": "USD",
       "source": "Nasdaq",
-      "as_of": "2026-10-20T18:48:02+01:00"
+      "as_of": "2026-10-20T19:47:31+01:00"
     },
     "TSLA": {
-      "price": 374.5301,
-      "change_pct": 1.76,
+      "price": 375.67,
+      "change_pct": 2.07,
       "symbol": "TSLA",
       "currency": "USD",
       "source": "Nasdaq",
-      "as_of": "2026-10-20T18:48:02+01:00"
+      "as_of": "2026-10-20T19:47:31+01:00"
     },
     "TSLA/AAPL/MSFT": {
-      "price": 374.5301,
-      "change_pct": 1.76,
+      "price": 375.665,
+      "change_pct": 2.07,
       "symbol": "TSLA (from TSLA/AAPL/MSFT)",
       "currency": "USD",
       "source": "Nasdaq",
-      "as_of": "2026-10-20T18:48:02+01:00"
+      "as_of": "2026-10-20T19:47:31+01:00"
     },
     "TSLA/NVDA": {
-      "price": 374.5301,
-      "change_pct": 1.76,
+      "price": 375.67,
+      "change_pct": 2.07,
       "symbol": "TSLA (from TSLA/NVDA)",
       "currency": "USD",
       "source": "Nasdaq",
-      "as_of": "2026-10-20T18:48:02+01:00"
+      "as_of": "2026-10-20T19:47:31+01:00"
     },
     "TSLA/NVDA/PLTR/AMZN/SPY": {
-      "price": 374.5301,
-      "change_pct": 1.76,
+      "price": 375.665,
+      "change_pct": 2.07,
       "symbol": "TSLA (from TSLA/NVDA/PLTR/AMZN/SPY)",
       "currency": "USD",
       "source": "Nasdaq",
-      "as_of": "2026-10-20T18:48:02+01:00"
+      "as_of": "2026-10-20T19:47:31+01:00"
     },
     "TSLA/OIL/BTC": {
-      "price": 374.5301,
-      "change_pct": 1.76,
+      "price": 375.665,
+      "change_pct": 2.07,
       "symbol": "TSLA (from TSLA/OIL/BTC)",
       "currency": "USD",
       "source": "Nasdaq",
-      "as_of": "2026-10-20T18:48:02+01:00"
+      "as_of": "2026-10-20T19:47:31+01:00"
     },
     "TSM": {
       "price": 426.88,
@@ -1173,150 +1181,150 @@
       "symbol": "TSM",
       "currency": "USD",
       "source": "Nasdaq",
-      "as_of": "2026-10-20T18:48:02+01:00"
+      "as_of": "2026-10-20T19:47:31+01:00"
     },
     "TXG": {
-      "price": 72.28,
-      "change_pct": 3.42,
+      "price": 72.83,
+      "change_pct": 4.21,
       "symbol": "TXG",
       "currency": "USD",
       "source": "Nasdaq",
-      "as_of": "2026-10-20T18:48:03+01:00"
+      "as_of": "2026-10-20T19:47:31+01:00"
     },
     "UNI": {
-      "price": 7.4381,
-      "change_pct": 1.678673465203077,
+      "price": 7.36,
+      "change_pct": 0.6110480773174118,
       "symbol": "UNIUSD",
       "currency": "USD",
       "source": "Kraken",
-      "as_of": "2026-10-20T18:48:05+01:00"
+      "as_of": "2026-10-20T19:47:33+01:00"
     },
     "US HOUSING/MACRO": {
       "price": null,
       "nonpriceable": true,
       "note": "multi-asset/context label, no price expected",
       "source": "multi-asset/context label, no price expected",
-      "as_of": "2026-10-20T18:48:05+01:00"
+      "as_of": "2026-10-20T19:47:33+01:00"
     },
     "USD/SILVER/TSLA/SPX": {
-      "price": 79.62,
-      "change_pct": 0.28,
+      "price": 79.31,
+      "change_pct": -0.11,
       "symbol": "USD (from USD/SILVER/TSLA/SPX)",
       "currency": "USD",
       "source": "Nasdaq",
-      "as_of": "2026-10-20T18:48:05+01:00"
+      "as_of": "2026-10-20T19:47:33+01:00"
     },
     "VKTX": {
-      "price": 26.395,
-      "change_pct": 5.37,
+      "price": 26.68,
+      "change_pct": 6.51,
       "symbol": "VKTX",
       "currency": "USD",
       "source": "Nasdaq",
-      "as_of": "2026-10-20T18:48:05+01:00"
+      "as_of": "2026-10-20T19:47:33+01:00"
     },
     "VVV": {
-      "price": 25.565,
-      "change_pct": 5.79788114550571,
+      "price": 25.415,
+      "change_pct": 5.177122992881963,
       "symbol": "VVVUSD",
       "currency": "USD",
       "source": "Kraken",
-      "as_of": "2026-10-20T18:48:09+01:00"
+      "as_of": "2026-10-20T19:47:37+01:00"
     },
     "W": {
-      "price": 0.01332,
-      "change_pct": 1.138952164009118,
+      "price": 0.01331,
+      "change_pct": 1.063022019741847,
       "symbol": "WUSD",
       "currency": "USD",
       "source": "Kraken",
-      "as_of": "2026-10-20T18:48:12+01:00"
+      "as_of": "2026-10-20T19:47:40+01:00"
     },
     "WDC": {
-      "price": 362.8043,
-      "change_pct": 3.01,
+      "price": 364.03,
+      "change_pct": 3.36,
       "symbol": "WDC",
       "currency": "USD",
       "source": "Nasdaq",
-      "as_of": "2026-10-20T18:48:12+01:00"
+      "as_of": "2026-10-20T19:47:40+01:00"
     },
     "WLD": {
-      "price": 0.5785,
-      "change_pct": 8.33333333333333,
+      "price": 0.5821,
+      "change_pct": 9.007490636704105,
       "symbol": "WLDUSD",
       "currency": "USD",
       "source": "Kraken",
-      "as_of": "2026-10-20T18:48:14+01:00"
+      "as_of": "2026-10-20T19:47:42+01:00"
     },
     "WTI/TSLA/SPY/GOOG/MRNA": {
-      "price": 103.13,
-      "change_pct": -0.51,
+      "price": 101.09,
+      "change_pct": -2.48,
       "symbol": "@CL.1 (from WTI/TSLA/SPY/GOOG/MRNA)",
       "currency": "USD",
       "source": "CNBC",
-      "as_of": "2026-10-20T18:48:14+01:00"
+      "as_of": "2026-10-20T19:47:42+01:00"
     },
     "WTI/XAUUSD/SPX/EURUSD": {
-      "price": 103.13,
-      "change_pct": -0.51,
+      "price": 101.09,
+      "change_pct": -2.48,
       "symbol": "@CL.1 (from WTI/XAUUSD/SPX/EURUSD)",
       "currency": "USD",
       "source": "CNBC",
-      "as_of": "2026-10-20T18:48:14+01:00"
+      "as_of": "2026-10-20T19:47:42+01:00"
     },
     "XAUUSD": {
-      "price": 4141.9,
-      "change_pct": -0.44,
+      "price": 4141.4,
+      "change_pct": -0.45,
       "symbol": "@GC.1",
       "currency": "USD",
       "source": "CNBC",
-      "as_of": "2026-10-20T18:48:14+01:00"
+      "as_of": "2026-10-20T19:47:42+01:00"
     },
     "XMR": {
-      "price": 623.05,
-      "change_pct": 2.9222280956785944,
+      "price": 615.54,
+      "change_pct": 1.6816439804413819,
       "symbol": "XMRUSD",
       "currency": "USD",
       "source": "Kraken",
-      "as_of": "2026-10-20T18:48:14+01:00"
+      "as_of": "2026-10-20T19:47:42+01:00"
     },
     "XRP": {
-      "price": 1.32882,
-      "change_pct": 2.002717370445138,
+      "price": 1.32094,
+      "change_pct": 1.3978337798315892,
       "symbol": "XXRPZUSD",
       "currency": "USD",
       "source": "Kraken",
-      "as_of": "2026-10-20T18:48:17+01:00"
+      "as_of": "2026-10-20T19:47:46+01:00"
     },
     "XYZ": {
-      "price": 78.59,
-      "change_pct": 1.41,
+      "price": 78.45,
+      "change_pct": 1.23,
       "symbol": "XYZ",
       "currency": "USD",
       "source": "Nasdaq",
-      "as_of": "2026-10-20T18:48:18+01:00"
+      "as_of": "2026-10-20T19:47:46+01:00"
     },
     "ZEC": {
-      "price": 1216.54,
-      "change_pct": 5.547457921221591,
+      "price": 1204.55,
+      "change_pct": 4.507201110532713,
       "symbol": "XZECZUSD",
       "currency": "USD",
       "source": "Kraken",
-      "as_of": "2026-10-20T18:48:21+01:00"
+      "as_of": "2026-10-20T19:47:49+01:00"
     },
     "ZRO": {
-      "price": 1.984,
-      "change_pct": 3.765690376569041,
+      "price": 1.968,
+      "change_pct": 2.9288702928870323,
       "symbol": "ZROUSD",
       "currency": "USD",
       "source": "Kraken",
-      "as_of": "2026-10-20T18:48:25+01:00"
+      "as_of": "2026-10-20T19:47:52+01:00"
     },
     "ZS": {
-      "price": 214.51,
-      "change_pct": 0.93,
+      "price": 215.53,
+      "change_pct": 1.41,
       "symbol": "ZS",
       "currency": "USD",
       "source": "Nasdaq",
-      "as_of": "2026-10-20T18:48:25+01:00"
+      "as_of": "2026-10-20T19:47:53+01:00"
     }
   },
   "ok": [
@@ -1331,6 +1339,7 @@
     "AMD",
     "AMZN",
     "APE",
+    "APOG",
     "APP",
     "ASML/NVDA/SEMIS/OIL/FED",
     "ASTS",
