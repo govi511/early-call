@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T08:16:51+01:00",
+  "generated_at": "2026-10-20T09:12:03+01:00",
   "calls": [
     {
       "id": "1",
@@ -4441,6 +4441,8 @@
       "feed": "following",
       "baseline": 83964.01,
       "baseline_source": "Binance",
+      "locked_pct": -2.994,
+      "locked_at": "2026-10-20T08:49+01:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -4483,6 +4485,8 @@
       "feed": "famous",
       "baseline": 84058.02,
       "baseline_source": "Binance",
+      "locked_pct": -3.2992,
+      "locked_at": "2026-10-20T09:09+01:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -6902,6 +6906,26 @@
       "followers": null,
       "source": "X",
       "feed": "discovery",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "312",
+      "logged_at_lisbon": "2026-10-20 09:00",
+      "account": "@pedrosilva",
+      "post_url": "https://x.com/pedrosilva/status/2112453848514138498",
+      "asset": "BTC",
+      "direction": "long",
+      "entry": "80753-81180 (on 1H close inside)",
+      "stop": "80627 (1h close)",
+      "target": "83142",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "source following; conditional plan: expects one last fake push into 80,753-81,180 after stops cleared twice, buys on a 1H close inside the zone (no dip, no chase); target 83,142 = yesterday high; bearish OB 82,450; invalid on 1H close below 80,627; BTC ~81,428 OKX at scan (zone not yet reached; last 1H close 81,566.6); R:R ~5:1 from zone mid; pedrosilva has a losing/expired record and posts affiliate links; alerted as new BTC call (T212 CFD); not financial advice",
+      "after_the_fact": false,
+      "followers": null,
+      "source": "X",
+      "feed": "following",
       "copy_of": "",
       "spam_farm": false
     }
