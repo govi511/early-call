@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T02:14:05+01:00",
+  "generated_at": "2026-10-20T02:18:27+01:00",
   "calls": [
     {
       "id": "1",
@@ -6713,6 +6713,28 @@
       "followers": 8800,
       "source": "X",
       "feed": "discovery",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "304",
+      "logged_at_lisbon": "2026-10-20 02:18",
+      "account": "SEC/House Clerk/CBOE/Polymarket/@FirstSquawk/@DeItaone",
+      "post_url": "https://x.com/FirstSquawk/status/2112350364905426982",
+      "asset": "PLTR/OIL/BTC",
+      "direction": "context (quiet window, log only)",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "early-signal; type=context; window ~00:18-02:18 Lisbon. Filings: 1 new PLTR Form 4 (filed Oct 19) = director Alexander Moore sold ~16.0k sh on Oct 15 at ~$193-201 (~$3.2M), ~1.05M sh still held, routine-scale (https://www.sec.gov/Archives/edgar/data/1321655/000182395226000024/xslF345X06/wk-form4_1792454773.xml); no House PTRs; no Pelosi; 140 new CBOE rows are all expired Oct-19 0DTE SPY/NVDA/TSLA/AAPL strikes (end-of-day re-key), no live unusual flow. News: Trump says Iran lost its commanders after US strikes destroyed radars/air defenses (commentary on ongoing war, https://x.com/FirstSquawk/status/2112350364905426982); Trump says NATO allies refused to help in Iran war and US could be forced to leave Europe; Fed warns AI boom could worsen inflation; OpenAI seeks ~$30B at >$1.4T before Anthropic's Nov IPO (https://x.com/DeItaone/status/2112325583879258160); China LPR unchanged 3.00/3.50%; China drone export-control revisions eff Nov 18; 10y 5.14%, gold ~$4,130. Odds: Polymarket Anthropic biggest-2026-IPO 33% (-19pt in a week, https://x.com/unusual_whales/status/2112351844047753674); BTC>$82k Oct 20 26% (-12pt 1h) and >$80k 86% tracking BTC slide to ~81.3k (lagging price); BoC +25bp ~82.5% flat (already alerted #300); Tesla-SpaceX merger by Dec 31 17% flat; WTI hit $100 Oct 83%. Elon: USB-C/EU regulators quip only; Starlink Mobile 11M users via VEON (fluff); Ark: Tesla-SpaceX merger possible within 5 yrs (SawyerMerritt relay); Tesla/SpaceX/SEC/FCC/Fed quiet. No alerts. Public info; not financial advice",
+      "after_the_fact": false,
+      "followers": null,
+      "source": "X",
+      "feed": "discovery",
+      "baseline": 194.15,
+      "baseline_source": "Nasdaq daily (close)",
       "copy_of": "",
       "spam_farm": false
     }
