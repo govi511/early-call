@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T13:43:10+01:00",
+  "generated_at": "2026-10-20T14:20:04+01:00",
   "calls": [
     {
       "id": "1",
@@ -7020,6 +7020,28 @@
       "followers": null,
       "source": "X",
       "feed": "following",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "317",
+      "logged_at_lisbon": "2026-10-20 14:18",
+      "account": "SEC/House Clerk/CBOE/Polymarket/Kalshi/@FirstSquawk/@DeItaone/@LiveSquawk/@OptionsHawk",
+      "post_url": "https://x.com/FirstSquawk/status/2112525451222745517",
+      "asset": "WTI/XAUUSD/SPX/EURUSD",
+      "direction": "context (quiet window, log only)",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "early-signal; type=context; window ~12:18-14:18 Lisbon. Filings: fetch_filings new=0 (no new Form 4s, no House PTRs, no Pelosi, no new CBOE rows). News: Al-Araby Al-Jadeed reports Qatar/Pakistan compromise proposal with preliminary US and Iranian approval (secret IAEA site visits, partial response on frozen funds, resume talks) (https://x.com/FirstSquawk/status/2112525451222745517, https://x.com/DeItaone/status/2112533396404486282) = single-source report, oil-bearish/risk-on; market reaction muted: WTI front ~99.6 (from ~101 at 12:30 Lisbon, still +1% d/d), ES ~7727 flat, gold futures ~4136 (-0.6% d/d; supports open gold short #316). US Sept housing starts 1.221M vs 1.305M est (-5.2%), permits 1.400M vs 1.385M; Philly Fed non-mfg -22.6; Raiffeisen warns France fiscal woes could push EUR/USD below 1.10; Bessent sees no spillover from France protests; Amazon hiring 300k holiday; Burry says market in 'denial' stage. Odds: Polymarket US-Iran ceasefire through Oct 31 ~79.5% (+1pt 1h), end of Iranian blockade by Oct 31 ~9.5% (+1pt), Fed Oct hold ~86.5% flat, hike ~12.5% (-2pt); rest sports/esports; Kalshi no sharp market-relevant moves. X: OptionsHawk BRZE buyout win follow-up and KVYO Nov 17.5C sympathy note (after-the-fact, not logged as call); SpaceX Bandwagon-5 deployment (routine); Elon/Tesla/Starlink/SEC/FCC/Fed quiet. No alerts. Public info; not financial advice",
+      "after_the_fact": true,
+      "followers": null,
+      "source": "X",
+      "feed": "discovery",
+      "baseline": 3.85,
+      "baseline_source": "Nasdaq daily (close)",
       "copy_of": "",
       "spam_farm": false
     }

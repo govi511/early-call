@@ -1689,5 +1689,10 @@
     "source": "unavailable",
     "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-20 12:18"
+  },
+  "317|WTI/XAUUSD/SPX/EURUSD|2026-10-20 14:18": {
+    "price": 3.85,
+    "source": "Nasdaq daily (close)",
+    "at": "2026-10-20 14:18"
   }
 }
