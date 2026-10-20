@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T22:10:25+01:00",
+  "generated_at": "2026-10-20T22:18:02+01:00",
   "calls": [
     {
       "id": "1",
@@ -5341,6 +5341,8 @@
       "feed": "discovery",
       "baseline": 226.32,
       "baseline_source": "Nasdaq daily (close)",
+      "locked_pct": -4.0783,
+      "locked_at": "2026-10-20T22:14+01:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -5383,6 +5385,8 @@
       "feed": "discovery",
       "baseline": 226.32,
       "baseline_source": "Nasdaq daily (close)",
+      "locked_pct": -4.0783,
+      "locked_at": "2026-10-20T22:14+01:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -7914,6 +7918,28 @@
       "feed": "famous",
       "baseline": 82492.6,
       "baseline_source": "Kraken",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "357",
+      "logged_at_lisbon": "2026-10-20 22:17",
+      "account": "SEC/House Clerk/CBOE/Polymarket/@FirstSquawk/@LiveSquawk/@unusual_whales/@SpaceX/@elonmusk",
+      "post_url": "https://x.com/LiveSquawk/status/2112642341475438658",
+      "asset": "TSLA/NVDA/PLTR/SPCX/NFLX/SMCI/SPY/WTI",
+      "direction": "context (quiet window, log only)",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "early-signal; type=context; window ~20:14-22:17 Lisbon. Filings: fetch_filings new=25, all CBOE end-of-session unusual-volume rows (no new Form 4s, no House PTRs, no Pelosi). CBOE: TSLA Oct-23 365P 10.1k vs 3.2k OI at 8.08 (~$8M, pre-earnings hedge) plus Oct-26 410C, Oct-30 130P lottos; NVDA Oct-23 205C 4.3k vs 1.3k OI at 11.96 (~$5M) and Oct-26 215P/222.5C two-way; PLTR Oct-23 192.5P 8.0k vs 2.2k OI at 3.70 (~$3M); AMZN Oct-23 272.5P/Oct-26 270C; GOOGL Oct-21 330P cheap 1DTE; AAPL Oct-21 337.5C; SPY Oct-21..27 two-way short-dated lottos. Earnings-week pattern, not alerted. News: SpaceX Q3 beat (rev $14.58B vs $12.87B est, adj EBITDA $8.81B vs $6.59B; already alerted by X scan); on the call Musk said Starship Flight 15 next month with booster+ship catch attempt, weekly flights H1 2027, 100k Starlink sats in 3 yrs (https://x.com/FirstSquawk/status/2112647443993239819); WSJ: Musk ordered slowdown of military Starlink used by Ukraine (https://x.com/LiveSquawk/status/2112642341475438658) = political/contract headline risk for SPCX, logged not alerted; NFLX Q3 EPS beat but soft Q4 guide; SMCI prelim sales $18.5-19.5B vs $15.2B est; API crude -4.93M; Trump sued over 50% Canada tariffs (CNBC); OpenAI raising $30B at >$1.4T. Elon own posts/Tesla/SEC/FCC/Fed quiet; OptionsHawk nothing new. Odds: Polymarket top movers all football/NBA; Fed Oct hold ~86% flat, US-Iran ceasefire thru Oct 22 ~95% flat. Not alerted. Not financial advice.",
+      "after_the_fact": false,
+      "followers": null,
+      "source": "X",
+      "feed": "discovery",
+      "baseline": 368.06,
+      "baseline_source": "Nasdaq daily (close)",
       "copy_of": "",
       "spam_farm": false
     }
