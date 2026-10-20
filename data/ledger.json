@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T16:12:15+01:00",
+  "generated_at": "2026-10-20T16:23:39+01:00",
   "calls": [
     {
       "id": "1",
@@ -7374,6 +7374,28 @@
       "feed": "following",
       "baseline": 83116.4,
       "baseline_source": "Kraken",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "333",
+      "logged_at_lisbon": "2026-10-20 16:22",
+      "account": "SEC/House Clerk/CBOE/Polymarket/@SpaceX/@FCC/@elonmusk",
+      "post_url": "https://x.com/SpaceX/status/2112559638579499258",
+      "asset": "NVDA/SPY/TSLA/SPACEX/WTI",
+      "direction": "context (quiet window, log only)",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "early-signal; type=context; window ~14:18-16:22 Lisbon. Filings: fetch_filings new=31, all CBOE intraday unusual-volume rows (no new Form 4s, no House PTRs, no Pelosi). CBOE flow was mostly short-dated (Oct 21-26 expiry) on a broad rally day (QQQ ~+1.5%): NVDA Oct-21 215/217.5/220 calls (~$38M combined, 46k-73k vol vs 2k-12k OI), SPY Oct-21 765-772 calls and 760-772 puts (two-way 0DTE/1DTE), AMZN Oct-21 265C ~$6.9M, AAPL Oct-21 340P ~$7.2M and 342.5C ~$3.8M, TSLA Oct-23 372.5C ~$8.8M (6.2k vs OI 1.4k, into Oct 21 earnings), MSFT Oct-21 525-537.5 two-way, GOOGL Oct-21 340-347.5 two-way, SPY Oct-30 610P 16k (cheap tail hedge, $0.10); side unknown on tape, chasing/hedging, not alerted. X: SpaceX 'Watch live as SpaceX discusses our Q3 2026 earnings at 3:30pm CT today' = 21:30 Lisbon (https://x.com/SpaceX/status/2112559638579499258; scheduled, already in digest context, not alerted); SpaceX payload deployment complete (routine); FCC Chairman Carr quotes on digital divide/LEO satellites and internet prices down up to 14% (https://x.com/FCC/status/2112561707705106882, mildly Starlink-relevant, routine); Elon only reply chatter; Tesla/Starlink/SEC/Fed quiet. Odds: Polymarket Fed Oct hold ~87.5% (+1pt 1h), hike ~12.5%; US-Iran ceasefire through Oct 31 ~80.5% (+2pt 1h); US-Iran Hormuz agreement by Nov 30 ~31.5% (+5.5pt 1h) and by Oct 31 ~12.75% (+3pt) = modest drift on thin volume after the Qatar/Pakistan compromise report (#317), not sharp; BoC Oct 28 +25bp ~68% flat (continuation of alerted #300); WTI closes above $98 Oct 20 ~31.5%, WTI LOW $80 Oct ~6% (+2.6pt) = oil softening; BTC above 84k Oct 20 ~0.5%. No alerts. Public info; not financial advice",
+      "after_the_fact": false,
+      "followers": null,
+      "source": "X",
+      "feed": "discovery",
+      "baseline": 217.09,
+      "baseline_source": "Nasdaq daily (close)",
       "copy_of": "",
       "spam_farm": false
     }
