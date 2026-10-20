@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T22:45:43+01:00",
+  "generated_at": "2026-10-21T00:19:11+01:00",
   "calls": [
     {
       "id": "1",
@@ -7943,6 +7943,28 @@
       "source": "X",
       "feed": "discovery",
       "baseline": 368.06,
+      "baseline_source": "Nasdaq daily (close)",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "358",
+      "logged_at_lisbon": "2026-10-21 00:20",
+      "account": "SEC/House Clerk/CBOE/Polymarket/@elonmusk/@unusual_whales/@LiveSquawk/@FirstSquawk/@OptionsHawk",
+      "post_url": "https://x.com/elonmusk/status/2112666467712073815",
+      "asset": "SPCX/TSLA/WTI/SPY",
+      "direction": "context (quiet window, log only)",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "early-signal; type=context; window ~22:17-00:18 Lisbon. Filings: fetch_filings new=0 (no Form 4s, no House PTRs, no Pelosi, no CBOE rows). News: Musk on SpaceX Q3 call/X: Tesla-SpaceX merger 'good idea', special committees formed (already alerted by X scan 23:15), $1T SpaceX revenue in 2028 'no longer impossible' (https://x.com/elonmusk/status/2112666467712073815), ARR $500B-$1T by end-2027 per unusual_whales; WSJ: Larry Ellison pledged Tesla/SpaceX/Paramount shares to borrow more (https://x.com/LiveSquawk/status/2112682133042983326) = minor overhang; Iran FM says no new clauses, talks via Pakistan/Qatar continue; Iran tells Pakistan no talks until demands met; Axios: Witkoff to present Putin peace proposal; Citadel Griffin AI 'almost certainly' bubble; RBA Hauser hawkish-ish. OptionsHawk: SPCX +15 off July AVWAP, URBN comment, no trade. Tesla/SpaceX/SEC/FCC/Fed accounts quiet. Odds: Polymarket Fed Oct hold ~86% flat, US-Iran ceasefire thru Oct 22 ~95% (+3pt), thru Oct 31 ~81% (+3pt), Iran blockade end by Oct 31 ~8%; no sharp market-relevant moves. Not alerted. Not financial advice.",
+      "after_the_fact": false,
+      "followers": null,
+      "source": "X",
+      "feed": "discovery",
+      "baseline": 147.96,
       "baseline_source": "Nasdaq daily (close)",
       "copy_of": "",
       "spam_farm": false
