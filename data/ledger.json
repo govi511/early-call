@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T10:18:52+01:00",
+  "generated_at": "2026-10-20T12:18:06+01:00",
   "calls": [
     {
       "id": "1",
@@ -6974,6 +6974,26 @@
       "feed": "discovery",
       "baseline": 217.09,
       "baseline_source": "Nasdaq daily (close)",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "315",
+      "logged_at_lisbon": "2026-10-20 12:18",
+      "account": "SEC/House Clerk/CBOE/Polymarket/Kalshi/@DeItaone/@FirstSquawk/@SpaceX",
+      "post_url": "https://x.com/DeItaone/status/2112496993838748084",
+      "asset": "SPX/NDX/GM/RTX/CAD/WTI",
+      "direction": "context (quiet window, log only)",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "early-signal; type=context; window ~10:20-12:18 Lisbon. Filings: fetch_filings new=0 (no new Form 4s, no House PTRs, no Pelosi, no new CBOE rows). Odds: Polymarket BoC Oct 28 +25bp hike ~54% (+9pt 1h rebound after dipping to ~45%; was 61% at 10:20, peak ~85% overnight) = thin-liquidity whipsaw, continuation of already-alerted #300, not re-alerted; Fed Oct hold ~86% flat; WTI hit $105 Oct ~57% (+0.5pt 1h), $110 ~24%; US-Iran ceasefire through midterms ~76% flat; rest sports/esports; Kalshi no sharp market-relevant moves. News: Goldman risk-appetite indicator negative for first time since April, investors selling AI stocks (https://x.com/DeItaone/status/2112496993838748084); GM Q3 beat (rev $50.02B vs $48.53B est, adj EPS $3.70 vs $3.56) + new $20B buyback (https://x.com/FirstSquawk/status/2112492283484668087); RTX Q3 big beat (adj EPS $2.26 vs $1.79) and raised FY guide; Hasbro beat and raise; Halliburton slight beat; Qualcomm global job cuts (Reuters); US SPR lowest since 1982 (oil bid); UKMTO tanker incident ~121nm east of Duqm, Oman (Oct 19); Trump open to Xi/Putin three-way summit next month; Kalshi: 5% odds of congressional stock-trading ban before Jan 2027. SpaceX: Falcon 9 Bandwagon-5 rideshare launched and landed (routine, https://x.com/SpaceX/status/2112500266289213814). Elon: no posts this window. Tesla/Starlink/SEC/FCC/Fed/OptionsHawk/QuiverQuant quiet. No alerts. Public info; not financial advice",
+      "after_the_fact": false,
+      "followers": null,
+      "source": "X",
+      "feed": "discovery",
       "copy_of": "",
       "spam_farm": false
     }
