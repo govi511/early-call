@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T01:46:20+01:00",
+  "generated_at": "2026-10-20T02:14:05+01:00",
   "calls": [
     {
       "id": "1",
@@ -3956,6 +3956,8 @@
       "feed": "discovery",
       "baseline": 81442.57,
       "baseline_source": "Binance",
+      "locked_pct": -0.229,
+      "locked_at": "2026-10-20T02:00+01:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -3998,6 +4000,8 @@
       "feed": "famous",
       "baseline": 0.2015,
       "baseline_source": "Binance",
+      "locked_pct": 6.5012,
+      "locked_at": "2026-10-20T02:00+01:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -4040,6 +4044,8 @@
       "feed": "famous",
       "baseline": 0.004875,
       "baseline_source": "Binance",
+      "locked_pct": 9.0667,
+      "locked_at": "2026-10-20T02:00+01:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -6687,6 +6693,26 @@
       "feed": "discovery",
       "baseline": 343.46,
       "baseline_source": "Nasdaq daily (close)",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "303",
+      "logged_at_lisbon": "2026-10-20 02:14",
+      "account": "@CryptoHuTrading",
+      "post_url": "https://x.com/CryptoHuTrading/status/2112348324963774493",
+      "asset": "BTC",
+      "direction": "long",
+      "entry": "81556",
+      "stop": "81382",
+      "target": "83158",
+      "status": "stopped",
+      "resolved_at": "2026-10-20 02:09",
+      "notes": "source discovery; 8.8k followers, account since Mar 2023, no Telegram/VIP/referral in post; \"Trade #372 - $BTC Long (9.21R) Entry 81556 SL 81382 TP 83158\" (trapped shorts below 81.5k, PWPOC bounce, target 83k), posted 02:01 Lisbon; OKX 1m: entry filled 02:07 (low 81,501), stopped 02:09 (low 81,254); BTC ~81,280 at log time; discovery source so not alerted; not financial advice",
+      "after_the_fact": false,
+      "followers": 8800,
+      "source": "X",
+      "feed": "discovery",
       "copy_of": "",
       "spam_farm": false
     }
