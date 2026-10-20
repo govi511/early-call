@@ -1620,5 +1620,10 @@
     "source": "unavailable",
     "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: URL can't contain control characters. '/api/quote/CAD (USD/historical?assetclass=stocks&fromdate=2026-10-13&todate=2026-10-19&limit=10' (found at least ' '), etf: URL can't contain control characters. '/api/quote/CAD (USD/historical?assetclass=etf&fromdate=2026-10-13&todate=2026-10-19&limit=10' (found at least ' '",
     "at": "2026-10-19 22:20"
+  },
+  "307|USD/SILVER/TSLA/SPX|2026-10-20 06:19": {
+    "price": 79.4,
+    "source": "Nasdaq daily (close)",
+    "at": "2026-10-20 06:19"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T05:16:26+01:00",
+  "generated_at": "2026-10-20T06:18:33+01:00",
   "calls": [
     {
       "id": "1",
@@ -6790,6 +6790,28 @@
       "feed": "famous",
       "baseline": 0.3678,
       "baseline_source": "Kraken",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "307",
+      "logged_at_lisbon": "2026-10-20 06:19",
+      "account": "SEC/House Clerk/CBOE/Polymarket/Kalshi/@FirstSquawk/@LiveSquawk/@KobeissiLetter/@elonmusk",
+      "post_url": "https://x.com/FirstSquawk/status/2112405514978226591",
+      "asset": "USD/SILVER/TSLA/SPX",
+      "direction": "context (quiet window, log only)",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "early-signal; type=context; window ~04:22-06:17 Lisbon. Filings: fetch_filings new=0 (no new Form 4s, no House PTRs, no Pelosi, no new CBOE rows). Odds: no market-relevant Polymarket move >=5pt in 1h (only Elon tweet-count bins and tennis); BTC>$84k Oct 20 ~4% (lagging price); Kalshi no sharp moves (weather only). News: US dollar index slips below 102 as markets reassess Fed path (https://x.com/FirstSquawk/status/2112405514978226591); silver ~$57.50; ABB Q3 orders beat $12.06B vs $11.43B est + 51% stake in Mitsubishi Electric LV unit; Trump open to trilateral nuclear talks with China/Russia (Kyodo); Japan asked US to push China on rare-earth curbs (FT); US warns on Chinese patrols near Taiwan; Trump $8B farmer relief; Kobeissi: 10 of 11 S&P sectors see slower Q3 YoY EPS growth; Gerber calls Tesla Roadster unveil a marketing demo (TSLA sentiment). Elon: Grok promo, X Android app rewrite, quips (not market-moving). OptionsHawk quiet; Tesla/SpaceX/Starlink/SEC/FCC/Fed quiet. No alerts. Public info; not financial advice",
+      "after_the_fact": false,
+      "followers": null,
+      "source": "X",
+      "feed": "discovery",
+      "baseline": 79.4,
+      "baseline_source": "Nasdaq daily (close)",
       "copy_of": "",
       "spam_farm": false
     }
