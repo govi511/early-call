@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T13:33:02+01:00",
+  "generated_at": "2026-10-20T13:33:19+01:00",
   "calls": [
     {
       "id": "1",
@@ -4906,7 +4906,7 @@
       "entry": "345.95",
       "stop": "338",
       "target": "355/360",
-      "status": "stopped_out",
+      "status": "stopped",
       "resolved_at": "2026-10-20 13:32",
       "notes": "source following+watchlist; role call; priority OptionsHawk; Apple $AAPL 10,000 January $340 short puts open 12.60 to 12.30 — bullish underlying tilt (short puts); no stock SL/TP given; AAPL ~345.95 at scan; map as T212 CFD stock Buy; put strike ~340 as soft support/SL hint; alerted; not financial advice; RESOLVED 2026-10-20 13:32 Lisbon: SL 338 hit in pre-market (AAPL extended low 337.36, trading ~337.4 since 13:10 Lisbon); -2.3% from 345.95; alerted",
       "after_the_fact": false,
