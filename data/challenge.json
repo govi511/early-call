@@ -50,11 +50,11 @@
       "venue": "Trading 212 CFD",
       "notes": "Call #2. Trigger: 06:00 Lisbon 1h candle (OKX) closed 81,718 below 81,900 after rejection at 82,269. SL above 06:00 candle high 82,119; TP 81,050 below 24h low 81,200 (long liquidity, OKX L/S 1.74). EURUSD 1.1225. Assumed filled at proposal price ~81,715.",
       "last_check_max_high": 81880.0,
-      "last_check_min_low": 81605.4
+      "last_check_min_low": 81380.0
     }
   ],
-  "last_check_at": "2026-10-20T08:27+01:00",
-  "last_check_btc": 81638,
+  "last_check_at": "2026-10-20T09:24+01:00",
+  "last_check_btc": 81448,
   "last_proposal_at": "2026-10-20T07:18+01:00",
   "last_alert_trade_id": 2,
   "last_resolution_alerted_id": 1,
@@ -66,5 +66,5 @@
     "decision": "proposed_short",
     "reason": "06:00 1h candle closed 81,718 (<81,900). Tightened SL to 82,200 (above that candle's high) and TP 81,050 for ~1.4R instead of the earlier 82,450/81,250 plan. L/S 1.74 crowded longs, funding +0.009%."
   },
-  "last_check_note": "08:27 Oct 20: call #2 still open. OKX 1m since 06:18 UTC: max high 81,880 (< SL 82,200), min low 81,605.4 (> TP 81,050). BTC ~81,638. No message."
+  "last_check_note": "09:24 Oct 20: call #2 still open. OKX 1m since 06:18 UTC: max high 81,880 (< SL 82,200), min low 81,380 (> TP 81,050). BTC ~81,448 (Binance 451). No message."
 }

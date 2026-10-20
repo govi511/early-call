@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T09:12:03+01:00",
+  "generated_at": "2026-10-20T09:43:41+01:00",
   "calls": [
     {
       "id": "1",
@@ -4509,6 +4509,8 @@
       "feed": "discovery",
       "baseline": 84125.01,
       "baseline_source": "Binance",
+      "locked_pct": -3.3081,
+      "locked_at": "2026-10-20T09:14+01:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -4531,6 +4533,8 @@
       "feed": "famous",
       "baseline": 1227.4,
       "baseline_source": "Binance",
+      "locked_pct": 8.0585,
+      "locked_at": "2026-10-20T09:19+01:00",
       "copy_of": "",
       "spam_farm": false
     },
