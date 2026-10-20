@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T09:43:41+01:00",
+  "generated_at": "2026-10-20T10:13:07+01:00",
   "calls": [
     {
       "id": "1",
@@ -6930,6 +6930,28 @@
       "followers": null,
       "source": "X",
       "feed": "following",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "313",
+      "logged_at_lisbon": "2026-10-20 09:13",
+      "account": "@CryptoTony__",
+      "post_url": "https://x.com/CryptoTony__/status/2112457038798197163",
+      "asset": "ADA",
+      "direction": "short",
+      "entry": "",
+      "stop": "",
+      "target": "0.19",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "source following+watchlist; role call; \"$ADA - Update: $0.19c is on the way after rejecting that key level above\" = bearish ADA, target 0.19; no entry given (scored from price at post time, ADA ~0.216 OKX 1H at post, ~0.2152 at scan, 24h high 0.2212); no stop given (suggested T212 SL 0.2230 above 24h high); follow-up post 2112468111706501260 says don't be heavy in alts until BTC stabilises; ADA is a T212 CFD so alerted; supersedes his Oct 6 ADA long #154 bias; not financial advice",
+      "after_the_fact": false,
+      "followers": null,
+      "source": "X",
+      "feed": "following",
+      "baseline": 0.215681,
+      "baseline_source": "Kraken",
       "copy_of": "",
       "spam_farm": false
     }

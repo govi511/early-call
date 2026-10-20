@@ -1664,5 +1664,10 @@
     "source": "unavailable",
     "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-20 08:17"
+  },
+  "313|ADA|2026-10-20 09:13": {
+    "price": 0.215681,
+    "source": "Kraken",
+    "at": "2026-10-20 09:13"
   }
 }
