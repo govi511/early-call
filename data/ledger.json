@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T22:18:02+01:00",
+  "generated_at": "2026-10-20T22:45:43+01:00",
   "calls": [
     {
       "id": "1",
@@ -5529,6 +5529,8 @@
       "feed": "famous",
       "baseline": 746.04,
       "baseline_source": "Nasdaq daily (close)",
+      "locked_pct": -3.7103,
+      "locked_at": "2026-10-20T22:22+01:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -5551,6 +5553,8 @@
       "feed": "famous",
       "baseline": 162.23,
       "baseline_source": "Nasdaq daily (close)",
+      "locked_pct": -11.9337,
+      "locked_at": "2026-10-20T22:29+01:00",
       "copy_of": "",
       "spam_farm": false
     },
