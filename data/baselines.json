@@ -1400,6 +1400,11 @@
     "source": "not a tradable asset",
     "at": "2026-10-20 04:22"
   },
+  "306|CRV|2026-10-20 04:38": {
+    "price": 0.3678,
+    "source": "Kraken",
+    "at": "2026-10-20 04:38"
+  },
   "168|SPACEX|2026-10-13 00:16": {
     "price": null,
     "source": "unavailable",
@@ -1615,10 +1620,5 @@
     "source": "unavailable",
     "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: URL can't contain control characters. '/api/quote/CAD (USD/historical?assetclass=stocks&fromdate=2026-10-13&todate=2026-10-19&limit=10' (found at least ' '), etf: URL can't contain control characters. '/api/quote/CAD (USD/historical?assetclass=etf&fromdate=2026-10-13&todate=2026-10-19&limit=10' (found at least ' '",
     "at": "2026-10-19 22:20"
-  },
-  "306|CRV|2026-10-20 04:38": {
-    "price": 0.3678,
-    "source": "Kraken",
-    "at": "2026-10-20 04:38"
   }
 }
