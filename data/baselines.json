@@ -1189,7 +1189,10 @@
   "226|NVDA/AAPL/SPY|2026-10-13 18:36": {
     "price": 226.32,
     "source": "Nasdaq daily (close)",
-    "at": "2026-10-13 18:36"
+    "at": "2026-10-13 18:36",
+    "locked_pct": -4.0783,
+    "locked_price": 217.09,
+    "locked_at": "2026-10-20T18:36+01:00"
   },
   "230|LTC|2026-10-13 20:25": {
     "price": 61.9,
@@ -1566,6 +1569,11 @@
     "source": "Nasdaq daily (close)",
     "at": "2026-10-20 17:56"
   },
+  "342|WTI/TSLA/SPY/GOOG/MRNA|2026-10-20 18:22": {
+    "price": 3.85,
+    "source": "Nasdaq daily (close)",
+    "at": "2026-10-20 18:22"
+  },
   "168|SPACEX|2026-10-13 00:16": {
     "price": null,
     "source": "unavailable",
@@ -1689,7 +1697,7 @@
   "228|SPACEX/STARLINK/NVDA/GOOGL|2026-10-13 18:36": {
     "price": null,
     "source": "unavailable",
-    "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
+    "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1029)>)",
     "at": "2026-10-13 18:36"
   },
   "234|OIL/S&P 500/BTC|2026-10-13 20:27": {
@@ -1811,10 +1819,5 @@
     "source": "unavailable",
     "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-20 16:44"
-  },
-  "342|WTI/TSLA/SPY/GOOG/MRNA|2026-10-20 18:22": {
-    "price": 3.85,
-    "source": "Nasdaq daily (close)",
-    "at": "2026-10-20 18:22"
   }
 }
