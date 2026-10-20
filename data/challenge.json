@@ -35,24 +35,20 @@
    "sl_hit_candle_high": 83819.61
   }
  ],
- "last_check_at": "2026-10-20T01:19+01:00",
- "last_check_btc": 81615,
+ "last_check_at": "2026-10-20T02:21+01:00",
+ "last_check_btc": 81427,
  "last_proposal_at": null,
  "last_alert_trade_id": null,
  "last_resolution_alerted_id": 1,
  "open_trade_id": null,
  "last_setup_eval": {
-  "at": "2026-10-20T01:19+01:00",
-  "source": "OKX BTC-USDT 5m/1h/4h candles + OKX swap funding/LSR (Binance geo-blocked)",
-  "btc": 81615,
-  "funding_pct": 0.009,
-  "lsr_okx_1h": 1.72,
-  "range_last_10h": [
-   81743,
-   82560
-  ],
+  "at": "2026-10-20T02:21+01:00",
+  "source": "OKX BTC-USDT 5m/1h candles + OKX swap funding/LSR (Binance geo-blocked)",
+  "btc": 81427,
+  "funding_pct": 0.0098,
+  "lsr_okx_1h": 1.76,
   "decision": "no_proposal",
-  "reason": "Fresh 5m flush to 81,584 just below 81.74k range low on thin 1am liquidity; 1h candle not closed. Longs crowded (LSR 1.72, funding +0.009%, negative premium) favors downside toward 80.7-80.8k 4h lows, but not clean until a 1h close below ~81.74k. Watch next run: if 01:00 Lisbon 1h candle closes <81.7k and no reclaim, consider SHORT setup (SL above ~82.05k, TP ~80.85k, risk ~EUR2-3)."
+  "reason": "01:00 1h closed 81,732 (not strictly <81.7k). 02:00 candle then flushed to 81,200 and bounced to ~81,430. Planned short at ~81.6k already ran ~400 pts; shorting here after a flush gives poor R:R vs SL 82,050 (chasing). Longs still crowded (LSR 1.76 rising, funding +0.0098%). Next run: consider SHORT only on a rejected retest of 81.6-81.75k (SL ~82,050, TP ~80,750, risk EUR2-3), or on a 1h close below 81,200 with tight SL above 81,500; drop short idea if 1h closes back above 81.8k."
  },
- "last_check_note": "01:19 Oct 20 check: no open trade, balance 97.75; BTC ~81.62k broke below 81.74k range low on a 5m wick; unconfirmed, no proposal; silent. Next run: check 1h close for breakdown short."
+ "last_check_note": "02:21 Oct 20 check: no open trade, balance 97.75; BTC ~81.43k after flush to 81.2k; planned short entry missed, not chasing; no proposal; silent."
 }
