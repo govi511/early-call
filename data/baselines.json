@@ -1448,6 +1448,11 @@
     "source": "Kraken",
     "at": "2026-10-20 09:13"
   },
+  "314|NVDA/WTI/TSLA/SPY/EUR|2026-10-20 10:20": {
+    "price": 217.09,
+    "source": "Nasdaq daily (close)",
+    "at": "2026-10-20 10:20"
+  },
   "168|SPACEX|2026-10-13 00:16": {
     "price": null,
     "source": "unavailable",
@@ -1669,10 +1674,5 @@
     "source": "unavailable",
     "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-20 08:17"
-  },
-  "314|NVDA/WTI/TSLA/SPY/EUR|2026-10-20 10:20": {
-    "price": 217.09,
-    "source": "Nasdaq daily (close)",
-    "at": "2026-10-20 10:20"
   }
 }
