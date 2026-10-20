@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T21:42:48+01:00",
+  "generated_at": "2026-10-20T22:10:25+01:00",
   "calls": [
     {
       "id": "1",
@@ -5569,6 +5569,8 @@
       "feed": "famous",
       "baseline": 753.25,
       "baseline_source": "Nasdaq daily (close)",
+      "locked_pct": -12.2722,
+      "locked_at": "2026-10-20T21:56+01:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -7870,6 +7872,48 @@
       "feed": "following",
       "baseline": 226.89,
       "baseline_source": "Nasdaq daily (close)",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "355",
+      "logged_at_lisbon": "2026-10-20 22:04",
+      "account": "@Mr_Derivatives",
+      "post_url": "https://x.com/Mr_Derivatives/status/2112651138323603494",
+      "asset": "KOSPI",
+      "direction": "long",
+      "entry": "",
+      "stop": "",
+      "target": "+3% to +5% (session)",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "source watchlist; role call; \"I'm gonna predict a KOSPI +3% to +5% today given how all these AI names are semi pumping in after hrs\" = bullish Korea index day call, no levels (scored from price at post time); KOSPI not in confirmed T212 CFD indices, not alerted; not financial advice",
+      "after_the_fact": false,
+      "followers": null,
+      "source": "X",
+      "feed": "famous",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "356",
+      "logged_at_lisbon": "2026-10-20 21:23",
+      "account": "@AltcoinSherpa",
+      "post_url": "https://x.com/AltcoinSherpa/status/2112640918444536258",
+      "asset": "BTC",
+      "direction": "short-term bearish (expects red day)",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "source watchlist; role call; \"btc is still super choppy and I'm expecting a red day very soon ... mostly be day trading\" = vague bearish lean, no levels (scored from price at post time, BTC ~82,700 OKX); not a concrete setup, not alerted; not financial advice",
+      "after_the_fact": false,
+      "followers": null,
+      "source": "X",
+      "feed": "famous",
+      "baseline": 82492.6,
+      "baseline_source": "Kraken",
       "copy_of": "",
       "spam_farm": false
     }
