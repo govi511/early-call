@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T12:42:09+01:00",
+  "generated_at": "2026-10-20T13:14:24+01:00",
   "calls": [
     {
       "id": "1",
@@ -4681,6 +4681,8 @@
       "feed": "famous",
       "baseline": 340.97,
       "baseline_source": "Nasdaq daily (close)",
+      "locked_pct": 0.5778,
+      "locked_at": "2026-10-20T12:59+01:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -6996,6 +6998,26 @@
       "followers": null,
       "source": "X",
       "feed": "discovery",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "316",
+      "logged_at_lisbon": "2026-10-20 12:10",
+      "account": "@pedrosilva",
+      "post_url": "https://x.com/pedrosilva/status/2112501680746971311",
+      "asset": "XAUUSD",
+      "direction": "short",
+      "entry": "4157-4168 (on bounce)",
+      "stop": "",
+      "target": "4118",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "source following; conditional plan: gold broke yesterday's high, failed and closed back at 4139, expects a bounce into 4157-4168 first and wants to short there, target equal lows ~4118; no stop given (suggested SL 4180 above today's futures high 4166.5); levels match gold futures pricing (GC ~4139 at scan, spot XAU ~4115, ~$24 lower); zone not reached at scan; pedrosilva has a losing/expired record and posts affiliate links; alerted as new Gold call (T212 CFD); not financial advice",
+      "after_the_fact": false,
+      "followers": null,
+      "source": "X",
+      "feed": "following",
       "copy_of": "",
       "spam_farm": false
     }
