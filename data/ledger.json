@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T10:13:07+01:00",
+  "generated_at": "2026-10-20T10:18:52+01:00",
   "calls": [
     {
       "id": "1",
@@ -6952,6 +6952,28 @@
       "feed": "following",
       "baseline": 0.215681,
       "baseline_source": "Kraken",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "314",
+      "logged_at_lisbon": "2026-10-20 10:20",
+      "account": "SEC/House Clerk/CBOE/Polymarket/Kalshi/@FirstSquawk/@LiveSquawk/@elonmusk",
+      "post_url": "https://x.com/LiveSquawk/status/2112469992956473669",
+      "asset": "NVDA/WTI/TSLA/SPY/EUR",
+      "direction": "context (quiet window, log only)",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "early-signal; type=context; window ~08:17-10:20 Lisbon. Filings: fetch_filings new=3, all CBOE rows re-keyed from the Oct 19 session (US pre-market): TSLA Oct-23 $360C 9,283 vs OI 2,932 (~$15.2M, ITM pre-earnings, part of two-way flow in #294), SPY Oct-21 $765C 2,864 vs OI 862 and Oct-22 $766P 2,678 vs OI 871 (two-way); no new Form 4s, no House PTRs, no Pelosi. Odds: Polymarket WTI hit $105 in October +9pt in 1h to ~53% (lagging WTI Dec ~100.58, +2.1%, crossing $100), BoC Oct hike ~61% (-1pt 1h, +26pt 1d, continuation of #300), S&P up Oct 20 -11pt to 45%; rest sports/esports; Kalshi no sharp moves. News: Reuters via LiveSquawk: ByteDance/Alibaba/Tencent ordered >3M Nvidia RTX Pro 5500 cards (~85k yuan each), Nvidia can't guarantee filling China orders (NVDA-positive); Germany ZEW expectations 28.1 vs 30.0 est (current -35.9 vs -44.5 est); Amazon plans EUR 16B Germany investment in 2027 (https://x.com/FirstSquawk/status/2112471769437352130); Iran says US 'excessive demands' hinder talks, Egypt-Saudi vs Houthi escalation (oil bid); Merz plans to quadruple German AI compute by 2030. Elon: no posts since ~08:15 Lisbon. Tesla/SpaceX/Starlink/SEC/FCC/Fed/OptionsHawk/unusual_whales quiet. No alerts. Public info; not financial advice",
+      "after_the_fact": false,
+      "followers": null,
+      "source": "X",
+      "feed": "discovery",
+      "baseline": 217.09,
+      "baseline_source": "Nasdaq daily (close)",
       "copy_of": "",
       "spam_farm": false
     }
