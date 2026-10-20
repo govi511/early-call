@@ -1462,6 +1462,11 @@
     "source": "Nasdaq daily (close)",
     "at": "2026-10-20 10:20"
   },
+  "317|WTI/XAUUSD/SPX/EURUSD|2026-10-20 14:18": {
+    "price": 3.85,
+    "source": "Nasdaq daily (close)",
+    "at": "2026-10-20 14:18"
+  },
   "168|SPACEX|2026-10-13 00:16": {
     "price": null,
     "source": "unavailable",
@@ -1690,9 +1695,19 @@
     "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-20 12:18"
   },
-  "317|WTI/XAUUSD/SPX/EURUSD|2026-10-20 14:18": {
-    "price": 3.85,
-    "source": "Nasdaq daily (close)",
-    "at": "2026-10-20 14:18"
+  "319|BTC|2026-10-20 13:25": {
+    "price": 81535.2,
+    "source": "Kraken",
+    "at": "2026-10-20 13:25"
+  },
+  "320|AVAX|2026-10-20 14:00": {
+    "price": 9.465,
+    "source": "Kraken",
+    "at": "2026-10-20 14:00"
+  },
+  "321|ZEC|2026-10-20 13:30": {
+    "price": 1153.36,
+    "source": "Kraken",
+    "at": "2026-10-20 13:30"
   }
 }
