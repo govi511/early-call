@@ -1197,17 +1197,26 @@
   "230|LTC|2026-10-13 20:25": {
     "price": 61.9,
     "source": "Binance",
-    "at": "2026-10-13 20:25"
+    "at": "2026-10-13 20:25",
+    "locked_pct": -2.6817,
+    "locked_price": 60.24,
+    "locked_at": "2026-10-20T20:25+01:00"
   },
   "231|TSM|2026-10-13 20:25": {
     "price": 444.35,
     "source": "Nasdaq daily (close)",
-    "at": "2026-10-13 20:25"
+    "at": "2026-10-13 20:25",
+    "locked_pct": 5.4304,
+    "locked_price": 420.22,
+    "locked_at": "2026-10-20T20:25+01:00"
   },
   "233|NVDA/META/AAPL/SPY/MSFT/AMZN|2026-10-13 20:27": {
     "price": 226.32,
     "source": "Nasdaq daily (close)",
-    "at": "2026-10-13 20:27"
+    "at": "2026-10-13 20:27",
+    "locked_pct": -4.0783,
+    "locked_price": 217.09,
+    "locked_at": "2026-10-20T20:27+01:00"
   },
   "235|BTC|2026-10-13 21:01": {
     "price": 83304.82,
@@ -1609,6 +1618,11 @@
     "source": "Nasdaq daily (close)",
     "at": "2026-10-20 19:59"
   },
+  "352|TSLA/META/AAPL/SPY/WTI/BRENT|2026-10-20 20:14": {
+    "price": 368.06,
+    "source": "Nasdaq daily (close)",
+    "at": "2026-10-20 20:14"
+  },
   "168|SPACEX|2026-10-13 00:16": {
     "price": null,
     "source": "unavailable",
@@ -1860,10 +1874,5 @@
     "source": "unavailable",
     "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-20 19:26"
-  },
-  "352|TSLA/META/AAPL/SPY/WTI/BRENT|2026-10-20 20:14": {
-    "price": 368.06,
-    "source": "Nasdaq daily (close)",
-    "at": "2026-10-20 20:14"
   }
 }

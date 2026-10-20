@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T20:15:55+01:00",
+  "generated_at": "2026-10-20T20:42:37+01:00",
   "calls": [
     {
       "id": "1",
@@ -5205,6 +5205,8 @@
       "feed": "following",
       "baseline": 61.9,
       "baseline_source": "Binance",
+      "locked_pct": -2.6817,
+      "locked_at": "2026-10-20T20:25+01:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -5227,6 +5229,8 @@
       "feed": "famous",
       "baseline": 444.35,
       "baseline_source": "Nasdaq daily (close)",
+      "locked_pct": 5.4304,
+      "locked_at": "2026-10-20T20:25+01:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -5269,6 +5273,8 @@
       "feed": "discovery",
       "baseline": 226.32,
       "baseline_source": "Nasdaq daily (close)",
+      "locked_pct": -4.0783,
+      "locked_at": "2026-10-20T20:27+01:00",
       "copy_of": "",
       "spam_farm": false
     },
