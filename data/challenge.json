@@ -35,20 +35,20 @@
    "sl_hit_candle_high": 83819.61
   }
  ],
- "last_check_at": "2026-10-20T02:21+01:00",
- "last_check_btc": 81427,
+ "last_check_at": "2026-10-20T03:19+01:00",
+ "last_check_btc": 81692,
  "last_proposal_at": null,
  "last_alert_trade_id": null,
  "last_resolution_alerted_id": 1,
  "open_trade_id": null,
  "last_setup_eval": {
-  "at": "2026-10-20T02:21+01:00",
+  "at": "2026-10-20T03:19+01:00",
   "source": "OKX BTC-USDT 5m/1h candles + OKX swap funding/LSR (Binance geo-blocked)",
-  "btc": 81427,
-  "funding_pct": 0.0098,
-  "lsr_okx_1h": 1.76,
+  "btc": 81692,
+  "funding_pct": 0.01,
+  "lsr_okx_1h": 1.77,
   "decision": "no_proposal",
-  "reason": "01:00 1h closed 81,732 (not strictly <81.7k). 02:00 candle then flushed to 81,200 and bounced to ~81,430. Planned short at ~81.6k already ran ~400 pts; shorting here after a flush gives poor R:R vs SL 82,050 (chasing). Longs still crowded (LSR 1.76 rising, funding +0.0098%). Next run: consider SHORT only on a rejected retest of 81.6-81.75k (SL ~82,050, TP ~80,750, risk EUR2-3), or on a 1h close below 81,200 with tight SL above 81,500; drop short idea if 1h closes back above 81.8k."
+  "reason": "02:00 1h closed 81,800.5 (just above 81.8k) so the retest-short idea is dropped. 03:00 candle so far 81,538-81,823, chopping mid-range 81.2-82.1k; no test/rejection of 82.0-82.1k and no hold above 82.1k. Longs still crowded (LSR 1.77, funding +0.01%) but no clean entry. Next run: short only on clear rejection at 82.0-82.1k (SL ~82,400) or on a 1h close below 81,200; long only on 1h hold above 82.1k (SL under 81.7k). Otherwise flat."
  },
- "last_check_note": "02:21 Oct 20 check: no open trade, balance 97.75; BTC ~81.43k after flush to 81.2k; planned short entry missed, not chasing; no proposal; silent."
+ "last_check_note": "03:19 Oct 20 check: no open trade, balance 97.75; BTC ~81.69k chopping 81.2-82.1k range; short-retest idea dropped after 02:00 close 81,800.5; no proposal; silent."
 }
