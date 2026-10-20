@@ -59,18 +59,18 @@
    "resolved_at_pt": "2026-10-20T15:01+0100"
   }
  ],
- "last_check_at": "2026-10-20T19:54+01:00",
- "last_check_btc": 82489.0,
+ "last_check_at": "2026-10-20T20:54+01:00",
+ "last_check_btc": 82629.6,
  "last_proposal_at": "2026-10-20T07:18+01:00",
  "last_alert_trade_id": 2,
  "last_resolution_alerted_id": 2,
  "open_trade_id": null,
  "last_setup_eval": {
-  "at": "2026-10-20T19:54+01:00",
+  "at": "2026-10-20T20:54+01:00",
   "source": "OKX 1h/5m candles, funding, L/S, OI",
-  "btc": 82489.0,
+  "btc": 82629.6,
   "decision": "no_call",
-  "reason": "Drifting down mid-range 82,152-83,437 (18:00 close 82,779; 19:00 candle 82,429-82,788 so far, lower 5m highs). Funding +0.005%, L/S 1.61 easing, OI ~$2.40B slightly lower. No edge mid-range; would want a 1h close below 82,150 or reclaim of 83,450. Two stops today, no chasing."
+  "reason": "Still mid-range 82,152-83,437. 19:00 1h closed 82,503; 20:00 candle 82,360-82,635 bouncing off 82,360 with higher 5m lows. Funding +0.007%, L/S 1.62 flat, OI ~$2.39B flat. No edge; want 1h close below 82,150 or reclaim of 83,450. Two stops today, no chasing."
  },
- "last_check_note": "20:17 Oct 20: no open trade, balance 95.59. Last fresh read 19:54 (23 min ago), skipped new read, no message. Next fresh read due ~20:47-21:54."
+ "last_check_note": "21:25 Oct 20: no open trade, balance 95.59. Last fresh read 20:54 (31 min ago), skipped new read, no message. Next fresh read due ~21:47-22:54."
 }
