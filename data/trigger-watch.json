@@ -1,5 +1,5 @@
 {
-  "updated_at_lisbon": "2026-10-21 06:41",
+  "updated_at_lisbon": "2026-10-21 07:34",
   "xrp_short": {
     "status": "watching",
     "alerted": false,
@@ -30,12 +30,12 @@
       86100
     ],
     "last_closed_1h": {
-      "open_lisbon": "2026-10-21 05:00",
-      "close": 82811.9
+      "open_lisbon": "2026-10-21 06:00",
+      "close": 82674.5
     },
     "max_close_since_last_check": {
-      "open_lisbon": "2026-10-21 05:00",
-      "close": 82811.9
+      "open_lisbon": "2026-10-21 06:00",
+      "close": 82674.5
     }
   },
   "btc_trader_longs_alerted": [],
@@ -86,11 +86,11 @@
     "348",
     "353"
   ],
-  "last_check_lisbon": "2026-10-21 06:41",
+  "last_check_lisbon": "2026-10-21 07:34",
   "last_prices": {
-    "BTCUSDT": 82801.6
+    "BTCUSDT": 82903.8
   },
-  "max_ledger_id_checked": 366,
+  "max_ledger_id_checked": 367,
   "data_source_note": "Binance geo-blocked; using OKX BTC-USDT 1H candles (confirmed only)",
   "skipped_btc_long_ledger_ids": {
     "303": "discovery source, already stopped 02:09 before check",
