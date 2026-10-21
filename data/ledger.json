@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T20:23:24+01:00",
+  "generated_at": "2026-10-21T21:13:47+01:00",
   "calls": [
     {
       "id": "1",
@@ -9268,6 +9268,28 @@
       "followers": null,
       "source": "X",
       "feed": "discovery",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "419",
+      "logged_at_lisbon": "2026-10-21 21:11",
+      "account": "@OptionsHawk",
+      "post_url": "https://x.com/OptionsHawk/status/2113000248201400698",
+      "asset": "KNX",
+      "direction": "long",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "source following+watchlist; role call; \"$KNX beating that strong in this trucker environment prob. means it should be owned for the cycle turn\" (21:11 Lisbon, after earnings beat); no entry given (scored from price at post time); KNX (Knight-Swift) T212 CFD availability unverified; not alerted; not financial advice",
+      "after_the_fact": false,
+      "followers": null,
+      "source": "X",
+      "feed": "following",
+      "baseline": 63.25,
+      "baseline_source": "Nasdaq daily (close)",
       "copy_of": "",
       "spam_farm": false
     }
