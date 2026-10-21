@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T22:21:40+01:00",
+  "generated_at": "2026-10-21T23:13:12+01:00",
   "calls": [
     {
       "id": "1",
@@ -10403,6 +10403,30 @@
       "spam_flags": [],
       "spam_override": null,
       "baseline": 373.71,
+      "baseline_source": "CNBC daily (close)",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "422",
+      "logged_at_lisbon": "2026-10-21 22:50",
+      "account": "@bubbleboi",
+      "post_url": "https://x.com/bubbleboi/status/2113025064111342024",
+      "asset": "BESI",
+      "direction": "long",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "source following; \"Guys buy Besi right now.\" (22:50 Lisbon) amid posts mocking another account's BESI position, so possibly ironic; no entry given (scored from price at post time); BESI (BE Semiconductor, Euronext) not in T212 CFD list; not alerted; not financial advice",
+      "after_the_fact": false,
+      "followers": null,
+      "source": "X",
+      "feed": "following",
+      "spam_flags": [],
+      "spam_override": null,
+      "baseline": 155.6,
       "baseline_source": "CNBC daily (close)",
       "copy_of": "",
       "spam_farm": false
