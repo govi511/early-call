@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T14:18:08+01:00",
+  "generated_at": "2026-10-21T14:19:12+01:00",
   "calls": [
     {
       "id": "1",
@@ -8414,6 +8414,28 @@
       "followers": 8500,
       "source": "X",
       "feed": "discovery",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "379",
+      "logged_at_lisbon": "2026-10-21 14:18",
+      "account": "SEC/House Clerk/CBOE/Polymarket/@DeItaone/@FirstSquawk/@LiveSquawk/@Kalshi/@unusual_whales/@elonmusk",
+      "post_url": "https://x.com/DeItaone/status/2112877180237582775",
+      "asset": "GOOGL/MSFT/COIN",
+      "direction": "context (quiet window, log only)",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "early-signal; type=context; window ~12:20-14:18 Lisbon. Filings: fetch_filings new=0 (no Form 4s, no House PTRs, no Pelosi, no new CBOE rows). News: OpenAI-Google Cloud distribution deal, OpenAI frontier models incl. GPT-6 Astra and Codex coming to Google Cloud Marketplace (https://x.com/DeItaone/status/2112877180237582775; public, mildly bullish GOOGL, watch MSFT read-through); OCC finalizes first GENIUS Act stablecoin/crypto-rewards rules ahead of Jan 2027 (https://x.com/Kalshi/status/2112891656324165654; COIN-relevant, public); Putin-Witkoff meeting ended, Kremlin says Norway/Finland now in peace process; US authorizes exchange from NE home heating oil reserve; Redfin sellers outnumber buyers by record 58%; JPMorgan SpaceX $500 PT already logged #377. Elon/Tesla/SpaceX/Starlink/SEC/FCC/Fed own accounts quiet; OptionsHawk only a CRWV joke, no flow. Odds: Polymarket Fed Oct hold 87.5% (-1pt 1h), hike 11.5%, US-Iran ceasefire thru Oct 22 96.5%; 1h movers all sports/esports. Not alerted. Not financial advice.",
+      "after_the_fact": false,
+      "followers": null,
+      "source": "X",
+      "feed": "discovery",
+      "baseline": 340.275,
+      "baseline_source": "Nasdaq daily (close)",
       "copy_of": "",
       "spam_farm": false
     }

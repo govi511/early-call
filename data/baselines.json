@@ -2044,5 +2044,10 @@
     "source": "unavailable",
     "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-21 08:20"
+  },
+  "379|GOOGL/MSFT/COIN|2026-10-21 14:18": {
+    "price": 340.275,
+    "source": "Nasdaq daily (close)",
+    "at": "2026-10-21 14:18"
   }
 }
