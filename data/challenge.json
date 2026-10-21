@@ -59,18 +59,18 @@
       "resolved_at_pt": "2026-10-20T15:01+0100"
     }
   ],
-  "last_check_at": "2026-10-21T04:55+01:00",
-  "last_check_btc": 82705.0,
+  "last_check_at": "2026-10-21T06:26+01:00",
+  "last_check_btc": 82802.0,
   "last_proposal_at": "2026-10-20T07:18+01:00",
   "last_alert_trade_id": 2,
   "last_resolution_alerted_id": 2,
   "open_trade_id": null,
   "last_setup_eval": {
-    "at": "2026-10-21T04:55+01:00",
-    "source": "OKX ticker, funding, L/S",
-    "btc": 82705.0,
+    "at": "2026-10-21T06:26+01:00",
+    "source": "OKX ticker, funding, L/S, 1h candles",
+    "btc": 82802.0,
     "decision": "no_call",
-    "reason": "Inside 24h range 81,273-83,437; funding +0.003%, L/S 1.53. Want 1h close above 83,450 or below 82,150."
+    "reason": "Tight chop 82,685-82,935 for 4h inside 24h range 81,273-83,437; funding +0.004%, L/S 1.54. Want 1h close above 83,450 or below 82,150."
   },
-  "last_check_note": "05:48 Oct 21: no trade open, balance 95.59; last fresh read 04:55 (<1h), skipped; no message. Next fresh read due ~05:55-06:55."
+  "last_check_note": "06:26 Oct 21: no trade open, balance 95.59; fresh OKX read, no setup, no message. Next fresh read due ~07:25-08:25."
 }
