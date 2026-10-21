@@ -1789,6 +1789,26 @@
     "source": "Nasdaq daily (close)",
     "at": "2026-10-21 14:18"
   },
+  "380|ZEC|2026-10-21 15:13": {
+    "price": 1304.53,
+    "source": "Kraken",
+    "at": "2026-10-21 15:13"
+  },
+  "381|BTC|2026-10-21 15:13": {
+    "price": 83669.4,
+    "source": "Kraken",
+    "at": "2026-10-21 15:13"
+  },
+  "382|NFLX|2026-10-21 15:13": {
+    "price": 68.69,
+    "source": "Nasdaq daily (close)",
+    "at": "2026-10-21 15:13"
+  },
+  "384|ZEC|2026-10-21 15:13": {
+    "price": 1304.53,
+    "source": "Kraken",
+    "at": "2026-10-21 15:13"
+  },
   "168|SPACEX|2026-10-13 00:16": {
     "price": null,
     "source": "unavailable",
@@ -2052,25 +2072,5 @@
     "source": "unavailable",
     "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-21 08:20"
-  },
-  "380|ZEC|2026-10-21 15:13": {
-    "price": 1304.53,
-    "source": "Kraken",
-    "at": "2026-10-21 15:13"
-  },
-  "381|BTC|2026-10-21 15:13": {
-    "price": 83669.4,
-    "source": "Kraken",
-    "at": "2026-10-21 15:13"
-  },
-  "382|NFLX|2026-10-21 15:13": {
-    "price": 68.69,
-    "source": "Nasdaq daily (close)",
-    "at": "2026-10-21 15:13"
-  },
-  "384|ZEC|2026-10-21 15:13": {
-    "price": 1304.53,
-    "source": "Kraken",
-    "at": "2026-10-21 15:13"
   }
 }

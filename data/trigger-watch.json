@@ -1,5 +1,5 @@
 {
-  "updated_at_lisbon": "2026-10-21 14:41",
+  "updated_at_lisbon": "2026-10-21 15:36",
   "xrp_short": {
     "status": "watching",
     "alerted": false,
@@ -30,12 +30,12 @@
       86100
     ],
     "last_closed_1h": {
-      "open_lisbon": "2026-10-21 13:00",
-      "close": 83508.6
+      "open_lisbon": "2026-10-21 14:00",
+      "close": 83813.7
     },
     "max_close_since_last_check": {
-      "open_lisbon": "2026-10-21 13:00",
-      "close": 83508.6
+      "open_lisbon": "2026-10-21 14:00",
+      "close": 83813.7
     }
   },
   "btc_trader_longs_alerted": [],
@@ -87,13 +87,14 @@
     "353",
     "368",
     "370",
-    "373"
+    "373",
+    "381"
   ],
-  "last_check_lisbon": "2026-10-21 14:41",
+  "last_check_lisbon": "2026-10-21 15:36",
   "last_prices": {
-    "BTCUSDT": 83539.5
+    "BTCUSDT": 84180.5
   },
-  "max_ledger_id_checked": 379,
+  "max_ledger_id_checked": 385,
   "data_source_note": "Binance geo-blocked; using OKX BTC-USDT 1H candles (confirmed only)",
   "skipped_btc_long_ledger_ids": {
     "303": "discovery source, already stopped 02:09 before check",
@@ -108,6 +109,7 @@
     "353": "DaanCrypto BTC long, no explicit entry/stop",
     "368": "CryptoTony__ BTC long, stop 81273 but no explicit entry; repeats #323 thesis",
     "370": "pedrosilva BTC long with explicit zone/stop; already alerted by the X scan at ~09:12, skipped to avoid a duplicate",
-    "373": "CryptoMichNL BTC long, no explicit entry/stop"
+    "373": "CryptoMichNL BTC long, no explicit entry/stop",
+    "381": "AltcoinSherpa conditional BTC breakout toward 87k, no explicit entry/stop"
   }
 }
