@@ -1317,7 +1317,10 @@
   "252|BTC|2026-10-14 01:40": {
     "price": 83667.47,
     "source": "Binance",
-    "at": "2026-10-14 01:40"
+    "at": "2026-10-14 01:40",
+    "locked_pct": -0.7587,
+    "locked_price": 83032.7,
+    "locked_at": "2026-10-21T01:40+01:00"
   },
   "253|TSLA/OIL/BTC|2026-10-14 02:23": {
     "price": 378.03,
@@ -1941,5 +1944,10 @@
     "source": "unavailable",
     "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-20 22:04"
+  },
+  "360|ZEC/WLD|2026-10-21 01:17": {
+    "price": 1265.79,
+    "source": "Kraken",
+    "at": "2026-10-21 01:17"
   }
 }
