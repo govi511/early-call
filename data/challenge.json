@@ -59,18 +59,12 @@
       "resolved_at_pt": "2026-10-20T15:01+0100"
     }
   ],
-  "last_check_at": "2026-10-21T22:25+01:00",
-  "last_check_btc": 84715.2,
+  "last_check_at": "2026-10-21T23:57:00+01:00",
+  "last_check_btc": 84492,
   "last_proposal_at": "2026-10-20T07:18+01:00",
   "last_alert_trade_id": 2,
   "last_resolution_alerted_id": 2,
   "open_trade_id": null,
-  "last_setup_eval": {
-    "at": "2026-10-21T22:25+01:00",
-    "source": "OKX 1h candles, funding, L/S, OI, ticker",
-    "btc": 84715.2,
-    "decision": "no_call",
-    "reason": "Still chopping 84,130-84,880 for ~7h; 22:00 1h 84,591-84,738, pressing range top but no break of 84,900. Funding ~-0.003% (flat), L/S 1.15 (falling), OI ~$2.65B flat. 24h range 82,588-84,876. No clean setup."
-  },
-  "last_check_note": "22:25 Oct 21: no trade open; fresh OKX read, no clean setup, no message. Next fresh read due ~23:25-00:25."
+  "last_setup_eval": "2026-10-21T23:57:00+01:00",
+  "last_check_note": "Fresh OKX read 23:57 Lisbon: BTC ~84,492, 8h chop 84,130-84,880; 22:00 pushed 84,804 then 23:00 faded to 84,406. Funding ~flat (-0.004%), L/S 1.13, OI ~$2.65B flat. No clean setup, no call."
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T23:13:12+01:00",
+  "generated_at": "2026-10-22T00:19:55+01:00",
   "calls": [
     {
       "id": "1",
@@ -10427,6 +10427,30 @@
       "spam_flags": [],
       "spam_override": null,
       "baseline": 155.6,
+      "baseline_source": "CNBC daily (close)",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "423",
+      "logged_at_lisbon": "2026-10-22 00:18",
+      "account": "SEC/@FirstSquawk/@LiveSquawk/@unusual_whales/@elonmusk/Polymarket",
+      "post_url": "https://x.com/FirstSquawk/status/2113040552950382952",
+      "asset": "META/Brent/WTI oil/Gold",
+      "direction": "context (log only)",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "early-signal; type=context; window ~22:20-00:18 Lisbon. fetch_filings new=1: META Form 4 COO Javier Olivan small sale ~1,170 sh @707.20 on Oct 19 (routine, not significant). NYT: US/Israel planning renewed Iran strikes after the election (FirstSquawk 23:51 Lisbon) - escalation context to #418/#420, already seen by X scan; Dammam airport attack (1 killed). Polymarket US-Iran ceasefire through Oct 31 now 68% (71% at #420 alert, -13.5pts/24h; no new sharp move); Fed Oct no-change 87.5%. Zuckerberg may leave California over billionaire tax (Bloomberg via unusual_whales). No Pelosi trade, no new Musk market post, no SEC/FCC action. Not alerted; public info; not financial advice",
+      "after_the_fact": false,
+      "followers": null,
+      "source": "X",
+      "feed": "discovery",
+      "spam_flags": [],
+      "spam_override": null,
+      "baseline": 694.25,
       "baseline_source": "CNBC daily (close)",
       "copy_of": "",
       "spam_farm": false
