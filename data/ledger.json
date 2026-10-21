@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T06:22:58+01:00",
+  "generated_at": "2026-10-21T07:13:26+01:00",
   "calls": [
     {
       "id": "1",
@@ -8150,6 +8150,28 @@
       "feed": "discovery",
       "baseline": 147.79,
       "baseline_source": "Nasdaq daily (close)",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "367",
+      "logged_at_lisbon": "2026-10-21 07:07",
+      "account": "@Jamyies",
+      "post_url": "https://x.com/Jamyies/status/2112787935393370524",
+      "asset": "ETH",
+      "direction": "short",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "source discovery; \"Opened short on $eth. Not financial advice, these are my trades\" (104k followers, account since 2009, no spam/referral text in post); ETH ~2,438 at scan; no entry given (scored from price at post time); no levels, discovery source, not alerted; not financial advice",
+      "after_the_fact": false,
+      "followers": 104000,
+      "source": "X",
+      "feed": "discovery",
+      "baseline": 2436.44,
+      "baseline_source": "Kraken",
       "copy_of": "",
       "spam_farm": false
     }
