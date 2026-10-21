@@ -59,18 +59,18 @@
       "resolved_at_pt": "2026-10-20T15:01+0100"
     }
   ],
-  "last_check_at": "2026-10-21T10:56+01:00",
-  "last_check_btc": 83433.0,
+  "last_check_at": "2026-10-21T11:53+01:00",
+  "last_check_btc": 83400.0,
   "last_proposal_at": "2026-10-20T07:18+01:00",
   "last_alert_trade_id": 2,
   "last_resolution_alerted_id": 2,
   "open_trade_id": null,
   "last_setup_eval": {
-    "at": "2026-10-21T10:56+01:00",
-    "source": "OKX ticker, funding, L/S ratio, 1h candles",
-    "btc": 83433.0,
+    "at": "2026-10-21T11:53+01:00",
+    "source": "OKX ticker, funding, L/S ratio, OI, 1h candles",
+    "btc": 83400.0,
     "decision": "no_call",
-    "reason": "09:00 1h closed 83,205 after wick to new 24h high 83,682 (failed breakout). Open 10:00 already retested to 83,622; spot ~83,433. Funding ~0.0074% mild, L/S still falling 1.50\u21921.41. Rejection noted but no clean entry mid-candle while bouncing near highs; wait for hold below ~83,200 or a fresh rejection with R:R."
+    "reason": "Chop inside 83,183-83,682 range after failed breakout; 10:00 1h closed 83,398 (flat), open 11:00 range 83,211-83,450. Funding mild ~0.0074%, L/S still falling 1.41->1.40, OI ~31.1k BTC. No break or clean rejection with R:R; wait for close below ~83,180 (short) or above 83,700 (long)."
   },
-  "last_check_note": "10:56 Oct 21: no trade open, balance 95.59; fresh OKX read \u2014 failed breakout on 09:00 close, no clean setup, no message. Next fresh read due ~11:50-12:50."
+  "last_check_note": "12:20 Oct 21: no trade open, balance 95.59; last fresh read 11:53 (<1h), skipped read, no message. Next fresh read due ~12:50-13:50."
 }
