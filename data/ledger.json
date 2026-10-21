@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T12:20:07+01:00",
+  "generated_at": "2026-10-21T14:18:08+01:00",
   "calls": [
     {
       "id": "1",
@@ -8394,6 +8394,26 @@
       "feed": "discovery",
       "baseline": 147.79,
       "baseline_source": "Nasdaq daily (close)",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "378",
+      "logged_at_lisbon": "2026-10-21 14:18",
+      "account": "@Pipcartcapital",
+      "post_url": "https://x.com/Pipcartcapital/status/2112882670036480485",
+      "asset": "XAUUSD",
+      "direction": "long",
+      "entry": "4120-4130",
+      "stop": "4098",
+      "target": "4193",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "source discovery; 8.5k followers, account since 2021-01; \"Gold is showing signs of a bullish reversal as price approaches a descending trendline breakout. Target: 4,193 Entry Zone: 4,120-4,130 Stop Loss: 4,098\" (posted 13:24 Lisbon); gold ~4,138 (OKX XAUT) at scan, just above the entry zone (not yet filled); R:R ~2.5; bio has an unverified 'daily setup' link, no Telegram/VIP text; discovery source, low engagement, not alerted; not financial advice",
+      "after_the_fact": false,
+      "followers": 8500,
+      "source": "X",
+      "feed": "discovery",
       "copy_of": "",
       "spam_farm": false
     }
