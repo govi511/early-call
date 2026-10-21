@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T07:13:26+01:00",
+  "generated_at": "2026-10-21T08:12:47+01:00",
   "calls": [
     {
       "id": "1",
@@ -8171,6 +8171,28 @@
       "source": "X",
       "feed": "discovery",
       "baseline": 2436.44,
+      "baseline_source": "Kraken",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "368",
+      "logged_at_lisbon": "2026-10-21 07:54",
+      "account": "@CryptoTony__",
+      "post_url": "https://x.com/CryptoTony__/status/2112799545373667724",
+      "asset": "BTC",
+      "direction": "long",
+      "entry": "",
+      "stop": "81273 (yesterday's low)",
+      "target": "84200 / 90000",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "source following (also watchlist); role call; \"$BTC - Update Minimum target $84,200 - Max target $90,000. All while we hold that low put in yesterday\" = bullish BTC, targets 84,200 then 90,000, invalidation below yesterday's low (~81,273 OKX); no entry given (scored from price at post time, BTC ~82,830 OKX at scan, 24h high 83,440); R:R to first target under 1 and same thesis as alerted #323 (84k) and his #346, already covered by the BTC 84,350 trigger watch, so not alerted; not financial advice",
+      "after_the_fact": false,
+      "followers": null,
+      "source": "X",
+      "feed": "following",
+      "baseline": 82702.6,
       "baseline_source": "Kraken",
       "copy_of": "",
       "spam_farm": false
