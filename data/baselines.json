@@ -1346,7 +1346,10 @@
   "257|BTC/ETH/OIL/CHINA/FED|2026-10-14 04:15": {
     "price": 83723.34,
     "source": "Binance",
-    "at": "2026-10-14 04:15"
+    "at": "2026-10-14 04:15",
+    "locked_pct": -1.2646,
+    "locked_price": 82664.6,
+    "locked_at": "2026-10-21T04:15+01:00"
   },
   "258|ASML/NVDA/SEMIS/OIL/FED|2026-10-14 06:15": {
     "price": 1717.76,
@@ -1960,5 +1963,10 @@
     "source": "unavailable",
     "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-20 22:04"
+  },
+  "363|SPCX/TSLA/WTI/SPY|2026-10-21 04:22": {
+    "price": 147.79,
+    "source": "Nasdaq daily (close)",
+    "at": "2026-10-21 04:22"
   }
 }

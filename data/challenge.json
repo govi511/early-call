@@ -59,18 +59,18 @@
       "resolved_at_pt": "2026-10-20T15:01+0100"
     }
   ],
-  "last_check_at": "2026-10-21T02:26+01:00",
-  "last_check_btc": 82854.0,
+  "last_check_at": "2026-10-21T03:48+01:00",
+  "last_check_btc": 82783.0,
   "last_proposal_at": "2026-10-20T07:18+01:00",
   "last_alert_trade_id": 2,
   "last_resolution_alerted_id": 2,
   "open_trade_id": null,
   "last_setup_eval": {
-    "at": "2026-10-21T02:26+01:00",
+    "at": "2026-10-21T03:48+01:00",
     "source": "OKX 1h candles, funding, L/S",
-    "btc": 82854.0,
+    "btc": 82783.0,
     "decision": "no_call",
-    "reason": "Still inside range 82,066-83,437; 01:00 candle closed 82,985, current 02:00 candle 82,734-82,986. Funding +0.004%, L/S 1.52 easing. Want 1h close above 83,450 or below 82,150."
+    "reason": "Still inside 24h range 81,273-83,437; 02:00 candle closed 82,958, current 03:00 candle 82,684-82,995. Funding +0.0035%, L/S 1.53. Want 1h close above 83,450 or below 82,150."
   },
-  "last_check_note": "02:26 Oct 21: fresh read, no trade open, balance 95.59, no setup, no message. Next fresh read due ~03:20-04:20."
+  "last_check_note": "03:48 Oct 21: fresh read, no trade open, balance 95.59, no setup, no message. Next fresh read due ~04:50-05:50."
 }

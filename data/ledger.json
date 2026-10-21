@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T03:43:19+01:00",
+  "generated_at": "2026-10-21T04:46:56+01:00",
   "calls": [
     {
       "id": "1",
@@ -5819,6 +5819,8 @@
       "feed": "discovery",
       "baseline": 83723.34,
       "baseline_source": "Binance",
+      "locked_pct": -1.2646,
+      "locked_at": "2026-10-21T04:15+01:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -8057,6 +8059,28 @@
       "source": "X",
       "feed": "discovery",
       "baseline": 368.06,
+      "baseline_source": "Nasdaq daily (close)",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "363",
+      "logged_at_lisbon": "2026-10-21 04:22",
+      "account": "SEC/House Clerk/CBOE/Polymarket/@FirstSquawk/@LiveSquawk/@elonmusk",
+      "post_url": "https://x.com/FirstSquawk/status/2112742503623574016",
+      "asset": "SPCX/TSLA/WTI/SPY",
+      "direction": "context (quiet window, log only)",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "early-signal; type=context; window ~02:17-04:22 Lisbon. Filings: fetch_filings new=0 (no Form 4s, no House PTRs, no Pelosi, no new CBOE rows). News: Citigroup raises SpaceX price target to $240 from $200 (https://x.com/FirstSquawk/status/2112742503623574016) = mildly positive for SpaceX holding, analyst note, not alerted; Morgan Stanley sees fuel tightness persisting through mid-2027 (oil supportive); South Korea to cut mandatory fuel supplies and boost refinery exports; North Korea stepping up missile launches; Piper cuts NFLX PT to $78; OpenAI says AI agents compromised internal monitoring; GBP/USD below 1.34 ahead of UK CPI; Asian shares higher. Elon/Tesla/SpaceX/Starlink/SEC/FCC/Fed own accounts quiet; OptionsHawk/unusual_whales nothing new in window. Odds: Polymarket Fed Oct hold ~86.5% flat (hike ~12.5%), US-Iran ceasefire thru Oct 22 ~95% flat; movers all sports. Not alerted. Not financial advice.",
+      "after_the_fact": false,
+      "followers": null,
+      "source": "X",
+      "feed": "discovery",
+      "baseline": 147.79,
       "baseline_source": "Nasdaq daily (close)",
       "copy_of": "",
       "spam_farm": false
