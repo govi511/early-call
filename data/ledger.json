@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T08:17:57+01:00",
+  "generated_at": "2026-10-21T09:10:18+01:00",
   "calls": [
     {
       "id": "1",
@@ -8214,6 +8214,26 @@
       "followers": null,
       "source": "X",
       "feed": "discovery",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "370",
+      "logged_at_lisbon": "2026-10-21 09:02",
+      "account": "@pedrosilva",
+      "post_url": "https://x.com/pedrosilva/status/2112816855295394123",
+      "asset": "BTC",
+      "direction": "long",
+      "entry": "81626.6-82312.5 (buy zone, 1H close inside)",
+      "stop": "81150.6 (1H close below)",
+      "target": "84293.88",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "source following; \"Long on the pullback into the 4H FVG. Bottom of the range swept at 81,150.6. The top is next. Buy zone 81,626.6-82,312.5 with a 1H close inside. No pullback, no chase. Target 84,293.88 weekly highs. Invalidation 1H close below 81,150.6\"; pending limit setup, BTC ~83,115 OKX at scan (zone ~1% below); R:R ~2.8 from zone mid; no referral link in post (note his referral links/losing record); alerted; not financial advice",
+      "after_the_fact": false,
+      "followers": null,
+      "source": "X",
+      "feed": "following",
       "copy_of": "",
       "spam_farm": false
     }
