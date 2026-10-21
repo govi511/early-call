@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T10:17:05+01:00",
+  "generated_at": "2026-10-21T10:18:25+01:00",
   "calls": [
     {
       "id": "1",
@@ -8256,6 +8256,28 @@
       "feed": "famous",
       "baseline": 5.192,
       "baseline_source": "Kraken",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "372",
+      "logged_at_lisbon": "2026-10-21 10:18",
+      "account": "SEC/House Clerk/CBOE/Polymarket/@FirstSquawk/@LiveSquawk/@elonmusk",
+      "post_url": "https://x.com/FirstSquawk/status/2112834184070992300",
+      "asset": "SPY/WTI/RUB",
+      "direction": "context (quiet window, log only)",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "early-signal; type=context; window ~08:20-10:18 Lisbon. Filings: fetch_filings new=1 (CBOE SPY Nov-20 580P ~15k vol vs 4.5k OI at $0.40, ~$0.6M premium, deep-OTM tail hedge, logged not alerted); no Form 4s, no House PTRs, no Pelosi. News: Witkoff met Putin in St. Petersburg, rough documents on Ukraine settlement, Putin offers more fertiliser to US, US citizen Hubbard released (https://x.com/FirstSquawk/status/2112834184070992300) = mild risk-on/oil-softening; UKMTO tanker struck by unknown projectile near Bukha, Oman, fire out, crew safe (https://x.com/FirstSquawk/status/2112822570517217527) = Hormuz-area oil headline risk; Houthis claim missile strike on Saudi camp in Aden; Chinese nickel producers cut Indonesia output; Merz on China trade; UK Aug HPI 0.9% y/y. Elon/Tesla/SpaceX/Starlink/SEC/FCC/Fed own accounts quiet; OptionsHawk/unusual_whales nothing new. Odds: Polymarket Fed Oct hold ~88% (-0.5pt 1h), US-Iran ceasefire thru Oct 22 ~96.6% flat, end of Iranian blockade by Oct 31 ~8.5%; 1h movers all sports. BTC ~83,586 OKX. Not alerted. Not financial advice.",
+      "after_the_fact": false,
+      "followers": null,
+      "source": "X",
+      "feed": "discovery",
+      "baseline": 769.05,
+      "baseline_source": "Nasdaq daily (close)",
       "copy_of": "",
       "spam_farm": false
     }
