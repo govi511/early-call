@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T09:10:18+01:00",
+  "generated_at": "2026-10-21T10:17:05+01:00",
   "calls": [
     {
       "id": "1",
@@ -8234,6 +8234,28 @@
       "followers": null,
       "source": "X",
       "feed": "following",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "371",
+      "logged_at_lisbon": "2026-10-21 09:30",
+      "account": "@CryptoMichNL",
+      "post_url": "https://x.com/CryptoMichNL/status/2112823706632495594",
+      "asset": "NEAR",
+      "direction": "long",
+      "entry": "",
+      "stop": "4.30 (range low)",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "source watchlist; role call; \"I'm positively surprised by the strength of $NEAR. It's consolidating nicely, and it continues to print higher lows. As long as the range low at $4.30 isn't lost, I'd be expecting to see a new leg upwards.\" = bullish NEAR, invalidation below 4.30; no entry given (scored from price at post time), NEAR ~5.24 OKX at scan; NEAR not on T212 CFDs, so logged not alerted; not financial advice",
+      "after_the_fact": false,
+      "followers": null,
+      "source": "X",
+      "feed": "famous",
+      "baseline": 5.192,
+      "baseline_source": "Kraken",
       "copy_of": "",
       "spam_farm": false
     }
