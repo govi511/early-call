@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T00:19:11+01:00",
+  "generated_at": "2026-10-21T01:13:26+01:00",
   "calls": [
     {
       "id": "1",
@@ -5681,6 +5681,8 @@
       "feed": "famous",
       "baseline": 0.005025,
       "baseline_source": "Binance",
+      "locked_pct": -3.204,
+      "locked_at": "2026-10-21T00:54+01:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -7966,6 +7968,26 @@
       "feed": "discovery",
       "baseline": 147.96,
       "baseline_source": "Nasdaq daily (close)",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "359",
+      "logged_at_lisbon": "2026-10-21 00:23",
+      "account": "@XAUUSD__Alice",
+      "post_url": "https://x.com/XAUUSD__Alice/status/2112686051575709956",
+      "asset": "XAUUSD",
+      "direction": "long (conditional)",
+      "entry": "~4100 (if support holds)",
+      "stop": "",
+      "target": "4130-4150",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "source discovery; 11.7k followers, account since 2023-06; \"Watch the support level near 4100; if this level holds, consider opening a light long position with an upside target of 4130-4150. The next support level to monitor is around 4075\" = conditional gold long on pullback (gold ~4135 at scan, entry not yet filled); no hard stop (4075 named as next support); discovery source, low engagement, not alerted; not financial advice",
+      "after_the_fact": false,
+      "followers": 11700,
+      "source": "X",
+      "feed": "discovery",
       "copy_of": "",
       "spam_farm": false
     }
