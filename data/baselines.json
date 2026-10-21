@@ -1687,6 +1687,11 @@
     "source": "Nasdaq daily (close)",
     "at": "2026-10-21 00:20"
   },
+  "360|ZEC/WLD|2026-10-21 01:17": {
+    "price": 1265.79,
+    "source": "Kraken",
+    "at": "2026-10-21 01:17"
+  },
   "168|SPACEX|2026-10-13 00:16": {
     "price": null,
     "source": "unavailable",
@@ -1945,9 +1950,9 @@
     "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-20 22:04"
   },
-  "360|ZEC/WLD|2026-10-21 01:17": {
-    "price": 1265.79,
-    "source": "Kraken",
-    "at": "2026-10-21 01:17"
+  "362|TSLA/META/NVDA/SPY/WTI/BRENT|2026-10-21 02:18": {
+    "price": 368.06,
+    "source": "Nasdaq daily (close)",
+    "at": "2026-10-21 02:18"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T02:08:58+01:00",
+  "generated_at": "2026-10-21T02:17:10+01:00",
   "calls": [
     {
       "id": "1",
@@ -8032,6 +8032,28 @@
       "followers": 35100,
       "source": "X",
       "feed": "discovery",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "362",
+      "logged_at_lisbon": "2026-10-21 02:18",
+      "account": "SEC/House Clerk/CBOE/Polymarket/@FirstSquawk/@LiveSquawk/@OptionsHawk/@elonmusk",
+      "post_url": "https://x.com/FirstSquawk/status/2112712340903018882",
+      "asset": "TSLA/META/NVDA/SPY/WTI/BRENT",
+      "direction": "context (quiet window, log only)",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "early-signal; type=context; window ~00:18-02:17 Lisbon. Filings: fetch_filings new=117, all CBOE rows re-keyed from the Oct-20 session (no new Form 4s, no new House PTRs, no Pelosi). Biggest non-SPY by premium: TSLA Oct-23 375C 23.2k vs 6.3k OI at 11.56 (~$27M) and Oct-23 375P 12.7k at 12.75 (~$16M) = pre-earnings straddle; TSLA Nov-20 375P 8.9k vs 2.4k OI (~$18M); META Oct-23 700C 6.4k vs 1.9k OI (~$14M); NVDA Oct-26 237.5P 6.3k vs 69 OI deep ITM (~$13M) plus Oct-26 197.5C/200C/202.5C (~$24M combined); SPY 0DTE expired flow. Earnings-week two-way pattern, not alerted. News: Trump says Pentagon to invest $1.5B in NC chip production; NVDA in talks to invest hundreds of millions in Australian AI cloud Firmus (TIF); WSJ Ellison borrowing spree; Brent jumps to ~$110, WTI past $99 on Middle East tension headlines (https://x.com/FirstSquawk/status/2112712340903018882), ceasefire odds unchanged; Japan trade deficit wider than expected, JGB 2y 1.9%. Elon/Tesla/SpaceX/Starlink/SEC/FCC/Fed own accounts quiet; OptionsHawk A/H moves only. Odds: Polymarket Fed Oct hold ~86.5% flat, US-Iran ceasefire thru Oct 22 ~95% flat, thru Oct 31 ~81.5%, Iran blockade end by Oct 31 ~9.5%; movers all sports. Not alerted. Not financial advice.",
+      "after_the_fact": false,
+      "followers": null,
+      "source": "X",
+      "feed": "discovery",
+      "baseline": 368.06,
+      "baseline_source": "Nasdaq daily (close)",
       "copy_of": "",
       "spam_farm": false
     }
