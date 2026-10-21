@@ -205,3 +205,26 @@ header .top>div>.sub{display:none}
 .best-mv{font-size:22px;font-weight:800;margin:2px 0}
 .best-why{font-size:12px;color:var(--mut);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 #feed .card.best-flash{outline:2px solid #fafafa;outline-offset:2px}
+/* task 5: neutral stop distance, hidden-call chips, consensus, phone header/tab bar */
+.stopdist{color:var(--mut)}
+.hid-chip{display:inline-block;font-size:11px;padding:2px 8px;border-radius:999px;background:rgba(150,150,160,.18)!important;color:#b8bcc6!important;border:0;min-height:0;cursor:pointer;box-shadow:none!important}
+.notspam{font-size:11px;padding:2px 8px;border-radius:999px;min-height:0;margin-left:4px;background:transparent!important;border:1px solid var(--b)!important;color:var(--txt)!important}
+.hid-words{font-size:12px;color:var(--mut);margin-top:4px}
+.hidden-spam{opacity:.5}.hidden-spam .hid-chip,.hidden-spam .notspam{opacity:1}
+.cons-hidden{display:none!important}
+.cons-card .cons-list{display:flex;flex-wrap:wrap;gap:6px 12px;margin:8px 0}
+.cons-card .cons-tg{min-height:0;padding:6px 10px}
+#newsbtn{min-height:0;padding:4px 10px;font-size:12px}
+.tabbar{flex-wrap:nowrap}.tabbar button span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}
+@media(max-width:600px){
+ #signals>div.row{flex-direction:column;align-items:flex-start;gap:4px}
+ #signals>div.row h2{margin-bottom:0}
+ #signals>div.row .live,#signals>div.row #pupd{font-size:11px}
+ #signals>div.row .live{display:inline-flex;align-items:center;padding:3px 10px;border-radius:999px;background:rgba(255,255,255,.07);white-space:nowrap}
+ #feed .card>.row:first-child{flex-wrap:nowrap;gap:6px}
+ #feed .card>.row:first-child>div{display:flex;flex-wrap:wrap;gap:4px;align-items:center;min-width:0}
+ #feed .card>.row:first-child>b{white-space:nowrap;flex-shrink:0}
+ #feed .card .badge,#feed .card .winrate{font-size:11px;white-space:nowrap}
+ .tabbar button{font-size:9.5px;min-width:0}
+}
+#signals>label.row{flex-direction:row!important;flex-wrap:wrap;align-items:center!important}#signals>label.row small{flex:1 1 auto}
