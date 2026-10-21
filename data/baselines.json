@@ -1378,12 +1378,18 @@
   "263|TAO|2026-10-14 12:08": {
     "price": 277.8,
     "source": "Binance",
-    "at": "2026-10-14 12:08"
+    "at": "2026-10-14 12:08",
+    "locked_pct": -1.8583,
+    "locked_price": 272.6377,
+    "locked_at": "2026-10-21T12:08+01:00"
   },
   "264|SUI|2026-10-14 12:00": {
     "price": 1.0524,
     "source": "Binance",
-    "at": "2026-10-14 12:00"
+    "at": "2026-10-14 12:00",
+    "locked_pct": -2.214,
+    "locked_price": 1.0291,
+    "locked_at": "2026-10-21T12:00+01:00"
   },
   "266|FED/USD/SPX/BTC/GOLD|2026-10-14 14:18": {
     "price": null,
@@ -2023,5 +2029,15 @@
     "source": "unavailable",
     "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-21 08:20"
+  },
+  "375|SOL|2026-10-21 12:03": {
+    "price": 106.61,
+    "source": "Kraken",
+    "at": "2026-10-21 12:03"
+  },
+  "376|TAO|2026-10-21 11:35": {
+    "price": 271.4376,
+    "source": "Kraken",
+    "at": "2026-10-21 11:35"
   }
 }

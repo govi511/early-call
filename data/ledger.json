@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T11:16:47+01:00",
+  "generated_at": "2026-10-21T12:08:56+01:00",
   "calls": [
     {
       "id": "1",
@@ -5955,6 +5955,8 @@
       "feed": "following",
       "baseline": 277.8,
       "baseline_source": "Binance",
+      "locked_pct": -1.8583,
+      "locked_at": "2026-10-21T12:08+01:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -5977,6 +5979,8 @@
       "feed": "famous",
       "baseline": 1.0524,
       "baseline_source": "Binance",
+      "locked_pct": -2.214,
+      "locked_at": "2026-10-21T12:00+01:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -8324,6 +8328,50 @@
       "followers": 6300,
       "source": "X",
       "feed": "discovery",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "375",
+      "logged_at_lisbon": "2026-10-21 12:03",
+      "account": "@DaanCrypto",
+      "post_url": "https://x.com/DaanCrypto/status/2112862209323724900",
+      "asset": "SOL",
+      "direction": "long",
+      "entry": "",
+      "stop": "below green zone (HTF invalidation, no number)",
+      "target": "local highs",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "source watchlist; role call; \"$SOL Held up well all things considered and looks good to me. Want to see this slowly grind back to the local highs, from there it should accelerate. High timeframe invalidation remains clear below the green zone so I like the R/R.\" = bullish SOL; no entry given (scored from price at post time), SOL ~106.8 OKX at scan (24h 103.9-108.3); no numeric levels, so not alerted despite SOL being a T212 CFD; not financial advice",
+      "after_the_fact": false,
+      "followers": null,
+      "source": "X",
+      "feed": "famous",
+      "baseline": 106.61,
+      "baseline_source": "Kraken",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "376",
+      "logged_at_lisbon": "2026-10-21 11:35",
+      "account": "@CryptoMichNL",
+      "post_url": "https://x.com/CryptoMichNL/status/2112855162351939660",
+      "asset": "TAO",
+      "direction": "long",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "source watchlist; role call; \"$TAO hasn't been losing any value at all against #Bitcoin over the last nearly two years... Happily holding this asset as one of my largest positions\" = bullish TAO / position disclosure; no entry given (scored from price at post time), TAO ~273 OKX at scan; TAO not on T212 CFDs, logged not alerted; not financial advice",
+      "after_the_fact": false,
+      "followers": null,
+      "source": "X",
+      "feed": "famous",
+      "baseline": 271.4376,
+      "baseline_source": "Kraken",
       "copy_of": "",
       "spam_farm": false
     }
