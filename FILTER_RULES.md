@@ -32,3 +32,12 @@ Filtered calls are excluded from the summary strip, leaderboard, win rates and h
 - Source `<span class="src …">`: `watchlist` = Following (notes "source following"/"watchlist"), `x` = X search ("source discovery"), `filing` = Early signal ("early-signal", SEC/filing/13F/Form 4).
 - `<span class="winrate">`: `Win rate <b>NN%</b>` only once the account has **≥10 closed calls** (hit_target + stopped); otherwise `Win rate <b>new</b> · n/10 closed`. Leaderboard ranks (#1, #2…) follow the same rule; unranked accounts are listed after, by closed-call count.
 - Filtered cards get class `hidden-spam` when "Show filtered" is on.
+
+## Negation and account descriptions (2026-10-21)
+- Negation covers whole lists: `no Telegram/VIP/referral in post`, `no spam, referral or VIP text` match nothing.
+- Note clauses (split on `;` and brackets) that describe the account rather than the post are ignored: `bio …`, `his/her/their …`, `he also …`, `posts affiliate links`, `has a losing record`. Real promo phrasing (`Telegram promo`, `Telegram VIP promo`, `affiliate link`) still matches.
+
+## Structured fields (ledger.json)
+- `spam_flags` (array, built by refresh.py from the same rules, or from a `spam_flags` CSV column `a;b`): when present, filter.js uses it instead of re-parsing notes.
+- `followers` (number, from a `followers` CSV column or parsed from notes): used for the `< 50` rule.
+- `spam_override`: `true` = force hidden, `false` = never spam (news rows stay news). Set from `data/spam-overrides.json` (`{"<id>": false}`) or a `spam_override` CSV column.

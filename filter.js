@@ -5,9 +5,21 @@ const isShort=d=>{d=String(d||'').trim().toLowerCase();return/^(short|bear|put|h
 // One scored call per source link: earliest row wins
 const dupOfLink=c=>{if(!c.post_url||typeof LEDGER==='undefined'||!LEDGER)return null;const f=LEDGER.calls.filter(o=>o.post_url===c.post_url).sort((a,b)=>String(a.logged_at_lisbon).localeCompare(String(b.logged_at_lisbon))||(+a.id)-(+b.id))[0];return f&&f!==c?f:null};
 const normEntry=e=>String(e||'').replace(/\s+/g,'').toLowerCase();
-const stripNeg=t=>String(t).replace(/\b(no|not|without|never|isn't|is not|not a)\s+(an?\s+|any\s+)?[\w-]+(\s+(link|promo|post|account))?/gi,' ');
-function spamWhy(c){const n=c.notes||'',nn=stripNeg(n),why=SPAM_RULES.filter(([re])=>re.test(nn)).map(r=>r[1]);(Array.isArray(c.spam_flags)?c.spam_flags:String(c.spam_flags||'').split(/[;,]/)).map(x=>x.trim()).filter(Boolean).forEach(f=>why.push(f.replace(/_/g,' ')));if(/^early-signal/i.test(n)||/\(context\)/i.test(c.direction||''))why.push('news post, not a buy/sell call');
- const m=n.match(/\b(\d+) followers\b/i);if(m&&+m[1]<50)why.push(`only ${m[1]} followers`);
+// Negation covers whole lists: "no Telegram/VIP/referral in post", "no spam, referral or VIP text"
+const NEG_LIST=/\b(?:no|not|without|never|isn't|is not|not a)\s+(?:an?\s+|any\s+)?[\w-]+(?:\s*(?:\/|,|\bor\b|\band\b|&)\s*[\w-]+)*(?:\s+(?:links?|promos?|posts?|accounts?|text|group|groups))?/gi;
+// Clauses that describe the account (bio, history) rather than this post: "note his referral links", "bio carries ...", "posts affiliate links"
+const ACCOUNT_DESC=/\b(?:bio|his|her|their|he also|she also|account (?:has|posts)|posts (?:\w+ )?(?:affiliate|referral) links?|has a (?:losing|winning)[\w\/ ]* record)\b/i;
+const stripNeg=t=>String(t).split(/[;()]/).filter(seg=>!ACCOUNT_DESC.test(seg)).join(' ; ').replace(NEG_LIST,' ');
+function spamWhy(c){const n=c.notes||'';
+ // manual override wins: true/"spam" forces hidden, false/"not_spam" clears every spam reason (news rows still stay news)
+ const ov=c.spam_override;const lov=typeof localStorage!=='undefined'&&localStorage.getItem&&localStorage.getItem('ec-notspam-'+c.id);
+ if(ov===false||ov==='not_spam'||lov)return(/^early-signal/i.test(n)||/\(context\)/i.test(c.direction||''))?['news post, not a buy/sell call']:[];
+ const why=[];if(ov===true||ov==='spam')why.push('manual spam override');
+ // structured flags (refresh.py) when present, text rules otherwise
+ if(Array.isArray(c.spam_flags))c.spam_flags.forEach(f=>why.push(String(f).replace(/_/g,' ')));
+ else{const nn=stripNeg(n);SPAM_RULES.filter(([re])=>re.test(nn)).forEach(r=>why.push(r[1]));String(c.spam_flags||'').split(/[;,]/).map(x=>x.trim()).filter(Boolean).forEach(f=>why.push(f.replace(/_/g,' ')))}
+ if(/^early-signal/i.test(n)||/\(context\)/i.test(c.direction||''))why.push('news post, not a buy/sell call');
+ const m=c.followers!=null?[0,c.followers]:n.match(/\b(\d+) followers\b/i);if(m&&+m[1]<50)why.push(`only ${m[1]} followers`);
  if(/^(filtered|excluded)$/.test(c.status||''))why.push('excluded by rule ('+c.status+')');
  if(feedOf(c)==='discovery'&&c.followers!=null&&c.followers<5000)why.push(`discovery account under 5,000 followers (${c.followers})`);
  if(c.after_the_fact)why.push('after the fact');
