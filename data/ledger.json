@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T12:08:56+01:00",
+  "generated_at": "2026-10-21T12:20:07+01:00",
   "calls": [
     {
       "id": "1",
@@ -8372,6 +8372,28 @@
       "feed": "famous",
       "baseline": 271.4376,
       "baseline_source": "Kraken",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "377",
+      "logged_at_lisbon": "2026-10-21 12:20",
+      "account": "SEC/House Clerk/CBOE/Polymarket/@DeItaone/@LiveSquawk/@FirstSquawk/@unusual_whales/@elonmusk",
+      "post_url": "https://x.com/DeItaone/status/2112863117516390700",
+      "asset": "SPCX/TSLA/BRENT/SPY",
+      "direction": "context (quiet window, log only)",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "early-signal; type=context; window ~10:18-12:20 Lisbon. Filings: fetch_filings new=0 (no Form 4s, no House PTRs, no Pelosi, no new CBOE rows). News: JPMorgan doubles SpaceX PT to $500 from $240, Overweight, sees $254B 2027 revenue (https://x.com/DeItaone/status/2112863117516390700) and says SpaceX-Tesla merger logic strong after the special committees Musk disclosed (https://x.com/DeItaone/status/2112860779623907607; merger itself already alerted Oct 20 23:15); other PT raises MS $300, Wells $274, UBS $230; Citi adds SpaceX to 90-day upside catalyst watch (public analyst notes, bullish SPCX/TSLA, logged not alerted). Zelenskyy: Starlink still limited, Rubio to work on it; Brent +$2 to session high on Iran denying diplomatic progress and falling US inventories (https://x.com/LiveSquawk/status/2112851144313868519); France 10y briefly above 5% (24-yr high); AFR: speculative data-centre debt repackaged to pensions 'subprime-like'; Yardeni AI bubble meter 83/100; AT&T, Philip Morris, Thermo Fisher beats/raises; MBA mortgage apps -5.3%. Elon/Tesla/SpaceX/Starlink/SEC/FCC/Fed own accounts quiet; OptionsHawk nothing new. Odds: Polymarket Fed Oct hold ~87.5% (-1pt 1h), US-Iran ceasefire thru Oct 22 ~96%, thru Oct 31 ~81.5%, Iran blockade end by Oct 31 ~8.5%; 1h movers all sports. Not alerted. Not financial advice.",
+      "after_the_fact": false,
+      "followers": null,
+      "source": "X",
+      "feed": "discovery",
+      "baseline": 147.79,
+      "baseline_source": "Nasdaq daily (close)",
       "copy_of": "",
       "spam_farm": false
     }

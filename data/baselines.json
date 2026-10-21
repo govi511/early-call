@@ -1766,6 +1766,16 @@
     "source": "Kraken",
     "at": "2026-10-21 10:31"
   },
+  "375|SOL|2026-10-21 12:03": {
+    "price": 106.61,
+    "source": "Kraken",
+    "at": "2026-10-21 12:03"
+  },
+  "376|TAO|2026-10-21 11:35": {
+    "price": 271.4376,
+    "source": "Kraken",
+    "at": "2026-10-21 11:35"
+  },
   "168|SPACEX|2026-10-13 00:16": {
     "price": null,
     "source": "unavailable",
@@ -2030,14 +2040,9 @@
     "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-21 08:20"
   },
-  "375|SOL|2026-10-21 12:03": {
-    "price": 106.61,
-    "source": "Kraken",
-    "at": "2026-10-21 12:03"
-  },
-  "376|TAO|2026-10-21 11:35": {
-    "price": 271.4376,
-    "source": "Kraken",
-    "at": "2026-10-21 11:35"
+  "377|SPCX/TSLA/BRENT/SPY|2026-10-21 12:20": {
+    "price": 147.79,
+    "source": "Nasdaq daily (close)",
+    "at": "2026-10-21 12:20"
   }
 }
