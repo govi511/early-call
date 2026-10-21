@@ -17,7 +17,7 @@
   ind._miss=miss;ind._m=m}
  function open(){const ind=document.querySelector('.live'),miss=ind._miss||[],m=ind._m;
   const srcs={};Object.entries(PRICES).forEach(([k,v])=>{if(k[0]==='_'||!v||!v.source)return;const s=v.source.replace(/ \(.*\)/,'');const a=v.as_of?new Date(v.as_of):null;if(!srcs[s]||a>srcs[s])srcs[s]=a});
-  const fmt=d=>d?d.toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit',timeZone:'Europe/Lisbon'})+' PT':'—';
+  const fmt=d=>d?d.toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit',timeZone:'Europe/Lisbon'})+' Lisbon':'—';
   sheet.querySelector('.hs-body').innerHTML=`<div class="hs-row"><span>Last price refresh</span><b>${m==null?'never':m<1?'just now':m+'m ago'}</b></div>`+
    `<div class="hs-sec">Open calls with no price (${miss.length})</div>`+(miss.length?`<div class="hs-chips">${miss.map(a=>`<span>${esc(a)}</span>`).join('')}</div>`:'<div class="mut">All open calls have a live price.</div>')+
    `<div class="hs-sec">Sources, last worked</div>`+Object.entries(srcs).sort().map(([s,a])=>`<div class="hs-row"><span>${esc(s)}</span><b>${fmt(a)}</b></div>`).join('');

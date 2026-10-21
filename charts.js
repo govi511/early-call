@@ -35,7 +35,7 @@
   s.setData(rows.map(x=>({time:x[0],open:x[1],high:x[2],low:x[3],close:x[4]})));
   levels(c).forEach(([t,p,col])=>s.createPriceLine({price:p,color:col,lineWidth:1,lineStyle:2,axisLabelVisible:true,title:t}));
   chart.timeScale().fitContent();
-  modal.querySelector('.cm-legend').textContent=`Data as of ${(d.as_of||'').replace('T',' ').slice(0,16)} PT · dashed lines: buy, exit-if-loss, take-profit`}
+  modal.querySelector('.cm-legend').textContent=`Data as of ${(d.as_of||'').replace('T',' ').slice(0,16)} Lisbon · dashed lines: buy, exit-if-loss, take-profit`}
  window.addEventListener('resize',()=>{if(chart)chart.applyOptions({width:box.clientWidth})});
  document.getElementById('feed').addEventListener('click',e=>{if(e.target.closest('a,summary,details,button,input'))return;const card=e.target.closest('.card[data-id]');if(!card)return;
   cur=callById(card.dataset.id);if(!cur)return;modal.querySelector('.cm-title').textContent=`${cur.asset} · ${cur.direction} · ${cur.account}`;

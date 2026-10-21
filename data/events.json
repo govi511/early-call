@@ -13,7 +13,7 @@
   {
     "date": "2026-10-14",
     "title": "US CPI (September)",
-    "detail": "BLS, 13:30 PT (8:30 ET). bls.gov/schedule",
+    "detail": "BLS, 13:30 Lisbon (8:30 ET). bls.gov/schedule",
     "tag": "Confirmed",
     "co": "macro",
     "affects": [
@@ -28,7 +28,7 @@
   {
     "date": "2026-10-15",
     "title": "US PPI (September)",
-    "detail": "BLS, 13:30 PT (8:30 ET)",
+    "detail": "BLS, 13:30 Lisbon (8:30 ET)",
     "tag": "Confirmed",
     "co": "macro",
     "affects": [
@@ -41,9 +41,21 @@
     ]
   },
   {
+    "date": "2026-10-20",
+    "title": "SpaceX Q3 2026 earnings (reported)",
+    "detail": "Reported Oct 20, 2026",
+    "tag": "Confirmed",
+    "co": "spacex",
+    "affects": [
+      "SpaceX",
+      "TSLA (sentiment)",
+      "Space stocks"
+    ]
+  },
+  {
     "date": "2026-10-21",
     "title": "Tesla Q3 2026 earnings",
-    "detail": "After US close; Q&A webcast 22:30 PT (5:30pm ET). Q3 deliveries were 486,532. ir.tesla.com",
+    "detail": "After US close; Q&A webcast 22:30 Lisbon (5:30pm ET). Q3 deliveries were 486,532. ir.tesla.com",
     "tag": "Confirmed",
     "co": "tesla",
     "affects": [
@@ -53,9 +65,21 @@
     ]
   },
   {
+    "date": "2026-10-21",
+    "title": "Meta Q3 2026 earnings (reported)",
+    "detail": "Reported Oct 21 after US close. investor.atmeta.com",
+    "tag": "Confirmed",
+    "co": "meta",
+    "affects": [
+      "META",
+      "Nasdaq",
+      "S&P 500"
+    ]
+  },
+  {
     "date": "2026-10-28",
     "title": "FOMC rate decision",
-    "detail": "Fed meeting Oct 27–28; statement 18:00 PT (2pm ET), press conference 18:30 PT. federalreserve.gov",
+    "detail": "Fed meeting Oct 27–28; statement 18:00 Lisbon (2pm ET), press conference 18:30 Lisbon. federalreserve.gov",
     "tag": "Confirmed",
     "co": "macro",
     "affects": [
@@ -68,21 +92,21 @@
     ]
   },
   {
-    "date": "2026-11-03",
-    "title": "SpaceX Q3 2026 earnings (expected)",
-    "detail": "~21:30 PT after US close — estimate, not confirmed by SpaceX",
-    "tag": "TBC",
-    "co": "spacex",
+    "date": "2026-10-28",
+    "title": "Alphabet Q3 2026 earnings",
+    "detail": "After US close; conference call 20:30 Lisbon (1:30pm PT / 4:30pm ET). abc.xyz/investor",
+    "tag": "Confirmed",
+    "co": "alphabet",
     "affects": [
-      "SpaceX",
-      "TSLA (sentiment)",
-      "Space stocks"
+      "GOOGL",
+      "Nasdaq",
+      "S&P 500"
     ]
   },
   {
     "date": "2026-11-06",
     "title": "US jobs report (October)",
-    "detail": "BLS Employment Situation, 13:30 PT (8:30 ET)",
+    "detail": "BLS Employment Situation, 13:30 Lisbon (8:30 ET)",
     "tag": "Confirmed",
     "co": "macro",
     "affects": [
@@ -109,7 +133,7 @@
   {
     "date": "2026-11-10",
     "title": "US CPI (October)",
-    "detail": "BLS, 13:30 PT (8:30 ET)",
+    "detail": "BLS, 13:30 Lisbon (8:30 ET)",
     "tag": "Confirmed",
     "co": "macro",
     "affects": [
@@ -124,7 +148,7 @@
   {
     "date": "2026-11-13",
     "title": "US PPI (October)",
-    "detail": "BLS, 13:30 PT (8:30 ET)",
+    "detail": "BLS, 13:30 Lisbon (8:30 ET)",
     "tag": "Confirmed",
     "co": "macro",
     "affects": [
@@ -139,7 +163,7 @@
   {
     "date": "2026-12-09",
     "title": "FOMC rate decision + projections",
-    "detail": "Fed meeting Dec 8–9 with Summary of Economic Projections; statement 19:00 PT (2pm ET)",
+    "detail": "Fed meeting Dec 8–9 with Summary of Economic Projections; statement 19:00 Lisbon (2pm ET)",
     "tag": "Confirmed",
     "co": "macro",
     "affects": [
@@ -154,7 +178,7 @@
   {
     "date": "2026-12-10",
     "title": "US CPI (November)",
-    "detail": "BLS, 13:30 PT (8:30 ET)",
+    "detail": "BLS, 13:30 Lisbon (8:30 ET)",
     "tag": "Confirmed",
     "co": "macro",
     "affects": [
