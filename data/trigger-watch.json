@@ -1,5 +1,5 @@
 {
-  "updated_at_lisbon": "2026-10-21 08:37",
+  "updated_at_lisbon": "2026-10-21 09:41",
   "xrp_short": {
     "status": "watching",
     "alerted": false,
@@ -30,12 +30,12 @@
       86100
     ],
     "last_closed_1h": {
-      "open_lisbon": "2026-10-21 07:00",
-      "close": 82797.0
+      "open_lisbon": "2026-10-21 08:00",
+      "close": 83145.7
     },
     "max_close_since_last_check": {
-      "open_lisbon": "2026-10-21 07:00",
-      "close": 82797.0
+      "open_lisbon": "2026-10-21 08:00",
+      "close": 83145.7
     }
   },
   "btc_trader_longs_alerted": [],
@@ -85,13 +85,14 @@
     "347",
     "348",
     "353",
-    "368"
+    "368",
+    "370"
   ],
-  "last_check_lisbon": "2026-10-21 08:37",
+  "last_check_lisbon": "2026-10-21 09:41",
   "last_prices": {
-    "BTCUSDT": 83161.9
+    "BTCUSDT": 83182.5
   },
-  "max_ledger_id_checked": 369,
+  "max_ledger_id_checked": 370,
   "data_source_note": "Binance geo-blocked; using OKX BTC-USDT 1H candles (confirmed only)",
   "skipped_btc_long_ledger_ids": {
     "303": "discovery source, already stopped 02:09 before check",
@@ -104,6 +105,7 @@
     "347": "CryptoKaleo BTC higher from here, no explicit entry/stop",
     "348": "CryptoMichNL BTC buy-the-dip, no explicit entry/stop",
     "353": "DaanCrypto BTC long, no explicit entry/stop",
-    "368": "CryptoTony__ BTC long, stop 81273 but no explicit entry; repeats #323 thesis"
+    "368": "CryptoTony__ BTC long, stop 81273 but no explicit entry; repeats #323 thesis",
+    "370": "pedrosilva BTC long with explicit zone/stop; already alerted by the X scan at ~09:12, skipped to avoid a duplicate"
   }
 }
