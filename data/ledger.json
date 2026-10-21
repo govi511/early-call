@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T08:12:47+01:00",
+  "generated_at": "2026-10-21T08:17:57+01:00",
   "calls": [
     {
       "id": "1",
@@ -8194,6 +8194,26 @@
       "feed": "following",
       "baseline": 82702.6,
       "baseline_source": "Kraken",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "369",
+      "logged_at_lisbon": "2026-10-21 08:20",
+      "account": "SEC/House Clerk/CBOE/Polymarket/@FirstSquawk/@LiveSquawk/@elonmusk",
+      "post_url": "https://x.com/LiveSquawk/status/2112787044242231648",
+      "asset": "GBP/UK100/SPCX",
+      "direction": "context (quiet window, log only)",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "early-signal; type=context; window ~06:22-08:20 Lisbon. Filings: fetch_filings new=0 (no Form 4s, no House PTRs, no Pelosi, no new CBOE rows). News: UK Sep CPI hotter than expected, 3.5% y/y vs 3.4% est (3.1% prior), services 3.7%, core in line 2.8%, PPI input 8.3% y/y vs 7.6% est (https://x.com/LiveSquawk/status/2112787044242231648) = GBP-supportive, BoE-cut odds lower; UK H1 FY deficit GBP 97.8B vs OBR 91.8B; Iraq shuts Sheeb crossing with Iran; North Korea border escalation rhetoric; Russian strikes on Ukraine energy sites; Iberdrola raises guidance; Europe opens flat. Elon only posted 'Congrats SpaceX team!' (https://x.com/elonmusk/status/2112781132387529005) and quips; Tesla/SpaceX/Starlink/SEC/FCC/Fed own accounts quiet; OptionsHawk/unusual_whales nothing new in window. Odds: Polymarket Fed Oct hold ~87.5% flat, US-Iran ceasefire thru Oct 22 ~96% flat, thru Oct 31 ~81.5%, NATO-Russia clash by Oct 31 ~7.5%; 1h movers all sports. Not alerted. Not financial advice.",
+      "after_the_fact": false,
+      "followers": null,
+      "source": "X",
+      "feed": "discovery",
       "copy_of": "",
       "spam_farm": false
     }
