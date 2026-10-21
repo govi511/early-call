@@ -1,5 +1,5 @@
 {
-  "updated_at_lisbon": "2026-10-21 07:34",
+  "updated_at_lisbon": "2026-10-21 08:37",
   "xrp_short": {
     "status": "watching",
     "alerted": false,
@@ -30,12 +30,12 @@
       86100
     ],
     "last_closed_1h": {
-      "open_lisbon": "2026-10-21 06:00",
-      "close": 82674.5
+      "open_lisbon": "2026-10-21 07:00",
+      "close": 82797.0
     },
     "max_close_since_last_check": {
-      "open_lisbon": "2026-10-21 06:00",
-      "close": 82674.5
+      "open_lisbon": "2026-10-21 07:00",
+      "close": 82797.0
     }
   },
   "btc_trader_longs_alerted": [],
@@ -84,13 +84,14 @@
     "346",
     "347",
     "348",
-    "353"
+    "353",
+    "368"
   ],
-  "last_check_lisbon": "2026-10-21 07:34",
+  "last_check_lisbon": "2026-10-21 08:37",
   "last_prices": {
-    "BTCUSDT": 82903.8
+    "BTCUSDT": 83161.9
   },
-  "max_ledger_id_checked": 367,
+  "max_ledger_id_checked": 369,
   "data_source_note": "Binance geo-blocked; using OKX BTC-USDT 1H candles (confirmed only)",
   "skipped_btc_long_ledger_ids": {
     "303": "discovery source, already stopped 02:09 before check",
@@ -102,6 +103,7 @@
     "346": "CryptoTony BTC to 84k tonight, no explicit entry/stop",
     "347": "CryptoKaleo BTC higher from here, no explicit entry/stop",
     "348": "CryptoMichNL BTC buy-the-dip, no explicit entry/stop",
-    "353": "DaanCrypto BTC long, no explicit entry/stop"
+    "353": "DaanCrypto BTC long, no explicit entry/stop",
+    "368": "CryptoTony__ BTC long, stop 81273 but no explicit entry; repeats #323 thesis"
   }
 }
