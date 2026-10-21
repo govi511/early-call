@@ -1399,7 +1399,10 @@
   "268|SOXX|2026-10-14 16:33": {
     "price": 543.9,
     "source": "Nasdaq daily (close)",
-    "at": "2026-10-14 16:33"
+    "at": "2026-10-14 16:33",
+    "locked_pct": 8.0695,
+    "locked_price": 500.01,
+    "locked_at": "2026-10-21T16:33+01:00"
   },
   "269|PRGO|2026-10-14 16:04": {
     "price": 15.37,
@@ -1852,6 +1855,11 @@
     "source": "Nasdaq daily (close)",
     "at": "2026-10-21 16:13"
   },
+  "398|GOOGL/AMZN/AAPL/TSLA/WTI/SPY|2026-10-21 16:24": {
+    "price": 340.275,
+    "source": "Nasdaq daily (close)",
+    "at": "2026-10-21 16:24"
+  },
   "168|SPACEX|2026-10-13 00:16": {
     "price": null,
     "source": "unavailable",
@@ -2115,10 +2123,5 @@
     "source": "unavailable",
     "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-21 08:20"
-  },
-  "398|GOOGL/AMZN/AAPL/TSLA/WTI/SPY|2026-10-21 16:24": {
-    "price": 340.275,
-    "source": "Nasdaq daily (close)",
-    "at": "2026-10-21 16:24"
   }
 }

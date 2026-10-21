@@ -59,18 +59,18 @@
    "resolved_at_pt": "2026-10-20T15:01+0100"
   }
  ],
- "last_check_at": "2026-10-21T15:25+01:00",
- "last_check_btc": 84020.9,
+ "last_check_at": "2026-10-21T16:22+01:00",
+ "last_check_btc": 84449.1,
  "last_proposal_at": "2026-10-20T07:18+01:00",
  "last_alert_trade_id": 2,
  "last_resolution_alerted_id": 2,
  "open_trade_id": null,
  "last_setup_eval": {
-  "at": "2026-10-21T15:25+01:00",
-  "source": "OKX 1h/1D candles, funding, L/S, OI",
-  "btc": 84020.9,
+  "at": "2026-10-21T16:22+01:00",
+  "source": "OKX 1h candles, funding, L/S, ticker",
+  "btc": 84449.1,
   "decision": "no_call",
-  "reason": "14:00 1h closed 83,784 (above 83,700); 15:00 candle retested 83,571 and is pushing new day high 84,050 (~84,021) but not closed. Funding ~0.002%, L/S 1.35, OI ~31.4k BTC. Long here is a chase into 84,350 resistance with poor R:R; wait for 1h close above 84,350 or a pullback hold ~83,700 for a long, or a rejection back below 83,600."
+  "reason": "15:00 1h closed 84,546 above 84,350; 16:00 candle spiked to 84,800 then faded to ~84,449 (low 84,339). Funding ~0.003%, L/S falling 1.36->1.25 (shorts squeezed). Separate BTC long trigger alert (entry ~84,576, SL 83,700) already went out at 16:10, so a challenge long now would duplicate it and chase after the squeeze with wide stop; no call. Watch for a hold of 84,350 retest or failed breakout back under 84,000."
  },
- "last_check_note": "15:25 Oct 21: fresh read, breakout above range in progress but entry is a chase under 84,350; no message. Next fresh read due ~16:15-17:20."
+ "last_check_note": "16:22 Oct 21: fresh read, no call, no message. Next fresh read due ~17:20-18:20."
 }
