@@ -1812,6 +1812,46 @@
     "source": "Kraken",
     "at": "2026-10-21 15:13"
   },
+  "387|BTC|2026-10-21 16:13": {
+    "price": 84713.3,
+    "source": "Kraken",
+    "at": "2026-10-21 16:13"
+  },
+  "388|ZEC|2026-10-21 16:13": {
+    "price": 1338.53,
+    "source": "Kraken",
+    "at": "2026-10-21 16:13"
+  },
+  "390|ETH|2026-10-21 16:13": {
+    "price": 2509.65,
+    "source": "Kraken",
+    "at": "2026-10-21 16:13"
+  },
+  "391|BTC|2026-10-21 16:13": {
+    "price": 84713.3,
+    "source": "Kraken",
+    "at": "2026-10-21 16:13"
+  },
+  "392|CRCL/MSTR|2026-10-21 16:13": {
+    "price": 85.87,
+    "source": "Nasdaq daily (close)",
+    "at": "2026-10-21 16:13"
+  },
+  "393|CHIP/STRK|2026-10-21 16:13": {
+    "price": 3492.513,
+    "source": "Nasdaq daily (close)",
+    "at": "2026-10-21 16:13"
+  },
+  "394|BTC|2026-10-21 16:13": {
+    "price": 84713.3,
+    "source": "Kraken",
+    "at": "2026-10-21 16:13"
+  },
+  "395|MRNA|2026-10-21 16:13": {
+    "price": 242.08,
+    "source": "Nasdaq daily (close)",
+    "at": "2026-10-21 16:13"
+  },
   "168|SPACEX|2026-10-13 00:16": {
     "price": null,
     "source": "unavailable",
@@ -2076,44 +2116,9 @@
     "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-21 08:20"
   },
-  "387|BTC|2026-10-21 16:13": {
-    "price": 84713.3,
-    "source": "Kraken",
-    "at": "2026-10-21 16:13"
-  },
-  "388|ZEC|2026-10-21 16:13": {
-    "price": 1338.53,
-    "source": "Kraken",
-    "at": "2026-10-21 16:13"
-  },
-  "390|ETH|2026-10-21 16:13": {
-    "price": 2509.65,
-    "source": "Kraken",
-    "at": "2026-10-21 16:13"
-  },
-  "391|BTC|2026-10-21 16:13": {
-    "price": 84713.3,
-    "source": "Kraken",
-    "at": "2026-10-21 16:13"
-  },
-  "392|CRCL/MSTR|2026-10-21 16:13": {
-    "price": 85.87,
+  "398|GOOGL/AMZN/AAPL/TSLA/WTI/SPY|2026-10-21 16:24": {
+    "price": 340.275,
     "source": "Nasdaq daily (close)",
-    "at": "2026-10-21 16:13"
-  },
-  "393|CHIP/STRK|2026-10-21 16:13": {
-    "price": 3492.513,
-    "source": "Nasdaq daily (close)",
-    "at": "2026-10-21 16:13"
-  },
-  "394|BTC|2026-10-21 16:13": {
-    "price": 84713.3,
-    "source": "Kraken",
-    "at": "2026-10-21 16:13"
-  },
-  "395|MRNA|2026-10-21 16:13": {
-    "price": 242.08,
-    "source": "Nasdaq daily (close)",
-    "at": "2026-10-21 16:13"
+    "at": "2026-10-21 16:24"
   }
 }

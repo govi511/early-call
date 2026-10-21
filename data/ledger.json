@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T16:13:22+01:00",
+  "generated_at": "2026-10-21T16:25:17+01:00",
   "calls": [
     {
       "id": "1",
@@ -8824,6 +8824,28 @@
       "followers": 225000,
       "source": "X",
       "feed": "discovery",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "398",
+      "logged_at_lisbon": "2026-10-21 16:24",
+      "account": "SEC/House Clerk/CBOE/Polymarket/@OptionsHawk/@unusual_whales/@FirstSquawk/@LiveSquawk/@Kalshi/@Polymarket",
+      "post_url": "https://x.com/Polymarket/status/2112923130444345776",
+      "asset": "GOOGL/AMZN/AAPL/TSLA/WTI/SPY",
+      "direction": "context (quiet window, log only)",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "early-signal; type=context; window ~14:18-16:24 Lisbon. Filings: fetch_filings new=24 (no Form 4s, no Pelosi; House PTRs from James Himes CT04 https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035687.pdf and Rudy Yakym IN02 https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035691.pdf, not Pelosi). CBOE intraday: GOOGL Oct-30 352.5C 20.4k vs 495 OI and 387.5C 20.0k vs 4 OI = OptionsHawk's 20k call-spread buyer into Oct 28 earnings (already alerted by X scan #386); AMZN Oct-30 292.5C 17.6k vs 93 OI at 1.27 (~$2.2M, pre-earnings OTM calls, side unknown); AAPL Dec-18 315P 17.9k vs 5.8k OI at 4.30 (~$7.7M, hedge); TSLA Oct-23 380-390 two-way post-earnings strikes and Oct-30 205P 5k at $0.04 (lotto/hedge); NVDA Oct-28 197.5C, Nov-20 217.5P; SPY Oct-22/27 two-way. Not alerted. News: Zelenskyy says Ukraine willing to halt fighting along current front lines for a ceasefire (https://x.com/Polymarket/status/2112923130444345776), Kremlin aide says war moving toward an end = mild oil-softening/EU risk-on; DoE crude -3.06M vs -0.32M est, gasoline -2.95M (https://x.com/LiveSquawk/status/2112914545429692906) = oil-supportive; Nasdaq 100 +1%; Kalshi 75% Tesla-SpaceX merge before 2028 (JPM $500 SPCX PT already logged #377); France 10y >5%, US 10y >5.1%; eBay cutting 9% workforce; Memphis 135-day data-centre ban. OptionsHawk: QQQ size put seller, MANE, PLTR/MSTR/CRCL strength, no new T212 setup. Elon/Tesla/SpaceX/Starlink/SEC quiet; Fed FAQ post; FCC satellite licensing explainer (routine). Odds: Polymarket Fed Oct hold 86.5% flat, hike 13.5% (+1pt 1h); Russia-Ukraine ceasefire by Oct 31 2.3%, by Dec 31 12% (+1.5pt 1h); US-Iran ceasefire thru Oct 22 97%; BTC>84k Oct 21 90.5% (+44pt 1h, follows BTC rally already alerted). No sharp independent moves. Not alerted. Public info; not financial advice.",
+      "after_the_fact": false,
+      "followers": null,
+      "source": "X",
+      "feed": "discovery",
+      "baseline": 340.275,
+      "baseline_source": "Nasdaq daily (close)",
       "copy_of": "",
       "spam_farm": false
     }
