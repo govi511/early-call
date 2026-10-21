@@ -2210,6 +2210,11 @@
     "source": "CNBC 1m (next bar)",
     "at": "2026-10-21 20:21"
   },
+  "421|TSLA/META/SPY|2026-10-21 22:20": {
+    "price": 373.71,
+    "source": "CNBC daily (close)",
+    "at": "2026-10-21 22:20"
+  },
   "248|PONS|2026-10-13 21:56": {
     "price": null,
     "source": "unavailable",
@@ -2227,10 +2232,5 @@
     "source": "unavailable",
     "error": "cnbc: cnbc: no bars for DOPE; yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
     "at": "2026-10-14 20:38"
-  },
-  "421|TSLA/META/SPY|2026-10-21 22:20": {
-    "price": 373.71,
-    "source": "CNBC daily (close)",
-    "at": "2026-10-21 22:20"
   }
 }
