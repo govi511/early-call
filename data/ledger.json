@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T17:17:56+01:00",
+  "generated_at": "2026-10-21T18:12:41+01:00",
   "calls": [
     {
       "id": "1",
@@ -8976,6 +8976,26 @@
       "feed": "following",
       "baseline": 57.14,
       "baseline_source": "Nasdaq daily (close)",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "405",
+      "logged_at_lisbon": "2026-10-21 18:10",
+      "account": "@Mr_Derivatives",
+      "post_url": "https://x.com/Mr_Derivatives/status/2112954762362830884",
+      "asset": "QQQ",
+      "direction": "long",
+      "entry": "~727.5 (broke above 50dma)",
+      "stop": "",
+      "target": "730-732",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "source watchlist; role call; \"$QQQ Just broke above the 50dma. Now next stop could test $730-$732\" (18:10 Lisbon); QQQ ~727.5 so target <1% away, no stop; US Tech 100 CFD proxy; not alerted; not financial advice",
+      "after_the_fact": false,
+      "followers": null,
+      "source": "X",
+      "feed": "famous",
       "copy_of": "",
       "spam_farm": false
     }
