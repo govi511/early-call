@@ -1354,7 +1354,10 @@
   "258|ASML/NVDA/SEMIS/OIL/FED|2026-10-14 06:15": {
     "price": 1717.76,
     "source": "Nasdaq daily (close)",
-    "at": "2026-10-14 06:15"
+    "at": "2026-10-14 06:15",
+    "locked_pct": -5.0601,
+    "locked_price": 1630.84,
+    "locked_at": "2026-10-21T06:15+01:00"
   },
   "261|BTC|2026-10-14 11:00": {
     "price": 83251.82,
@@ -1978,5 +1981,10 @@
     "source": "unavailable",
     "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-20 22:04"
+  },
+  "366|SPCX/SPY/JPY|2026-10-21 06:24": {
+    "price": 147.79,
+    "source": "Nasdaq daily (close)",
+    "at": "2026-10-21 06:24"
   }
 }

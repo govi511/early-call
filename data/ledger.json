@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T05:16:19+01:00",
+  "generated_at": "2026-10-21T06:22:58+01:00",
   "calls": [
     {
       "id": "1",
@@ -5843,6 +5843,8 @@
       "feed": "discovery",
       "baseline": 1717.76,
       "baseline_source": "Nasdaq daily (close)",
+      "locked_pct": -5.0601,
+      "locked_at": "2026-10-21T06:15+01:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -8125,6 +8127,28 @@
       "source": "X",
       "feed": "famous",
       "baseline": 68.69,
+      "baseline_source": "Nasdaq daily (close)",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "366",
+      "logged_at_lisbon": "2026-10-21 06:24",
+      "account": "SEC/House Clerk/CBOE/Polymarket/@FirstSquawk/@LiveSquawk/@unusual_whales/@elonmusk",
+      "post_url": "https://x.com/unusual_whales/status/2112755253535793590",
+      "asset": "SPCX/SPY/JPY",
+      "direction": "context (quiet window, log only)",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "early-signal; type=context; window ~04:22-06:24 Lisbon. Filings: fetch_filings new=0 (no Form 4s, no House PTRs, no Pelosi, no new CBOE rows). News: unusual_whales reports Musk says he'll give every US child a SpaceX share next year (~73M kids, ~$11B) (https://x.com/unusual_whales/status/2112755253535793590) = PR/dilution-ish headline for SPCX, logged not alerted; Rubio: foreknowledge of Starlink cut 'would not be relevant' (Ukraine Starlink follow-up); Witkoff heading to St. Petersburg for Putin talks; BOJ Himino hawkish-leaning (upside inflation risks, underlying inflation nearing 2%) = JPY-supportive; Russia reports strike on cargo ship in Black Sea; France unrest headlines; Akzo Nobel Q3 mixed. Elon/Tesla/SpaceX/Starlink/SEC/FCC/Fed own accounts quiet; OptionsHawk nothing new. Odds: Polymarket Fed Oct hold ~87.5% (+2pt/24h), US-Iran ceasefire thru Oct 22 ~96% (+4.5pt/24h), thru Oct 31 ~81.5%; no sharp market-relevant moves (1h changes ~0-1pt). Not alerted. Not financial advice.",
+      "after_the_fact": false,
+      "followers": null,
+      "source": "X",
+      "feed": "discovery",
+      "baseline": 147.79,
       "baseline_source": "Nasdaq daily (close)",
       "copy_of": "",
       "spam_farm": false
