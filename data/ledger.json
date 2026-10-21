@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T10:18:25+01:00",
+  "generated_at": "2026-10-21T11:16:47+01:00",
   "calls": [
     {
       "id": "1",
@@ -5907,6 +5907,8 @@
       "feed": "famous",
       "baseline": 83251.82,
       "baseline_source": "Binance",
+      "locked_pct": 0.0978,
+      "locked_at": "2026-10-21T11:00+01:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -5929,6 +5931,8 @@
       "feed": "discovery",
       "baseline": 83225.28,
       "baseline_source": "Binance",
+      "locked_pct": -0.107,
+      "locked_at": "2026-10-21T11:04+01:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -8278,6 +8282,48 @@
       "feed": "discovery",
       "baseline": 769.05,
       "baseline_source": "Nasdaq daily (close)",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "373",
+      "logged_at_lisbon": "2026-10-21 10:31",
+      "account": "@CryptoMichNL",
+      "post_url": "https://x.com/CryptoMichNL/status/2112839056019075078",
+      "asset": "BTC",
+      "direction": "long",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "source watchlist; role call; \"First, they'll hate the asset... That's what JPMorgan is doing and that's why we're going to so much higher than everybody expects on #Bitcoin\" = bullish BTC (long-horizon); no entry given (scored from price at post time), BTC ~83,430 OKX; no levels and same thesis as his earlier BTC longs, not alerted; not financial advice",
+      "after_the_fact": false,
+      "followers": null,
+      "source": "X",
+      "feed": "famous",
+      "baseline": 83497.8,
+      "baseline_source": "Kraken",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "374",
+      "logged_at_lisbon": "2026-10-21 10:59",
+      "account": "@Fin_CryptoAce",
+      "post_url": "https://x.com/Fin_CryptoAce/status/2112846182657757653",
+      "asset": "BTC",
+      "direction": "short",
+      "entry": "84400 (limit)",
+      "stop": "85250",
+      "target": "82700",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "source discovery; \"Limit short at 84.4k, right into the grey zone where all the equal highs sit. SL 85.25k, TP 82.7k back to daily TPOC... 2.2RR. Just a scalp idea if it tests eq highs\" (6.3k followers, account since 2023, no spam/referral text); pending limit, BTC ~83,400 OKX at scan (entry ~1.2% above); discovery source, not alerted; not financial advice",
+      "after_the_fact": false,
+      "followers": 6300,
+      "source": "X",
+      "feed": "discovery",
       "copy_of": "",
       "spam_farm": false
     }

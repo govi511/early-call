@@ -1362,12 +1362,18 @@
   "261|BTC|2026-10-14 11:00": {
     "price": 83251.82,
     "source": "Binance",
-    "at": "2026-10-14 11:00"
+    "at": "2026-10-14 11:00",
+    "locked_pct": 0.0978,
+    "locked_price": 83333.2,
+    "locked_at": "2026-10-21T11:00+01:00"
   },
   "262|BTC|2026-10-14 11:04": {
     "price": 83225.28,
     "source": "Binance",
-    "at": "2026-10-14 11:04"
+    "at": "2026-10-14 11:04",
+    "locked_pct": -0.107,
+    "locked_price": 83314.3,
+    "locked_at": "2026-10-21T11:04+01:00"
   },
   "263|TAO|2026-10-14 12:08": {
     "price": 277.8,
@@ -2012,5 +2018,10 @@
     "source": "unavailable",
     "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-21 08:20"
+  },
+  "373|BTC|2026-10-21 10:31": {
+    "price": 83497.8,
+    "source": "Kraken",
+    "at": "2026-10-21 10:31"
   }
 }
