@@ -1706,6 +1706,11 @@
     "source": "Nasdaq daily (close)",
     "at": "2026-10-21 02:18"
   },
+  "363|SPCX/TSLA/WTI/SPY|2026-10-21 04:22": {
+    "price": 147.79,
+    "source": "Nasdaq daily (close)",
+    "at": "2026-10-21 04:22"
+  },
   "168|SPACEX|2026-10-13 00:16": {
     "price": null,
     "source": "unavailable",
@@ -1964,9 +1969,14 @@
     "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-20 22:04"
   },
-  "363|SPCX/TSLA/WTI/SPY|2026-10-21 04:22": {
-    "price": 147.79,
+  "364|CVX|2026-10-21 04:41": {
+    "price": 225.71,
     "source": "Nasdaq daily (close)",
-    "at": "2026-10-21 04:22"
+    "at": "2026-10-21 04:41"
+  },
+  "365|NFLX|2026-10-21 05:08": {
+    "price": 68.69,
+    "source": "Nasdaq daily (close)",
+    "at": "2026-10-21 05:08"
   }
 }
