@@ -852,7 +852,10 @@
   "130|ETH/BTC|2026-10-08 06:54": {
     "price": 0.03099,
     "source": "Binance",
-    "at": "2026-10-08 06:54"
+    "at": "2026-10-08 06:54",
+    "locked_pct": -5.8729,
+    "locked_price": 0.02917,
+    "locked_at": "2026-10-15T06:54+01:00"
   },
   "140|BIDU|2026-10-10 19:31": {
     "price": 85.33,
@@ -1341,7 +1344,10 @@
   "256|ETH/BTC|2026-10-14 04:07": {
     "price": 0.03003,
     "source": "Binance",
-    "at": "2026-10-14 04:07"
+    "at": "2026-10-14 04:07",
+    "locked_pct": -1.5318,
+    "locked_price": 0.02957,
+    "locked_at": "2026-10-21T04:07+01:00"
   },
   "257|BTC/ETH/OIL/CHINA/FED|2026-10-14 04:15": {
     "price": 83723.34,
@@ -1390,11 +1396,6 @@
     "locked_pct": -2.214,
     "locked_price": 1.0291,
     "locked_at": "2026-10-21T12:00+01:00"
-  },
-  "266|FED/USD/SPX/BTC/GOLD|2026-10-14 14:18": {
-    "price": null,
-    "source": "not a tradable asset",
-    "at": "2026-10-14 14:18"
   },
   "268|SOXX|2026-10-14 16:33": {
     "price": 543.9,
@@ -1451,11 +1452,6 @@
     "locked_pct": -1.0196,
     "locked_price": 744.06,
     "locked_at": "2026-10-21T15:02+01:00"
-  },
-  "280|FED/USD/SPX/BTC|2026-10-14 20:22": {
-    "price": null,
-    "source": "not a tradable asset",
-    "at": "2026-10-14 20:22"
   },
   "284|AMZN|2026-10-19 19:22": {
     "price": 250.0,
@@ -1541,11 +1537,6 @@
     "price": 194.15,
     "source": "Nasdaq daily (close)",
     "at": "2026-10-20 02:18"
-  },
-  "305|FED/ORCL/NVDA/BTC|2026-10-20 04:22": {
-    "price": null,
-    "source": "not a tradable asset",
-    "at": "2026-10-20 04:22"
   },
   "306|CRV|2026-10-20 04:38": {
     "price": 0.3678,
@@ -1902,279 +1893,339 @@
     "source": "Nasdaq daily (close)",
     "at": "2026-10-21 20:21"
   },
-  "168|SPACEX|2026-10-13 00:16": {
-    "price": null,
-    "source": "unavailable",
-    "error": "yahoo: HTTP Error 429: Too Many Requests; nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
-    "at": "2026-10-13 00:16"
-  },
   "169|PELOSI|2026-10-13 00:48": {
     "price": null,
-    "source": "unavailable",
-    "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
+    "source": "not a tradable asset",
     "at": "2026-10-13 00:48"
-  },
-  "173|SPX|2026-10-13 02:00": {
-    "price": null,
-    "source": "unavailable",
-    "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
-    "at": "2026-10-13 02:00"
-  },
-  "175|OIL|2026-10-13 02:00": {
-    "price": null,
-    "source": "unavailable",
-    "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
-    "at": "2026-10-13 02:00"
-  },
-  "177|WLD|2026-10-13 02:00": {
-    "price": null,
-    "source": "unavailable",
-    "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
-    "at": "2026-10-13 02:00"
-  },
-  "180|NDX|2026-10-13 02:55": {
-    "price": null,
-    "source": "unavailable",
-    "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
-    "at": "2026-10-13 02:55"
-  },
-  "181|SPACEX|2026-10-13 02:55": {
-    "price": null,
-    "source": "unavailable",
-    "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
-    "at": "2026-10-13 02:55"
-  },
-  "183|OIL|2026-10-13 03:51": {
-    "price": null,
-    "source": "unavailable",
-    "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
-    "at": "2026-10-13 03:51"
-  },
-  "189|SKHYNIX/SEMIS|2026-10-13 05:48": {
-    "price": null,
-    "source": "unavailable",
-    "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
-    "at": "2026-10-13 05:48"
   },
   "190|US HOUSING/MACRO|2026-10-13 06:11": {
     "price": null,
-    "source": "unavailable",
-    "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: URL can't contain control characters. '/api/quote/US HOUSING/historical?assetclass=stocks&fromdate=2026-10-07&todate=2026-10-13&limit=10' (found at least ' '), etf: URL can't contain control characters. '/api/quote/US HOUSING/historical?assetclass=etf&fromdate=2026-10-07&todate=2026-10-13&limit=10' (found at least",
+    "source": "not a tradable asset",
     "at": "2026-10-13 06:11"
-  },
-  "193|KOSPI/SEMIS|2026-10-13 07:34": {
-    "price": null,
-    "source": "unavailable",
-    "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
-    "at": "2026-10-13 07:34"
-  },
-  "195|SPACEX/STARLINK|2026-10-13 08:00": {
-    "price": null,
-    "source": "unavailable",
-    "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
-    "at": "2026-10-13 08:00"
-  },
-  "202|OIL/GOLD/S&P 500|2026-10-13 09:52": {
-    "price": null,
-    "source": "unavailable",
-    "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
-    "at": "2026-10-13 09:52"
-  },
-  "204|S&P 500/NASDAQ/USD|2026-10-13 12:28": {
-    "price": null,
-    "source": "unavailable",
-    "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: URL can't contain control characters. '/api/quote/S&P 500/NASDAQ/USD/historical?assetclass=stocks&fromdate=2026-10-07&todate=2026-10-13&limit=10' (found at least ' '), etf: URL can't contain control characters. '/api/quote/S&P 500/NASDAQ/USD/historical?assetclass=etf&fromdate=2026-10-07&todate=2026-10-13&limit=10'",
-    "at": "2026-10-13 12:28"
-  },
-  "205|S&P 500/OIL|2026-10-13 12:47": {
-    "price": null,
-    "source": "unavailable",
-    "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: URL can't contain control characters. '/api/quote/S&P 500/historical?assetclass=stocks&fromdate=2026-10-07&todate=2026-10-13&limit=10' (found at least ' '), etf: URL can't contain control characters. '/api/quote/S&P 500/historical?assetclass=etf&fromdate=2026-10-07&todate=2026-10-13&limit=10' (found at least ' '))",
-    "at": "2026-10-13 12:47"
-  },
-  "208|S&P 500/OIL/FED|2026-10-13 13:26": {
-    "price": null,
-    "source": "unavailable",
-    "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: URL can't contain control characters. '/api/quote/S&P 500/historical?assetclass=stocks&fromdate=2026-10-07&todate=2026-10-13&limit=10' (found at least ' '), etf: URL can't contain control characters. '/api/quote/S&P 500/historical?assetclass=etf&fromdate=2026-10-07&todate=2026-10-13&limit=10' (found at least ' '))",
-    "at": "2026-10-13 13:26"
-  },
-  "211|OIL/S&P 500/BTC|2026-10-13 14:00": {
-    "price": null,
-    "source": "unavailable",
-    "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
-    "at": "2026-10-13 14:00"
-  },
-  "215|OIL/S&P 500/RIG|2026-10-13 15:07": {
-    "price": null,
-    "source": "unavailable",
-    "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
-    "at": "2026-10-13 15:07"
-  },
-  "223|OIL/WTI|2026-10-13 16:36": {
-    "price": null,
-    "source": "unavailable",
-    "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
-    "at": "2026-10-13 16:36"
-  },
-  "227|OIL/GOLD/S&P 500|2026-10-13 18:36": {
-    "price": null,
-    "source": "unavailable",
-    "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
-    "at": "2026-10-13 18:36"
-  },
-  "228|SPACEX/STARLINK/NVDA/GOOGL|2026-10-13 18:36": {
-    "price": null,
-    "source": "unavailable",
-    "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
-    "at": "2026-10-13 18:36"
-  },
-  "234|OIL/S&P 500/BTC|2026-10-13 20:27": {
-    "price": null,
-    "source": "unavailable",
-    "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
-    "at": "2026-10-13 20:27"
-  },
-  "237|OIL/BAC/OPENAI/S&P 500|2026-10-13 22:14": {
-    "price": null,
-    "source": "unavailable",
-    "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
-    "at": "2026-10-13 22:14"
-  },
-  "247|WLD|2026-10-13 21:56": {
-    "price": null,
-    "source": "unavailable",
-    "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
-    "at": "2026-10-13 21:56"
-  },
-  "248|PONS|2026-10-13 21:56": {
-    "price": null,
-    "source": "unavailable",
-    "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
-    "at": "2026-10-13 21:56"
-  },
-  "249|SPACEX/MSFT/OIL|2026-10-14 00:18": {
-    "price": null,
-    "source": "unavailable",
-    "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
-    "at": "2026-10-14 00:18"
-  },
-  "250|PENGU|2026-10-14 00:16": {
-    "price": null,
-    "source": "unavailable",
-    "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
-    "at": "2026-10-14 00:16"
-  },
-  "255|HMM|2026-10-14 03:39": {
-    "price": null,
-    "source": "unavailable",
-    "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
-    "at": "2026-10-14 03:39"
-  },
-  "259|SPACEX/OIL/BTC/FED|2026-10-14 08:15": {
-    "price": null,
-    "source": "unavailable",
-    "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
-    "at": "2026-10-14 08:15"
-  },
-  "260|OIL/SAUDI/CHINA/FED|2026-10-14 10:20": {
-    "price": null,
-    "source": "unavailable",
-    "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
-    "at": "2026-10-14 10:20"
-  },
-  "265|OIL/SPACEX/BAC/FED|2026-10-14 12:21": {
-    "price": null,
-    "source": "unavailable",
-    "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
-    "at": "2026-10-14 12:21"
-  },
-  "282|DOPE|2026-10-14 20:38": {
-    "price": null,
-    "source": "unavailable",
-    "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
-    "at": "2026-10-14 20:38"
-  },
-  "283|BRENT|2026-10-19 18:15": {
-    "price": null,
-    "source": "unavailable",
-    "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
-    "at": "2026-10-19 18:15"
-  },
-  "295|OIL/IRAN/FED/BTC|2026-10-19 20:18": {
-    "price": null,
-    "source": "unavailable",
-    "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
-    "at": "2026-10-19 20:18"
-  },
-  "297|WLD|2026-10-19 21:16": {
-    "price": null,
-    "source": "unavailable",
-    "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
-    "at": "2026-10-19 21:16"
-  },
-  "300|CAD (USD/CAD)|2026-10-19 22:20": {
-    "price": null,
-    "source": "unavailable",
-    "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: URL can't contain control characters. '/api/quote/CAD (USD/historical?assetclass=stocks&fromdate=2026-10-13&todate=2026-10-19&limit=10' (found at least ' '), etf: URL can't contain control characters. '/api/quote/CAD (USD/historical?assetclass=etf&fromdate=2026-10-13&todate=2026-10-19&limit=10' (found at least ' '",
-    "at": "2026-10-19 22:20"
-  },
-  "311|GBP/EUR/CAD/BTC|2026-10-20 08:17": {
-    "price": null,
-    "source": "unavailable",
-    "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
-    "at": "2026-10-20 08:17"
-  },
-  "315|SPX/NDX/GM/RTX/CAD/WTI|2026-10-20 12:18": {
-    "price": null,
-    "source": "unavailable",
-    "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
-    "at": "2026-10-20 12:18"
-  },
-  "330|UNI|2026-10-20 15:10": {
-    "price": null,
-    "source": "unavailable",
-    "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
-    "at": "2026-10-20 15:10"
-  },
-  "335|XAUUSD|2026-10-20 16:44": {
-    "price": null,
-    "source": "unavailable",
-    "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
-    "at": "2026-10-20 16:44"
-  },
-  "336|SILVER|2026-10-20 16:44": {
-    "price": null,
-    "source": "unavailable",
-    "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
-    "at": "2026-10-20 16:44"
-  },
-  "350|WLD|2026-10-20 19:26": {
-    "price": null,
-    "source": "unavailable",
-    "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
-    "at": "2026-10-20 19:26"
-  },
-  "355|KOSPI|2026-10-20 22:04": {
-    "price": null,
-    "source": "unavailable",
-    "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
-    "at": "2026-10-20 22:04"
-  },
-  "369|GBP/UK100/SPCX|2026-10-21 08:20": {
-    "price": null,
-    "source": "unavailable",
-    "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
-    "at": "2026-10-21 08:20"
-  },
-  "418|BRENT/WTI OIL, GOLD|2026-10-21 20:21": {
-    "price": null,
-    "source": "unavailable",
-    "error": "yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
-    "at": "2026-10-21 20:21"
   },
   "419|KNX|2026-10-21 21:11": {
     "price": 63.25,
     "source": "Nasdaq daily (close)",
     "at": "2026-10-21 21:11"
+  },
+  "168|SPACEX|2026-10-13 00:16": {
+    "price": 163.42,
+    "source": "Nasdaq daily (close)",
+    "at": "2026-10-13 00:16",
+    "locked_pct": -9.4603,
+    "locked_price": 147.96,
+    "locked_at": "2026-10-20T00:16+01:00"
+  },
+  "177|WLD|2026-10-13 02:00": {
+    "price": 0.4806,
+    "source": "OKX",
+    "at": "2026-10-13 02:00",
+    "locked_pct": -10.9655,
+    "locked_price": 0.5333,
+    "locked_at": "2026-10-20T02:00+01:00"
+  },
+  "181|SPACEX|2026-10-13 02:55": {
+    "price": 163.42,
+    "source": "Nasdaq daily (close)",
+    "at": "2026-10-13 02:55",
+    "locked_pct": -9.4603,
+    "locked_price": 147.96,
+    "locked_at": "2026-10-20T02:55+01:00"
+  },
+  "195|SPACEX/STARLINK|2026-10-13 08:00": {
+    "price": 161.982,
+    "source": "Nasdaq daily (open)",
+    "at": "2026-10-13 08:00",
+    "locked_pct": -9.7647,
+    "locked_price": 146.165,
+    "locked_at": "2026-10-20T08:00+01:00"
+  },
+  "204|S&P 500/NASDAQ/USD|2026-10-13 12:28": {
+    "price": 777.34,
+    "source": "Nasdaq daily (open)",
+    "at": "2026-10-13 12:28",
+    "locked_pct": -1.4768,
+    "locked_price": 765.86,
+    "locked_at": "2026-10-20T12:28+01:00"
+  },
+  "205|S&P 500/OIL|2026-10-13 12:47": {
+    "price": 777.34,
+    "source": "Nasdaq daily (open)",
+    "at": "2026-10-13 12:47",
+    "locked_pct": -1.4768,
+    "locked_price": 765.86,
+    "locked_at": "2026-10-20T12:47+01:00"
+  },
+  "208|S&P 500/OIL/FED|2026-10-13 13:26": {
+    "price": 777.34,
+    "source": "Nasdaq daily (open)",
+    "at": "2026-10-13 13:26",
+    "locked_pct": -1.4768,
+    "locked_price": 765.86,
+    "locked_at": "2026-10-20T13:26+01:00"
+  },
+  "228|SPACEX/STARLINK/NVDA/GOOGL|2026-10-13 18:36": {
+    "price": 161.982,
+    "source": "Nasdaq daily (open)",
+    "at": "2026-10-13 18:36",
+    "locked_pct": -9.7647,
+    "locked_price": 146.165,
+    "locked_at": "2026-10-20T18:36+01:00"
+  },
+  "247|WLD|2026-10-13 21:56": {
+    "price": 0.5179,
+    "source": "OKX",
+    "at": "2026-10-13 21:56",
+    "locked_pct": 13.7864,
+    "locked_price": 0.5893,
+    "locked_at": "2026-10-20T21:56+01:00"
+  },
+  "249|SPACEX/MSFT/OIL|2026-10-14 00:18": {
+    "price": 156.54,
+    "source": "Nasdaq daily (close)",
+    "at": "2026-10-14 00:18",
+    "locked_pct": -5.5896,
+    "locked_price": 147.79,
+    "locked_at": "2026-10-21T00:18+01:00"
+  },
+  "250|PENGU|2026-10-14 00:16": {
+    "price": 0.007825,
+    "source": "OKX",
+    "at": "2026-10-14 00:16",
+    "locked_pct": 2.3642,
+    "locked_price": 0.00801,
+    "locked_at": "2026-10-21T00:16+01:00"
+  },
+  "259|SPACEX/OIL/BTC/FED|2026-10-14 08:15": {
+    "price": 154.98,
+    "source": "Nasdaq daily (open)",
+    "at": "2026-10-14 08:15",
+    "locked_pct": -4.6393,
+    "locked_price": 147.79,
+    "locked_at": "2026-10-21T08:15+01:00"
+  },
+  "297|WLD|2026-10-19 21:16": {
+    "price": 0.5151,
+    "source": "OKX",
+    "at": "2026-10-19 21:16"
+  },
+  "305|FED/ORCL/NVDA/BTC|2026-10-20 04:22": {
+    "price": 129.59,
+    "source": "Nasdaq daily (close)",
+    "at": "2026-10-20 04:22"
+  },
+  "330|UNI|2026-10-20 15:10": {
+    "price": 7.456,
+    "source": "OKX",
+    "at": "2026-10-20 15:10"
+  },
+  "350|WLD|2026-10-20 19:26": {
+    "price": 0.58,
+    "source": "OKX",
+    "at": "2026-10-20 19:26"
+  },
+  "173|SPX|2026-10-13 02:00": {
+    "price": 7795.27,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-13 02:00",
+    "locked_pct": 1.4914,
+    "locked_price": 7679.01,
+    "locked_at": "2026-10-20T02:00+01:00"
+  },
+  "175|OIL|2026-10-13 02:00": {
+    "price": 92.13,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-13 02:00",
+    "locked_pct": 7.1529,
+    "locked_price": 98.72,
+    "locked_at": "2026-10-20T02:00+01:00"
+  },
+  "180|NDX|2026-10-13 02:55": {
+    "price": 30404.196,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-13 02:55",
+    "locked_pct": 3.3227,
+    "locked_price": 29393.964,
+    "locked_at": "2026-10-20T02:55+01:00"
+  },
+  "183|OIL|2026-10-13 03:51": {
+    "price": 91.61,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-13 03:51",
+    "locked_pct": 7.5647,
+    "locked_price": 98.54,
+    "locked_at": "2026-10-20T03:51+01:00"
+  },
+  "189|SKHYNIX/SEMIS|2026-10-13 05:48": {
+    "price": 1439000.0,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-13 05:48",
+    "locked_pct": 15.8443,
+    "locked_price": 1211000.0,
+    "locked_at": "2026-10-20T05:48+01:00"
+  },
+  "193|KOSPI/SEMIS|2026-10-13 07:34": {
+    "price": 6017.56,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-13 07:34",
+    "locked_pct": 8.2951,
+    "locked_price": 5518.4,
+    "locked_at": "2026-10-20T07:34+01:00"
+  },
+  "202|OIL/GOLD/S&P 500|2026-10-13 09:52": {
+    "price": 91.25,
+    "source": "CNBC 1m",
+    "at": "2026-10-13 09:52",
+    "locked_pct": 9.7753,
+    "locked_price": 100.17,
+    "locked_at": "2026-10-20T09:52+01:00"
+  },
+  "211|OIL/S&P 500/BTC|2026-10-13 14:00": {
+    "price": 91.66,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-13 14:00",
+    "locked_pct": 9.2298,
+    "locked_price": 100.12,
+    "locked_at": "2026-10-20T14:00+01:00"
+  },
+  "215|OIL/S&P 500/RIG|2026-10-13 15:07": {
+    "price": 92.42,
+    "source": "CNBC 1m",
+    "at": "2026-10-13 15:07",
+    "locked_pct": 6.2757,
+    "locked_price": 98.22,
+    "locked_at": "2026-10-20T15:07+01:00"
+  },
+  "223|OIL/WTI|2026-10-13 16:36": {
+    "price": 93.2,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-13 16:36",
+    "locked_pct": 4.6996,
+    "locked_price": 97.58,
+    "locked_at": "2026-10-20T16:36+01:00"
+  },
+  "227|OIL/GOLD/S&P 500|2026-10-13 18:36": {
+    "price": 93.12,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-13 18:36",
+    "locked_pct": 5.0795,
+    "locked_price": 97.85,
+    "locked_at": "2026-10-20T18:36+01:00"
+  },
+  "234|OIL/S&P 500/BTC|2026-10-13 20:27": {
+    "price": 93.45,
+    "source": "CNBC 1m",
+    "at": "2026-10-13 20:27",
+    "locked_pct": 5.1257,
+    "locked_price": 98.24,
+    "locked_at": "2026-10-20T20:27+01:00"
+  },
+  "237|OIL/BAC/OPENAI/S&P 500|2026-10-13 22:14": {
+    "price": 93.8,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-13 22:14",
+    "locked_pct": 4.6695,
+    "locked_price": 98.18,
+    "locked_at": "2026-10-20T22:14+01:00"
+  },
+  "248|PONS|2026-10-13 21:56": {
+    "price": null,
+    "source": "unavailable",
+    "error": "cnbc: cnbc: no bars for PONS; yahoo: HTTP Error 429: Too Many Requests; nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
+    "at": "2026-10-13 21:56"
+  },
+  "255|HMM|2026-10-14 03:39": {
+    "price": null,
+    "source": "unavailable",
+    "error": "cnbc: cnbc: no bars for HMM; yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
+    "at": "2026-10-14 03:39"
+  },
+  "260|OIL/SAUDI/CHINA/FED|2026-10-14 10:20": {
+    "price": 93.15,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-14 10:20",
+    "locked_pct": 6.3875,
+    "locked_price": 99.1,
+    "locked_at": "2026-10-21T10:20+01:00"
+  },
+  "265|OIL/SPACEX/BAC/FED|2026-10-14 12:21": {
+    "price": 94.56,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-14 12:21",
+    "locked_pct": 4.9175,
+    "locked_price": 99.21,
+    "locked_at": "2026-10-21T12:21+01:00"
+  },
+  "266|FED/USD/SPX/BTC/GOLD|2026-10-14 14:18": {
+    "price": 102.792,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-14 14:18",
+    "locked_pct": -1.0682,
+    "locked_price": 101.694,
+    "locked_at": "2026-10-21T14:18+01:00"
+  },
+  "280|FED/USD/SPX/BTC|2026-10-14 20:22": {
+    "price": 102.532,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-14 20:22",
+    "locked_pct": -0.71,
+    "locked_price": 101.804,
+    "locked_at": "2026-10-21T20:22+01:00"
+  },
+  "282|DOPE|2026-10-14 20:38": {
+    "price": null,
+    "source": "unavailable",
+    "error": "cnbc: cnbc: no bars for DOPE; yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
+    "at": "2026-10-14 20:38"
+  },
+  "283|BRENT|2026-10-19 18:15": {
+    "price": 110.03,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-19 18:15"
+  },
+  "295|OIL/IRAN/FED/BTC|2026-10-19 20:18": {
+    "price": 98.4,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-19 20:18"
+  },
+  "300|CAD (USD/CAD)|2026-10-19 22:20": {
+    "price": 1.411,
+    "source": "CNBC 1m",
+    "at": "2026-10-19 22:20"
+  },
+  "311|GBP/EUR/CAD/BTC|2026-10-20 08:17": {
+    "price": 1.335,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-20 08:17"
+  },
+  "315|SPX/NDX/GM/RTX/CAD/WTI|2026-10-20 12:18": {
+    "price": 7679.01,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-20 12:18"
+  },
+  "335|XAUUSD|2026-10-20 16:44": {
+    "price": 4155.1,
+    "source": "CNBC 1m",
+    "at": "2026-10-20 16:44"
+  },
+  "336|SILVER|2026-10-20 16:44": {
+    "price": 57.98,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-20 16:44"
+  },
+  "355|KOSPI|2026-10-20 22:04": {
+    "price": 5666.34,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-20 22:04"
+  },
+  "369|GBP/UK100/SPCX|2026-10-21 08:20": {
+    "price": 1.3377,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-21 08:20"
+  },
+  "418|BRENT/WTI OIL, GOLD|2026-10-21 20:21": {
+    "price": 110.01,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-21 20:21"
   }
 }

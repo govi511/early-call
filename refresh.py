@@ -7,7 +7,7 @@ HERE = os.path.dirname(os.path.abspath(__file__)); DATA = os.path.join(HERE, "da
 ARGS = [a for a in sys.argv[1:] if not a.startswith("--")]
 LEDGER_ONLY = "--ledger-only" in sys.argv
 SRC = ARGS[0] if ARGS else "/cursor/stores/store-9d60204b-cf80-460e-a058-55dafdd15548/call-ledger.csv"
-CRYPTO = {"BTC","ETH","SOL","XRP","BNB","DOGE","ADA","AVAX","LINK","LTC","APE","ICP","PAXG","CRV","SEI","NEAR","QNT","S","RSR","PHA","IO","STBL","BTR","Q","BULL","TAO","FET","HYPE","ZEC","ENA","SUI","EIGEN","ATOM","OP","W","ONDO","PLUME","INJ","ZRO","PUMP","VVV","BAT","ETHBTC"}
+CRYPTO = {"BTC","ETH","SOL","XRP","BNB","DOGE","ADA","AVAX","LINK","LTC","APE","ICP","PAXG","CRV","SEI","NEAR","QNT","S","RSR","PHA","IO","STBL","BTR","Q","BULL","TAO","FET","HYPE","ZEC","ENA","SUI","EIGEN","ATOM","OP","W","ONDO","PLUME","INJ","ZRO","PUMP","VVV","BAT","ETHBTC","WLD","PENGU","UNI"}
 PAIRS = {"ETHBTC": "ETHBTC"}  # Binance cross pairs priced as the real ratio (not USDT)
 def bsym(a): return PAIRS.get(a, a + "USDT")
 def is_short(d):
@@ -15,11 +15,32 @@ def is_short(d):
     d = (d or "").strip().lower()
     return d.startswith(("short", "bear", "put", "hike")) or "short" in d
 ALIAS = {"QQQ/SPY":"QQQ","SPY/QQQ":"SPY","ETH/BTC":"ETHBTC"}  # multi-ticker calls -> first ticker
-NONPRICE = {"FED","FOMC","FEDFUNDS","RATES","CPI"}  # macro calls, not tradable assets
+NONPRICE = {"FED","FOMC","FEDFUNDS","RATES","CPI","US HOUSING","PELOSI"}  # macro calls, not tradable assets
 NP_NOTE = "not a tradable asset"
 NP_LABEL = "multi-asset/context label, no price expected"
 CONTEXT_ONLY = set()  # assets whose ledger rows are all early-signal context rows (filled in main)
 def is_label(asset): return "/" in asset and " " in asset.strip()
+# Label words -> priceable tickers (multi-asset labels like "S&P 500/OIL" are split and the first priceable part is used)
+LABEL_TICKER = {"S&P 500":"SPY","S&P":"SPY","SP500":"SPY","SPX":"SPX","US500":"SPY","NASDAQ":"QQQ","NASDAQ 100":"QQQ","US TECH 100":"QQQ","NAS100":"QQQ","NDX":"NDX",
+    "OIL":"OIL","WTI":"WTI","WTI OIL":"WTI","CRUDE":"OIL","BRENT":"BRENT","GOLD":"GOLD","XAU":"XAU","XAUUSD":"XAUUSD","SILVER":"SILVER","XAGUSD":"XAGUSD",
+    "KOSPI":"KOSPI","SKHYNIX":"SKHYNIX","SPACEX":"SPCX","SPCX":"SPCX","UK100":"UK100","FTSE":"UK100","CAD":"USDCAD","USD/CAD":"USDCAD","GBP":"GBPUSD","EUR":"EURUSD","USD":"DXY","DXY":"DXY"}
+LABEL_SKIP = {"FED","FOMC","RATES","CPI","SEMIS","MACRO","US HOUSING","STARLINK","OPENAI","IRAN","SAUDI","CHINA","PELOSI"}
+def label_parts(asset):
+    a = re.sub(r"\(.*?\)", "", asset.upper()).strip()
+    return [p.strip() for p in re.split(r"[/,]| AND ", a) if p.strip()]
+def label_ticker(asset):
+    """First priceable ticker for a label/multi-asset asset, or None."""
+    a = asset.upper().strip()
+    if a in LABEL_TICKER and LABEL_TICKER[a] != a: return LABEL_TICKER[a]
+    m = re.search(r"\(([A-Z]{3})/([A-Z]{3})\)", a)
+    if m: return LABEL_TICKER.get(f"{m.group(1)}/{m.group(2)}") or None
+    parts = label_parts(asset)
+    if len(parts) < 2 and a not in LABEL_TICKER: return None
+    for p in parts:
+        if p in LABEL_SKIP or p in NONPRICE: continue
+        if p in LABEL_TICKER: return LABEL_TICKER[p]
+        if re.fullmatch(r"[A-Z]{1,5}", p): return p
+    return None
 KRAKEN = {"XMR":"XMRUSD"}  # Binance XMR pair is delisted/stale
 CNBC_MAP = {"NATGAS":"@NG.1","NG":"@NG.1","GOLD":"@GC.1","XAU":"@GC.1","XAUUSD":"@GC.1","XAGUSD":"@SI.1","SILVER":"@SI.1","OIL":"@CL.1","WTI":"@CL.1","BRENT":"@LCO.1","SPX":".SPX","NDX":".NDX"}
 def _cnbc(a):
@@ -32,7 +53,7 @@ def _cnbc(a):
     try: ch = float(str(q.get("change_pct", "")).replace("%", "").replace("+", ""))
     except ValueError: ch = None
     return {"price": p, "change_pct": ch, "symbol": sym, "currency": q.get("currencyCode") or "USD", "source": "CNBC", "as_of": now()}
-YAHOO_MAP = {"NATGAS":"NG=F","NG":"NG=F","GOLD":"GC=F","XAU":"GC=F","XAUUSD":"GC=F","XAGUSD":"SI=F","SILVER":"SI=F","OIL":"CL=F","WTI":"CL=F","BRENT":"BZ=F","SPX":"^GSPC","NDX":"^NDX"}
+YAHOO_MAP = {"KOSPI":"^KS11","SKHYNIX":"000660.KS","UK100":"^FTSE","USDCAD":"CAD=X","GBPUSD":"GBPUSD=X","EURUSD":"EURUSD=X","DXY":"DX-Y.NYB","NATGAS":"NG=F","NG":"NG=F","GOLD":"GC=F","XAU":"GC=F","XAUUSD":"GC=F","XAGUSD":"SI=F","SILVER":"SI=F","OIL":"CL=F","WTI":"CL=F","BRENT":"BZ=F","SPX":"^GSPC","NDX":"^NDX"}
 now = lambda: datetime.datetime.now().astimezone().isoformat(timespec="seconds")
 def log(m): print(f"[{now()}] {m}", flush=True)
 def write_json(path, obj):
@@ -49,22 +70,50 @@ def get(url, tries=3):
     raise err
 YH = ("https://query2.finance.yahoo.com", "https://query1.finance.yahoo.com")
 UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-YAHOO_429 = False  # once Yahoo rate-limits us, skip it for the rest of this run
+YAHOO_429 = False  # set once backoff is exhausted; Yahoo is skipped for the rest of this run
+YCACHE_PATH = os.path.join(DATA, ".yahoo-cache.json")  # past-window history responses never change: cache them on disk
+_YMEM = {}
+def _ycache():
+    if "_disk" not in _YMEM:
+        try: _YMEM["_disk"] = json.load(open(YCACHE_PATH))
+        except Exception: _YMEM["_disk"] = {}
+    return _YMEM["_disk"]
+def _ypast(qs):
+    m = re.search(r"period2=(\d+)", qs); return bool(m) and int(m.group(1)) < time.time() - 3600
 def ychart(sym, qs):
     global YAHOO_429
+    key = f"{sym}?{qs}"
+    if key in _YMEM: return _YMEM[key]
+    disk = _ycache()
+    if key in disk: return disk[key]
     if YAHOO_429: raise RuntimeError("yahoo skipped (429 earlier this run)")
-    err = None
-    for h in YH * 2:
+    err = None; delay = 2
+    for attempt, h in enumerate(YH * 2):
         try:
+            time.sleep(0.4)  # pace requests
             req = urllib.request.Request(f"{h}/v8/finance/chart/{urllib.parse.quote(sym)}?{qs}", headers={"User-Agent": UA, "Accept": "application/json"})
-            with urllib.request.urlopen(req, timeout=10) as r: return json.loads(r.read())
+            with urllib.request.urlopen(req, timeout=10) as r: out = json.loads(r.read())
+            _YMEM[key] = out
+            if _ypast(qs):
+                disk[key] = out
+                try:
+                    fd, tmp = tempfile.mkstemp(dir=DATA, suffix=".tmp")
+                    with os.fdopen(fd, "w") as f: json.dump(disk, f, separators=(",", ":"))
+                    os.replace(tmp, YCACHE_PATH)
+                except Exception: pass
+            return out
         except Exception as e:
             err = e
-            if "429" in str(e): YAHOO_429 = True; break
+            if "429" in str(e):
+                if attempt >= 3: YAHOO_429 = True; break
+                time.sleep(delay); delay *= 2  # exponential backoff 2s, 4s, 8s
+            elif "404" in str(e): break
     raise err
 def norm(asset):
     a = asset.upper().strip()
     if a in ALIAS: return ALIAS[a]
+    t = label_ticker(asset)
+    if t: return t
     return a.split("/")[0] if "/" in a and not a.endswith("/USD") else a
 def kraken_pair(a):
     """Kraken pair for a token (static map or discovered at runtime via public Ticker)."""
@@ -105,7 +154,7 @@ def _nasdaq(a):
     errs = []
     for cls in ("stocks","etf"):
         try:
-            req=urllib.request.Request(f"https://api.nasdaq.com/api/quote/{a}/info?assetclass={cls}",headers={"User-Agent":"Mozilla/5.0","Accept":"application/json"})
+            req=urllib.request.Request(f"https://api.nasdaq.com/api/quote/{urllib.parse.quote(a, safe='')}/info?assetclass={cls}",headers={"User-Agent":"Mozilla/5.0","Accept":"application/json"})
             d=_j.load(urllib.request.urlopen(req,timeout=15)).get("data") or {}
             pd=d.get("primaryData") or {}
             p=float(pd["lastSalePrice"].replace("$","").replace(",",""))
@@ -113,10 +162,23 @@ def _nasdaq(a):
             return {"price":p,"change_pct":ch,"symbol":a,"currency":"USD","source":"Nasdaq","as_of":now()}
         except Exception as e: errs.append(f"{cls}: {e}")
     raise RuntimeError("no nasdaq price (" + ", ".join(errs) + ")")
+def okx_inst(a): return {"ETHBTC": "ETH-BTC"}.get(a, f"{a}-USDT")
+def _okx(a):
+    t = get(f"https://www.okx.com/api/v5/market/ticker?instId={okx_inst(a)}", tries=2)["data"][0]
+    p, o = float(t["last"]), float(t["sodUtc0"] or t["open24h"])
+    if p <= 0: raise RuntimeError("okx: no price")
+    return {"price": p, "change_pct": (p - o) / o * 100 if o else None, "symbol": okx_inst(a), "currency": "BTC" if a in PAIRS else "USDT", "source": "OKX", "as_of": now()}
+def _okx_hist(a, ts):
+    """1m candle at post time from OKX (Binance answers 451 from this host)."""
+    k = get(f"https://www.okx.com/api/v5/market/history-candles?instId={okx_inst(a)}&bar=1m&after={(ts+60)*1000}&limit=1", tries=2).get("data") or []
+    if k and float(k[0][1]) > 0: return float(k[0][1])
+    raise RuntimeError("okx: no candle")
 def _binance(a):
-        p = get(f"https://api.binance.com/api/v3/ticker/24hr?symbol={bsym(a)}", tries=1)
-        if float(p["lastPrice"]) <= 0: raise RuntimeError("binance pair dead (price 0)")
-        return {"price": float(p["lastPrice"]), "change_pct": float(p["priceChangePercent"]), "symbol": bsym(a), "currency": "BTC" if a in PAIRS else "USDT", "source": "Binance", "as_of": now()}
+    try: return _okx(a)
+    except Exception: pass
+    p = get(f"https://api.binance.com/api/v3/ticker/24hr?symbol={bsym(a)}", tries=1)
+    if float(p["lastPrice"]) <= 0: raise RuntimeError("binance pair dead (price 0)")
+    return {"price": float(p["lastPrice"]), "change_pct": float(p["priceChangePercent"]), "symbol": bsym(a), "currency": "BTC" if a in PAIRS else "USDT", "source": "Binance", "as_of": now()}
 def _yahoo(a):
     sym = YAHOO_MAP.get(a, a)
     m = ychart(sym, "range=1d&interval=5m")["chart"]["result"][0]["meta"]
@@ -137,7 +199,11 @@ def candles(asset):
             r = get(f"https://api.kraken.com/0/public/OHLC?pair={KRAKEN[a]}&interval={km}")
             rows = next(v for kk, v in r["result"].items() if kk != "last")[-lim:]
             out[k] = [[int(x[0]), r4(float(x[1])), r4(float(x[2])), r4(float(x[3])), r4(float(x[4]))] for x in rows]
-        elif SOURCE_USED.get(a, 'binance' if a in CRYPTO else 'yahoo') == 'binance':
+        elif SOURCE_USED.get(a, 'okx' if a in CRYPTO else 'yahoo') == 'okx':
+            okb = {"15m": "15m", "1h": "1H", "4h": "4H"}[bi]
+            rows = get(f"https://www.okx.com/api/v5/market/candles?instId={okx_inst(a)}&bar={okb}&limit={min(lim, 300)}")["data"][::-1]
+            out[k] = [[int(x[0]) // 1000, r4(float(x[1])), r4(float(x[2])), r4(float(x[3])), r4(float(x[4]))] for x in rows]
+        elif SOURCE_USED.get(a) == 'binance':
             rows = get(f"https://api.binance.com/api/v3/klines?symbol={bsym(a)}&interval={bi}&limit={lim}")
             out[k] = [[int(x[0]) // 1000, r4(float(x[1])), r4(float(x[2])), r4(float(x[3])), r4(float(x[4]))] for x in rows]
         else:
@@ -151,7 +217,7 @@ def write_candles(assets):
     for a in assets:
         if "/" in a: continue  # alias like QQQ/SPY: candles live under the mapped ticker
         fp = os.path.join(d, a + ".json")
-        if a not in CRYPTO and a not in KRAKEN and SOURCE_USED.get(a) not in ('binance', 'kraken'):
+        if a not in CRYPTO and a not in KRAKEN and SOURCE_USED.get(a) not in ('binance', 'kraken', 'okx'):
             try:  # Yahoo-sourced (stocks/futures): refresh daily candles at most once per day to avoid 429s
                 if json.load(open(fp)).get("as_of", "")[:10] == now()[:10]: continue
             except Exception: pass
@@ -190,6 +256,23 @@ def mark_clusters(rows):
     return clusters
 SOURCE_USED = {}
 WATCH_ACC = os.path.join(os.path.dirname(SRC), "watchlist-accounts.json")
+# ---- Structured spam flags (mirrors SPAM_RULES / stripNeg in filter.js; filter.js prefers these when present) ----
+SPAM_TEXT = [(r"telegram", "telegram_promo"), (r"\bvip\b", "vip_promo"), (r"referral|ref link", "referral_link"), (r"affiliate", "affiliate_link"),
+    (r"low[- ]follower", "low_follower_account"), (r"thin account|bot account", "thin_bot_account"), (r"cop(y|ied)", "copied_post"),
+    (r"duplicate", "duplicate"), (r"after[ _-]the[ _-]fact", "after_the_fact"), (r"\bstale\b", "stale")]
+NEG_LIST = re.compile(r"\b(?:no|not|without|never|isn't|is not|not a)\s+(?:an?\s+|any\s+)?[\w-]+(?:\s*(?:/|,|\bor\b|\band\b|&)\s*[\w-]+)*(?:\s+(?:links?|promos?|posts?|accounts?|text|group|groups))?", re.I)
+ACCOUNT_DESC = re.compile(r"\b(?:bio|his|her|their|he also|she also|account (?:has|posts)|posts (?:\w+ )?(?:affiliate|referral) links?|has a (?:losing|winning)[\w/ ]* record)\b", re.I)
+def strip_neg(t): return NEG_LIST.sub(" ", " ; ".join(seg for seg in re.split(r"[;()]", t or "") if not ACCOUNT_DESC.search(seg)))
+def spam_flags(notes):
+    nn = strip_neg(notes); return [f for p, f in SPAM_TEXT if re.search(p, nn, re.I)]
+OVERRIDES = os.path.join(DATA, "spam-overrides.json")  # {"<id>": true|false} manual review results
+def add_spam_fields(rows):
+    try: ov = {str(k): v for k, v in json.load(open(OVERRIDES)).items() if not str(k).startswith("_")}
+    except Exception: ov = {}
+    for r in rows:
+        r["spam_flags"] = [f.strip() for f in r["spam_flags"].split(";") if f.strip()] if r.get("spam_flags") else spam_flags(r.get("notes", ""))
+        v = r.get("spam_override", ""); v = ov.get(r["id"], v)
+        r["spam_override"] = True if v in (True, "true", "spam", "1") else False if v in (False, "false", "not_spam", "0") else None
 def add_feed(rows):
     """feed = following | famous | discovery (derived; CSV schema unchanged)."""
     try: calls = {a["handle"].lower() for a in json.load(open(WATCH_ACC)) if a.get("role") == "call"}
@@ -206,11 +289,15 @@ def _hist(asset, ts):
     """Price at post time. Tries every source; on total failure raises with every reason joined."""
     a = norm(asset); errs = []
     if a in CRYPTO:
+        try: return _okx_hist(a, ts), "OKX"
+        except Exception as e: errs.append(f"okx: {e}")
         try:
             k = get(f"https://api.binance.com/api/v3/klines?symbol={bsym(a)}&interval=1m&startTime={ts*1000}&limit=1", tries=1)
             if k and float(k[0][1]) > 0: return float(k[0][1]), "Binance"
             errs.append("binance: no candle")
         except Exception as e: errs.append(f"binance: {e}")
+        try: return _okx_hist(a, ts), "OKX"
+        except Exception as e: errs.append(f"okx: {e}")
         if a in PAIRS: raise RuntimeError("; ".join(errs))  # ratio pairs: no USD fallback
         try: kraken_pair(a)
         except Exception as e: errs.append(f"kraken pair: {e}")
@@ -228,7 +315,7 @@ def _hist(asset, ts):
             errs.append("gate.io: no candles")
         except Exception as e: errs.append(f"gate.io: {e}")
         raise RuntimeError("; ".join(errs))
-    for name, fn in (("yahoo", _yhist), ("nasdaq hist", _nhist)):
+    for name, fn in (("cnbc", _chist), ("yahoo", _yhist), ("nasdaq hist", _nhist)):
         try: return fn(a, ts)
         except Exception as e: errs.append(f"{name}: {e}")
     if time.time() - ts < 2*86400:
@@ -243,7 +330,7 @@ def _nhist(a, ts):
     f = (day - _d.timedelta(days=6)).strftime("%Y-%m-%d"); t = day.strftime("%Y-%m-%d")
     for cls in ("stocks", "etf"):
         try:
-            req = urllib.request.Request(f"https://api.nasdaq.com/api/quote/{sym}/historical?assetclass={cls}&fromdate={f}&todate={t}&limit=10", headers={"User-Agent":"Mozilla/5.0","Accept":"application/json"})
+            req = urllib.request.Request(f"https://api.nasdaq.com/api/quote/{urllib.parse.quote(sym, safe='')}/historical?assetclass={cls}&fromdate={f}&todate={t}&limit=10", headers={"User-Agent":"Mozilla/5.0","Accept":"application/json"})
             rows = (((_j.load(urllib.request.urlopen(req, timeout=15)).get("data") or {}).get("tradesTable") or {}).get("rows")) or []
             num = lambda x: float(x.replace("$","").replace(",",""))
             ds = day.strftime("%m/%d/%Y")
@@ -254,6 +341,26 @@ def _nhist(a, ts):
             errs.append(f"{cls}: no rows")
         except Exception as e: errs.append(f"{cls}: {e}")
     raise RuntimeError("no nasdaq history (" + ", ".join(errs) + ")")
+CNBC_HIST = {**CNBC_MAP, "KOSPI": ".KS11", "SKHYNIX": "000660-KR", "UK100": ".FTSE", "USDCAD": "CAD=", "GBPUSD": "GBP=", "EURUSD": "EUR=", "DXY": ".DXY"}
+_CH = {}
+def _chist(a, ts):
+    """Price at post time from CNBC charts (5D = 1-min bars for ~10 days, 1M = daily bars for a year). No key, no 429s."""
+    sym = CNBC_HIST.get(a, a)
+    for per in ("5D", "1M"):
+        k = (sym, per)
+        if k not in _CH:
+            try: _CH[k] = get(f"https://ts-api.cnbc.com/harmony/app/charts/{per}.json?symbol={urllib.parse.quote(sym)}", tries=2)["barData"]["priceBars"] or []
+            except Exception: _CH[k] = []
+        bars = [(int(b["tradeTimeinMills"]) // 1000, float(b["open"]), float(b["close"])) for b in _CH[k] if b.get("open") not in (None, "")]
+        if not bars or bars[0][0] > ts: continue
+        step = 86400 if per == "1M" else 60
+        at = [o for t, o, c in bars if ts <= t < ts + step * (1 if per == "5D" else 1)]
+        if at: return at[0], f"CNBC {'1m' if per == '5D' else 'daily (open)'}"
+        before = [c for t, o, c in bars if t < ts]
+        after = [o for t, o, c in bars if t >= ts]
+        if per == "5D" and after and before: return after[0], "CNBC 1m (next bar)"  # market closed at post time: next traded price
+        if per == "1M" and before: return before[-1], "CNBC daily (close)"
+    raise RuntimeError(f"cnbc: no bars for {sym}")
 def _yhist(a, ts):
     sym = YAHOO_MAP.get(a, a)
     res = ychart(sym, f"period1={ts-3600}&period2={ts+4*86400}&interval=5m")["chart"]["result"][0]
@@ -306,7 +413,7 @@ def pick(asset, ref):
     """Fetch price; if a ledger entry level exists, the price must be within 3x of it (catches ticker clashes,
     e.g. NEAR token vs NEAR stock). Tries the default source, then the other one; otherwise raises -> n/a."""
     a = norm(asset); tried = []
-    if is_label(asset): return {"price": None, "nonpriceable": True, "note": NP_LABEL, "source": NP_LABEL, "as_of": now()}
+    if is_label(asset) and not label_ticker(asset): return {"price": None, "nonpriceable": True, "note": NP_LABEL, "source": NP_LABEL, "as_of": now()}
     if a in NONPRICE: return {"price": None, "nonpriceable": True, "note": NP_NOTE, "source": NP_NOTE, "as_of": now()}
     order = [None, 'binance', 'alt', 'yahoo'] if a not in KRAKEN else [None]
     for src in order:
@@ -314,7 +421,7 @@ def pick(asset, ref):
         except Exception as e: tried.append(f"{src or 'default'}: {str(e)[:40]}"); continue
         if ref is None or ref <= 0 or 1/3 <= p["price"] / ref <= 3:
             if a != asset.upper(): p["symbol"] = f'{p.get("symbol")} (from {asset.upper()})'
-            SOURCE_USED[a] = 'kraken' if p["source"] == "Kraken" else 'binance' if p["source"] == "Binance" else 'yahoo'
+            SOURCE_USED[a] = 'kraken' if p["source"] == "Kraken" else 'binance' if p["source"] == "Binance" else 'okx' if p["source"] == "OKX" else 'yahoo'
             return p
         tried.append(f"{p['source']} {p['price']} far from entry {ref:g}")
         if ref is None: break
@@ -339,12 +446,13 @@ def main():
                 n = r.get("notes", "").lower()
                 r["after_the_fact"] = "after the fact" in n or "after-the-fact" in n
                 m = re.search(r"\b(\d+(?:[.,]\d+)?)\s*([km]?)\s+followers\b", r.get("notes", ""), re.I)
-                r["followers"] = int(float(m.group(1).replace(",", ".")) * {"": 1, "k": 1e3, "m": 1e6}[m.group(2).lower()]) if m else None
+                if r.get("followers", "").replace(",", "").isdigit(): r["followers"] = int(r["followers"].replace(",", ""))
+                else: r["followers"] = int(float(m.group(1).replace(",", ".")) * {"": 1, "k": 1e3, "m": 1e6}[m.group(2).lower()]) if m else None
                 r["source"] = "X" if any(d in r.get("post_url", "") for d in ("x.com", "twitter.com")) else "other"
                 rows.append(r)
     except Exception as e:
         log(f"ERROR reading ledger {SRC}: {e}"); return 1
-    add_feed(rows); add_baselines(rows)
+    add_feed(rows); add_spam_fields(rows); add_baselines(rows)
     clusters = mark_clusters(rows)
     farm = sorted({a for c in clusters for a in c["accounts"]})
     out = {"generated_at": now(), "calls": rows, "clusters": clusters, "spam_farm_accounts": farm}
