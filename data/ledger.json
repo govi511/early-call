@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T10:08:50+01:00",
+  "generated_at": "2026-10-22T10:18:35+01:00",
   "calls": [
     {
       "id": "1",
@@ -10738,6 +10738,30 @@
         "after_the_fact"
       ],
       "spam_override": null,
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "436",
+      "logged_at_lisbon": "2026-10-22 10:18",
+      "account": "@FirstSquawk/@lookonchain/@Polymarket",
+      "post_url": "https://x.com/FirstSquawk/status/2113179924228169783",
+      "asset": "Brent/WTI oil/Gold/BTC/ETH",
+      "direction": "context (log only)",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "early-signal; type=context; window ~08:20-10:18 Lisbon. fetch_filings new=0 (no new Form 4s, House PTRs or CBOE rows). Oil/Iran theme continues (continuation of #420/#429): FirstSquawk Brent futures +3% to $112.55, highest since May (09:05 Lisbon); X news says Houthi drone strikes hit a Saudi Aramco field, Brent peaked ~$113; FirstSquawk 'Iran says scope of conflict may expand on Hormuz illegal transit' (09:35). Gold -1% to ~$4,090, silver -3% (X news). Lookonchain: whale sold another 246 BTC ($20.6M) for 8,286 ETH; 1,918 BTC sold for 64.5k ETH over 11 days (10:09). SNB minutes (08:36) flag Middle East downside risk. Polymarket: no sharp 1h moves in market-relevant markets (US-Iran ceasefire Oct 31 74%, -8pt/24h, already noted; Israel-Iran ceasefire Oct 31 81%, -1pt/1h). Musk posts only political (Talarico); no Tesla/SpaceX/Starlink/SEC/FCC/Fed posts; no Pelosi. No alert. Not financial advice.",
+      "after_the_fact": false,
+      "followers": null,
+      "source": "X",
+      "feed": "discovery",
+      "spam_flags": [],
+      "spam_override": null,
+      "baseline": 108.79,
+      "baseline_source": "CNBC daily (close)",
       "copy_of": "",
       "spam_farm": false
     }
