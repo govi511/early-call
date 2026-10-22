@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T12:17:24+01:00",
+  "generated_at": "2026-10-22T12:20:28+01:00",
   "calls": [
     {
       "id": "1",
@@ -10791,6 +10791,30 @@
       "spam_override": null,
       "baseline": 2403.08,
       "baseline_source": "OKX",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "438",
+      "logged_at_lisbon": "2026-10-22 12:20",
+      "account": "@DeItaone/@FirstSquawk",
+      "post_url": "https://x.com/DeItaone/status/2113216486676504978",
+      "asset": "SPCX/EUR bonds/Brent oil/NVDA",
+      "direction": "context (log only)",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "early-signal; type=context; window ~10:18-12:20 Lisbon. fetch_filings new=0 (no new Form 4s, House PTRs or CBOE rows). DeItaone: Barclays raises SpaceX ($SPCX) price target to $300 from $254 (11:30 Lisbon) - analyst PT, logged not alerted (same treatment as Citi raise #363). French 10y yield highest since 2002 at 5.142%, OAT-Bund spread widening to 176bp (11:38-12:19); Bund 10y down 6.5bp to 3.35%. Oil/Iran theme continues (continuation of #420/#436): Brent tops $111, highest close since May, more US warships deploying (12:04). Nvidia's Huang: neocloud demand 'off the charts' but capital scarce (CNBC, 11:38). Earnings beats: P&G, Blackstone, Comcast, Valero; AAL weak FY guide. Polymarket: only sports sharp moves. Musk posts non-market ('True' quote, reply); no Tesla/SpaceX/Starlink/SEC/FCC/Fed posts; no Pelosi. No alert. Not financial advice.",
+      "after_the_fact": false,
+      "followers": null,
+      "source": "X",
+      "feed": "discovery",
+      "spam_flags": [],
+      "spam_override": null,
+      "baseline": 156.7,
+      "baseline_source": "CNBC daily (close)",
       "copy_of": "",
       "spam_farm": false
     }
