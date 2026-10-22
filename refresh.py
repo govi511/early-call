@@ -557,6 +557,10 @@ def main():
                 if not r.get("id"): continue
                 r["after_the_fact"] = after_the_fact(r)
                 r["call_notes"] = call_text(r)
+                m = re.search(r"\bexit_close=([\d.]+)", r.get("notes", ""))  # expired by time limit: that day's close (tools/resolve_calls.py)
+                if m and r.get("status") == "expired":
+                    r["exit_price"] = float(m.group(1)); en = level_nums(r.get("entry"))
+                    if en: e0 = sum(en[:2]) / len(en[:2]); r["exit_pct"] = round((-1 if is_short(r.get("direction")) else 1) * (r["exit_price"] - e0) / e0 * 100, 4)
                 m = re.search(r"\b(\d+(?:[.,]\d+)?)\s*([km]?)\s+followers\b", r.get("notes", ""), re.I)
                 if r.get("followers", "").replace(",", "").isdigit(): r["followers"] = int(r["followers"].replace(",", ""))
                 else: r["followers"] = int(float(m.group(1).replace(",", ".")) * {"": 1, "k": 1e3, "m": 1e6}[m.group(2).lower()]) if m else None
@@ -565,6 +569,9 @@ def main():
     except Exception as e:
         log(f"ERROR reading ledger {SRC}: {e}"); return 1
     add_feed(rows); add_spam_fields(rows); add_baselines(rows)
+    for r in rows:
+        if r.get("exit_price") is not None and r.get("exit_pct") is None and r.get("baseline"):
+            r["exit_pct"] = round((-1 if is_short(r.get("direction")) else 1) * (r["exit_price"] - r["baseline"]) / r["baseline"] * 100, 4)
     clusters = mark_clusters(rows)
     farm = sorted({a for c in clusters for a in c["accounts"]})
     out = {"generated_at": now(), "calls": rows, "clusters": clusters, "spam_farm_accounts": farm}

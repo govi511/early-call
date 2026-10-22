@@ -72,6 +72,42 @@ def judge(r):
         if hitS: return ("stopped", f"{'close' if stop_close else ('low' if not short else 'high')} {sx:g} through stop {S:g} (bar {when} Lisbon)", src, t)
     last = b[-1][4]
     return ("open", f"no level hit; last {last:g}", src)
+LEVEL_DAYS = 30  # Manager rule: calls with a stop/target and no stated timeframe expire 30 days after the post
+MON = {m: i for i, m in enumerate(["jan","feb","mar","apr","may","jun","jul","aug","sep","oct","nov","dec"], 1)}
+def timeframe_end(r):
+    """Date the call's own stated timeframe ends, or None. Only explicit phrases; ignores segments about other calls (#123, prior)."""
+    post = datetime.datetime.strptime(r["logged_at_lisbon"], "%Y-%m-%d %H:%M").date()
+    segs = [r.get("target", "")] + [x for x in R._split_top(R.call_text(r)) if not re.search(r"#\d|\bprior\b|earlier post", x, re.I)]
+    t = " ; ".join(segs)
+    def md(mon, day):
+        d = datetime.date(post.year, MON[mon[:3].lower()], int(day))
+        return d if d >= post else datetime.date(post.year + 1, d.month, d.day)
+    m = re.search(r"\bexpires? after (jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)\w* (\d{1,2})\b", t, re.I) or \
+        re.search(r"\bby (jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)\w* (\d{1,2})\b", t, re.I)
+    if m: return md(m.group(1), m.group(2))
+    if re.search(r"\bby (?:the )?end of (?:the |this )?week\b|\bfinish this week\b", t, re.I): return post + datetime.timedelta(days=6 - post.weekday())
+    if re.search(r"\bby (?:the )?end of (?:the |this )?month\b", t, re.I):
+        n = (post.replace(day=28) + datetime.timedelta(days=4)); return n - datetime.timedelta(days=n.day)
+    if re.search(r"\bby (?:the )?(?:end of (?:the )?day|close today)\b|\bEOD\b", t): return post
+    return None
+def day_close(asset, day):
+    """Closing price of that calendar day: OKX 1D (UTC) for crypto, CNBC daily bar (last trading day <= day) otherwise."""
+    a = R.norm(asset)
+    if a in R.CRYPTO:
+        end = int(datetime.datetime(day.year, day.month, day.day, tzinfo=datetime.timezone.utc).timestamp()) + 86400
+        d = R.get(f"https://www.okx.com/api/v5/market/history-candles?instId={R.okx_inst(a)}&bar=1Dutc&after={end*1000}&limit=1", tries=2).get("data") or []
+        if not d: raise RuntimeError("okx: no daily bar")
+        return float(d[0][4]), "OKX 1D close"
+    sym = R.CNBC_HIST.get(a, a)
+    b = R.get(f"https://ts-api.cnbc.com/harmony/app/charts/1M.json?symbol={sym}", tries=2)["barData"]["priceBars"] or []
+    b = [x for x in b if x.get("close") not in (None, "") and x["tradeTime"][:8] <= day.strftime("%Y%m%d")]
+    if not b: raise RuntimeError(f"cnbc: no daily bar for {sym}")
+    return float(b[-1]["close"]), f"CNBC daily close {b[-1]['tradeTime'][:8]}"
+def time_limit(r):
+    """(end_date, why) if a leveled call's time limit has passed, else None."""
+    tf = timeframe_end(r); post = datetime.datetime.strptime(r["logged_at_lisbon"], "%Y-%m-%d %H:%M").date()
+    end, why = (tf, "stated timeframe ended") if tf else (post + datetime.timedelta(days=LEVEL_DAYS), f"{LEVEL_DAYS}-day limit passed")
+    return (end, why) if end < datetime.date.today() else None
 NO_LEVEL_DAYS = 7  # Manager rule: calls with no levels lock after 7 days
 def main():
     apply = "--apply" in sys.argv
@@ -88,6 +124,14 @@ def main():
         try: j = judge(r)
         except Exception as e: j = ("open", f"price error: {e}", "-")
         if j is None: continue
+        if j[0] == "open":  # no level hit: check the time limit
+            tl = time_limit(r)
+            if tl:
+                try:
+                    px, src = day_close(r["asset"], tl[0])
+                    j = ("expired", f"{tl[1]} {tl[0]}; exit_close={px:g} ({src}); scored by % move from entry", src, int(datetime.datetime.combine(tl[0], datetime.time(23, 59)).timestamp()))
+                    changes.append((r, j))
+                except Exception as e: j = ("open", f"{tl[1]} {tl[0]} but no close price: {e}", "-")
         print(f'#{r["id"]} {r["account"]} {r["asset"]} {r["direction"]} e={r["entry"]!r} s={r["stop"]!r} t={r["target"]!r} -> {j[0]}: {j[1]} [{j[2]}]')
         if j[0] in ("hit_target", "stopped"): changes.append((r, j))
     print(f"\n{len(changes)} to close")
