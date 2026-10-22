@@ -59,13 +59,13 @@
       "resolved_at_pt": "2026-10-20T15:01+0100"
     }
   ],
-  "last_check_at": "2026-10-22T07:49+01:00",
-  "last_check_btc": 82432.1,
+  "last_check_at": "2026-10-22T08:49+01:00",
+  "last_check_btc": 82230.1,
   "last_proposal_at": "2026-10-20T07:18+01:00",
   "last_alert_trade_id": 2,
   "last_resolution_alerted_id": 2,
   "open_trade_id": null,
-  "last_setup_eval": "2026-10-22T07:49+01:00",
-  "last_check_note": "OKX: BTC 82,432 breaking below prior 24h low 82,587 (new low at 07:45 candle, no reclaim); OI ~$2.43B slightly down; funding +0.01%; L/S up to 1.58. Mid-breakdown, chasing short at lows not clean and no sweep/reclaim for long, no call.",
-  "last_fresh_read": "2026-10-22T07:49+01:00"
+  "last_setup_eval": "2026-10-22T08:49+01:00",
+  "last_check_note": "OKX: BTC 82,230 grinding to new lows (08:00 candle low 82,214, below prior low 82,432); 24h range 82,432-84,876 broken; OI ~$2.44B flat; funding +0.01%; L/S up to 1.60 (longs adding into the drop). Steady trend down with no pullback to sell and no sweep/reclaim to buy, so no call.",
+  "last_fresh_read": "2026-10-22T08:49+01:00"
 }
