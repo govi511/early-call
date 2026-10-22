@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T13:16:49+01:00",
+  "generated_at": "2026-10-22T14:18:30+01:00",
   "calls": [
     {
       "id": "1",
@@ -10843,6 +10843,30 @@
         "after_the_fact"
       ],
       "spam_override": null,
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "440",
+      "logged_at_lisbon": "2026-10-22 14:17",
+      "account": "@DeItaone/@FirstSquawk",
+      "post_url": "https://x.com/DeItaone/status/2113253910542532963",
+      "asset": "TSLA/SPCX/Gold/Brent oil",
+      "direction": "context (log only)",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "early-signal; type=context; window ~12:20-14:17 Lisbon. fetch_filings new=0 (no new Form 4s, House PTRs or CBOE rows). DeItaone: TSLA analyst moves - CLSA upgrades Underperform->Hold, PT $310->$400; Piper Sandler PT $450->$475 (13:59 Lisbon) - public analyst notes, logged not alerted. BofA SpaceX ($SPCX) PT $235->$275 (13:16) - logged not alerted (same as Barclays #438/Citi #363). US jobless claims 194K vs 200K est, continuing 1,728K (13:30). Gold -1.3% to ~$4,083 on oil/inflation/Fed worries; Houthis claim attacks on Aramco Yanbu and Dammam airport (oil/Iran theme continuation of #436/#438). Visa in talks to buy Fireblocks ~$2.5B (Axios); Kalshi/BitGo crypto-backed margin loans; META credit risk measure at new high on AI capex; eBay -9% workforce. Polymarket: only sports sharp moves plus BTC>82k Oct 22 odds -7.6pt/1h lagging spot. No Musk/Tesla/SpaceX/Starlink/SEC/FCC/Fed posts in window; no Pelosi. No alert. Not financial advice.",
+      "after_the_fact": false,
+      "followers": null,
+      "source": "X",
+      "feed": "discovery",
+      "spam_flags": [],
+      "spam_override": null,
+      "baseline": 386.47,
+      "baseline_source": "CNBC daily (close)",
       "copy_of": "",
       "spam_farm": false
     }
