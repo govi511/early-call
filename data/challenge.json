@@ -59,13 +59,13 @@
       "resolved_at_pt": "2026-10-20T15:01+0100"
     }
   ],
-  "last_check_at": "2026-10-22T05:50+01:00",
-  "last_check_btc": 82815,
+  "last_check_at": "2026-10-22T06:51+01:00",
+  "last_check_btc": 82686.5,
   "last_proposal_at": "2026-10-20T07:18+01:00",
   "last_alert_trade_id": 2,
   "last_resolution_alerted_id": 2,
   "open_trade_id": null,
-  "last_setup_eval": "2026-10-22T05:50+01:00",
-  "last_check_note": "Fresh OKX read 05:50 Lisbon: BTC ~82,815, tight chop 82,650-83,000 for 3h just above 24h low 82,587; OI flat ~$2.47B, funding +0.007%, L/S rising to 1.51 (longs stacking above the low). No sweep or reclaim, so no clean setup and no call.",
-  "last_fresh_read": "2026-10-22T05:50+01:00"
+  "last_setup_eval": "2026-10-22T06:51+01:00",
+  "last_check_note": "OKX: BTC 82,686 pressing 24h low 82,587 after 3h chop 82,650-83,000; OI flat; funding +0.01%; L/S up to 1.56. No sweep/reclaim, no call.",
+  "last_fresh_read": "2026-10-22T06:51+01:00"
 }
