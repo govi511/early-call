@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T22:14:58+01:00",
+  "generated_at": "2026-10-22T22:16:21+01:00",
   "calls": [
     {
       "id": "1",
@@ -11808,6 +11808,31 @@
       "feed": "famous",
       "spam_flags": [],
       "spam_override": null,
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "462",
+      "logged_at_lisbon": "2026-10-22 22:14",
+      "account": "SEC/House Clerk/CBOE/Polymarket/@elonmusk/@federalreserve",
+      "post_url": "https://x.com/elonmusk/status/2113377866478231647",
+      "asset": "SPY/NVDA/AAPL/AMZN/MSFT/META",
+      "direction": "context (log only)",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "early-signal; type=context; window ~20:15-22:14 Lisbon. fetch_filings new=73, CBOE end-of-day unusual-volume rows (no new Pelosi/House PTR or notable Form 4 surfaced). CBOE: SPY Oct-26 755P 87k vs 2.9k OI at 1.44 (~$12.5M) plus Oct-23 765P 48k, Nov-20 724P 16k = continued downside hedging after the Nasdaq -2.7% day; NVDA Oct-30 225C 43.6k vs 11.3k OI at 0.94 (~$4M lotto calls into bounce) and Nov-27 200P 7.8k; AAPL Oct-23 352.5C 47k lotto; AMZN Oct-23 257.5C 30k lotto; MSFT Oct-23 530C 14k / 522.5P 11k straddle-ish; META Oct-23 765/770P deep ITM (post -7.8% drop, likely closing). Read: hedging/lottos, not an early tell. X: Musk reply says Starship lunar-landing refuelings 'more like 6 to 8' vs NASA panel's ~22 (https://x.com/elonmusk/status/2113377866478231647, mildly SpaceX-positive, not market-moving); Fed weekly balance sheet only; Tesla/SpaceX/SEC/FCC quiet. Polymarket: Fed hold Oct 93.5%; US-Iran ceasefire thru Oct 24 91.5% (+19pt 24h, gradual), thru Oct 31 76.5%; NATO-Russia clash by Oct 31 21%; only sharp 1h moves were sports. Not alerted (public, nothing new and significant). Not financial advice.",
+      "after_the_fact": false,
+      "call_notes": "early-signal ; type=context ; window ~20:15-22:14 Lisbon. fetch_filings new=73, CBOE end-of-day unusual-volume rows (no new Pelosi/House PTR or notable Form 4 surfaced). CBOE: SPY Oct-26 755P 87k vs 2.9k OI at 1.44 (~$12.5M) plus Oct-23 765P 48k, Nov-20 724P 16k = continued downside hedging after the Nasdaq -2.7% day ; NVDA Oct-30 225C 43.6k vs 11.3k OI at 0.94 (~$4M lotto calls into bounce) and Nov-27 200P 7.8k ; AAPL Oct-23 352.5C 47k lotto ; AMZN Oct-23 257.5C 30k lotto ; MSFT Oct-23 530C 14k / 522.5P 11k straddle-ish ; META Oct-23 765/770P deep ITM (post -7.8% drop, likely closing). Read: hedging/lottos, not an early tell. X: Musk reply says Starship lunar-landing refuelings 'more like 6 to 8' vs NASA panel's ~22 (https://x.com/elonmusk/status/2113377866478231647, mildly SpaceX-positive, not market-moving) ; Fed weekly balance sheet only ; Tesla/SpaceX/SEC/FCC quiet. Polymarket: Fed hold Oct 93.5% ; US-Iran ceasefire thru Oct 24 91.5% (+19pt 24h, gradual), thru Oct 31 76.5% ; NATO-Russia clash by Oct 31 21% ; only sharp 1h moves were sports. Not alerted (public, nothing new and significant). Not financial advice.",
+      "followers": null,
+      "source": "X",
+      "feed": "discovery",
+      "spam_flags": [],
+      "spam_override": null,
+      "baseline": 773.09,
+      "baseline_source": "CNBC daily (close)",
       "copy_of": "",
       "spam_farm": false
     }
