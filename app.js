@@ -62,33 +62,6 @@ function renderLeader(){if(!LEDGER||!$('#lb'))return;const by={};LEDGER.calls.fi
  rows.forEach(o=>{const p=LBPREV[o.n];if(p!=null&&o.avg!=null&&Math.abs(o.avg-p)>1e-9){const el=document.querySelector(`.lb-row[data-acc="${CSS.escape(o.n)}"]`);el&&el.classList.add(o.avg>p?'flash-up':'flash-dn');el&&setTimeout(()=>el.classList.remove('flash-up','flash-dn'),1200)}LBPREV[o.n]=o.avg})}
 const LBOPEN=new Set();document.addEventListener('toggle',e=>{const d=e.target;if(d.classList&&d.classList.contains('lbd'))d.open?LBOPEN.add(d.dataset.acc):LBOPEN.delete(d.dataset.acc)},true);
 loadLedger().catch(e=>$('#feed').innerHTML='<p class="mut">Could not load data/ledger.json — run refresh.py and serve over http.</p>');
-// Portfolio
-const H=[['SpaceX',389.02,'#2f9bff'],['Tesla',244.00,'#ff4d5e'],['Cyber segurança pie',107.06,'#21c37a'],['Pelosi pie',96.70,'#a66bff'],['Bancos tugas pie',49.14,'#f5b73b'],['iShares NASDAQ 100',29.63,'#20c5d6'],['iShares S&P 500 IT',29.36,'#ff8a3d']];
-const tot=H.reduce((s,h)=>s+h[1],0),musk=(389.02+244)/tot*100;
-$('#ptotal').textContent=eur(tot);
-$('#pwarn').innerHTML=`<div class="warn">⚠️ Concentration: SpaceX + Tesla (Musk-linked) = <b>${musk.toFixed(0)}%</b> of the portfolio. A single bad headline hits two-thirds of your money.</div>`;
-$('#ptab').innerHTML=H.map(h=>`<tr><td><span style="color:${h[2]}">●</span> ${h[0]}</td><td>${eur(h[1])}</td><td class="mut">${(h[1]/tot*100).toFixed(1)}%</td></tr>`).join('');
-const C=window.Chart;Chart&&(Chart.defaults.color='#8a96a6');
-C&&new Chart($('#donut'),{type:'doughnut',data:{labels:H.map(h=>h[0]),datasets:[{data:H.map(h=>h[1]),backgroundColor:H.map(h=>h[2]),borderWidth:0}]},options:{cutout:'68%',maintainAspectRatio:false,plugins:{legend:{display:false}}}});
-const PJ=JSON.parse(localStorage.getItem('ec-proj')||'{}');$('#pj-s').value=PJ.s??tot.toFixed(0);$('#pj-m').value=PJ.m??'';if(PJ.y)$('#pj-y').value=PJ.y;let pjc;
-function proj(){const s=+$('#pj-s').value||0,m=+$('#pj-m').value||0,y=+$('#pj-y').value,n=y*12;const sc=[[-25,'#ff4d5e'],[8,'#2f9bff'],[25,'#21c37a']];
- const series=sc.map(([r])=>{const mr=Math.pow(1+r/100,1/12)-1;let v=s,a=[v];for(let i=0;i<n;i++){v=v*(1+mr)+m;a.push(v)}return a});
- $('#pj-out').innerHTML=sc.map(([r],i)=>`<tr><td class="${r<0?'dn':'up'}">${r>0?'+':''}${r}%/yr</td><td>${eur(s+m*n)}</td><td><b>${eur(series[i][n])}</b></td></tr>`).join('');
- if(!C)return;pjc&&pjc.destroy();pjc=new Chart($('#pjc'),{type:'line',data:{labels:[...Array(n+1).keys()].map(i=>'M'+i),datasets:sc.map(([r,c],i)=>({label:(r>0?'+':'')+r+'%',data:series[i],borderColor:c,pointRadius:0,tension:.2}))},options:{maintainAspectRatio:false,scales:{x:{grid:{color:'#1c232d'}},y:{grid:{color:'#1c232d'}}}}})}
-['#pj-s','#pj-m','#pj-y'].forEach(i=>$(i).oninput=()=>{localStorage.setItem('ec-proj',JSON.stringify({s:$('#pj-s').value,m:$('#pj-m').value,y:$('#pj-y').value}));proj();rebal()});proj();
-// How to rebalance (theory) — computed from holdings
-function rebal(){const big=H.filter(h=>/SpaceX|Tesla/.test(h[0])),bt=big.reduce((s,h)=>s+h[1],0),m=+$('#pj-m').value||0,tgt=50;
- const need=bt/(tgt/100)-tot,months=m>0&&need>0?Math.ceil(need/m):null;
- $('#rebal').innerHTML=`<h2>How to rebalance (theory)</h2><p>SpaceX + Tesla are <b>${(bt/tot*100).toFixed(0)}%</b> of your portfolio (${eur(bt)} of ${eur(tot)}). A generic way people reduce concentration:</p>
- <ol class="steps"><li><b>Send new money elsewhere.</b> Put new monthly contributions into a broad S&amp;P 500 fund/ETF (not the tech-only one) until a target split is reached — no selling needed.</li><li><b>Set a max % per holding</b> (e.g. 20–25% for any single stock) and a target for the two combined.</li><li><b>Rebalance periodically</b> (e.g. every 6–12 months), not after every headline.</li><li><b>Avoid selling at a loss just to rebalance</b> — redirecting contributions is usually gentler (and taxes/fees matter).</li></ol>
- <div class="lv"><div><small>Example target</small>${tgt}% combined</div><div><small>New money needed*</small>${need>0?eur(need):'already there'}</div><div><small>Months at your monthly</small>${months??(m>0?'0':'enter monthly')}</div></div>
- <p class="mut">*If all new money goes to other holdings and prices don't move. Educational illustration only — not financial advice.</p>`}
-rebal();
-// Trade size helper
-const TS=JSON.parse(localStorage.getItem('ec-ts')||'{}');['bal','risk','e','s'].forEach(k=>{const el=$('#ts-'+k);if(TS[k]!=null)el.value=TS[k];el.oninput=()=>{TS[k]=el.value;localStorage.setItem('ec-ts',JSON.stringify(TS));tsz()}});
-function tsz(){const b=+$('#ts-bal').value,r=+$('#ts-risk').value,e=+$('#ts-e').value,s=+$('#ts-s').value;if(!b||!r||!e||!s||e===s){$('#ts-out').innerHTML='<p class="mut">Fill all four fields.</p>';return}
- const risk=b*r/100,u=risk/Math.abs(e-s);$('#ts-out').innerHTML=`<div class="lv"><div><small>Max loss</small><span class="dn">${eur(risk)}</span></div><div><small>Size (units)</small>${u.toLocaleString('en-US',{maximumFractionDigits:4})}</div><div><small>Position value</small>${eur(u*e)}</div></div>${r>2?'<div class="warn">Above 2% risk per trade is aggressive.</div>':''}${u*e>b?'<div class="warn">Position value is bigger than your balance.</div>':''}`}
-tsz();
 // Alerts
 const ls=(k,v)=>v===undefined?JSON.parse(localStorage.getItem(k)||'[]'):localStorage.setItem(k,JSON.stringify(v));
 function rAl(){const a=ls('ec-alerts');$('#al-list').innerHTML=a.map((x,i)=>{const p=PRICES[x.asset]?.price,hit=p==null?null:x.dir==='above'?p>=x.level:p<=x.level;
