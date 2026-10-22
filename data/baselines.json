@@ -2310,6 +2310,21 @@
     "source": "CNBC daily (close)",
     "at": "2026-10-22 16:12"
   },
+  "448|BTC|2026-10-22 16:58": {
+    "price": 81676.4,
+    "source": "OKX",
+    "at": "2026-10-22 16:58"
+  },
+  "449|TSCO|2026-10-22 16:37": {
+    "price": 34.205,
+    "source": "CNBC 1m",
+    "at": "2026-10-22 16:37"
+  },
+  "450|GOOGL|2026-10-22 16:23": {
+    "price": 327.82,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-22 16:23"
+  },
   "248|PONS|2026-10-13 21:56": {
     "price": null,
     "source": "unavailable",
@@ -2333,20 +2348,5 @@
     "source": "unavailable",
     "error": "cnbc: cnbc: no bars for NYSE COMPOSITE; yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-22 15:38"
-  },
-  "448|BTC|2026-10-22 16:58": {
-    "price": 81676.4,
-    "source": "OKX",
-    "at": "2026-10-22 16:58"
-  },
-  "449|TSCO|2026-10-22 16:37": {
-    "price": 34.205,
-    "source": "CNBC 1m",
-    "at": "2026-10-22 16:37"
-  },
-  "450|GOOGL|2026-10-22 16:23": {
-    "price": 327.82,
-    "source": "CNBC 1m (next bar)",
-    "at": "2026-10-22 16:23"
   }
 }
