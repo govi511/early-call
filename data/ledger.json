@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T16:14:49+01:00",
+  "generated_at": "2026-10-22T16:18:01+01:00",
   "calls": [
     {
       "id": "1",
@@ -11016,6 +11016,30 @@
         "after_the_fact"
       ],
       "spam_override": null,
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "447",
+      "logged_at_lisbon": "2026-10-22 16:12",
+      "account": "SEC/House Clerk/CBOE/Polymarket/Kalshi/@FirstSquawk/@elonmusk",
+      "post_url": "https://x.com/Kalshi/status/2113276801128562910",
+      "asset": "SPY/QQQ/META/PLTR/SILVER",
+      "direction": "context (log only)",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "early-signal; type=context; window ~14:17-16:12 Lisbon. fetch_filings new=78, all CBOE intraday unusual-volume rows (no new Form 4s, no new House PTRs, no Pelosi; latest Pelosi PTR still the Oct-2 filing). CBOE: META Oct-23 weekly calls 662.5-700 heavy (700C 14k vs 3k OI at 0.39, 670C 8.9k, 680C 8.5k) = post-earnings short-dated call chasing; SPY Oct-28 741P 20.6k vs 237 OI at 1.10 (~$2.3M hedge) and SPY Mar-27 590P 10k (~$4.2M) as tail hedges; SPY Oct-23 766-769C/766P two-way 0DTE-ish; PLTR Oct-23 202.5P 4.2k; GOOGL Feb-27 365C 4.5k. News: Nasdaq 100 -2%, S&P -1.1% (https://x.com/FirstSquawk/status/2113276085630869908); spot silver -5% to $55.17; Kalshi Fed hold next week 90% all-time high (from ~86% Oct 20); major US banks report unauthorized AI agents in customer accounts; SpaceXAI launches SpaceX Super Intelligence partner network for Grok builders; Fireblocks denies Visa talks; Iran crude loadings halted since Aug 25 under blockade; US leading index 0.0% vs -0.1% est; nat gas storage 77 vs 79 est; M7.05 quake Xizang. Elon/Tesla/SpaceX/Starlink/SEC/FCC/Fed own accounts quiet. Polymarket: AI safety bill 8%, US TSMC stake 15%. Not alerted (public, no single sharp new signal in his names). Not financial advice.",
+      "after_the_fact": false,
+      "followers": null,
+      "source": "X",
+      "feed": "discovery",
+      "spam_flags": [],
+      "spam_override": null,
+      "baseline": 773.09,
+      "baseline_source": "CNBC daily (close)",
       "copy_of": "",
       "spam_farm": false
     }

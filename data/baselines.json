@@ -2300,6 +2300,11 @@
     "source": "OKX",
     "at": "2026-10-22 14:37"
   },
+  "445|MRNA|2026-10-22 15:54": {
+    "price": 232.95,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-22 15:54"
+  },
   "248|PONS|2026-10-13 21:56": {
     "price": null,
     "source": "unavailable",
@@ -2324,9 +2329,9 @@
     "error": "cnbc: cnbc: no bars for NYSE COMPOSITE; yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-22 15:38"
   },
-  "445|MRNA|2026-10-22 15:54": {
-    "price": 232.95,
-    "source": "CNBC 1m (next bar)",
-    "at": "2026-10-22 15:54"
+  "447|SPY/QQQ/META/PLTR/SILVER|2026-10-22 16:12": {
+    "price": 773.09,
+    "source": "CNBC daily (close)",
+    "at": "2026-10-22 16:12"
   }
 }
