@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T22:24:08+01:00",
+  "generated_at": "2026-10-23T00:09:03+01:00",
   "calls": [
     {
       "id": "1",
@@ -11835,6 +11835,29 @@
       "spam_override": null,
       "baseline": 773.09,
       "baseline_source": "CNBC daily (close)",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "463",
+      "logged_at_lisbon": "2026-10-23 00:07",
+      "account": "@XAUUSD__Alice",
+      "post_url": "https://x.com/XAUUSD__Alice/status/2113406919872496049",
+      "asset": "XAUUSD",
+      "direction": "long (conditional)",
+      "entry": "4000-4020 (if support holds)",
+      "stop": "",
+      "target": "4030-4050",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "source discovery; 11.7k followers, account since 2023-06, passes rules; \"In the short term, I am focusing on the 4020-4000 range. If the price of gold holds this level, the bulls could push it higher, with an initial target of 4030-4050\" (00:07 Lisbon); gold ~4027 at post, no stop, tight first target; discovery not alerted; rejected rest of discovery: Telegram/VIP promos (CryptoBrandenDG ETH/BTC shorts, JAMES_BUSH_ VIP 20-50x), copy-paste ENA signal duplicates (Emanuelcrypto0, Thereal1549, Asematlee), <5k accounts (EvaLun888, Mkjacksyds, aamon1428, Micheleagnela community link, Agnes_xauusd, VPA_KSH, Andrew32847), EA ad xradings, AI product potions_labs, after-the-fact recap robot2trade1/PigsGetSlayed; watchlist commentary only (JC_ParetsX, Tradermayne livestream links, scottmelker interviews); following timeline news only (MarioNawfal Iran nuclear threat/Houthi drones at Saudi, Polymarket Bolsonaro 76%, Kalshi Senate 69%, BestTrader01 SPCX hype, ShaneStoffer 'exited all positions' no levels); #452 BTC short still open (BTC ~81,378); not financial advice",
+      "after_the_fact": false,
+      "call_notes": "source discovery ; 11.7k followers, account since 2023-06, passes rules ; \"In the short term, I am focusing on the 4020-4000 range. If the price of gold holds this level, the bulls could push it higher, with an initial target of 4030-4050\" (00:07 Lisbon) ; gold ~4027 at post, no stop, tight first target ; #452 BTC short still open (BTC ~81,378) ; not financial advice",
+      "followers": 11700,
+      "source": "X",
+      "feed": "discovery",
+      "spam_flags": [],
+      "spam_override": null,
       "copy_of": "",
       "spam_farm": false
     }
