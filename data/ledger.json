@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T20:10:04+01:00",
+  "generated_at": "2026-10-22T20:14:55+01:00",
   "calls": [
     {
       "id": "1",
@@ -11287,6 +11287,30 @@
       "spam_override": null,
       "baseline": 646.77,
       "baseline_source": "CNBC 1m (next bar)",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "458",
+      "logged_at_lisbon": "2026-10-22 20:15",
+      "account": "SEC/House Clerk/CBOE/Polymarket/Kalshi/@elonmusk/@FCC/@SECGov",
+      "post_url": "https://x.com/i/trending/2113313220207452290",
+      "asset": "SPY/TSLA/SPCX/PLTR/GOOGL",
+      "direction": "context (log only)",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "early-signal; type=context; window ~18:22-20:15 Lisbon. fetch_filings new=63, all CBOE end-of-day unusual-volume rows (no new Form 4s, no new House PTRs, no Pelosi). CBOE: SPY Oct-23 760P 61k vs 16.8k OI at 2.15 (~$13M) plus 754-759P 10-23k each = 1DTE hedging into the Nasdaq selloff; SPY Nov-20 728P 42k vs 13.6k OI (~$21M tail hedge); PLTR Oct-23 200P 11.9k/192.5P 9.1k; GOOGL Nov-20 275/280P 8-10k and Oct-30 300P 7.4k pre-earnings; META Oct-23 692.5C lotto. Read: hedging, not an early tell. News: Tesla 10-Q formalizes the independent-director committee exploring a SpaceX combination (X trending https://x.com/i/trending/2113313220207452290; merger already alerted Oct 20 23:15, so not re-alerted); SpaceX skipping bids on three Space Force launches as Falcon phases out; Kalshi/Polymarket Fed hold Oct 28 ~90% (unchanged); FCC blocks two devices with Huawei-subsidiary surveillance chips (https://x.com/FCC/status/2113328343261327752, not market-moving); SEC fireside chat only. Musk posts political/Grok promo only (https://x.com/elonmusk/status/2113319277092642942). Polymarket: Tesla-SpaceX merger announced by Dec 31 18.5% (+0.5pt 1h), by Jan 31 31%; only sharp 1h moves were sports. Not alerted (public, nothing new and significant). Not financial advice.",
+      "after_the_fact": false,
+      "followers": null,
+      "source": "X",
+      "feed": "discovery",
+      "spam_flags": [],
+      "spam_override": null,
+      "baseline": 773.09,
+      "baseline_source": "CNBC daily (close)",
       "copy_of": "",
       "spam_farm": false
     }
