@@ -2272,5 +2272,15 @@
     "source": "unavailable",
     "error": "cnbc: cnbc: no bars for DOPE; yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
     "at": "2026-10-14 20:38"
+  },
+  "432|TAO|2026-10-22 09:16": {
+    "price": 260.5,
+    "source": "OKX",
+    "at": "2026-10-22 09:16"
+  },
+  "433|BTC|2026-10-22 09:20": {
+    "price": 82096.0,
+    "source": "OKX",
+    "at": "2026-10-22 09:20"
   }
 }
