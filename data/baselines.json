@@ -2378,5 +2378,10 @@
     "source": "unavailable",
     "error": "cnbc: cnbc: no bars for NYSE COMPOSITE; yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-22 15:38"
+  },
+  "460|NVDA|2026-10-22 21:12": {
+    "price": 221.97,
+    "source": "CNBC daily (close)",
+    "at": "2026-10-22 21:12"
   }
 }
