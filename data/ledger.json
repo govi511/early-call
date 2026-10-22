@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T06:10:33+01:00",
+  "generated_at": "2026-10-22T06:23:13+01:00",
   "calls": [
     {
       "id": "1",
@@ -10548,6 +10548,30 @@
       "spam_override": null,
       "baseline": 82881.5,
       "baseline_source": "OKX",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "428",
+      "logged_at_lisbon": "2026-10-22 06:22",
+      "account": "@FirstSquawk/@unusual_whales/@Kalshi/@Polymarket",
+      "post_url": "https://x.com/unusual_whales/status/2113136264199168385",
+      "asset": "Brent/WTI oil/Gold/META",
+      "direction": "context (log only)",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "early-signal; type=context; window ~04:14-06:22 Lisbon. fetch_filings new=0 (no new Form 4s, House PTRs or CBOE rows). Iran escalation continues: IRGC Navy says 4 more ships hit mines/caught fire in northern Gulf and threatens US bases (FirstSquawk 05:18-05:20 Lisbon); Brent climbs to $110.90 on Saudi attack risks (05:54 Lisbon, vs ~109.7 at #420 alert); Trump says US is not negotiating with Iran and 'something soon will happen' (unusual_whales 06:12 Lisbon) - continuation of already-alerted #420 oil/gold escalation theme, not re-alerted. Anthropic IPO filing as early as Friday (already in #424); Meta deal to keep Zuckerberg in California; Nikkei -2%; Asia PHP security warnings. Polymarket Iran markets: no sharp moves (Oct-31 diplomatic meeting 6.5%). No Musk/Tesla/SpaceX market post, no Pelosi trade, no SEC/FCC action. Not alerted; public info; not financial advice",
+      "after_the_fact": false,
+      "followers": null,
+      "source": "X",
+      "feed": "discovery",
+      "spam_flags": [],
+      "spam_override": null,
+      "baseline": 108.79,
+      "baseline_source": "CNBC daily (close)",
       "copy_of": "",
       "spam_farm": false
     }
