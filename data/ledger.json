@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T00:09:03+01:00",
+  "generated_at": "2026-10-23T00:18:24+01:00",
   "calls": [
     {
       "id": "1",
@@ -11858,6 +11858,33 @@
       "feed": "discovery",
       "spam_flags": [],
       "spam_override": null,
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "464",
+      "logged_at_lisbon": "2026-10-23 00:17",
+      "account": "SEC/House Clerk/CBOE/Polymarket/Kalshi/@SpaceX",
+      "post_url": "https://x.com/SpaceX/status/2113409428980445308",
+      "asset": "AAPL/TSLA/SPCX",
+      "direction": "context (log only)",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "early-signal; type=context; window ~22:14-00:17 Lisbon. fetch_filings new=1: AAPL Form 4 (Jennifer Newstead, SVP/GC) sold 2,399 sh on Oct 20 at $339.62 (~$0.8M) under a 10b5-1 plan, routine; no House PTRs, no Pelosi, no new CBOE rows. X: SpaceX scrubbed tonight's Falcon 9 Starlink launch for weather, next try Fri Oct 23 2:30pm PT (https://x.com/SpaceX/status/2113409428980445308); Kalshi repost 'Tesla forms special committee to explore potential merger with SpaceX' (https://x.com/Kalshi/status/2113384011733299292) is already-known news from the Oct 20 SpaceX call / Tesla 10-Q (see #458), not new; Polymarket: SpaceX seeking 80k US cell tower sites, Bolsonaro 76%; Kalshi Dem Senate 69%; OptionsHawk RNG after-the-fact; Tesla/SEC/FCC/Fed quiet. Polymarket top-volume markets: only sports/expired ETH daily brackets moved sharply. Not alerted (public, nothing new and significant). Not financial advice.",
+      "after_the_fact": true,
+      "call_notes": "early-signal ; type=context ; window ~22:14-00:17 Lisbon. fetch_filings new=1: AAPL Form 4 (Jennifer Newstead, SVP/GC) sold 2,399 sh on Oct 20 at $339.62 (~$0.8M) under a 10b5-1 plan, routine ; no House PTRs, no Pelosi, no new CBOE rows. X: SpaceX scrubbed tonight's Falcon 9 Starlink launch for weather, next try Fri Oct 23 2:30pm PT (https://x.com/SpaceX/status/2113409428980445308) ; Kalshi repost 'Tesla forms special committee to explore potential merger with SpaceX' (https://x.com/Kalshi/status/2113384011733299292) is already-known news from the Oct 20 SpaceX call / Tesla 10-Q (see #458), not new ; Polymarket: SpaceX seeking 80k US cell tower sites, Bolsonaro 76% ; Kalshi Dem Senate 69% ; OptionsHawk RNG after-the-fact ; Tesla/SEC/FCC/Fed quiet. Polymarket top-volume markets: only sports/expired ETH daily brackets moved sharply. Not alerted (public, nothing new and significant). Not financial advice.",
+      "followers": null,
+      "source": "X",
+      "feed": "discovery",
+      "spam_flags": [
+        "after_the_fact"
+      ],
+      "spam_override": null,
+      "baseline": 343.99,
+      "baseline_source": "CNBC daily (close)",
       "copy_of": "",
       "spam_farm": false
     }
