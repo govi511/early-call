@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T12:25:01+01:00",
+  "generated_at": "2026-10-22T13:16:49+01:00",
   "calls": [
     {
       "id": "1",
@@ -10817,6 +10817,32 @@
       "spam_override": null,
       "baseline": 156.7,
       "baseline_source": "CNBC daily (close)",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "439",
+      "logged_at_lisbon": "2026-10-22 12:47",
+      "account": "@Bitcoin_World20",
+      "post_url": "https://x.com/Bitcoin_World20/status/2113235861290512477",
+      "asset": "BTC",
+      "direction": "long",
+      "entry": "80300 (limit)",
+      "stop": "79300",
+      "target": "85000",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "source discovery; \"Trying this #BTC long Entry - 80.3k SL - 79.3k TP - 85k +4.7R Risk - 1%\" (12:47 Lisbon); BTC ~81,800 at scan (entry ~1.8% below, pending limit); ~11.8k followers, since 2017, no Telegram/VIP/referral seen - passes rules; discovery not alerted; rejected rest of discovery: <6mo accts (AntoniaXbt_ SOL long), \"profits guaranteed\"/signal sellers (Candice__Forex, KhalifaHel76311, Oldmanscalpreal clones, AlexGoldHunter VIP, gen_hula free group, MarianeCluzel WhatsApp, vndy011, RJK01_), copy-paste gold clones (YShirley_XAUUSD/forex_ashley01), <5k accts, after-the-fact (Crypto__Haris); following had pedrosilva 11:30 Lisbon restating same BTC short zone as #430 (not re-logged); watchlist commentary only; not financial advice",
+      "after_the_fact": true,
+      "followers": 11800,
+      "source": "X",
+      "feed": "discovery",
+      "spam_flags": [
+        "vip_promo",
+        "copied_post",
+        "after_the_fact"
+      ],
+      "spam_override": null,
       "copy_of": "",
       "spam_farm": false
     }
