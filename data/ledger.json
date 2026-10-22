@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T14:18:30+01:00",
+  "generated_at": "2026-10-22T15:18:51+01:00",
   "calls": [
     {
       "id": "1",
@@ -10867,6 +10867,83 @@
       "spam_override": null,
       "baseline": 386.47,
       "baseline_source": "CNBC daily (close)",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "441",
+      "logged_at_lisbon": "2026-10-22 14:15",
+      "account": "@pedrosilva",
+      "post_url": "https://x.com/pedrosilva/status/2113257838583689361",
+      "asset": "SPCX",
+      "direction": "long",
+      "entry": "154.65-155.70",
+      "stop": "",
+      "target": "159.80 / 166",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "source following; \"$SPCX got the dip under yesterday's low I was waiting for. I'm buying 154.65-155.70 and expecting the US session to carry it to 159.80 first, then back to yesterday's 166 high\" (14:15 Lisbon, premarket); no stop given; SPCX ~151.5 at scan (already ~2% below the buy zone, day low 150.86); SPCX not confirmed as a T212 CFD and pedrosilva has referral links and a mixed/losing record, so not alerted; not financial advice",
+      "after_the_fact": false,
+      "followers": null,
+      "source": "X",
+      "feed": "following",
+      "spam_flags": [
+        "referral_link"
+      ],
+      "spam_override": null,
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "442",
+      "logged_at_lisbon": "2026-10-22 14:30",
+      "account": "@OptionsHawk",
+      "post_url": "https://x.com/OptionsHawk/status/2113261708907336137",
+      "asset": "COST",
+      "direction": "long",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "source following+watchlist; role call (priority account); \"$COST clears bull flag on open, been a risk-off name money has flocked to\" (14:30 Lisbon); no entry given (scored from price at post time, COST ~1,005 at scan); COST not confirmed as a T212 CFD so not alerted; skipped same-window OptionsHawk SPOT posts (after-the-fact earnings strategy +100%) and \"sold 100 of 150 calls\" (no ticker, subscription promo); not financial advice",
+      "after_the_fact": true,
+      "followers": null,
+      "source": "X",
+      "feed": "following",
+      "spam_flags": [
+        "after_the_fact"
+      ],
+      "spam_override": null,
+      "baseline": 1008.55,
+      "baseline_source": "CNBC 1m",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "443",
+      "logged_at_lisbon": "2026-10-22 14:37",
+      "account": "@SalsaTekila",
+      "post_url": "https://x.com/SalsaTekila/status/2113263585166311679",
+      "asset": "BTC",
+      "direction": "long",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "source watchlist; role call; \"this dip is quite clearly in parts due to more FUD... I will just be patient in my spot BTC bags... Patiently long\" (14:37 Lisbon); no entry given (scored from price at post time, BTC ~81,700); spot hold statement without levels, not alerted; rest of watchlist commentary only (Mr_Derivatives GOOGL bear market = follow-up of #401, META/TSLA observations; Nebraskangooner TLT conditional, BTC no bias; CryptoTony BTC 81,100/LINK waiting for entries; ripster47 SPY plan conditional); discovery all rejected (KingsCrypto0/MannuelMichaell free-signal groups <5k, XAUUSD signal sellers/telegram, UnityAcademy after-the-fact 150x P&L brag, Coldfilltrades <5k, AI bots Finora_EN/altrix_ai/Alfred3o3); not financial advice",
+      "after_the_fact": true,
+      "followers": null,
+      "source": "X",
+      "feed": "famous",
+      "spam_flags": [
+        "telegram_promo",
+        "after_the_fact"
+      ],
+      "spam_override": null,
+      "baseline": 81919.9,
+      "baseline_source": "OKX",
       "copy_of": "",
       "spam_farm": false
     }
