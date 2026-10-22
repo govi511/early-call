@@ -114,6 +114,67 @@ def ychart(sym, qs):
                 time.sleep(delay); delay *= 2  # exponential backoff 2s, 4s, 8s
             elif "404" in str(e): break
     raise err
+# ---- Stooq (no key, CSV). Fallback for stocks/indices when Yahoo 429s. File cache + per-run circuit breaker. ----
+STOOQ_MAP = {"VIX": "^vix", "SPX": "^spx", "SPY": "spy.us", "NDX": "^ndx", "DJI": "^dji", "DJIA": "^dji", "UK100": "^ukx", "FTSE": "^ukx",
+    "DAX": "^dax", "NIKKEI": "^nkx", "KOSPI": "^kospi", "HSI": "^hsi", "DXY": "dx.f", "GOLD": "xauusd", "XAU": "xauusd", "XAUUSD": "xauusd",
+    "XAGUSD": "xagusd", "SILVER": "xagusd", "EURUSD": "eurusd", "GBPUSD": "gbpusd", "USDCAD": "usdcad", "OIL": "cl.f", "WTI": "cl.f",
+    "BRENT": "cb.f", "NATGAS": "ng.f", "NG": "ng.f", "NYSE COMPOSITE": "^nya", "BESI": "besi.nl"}
+STOOQ_CACHE = os.path.join(DATA, ".stooq-cache.json")
+STOOQ_TTL = {"q": 600, "d": 6 * 3600, "60": 1800}  # seconds per endpoint kind
+STOOQ_DOWN = [0]  # consecutive failures this run; after 3, Stooq is skipped (host blocked / bot check)
+_SQ = {}
+def stooq_sym(a): return STOOQ_MAP.get(a) or (a.lower() + ".us" if re.fullmatch(r"[A-Z]{1,5}", a) else None)
+def _stooq_csv(kind, sym):
+    if "_disk" not in _SQ:
+        try: _SQ["_disk"] = json.load(open(STOOQ_CACHE))
+        except Exception: _SQ["_disk"] = {}
+    disk = _SQ["_disk"]; key = f"{kind}:{sym}"; hit = disk.get(key)
+    if hit and time.time() - hit["t"] < STOOQ_TTL[kind]: return hit["rows"]
+    if STOOQ_DOWN[0] >= 3: raise RuntimeError("stooq skipped (unreachable earlier this run)")
+    url = (f"https://stooq.com/q/l/?s={urllib.parse.quote(sym)}&f=sd2t2ohlcvp&h&e=csv" if kind == "q"
+           else f"https://stooq.com/q/d/l/?s={urllib.parse.quote(sym)}&i={kind}")
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "text/csv"})
+        with urllib.request.urlopen(req, timeout=8) as r: txt = r.read().decode("utf-8", "ignore")
+        if "<html" in txt[:200].lower(): raise RuntimeError("stooq: bot check / html response")
+        rows = list(csv.DictReader(txt.splitlines()))
+        if not rows or "N/D" in str(rows[-1].values()) or "No data" in txt[:50]: raise RuntimeError("stooq: no data")
+    except Exception as e:
+        STOOQ_DOWN[0] += 1
+        if hit: return hit["rows"]  # stale cache beats nothing
+        raise
+    STOOQ_DOWN[0] = 0; disk[key] = {"t": time.time(), "rows": rows[-400:]}
+    try:
+        fd, tmp = tempfile.mkstemp(dir=DATA, suffix=".tmp")
+        with os.fdopen(fd, "w") as f: json.dump(disk, f, separators=(",", ":"))
+        os.replace(tmp, STOOQ_CACHE)
+    except Exception: pass
+    return disk[key]["rows"]
+def _stooq(a):
+    sym = stooq_sym(a)
+    if not sym: raise RuntimeError("stooq: no symbol mapping")
+    q = _stooq_csv("q", sym)[0]; p = float(q["Close"]); o = float(q.get("Open") or 0)
+    pc = None
+    try:
+        d = _stooq_csv("d", sym); pc = float(d[-2]["Close"]) if len(d) > 1 else None
+    except Exception: pass
+    base = pc or o
+    return {"price": p, "change_pct": (p - base) / base * 100 if base else None, "symbol": sym, "currency": "USD", "source": "Stooq", "as_of": now()}
+def _stooq_candles(a):
+    sym = stooq_sym(a)
+    if not sym: raise RuntimeError("stooq: no symbol mapping")
+    def ts(r):
+        t = r.get("Time") or "00:00:00"
+        return int(datetime.datetime.strptime(f'{r["Date"]} {t}', "%Y-%m-%d %H:%M:%S").replace(tzinfo=datetime.timezone.utc).timestamp())
+    bars = lambda rows: [[ts(r), r4(float(r["Open"])), r4(float(r["High"])), r4(float(r["Low"])), r4(float(r["Close"]))] for r in rows if r.get("Close") not in (None, "", "N/D")]
+    out = {}
+    try: h = bars(_stooq_csv("60", sym))
+    except Exception: h = []
+    d = bars(_stooq_csv("d", sym))
+    out["1D"] = h[-24:] if h else d[-5:]
+    out["1W"] = h[-120:] if h else d[-10:]
+    out["1M"] = d[-180:]
+    return out
 def norm(asset):
     a = asset.upper().strip()
     if a in ALIAS: return ALIAS[a]
@@ -151,8 +212,10 @@ def fetch(asset, force=None):
         try: return _cnbc(a)
         except Exception as e: log(f"cnbc failed for {a}: {e}; trying Yahoo")
     try: return _yahoo(a)
+    except Exception as e: log(f"yahoo failed for {a}: {e}; trying Stooq")
+    try: return _stooq(a)
     except Exception as e:
-        log(f"yahoo failed for {a}: {e}; trying Nasdaq")
+        log(f"stooq failed for {a}: {e}; trying Nasdaq")
         return _nasdaq(a)
 def _nasdaq(a):
     import urllib.request, json as _j
@@ -213,7 +276,9 @@ def candles(asset):
             out[k] = [[int(x[0]) // 1000, r4(float(x[1])), r4(float(x[2])), r4(float(x[3])), r4(float(x[4]))] for x in rows]
         else:
             sym = YAHOO_MAP.get(a, a)
-            res = ychart(sym, f"range={yr}&interval={yi}")["chart"]["result"][0]
+            try: res = ychart(sym, f"range={yr}&interval={yi}")["chart"]["result"][0]
+            except Exception:
+                return _stooq_candles(a)  # Yahoo 429/404: Stooq daily + hourly bars for all ranges
             q = res["indicators"]["quote"][0]
             out[k] = [[t, r4(o), r4(h), r4(l), r4(c)] for t, o, h, l, c in zip(res.get("timestamp", []), q["open"], q["high"], q["low"], q["close"]) if None not in (o, h, l, c)]
     return out
@@ -524,6 +589,10 @@ def main():
             prices[asset] = {**prices[m], "symbol": f'{prices[m].get("symbol")} (from {asset})'}; bad.remove(asset); ok.append(asset)
     write_json(ppath, {"fetched_at": now(), "prices": prices, "ok": ok, "failed": bad})
     log(f"prices ok={ok} failed={bad}")
-    write_candles(sorted(a for a in {r["asset"].upper() for r in rows if r.get("asset")} if prices.get(a, {}).get("price") is not None and not prices[a].get("nonpriceable") and not prices[a].get("stale")))
+    # candles only for symbols with open calls + portfolio + watch symbols (not every asset ever logged)
+    try: port = [str(x.get("asset") or x.get("symbol") or x) if isinstance(x, dict) else str(x) for x in json.load(open(os.path.join(DATA, "portfolio.json")))]
+    except Exception: port = []
+    want = {r["asset"].upper() for r in rows if r.get("asset") and r.get("status") == "open"} | {w.upper() for w in watch} | {p.upper() for p in port}
+    write_candles(sorted(a for a in want if prices.get(a, {}).get("price") is not None and not prices[a].get("nonpriceable") and not prices[a].get("stale")))
     return 0
 if __name__ == "__main__": sys.exit(main())
