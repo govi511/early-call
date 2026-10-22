@@ -268,14 +268,37 @@ SPAM_TEXT = [(r"telegram", "telegram_promo"), (r"\bvip\b", "vip_promo"), (r"refe
 NEG_LIST = re.compile(r"\b(?:no|not|without|never|isn't|is not|not a)\s+(?:an?\s+|any\s+)?[\w-]+(?:\s*(?:/|,|\bor\b|\band\b|&)\s*[\w-]+)*(?:\s+(?:links?|promos?|posts?|accounts?|text|group|groups))?", re.I)
 ACCOUNT_DESC = re.compile(r"\b(?:bio|his|her|their|he also|she also|account (?:has|posts)|posts (?:\w+ )?(?:affiliate|referral) links?|has a (?:losing|winning)[\w/ ]* record)\b", re.I)
 def strip_neg(t): return NEG_LIST.sub(" ", " ; ".join(seg for seg in re.split(r"[;()]", t or "") if not ACCOUNT_DESC.search(seg)))
+# Scan-log fragments describe OTHER accounts the X scanner looked at, not this call ("rejected rest of discovery: Telegram/VIP ...").
+SCAN_LOG_SEG = re.compile(r"^\s*(?:rejected|discovery|skipped|rest of|other accounts|also scanned|following(?:/watchlist)?\b(?! *\+)|watchlist\b)", re.I)
+def _split_top(t, seps=";|"):
+    """Split on ; and | outside parentheses so a log segment keeps its (...) list."""
+    out, buf, depth = [], [], 0
+    for ch in t or "":
+        if ch == "(": depth += 1
+        elif ch == ")": depth = max(0, depth - 1)
+        if ch in seps and depth == 0: out.append("".join(buf)); buf = []
+        else: buf.append(ch)
+    out.append("".join(buf)); return out
+def call_text(r):
+    """Only the call's own text: own_notes column if present, else notes minus scan-log segments (and minus a scan_log column)."""
+    if isinstance(r, str): r = {"notes": r}
+    if (r.get("own_notes") or "").strip(): return r["own_notes"]
+    return " ; ".join(seg.strip() for seg in _split_top(r.get("notes", "")) if seg.strip() and not SCAN_LOG_SEG.search(seg))
+AFTER_RE = re.compile(r"after[ _-]the[ _-]fact", re.I)
+def after_the_fact(r):
+    """Explicit after_the_fact column wins; else the phrase in the call's own text, with negations ("not after-the-fact") removed."""
+    v = str(r.get("after_the_fact", "")).strip().lower()
+    if v in ("1", "true", "yes", "y"): return True
+    if v in ("0", "false", "no", "n"): return False
+    return bool(AFTER_RE.search(strip_neg(call_text(r))))
 def spam_flags(notes):
-    nn = strip_neg(notes); return [f for p, f in SPAM_TEXT if re.search(p, nn, re.I)]
+    nn = strip_neg(call_text(notes)); return [f for p, f in SPAM_TEXT if re.search(p, nn, re.I)]
 OVERRIDES = os.path.join(DATA, "spam-overrides.json")  # {"<id>": true|false} manual review results
 def add_spam_fields(rows):
     try: ov = {str(k): v for k, v in json.load(open(OVERRIDES)).items() if not str(k).startswith("_")}
     except Exception: ov = {}
     for r in rows:
-        r["spam_flags"] = [f.strip() for f in r["spam_flags"].split(";") if f.strip()] if r.get("spam_flags") else spam_flags(r.get("notes", ""))
+        r["spam_flags"] = [f.strip() for f in r["spam_flags"].split(";") if f.strip()] if r.get("spam_flags") else spam_flags(r)
         v = r.get("spam_override", ""); v = ov.get(r["id"], v)
         r["spam_override"] = True if v in (True, "true", "spam", "1") else False if v in (False, "false", "not_spam", "0") else None
 def add_feed(rows):
@@ -448,8 +471,8 @@ def main():
             for r in csv.DictReader(f):
                 r = {(k or "").strip(): (v or "").strip() for k, v in r.items()}
                 if not r.get("id"): continue
-                n = r.get("notes", "").lower()
-                r["after_the_fact"] = "after the fact" in n or "after-the-fact" in n
+                r["after_the_fact"] = after_the_fact(r)
+                r["call_notes"] = call_text(r)
                 m = re.search(r"\b(\d+(?:[.,]\d+)?)\s*([km]?)\s+followers\b", r.get("notes", ""), re.I)
                 if r.get("followers", "").replace(",", "").isdigit(): r["followers"] = int(r["followers"].replace(",", ""))
                 else: r["followers"] = int(float(m.group(1).replace(",", ".")) * {"": 1, "k": 1e3, "m": 1e6}[m.group(2).lower()]) if m else None

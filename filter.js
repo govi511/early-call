@@ -17,7 +17,7 @@ function spamWhy(c){const n=c.notes||'';
  const why=[];if(ov===true||ov==='spam')why.push('manual spam override');
  // structured flags (refresh.py) when present, text rules otherwise
  if(Array.isArray(c.spam_flags))c.spam_flags.forEach(f=>why.push(String(f).replace(/_/g,' ')));
- else{const nn=stripNeg(n);SPAM_RULES.filter(([re])=>re.test(nn)).forEach(r=>why.push(r[1]));String(c.spam_flags||'').split(/[;,]/).map(x=>x.trim()).filter(Boolean).forEach(f=>why.push(f.replace(/_/g,' ')))}
+ else{const nn=stripNeg(c.call_notes??n);SPAM_RULES.filter(([re])=>re.test(nn)).forEach(r=>why.push(r[1]));String(c.spam_flags||'').split(/[;,]/).map(x=>x.trim()).filter(Boolean).forEach(f=>why.push(f.replace(/_/g,' ')))}
  if(/^early-signal/i.test(n)||/\(context\)/i.test(c.direction||''))why.push('news post, not a buy/sell call');
  const m=c.followers!=null?[0,c.followers]:n.match(/\b(\d+) followers\b/i);if(m&&+m[1]<50)why.push(`only ${m[1]} followers`);
  if(/^(filtered|excluded)$/.test(c.status||''))why.push('excluded by rule ('+c.status+')');
@@ -29,7 +29,7 @@ function spamWhy(c){const n=c.notes||'';
  const e=normEntry(c.entry);if(e&&typeof LEDGER!=='undefined'&&LEDGER){const first=LEDGER.calls.find(o=>o.asset===c.asset&&isShort(o.direction)===isShort(c.direction)&&normEntry(o.entry)===e);if(first&&first.account!==c.account&&first!==c)why.push(`duplicate of ${first.account}`)}
  return[...new Set(why)]}
 // words in the notes that triggered the text rules (shown when the reason chip is tapped)
-function spamWords(c){const nn=stripNeg(c.notes||''),out=[];SPAM_RULES.forEach(([re])=>{const m=nn.match(re);if(m)out.push(m[0])});return[...new Set(out)]}
+function spamWords(c){const nn=stripNeg(c.call_notes??c.notes??''),out=[];SPAM_RULES.forEach(([re])=>{const m=nn.match(re);if(m)out.push(m[0])});return[...new Set(out)]}
 const _spamCache=new WeakMap();
 const isSpam=c=>{if(!_spamCache.has(c))_spamCache.set(c,spamWhy(c).length>0);return _spamCache.get(c)};
 const isEarlySignal=c=>/early[- ]signal/i.test(c.notes||'');
