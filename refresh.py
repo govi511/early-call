@@ -277,10 +277,29 @@ def candles(asset):
         else:
             sym = YAHOO_MAP.get(a, a)
             try: res = ychart(sym, f"range={yr}&interval={yi}")["chart"]["result"][0]
-            except Exception:
-                return _stooq_candles(a)  # Yahoo 429/404: Stooq daily + hourly bars for all ranges
+            except Exception:  # Yahoo 429/404: CNBC chart feed first, then Stooq
+                try: return _cnbc_candles(a)
+                except Exception: return _stooq_candles(a)
             q = res["indicators"]["quote"][0]
             out[k] = [[t, r4(o), r4(h), r4(l), r4(c)] for t, o, h, l, c in zip(res.get("timestamp", []), q["open"], q["high"], q["low"], q["close"]) if None not in (o, h, l, c)]
+    return out
+def _cnbc_candles(a):
+    """CNBC chart feed (same as baselines): 5D 1-min bars -> 15m/1h, 1M daily bars. Stocks, ETFs, indices, futures."""
+    sym = CNBC_HIST.get(a, a); out = {}
+    def bars(per):
+        b = get(f"https://ts-api.cnbc.com/harmony/app/charts/{per}.json?symbol={urllib.parse.quote(sym)}", tries=2)["barData"]["priceBars"] or []
+        return [(int(x["tradeTimeinMills"]) // 1000, float(x["open"]), float(x["high"]), float(x["low"]), float(x["close"])) for x in b if x.get("open") not in (None, "") and x.get("close") not in (None, "")]
+    def agg(b, sec):
+        g = {}
+        for t, o, h, l, c in b:
+            k = t // sec * sec
+            if k in g: _, o0, h0, l0, _ = g[k]; g[k] = (k, o0, max(h0, h), min(l0, l), c)
+            else: g[k] = (k, o, h, l, c)
+        return [[t, r4(o), r4(h), r4(l), r4(c)] for t, o, h, l, c in sorted(g.values())]
+    m1 = bars("5D"); d = bars("1M")
+    if not m1 and not d: raise RuntimeError(f"cnbc: no bars for {sym}")
+    out["1D"] = agg(m1, 900)[-96:]; out["1W"] = agg(m1, 3600)[-168:]
+    out["1M"] = [[t, r4(o), r4(h), r4(l), r4(c)] for t, o, h, l, c in d][-30:]
     return out
 def write_candles(assets):
     d = os.path.join(DATA, "candles"); os.makedirs(d, exist_ok=True); bad = []

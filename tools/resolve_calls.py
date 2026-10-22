@@ -72,12 +72,19 @@ def judge(r):
         if hitS: return ("stopped", f"{'close' if stop_close else ('low' if not short else 'high')} {sx:g} through stop {S:g} (bar {when} Lisbon)", src, t)
     last = b[-1][4]
     return ("open", f"no level hit; last {last:g}", src)
+NO_LEVEL_DAYS = 7  # Manager rule: calls with no levels lock after 7 days
 def main():
     apply = "--apply" in sys.argv
     rows = list(csv.DictReader(open(L, encoding="utf-8"))); fields = list(rows[0].keys())
     changes = []
     for r in rows:
         if r["status"] != "open" or "context" in r["direction"].lower(): continue
+        if not nums(r["stop"]) and not nums(r["target"]):  # no levels: time limit only, locks 7 days after post
+            ts = R._ts_utc(r)
+            if ts and time.time() >= ts + NO_LEVEL_DAYS * 86400:
+                j = ("expired", f"no levels; {NO_LEVEL_DAYS}-day time limit passed (score locked at post+7d)", "time limit", ts + NO_LEVEL_DAYS * 86400)
+                print(f'#{r["id"]} {r["account"]} {r["asset"]} {r["direction"]} -> expired: {j[1]}'); changes.append((r, j))
+            continue
         try: j = judge(r)
         except Exception as e: j = ("open", f"price error: {e}", "-")
         if j is None: continue
