@@ -9,7 +9,7 @@
  function age(){return PRICES._at?Math.max(0,Math.round((Date.now()-new Date(PRICES._at))/60000)):null}
  function apply(){const ind=document.querySelector('.live');if(!ind)return;const m=age(),miss=missing();
   const lvl=m==null||m>60?'red':(m>20||miss.length)?'amber':'green';
-  ind.dataset.h=lvl;const dot=ind.querySelector('.live-dot');dot.style.background=lvl==='green'?'':lvl==='amber'?'#f5b73b':'#f87171';
+  ind.dataset.h=lvl;document.body.classList.toggle('stale',lvl==='red');const dot=ind.querySelector('.live-dot');dot.style.background=lvl==='green'?'':lvl==='amber'?'#f5b73b':'#f87171';
   const t=ind.querySelector('.live-text');let base=t.textContent.split(' · ').slice(0,2).join(' · ');
   if(lvl==='red'&&m!=null)base='Stale · updated '+(m>=120?Math.round(m/60)+'h':m+'m')+' ago';if(m!=null&&m>=360)base='Paused · no update for '+(m>=2880?Math.round(m/1440)+'d':Math.round(m/60)+'h')+' · bot usage may be out';
   t.textContent=base+(miss.length?` · ${miss.length} no price`:'');
