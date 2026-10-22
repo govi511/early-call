@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T00:19:55+01:00",
+  "generated_at": "2026-10-22T02:22:41+01:00",
   "calls": [
     {
       "id": "1",
@@ -10451,6 +10451,30 @@
       "spam_flags": [],
       "spam_override": null,
       "baseline": 694.25,
+      "baseline_source": "CNBC daily (close)",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "424",
+      "logged_at_lisbon": "2026-10-22 02:21",
+      "account": "SEC/House Clerk/CBOE/@Kalshi/@Polymarket/@unusual_whales",
+      "post_url": "https://x.com/Kalshi/status/2113046939126366571",
+      "asset": "TSLA/SPY/Brent/WTI oil",
+      "direction": "context (log only)",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "early-signal; type=context; window ~00:18-02:21 Lisbon. fetch_filings new=192 but all CBOE rows are the Oct 21 session batch re-keyed to the new date (TSLA Oct-23 390C 27.5k, Apr-2027 370C ~$30.6M, PLTR Oct-23 200C, META Oct-23 710C/P, NVDA/AAPL/AMZN/GOOGL/SPY Oct-21 0DTE - already noted in #421); no new SEC Form 4 beyond META Oct-21 filing already seen, House PTRs (Himes, Yakym, filed Oct 20) not Pelosi. News: Musk says Optimus V3 unscripted-task video in 1-2 months, AI5 chip targeted April 2027 (via Kalshi 00:17 Lisbon); US orders nonessential staff out of Saudi Arabia; NYT US/Israel post-midterm Iran strike plans; IG yields at cycle highs; Amazon buying Nvidia systems it can't power yet; Anthropic S-1 possibly Friday; USDA screwworm in Texas wildlife. Polymarket: no sharp market-relevant moves (only sports). No Pelosi trade, no SEC/FCC action. Not alerted; public info; not financial advice",
+      "after_the_fact": false,
+      "followers": null,
+      "source": "X",
+      "feed": "discovery",
+      "spam_flags": [],
+      "spam_override": null,
+      "baseline": 373.71,
       "baseline_source": "CNBC daily (close)",
       "copy_of": "",
       "spam_farm": false
