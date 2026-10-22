@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T11:07:46+01:00",
+  "generated_at": "2026-10-22T12:17:24+01:00",
   "calls": [
     {
       "id": "1",
@@ -7983,9 +7983,9 @@
       "entry": "192-194 (pullback)",
       "stop": "",
       "target": "197",
-      "status": "open",
-      "resolved_at": "",
-      "notes": "source following; \"$PLTR swept the lows under 189 yesterday and closed strong. I'm looking to buy this pullback into 192-194 and ride it back to yesterday's high around 197. The real move should come with the US open\"; no stop given (suggested SL 190.4 below zone, R:R ~1.5 from 193); PLTR ~193.2 pre-market at scan (inside zone; prev close 186.03, 2-day high 196.99); pedrosilva has a losing/expired record and posts affiliate links; PLTR not yet in confirmed T212 CFD list but major US stock, alerted with check-CFD-tab caveat; not financial advice",
+      "status": "hit_target",
+      "resolved_at": "2026-10-20 15:30",
+      "notes": "source following; \"$PLTR swept the lows under 189 yesterday and closed strong. I'm looking to buy this pullback into 192-194 and ride it back to yesterday's high around 197. The real move should come with the US open\"; no stop given (suggested SL 190.4 below zone, R:R ~1.5 from 193); PLTR ~193.2 pre-market at scan (inside zone; prev close 186.03, 2-day high 196.99); pedrosilva has a losing/expired record and posts affiliate links; PLTR not yet in confirmed T212 CFD list but major US stock, alerted with check-CFD-tab caveat; not financial advice; RESOLVED hit_target: pedrosilva follow-up 2026-10-22 11:40 Lisbon (https://x.com/pedrosilva/status/2113218841509568645) says it tagged 197 Tuesday and went past 200 (~+2%); confirmed PLTR 198.06 on Oct 22 (above 197 target); resolved_at approximate (Tuesday US session)",
       "after_the_fact": false,
       "followers": null,
       "source": "X",
