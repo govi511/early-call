@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T10:18:35+01:00",
+  "generated_at": "2026-10-22T11:07:46+01:00",
   "calls": [
     {
       "id": "1",
@@ -10762,6 +10762,35 @@
       "spam_override": null,
       "baseline": 108.79,
       "baseline_source": "CNBC daily (close)",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "437",
+      "logged_at_lisbon": "2026-10-22 10:05",
+      "account": "@Cryptoinsightuk",
+      "post_url": "https://x.com/Cryptoinsightuk/status/2113195020706578762",
+      "asset": "ETH",
+      "direction": "short",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "source discovery; \"I still expect the ethereum liquidity highlighted in my quoted tweet to be attacked. That's why I'm short\" (10:05 Lisbon), still looking to go long after another flush; no entry given (scored from price at post time, ETH ~2,410 at scan); ~53.7k followers, since 2013, newsletter link in bio but no Telegram/VIP/referral - passes rules; discovery not alerted; rejected rest of discovery: Telegram/VIP/free-signal groups (AstuteINvCt, ScottWeslefx, gen_hula, SUSIEMATTY02, Lika_XAUUSD, mrcamerontrader, nooorsherani), copy-paste ETH 200x short clones (whaletrades_1, PAlphaTrades, Coach_Officials, Mal_yaa_3no), <5k/new accts, AI bots (Finora_EN), after-the-fact (evdenmax, Eveningtraders); following/watchlist this window had no concrete calls (CryptoTony, rektcapital, cozypront commentary only); not financial advice",
+      "after_the_fact": true,
+      "followers": 53700,
+      "source": "X",
+      "feed": "discovery",
+      "spam_flags": [
+        "telegram_promo",
+        "vip_promo",
+        "copied_post",
+        "after_the_fact"
+      ],
+      "spam_override": null,
+      "baseline": 2403.08,
+      "baseline_source": "OKX",
       "copy_of": "",
       "spam_farm": false
     }
