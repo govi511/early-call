@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T22:16:21+01:00",
+  "generated_at": "2026-10-22T22:24:08+01:00",
   "calls": [
     {
       "id": "1",
@@ -5131,11 +5131,12 @@
       "entry": "",
       "stop": "",
       "target": "90000",
-      "status": "open",
-      "resolved_at": "",
-      "notes": "source following; 208k followers, acct 2017; 'so back, longing more altcoins, we will finish this week at $90k+ #Bitcoin'; target 90000 by end of week (expire after Oct 18); no stop; no entry given (scored from price at post time, BTC ~83.9k); bio 'Enjoying @Rollbit' (crypto casino sponsorship) + 'Social Media & Marketing'; alerted; not financial advice",
+      "status": "expired",
+      "resolved_at": "2026-10-18",
+      "notes": "source following; 208k followers, acct 2017; 'so back, longing more altcoins, we will finish this week at $90k+ #Bitcoin'; target 90000 by end of week (expire after Oct 18); no stop; no entry given (scored from price at post time, BTC ~83.9k); bio 'Enjoying @Rollbit' (crypto casino sponsorship) + 'Social Media & Marketing'; alerted; not financial advice; resolved 2026-10-22 22:23 Lisbon from OKX 1D close: stated timeframe ended 2026-10-18; exit_close=82109.3 (OKX 1D close); scored by % move from entry",
       "after_the_fact": false,
-      "call_notes": "source following ; 208k followers, acct 2017 ; 'so back, longing more altcoins, we will finish this week at $90k+ #Bitcoin' ; target 90000 by end of week (expire after Oct 18) ; no stop ; no entry given (scored from price at post time, BTC ~83.9k) ; bio 'Enjoying @Rollbit' (crypto casino sponsorship) + 'Social Media & Marketing' ; alerted ; not financial advice",
+      "call_notes": "source following ; 208k followers, acct 2017 ; 'so back, longing more altcoins, we will finish this week at $90k+ #Bitcoin' ; target 90000 by end of week (expire after Oct 18) ; no stop ; no entry given (scored from price at post time, BTC ~83.9k) ; bio 'Enjoying @Rollbit' (crypto casino sponsorship) + 'Social Media & Marketing' ; alerted ; not financial advice ; resolved 2026-10-22 22:23 Lisbon from OKX 1D close: stated timeframe ended 2026-10-18 ; exit_close=82109.3 (OKX 1D close) ; scored by % move from entry",
+      "exit_price": 82109.3,
       "followers": 208000,
       "source": "X",
       "feed": "following",
@@ -5145,6 +5146,7 @@
       "baseline_source": "Binance",
       "locked_pct": -2.994,
       "locked_at": "2026-10-20T08:49+01:00",
+      "exit_pct": -2.2089,
       "copy_of": "",
       "spam_farm": false
     },
