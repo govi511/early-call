@@ -2245,6 +2245,11 @@
     "source": "OKX",
     "at": "2026-10-22 06:05"
   },
+  "428|BRENT/WTI OIL/GOLD/META|2026-10-22 06:22": {
+    "price": 108.79,
+    "source": "CNBC daily (close)",
+    "at": "2026-10-22 06:22"
+  },
   "248|PONS|2026-10-13 21:56": {
     "price": null,
     "source": "unavailable",
@@ -2262,10 +2267,5 @@
     "source": "unavailable",
     "error": "cnbc: cnbc: no bars for DOPE; yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
     "at": "2026-10-14 20:38"
-  },
-  "428|BRENT/WTI OIL/GOLD/META|2026-10-22 06:22": {
-    "price": 108.79,
-    "source": "CNBC daily (close)",
-    "at": "2026-10-22 06:22"
   }
 }
