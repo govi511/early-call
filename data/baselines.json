@@ -2285,6 +2285,11 @@
     "source": "OKX",
     "at": "2026-10-21 16:13"
   },
+  "440|TSLA/SPCX/GOLD/BRENT OIL|2026-10-22 14:17": {
+    "price": 386.47,
+    "source": "CNBC daily (close)",
+    "at": "2026-10-22 14:17"
+  },
   "248|PONS|2026-10-13 21:56": {
     "price": null,
     "source": "unavailable",
@@ -2302,10 +2307,5 @@
     "source": "unavailable",
     "error": "cnbc: cnbc: no bars for DOPE; yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
     "at": "2026-10-14 20:38"
-  },
-  "440|TSLA/SPCX/GOLD/BRENT OIL|2026-10-22 14:17": {
-    "price": 386.47,
-    "source": "CNBC daily (close)",
-    "at": "2026-10-22 14:17"
   }
 }
