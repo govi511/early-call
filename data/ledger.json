@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T02:22:41+01:00",
+  "generated_at": "2026-10-22T04:14:59+01:00",
   "calls": [
     {
       "id": "1",
@@ -10475,6 +10475,30 @@
       "spam_flags": [],
       "spam_override": null,
       "baseline": 373.71,
+      "baseline_source": "CNBC daily (close)",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "425",
+      "logged_at_lisbon": "2026-10-22 04:14",
+      "account": "@FirstSquawk/@Kalshi/@Polymarket/@unusual_whales/@elonmusk",
+      "post_url": "https://x.com/Kalshi/status/2113103050848280705",
+      "asset": "Brent/WTI oil/Nasdaq/KOSPI/Hang Seng",
+      "direction": "context (log only)",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "early-signal; type=context; window ~02:21-04:14 Lisbon. fetch_filings new=0 (no new Form 4s, House PTRs or CBOE rows). Asia risk-off on AI-investment worries: Kospi -2%, Hang Seng Tech -3%+, Nikkei -1%, Indonesia -1.5% (FirstSquawk 02:43-03:17 Lisbon); BOK held rates, hawkish inflation outlook. WSJ: more oil now leaving the Persian Gulf than before the Iran war (Kalshi 04:00 Lisbon) - bearish-oil context vs #423/#424 strike-plan headlines; Bessent: Iran 'like a company heading for bankruptcy'. Kim Yo Jong loudspeaker warning; Apple to appeal Australia iOS ruling; USDA screwworm (already in #424). Musk only political post. No Pelosi trade, no SEC/FCC action, no sharp odds move seen. Not alerted; public info; not financial advice",
+      "after_the_fact": false,
+      "followers": null,
+      "source": "X",
+      "feed": "discovery",
+      "spam_flags": [],
+      "spam_override": null,
+      "baseline": 108.79,
       "baseline_source": "CNBC daily (close)",
       "copy_of": "",
       "spam_farm": false
