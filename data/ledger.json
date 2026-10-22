@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T18:16:41+01:00",
+  "generated_at": "2026-10-22T18:24:19+01:00",
   "calls": [
     {
       "id": "1",
@@ -11163,6 +11163,30 @@
         "after_the_fact"
       ],
       "spam_override": null,
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "453",
+      "logged_at_lisbon": "2026-10-22 18:22",
+      "account": "SEC/House Clerk/CBOE/@FirstSquawk/@DeItaone/@unusual_whales/@Kalshi/@SawyerMerritt/@elonmusk/@FCC",
+      "post_url": "https://x.com/FirstSquawk/status/2113312218045620241",
+      "asset": "TSLA/NVDA/AAPL/GOOGL/SPY/QQQ",
+      "direction": "context (log only)",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "early-signal; type=context; window ~16:12-18:22 Lisbon. fetch_filings new=90, all CBOE intraday unusual-volume rows (no new Form 4s, no new House PTRs, no Pelosi; latest Form 4 META Oct-21, PTRs Himes/Yakym Oct-20 already logged). CBOE by premium (side unknown): TSLA Oct-23 weekly puts heavy into the selloff, 385P 41k vs 4.2k OI at 8.88 (~$37M), 380P 58.5k vs 5.6k OI (~$33M), 375P 46.9k, 382.5/387.5/390P ~12-24k each; TSLA Oct-23 380C 35.9k and 385C 51k = two-way; NVDA Oct-23 215P 64k vs 17k OI (~$23M) and 212.5P 65.6k; AAPL Oct-23 345C 49k/347.5C 68k; META Oct-23 660C 24k vs 506 OI (~$9M); GOOGL Oct-30 345C 15.3k vs 3k OI and 365C 14.5k vs 3.8k (pre-earnings calls); SPY Oct-23 762-766P 20-32k each, Oct-30 742P 20.9k. Read: short-dated puts chasing the tech selloff, not an early tell. News: Nasdaq 100 session low -2.9% (FirstSquawk 16:51 Lisbon, deepening from -2% in #447); US 5y yield -15bp to 4.80%; traders no longer fully price a Fed hike before end-2026 (https://x.com/DeItaone/status/2113315370941534429); Israeli officers see no reason to strike Iran before US midterms (de-escalation tilt, https://x.com/FirstSquawk/status/2113314019037839642); US taps emergency heating oil reserve (Kalshi 17:15); Musk ~$1B into Skydance (Kalshi 16:30); Tesla FSD subs +2,800/day record, ~$1.1B/yr run-rate (https://x.com/SawyerMerritt/status/2113312976463601893); Jensen: no 2029 memory glut; CRWV -9.6%; MRNA -20%. Musk own posts political/Grok only; Tesla/SpaceX/Starlink/SEC/Fed quiet, FCC ceremonial. Not alerted (public, broad market move already in context, no single sharp new signal in his names). Not financial advice.",
+      "after_the_fact": false,
+      "followers": null,
+      "source": "X",
+      "feed": "discovery",
+      "spam_flags": [],
+      "spam_override": null,
+      "baseline": 386.47,
+      "baseline_source": "CNBC daily (close)",
       "copy_of": "",
       "spam_farm": false
     }
