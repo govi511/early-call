@@ -225,7 +225,7 @@ header .top>div>.sub{display:none}
  #feed .card>.row:first-child>div{display:flex;flex-wrap:wrap;gap:4px;align-items:center;min-width:0}
  #feed .card>.row:first-child>b{white-space:nowrap;flex-shrink:0}
  #feed .card .badge,#feed .card .winrate{font-size:11px;white-space:nowrap}
- .tabbar button{font-size:9.5px;min-width:0}
+ .tabbar button{font-size:11px;min-width:0}
 }
 #signals>label.row{flex-direction:row!important;flex-wrap:wrap;align-items:center!important}#signals>label.row small{flex:1 1 auto}
 
