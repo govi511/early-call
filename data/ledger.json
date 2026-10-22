@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T21:15:07+01:00",
+  "generated_at": "2026-10-22T22:08:40+01:00",
   "calls": [
     {
       "id": "1",
@@ -11785,6 +11785,29 @@
       "spam_override": null,
       "baseline": 221.97,
       "baseline_source": "CNBC daily (close)",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "461",
+      "logged_at_lisbon": "2026-10-22 21:01",
+      "account": "@CryptoMichNL",
+      "post_url": "https://x.com/CryptoMichNL/status/2113375088317985130",
+      "asset": "ETH",
+      "direction": "long",
+      "entry": "<2300",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "source watchlist; role call; \"#Ethereum is at an interesting spot... best entry zone is beneath the recent low... I'd be max bidding everything beneath $2,300\" (21:01 Lisbon); buy zone below 2300, no stop/target; ETH ~2,386 at scan (~3.6% above zone, 24h low 2,360); not alerted (limit zone not reached, no stop); rest of watchlist commentary: Mr_Derivatives XLV ATH/VIX green-Friday stat/DIA-IWM-RSP green/WMT defensive, Nebraskangooner wait for structure change on alts, AltcoinSherpa 'green day tomorrow'/'best times to buy are scariest' (vague), ripster47 MXL earnings recap, PeterLBrandt/jfahmy/CryptoTony/scottmelker non-calls; discovery all rejected (signal-group/Binance-partner spam Danielbr00kss, Asematlee, leonardo154915, MrCMannuel, Cryptojacksona; xauusd_fxexpert bio 'join group for free signals'; <5k 3liverss/HindsMarkets/vladlogs; AI bots Finora_EN, PolarBerAI); following timeline news only (Trump hints more Iran strikes, S&P -1.21%/Nasdaq-100 -2.9% close, Kalshi OpenAI $1.25T round, Musk restored Starlink Ukraine, ShaneStoffer MRNA thesis recap, cozypront BTC range commentary); #452 BTC short still open (BTC ~81,335, no stop/TP hit); not financial advice",
+      "after_the_fact": false,
+      "call_notes": "source watchlist ; role call ; \"#Ethereum is at an interesting spot... best entry zone is beneath the recent low... I'd be max bidding everything beneath $2,300\" (21:01 Lisbon) ; buy zone below 2300, no stop/target ; ETH ~2,386 at scan (~3.6% above zone, 24h low 2,360) ; not alerted (limit zone not reached, no stop) ; #452 BTC short still open (BTC ~81,335, no stop/TP hit) ; not financial advice",
+      "followers": null,
+      "source": "X",
+      "feed": "famous",
+      "spam_flags": [],
+      "spam_override": null,
       "copy_of": "",
       "spam_farm": false
     }
