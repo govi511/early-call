@@ -96,7 +96,7 @@ function rAl(){const a=ls('ec-alerts');$('#al-list').innerHTML=a.map((x,i)=>{con
 window.delAl=i=>{const a=ls('ec-alerts');a.splice(i,1);ls('ec-alerts',a);rAl()};
 $('#al-add').onclick=()=>{const asset=$('#al-a').value.trim().toUpperCase(),level=+$('#al-l').value;if(!asset||!level)return;const a=ls('ec-alerts');a.push({asset,level,dir:$('#al-d').value,at:new Date().toLocaleDateString('pt-PT')});ls('ec-alerts',a);$('#al-a').value=$('#al-l').value='';rAl()};rAl();
 
-if(location.hash)showTab(location.hash==='#plan'?'port':location.hash.slice(1))
+if(location.hash)showTab(/^#(plan|port)$/.test(location.hash)?'signals':location.hash.slice(1))
 {const t=new URLSearchParams(location.search).get('tab');t&&showTab(t)}
 
 window.LVF=()=>localStorage.getItem('ec-lv')==='1';

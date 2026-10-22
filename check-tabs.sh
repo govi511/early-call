@@ -11,7 +11,7 @@ fail=0
 python3 - "$T/dom.html" <<'P' || fail=1
 import sys,re,html
 d=open(sys.argv[1],encoding='utf-8',errors='ignore').read()
-need={'signals':'feed','leader':'lb','port':None,'alerts':None,'events':None}
+need={'signals':'feed','leader':'lb','alerts':None,'events':None}
 bad=0
 def text(id_):
     m=re.search(r'<[^>]*id="%s"[^>]*>(.*?)</section>'%id_,d,re.S)
