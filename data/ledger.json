@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T17:13:24+01:00",
+  "generated_at": "2026-10-22T18:16:41+01:00",
   "calls": [
     {
       "id": "1",
@@ -11112,6 +11112,57 @@
       "spam_override": null,
       "baseline": 327.82,
       "baseline_source": "CNBC 1m (next bar)",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "451",
+      "logged_at_lisbon": "2026-10-22 17:56",
+      "account": "@AltcoinSherpa",
+      "post_url": "https://x.com/AltcoinSherpa/status/2113313482246684860",
+      "asset": "BTC",
+      "direction": "long",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "source watchlist; role call; \"right back to the range low, should be a bid somewhere around here. bounce\" (17:56 Lisbon); no levels; no entry given (scored from price at post time, BTC ~81,300); not alerted (no levels); rest of watchlist commentary (ripster47/Mr_Derivatives MRNA moves, Nebraskangooner BTC at ~81k ETF cost basis, CryptoTony wants more fear before relief, sspencer_smb QQQ no direction, scottmelker silver $54); following timeline news only (silver 11-month low, gold -2.5%, US taps heating oil reserve, Musk ~$1B Skydance); not financial advice",
+      "after_the_fact": false,
+      "followers": null,
+      "source": "X",
+      "feed": "famous",
+      "spam_flags": [],
+      "spam_override": null,
+      "baseline": 81174.5,
+      "baseline_source": "OKX",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "452",
+      "logged_at_lisbon": "2026-10-22 18:10",
+      "account": "@Ryker_INDIA",
+      "post_url": "https://x.com/Ryker_INDIA/status/2113316973623021929",
+      "asset": "BTC",
+      "direction": "short",
+      "entry": "81400",
+      "stop": "82150",
+      "target": "80600/79200/78000",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "source discovery; \"$BTC Short Trade opportunity Entry $81400 Stop $82150 Target $80600, $79200, $78000\" (18:10 Lisbon); ~16.3k followers, since 2022-08, no Telegram/VIP in post - passes rules; BTC ~81,177 at scan; discovery not alerted; rejected rest of discovery: Telegram/Discord/VIP signal groups (azimakelvin/apostilaweb/Micheleagnela copy-paste CLANKER, Tim_Richard111, ThavrenAlpha, Hamza_kayani11), <5k (Saif_Trades, moneyX94, popoxbtc, NaveedBalo67956, forex_ashley01), copy-paste gold (YShirley_XAUUSD), after-the-fact brag (Mary_CFA), AI bot (Finora_EN); not financial advice",
+      "after_the_fact": true,
+      "followers": 16300,
+      "source": "X",
+      "feed": "discovery",
+      "spam_flags": [
+        "telegram_promo",
+        "vip_promo",
+        "copied_post",
+        "after_the_fact"
+      ],
+      "spam_override": null,
       "copy_of": "",
       "spam_farm": false
     }
