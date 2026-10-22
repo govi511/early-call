@@ -19,6 +19,11 @@ NONPRICE = {"FED","FOMC","FEDFUNDS","RATES","CPI","US HOUSING","PELOSI"}  # macr
 NP_NOTE = "not a tradable asset"
 NP_LABEL = "multi-asset/context label, no price expected"
 CONTEXT_ONLY = set()  # assets whose ledger rows are all early-signal context rows (filled in main)
+def level_nums(s):
+    """Numbers in a level string, parsed exactly like lvl() in app.js: drop (...) notes, thousands commas, times and durations."""
+    s = re.sub(r"\(.*?\)", "", str(s or "")); s = re.sub(r"(\d),(?=\d{3}\b)", r"\1", s)
+    s = re.sub(r"\b\d{1,2}:\d{2}\b|\b\d+[- ](?:day|week|hour|h|d|w)\b", " ", s, flags=re.I)
+    return [float(x) for x in re.findall(r"\d+(?:\.\d+)?", s)]
 def is_label(asset): return "/" in asset and " " in asset.strip()
 # Label words -> priceable tickers (multi-asset labels like "S&P 500/OIL" are split and the first priceable part is used)
 LABEL_TICKER = {"S&P 500":"SPY","S&P":"SPY","SP500":"SPY","SPX":"SPX","US500":"SPY","NASDAQ":"QQQ","NASDAQ 100":"QQQ","US TECH 100":"QQQ","NAS100":"QQQ","NDX":"NDX",
@@ -380,7 +385,7 @@ def add_baselines(rows):
     except Exception: cache = {}
     changed = False
     for r in rows:
-        if re.findall(r"\d+(?:\.\d+)?", re.sub(r"\(.*?\)", "", r.get("entry", ""))) or not r.get("asset"): continue
+        if level_nums(r.get("entry")) or not r.get("asset"): continue
         key = f'{r["id"]}|{r["asset"].upper()}|{r.get("logged_at_lisbon","")}'
         if norm(r["asset"]) in NONPRICE:
             r["nonpriceable"] = True
@@ -470,7 +475,7 @@ def main():
     except Exception: old = {}
     refs = {}
     for r in rows:
-        n = [float(x) for x in re.findall(r"\d+(?:\.\d+)?", re.sub(r"\(.*?\)", "", r.get("entry", "")))]
+        n = level_nums(r.get("entry"))
         if n and r.get("asset"): refs.setdefault(r["asset"].upper(), sum(n[:2]) / len(n[:2]))
     ctx = {}
     for r in rows:

@@ -2275,6 +2275,11 @@
     "source": "OKX",
     "at": "2026-10-22 10:05"
   },
+  "438|SPCX/EUR BONDS/BRENT OIL/NVDA|2026-10-22 12:20": {
+    "price": 156.7,
+    "source": "CNBC daily (close)",
+    "at": "2026-10-22 12:20"
+  },
   "248|PONS|2026-10-13 21:56": {
     "price": null,
     "source": "unavailable",
@@ -2293,9 +2298,9 @@
     "error": "cnbc: cnbc: no bars for DOPE; yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
     "at": "2026-10-14 20:38"
   },
-  "438|SPCX/EUR BONDS/BRENT OIL/NVDA|2026-10-22 12:20": {
-    "price": 156.7,
-    "source": "CNBC daily (close)",
-    "at": "2026-10-22 12:20"
+  "389|BTC|2026-10-21 16:13": {
+    "price": 84715.1,
+    "source": "OKX",
+    "at": "2026-10-21 16:13"
   }
 }
