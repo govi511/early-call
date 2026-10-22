@@ -59,13 +59,19 @@
       "resolved_at_pt": "2026-10-20T15:01+0100"
     }
   ],
-  "last_check_at": "2026-10-22T16:51+01:00",
-  "last_check_btc": 81574,
+  "last_check_at": "2026-10-22T18:23+01:00",
+  "last_check_btc": 81393,
   "last_proposal_at": "2026-10-20T07:18+01:00",
   "last_alert_trade_id": 2,
   "last_resolution_alerted_id": 2,
   "open_trade_id": null,
   "last_setup_eval": "OKX: BTC ~82,020, small bounce from 81,589 low (10:00 candle); 11:00 candle high 82,154, still below breakdown zone 82,200-82,450; OI ~$2.47B slightly up; funding +0.007%; L/S up to 1.92 (longs crowding). Bounce not yet at resistance and no rejection, no sweep/reclaim long, so no call.",
-  "last_check_note": "OKX: BTC ~81,574; still-forming 16:00 candle swept to new day low 81,257 (below 81,336) and bounced. OI ~$2.49B flat, funding +0.008%, L/S 2.08 (longs very crowded). Sweep not confirmed on close, crowded longs argue against a long, short from mid-range has poor R:R, so no call.",
-  "last_fresh_read": "2026-10-22T16:51+01:00"
+  "last_check_note": "Quick OKX 15m check: BTC ~81,393; forming 18:15 candle pushed back through the 81,250-81,300 retest zone to 81,423 (reclaim, no rejection). Not a clean short, crowded longs (L/S 2.08) argue against a long; no call.",
+  "last_fresh_read": "2026-10-22T16:51+01:00",
+  "last_read": {
+    "at": "2026-10-22T17:53+01:00",
+    "source": "OKX",
+    "btc": 80964,
+    "note": "17:00 candle broke 81,257 day low to 80,900 (still forming, closing near low). OI ~$2.46B, funding +0.0085%, L/S 2.08. Extended into the low, no clean entry; watch 81,250-81,300 retest for short."
+  }
 }
