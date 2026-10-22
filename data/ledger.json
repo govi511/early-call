@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T06:23:13+01:00",
+  "generated_at": "2026-10-22T08:21:11+01:00",
   "calls": [
     {
       "id": "1",
@@ -10571,6 +10571,30 @@
       "spam_flags": [],
       "spam_override": null,
       "baseline": 108.79,
+      "baseline_source": "CNBC daily (close)",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "429",
+      "logged_at_lisbon": "2026-10-22 08:20",
+      "account": "@FirstSquawk/@Kalshi/@Polymarket",
+      "post_url": "https://x.com/Kalshi/status/2113155893609062734",
+      "asset": "Brent/WTI oil/USDJPY/Nikkei",
+      "direction": "context (log only)",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "early-signal; type=context; window ~06:22-08:20 Lisbon. fetch_filings new=0 (no new Form 4s, House PTRs or CBOE rows). Iran/Hormuz theme continues: France & Qatar demand Hormuz reopened without fees (Polymarket 07:31 Lisbon); Iraq chartering tankers to ship fuel oil outside Hormuz; Trump reportedly opposed Netanyahu plan to restart Iran conflict before midterms (Kalshi 07:30 Lisbon) - de-escalation tilt vs #428, continuation of already-alerted #420 theme, not re-alerted. Turkiye moves to ratify mutual-defense pact with Pakistan/Saudi; USD/JPY -0.7% to 157.11, Nikkei says BOJ likely to delay consecutive hike; France Oct business confidence 97 (est 96); China/S.Korea PHP vulnerability security warnings; Meta $25B NM privacy ruling (already noted). Polymarket: US-Iran ceasefire through Oct 31 73.5% (-8pt/24h, gradual), Oct Fed hold 87.5%, no sharp 1h moves. Musk/Tesla/SpaceX/Starlink/SEC/FCC/Fed: no posts in window. No Pelosi trade. Not alerted; public info; not financial advice",
+      "after_the_fact": false,
+      "followers": null,
+      "source": "X",
+      "feed": "discovery",
+      "spam_flags": [],
+      "spam_override": null,
+      "baseline": 108.82,
       "baseline_source": "CNBC daily (close)",
       "copy_of": "",
       "spam_farm": false
