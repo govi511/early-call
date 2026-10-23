@@ -2420,6 +2420,11 @@
     "source": "CNBC daily (close)",
     "at": "2026-10-23 12:14"
   },
+  "486|HYPE|2026-10-23 13:42": {
+    "price": 77.887,
+    "source": "OKX",
+    "at": "2026-10-23 13:42"
+  },
   "248|PONS|2026-10-13 21:56": {
     "price": null,
     "source": "unavailable",
@@ -2450,9 +2455,9 @@
     "error": "cnbc: cnbc: no bars for USELESS; yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-23 13:06"
   },
-  "486|HYPE|2026-10-23 13:42": {
-    "price": 77.887,
-    "source": "OKX",
-    "at": "2026-10-23 13:42"
+  "487|OIL/USD/AXP|2026-10-23 14:22": {
+    "price": 99.47,
+    "source": "CNBC daily (close)",
+    "at": "2026-10-23 14:22"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T14:15:12+01:00",
+  "generated_at": "2026-10-23T14:22:25+01:00",
   "calls": [
     {
       "id": "1",
@@ -12415,6 +12415,31 @@
       "spam_override": null,
       "baseline": 77.887,
       "baseline_source": "OKX",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "487",
+      "logged_at_lisbon": "2026-10-23 14:22",
+      "account": "SEC/House Clerk/CBOE/@KobeissiLetter/@FirstSquawk/@Polymarket",
+      "post_url": "https://x.com/KobeissiLetter/status/2113616486774473180",
+      "asset": "OIL/USD/AXP",
+      "direction": "context (log only)",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "early-signal; type=context; window ~12:14-14:22 Lisbon. fetch_filings new=0 (no new Form 4s, House PTRs, Pelosi or CBOE unusual volume). X: Kobeissi Brent above $115 first time since May 4 (<4% from Mar 9 Iran-war high), DeItaone WTI +$2 to $101.62 on Middle East tensions - Iran/oil theme continuation (Brent $116 already logged in #485), not new; FirstSquawk AmEx to cut 5% of jobs (~3,500), USTR extends Section 301 China shipbuilding suspension to Jan 9 2027, Sheremetyevo airport evacuation (RIA), China outer-space arms-race statements, BMY iza-bren Ph3 data; DeItaone Canada Aug retail sales +1.2% m/m; unusual_whales IMF borrowing/inflation stats. Fed only posted next week's calendar; Musk/Tesla/SpaceX/Starlink/SEC/FCC/OptionsHawk/QuiverQuant/SawyerMerritt no original posts in window. Polymarket top-volume: Fed Oct hold 93.5% (+2pt 1h), NATO-Russia clash by Oct 31 18% (+1.5pt 1h), US-Iran ceasefire Oct 24 93.5% flat, Russia-Ukraine meeting ~99% already known; only sports moved sharply. Not alerted (public, nothing new and significant). Not financial advice.",
+      "after_the_fact": false,
+      "call_notes": "early-signal ; type=context ; window ~12:14-14:22 Lisbon. fetch_filings new=0 (no new Form 4s, House PTRs, Pelosi or CBOE unusual volume). X: Kobeissi Brent above $115 first time since May 4 (<4% from Mar 9 Iran-war high), DeItaone WTI +$2 to $101.62 on Middle East tensions - Iran/oil theme continuation (Brent $116 already logged in #485), not new ; FirstSquawk AmEx to cut 5% of jobs (~3,500), USTR extends Section 301 China shipbuilding suspension to Jan 9 2027, Sheremetyevo airport evacuation (RIA), China outer-space arms-race statements, BMY iza-bren Ph3 data ; DeItaone Canada Aug retail sales +1.2% m/m ; unusual_whales IMF borrowing/inflation stats. Fed only posted next week's calendar ; Musk/Tesla/SpaceX/Starlink/SEC/FCC/OptionsHawk/QuiverQuant/SawyerMerritt no original posts in window. Polymarket top-volume: Fed Oct hold 93.5% (+2pt 1h), NATO-Russia clash by Oct 31 18% (+1.5pt 1h), US-Iran ceasefire Oct 24 93.5% flat, Russia-Ukraine meeting ~99% already known ; only sports moved sharply. Not alerted (public, nothing new and significant). Not financial advice.",
+      "followers": null,
+      "source": "X",
+      "feed": "discovery",
+      "spam_flags": [],
+      "spam_override": null,
+      "baseline": 99.47,
+      "baseline_source": "CNBC daily (close)",
       "copy_of": "",
       "spam_farm": false
     }
