@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T21:29:02+01:00",
+  "generated_at": "2026-10-23T22:14:03+01:00",
   "calls": [
     {
       "id": "1",
@@ -14821,6 +14821,33 @@
       "spam_override": null,
       "baseline": 19.03,
       "baseline_source": "CNBC daily (close)",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "506",
+      "logged_at_lisbon": "2026-10-23 22:14",
+      "account": "@Nebraskangooner",
+      "post_url": "https://x.com/Nebraskangooner/status/2113739106689712471",
+      "asset": "ZS (Zscaler)",
+      "direction": "long (bias)",
+      "entry": "",
+      "stop": "",
+      "target": "new all-time high (no level)",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "source watchlist; role call; \"$ZS Bullish OBV divergence starting to show in price. Looks headed to a new all time high eventually\" (22:07 Lisbon); vague bias, no levels; log only, not alerted. Rest of scan: watchlist commentary only (CryptoTony goodnight/interesting weekend, markminervini trading psychology, CryptoMichNL wants weekend BTC liquidity sweep (no direction/levels), scottmelker Milei LIBRA case dropped/Franklin Templeton BTC-dividend ETFs Oct 27/Cardone, InvestorsLive -45% no ticker, Mr_Derivatives MAGS after-the-fact chart); following timeline news only (BullTheory S&P/Nasdaq week close at 3-month low, Brent >$117, Trump may do another Iran operation; MarioNawfal Iran claims 2 more supertankers hit mines in Hormuz, Oleshky ceasefire plan; Polymarket/Kalshi/WatcherGuru misc) - left to early-signal watch; discovery all rejected (Mannuelkings/Mannuelpaul/CryptoAcume/JAMES_BUSH_/Official_Randy3 free/VIP signal-group spam, A_Pirate_I/WenLongBro bot ads <5k, Finora_EN AI bot, EladioSantiag14 vague multi-stock list, ricardo_jorge <5k); no resolutions (BTC ~81,434 range 81,262-81,503, XAUT ~3,999, SOL ~104.0, XRP ~1.309: #452/#477/#481 unchanged); not financial advice",
+      "after_the_fact": false,
+      "call_notes": "$ZS Bullish OBV divergence starting to show in price. Looks headed to a new all time high eventually",
+      "ratio_call": false,
+      "conditional": false,
+      "entry_filled": null,
+      "waiting_for_entry": false,
+      "followers": null,
+      "source": "X",
+      "feed": "famous",
+      "spam_flags": [],
+      "spam_override": null,
       "copy_of": "",
       "spam_farm": false
     }
