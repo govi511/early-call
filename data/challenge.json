@@ -59,25 +59,25 @@
       "resolved_at_pt": "2026-10-20T15:01+0100"
     }
   ],
-  "last_check_at": "2026-10-23T19:52:00+01:00",
-  "last_check_btc": 81439,
+  "last_check_at": "2026-10-23T23:24:00+01:00",
+  "last_check_btc": 81296,
   "last_proposal_at": "2026-10-20T07:18+01:00",
   "last_alert_trade_id": 2,
   "last_resolution_alerted_id": 2,
   "open_trade_id": null,
-  "last_setup_eval": "Oct 23 19:52 Lisbon fresh OKX read: BTC ~81,439, drifting to lower part of 81,360-81,820 range (no break of 81,360/81,050, no 82,000 reclaim); funding +0.010%, L/S 2.13, OI ~$2.49B flat. No clean setup, no call.",
-  "last_check_note": "Oct 23 19:52 Lisbon fresh OKX read: BTC ~81,439, drifting to lower part of 81,360-81,820 range (no break of 81,360/81,050, no 82,000 reclaim); funding +0.010%, L/S 2.13, OI ~$2.49B flat. No clean setup, no call.",
-  "last_fresh_read": "2026-10-23T19:52:00+01:00",
+  "last_setup_eval": "Oct 23 23:24 Lisbon fresh OKX read: BTC ~81,296, lower half of 81,050-82,050 24h range, small lower highs since 20:00 but no break of 81,222/81,050; funding +0.010%, L/S 2.16, OI ~$2.49B flat, thin Friday-night volume. No clean setup, no call.",
+  "last_check_note": "Oct 23 23:24 Lisbon fresh OKX read: BTC ~81,296, lower half of 81,050-82,050 24h range, small lower highs since 20:00 but no break of 81,222/81,050; funding +0.010%, L/S 2.16, OI ~$2.49B flat, thin Friday-night volume. No clean setup, no call.",
+  "last_fresh_read": "2026-10-23T23:24:00+01:00",
   "last_read": {
-    "at": "2026-10-23T19:52+01:00",
-    "btc": 81439,
-    "range_12h": [
+    "at": "2026-10-23T23:24+01:00",
+    "btc": 81296,
+    "range_24h": [
       81050.0,
       82047.6
     ],
     "funding": "+0.010%",
-    "ls_ratio": 2.13,
-    "oi_usd": 2489447194,
+    "ls_ratio": 2.16,
+    "oi_usd": 2491004321,
     "source": "OKX"
   }
 }
