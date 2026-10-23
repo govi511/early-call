@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T20:15:59+01:00",
+  "generated_at": "2026-10-23T20:18:20+01:00",
   "calls": [
     {
       "id": "1",
@@ -12811,6 +12811,31 @@
       "feed": "famous",
       "spam_flags": [],
       "spam_override": null,
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "503",
+      "logged_at_lisbon": "2026-10-23 20:17",
+      "account": "CBOE/@FirstSquawk/@Polymarket/@unusual_whales",
+      "post_url": "https://x.com/FirstSquawk/status/2113684110883606971",
+      "asset": "SPY",
+      "direction": "bearish hedge (context)",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "early-signal; type=options-flow; window ~18:22-20:17 Lisbon. fetch_filings new=53, all CBOE unusual volume on weeklies (no Form 4s, House PTRs or Pelosi). Standout: SPY Oct-30 755P 146.5k vs 23.5k OI @4.61 (~$67.5M premium, ~6x the biggest SPY print at the 18:22 run) - large downside hedge into a weekend with Iran-strike headlines (FirstSquawk: Trump directed CENTCOM to draft Iran strike plan - KAN; Brent settled $116.72 +3.1%, WTI $103.27 +3.8%); buyer/seller side not known from CBOE totals; ALERTED as big unusual flow. Others: NVDA Oct-30 220C 52.7k vs 17.1k OI @1.40 (~$7.4M), TSLA Oct-30 375C 9.7k @6.80 (~$6.6M), TSLA Oct-30 230P 21.6k @0.03 (junk), COIN Oct-30 180C 10.5k @3.19 (~$3.4M), PLTR Oct-30 202.5C 5.9k - not alerted. Polymarket: NATO-Russia clash by Oct 31 44.5% (+6pt since 18:22 alert, +7pt 1h, +22.5pt 1d) but Nov 15 market only 23% (inconsistent, thin/odd pricing) - continuation, not re-alerted; Fed Oct hold 91.5%. X: Musk only Economist jab/'Yeah' quote; SawyerMerritt/unusual_whales SpaceX seeking 80k US cell tower sites for wireless carrier (T/TMUS -6%, Bloomberg) - SpaceX-positive context; Trump to ease 50% tariffs on some Canadian ag/forestry goods (WSJ/Bloomberg); Amazon scraps N. Virginia data centers (WaPo); AXP 5% layoffs. Tesla/SpaceX/Starlink/SEC/FCC/Fed no original posts. Kalshi not checked this run. Public info only. Not financial advice",
+      "after_the_fact": false,
+      "call_notes": "early-signal ; type=options-flow ; window ~18:22-20:17 Lisbon. fetch_filings new=53, all CBOE unusual volume on weeklies (no Form 4s, House PTRs or Pelosi). Standout: SPY Oct-30 755P 146.5k vs 23.5k OI @4.61 (~$67.5M premium, ~6x the biggest SPY print at the 18:22 run) - large downside hedge into a weekend with Iran-strike headlines (FirstSquawk: Trump directed CENTCOM to draft Iran strike plan - KAN; Brent settled $116.72 +3.1%, WTI $103.27 +3.8%) ; buyer/seller side not known from CBOE totals ; ALERTED as big unusual flow. Others: NVDA Oct-30 220C 52.7k vs 17.1k OI @1.40 (~$7.4M), TSLA Oct-30 375C 9.7k @6.80 (~$6.6M), TSLA Oct-30 230P 21.6k @0.03 (junk), COIN Oct-30 180C 10.5k @3.19 (~$3.4M), PLTR Oct-30 202.5C 5.9k - not alerted. Polymarket: NATO-Russia clash by Oct 31 44.5% (+6pt since 18:22 alert, +7pt 1h, +22.5pt 1d) but Nov 15 market only 23% (inconsistent, thin/odd pricing) - continuation, not re-alerted ; Fed Oct hold 91.5%. X: Musk only Economist jab/'Yeah' quote ; SawyerMerritt/unusual_whales SpaceX seeking 80k US cell tower sites for wireless carrier (T/TMUS -6%, Bloomberg) - SpaceX-positive context ; Trump to ease 50% tariffs on some Canadian ag/forestry goods (WSJ/Bloomberg) ; Amazon scraps N. Virginia data centers (WaPo) ; AXP 5% layoffs. Tesla/SpaceX/Starlink/SEC/FCC/Fed no original posts. Kalshi not checked this run. Public info only. Not financial advice",
+      "followers": null,
+      "source": "X",
+      "feed": "discovery",
+      "spam_flags": [],
+      "spam_override": null,
+      "baseline": 763.96,
+      "baseline_source": "CNBC daily (close)",
       "copy_of": "",
       "spam_farm": false
     }
