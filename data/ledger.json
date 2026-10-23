@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T22:14:03+01:00",
+  "generated_at": "2026-10-23T22:20:18+01:00",
   "calls": [
     {
       "id": "1",
@@ -14848,6 +14848,35 @@
       "feed": "famous",
       "spam_flags": [],
       "spam_override": null,
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "507",
+      "logged_at_lisbon": "2026-10-23 22:20",
+      "account": "@Polymarket/Reuters/@NewsHour/CBOE/SEC/House Clerk",
+      "post_url": "https://polymarket.com/event/nato-x-russia-military-clash-by-october-31-2026",
+      "asset": "GOLD/OIL/SPX",
+      "direction": "context (de-escalation, log only)",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "early-signal; type=odds-move; window ~20:17-22:20 Lisbon. Polymarket 'NATO x Russia military clash by October 31, 2026?' collapsed to YES 2.65% (-18.35pt 1d; was 44.5% at 20:17 run, 38.5% at 18:22 alert #498; 24h vol ~$1.32M); Nov 15 market 4.5% (-19pt), Dec 31 17% (-18pt). 'Russia and Ukraine hold any diplomatic meeting by Oct 31' jumped to 99.85% (+34pt 1d). Catalyst: Putin agreed in principle to resume talks; Kremlin/Zelenskyy say US-Ukraine-Russia teams meet in first half of November (Abu Dhabi or Switzerland per Reuters US official) https://x.com/NewsHour/status/2113741463028707329 https://x.com/ME_Observer_/status/2113736238477836776 ; Russian strikes continued (4 killed). Reverses the #498 escalation alert - alerted. fetch_filings new=45, all CBOE end-of-day weeklies (largest still the already-alerted SPY Oct-30 755P ~148k; PLTR Oct-30 180P 15k, SPY Oct-30 737P 14.5k, COIN Oct-30 170C 5.8k vs 388 OI); no new Form 4s/House PTRs/Pelosi (latest filed Oct 22). X: Tesla Roadster cockpit post, unusual_whales HWM $8.4M Nov-20 195P buyer, SpaceX Boring Co $561M Q3 gain, Texas AG sues OpenAI; Fed H.8 only; no SEC/FCC/Musk market posts. Fed Oct no-change 92.5%. Public info, not non-public; not financial advice",
+      "after_the_fact": false,
+      "call_notes": "",
+      "ratio_call": false,
+      "conditional": false,
+      "entry_filled": null,
+      "waiting_for_entry": false,
+      "followers": null,
+      "source": "other",
+      "feed": "discovery",
+      "spam_flags": [],
+      "spam_override": null,
+      "baseline": 4060.4,
+      "baseline_source": "CNBC daily (close)",
       "copy_of": "",
       "spam_farm": false
     }
