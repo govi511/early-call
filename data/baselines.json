@@ -2380,6 +2380,11 @@
     "source": "CNBC 1m (next bar)",
     "at": "2026-10-23 02:55"
   },
+  "471|DGX/TSLA/SPCX|2026-10-23 04:17": {
+    "price": 243.28,
+    "source": "CNBC daily (close)",
+    "at": "2026-10-23 04:17"
+  },
   "248|PONS|2026-10-13 21:56": {
     "price": null,
     "source": "unavailable",
@@ -2403,10 +2408,5 @@
     "source": "unavailable",
     "error": "cnbc: cnbc: no bars for NYSE COMPOSITE; yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-22 15:38"
-  },
-  "471|DGX/TSLA/SPCX|2026-10-23 04:17": {
-    "price": 243.28,
-    "source": "CNBC daily (close)",
-    "at": "2026-10-23 04:17"
   }
 }
