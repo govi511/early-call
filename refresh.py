@@ -378,9 +378,16 @@ def call_text(r):
 COND_ENTRY = re.compile(r"limit|zone|retest|pending|close inside|\bif\b|break|trigger|reclaim|on a (?:1|4)?h? ?close|\d\s*-\s*\d", re.I)
 COND_TEXT = re.compile(r"\b(?:short|sell|long|buy)\b[^.;]{0,40}\bif (?:it |price |we |btc |gold )?(?:breaks?|loses?|reclaims?|closes?|holds?)|\bon a (?:break|1h close|4h close|daily close)|\b(?:short|sell|buy|long) (?:a push into|the retest|the dip into)|\blimit (?:order|buy|sell)|\bwaiting for\b", re.I)
 NOT_COND = re.compile(r"market|~|at scan|implied|cmp|now\b", re.I)
+BREAK_ENTRY = re.compile(r"\bbreak|\bloses?\b|\bloss of|\breclaim|\bretake|breakout|breakdown|\b(?:close|hold|push|move)s? (?:above|below)|^\s*(?:above|below)\b|\d\+", re.I)
+BREAK_TEXT = re.compile(r"\b(?:short|sell|long|buy)\b[^.;]{0,30}\bif (?:it |price |we )?(?:breaks?|loses?|reclaims?)|\bon a break(?:out|down)?\b", re.I)
 def break_condition(r):
-    """True if the entry triggers on a break through the level (fill = trade through), not a pullback into it."""
-    return bool(re.search(r"\bbreak|\bloses?\b|\bloss of|\breclaim|\bretake|breakout|breakdown|\b(?:close|hold|push|move)s? (?:above|below)|^\s*(?:above|below)\b|\d\+", (r.get("entry") or "") + " " + call_text(r), re.I))
+    """Entry triggers on a break through the level, judged from the entry field or an explicit 'short if it breaks X'; invalidation clauses don't count."""
+    return bool(BREAK_ENTRY.search(r.get("entry") or "") or BREAK_TEXT.search(call_text(r)))
+RATIO_RE = re.compile(r"\bratio\b|\bspread\b|\bvs\.?\b|\b(?:GC|SI|CL|NG|HG|BZ|ES|NQ)\s*/\s*(?:GC|SI|CL|NG|HG|BZ|ES|NQ)\b", re.I)
+def is_ratio(r):
+    """Ratio / spread / relative-value calls (gold/silver ratio, GC/SI, X vs Y): no single tradable price, never resolve against one leg."""
+    a = r if isinstance(r, str) else (r.get("asset") or "") + " " + (r.get("direction") or "")
+    return bool(RATIO_RE.search(a))
 def is_conditional(r):
     e = (r.get("entry") or "").strip(); d = (r.get("direction") or "").lower()
     if "context" in d or not level_nums(e) and "conditional" not in d: return False
@@ -579,6 +586,7 @@ def main():
                 if not r.get("id"): continue
                 r["after_the_fact"] = after_the_fact(r)
                 r["call_notes"] = call_text(r)
+                r["ratio_call"] = is_ratio(r)  # resolver skips these
                 r["conditional"] = is_conditional(r)  # entry is a limit/zone/break trigger
                 r["entry_filled"] = FILLS.get(r["id"], {}).get("filled") if r["conditional"] else None  # data/fill-state.json from tools/resolve_calls.py
                 r["waiting_for_entry"] = bool(r["conditional"] and r.get("status") == "open" and not r["entry_filled"])

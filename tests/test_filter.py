@@ -51,6 +51,11 @@ def test_note_phrasing_never_hides():
     for n in ("X has referral links", "account has affiliate links; Telegram VIP", "rejected: Telegram/VIP copy-paste clones"):
         assert R.spam_flags({"notes": n}) == [], n
 
+def test_470_ratio_call_skipped():
+    r = {"id": "470", "asset": "Gold/Silver ratio (GC/SI)", "direction": "long", "entry": "", "stop": "", "target": "121.7 (chart)"}
+    assert R.is_ratio(r) and R.is_ratio("BTC vs ETH") and R.is_ratio("Brent-WTI spread")
+    assert not R.is_ratio({"asset": "XAUUSD", "direction": "short"}) and not R.is_ratio("EUR/USD") and not R.is_ratio("Oil/Gold/S&P 500")
+
 if __name__ == "__main__":
     for n, f in list(globals().items()):
         if n.startswith("test_"): f(); print("ok", n)

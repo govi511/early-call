@@ -60,7 +60,7 @@ def judge(r):
         brk = R.break_condition(r)
         for i, (t, o, h, l, c) in enumerate(b):
             if brk: ok = (c >= hi if not short else c <= lo) if close_fill else (h >= hi if not short else l <= lo)
-            else: ok = (lo <= c <= hi) if close_fill else (l <= hi if not short else h >= lo)
+            else: ok = (lo <= c <= hi) if close_fill else (l <= hi and h >= lo)  # price traded into the zone
             if ok:
                 if cond and t > ts + FILL_HOURS * 3600: break  # filled only after the 48h window: counts as not filled
                 i0 = i; FILLS[r["id"]] = {"filled": True, "at": t}; break
@@ -121,12 +121,36 @@ def time_limit(r):
     end, why = (tf, "stated timeframe ended") if tf else (post + datetime.timedelta(days=LEVEL_DAYS), f"{LEVEL_DAYS}-day limit passed")
     return (end, why) if end < datetime.date.today() else None
 NO_LEVEL_DAYS = 7  # Manager rule: calls with no levels lock after 7 days
+def never_filled(r):
+    """(True, src) if a conditional entry never triggered between the post and resolved_at (default post+48h), else None."""
+    en = nums(r["entry"]); ts = R._ts_utc(r)
+    if not en or not ts: return None
+    end = ts + FILL_HOURS * 3600
+    try: end = max(end, int(datetime.datetime.strptime(r["resolved_at"][:16], "%Y-%m-%d %H:%M").timestamp()))
+    except ValueError:
+        try: end = max(end, int(datetime.datetime.strptime(r["resolved_at"][:10], "%Y-%m-%d").timestamp()) + 86399)
+        except ValueError: pass
+    b, src = bars(r["asset"], ts); b = [x for x in b if x[0] <= end]
+    if not b: return None
+    short = R.is_short(r["direction"]); lo, hi = min(en[:2]), max(en[:2]); close_fill = "close" in r["entry"].lower(); brk = R.break_condition(r)
+    for t, o, h, l, c in b:
+        if brk: ok = (c >= hi if not short else c <= lo) if close_fill else (h >= hi if not short else l <= lo)
+        else: ok = (lo <= c <= hi) if close_fill else (l <= hi and h >= lo)  # price traded into the zone
+        if ok: return None
+    return (True, src)
 def main():
-    apply = "--apply" in sys.argv
+    apply = "--apply" in sys.argv; reclass = "--reclassify-expired" in sys.argv
     rows = list(csv.DictReader(open(L, encoding="utf-8"))); fields = list(rows[0].keys())
     changes = []
     for r in rows:
+        if reclass:
+            if r["status"] == "expired" and R.is_conditional(r) and not R.is_ratio(r):
+                try: f = never_filled(r)
+                except Exception as e: print(f'#{r["id"]} price error: {e}'); continue
+                if f: changes.append((r, ("not_filled", f"was expired; conditional entry never triggered before {r['resolved_at']}", f[1], None))); print(f'#{r["id"]} {r["asset"]} expired -> not_filled ({f[1]})')
+            continue
         if r["status"] != "open" or "context" in r["direction"].lower(): continue
+        if R.is_ratio(r): print(f'#{r["id"]} {r["asset"]} skipped: ratio/spread call, no single tradable price'); continue
         if not nums(r["stop"]) and not nums(r["target"]):  # no levels: time limit only, locks 7 days after post
             ts = R._ts_utc(r)
             if ts and time.time() >= ts + NO_LEVEL_DAYS * 86400:
@@ -155,7 +179,8 @@ def main():
         old.update(FILLS); R.write_json(R.FILL_STATE, old)
     if apply and changes:
         for r, j in changes:
-            r["status"] = j[0]; r["resolved_at"] = datetime.datetime.fromtimestamp(j[3]).strftime("%Y-%m-%d")
+            r["status"] = j[0]
+            if j[3] is not None: r["resolved_at"] = datetime.datetime.fromtimestamp(j[3]).strftime("%Y-%m-%d")
             r["notes"] = (r["notes"] + f"; resolved {datetime.datetime.now():%Y-%m-%d %H:%M} Lisbon from {j[2]}: {j[1]}").lstrip("; ")
         os.makedirs(os.path.join(os.path.dirname(L), "backups"), exist_ok=True)
         shutil.copyfile(L, os.path.join(os.path.dirname(L), "backups", f"call-ledger.backup-{int(time.time())}.csv"))
