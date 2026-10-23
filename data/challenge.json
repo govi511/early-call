@@ -59,19 +59,25 @@
       "resolved_at_pt": "2026-10-20T15:01+0100"
     }
   ],
-  "last_check_at": "2026-10-23T12:25:00+01:00",
-  "last_check_btc": 81620,
+  "last_check_at": "2026-10-23T14:26+01:00",
+  "last_check_btc": 81800,
   "last_proposal_at": "2026-10-20T07:18+01:00",
   "last_alert_trade_id": 2,
   "last_resolution_alerted_id": 2,
   "open_trade_id": null,
-  "last_setup_eval": "Fresh OKX read 12:25 Lisbon: BTC ~81,620, still chopping 81,510-81,950 over 6h (12:00 candle 81,538-81,664). Funding +0.01%, L/S 2.24, OI ~$2.57B flat. No clean setup, no call.",
-  "last_check_note": "12:25 Lisbon: no trade open; fresh read, no clean setup, no call.",
-  "last_fresh_read": "2026-10-23T12:25:00+01:00",
+  "last_setup_eval": "No clean setup: BTC chopping 81,420-81,950 for 12h, funding neutral, L/S 2.21 elevated but no break.",
+  "last_check_note": "14:26 fresh read, no trade open, no call.",
+  "last_fresh_read": "2026-10-23T14:26+01:00",
   "last_read": {
-    "at": "2026-10-23T12:25+01:00",
-    "source": "OKX",
-    "btc": 81620,
-    "note": "Fresh OKX read 12:25 Lisbon: BTC ~81,620, still chopping 81,510-81,950 over 6h (12:00 candle 81,538-81,664). Funding +0.01%, L/S 2.24, OI ~$2.57B flat. No clean setup, no call."
+    "at": "2026-10-23T14:26+01:00",
+    "btc": 81800,
+    "range_12h": [
+      81419.9,
+      82010.8
+    ],
+    "funding": "+0.01%",
+    "ls_ratio": 2.21,
+    "oi_usd": 2580000000.0,
+    "source": "OKX"
   }
 }
