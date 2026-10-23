@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T08:08:59+01:00",
+  "generated_at": "2026-10-23T08:17:11+01:00",
   "calls": [
     {
       "id": "1",
@@ -12198,6 +12198,31 @@
         "duplicate"
       ],
       "spam_override": null,
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "478",
+      "logged_at_lisbon": "2026-10-23 08:17",
+      "account": "SEC/House Clerk/CBOE/@SawyerMerritt/@FirstSquawk/@elonmusk/@Kalshi/@Polymarket",
+      "post_url": "https://x.com/SawyerMerritt/status/2113510658968875349",
+      "asset": "TSLA",
+      "direction": "context (log only)",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "early-signal; type=context; window ~06:21-08:17 Lisbon. fetch_filings new=0 (no new Form 4s, House PTRs, Pelosi, or CBOE unusual volume). X: SawyerMerritt says Tesla expanded Austin Robotaxi area to cover the F1 track (400k attendees this weekend) and extended hours to 1 AM (mild TSLA positive); FirstSquawk: France flash Oct PMIs big miss (mfg 49.3 vs 50.5, services/composite 48.4 vs 50.7), UK Sep retail sales weak (-0.4% m/m vs -0.1% est), Iran warns of expanded attacks on economic/civilian sites after US strike (WSJ), BOJ FSR stable; Kalshi: Musk $76M GOP donation, Russian diesel tanker to US after Trump-Putin deal, Google-Constellation 7,200 jobs; Polymarket: India-EU FTA expected by end-2026; Musk posts Grok Bot promo/politics only; Tesla/SpaceX/Starlink/SEC/FCC/Fed quiet; unusual_whales/QuiverQuant/OptionsHawk quiet; lookonchain memecoin scam only. Polymarket top-volume markets: no sharp market-relevant odds moves (only resolved ETH daily brackets and sports). Not alerted (public, nothing new and significant). Not financial advice.",
+      "after_the_fact": false,
+      "call_notes": "early-signal ; type=context ; window ~06:21-08:17 Lisbon. fetch_filings new=0 (no new Form 4s, House PTRs, Pelosi, or CBOE unusual volume). X: SawyerMerritt says Tesla expanded Austin Robotaxi area to cover the F1 track (400k attendees this weekend) and extended hours to 1 AM (mild TSLA positive) ; FirstSquawk: France flash Oct PMIs big miss (mfg 49.3 vs 50.5, services/composite 48.4 vs 50.7), UK Sep retail sales weak (-0.4% m/m vs -0.1% est), Iran warns of expanded attacks on economic/civilian sites after US strike (WSJ), BOJ FSR stable ; Kalshi: Musk $76M GOP donation, Russian diesel tanker to US after Trump-Putin deal, Google-Constellation 7,200 jobs ; Polymarket: India-EU FTA expected by end-2026 ; Musk posts Grok Bot promo/politics only ; Tesla/SpaceX/Starlink/SEC/FCC/Fed quiet ; unusual_whales/QuiverQuant/OptionsHawk quiet ; lookonchain memecoin scam only. Polymarket top-volume markets: no sharp market-relevant odds moves (only resolved ETH daily brackets and sports). Not alerted (public, nothing new and significant). Not financial advice.",
+      "followers": null,
+      "source": "X",
+      "feed": "discovery",
+      "spam_flags": [],
+      "spam_override": null,
+      "baseline": 374.58,
+      "baseline_source": "CNBC daily (close)",
       "copy_of": "",
       "spam_farm": false
     }
