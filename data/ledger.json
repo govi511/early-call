@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T08:17:11+01:00",
+  "generated_at": "2026-10-23T09:11:40+01:00",
   "calls": [
     {
       "id": "1",
@@ -12223,6 +12223,31 @@
       "spam_override": null,
       "baseline": 374.58,
       "baseline_source": "CNBC daily (close)",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "479",
+      "logged_at_lisbon": "2026-10-23 08:38",
+      "account": "@CryptoTony__",
+      "post_url": "https://x.com/CryptoTony__/status/2113535394197438640",
+      "asset": "BTC",
+      "direction": "short (bias)",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "source watchlist; role call; \"$BTC - Update The drop was steep yesterday, so to me this pattern is bearish and pumps are for shorting. Looking very distributive right now\" (08:38 Lisbon); no entry/stop/target given (scored from price at post time, BTC ~81,600); directional bias only, not alerted (same treatment as #472/#474); CryptoTony ETH posts LTF commentary (pumps as rejections; liquidity above to sweep), FET no entries, not logged; discovery all rejected: <5k accounts and/or Telegram/VIP/link-in-bio gold signal spam (CocoBit121 incl. after-the-fact EXECUTED post, forexxauusdv/Zakirmanjuag4 copy-paste duplicate, sir_mansoor_, asadkingofgold, chariman_go, forexagmp, AurumNarra, vg_you45210, ALICE_FX_TRADER 5.06k Telegram bio, JohnSmithsxoos, STYFOREX1 Telegram, Posting386682/PaulinaBochen/SebastianTroll1 duplicate, PrimeFX514047, Hamidtradene/fs3l7o duplicate, Dropship_XAU, Seoyun3616, localtraderug), danishalich_07 BTC short (account 1 day old), vitanavy NQ commentary, CollinsAri62970 DASH; following timeline news only (Kalshi Goldman hedge fund VIPs worst day since 2011, UAE $39B fraud/crypto 960 arrests, Meta $25B New Mexico penalty, Japan core CPI 2.1%, pedrosilva BTC-only long-term-hold quote, NoLimitGains WMT after-the-fact); #452 BTC short still open (BTC ~81,700, 1h high 81,984 < 82,150 stop); #477 zone 82,227-82,625 not reached; #473 gold limit unfilled (low ~4015); #476 gold fell to ~4016 after tagging 4028.2, left open; not financial advice",
+      "after_the_fact": false,
+      "call_notes": "source watchlist ; role call ; \"$BTC - Update The drop was steep yesterday, so to me this pattern is bearish and pumps are for shorting. Looking very distributive right now\" (08:38 Lisbon) ; no entry/stop/target given (scored from price at post time, BTC ~81,600) ; directional bias only, not alerted (same treatment as #472/#474) ; CryptoTony ETH posts LTF commentary (pumps as rejections; liquidity above to sweep), FET no entries, not logged ; #452 BTC short still open (BTC ~81,700, 1h high 81,984 < 82,150 stop) ; #477 zone 82,227-82,625 not reached ; #473 gold limit unfilled (low ~4015) ; #476 gold fell to ~4016 after tagging 4028.2, left open ; not financial advice",
+      "followers": null,
+      "source": "X",
+      "feed": "famous",
+      "spam_flags": [],
+      "spam_override": null,
+      "baseline": 81815.6,
+      "baseline_source": "OKX",
       "copy_of": "",
       "spam_farm": false
     }
