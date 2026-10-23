@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T03:14:06+01:00",
+  "generated_at": "2026-10-23T04:17:20+01:00",
   "calls": [
     {
       "id": "1",
@@ -12027,6 +12027,31 @@
       "spam_override": null,
       "baseline": 4012.8,
       "baseline_source": "CNBC 1m (next bar)",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "471",
+      "logged_at_lisbon": "2026-10-23 04:17",
+      "account": "SEC/House Clerk/CBOE/@elonmusk/@Polymarket/@Kalshi",
+      "post_url": "https://x.com/Polymarket/status/2113462290733261074",
+      "asset": "DGX/TSLA/SPCX",
+      "direction": "context (log only)",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "early-signal; type=context; window ~02:15-04:17 Lisbon. fetch_filings new=0 (no new Form 4s, House PTRs, Pelosi, or CBOE unusual volume). X: Polymarket JUST IN Quest Diagnostics (DGX) cybersecurity breach exposing patient records (03:47 Lisbon), not in Gonçalo's names; Musk posts were Grok Bot phone-app integration promo and political commentary, no TSLA/SpaceX price signal; Tesla/SpaceX/Starlink/SEC/FCC/Fed quiet; no sharp Kalshi/Polymarket odds moves. Not alerted (public, nothing new and significant). Not financial advice.",
+      "after_the_fact": false,
+      "call_notes": "early-signal ; type=context ; window ~02:15-04:17 Lisbon. fetch_filings new=0 (no new Form 4s, House PTRs, Pelosi, or CBOE unusual volume). X: Polymarket JUST IN Quest Diagnostics (DGX) cybersecurity breach exposing patient records (03:47 Lisbon), not in Gonçalo's names ; Musk posts were Grok Bot phone-app integration promo and political commentary, no TSLA/SpaceX price signal ; Tesla/SpaceX/Starlink/SEC/FCC/Fed quiet ; no sharp Kalshi/Polymarket odds moves. Not alerted (public, nothing new and significant). Not financial advice.",
+      "followers": null,
+      "source": "X",
+      "feed": "discovery",
+      "spam_flags": [],
+      "spam_override": null,
+      "baseline": 243.28,
+      "baseline_source": "CNBC daily (close)",
       "copy_of": "",
       "spam_farm": false
     }
