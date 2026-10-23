@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T06:14:10+01:00",
+  "generated_at": "2026-10-23T06:22:24+01:00",
   "calls": [
     {
       "id": "1",
@@ -12125,6 +12125,31 @@
       "spam_override": null,
       "baseline": 81679.9,
       "baseline_source": "OKX",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "475",
+      "logged_at_lisbon": "2026-10-23 06:21",
+      "account": "SEC/House Clerk/CBOE/@SawyerMerritt/@elonmusk/@Kalshi/@Polymarket",
+      "post_url": "https://x.com/SawyerMerritt/status/2113485409497854223",
+      "asset": "TSLA",
+      "direction": "context (log only)",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "early-signal; type=context; window ~04:17-06:21 Lisbon. fetch_filings new=0 (no new Form 4s, House PTRs, Pelosi, or CBOE unusual volume). X: SawyerMerritt says Tesla raised US Model Y financing APR to 2.49% from 1.99% on base/Premium trims (05:19 Lisbon), a mild demand/margin datapoint for TSLA, not market-moving; wholemars Robotaxi app iPhone update; Musk posts were retweets only (politics, Grok Bot promo); Tesla/SpaceX/Starlink/SEC/FCC/Fed quiet; unusual_whales/QuiverQuant quiet; news wires: Volvo Cars Q3 miss and 2,500 job cuts, ECB seen hiking in December (BBG), Calpers retreating from Big Tech (FT), US prepared for long Iran stand-off (FT), SK Hynix scraps US listing; no sharp Kalshi/Polymarket odds moves (new markets/headlines only). Not alerted (public, nothing new and significant). Not financial advice.",
+      "after_the_fact": false,
+      "call_notes": "early-signal ; type=context ; window ~04:17-06:21 Lisbon. fetch_filings new=0 (no new Form 4s, House PTRs, Pelosi, or CBOE unusual volume). X: SawyerMerritt says Tesla raised US Model Y financing APR to 2.49% from 1.99% on base/Premium trims (05:19 Lisbon), a mild demand/margin datapoint for TSLA, not market-moving ; wholemars Robotaxi app iPhone update ; Musk posts were retweets only (politics, Grok Bot promo) ; Tesla/SpaceX/Starlink/SEC/FCC/Fed quiet ; unusual_whales/QuiverQuant quiet ; news wires: Volvo Cars Q3 miss and 2,500 job cuts, ECB seen hiking in December (BBG), Calpers retreating from Big Tech (FT), US prepared for long Iran stand-off (FT), SK Hynix scraps US listing ; no sharp Kalshi/Polymarket odds moves (new markets/headlines only). Not alerted (public, nothing new and significant). Not financial advice.",
+      "followers": null,
+      "source": "X",
+      "feed": "discovery",
+      "spam_flags": [],
+      "spam_override": null,
+      "baseline": 374.58,
+      "baseline_source": "CNBC daily (close)",
       "copy_of": "",
       "spam_farm": false
     }
