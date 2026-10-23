@@ -2494,5 +2494,15 @@
     "source": "unavailable",
     "error": "cnbc: cnbc: no bars for USELESS; yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-23 13:06"
+  },
+  "496|INJ|2026-10-23 18:09": {
+    "price": 7.805,
+    "source": "OKX",
+    "at": "2026-10-23 18:09"
+  },
+  "497|GOOGL|2026-10-23 18:09": {
+    "price": 324.22,
+    "source": "CNBC daily (close)",
+    "at": "2026-10-23 18:09"
   }
 }
