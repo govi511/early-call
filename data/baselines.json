@@ -2510,6 +2510,11 @@
     "source": "CNBC 1m",
     "at": "2026-10-22 15:38"
   },
+  "507|GOLD/OIL/SPX|2026-10-23 22:20": {
+    "price": 4060.4,
+    "source": "CNBC daily (close)",
+    "at": "2026-10-23 22:20"
+  },
   "248|PONS|2026-10-13 21:56": {
     "price": null,
     "source": "unavailable",
@@ -2539,10 +2544,5 @@
     "source": "unavailable",
     "error": "cnbc: cnbc: no bars for ZS (ZSCALER); yahoo: yahoo cooling down after 429 (88s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-23 22:14"
-  },
-  "507|GOLD/OIL/SPX|2026-10-23 22:20": {
-    "price": 4060.4,
-    "source": "CNBC daily (close)",
-    "at": "2026-10-23 22:20"
   }
 }
