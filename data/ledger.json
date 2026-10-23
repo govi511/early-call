@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T10:08:58+01:00",
+  "generated_at": "2026-10-23T10:17:48+01:00",
   "calls": [
     {
       "id": "1",
@@ -12294,6 +12294,31 @@
       "feed": "discovery",
       "spam_flags": [],
       "spam_override": null,
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "482",
+      "logged_at_lisbon": "2026-10-23 10:17",
+      "account": "SEC/House Clerk/CBOE/@FirstSquawk/@Kalshi/@Polymarket",
+      "post_url": "https://x.com/FirstSquawk/status/2113546895159427408",
+      "asset": "OIL/GOLD/FX",
+      "direction": "context (log only)",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "early-signal; type=context; window ~08:17-10:17 Lisbon. fetch_filings new=0 (no new Form 4s, House PTRs, Pelosi, or CBOE unusual volume). X: FirstSquawk Iran (Fars) claims 'illicit' vessel traffic in Hormuz stopped (oil/gold risk), UK Oct composite PMI beat 53.1 vs 51.7, Eurozone composite 51.9 vs 52.7 and Germany 52.8 vs 53.4 misses, BOJ sources lean to Dec hike, IDF West Bank action, China AI-jobs guidelines; Kalshi Getty Images bankruptcy, Florida AG teen social/AI bill; Polymarket UK wildfire aircraft; Musk/Tesla/SpaceX/Starlink/SEC/FCC/Fed and unusual_whales/QuiverQuant/OptionsHawk no original posts in window. Polymarket: Russia-Ukraine diplomatic meeting by Oct 31 at ~97% (+84pt/24h, flat 1h) reflects already-logged US/Russia/Ukraine technical meeting news; NATO-Russia clash by Oct 31 ~20% (+11.5pt/24h); Fed Oct hold ~93.5% (+6pt/24h). No new sharp 1h moves. Not alerted (public, nothing new and significant). Not financial advice.",
+      "after_the_fact": false,
+      "call_notes": "early-signal ; type=context ; window ~08:17-10:17 Lisbon. fetch_filings new=0 (no new Form 4s, House PTRs, Pelosi, or CBOE unusual volume). X: FirstSquawk Iran (Fars) claims 'illicit' vessel traffic in Hormuz stopped (oil/gold risk), UK Oct composite PMI beat 53.1 vs 51.7, Eurozone composite 51.9 vs 52.7 and Germany 52.8 vs 53.4 misses, BOJ sources lean to Dec hike, IDF West Bank action, China AI-jobs guidelines ; Kalshi Getty Images bankruptcy, Florida AG teen social/AI bill ; Polymarket UK wildfire aircraft ; Musk/Tesla/SpaceX/Starlink/SEC/FCC/Fed and unusual_whales/QuiverQuant/OptionsHawk no original posts in window. Polymarket: Russia-Ukraine diplomatic meeting by Oct 31 at ~97% (+84pt/24h, flat 1h) reflects already-logged US/Russia/Ukraine technical meeting news ; NATO-Russia clash by Oct 31 ~20% (+11.5pt/24h) ; Fed Oct hold ~93.5% (+6pt/24h). No new sharp 1h moves. Not alerted (public, nothing new and significant). Not financial advice.",
+      "followers": null,
+      "source": "X",
+      "feed": "discovery",
+      "spam_flags": [],
+      "spam_override": null,
+      "baseline": 99.47,
+      "baseline_source": "CNBC daily (close)",
       "copy_of": "",
       "spam_farm": false
     }
