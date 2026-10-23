@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T18:09:56+01:00",
+  "generated_at": "2026-10-23T18:23:16+01:00",
   "calls": [
     {
       "id": "1",
@@ -12689,6 +12689,31 @@
       "spam_flags": [],
       "spam_override": null,
       "baseline": 324.22,
+      "baseline_source": "CNBC daily (close)",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "498",
+      "logged_at_lisbon": "2026-10-23 18:22",
+      "account": "@Polymarket/CBOE/SEC/House Clerk/@elonmusk",
+      "post_url": "https://polymarket.com/event/nato-x-russia-military-clash-in-2025",
+      "asset": "GOLD/OIL/SPX",
+      "direction": "context (log only)",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "early-signal; type=odds-move; window ~16:24-18:22 Lisbon. Polymarket 'NATO x Russia military clash by October 31, 2026?' YES 38.5% (+4.5pt 1h, +21.5pt 1d; was 25% at 16:24 run, ~18% before that; 24h vol ~$830k) https://polymarket.com/event/nato-x-russia-military-clash-in-2025 - no clear news catalyst found (X news: Putin rejects Donbas freeze in Witkoff talks, trilateral Abu Dhabi talks ~Nov 10; Russia-Ukraine diplomatic meeting by Oct 31 at 98%); geopolitical risk context for gold/oil/indices, alerted. fetch_filings new=59, all CBOE unusual volume on short-dated weeklies (no Form 4s, House PTRs or Pelosi). Biggest: SPY Oct-26 760C 26.1k vs 276 OI @4.15 (~$10.8M), SPY Oct-27 753P 22.4k vs 572 OI @1.73 (~$3.9M), SPY Oct-26 759P/758P/746P 13-17k, TSLA Oct-26 365P 11.0k @1.76, TSLA Oct-30 382.5C 5.3k, COIN Oct-30 172.5C 6.2k @5.96 (~$3.7M), NVDA far-OTM puts at $0.01 (noise) - typical Friday weekly hedging, not alerted. X: Musk reposted 'Tesla ramping up Megapack production rapidly to meet increasing demand' (https://x.com/elonmusk/status/2113679345562554445), rest political; Tesla/SpaceX/Starlink/SEC/Fed no posts; BrendanCarrFCC political RT only. Not non-public info. Not financial advice",
+      "after_the_fact": false,
+      "call_notes": "early-signal ; type=odds-move ; window ~16:24-18:22 Lisbon. Polymarket 'NATO x Russia military clash by October 31, 2026?' YES 38.5% (+4.5pt 1h, +21.5pt 1d; was 25% at 16:24 run, ~18% before that; 24h vol ~$830k) https://polymarket.com/event/nato-x-russia-military-clash-in-2025 - no clear news catalyst found (X news: Putin rejects Donbas freeze in Witkoff talks, trilateral Abu Dhabi talks ~Nov 10; Russia-Ukraine diplomatic meeting by Oct 31 at 98%) ; geopolitical risk context for gold/oil/indices, alerted. fetch_filings new=59, all CBOE unusual volume on short-dated weeklies (no Form 4s, House PTRs or Pelosi). Biggest: SPY Oct-26 760C 26.1k vs 276 OI @4.15 (~$10.8M), SPY Oct-27 753P 22.4k vs 572 OI @1.73 (~$3.9M), SPY Oct-26 759P/758P/746P 13-17k, TSLA Oct-26 365P 11.0k @1.76, TSLA Oct-30 382.5C 5.3k, COIN Oct-30 172.5C 6.2k @5.96 (~$3.7M), NVDA far-OTM puts at $0.01 (noise) - typical Friday weekly hedging, not alerted. X: Musk reposted 'Tesla ramping up Megapack production rapidly to meet increasing demand' (https://x.com/elonmusk/status/2113679345562554445), rest political ; Tesla/SpaceX/Starlink/SEC/Fed no posts ; BrendanCarrFCC political RT only. Not non-public info. Not financial advice",
+      "followers": null,
+      "source": "other",
+      "feed": "discovery",
+      "spam_flags": [],
+      "spam_override": null,
+      "baseline": 4060.4,
       "baseline_source": "CNBC daily (close)",
       "copy_of": "",
       "spam_farm": false
