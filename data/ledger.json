@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T22:20:18+01:00",
+  "generated_at": "2026-10-23T23:14:15+01:00",
   "calls": [
     {
       "id": "1",
@@ -14877,6 +14877,33 @@
       "spam_override": null,
       "baseline": 4060.4,
       "baseline_source": "CNBC daily (close)",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "508",
+      "logged_at_lisbon": "2026-10-23 23:14",
+      "account": "@doc_mcgraw",
+      "post_url": "https://x.com/doc_mcgraw/status/2113749601295454626",
+      "asset": "SPX",
+      "direction": "neutral (iron condor, options)",
+      "entry": "~7640 (SPX at entry)",
+      "stop": "",
+      "target": "expire between 7295 and 7910 by Oct 30",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "source discovery; options trade (sold Oct-30 7295/7275 put spread for $0.85 and 7910/7930 call spread for $0.50); 8.8k followers, account 2016, passes source rules; options, so log only, not alerted. Rest of scan: following timeline news only (MarioNawfal US tells diplomats to leave Saudi Arabia as Houthi attacks intensify, oil $200 if Iran hits Gulf fields talk, Trump warships off Cuba, Canada tariff cuts; Kalshi Tesla cash reserves ATH >$45B; Polymarket misc) - left to early-signal watch; watchlist: Nebraskangooner '$ADA will never make a new all time high' (long-term opinion, not a trade, not logged), copper question, sub-desk ad; traderstewie AOT top-pick MRK +1.89% after-the-fact; alphatrends video; scottmelker Cardone; discovery else rejected (Bitcoinsovereig/serrahcrypto/Tradingfloor103/randytimwilson/Danielbr00kss/AstuteCrypyo free/VIP signal-group spam, AimbotTrades/CryptoStra3mna/Daily_T_Setups <5k or copy-paste duplicates, Finora_EN AI bot); no resolutions (BTC ~81,338 range 81,085-82,060, SOL ~103.7, XAUT ~3,998, ETH ~2,397: #452/#477/#480/#481 unchanged); not financial advice",
+      "after_the_fact": false,
+      "call_notes": "",
+      "ratio_call": false,
+      "conditional": false,
+      "entry_filled": null,
+      "waiting_for_entry": false,
+      "followers": 8800,
+      "source": "X",
+      "feed": "discovery",
+      "spam_flags": [],
+      "spam_override": null,
       "copy_of": "",
       "spam_farm": false
     }
