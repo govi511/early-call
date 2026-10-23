@@ -59,25 +59,25 @@
       "resolved_at_pt": "2026-10-20T15:01+0100"
     }
   ],
-  "last_check_at": "2026-10-23T14:26+01:00",
-  "last_check_btc": 81800,
+  "last_check_at": "2026-10-23T15:27+01:00",
+  "last_check_btc": 81338,
   "last_proposal_at": "2026-10-20T07:18+01:00",
   "last_alert_trade_id": 2,
   "last_resolution_alerted_id": 2,
   "open_trade_id": null,
-  "last_setup_eval": "No clean setup: BTC chopping 81,420-81,950 for 12h, funding neutral, L/S 2.21 elevated but no break.",
-  "last_check_note": "14:26 fresh read, no trade open, no call.",
-  "last_fresh_read": "2026-10-23T14:26+01:00",
+  "last_setup_eval": "No clean setup: 15:00 candle broke 81,420 range low and swept to 81,050 (24h low 80,900) on heavy volume, now ~81,340 mid-flush; too late to short into the sweep, no reclaim of 81,420 for a long. Funding +0.009%, L/S 2.14 easing, OI ~$2.56B slightly down.",
+  "last_check_note": "15:27 fresh read, no trade open, no call.",
+  "last_fresh_read": "2026-10-23T15:27+01:00",
   "last_read": {
-    "at": "2026-10-23T14:26+01:00",
-    "btc": 81800,
+    "at": "2026-10-23T15:27+01:00",
+    "btc": 81338,
     "range_12h": [
-      81419.9,
-      82010.8
+      81050.0,
+      82047.6
     ],
-    "funding": "+0.01%",
-    "ls_ratio": 2.21,
-    "oi_usd": 2580000000.0,
+    "funding": "+0.009%",
+    "ls_ratio": 2.14,
+    "oi_usd": 2557937817.8,
     "source": "OKX"
   }
 }
