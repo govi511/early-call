@@ -2440,6 +2440,16 @@
     "source": "OKX",
     "at": "2026-10-23 15:14"
   },
+  "490|ETH|2026-10-23 16:16": {
+    "price": 2402.64,
+    "source": "OKX",
+    "at": "2026-10-23 16:16"
+  },
+  "491|BE|2026-10-23 16:16": {
+    "price": 217.77,
+    "source": "CNBC daily (close)",
+    "at": "2026-10-23 16:16"
+  },
   "248|PONS|2026-10-13 21:56": {
     "price": null,
     "source": "unavailable",
@@ -2470,14 +2480,9 @@
     "error": "cnbc: cnbc: no bars for USELESS; yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-23 13:06"
   },
-  "490|ETH|2026-10-23 16:16": {
-    "price": 2402.64,
-    "source": "OKX",
-    "at": "2026-10-23 16:16"
-  },
-  "491|BE|2026-10-23 16:16": {
-    "price": 217.77,
+  "492|PLTR/TSLA/GOLD|2026-10-23 16:24": {
+    "price": 196.19,
     "source": "CNBC daily (close)",
-    "at": "2026-10-23 16:16"
+    "at": "2026-10-23 16:24"
   }
 }

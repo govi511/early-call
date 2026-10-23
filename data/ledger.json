@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T16:16:43+01:00",
+  "generated_at": "2026-10-23T16:25:33+01:00",
   "calls": [
     {
       "id": "1",
@@ -12539,6 +12539,31 @@
       "spam_flags": [],
       "spam_override": null,
       "baseline": 217.77,
+      "baseline_source": "CNBC daily (close)",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "492",
+      "logged_at_lisbon": "2026-10-23 16:24",
+      "account": "SEC/House Clerk/CBOE/@unusual_whales/@SECGov/@FCC/@Polymarket",
+      "post_url": "https://x.com/unusual_whales/status/2113635805994594364",
+      "asset": "PLTR/TSLA/GOLD",
+      "direction": "context (log only)",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "early-signal; type=context; window ~14:22-16:24 Lisbon. fetch_filings new=34, all CBOE unusual-volume rows on short-dated weeklies (no new Form 4s, House PTRs or Pelosi; SPY CBOE timed out). Biggest: PLTR Oct-30 $200C vol 14.5k vs OI 4.5k @4.29 (~$6.2M premium) and $207.5C vol 10.4k vs OI 2.4k; TSLA Oct-26 $360P 11.9k vs OI 2.2k and $370/$372.5/$375C ~7k each (Friday weekly churn, mixed); META Nov-6 $515P 10.3k vs OI 43 @0.25 (~$0.26M, small far-OTM); AAPL/NVDA Oct-30 deep-OTM $0.01 puts (junk). X: SECGov FY2027 exam priorities, FCC PHP2Shell cyber advisory, unusual_whales central banks stockpiling gold and moving it out of the US (Fortune), OpenAI autonomous-AI monitoring report (NBC), Altman cyber-bug comments; OptionsHawk QQQ $710C $6M already alerted as #488. Musk/Tesla/SpaceX/Starlink/Fed no original posts in window. Polymarket: NATO-Russia clash by Oct 31 25% (+3.5pt 1h, +10.5pt 1d, was 18% at 14:22) - geopolitical drift, not sharp enough to alert; Fed Oct hold 91.5%, hike 8.5% (+1pt 1h); others flat or sports. Not alerted (public, nothing new and significant). Not financial advice.",
+      "after_the_fact": false,
+      "call_notes": "early-signal ; type=context ; window ~14:22-16:24 Lisbon. fetch_filings new=34, all CBOE unusual-volume rows on short-dated weeklies (no new Form 4s, House PTRs or Pelosi; SPY CBOE timed out). Biggest: PLTR Oct-30 $200C vol 14.5k vs OI 4.5k @4.29 (~$6.2M premium) and $207.5C vol 10.4k vs OI 2.4k ; TSLA Oct-26 $360P 11.9k vs OI 2.2k and $370/$372.5/$375C ~7k each (Friday weekly churn, mixed) ; META Nov-6 $515P 10.3k vs OI 43 @0.25 (~$0.26M, small far-OTM) ; AAPL/NVDA Oct-30 deep-OTM $0.01 puts (junk). X: SECGov FY2027 exam priorities, FCC PHP2Shell cyber advisory, unusual_whales central banks stockpiling gold and moving it out of the US (Fortune), OpenAI autonomous-AI monitoring report (NBC), Altman cyber-bug comments ; OptionsHawk QQQ $710C $6M already alerted as #488. Musk/Tesla/SpaceX/Starlink/Fed no original posts in window. Polymarket: NATO-Russia clash by Oct 31 25% (+3.5pt 1h, +10.5pt 1d, was 18% at 14:22) - geopolitical drift, not sharp enough to alert ; Fed Oct hold 91.5%, hike 8.5% (+1pt 1h) ; others flat or sports. Not alerted (public, nothing new and significant). Not financial advice.",
+      "followers": null,
+      "source": "X",
+      "feed": "discovery",
+      "spam_flags": [],
+      "spam_override": null,
+      "baseline": 196.19,
       "baseline_source": "CNBC daily (close)",
       "copy_of": "",
       "spam_farm": false
