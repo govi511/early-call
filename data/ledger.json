@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T10:17:48+01:00",
+  "generated_at": "2026-10-23T12:16:11+01:00",
   "calls": [
     {
       "id": "1",
@@ -12318,6 +12318,31 @@
       "spam_flags": [],
       "spam_override": null,
       "baseline": 99.47,
+      "baseline_source": "CNBC daily (close)",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "483",
+      "logged_at_lisbon": "2026-10-23 12:14",
+      "account": "SEC/House Clerk/CBOE/@FirstSquawk/@unusual_whales/@Polymarket",
+      "post_url": "https://x.com/FirstSquawk/status/2113561579732271240",
+      "asset": "GOOGL/NVDA/AXP/USD",
+      "direction": "context (log only)",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "early-signal; type=context; window ~10:17-12:14 Lisbon. fetch_filings new=3, all CBOE rows re-keyed from the Oct 22 session (GOOGL Oct-30 352.5C 21.4k / 387.5C 20.0k = OptionsHawk's 20k call-spread buyer already logged, OI now 5,081/2,850 confirming opening; NVDA Oct-30 240P 6.2k vs 46 OI at 27.93, ~$17M deep ITM after chips selloff, likely hedge/roll) - not new; no new Form 4s, House PTRs or Pelosi. X: FirstSquawk AmEx Q3 rev 20.06B vs 20.12B est, billed business miss, expenses below est; Russia CB holds 14% as expected; Trump admin halts program rewarding allies for export-control alignment (chip/NVDA context); German electricity tax cut talk; Merz to Japan Oct 28-29; China FM AI/trade remarks; unusual_whales Macron protest ban. Musk/Tesla/SpaceX/Starlink/SEC/FCC/Fed/OptionsHawk/QuiverQuant/SawyerMerritt/DeItaone no original posts in window. Polymarket top-volume: no sharp 1h moves in market-relevant markets (Russia-Ukraine meeting ~98% already known, Fed Oct hold 93%, US-Iran ceasefire Oct 31 78%). Not alerted (public, nothing new and significant). Not financial advice.",
+      "after_the_fact": false,
+      "call_notes": "early-signal ; type=context ; window ~10:17-12:14 Lisbon. fetch_filings new=3, all CBOE rows re-keyed from the Oct 22 session (GOOGL Oct-30 352.5C 21.4k / 387.5C 20.0k = OptionsHawk's 20k call-spread buyer already logged, OI now 5,081/2,850 confirming opening; NVDA Oct-30 240P 6.2k vs 46 OI at 27.93, ~$17M deep ITM after chips selloff, likely hedge/roll) - not new ; no new Form 4s, House PTRs or Pelosi. X: FirstSquawk AmEx Q3 rev 20.06B vs 20.12B est, billed business miss, expenses below est ; Russia CB holds 14% as expected ; Trump admin halts program rewarding allies for export-control alignment (chip/NVDA context) ; German electricity tax cut talk ; Merz to Japan Oct 28-29 ; China FM AI/trade remarks ; unusual_whales Macron protest ban. Musk/Tesla/SpaceX/Starlink/SEC/FCC/Fed/OptionsHawk/QuiverQuant/SawyerMerritt/DeItaone no original posts in window. Polymarket top-volume: no sharp 1h moves in market-relevant markets (Russia-Ukraine meeting ~98% already known, Fed Oct hold 93%, US-Iran ceasefire Oct 31 78%). Not alerted (public, nothing new and significant). Not financial advice.",
+      "followers": null,
+      "source": "X",
+      "feed": "discovery",
+      "spam_flags": [],
+      "spam_override": null,
+      "baseline": 324.22,
       "baseline_source": "CNBC daily (close)",
       "copy_of": "",
       "spam_farm": false
