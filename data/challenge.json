@@ -59,19 +59,19 @@
       "resolved_at_pt": "2026-10-20T15:01+0100"
     }
   ],
-  "last_check_at": "2026-10-23T02:50:00+01:00",
-  "last_check_btc": 81577,
+  "last_check_at": "2026-10-23T05:21:00+01:00",
+  "last_check_btc": 81743,
   "last_proposal_at": "2026-10-20T07:18+01:00",
   "last_alert_trade_id": 2,
   "last_resolution_alerted_id": 2,
   "open_trade_id": null,
-  "last_setup_eval": "Fresh OKX read 02:50 Lisbon: BTC ~81,577; 02:00 1h candle (unclosed) wicked to 81,749, just above the 81,536/81,730 range highs, then pulled back into range. Possible high sweep but candle not closed, no confirmed rejection or breakout. Funding +0.0078%, L/S 2.22 (rising, crowded longs), OI ~$2.54B. No clean setup, no call.",
-  "last_check_note": "Fresh OKX read 02:50 Lisbon: BTC ~81,577; 02:00 1h candle (unclosed) wicked to 81,749, just above the 81,536/81,730 range highs, then pulled back into range. Possible high sweep but candle not closed, no confirmed rejection or breakout. Funding +0.0078%, L/S 2.22 (rising, crowded longs), OI ~$2.54B. No clean setup, no call.",
-  "last_fresh_read": "2026-10-23T02:50:00+01:00",
+  "last_setup_eval": "Fresh OKX read 05:21 Lisbon: BTC ~81,743. 03:00 1h closed 81,930 (breakout above 81,749 range high), 04:00 topped 82,011 and closed 81,857, current 05:00 candle pulled back to 81,676, retesting the old range high; no confirmed hold or failed breakout. Funding +0.0075%, L/S 2.25 (crowded longs, easing from 2.28), OI ~$2.56B flat. No clean setup, no call.",
+  "last_check_note": "Fresh OKX read 05:21 Lisbon: BTC ~81,743. 03:00 1h closed 81,930 (breakout above 81,749 range high), 04:00 topped 82,011 and closed 81,857, current 05:00 candle pulled back to 81,676, retesting the old range high; no confirmed hold or failed breakout. Funding +0.0075%, L/S 2.25 (crowded longs, easing from 2.28), OI ~$2.56B flat. No clean setup, no call.",
+  "last_fresh_read": "2026-10-23T05:21:00+01:00",
   "last_read": {
-    "at": "2026-10-22T23:53+01:00",
+    "at": "2026-10-23T05:21+01:00",
     "source": "OKX",
-    "btc": 81311,
-    "note": "No trade open. OKX 23:53: BTC ~81,310; 23:00 candle (unclosed) topped 81,512, third stall under the 81,520-81,536 area (20:00/22:00/23:00), but price is already ~200 below it and mid-range of 80,900-81,730, so a short gives poor R:R (~1.1). Funding +0.0069%, L/S 2.16 crowded longs, OI ~$2.50B flat. No clean setup, no call."
+    "btc": 81743,
+    "note": "Fresh OKX read 05:21 Lisbon: BTC ~81,743. 03:00 1h closed 81,930 (breakout above 81,749 range high), 04:00 topped 82,011 and closed 81,857, current 05:00 candle pulled back to 81,676, retesting the old range high; no confirmed hold or failed breakout. Funding +0.0075%, L/S 2.25 (crowded longs, easing from 2.28), OI ~$2.56B flat. No clean setup, no call."
   }
 }
