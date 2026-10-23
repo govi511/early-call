@@ -59,15 +59,15 @@
       "resolved_at_pt": "2026-10-20T15:01+0100"
     }
   ],
-  "last_check_at": "2026-10-23T00:53:00+01:00",
-  "last_check_btc": 81375,
+  "last_check_at": "2026-10-23T02:50:00+01:00",
+  "last_check_btc": 81577,
   "last_proposal_at": "2026-10-20T07:18+01:00",
   "last_alert_trade_id": 2,
   "last_resolution_alerted_id": 2,
   "open_trade_id": null,
-  "last_setup_eval": "Fresh OKX read 00:53 Lisbon: BTC ~81,375, tight 6h range 81,160-81,536, mid-range, no rejection/breakout; funding +0.0067%, L/S 2.18, OI ~$2.51B. No clean setup, no call.",
-  "last_check_note": "Fresh OKX read 00:53 Lisbon: BTC ~81,375, tight 6h range 81,160-81,536, mid-range, no rejection/breakout; funding +0.0067%, L/S 2.18, OI ~$2.51B. No clean setup, no call.",
-  "last_fresh_read": "2026-10-23T00:53:00+01:00",
+  "last_setup_eval": "Fresh OKX read 02:50 Lisbon: BTC ~81,577; 02:00 1h candle (unclosed) wicked to 81,749, just above the 81,536/81,730 range highs, then pulled back into range. Possible high sweep but candle not closed, no confirmed rejection or breakout. Funding +0.0078%, L/S 2.22 (rising, crowded longs), OI ~$2.54B. No clean setup, no call.",
+  "last_check_note": "Fresh OKX read 02:50 Lisbon: BTC ~81,577; 02:00 1h candle (unclosed) wicked to 81,749, just above the 81,536/81,730 range highs, then pulled back into range. Possible high sweep but candle not closed, no confirmed rejection or breakout. Funding +0.0078%, L/S 2.22 (rising, crowded longs), OI ~$2.54B. No clean setup, no call.",
+  "last_fresh_read": "2026-10-23T02:50:00+01:00",
   "last_read": {
     "at": "2026-10-22T23:53+01:00",
     "source": "OKX",
