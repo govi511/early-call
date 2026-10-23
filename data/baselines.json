@@ -2393,5 +2393,10 @@
     "source": "unavailable",
     "error": "cnbc: cnbc: no bars for NYSE COMPOSITE; yahoo: yahoo skipped (429 earlier this run); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-22 15:38"
+  },
+  "468|SPY/TSLA/NVDA/SPCX|2026-10-23 02:15": {
+    "price": 773.09,
+    "source": "CNBC daily (close)",
+    "at": "2026-10-23 02:15"
   }
 }

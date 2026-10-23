@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T02:10:46+01:00",
+  "generated_at": "2026-10-23T02:15:38+01:00",
   "calls": [
     {
       "id": "1",
@@ -11954,6 +11954,31 @@
       "feed": "discovery",
       "spam_flags": [],
       "spam_override": null,
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "468",
+      "logged_at_lisbon": "2026-10-23 02:15",
+      "account": "SEC/House Clerk/CBOE/@unusual_whales/@Polymarket/@Kalshi",
+      "post_url": "https://x.com/unusual_whales/status/2113430955964965111",
+      "asset": "SPY/TSLA/NVDA/SPCX",
+      "direction": "context (log only)",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "early-signal; type=context; window ~00:17-02:15 Lisbon. fetch_filings new=214, all CBOE unusual-volume rows from the Oct 22 session re-keyed to today's date (same session already summarized in #462): mostly SPY 0DTE churn (Oct-22 763C 525k vs 1k OI), single-name biggest ~$9M AAPL Dec-27 350P and NVDA Oct-30 237.5P (hedges), TSLA Oct-26/30 two-way 370-385 strikes, nothing standout; no new Form 4s, no House PTRs, no Pelosi. X: unusual_whales/WSJ Trump called Musk asking him to reverse Starlink restrictions on Ukraine (https://x.com/unusual_whales/status/2113430955964965111), political, no direct SPCX/TSLA price signal; Trump and World Liberty Financial sued over profiting from office (Bloomberg, mild crypto sentiment); Polymarket 76% chance Fed hikes again in 2026 (context, not a sharp move); Kalshi BTC >83k this year; SpaceX launch scrub already logged #464; Musk/Tesla/SEC/FCC/Fed quiet. Not alerted (public, nothing new and significant). Not financial advice.",
+      "after_the_fact": false,
+      "call_notes": "early-signal ; type=context ; window ~00:17-02:15 Lisbon. fetch_filings new=214, all CBOE unusual-volume rows from the Oct 22 session re-keyed to today's date (same session already summarized in #462): mostly SPY 0DTE churn (Oct-22 763C 525k vs 1k OI), single-name biggest ~$9M AAPL Dec-27 350P and NVDA Oct-30 237.5P (hedges), TSLA Oct-26/30 two-way 370-385 strikes, nothing standout ; no new Form 4s, no House PTRs, no Pelosi. X: unusual_whales/WSJ Trump called Musk asking him to reverse Starlink restrictions on Ukraine (https://x.com/unusual_whales/status/2113430955964965111), political, no direct SPCX/TSLA price signal ; Trump and World Liberty Financial sued over profiting from office (Bloomberg, mild crypto sentiment) ; Polymarket 76% chance Fed hikes again in 2026 (context, not a sharp move) ; Kalshi BTC >83k this year ; SpaceX launch scrub already logged #464 ; Musk/Tesla/SEC/FCC/Fed quiet. Not alerted (public, nothing new and significant). Not financial advice.",
+      "followers": null,
+      "source": "X",
+      "feed": "discovery",
+      "spam_flags": [],
+      "spam_override": null,
+      "baseline": 773.09,
+      "baseline_source": "CNBC daily (close)",
       "copy_of": "",
       "spam_farm": false
     }
