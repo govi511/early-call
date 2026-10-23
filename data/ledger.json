@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T05:12:14+01:00",
+  "generated_at": "2026-10-23T06:14:10+01:00",
   "calls": [
     {
       "id": "1",
@@ -12100,6 +12100,31 @@
       "feed": "discovery",
       "spam_flags": [],
       "spam_override": null,
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "474",
+      "logged_at_lisbon": "2026-10-23 06:05",
+      "account": "@CredibleCrypto",
+      "post_url": "https://x.com/CredibleCrypto/status/2113496927434317879",
+      "asset": "BTC",
+      "direction": "long",
+      "entry": "",
+      "stop": "",
+      "target": "90500 (swing high)",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "source watchlist; role call; \"Still expecting the next significant move to be to the upside on $BTC (and the market in general), ideally clearing the swing high at 90.5k ish\" (06:05 Lisbon); no entry given (scored from price at post time, BTC ~81,840); directional bias with no stop/entry, not alerted (same treatment as #472); following timeline news only (WhaleInsider ETF issuers sold $635.5M BTC, Kalshi SK Hynix scraps US listing, Italy warns citizens re Saudi Arabia, ShaneStoffer chatter, no levels); discovery all rejected: Finora_EN bot, Winter_wayn community-link spam on small alts, TradersXauusd/aakankshalovely/YShirley Telegram/signal links (YShirley after-the-fact TP hit), Barkworth17 Discord, <5k accounts (SafwanJaan, Nassy_Crypto, Datshots, XAUUSD_TINA, KorillKay, TraderAlex34 after-the-fact, taurus_trader05 test post); #452 BTC short still open (1h high 82,036 < 82,150 stop); #463 gold zone open, #473 limit 3975-3987 unfilled (XAUT low 3995.5, now ~4022); not financial advice",
+      "after_the_fact": false,
+      "call_notes": "source watchlist ; role call ; \"Still expecting the next significant move to be to the upside on $BTC (and the market in general), ideally clearing the swing high at 90.5k ish\" (06:05 Lisbon) ; no entry given (scored from price at post time, BTC ~81,840) ; directional bias with no stop/entry, not alerted (same treatment as #472) ; #452 BTC short still open (1h high 82,036 < 82,150 stop) ; #463 gold zone open, #473 limit 3975-3987 unfilled (XAUT low 3995.5, now ~4022) ; not financial advice",
+      "followers": null,
+      "source": "X",
+      "feed": "famous",
+      "spam_flags": [],
+      "spam_override": null,
+      "baseline": 81679.9,
+      "baseline_source": "OKX",
       "copy_of": "",
       "spam_farm": false
     }
