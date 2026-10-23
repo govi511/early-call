@@ -59,14 +59,14 @@
       "resolved_at_pt": "2026-10-20T15:01+0100"
     }
   ],
-  "last_check_at": "2026-10-23T15:27+01:00",
+  "last_check_at": "2026-10-23T16:21+01:00",
   "last_check_btc": 81338,
   "last_proposal_at": "2026-10-20T07:18+01:00",
   "last_alert_trade_id": 2,
   "last_resolution_alerted_id": 2,
   "open_trade_id": null,
   "last_setup_eval": "No clean setup: 15:00 candle broke 81,420 range low and swept to 81,050 (24h low 80,900) on heavy volume, now ~81,340 mid-flush; too late to short into the sweep, no reclaim of 81,420 for a long. Funding +0.009%, L/S 2.14 easing, OI ~$2.56B slightly down.",
-  "last_check_note": "15:27 fresh read, no trade open, no call.",
+  "last_check_note": "16:21 check: no trade open; last fresh read 15:27 (<1h), no new read, no call.",
   "last_fresh_read": "2026-10-23T15:27+01:00",
   "last_read": {
     "at": "2026-10-23T15:27+01:00",
