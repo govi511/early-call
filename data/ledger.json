@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T13:17:54+01:00",
+  "generated_at": "2026-10-23T14:15:12+01:00",
   "calls": [
     {
       "id": "1",
@@ -12390,6 +12390,31 @@
       "feed": "famous",
       "spam_flags": [],
       "spam_override": null,
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "486",
+      "logged_at_lisbon": "2026-10-23 13:42",
+      "account": "@CryptoTony__",
+      "post_url": "https://x.com/CryptoTony__/status/2113611898268877118",
+      "asset": "HYPE",
+      "direction": "short (bias)",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "source watchlist; role call; \"$HYPE - Update Whatever comes first we act on ! My bet is the low side once we finish this consolidation here.\" (13:42 Lisbon); no entry given (scored from price at post time); HYPE not a T212 CFD - log only, never alert; rest of watchlist commentary only (JC_ParetsX gold vs S&P 52-week low/Asia reversal, Mr_Derivatives VIX/KOSPI/GOOGL, scottmelker news); following timeline news only (BullTheory SpaceX 80k cell-tower lease talks, CCI +12% AMT +10% premarket - already seen at 00:17 (#464 window), not new; WhaleInsider BlackRock moved 3.2k BTC/38.9k ETH to Coinbase Prime; Kalshi/Polymarket headlines); discovery all rejected: Cry_Fortress/Manuelfox1032/SUSIEMATTY02 free-TG signal spam, AhmedXAU1/GoldTechni92957/MioAoki_CFA/NoOne4meus/bitnxs <5k or Telegram/link-in-bio, NoahMitchellF6 private-group teaser; #452 BTC short open (high 81,800 < 82,150 stop); #484 BTC long open (high 81,800 < TP1 82,200); #476 gold high 4035 < 4039 stop; #480 SOL high 104.77 below zone; #481 XRP high 1.322 tagged bottom of 1.320-1.355 zone (log only); not financial advice",
+      "after_the_fact": false,
+      "call_notes": "source watchlist ; role call ; \"$HYPE - Update Whatever comes first we act on ! My bet is the low side once we finish this consolidation here.\" (13:42 Lisbon) ; no entry given (scored from price at post time) ; HYPE not a T212 CFD - log only, never alert ; #452 BTC short open (high 81,800 < 82,150 stop) ; #484 BTC long open (high 81,800 < TP1 82,200) ; #476 gold high 4035 < 4039 stop ; #480 SOL high 104.77 below zone ; #481 XRP high 1.322 tagged bottom of 1.320-1.355 zone (log only) ; not financial advice",
+      "followers": null,
+      "source": "X",
+      "feed": "famous",
+      "spam_flags": [],
+      "spam_override": null,
+      "baseline": 77.887,
+      "baseline_source": "OKX",
       "copy_of": "",
       "spam_farm": false
     }
