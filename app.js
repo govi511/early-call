@@ -9,7 +9,8 @@ let LEDGER=null,PRICES={};
 const nums=s=>(String(s).match(/\d+(?:\.\d+)?/g)||[]).map(Number);
 const lvl=s=>{const n=nums(String(s).replace(/\(.*?\)/g,'').replace(/(\d),(?=\d{3}\b)/g,'$1').replace(/\b\d{1,2}:\d{2}\b|\b\d+[- ](?:day|week|hour|h|d|w)\b/gi,' '));return n.length?(n.length>1?(n[0]+n[1])/2:n[0]):null};
 const pct=v=>v==null||!isFinite(v)?'n/a':(v>0?'▲ +':v<0?'▼ ':'')+v.toFixed(2)+'%';
-const NP=c=>!!(c&&(c.nonpriceable||PRICES[c.asset]?.nonpriceable)),NA=c=>NP(c)?'<span class="mut">not a tradable asset</span>':'n/a';
+const NP=c=>!!(c&&(c.nonpriceable||PRICES[c.asset]?.nonpriceable)),NA=c=>NP(c)?'<span class="mut">not a tradable asset</span>':NOSRC(c)?'<span class="nopx" title="No price feed covers this ticker">no price source</span>':'n/a';
+const NOSRC=c=>{const a=String(c.asset||'').toUpperCase().trim();return(PRICES._failed||[]).some(f=>String(f).toUpperCase()===a)||(typeof PRICES._at!=='undefined'&&!PRICES[c.asset]&&/^[A-Z]{1,6}$/.test(a))};
 const cls=v=>v==null?'':v>=0?'up':'dn';
 function live(c){const p=PRICES[c.asset]?.price,e=lvl(c.entry),s=lvl(c.stop),t=lvl(c.target),d=isShort(c.direction)?-1:1;
  if(e==null){const b=c.baseline;return p==null||!b?{p,ne:1,move:null}:{p,ne:1,move:d*(p-b)/b*100,toStop:null,toTgt:null,prog:null}}if(p==null)return{p:null};return{p,move:d*(p-e)/e*100,toStop:s==null?null:d*(p-s)/p*100,toTgt:t==null?null:d*(t-p)/p*100,prog:(s==null||t==null||t===s)?null:Math.max(0,Math.min(1,(p-s)/(t-s)))}}
@@ -27,7 +28,7 @@ function renderSignals(){if(!LEDGER)return;const simple=SIMPLE();document.queryS
  ${simple?'':earlyHTML(c,l)}<div class="lv"><div><small>Entry</small>${esc(c.entry)}</div><div><small>Exit if loss</small>${esc(c.stop)}</div><div><small>Take profit at</small>${esc(c.target)}</div></div>
  <div class="bar">${l.prog==null?'':`<i style="left:${(l.prog*100).toFixed(1)}%"></i>`}</div><div class="row mut" style="margin:4px 0 8px"><span class="stopdist">${l.p==null||l.toStop==null?'Stop: '+(l.p==null?NA(c):'n/a'):l.toStop>0?'<b class="dn">−'+l.toStop.toFixed(1)+'% to stop</b>':'Stop level crossed'}</span><span class="${l.toTgt!=null&&l.toTgt>0?'up':'mut'}">${l.p==null||l.toTgt==null?'Target: '+(l.p==null?NA(c):'n/a'):l.toTgt>0?'+'+l.toTgt.toFixed(1)+'% to target':'Target reached'}</span></div>
  ${c.notes?`<div class="mut note">📝 ${esc(c.notes)}</div>`:''}<div class="row" style="margin-top:8px"><span class="mut">${esc(c.account)} · ${esc(c.logged_at_lisbon)} Lisbon${AGO(c.logged_at_lisbon)}${c.resolved_at?' · resolved '+esc(c.resolved_at):''}</span><span><span class="tag">${esc(c.source)}</span>${c.after_the_fact?' <span class="tag" style="color:var(--warn)">after-the-fact</span>':''} <a href="${esc(c.post_url)}" target="_blank" rel="noopener">Post ↗</a></span></div></div>`}).join('')||(feed==='famous'?'<p class="mut empty-scan">Scanning 33 famous traders… new calls appear here as they post.</p>':'<p class="mut">No calls yet.</p>');renderLeader()}
-function loadPrices(){return fetch('data/prices.json?t='+Date.now()).then(r=>r.json()).then(d=>{PRICES=d.prices||{};PRICES._at=d.fetched_at}).catch(()=>{PRICES={}}).then(()=>{typeof applyLive==='function'&&applyLive()}).then(renderSignals)}
+function loadPrices(){return fetch('data/prices.json?t='+Date.now()).then(r=>r.json()).then(d=>{PRICES=d.prices||{};PRICES._at=d.fetched_at;PRICES._failed=d.failed||[]}).catch(()=>{PRICES={}}).then(()=>{typeof applyLive==='function'&&applyLive()}).then(renderSignals)}
 
 // hidden calls: grey reason chip (tap = matched words) + "Not spam" local override, logged for review
 window.isNewsOnly=c=>{const w=spamWhy(c);return w.length>0&&w.every(x=>/^news post/.test(x))};
