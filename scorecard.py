@@ -25,7 +25,7 @@ for r in raw:
     except Exception: bad += 1
 def is_call(r):
     d = r.get("direction", "").lower(); n = r.get("notes", "").lower()
-    return "context" not in d and r.get("status") != "filtered" and not n.startswith("early-signal; type=context")
+    return "context" not in d and r.get("status") not in ("filtered", "not_filled") and not n.startswith("early-signal; type=context")
 calls = [r for r in rows if is_call(r)]
 A = collections.defaultdict(lambda: collections.Counter())
 for r in calls:

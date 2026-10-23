@@ -47,7 +47,9 @@ def label_ticker(asset):
         if re.fullmatch(r"[A-Z]{1,5}", p): return p
     return None
 KRAKEN = {"XMR":"XMRUSD"}  # Binance XMR pair is delisted/stale
-CNBC_MAP = {"NATGAS":"@NG.1","NG":"@NG.1","GOLD":"@GC.1","XAU":"@GC.1","XAUUSD":"@GC.1","XAGUSD":"@SI.1","SILVER":"@SI.1","OIL":"@CL.1","WTI":"@CL.1","BRENT":"@LCO.1","SPX":".SPX","NDX":".NDX"}
+CNBC_MAP = {"NATGAS":"@NG.1","NG":"@NG.1","GOLD":"@GC.1","XAU":"@GC.1","XAUUSD":"@GC.1","XAGUSD":"@SI.1","SILVER":"@SI.1","OIL":"@CL.1","WTI":"@CL.1","BRENT":"@LCO.1","SPX":".SPX","NDX":".NDX",
+    "VIX":".VIX","EURJPY":"EURJPY=","KOSPI":".KS11","NYSE COMPOSITE":".NYA","NYA":".NYA","NYSE":".NYA"}
+CNBC_CCY = {"EURJPY=":"JPY",".KS11":"KRW"}
 def _cnbc(a):
     """Free no-key CNBC quote feed (front-month futures / indices); used first for CNBC_MAP so Yahoo 429s don't matter."""
     sym = CNBC_MAP[a]
@@ -57,7 +59,7 @@ def _cnbc(a):
     if p <= 0: raise RuntimeError("cnbc: no price")
     try: ch = float(str(q.get("change_pct", "")).replace("%", "").replace("+", ""))
     except ValueError: ch = None
-    return {"price": p, "change_pct": ch, "symbol": sym, "currency": q.get("currencyCode") or "USD", "source": "CNBC", "as_of": now()}
+    return {"price": p, "change_pct": ch, "symbol": sym, "currency": CNBC_CCY.get(sym) or q.get("currencyCode") or "USD", "source": "CNBC", "as_of": now()}
 YAHOO_MAP = {"KOSPI":"^KS11","SKHYNIX":"000660.KS","UK100":"^FTSE","USDCAD":"CAD=X","GBPUSD":"GBPUSD=X","EURUSD":"EURUSD=X","DXY":"DX-Y.NYB","NATGAS":"NG=F","NG":"NG=F","GOLD":"GC=F","XAU":"GC=F","XAUUSD":"GC=F","XAGUSD":"SI=F","SILVER":"SI=F","OIL":"CL=F","WTI":"CL=F","BRENT":"BZ=F","SPX":"^GSPC","NDX":"^NDX"}
 now = lambda: datetime.datetime.now().astimezone().isoformat(timespec="seconds")
 def log(m): print(f"[{now()}] {m}", flush=True)
@@ -75,7 +77,8 @@ def get(url, tries=3):
     raise err
 YH = ("https://query2.finance.yahoo.com", "https://query1.finance.yahoo.com")
 UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-YAHOO_429 = False  # set once backoff is exhausted; Yahoo is skipped for the rest of this run
+YAHOO_429 = 0.0  # cooldown-until (epoch s) after backoff is exhausted; Yahoo is retried once it passes, never skipped for the whole run
+YAHOO_COOLDOWN = 90
 YCACHE_PATH = os.path.join(DATA, ".yahoo-cache.json")  # past-window history responses never change: cache them on disk
 _YMEM = {}
 def _ycache():
@@ -91,7 +94,7 @@ def ychart(sym, qs):
     if key in _YMEM: return _YMEM[key]
     disk = _ycache()
     if key in disk: return disk[key]
-    if YAHOO_429: raise RuntimeError("yahoo skipped (429 earlier this run)")
+    if time.time() < YAHOO_429: raise RuntimeError(f"yahoo cooling down after 429 ({YAHOO_429 - time.time():.0f}s left)")
     err = None; delay = 2
     for attempt, h in enumerate(YH * 2):
         try:
@@ -110,8 +113,9 @@ def ychart(sym, qs):
         except Exception as e:
             err = e
             if "429" in str(e):
-                if attempt >= 3: YAHOO_429 = True; break
-                time.sleep(delay); delay *= 2  # exponential backoff 2s, 4s, 8s
+                if attempt >= 3: YAHOO_429 = time.time() + YAHOO_COOLDOWN; break
+                ra = getattr(e, "headers", None) and e.headers.get("Retry-After")
+                time.sleep(min(30, float(ra)) if ra and str(ra).isdigit() else delay); delay *= 2  # backoff 2s, 4s, 8s (or Retry-After)
             elif "404" in str(e): break
     raise err
 # ---- Stooq (no key, CSV). Fallback for stocks/indices when Yahoo 429s. File cache + per-run circuit breaker. ----
@@ -363,11 +367,29 @@ def _split_top(t, seps=";|"):
         if ch in seps and depth == 0: out.append("".join(buf)); buf = []
         else: buf.append(ch)
     out.append("".join(buf)); return out
+QUOTE_RE = re.compile(r'"([^"]+)"|\u201c([^\u201d]+)\u201d')
 def call_text(r):
-    """Only the call's own text: own_notes column if present, else notes minus scan-log segments (and minus a scan_log column)."""
+    """Only the quoted post text. Spam/keyword rules never read notes, own_notes, scan_log or account-history text:
+    an explicit post_text column wins, else the "double-quoted" excerpts inside notes. No quote -> empty (nothing to judge)."""
     if isinstance(r, str): r = {"notes": r}
-    if (r.get("own_notes") or "").strip(): return r["own_notes"]
-    return " ; ".join(seg.strip() for seg in _split_top(r.get("notes", "")) if seg.strip() and not SCAN_LOG_SEG.search(seg))
+    if (r.get("post_text") or "").strip(): return r["post_text"]
+    return " ; ".join((m.group(1) or m.group(2)).strip() for m in QUOTE_RE.finditer(r.get("notes", "") or ""))
+# ---- Conditional calls: entry not triggered yet (limit/zone order, retest, "short if it breaks X"). Shared with tools/resolve_calls.py ----
+COND_ENTRY = re.compile(r"limit|zone|retest|pending|close inside|\bif\b|break|trigger|reclaim|on a (?:1|4)?h? ?close|\d\s*-\s*\d", re.I)
+COND_TEXT = re.compile(r"\b(?:short|sell|long|buy)\b[^.;]{0,40}\bif (?:it |price |we |btc |gold )?(?:breaks?|loses?|reclaims?|closes?|holds?)|\bon a (?:break|1h close|4h close|daily close)|\b(?:short|sell|buy|long) (?:a push into|the retest|the dip into)|\blimit (?:order|buy|sell)|\bwaiting for\b", re.I)
+NOT_COND = re.compile(r"market|~|at scan|implied|cmp|now\b", re.I)
+def break_condition(r):
+    """True if the entry triggers on a break through the level (fill = trade through), not a pullback into it."""
+    return bool(re.search(r"\bbreak|\bloses?\b|\bloss of|\breclaim|\bretake|breakout|breakdown|\b(?:close|hold|push|move)s? (?:above|below)|^\s*(?:above|below)\b|\d\+", (r.get("entry") or "") + " " + call_text(r), re.I))
+def is_conditional(r):
+    e = (r.get("entry") or "").strip(); d = (r.get("direction") or "").lower()
+    if "context" in d or not level_nums(e) and "conditional" not in d: return False
+    if "conditional" in d: return True
+    if NOT_COND.search(e): return False
+    return bool(COND_ENTRY.search(e) or COND_TEXT.search(call_text(r)))
+FILL_STATE = os.path.join(DATA, "fill-state.json")
+try: FILLS = {str(k): v for k, v in json.load(open(FILL_STATE)).items() if not str(k).startswith("_")}
+except Exception: FILLS = {}
 AFTER_RE = re.compile(r"after[ _-]the[ _-]fact", re.I)
 def after_the_fact(r):
     """Explicit after_the_fact column wins; else the phrase in the call's own text, with negations ("not after-the-fact") removed."""
@@ -557,6 +579,9 @@ def main():
                 if not r.get("id"): continue
                 r["after_the_fact"] = after_the_fact(r)
                 r["call_notes"] = call_text(r)
+                r["conditional"] = is_conditional(r)  # entry is a limit/zone/break trigger
+                r["entry_filled"] = FILLS.get(r["id"], {}).get("filled") if r["conditional"] else None  # data/fill-state.json from tools/resolve_calls.py
+                r["waiting_for_entry"] = bool(r["conditional"] and r.get("status") == "open" and not r["entry_filled"])
                 m = re.search(r"\bexit_close=([\d.]+)", r.get("notes", ""))  # expired by time limit: that day's close (tools/resolve_calls.py)
                 if m and r.get("status") == "expired":
                     r["exit_price"] = float(m.group(1)); en = level_nums(r.get("entry"))

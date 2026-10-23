@@ -52,14 +52,24 @@ def judge(r):
     if not b: return ("open", "no bars since post", src)
     stop_close = "close" in r["stop"].lower()
     entry_txt = r["entry"].lower()
-    limit = en and not re.search(r"market|~|at scan|implied", entry_txt)
+    cond = R.is_conditional(r)
+    limit = (en and not re.search(r"market|~|at scan|implied", entry_txt)) or (cond and en)
     i0 = 0
     if limit:
         lo, hi = min(en[:2]), max(en[:2]); close_fill = "close" in entry_txt
+        brk = R.break_condition(r)
         for i, (t, o, h, l, c) in enumerate(b):
-            ok = (lo <= c <= hi) if close_fill else (l <= hi if not short else h >= lo)
-            if ok: i0 = i; break
-        else: return ("open", f"entry {lo:g}-{hi:g} not filled yet", src)
+            if brk: ok = (c >= hi if not short else c <= lo) if close_fill else (h >= hi if not short else l <= lo)
+            else: ok = (lo <= c <= hi) if close_fill else (l <= hi if not short else h >= lo)
+            if ok:
+                if cond and t > ts + FILL_HOURS * 3600: break  # filled only after the 48h window: counts as not filled
+                i0 = i; FILLS[r["id"]] = {"filled": True, "at": t}; break
+        else: pass
+        if r["id"] not in FILLS or not FILLS[r["id"]].get("filled"):
+            FILLS[r["id"]] = {"filled": False, "checked": int(time.time())}
+            if cond and time.time() >= ts + FILL_HOURS * 3600:
+                return ("not_filled", f"conditional entry {lo:g}-{hi:g} not triggered within {FILL_HOURS}h of the post", src, ts + FILL_HOURS * 3600)
+            return ("open", f"entry {lo:g}-{hi:g} not filled yet", src)
     S = st[0] if st else None
     T = (min(tg) if not short else max(tg)) if tg else None  # first target in trade direction
     for t, o, h, l, c in b[i0:]:
@@ -72,6 +82,8 @@ def judge(r):
         if hitS: return ("stopped", f"{'close' if stop_close else ('low' if not short else 'high')} {sx:g} through stop {S:g} (bar {when} Lisbon)", src, t)
     last = b[-1][4]
     return ("open", f"no level hit; last {last:g}", src)
+FILL_HOURS = 48  # conditional calls (limit/zone/break trigger) close as not_filled if the entry hasn't triggered 48h after the post
+FILLS = {}
 LEVEL_DAYS = 30  # Manager rule: calls with a stop/target and no stated timeframe expire 30 days after the post
 MON = {m: i for i, m in enumerate(["jan","feb","mar","apr","may","jun","jul","aug","sep","oct","nov","dec"], 1)}
 def timeframe_end(r):
@@ -133,13 +145,20 @@ def main():
                     changes.append((r, j))
                 except Exception as e: j = ("open", f"{tl[1]} {tl[0]} but no close price: {e}", "-")
         print(f'#{r["id"]} {r["account"]} {r["asset"]} {r["direction"]} e={r["entry"]!r} s={r["stop"]!r} t={r["target"]!r} -> {j[0]}: {j[1]} [{j[2]}]')
-        if j[0] in ("hit_target", "stopped"): changes.append((r, j))
-    print(f"\n{len(changes)} to close")
+        if j[0] in ("hit_target", "stopped", "not_filled"): changes.append((r, j))
+    only = [a.split("=", 1)[1] for a in sys.argv if a.startswith("--only=")]
+    if only: changes = [(r, j) for r, j in changes if j[0] in only[0].split(",")]
+    print(f"\n{len(changes)} to close ({sum(j[0] == 'not_filled' for _, j in changes)} not_filled)")
+    if apply:
+        try: old = json.load(open(R.FILL_STATE))
+        except Exception: old = {}
+        old.update(FILLS); R.write_json(R.FILL_STATE, old)
     if apply and changes:
         for r, j in changes:
             r["status"] = j[0]; r["resolved_at"] = datetime.datetime.fromtimestamp(j[3]).strftime("%Y-%m-%d")
             r["notes"] = (r["notes"] + f"; resolved {datetime.datetime.now():%Y-%m-%d %H:%M} Lisbon from {j[2]}: {j[1]}").lstrip("; ")
-        shutil.copy(L, f"/workspace/call-ledger.backup-{int(time.time())}.csv")
+        os.makedirs(os.path.join(os.path.dirname(L), "backups"), exist_ok=True)
+        shutil.copyfile(L, os.path.join(os.path.dirname(L), "backups", f"call-ledger.backup-{int(time.time())}.csv"))
         tmp = L + ".tmp"
         with open(tmp, "w", newline="", encoding="utf-8") as f:
             w = csv.DictWriter(f, fieldnames=fields); w.writeheader(); w.writerows(rows)

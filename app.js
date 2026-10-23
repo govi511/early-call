@@ -42,7 +42,7 @@ function loadLedger(){return fetch('data/ledger.json?t='+Date.now()).then(r=>r.j
 })}
 
 // Leaderboard (FOMO style, live)
-const ST={open:'open',hit_target:'hit',stopped:'stopped',unclear:'expired',expired:'expired'};
+const ST={open:'open',hit_target:'hit',stopped:'stopped',unclear:'expired',expired:'expired',not_filled:'not filled'};
 function callRes(c){const e=lvl(c.entry),d=isShort(c.direction)?-1:1;let x=null;if(e==null)return{e,x:null,p:null,ne:1};
  if(c.status==='open')x=PRICES[c.asset]?.price??null;else if(c.status==='expired'&&c.exit_price!=null)x=c.exit_price;else if(c.status==='hit_target')x=lvl(c.target);else if(c.status==='stopped')x=lvl(c.stop);
  return{e,x,p:e&&x!=null?d*(x-e)/e*100:null}}
@@ -51,7 +51,7 @@ const SPL=c=>(/^Nasdaq daily/.test(c.baseline_source||"")?"≈ ":"")+SPL0(c),SPL
 const fmtP=v=>v==null?'n/a':v.toLocaleString('en-US',{maximumFractionDigits:v<10?4:2});
 const LBPREV={};
 const avFail=img=>{const s=document.createElement('div');s.className='lb-avatar';s.style.cssText='display:flex;align-items:center;justify-content:center;font-weight:800;color:#fff';s.textContent=img.alt;img.replaceWith(s)};
-function renderLeader(){if(!LEDGER||!$('#lb'))return;const by={};LEDGER.calls.filter(c=>!isSpam(c)&&!dupOfLink(c)).forEach(c=>(by[c.account]??=[]).push(c));
+function renderLeader(){if(!LEDGER||!$('#lb'))return;const by={};LEDGER.calls.filter(c=>c.status!=='not_filled'&&!isSpam(c)&&!dupOfLink(c)).forEach(c=>(by[c.account]??=[]).push(c));
  const rows=Object.entries(by).map(([n,cs])=>{const r=recordOf(n),res=cs.map(c=>({c,...callRes(c)})).reverse(),pv=x=>x.p!=null?x.p:x.ne?SP(x.c):null,v=res.map(pv).filter(p=>p!=null);return{n,cs:res,r,avg:v.length?v.reduce((s,p)=>s+p,0)/v.length:null}});
  const byAvg=(a,b)=>(b.avg??-1e9)-(a.avg??-1e9);
  const ranked=rows.slice().sort(byAvg);
