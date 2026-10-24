@@ -2515,6 +2515,11 @@
     "source": "CNBC daily (close)",
     "at": "2026-10-23 22:20"
   },
+  "511|BTC|2026-10-24 01:10": {
+    "price": 81034.6,
+    "source": "OKX",
+    "at": "2026-10-24 01:10"
+  },
   "248|PONS|2026-10-13 21:56": {
     "price": null,
     "source": "unavailable",
@@ -2550,10 +2555,5 @@
     "source": "unavailable",
     "error": "cnbc: cnbc: no bars for SPY (US 500); yahoo: yahoo cooling down after 429 (87s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-24 00:15"
-  },
-  "511|BTC|2026-10-24 01:10": {
-    "price": 81034.6,
-    "source": "OKX",
-    "at": "2026-10-24 01:10"
   }
 }
