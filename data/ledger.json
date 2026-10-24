@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T01:11:55+01:00",
+  "generated_at": "2026-10-24T02:11:03+01:00",
   "calls": [
     {
       "id": "1",
@@ -12821,9 +12821,9 @@
       "entry": "~82000 (market)",
       "stop": "80600",
       "target": "90000",
-      "status": "open",
-      "resolved_at": "",
-      "notes": "source discovery; \"took a bitcoin $BTC long with my target at $90,000... SL at 80,600\" (09:54 Lisbon); ~12.8k followers, since 2011, no Telegram/VIP/referral in post - passes rules; discovery not alerted; rejected rest of discovery: Telegram/VIP/free-signals groups (Manuelfox1032, FedeGonzalgh, Emannuelcrypto, Dr_marshal_z clones), <5k/new accts, AI bots (Finora_EN), after-the-fact (ProfitCircle_); not financial advice",
+      "status": "stopped",
+      "resolved_at": "2026-10-23 23:00",
+      "notes": "source discovery; \"took a bitcoin $BTC long with my target at $90,000... SL at 80,600\" (09:54 Lisbon); ~12.8k followers, since 2011, no Telegram/VIP/referral in post - passes rules; discovery not alerted; rejected rest of discovery: Telegram/VIP/free-signals groups (Manuelfox1032, FedeGonzalgh, Emannuelcrypto, Dr_marshal_z clones), <5k/new accts, AI bots (Finora_EN), after-the-fact (ProfitCircle_); not financial advice; resolved 2026-10-24 02:10 scan: BTC traded down to 80,560 (23:00 Lisbon Oct 23 OKX 1h low) and 80,514 (00:00), through SL 80,600 -> stopped; discovery, not alerted",
       "after_the_fact": false,
       "call_notes": "took a bitcoin $BTC long with my target at $90,000... SL at 80,600",
       "ratio_call": false,
