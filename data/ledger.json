@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T02:11:03+01:00",
+  "generated_at": "2026-10-24T03:10:25+01:00",
   "calls": [
     {
       "id": "1",
@@ -14987,6 +14987,33 @@
       "spam_override": null,
       "baseline": 81034.6,
       "baseline_source": "OKX",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "512",
+      "logged_at_lisbon": "2026-10-24 03:10",
+      "account": "@cryptosatred",
+      "post_url": "https://x.com/cryptosatred/status/2113814665054843189",
+      "asset": "BTC",
+      "direction": "long",
+      "entry": "80800 / 80600 / 80400 (DCA)",
+      "stop": "80030",
+      "target": "81300/81800/82400/83000/84000",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "source discovery; 'BTC/USDT LONG, DCA entries 80800/80600/80400, targets 81300/81800/82400/83000/84000, SL 80030, cross 100x' (03:07 Lisbon), reason bid wall ~399 BTC at 80,800-80,899; 5.4k followers, account Oct 2023, passes source rules (100x leverage noted as reckless); discovery, so log only, not alerted. BTC ~80,909 at scan. Rest of scan: following timeline news/off-topic only (MarioNawfal Brent spike to $117 and Russian cargo planes in Tehran, Iran war cost; Kalshi US lifts some Canada tariffs, Instacart sale rumor, Rubio/Cuba; Polymarket El Nino emergency in SF; WatcherGuru Milei LIBRA probe dropped) - left to early-signal watch; watchlist: traderstewie DIY t-shirt (off-topic), Mr_Derivatives Chamath BTC-to-zero quote (commentary, not a call); discovery else rejected (whaletrades_1/Morgan_peter_1/ScottWeslefx/AstuteCrypyo signal-group or Telegram spam and <5k, Daily_T_Setups/CryptoStra3mna/ChainAlpha6rb/Morgan_peter_1 copy-paste duplicates, AetherNexus bot <5k, shaunanalysis/xbtWulf/ying12940 <5k, PILTR_XBT outlook without levels); no resolutions (BTC ~80,909 24h range 80,457-82,048, SOL ~102.6, ETH ~2,383, XRP ~1.292: #439/#480/#481 unchanged); not financial advice",
+      "after_the_fact": false,
+      "call_notes": "",
+      "ratio_call": false,
+      "conditional": false,
+      "entry_filled": null,
+      "waiting_for_entry": false,
+      "followers": 5400,
+      "source": "X",
+      "feed": "discovery",
+      "spam_flags": [],
+      "spam_override": null,
       "copy_of": "",
       "spam_farm": false
     }
