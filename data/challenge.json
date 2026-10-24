@@ -23,7 +23,7 @@
       "opened_at": "2026-10-13T11:48:00+01:00",
       "opened_at_utc": "2026-10-13T10:48:00Z",
       "venue": "Trading 212 CFD",
-      "notes": "Call #1 challenge. Size ~0.005 BTC ≈ -€2.25 at SL, +€3 at TP (prompt ≈+€2.70).",
+      "notes": "Call #1 challenge. Size ~0.005 BTC \u2248 -\u20ac2.25 at SL, +\u20ac3 at TP (prompt \u2248+\u20ac2.70).",
       "resolved_at": "2026-10-13T14:42:23Z",
       "exit_price": 83750.0,
       "pnl_eur": -2.25,
@@ -59,23 +59,24 @@
       "resolved_at_pt": "2026-10-20T15:01+0100"
     }
   ],
-  "last_check_at": "2026-10-24T06:23:00+01:00",
-  "last_check_btc": 80724,
+  "last_check_at": "2026-10-24T07:51:00+01:00",
+  "last_check_btc": 80742,
   "last_proposal_at": "2026-10-20T07:18+01:00",
   "last_alert_trade_id": 2,
   "last_resolution_alerted_id": 2,
   "open_trade_id": null,
-  "last_setup_eval": "Oct 24 06:23 Lisbon fresh OKX read: BTC ~80,724, drifting lower inside 80,457-81,176 range (06:00 candle 80,710-80,854, low volume). 24h high 82,048. Funding +0.0027%. No break or reclaim; no clean setup, no call.",
-  "last_check_note": "Oct 24 06:23 Lisbon fresh OKX read: BTC ~80,724, drifting lower inside 80,457-81,176 range (06:00 candle 80,710-80,854, low volume). 24h high 82,048. Funding +0.0027%. No break or reclaim; no clean setup, no call.",
-  "last_fresh_read": "2026-10-24T06:23:00+01:00",
+  "last_setup_eval": "Oct 24 07:51 Lisbon fresh OKX read: BTC ~80,742, still inside 80,457-81,176 range (07:00 candle 80,688-80,828, low volume Saturday). 24h high 82,048. Funding +0.0038%, OKX L/S accounts 2.14 (longs crowded), OI ~$2.46B. No break below 80,457 or reclaim of 81,200; no clean setup, no call.",
+  "last_check_note": "Oct 24 07:51 Lisbon fresh OKX read: BTC ~80,742, still inside 80,457-81,176 range (07:00 candle 80,688-80,828, low volume Saturday). 24h high 82,048. Funding +0.0038%, OKX L/S accounts 2.14 (longs crowded), OI ~$2.46B. No break below 80,457 or reclaim of 81,200; no clean setup, no call.",
+  "last_fresh_read": "2026-10-24T07:51:00+01:00",
   "last_read": {
-    "at": "2026-10-24T06:23+01:00",
-    "btc": 80724,
+    "at": "2026-10-24T07:51+01:00",
+    "btc": 80742,
     "range_recent": [
       80456.6,
       81175.7
     ],
-    "funding": "+0.0027%",
+    "funding": "+0.0038%",
+    "ls_ratio": 2.14,
     "source": "OKX"
   }
 }
