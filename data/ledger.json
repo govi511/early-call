@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T00:15:54+01:00",
+  "generated_at": "2026-10-24T01:11:55+01:00",
   "calls": [
     {
       "id": "1",
@@ -14958,6 +14958,35 @@
       "feed": "famous",
       "spam_flags": [],
       "spam_override": null,
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "511",
+      "logged_at_lisbon": "2026-10-24 01:10",
+      "account": "@Tradermayne",
+      "post_url": "https://x.com/Tradermayne/status/2113782528398201156",
+      "asset": "BTC",
+      "direction": "short (position update)",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "source watchlist; role call; \"Also an update on the BTC Short from the last @OrderBookShow stream on the Polymarket Perps account.\" (01:00 Lisbon); position update on a short opened on stream, no levels in text; BTC ~81,040 at scan; log only, not alerted. Rest of scan: watchlist commentary only (Mr_Derivatives AAPL vs NVDA market cap, scottmelker Weekly Wreckoning/Cardone); following timeline news/off-topic only (MarioNawfal IRGC footage of missiles hitting two supertankers, Iraq PM briefed on US attack within days, Taiwan typhoon; Polymarket Hurricane Vance; Fortnite/memes) - left to early-signal watch; discovery all rejected (Feud_nicholas/serrahcrypto/apostilaweb/Cryptoqjackson/simonefontan Telegram/VIP signal spam & copy-paste, WIS_Trading/kji_nkmto/retired_trader/coinscreener_ai <5k or after-the-fact, Tradertim affiliate in bio and vague trade update); no resolutions (BTC ~81,040, SOL ~102.7, XRP ~1.293: #480/#481 unchanged); not financial advice",
+      "after_the_fact": false,
+      "call_notes": "Also an update on the BTC Short from the last @OrderBookShow stream on the Polymarket Perps account.",
+      "ratio_call": false,
+      "conditional": false,
+      "entry_filled": null,
+      "waiting_for_entry": false,
+      "followers": null,
+      "source": "X",
+      "feed": "famous",
+      "spam_flags": [],
+      "spam_override": null,
+      "baseline": 81034.6,
+      "baseline_source": "OKX",
       "copy_of": "",
       "spam_farm": false
     }
