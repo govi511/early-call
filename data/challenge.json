@@ -59,24 +59,23 @@
       "resolved_at_pt": "2026-10-20T15:01+0100"
     }
   ],
-  "last_check_at": "2026-10-24T07:51:00+01:00",
-  "last_check_btc": 80742,
+  "last_check_at": "2026-10-24T09:25:00+01:00",
+  "last_check_btc": 80759,
   "last_proposal_at": "2026-10-20T07:18+01:00",
   "last_alert_trade_id": 2,
   "last_resolution_alerted_id": 2,
   "open_trade_id": null,
-  "last_setup_eval": "Oct 24 07:51 Lisbon fresh OKX read: BTC ~80,742, still inside 80,457-81,176 range (07:00 candle 80,688-80,828, low volume Saturday). 24h high 82,048. Funding +0.0038%, OKX L/S accounts 2.14 (longs crowded), OI ~$2.46B. No break below 80,457 or reclaim of 81,200; no clean setup, no call.",
-  "last_check_note": "Oct 24 07:51 Lisbon fresh OKX read: BTC ~80,742, still inside 80,457-81,176 range (07:00 candle 80,688-80,828, low volume Saturday). 24h high 82,048. Funding +0.0038%, OKX L/S accounts 2.14 (longs crowded), OI ~$2.46B. No break below 80,457 or reclaim of 81,200; no clean setup, no call.",
-  "last_fresh_read": "2026-10-24T07:51:00+01:00",
+  "last_setup_eval": "Oct 24 09:25 Lisbon fresh OKX read: BTC ~80,759, tight 80,650-81,061 range last 8h (low Saturday volume), still above 24h low 80,457 and below 81,200. Funding +0.0057%, OKX L/S 2.15 (longs crowded). No break or reclaim; no clean setup, no call.",
+  "last_check_note": "Oct 24 09:25 Lisbon fresh OKX read: BTC ~80,759, tight 80,650-81,061 range last 8h (low Saturday volume), still above 24h low 80,457 and below 81,200. Funding +0.0057%, OKX L/S 2.15 (longs crowded). No break or reclaim; no clean setup, no call.",
+  "last_fresh_read": "2026-10-24T09:25:00+01:00",
   "last_read": {
-    "at": "2026-10-24T07:51+01:00",
-    "btc": 80742,
+    "at": "2026-10-24T09:25+01:00",
+    "btc": 80759,
     "range_recent": [
-      80456.6,
-      81175.7
+      80650.5,
+      81061.4
     ],
-    "funding": "+0.0038%",
-    "ls_ratio": 2.14,
-    "source": "OKX"
+    "funding": "+0.0057%",
+    "ls_ratio": 2.15
   }
 }
