@@ -59,23 +59,23 @@
       "resolved_at_pt": "2026-10-20T15:01+0100"
     }
   ],
-  "last_check_at": "2026-10-26T18:53:00+00:00",
-  "last_check_btc": 80035,
+  "last_check_at": "2026-10-26T19:55:00+00:00",
+  "last_check_btc": 79957,
   "last_proposal_at": "2026-10-20T07:18+01:00",
   "last_alert_trade_id": 2,
   "last_resolution_alerted_id": 2,
   "open_trade_id": null,
-  "last_setup_eval": "Oct 26 18:53 Lisbon fresh OKX read: BTC ~80,035, choppy 79,340-80,823 range over 24h (13:00 dip to 79,428 bought back). Funding +0.0100%, OKX L/S 2.18 (longs crowded). Mid-range, no break or reclaim; no clean setup, no call.",
-  "last_check_note": "Oct 26 18:53 Lisbon fresh OKX read: BTC ~80,035, choppy 79,340-80,823 range over 24h (13:00 dip to 79,428 bought back). Funding +0.0100%, OKX L/S 2.18 (longs crowded). Mid-range, no break or reclaim; no clean setup, no call.",
-  "last_fresh_read": "2026-10-26T18:53:00+00:00",
+  "last_setup_eval": "Oct 26 19:55 Lisbon fresh OKX read: BTC ~79,957, still mid-range of 24h 79,323-80,823; drifted down from 80,398 over last 2h, no break of 79,320 or reclaim of 80,800. Funding +0.0100%, OKX L/S 2.20 (longs crowded). No clean setup, no call.",
+  "last_check_note": "Oct 26 19:55 Lisbon fresh OKX read: BTC ~79,957, still mid-range of 24h 79,323-80,823; drifted down from 80,398 over last 2h, no break of 79,320 or reclaim of 80,800. Funding +0.0100%, OKX L/S 2.20 (longs crowded). No clean setup, no call.",
+  "last_fresh_read": "2026-10-26T19:55:00+00:00",
   "last_read": {
-    "at": "2026-10-26T18:53+00:00",
-    "btc": 80035,
+    "at": "2026-10-26T19:55+00:00",
+    "btc": 79957,
     "range_recent": [
-      79340,
+      79322.9,
       80822.6
     ],
     "funding": "+0.0100%",
-    "ls_ratio": 2.18
+    "ls_ratio": 2.2
   }
 }
