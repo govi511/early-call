@@ -1568,7 +1568,10 @@
   "301|NVDA/AMZN/TSLA/SPY|2026-10-19 22:20": {
     "price": 214.13,
     "source": "Nasdaq daily (close)",
-    "at": "2026-10-19 22:20"
+    "at": "2026-10-19 22:20",
+    "locked_pct": 0.8967,
+    "locked_price": 216.05,
+    "locked_at": "2026-10-26T21:20+00:00"
   },
   "302|AAPL/CAD (USD/CAD)/BA/BTC|2026-10-20 00:18": {
     "price": 343.46,
@@ -2224,7 +2227,10 @@
   "300|CAD (USD/CAD)|2026-10-19 22:20": {
     "price": 1.411,
     "source": "CNBC 1m",
-    "at": "2026-10-19 22:20"
+    "at": "2026-10-19 22:20",
+    "locked_pct": -0.6804,
+    "locked_price": 1.4014,
+    "locked_at": "2026-10-26T21:20+00:00"
   },
   "311|GBP/EUR/CAD/BTC|2026-10-20 08:17": {
     "price": 1.335,
@@ -2621,13 +2627,13 @@
   "516|QQQ (US TECH 100)|2026-10-26 19:20": {
     "price": null,
     "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for QQQ (US TECH 100); yahoo: yahoo cooling down after 429 (86s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
+    "error": "cnbc: cnbc: no bars for QQQ (US TECH 100); yahoo: yahoo cooling down after 429 (85s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-26 19:20"
   },
   "520|DNUT (KRISPY KREME)|2026-10-26 20:15": {
     "price": null,
     "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for DNUT (KRISPY KREME); yahoo: yahoo cooling down after 429 (85s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
+    "error": "cnbc: cnbc: no bars for DNUT (KRISPY KREME); yahoo: yahoo cooling down after 429 (84s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-26 20:15"
   }
 }
