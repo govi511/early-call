@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T09:11:00+01:00",
+  "generated_at": "2026-10-26T19:07:28+00:00",
   "calls": [
     {
       "id": "1",
@@ -8503,6 +8503,8 @@
       "spam_override": null,
       "baseline": 110.03,
       "baseline_source": "CNBC 1m (next bar)",
+      "locked_pct": 5.6894,
+      "locked_at": "2026-10-26T17:15+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -8532,6 +8534,8 @@
       "spam_override": null,
       "baseline": 250.0,
       "baseline_source": "Nasdaq daily (close)",
+      "locked_pct": -0.462,
+      "locked_at": "2026-10-26T18:22+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -8561,6 +8565,8 @@
       "spam_override": null,
       "baseline": 340.59,
       "baseline_source": "Nasdaq daily (close)",
+      "locked_pct": -6.7148,
+      "locked_at": "2026-10-26T18:23+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -8590,6 +8596,8 @@
       "spam_override": null,
       "baseline": 270.44,
       "baseline_source": "Nasdaq daily (close)",
+      "locked_pct": -2.7437,
+      "locked_at": "2026-10-26T17:05+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -8619,6 +8627,8 @@
       "spam_override": null,
       "baseline": 81820.2,
       "baseline_source": "Kraken",
+      "locked_pct": -2.2243,
+      "locked_at": "2026-10-26T19:03+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -8648,6 +8658,8 @@
       "spam_override": null,
       "baseline": 60.6,
       "baseline_source": "Nasdaq daily (close)",
+      "locked_pct": -4.2409,
+      "locked_at": "2026-10-26T17:19+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -8677,6 +8689,8 @@
       "spam_override": null,
       "baseline": 451.71,
       "baseline_source": "Nasdaq daily (close)",
+      "locked_pct": 4.649,
+      "locked_at": "2026-10-26T17:19+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -8706,6 +8720,8 @@
       "spam_override": null,
       "baseline": 165.47,
       "baseline_source": "Nasdaq daily (close)",
+      "locked_pct": -1.6921,
+      "locked_at": "2026-10-26T17:19+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -8735,6 +8751,8 @@
       "spam_override": null,
       "baseline": 878.84,
       "baseline_source": "Nasdaq daily (close)",
+      "locked_pct": 4.0918,
+      "locked_at": "2026-10-26T17:19+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -8764,6 +8782,8 @@
       "spam_override": null,
       "baseline": 75.57,
       "baseline_source": "Nasdaq daily (close)",
+      "locked_pct": -3.0899,
+      "locked_at": "2026-10-26T17:19+00:00",
       "copy_of": "",
       "spam_farm": false
     },
