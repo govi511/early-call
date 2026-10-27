@@ -23,7 +23,7 @@
       "opened_at": "2026-10-13T11:48:00+01:00",
       "opened_at_utc": "2026-10-13T10:48:00Z",
       "venue": "Trading 212 CFD",
-      "notes": "Call #1 challenge. Size ~0.005 BTC \u2248 -\u20ac2.25 at SL, +\u20ac3 at TP (prompt \u2248+\u20ac2.70).",
+      "notes": "Call #1 challenge. Size ~0.005 BTC ≈ -€2.25 at SL, +€3 at TP (prompt ≈+€2.70).",
       "resolved_at": "2026-10-13T14:42:23Z",
       "exit_price": 83750.0,
       "pnl_eur": -2.25,
@@ -59,23 +59,23 @@
       "resolved_at_pt": "2026-10-20T15:01+0100"
     }
   ],
-  "last_check_at": "2026-10-27T00:56:00+00:00",
-  "last_check_btc": 80260,
+  "last_check_at": "2026-10-27T02:23:00+00:00",
+  "last_check_btc": 79992,
   "last_proposal_at": "2026-10-20T07:18+01:00",
   "last_alert_trade_id": 2,
   "last_resolution_alerted_id": 2,
   "open_trade_id": null,
-  "last_setup_eval": "Oct 27 00:56 Lisbon fresh OKX read: BTC ~80,260, mid-range of 24h 79,323-80,823 (last 8h chop 79,700-80,530), funding +0.0100%, L/S 2.23. No clean setup, no call.",
-  "last_check_note": "Oct 27 00:56 Lisbon: no trade open; fresh read done, no call.",
-  "last_fresh_read": "2026-10-27T00:56:00+00:00",
+  "last_setup_eval": "Oct 27 02:23 Lisbon fresh OKX read: BTC ~79,992, mid-range of 24h 79,323-80,823 (last 10h chop 79,700-80,530), funding +0.0100%, L/S 2.24. No clean setup, no call.",
+  "last_check_note": "Oct 27 02:23 Lisbon: no trade open; fresh read done, no call.",
+  "last_fresh_read": "2026-10-27T02:23:00+00:00",
   "last_read": {
-    "at": "2026-10-27T00:56+00:00",
-    "btc": 80260,
+    "at": "2026-10-27T02:23+00:00",
+    "btc": 79992,
     "range_recent": [
       79323,
       80823
     ],
     "funding": "+0.0100%",
-    "ls_ratio": 2.23
+    "ls_ratio": 2.24
   }
 }
