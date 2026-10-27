@@ -239,3 +239,13 @@ body.stale #feed .up,body.stale #feed .dn,body.stale #best .up,body.stale #best 
 .st-wait{color:var(--mut)!important}.card:has(.st-wait) .up,.card:has(.st-wait) .dn{opacity:.6}
 
 .nopx{display:inline-block;font-size:11px;font-weight:600;padding:1px 6px;border-radius:8px;background:rgba(127,127,127,.15);color:var(--mut,#888);vertical-align:middle}
+/* v47: last card clear of floating tab bar; stale banner; badge pills */
+main{padding-bottom:calc(100px + env(safe-area-inset-bottom))!important}
+@media(min-width:900px){main{padding-bottom:calc(120px + env(safe-area-inset-bottom))!important}}
+.stale-banner{display:none;margin:0 0 10px;padding:6px 10px;font-size:12px;border:1px solid rgba(245,183,59,.35);border-radius:10px;background:rgba(245,183,59,.08);color:#f5b73b}
+.stale-banner.on{display:block}
+.pill-lowconf,.pill-spam,.pill-flow{display:inline-block;font-size:11px;font-weight:700;padding:0 6px;margin:0 4px;border:1px solid var(--b);border-radius:999px}
+.pill-lowconf{color:#9ca3af;background:rgba(156,163,175,.12);border-color:rgba(156,163,175,.35)}
+.pill-spam{color:#f87171;background:rgba(248,113,113,.12);border-color:rgba(248,113,113,.4)}
+.pill-flow{color:#c084fc;background:rgba(192,132,252,.12);border-color:rgba(192,132,252,.4)}
+#feed .card.lowconf{opacity:.7}
