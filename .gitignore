@@ -7,3 +7,11 @@ data/*.tmp
 data/.git.lock
 data/.yahoo-cache.json
 backups/
+__pycache__/
+data/_*
+*.bak
+style.css.pre-*
+err.txt
+/scan-state.json
+.ledger-watch.*
+data/.stooq-cache.json

@@ -4,8 +4,9 @@
 set -euo pipefail
 cd "$(dirname "$0")"
 exec 9>data/.git.lock
-flock -w 240 9
-export EARLYCALL_LOCK_HELD=1  # refresh.py shares this lock; it is already held here || { echo "sync-ledger: lock busy" >&2; exit 2; }
+export GIT_TERMINAL_PROMPT=0
+flock -w 240 9 || { echo "sync-ledger: lock busy" >&2; exit 2; }
+export EARLYCALL_LOCK_HELD=1  # refresh.py shares this lock; it is already held here
 python3 refresh.py --ledger-only >> refresh.log 2>&1 || { echo "refresh.py --ledger-only failed (see refresh.log)" >&2; exit 1; }
 git add data/ledger.json data/baselines.json 2>/dev/null || git add data/ledger.json
 git diff --cached --quiet && exit 0

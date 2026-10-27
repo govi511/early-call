@@ -13,15 +13,15 @@ const stripNeg=t=>String(t).split(/[;()]/).filter(seg=>!ACCOUNT_DESC.test(seg)).
 function spamWhy(c){const n=c.notes||'';
  // manual override wins: true/"spam" forces hidden, false/"not_spam" clears every spam reason (news rows still stay news)
  const ov=c.spam_override;const lov=typeof localStorage!=='undefined'&&localStorage.getItem&&localStorage.getItem('ec-notspam-'+c.id);
- if(ov===false||ov==='not_spam'||lov)return(/^early-signal/i.test(n)||/\(context\)/i.test(c.direction||''))?['news post, not a buy/sell call']:[];
+ if(ov===false||ov==='not_spam'||lov)return(c.kind!=='flow'&&(/^early-signal/i.test(n)||/\(context\)/i.test(c.direction||'')))?['news post, not a buy/sell call']:[];
  const why=[];if(ov===true||ov==='spam')why.push('manual spam override');
  // structured flags (refresh.py) when present, text rules otherwise
  if(Array.isArray(c.spam_flags))c.spam_flags.forEach(f=>why.push(String(f).replace(/_/g,' ')));
  else{const nn=stripNeg(c.call_notes??'');SPAM_RULES.filter(([re])=>re.test(nn)).forEach(r=>why.push(r[1]));String(c.spam_flags||'').split(/[;,]/).map(x=>x.trim()).filter(Boolean).forEach(f=>why.push(f.replace(/_/g,' ')))}
- if(/^early-signal/i.test(n)||/\(context\)/i.test(c.direction||''))why.push('news post, not a buy/sell call');
+ if(c.kind!=='flow'&&(/^early-signal/i.test(n)||/\(context\)/i.test(c.direction||'')))why.push('news post, not a buy/sell call');
  const m=c.followers!=null?[0,c.followers]:n.match(/\b(\d+) followers\b/i);if(m&&+m[1]<50)why.push(`only ${m[1]} followers`);
  if(/^(filtered|excluded)$/.test(c.status||''))why.push('excluded by rule ('+c.status+')');
- if(feedOf(c)==='discovery'&&c.followers!=null&&c.followers<5000)why.push(`discovery account under 5,000 followers (${c.followers})`);
+ // under 5k followers: shown with low_confidence (c.low_confidence / .lowconf), no longer hidden
  if(c.after_the_fact)why.push('after the fact');
  if(c.copy_of)why.push(`copy of #${c.copy_of}`);
  if(c.spam_farm||(typeof LEDGER!=='undefined'&&LEDGER&&(LEDGER.spam_farm_accounts||[]).includes(c.account)))why.push('spam-farm account (copy-paste cluster)');
@@ -42,3 +42,4 @@ function recordOf(acc){const r=(typeof LEDGER!=='undefined'&&LEDGER?LEDGER.calls
 function winrateHTML(acc){const r=recordOf(acc);return r.rate==null?`<span class="winrate" title="${r.n}/${MIN_CLOSED} closed calls before a win rate is shown">Win rate <b>new</b> · ${r.n}/${MIN_CLOSED} closed${r.x?' · '+r.x+' expired':''}</span>`:`<span class="winrate" title="${r.w} of ${r.n} closed calls hit target${r.x?`; ${r.x} expired (neither win nor loss)`:''}">Win rate <b>${Math.round(r.rate*100)}%</b></span>`}
 const FEED=()=>localStorage.getItem('ec-feed')||'all';
 function feedOf(c){if(c.feed)return c.feed;return /source following/i.test(c.notes||'')?'following':'discovery'}
+const isLowConf=c=>c.low_confidence===true||(c.low_confidence==null&&c.followers!=null&&c.followers<5000);window.isLowConf=isLowConf;

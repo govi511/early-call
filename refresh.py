@@ -52,7 +52,7 @@ CNBC_MAP = {"NATGAS":"@NG.1","NG":"@NG.1","GOLD":"@GC.1","XAU":"@GC.1","XAUUSD":
 CNBC_CCY = {"EURJPY=":"JPY",".KS11":"KRW"}
 def _cnbc(a):
     """Free no-key CNBC quote feed (front-month futures / indices); used first for CNBC_MAP so Yahoo 429s don't matter."""
-    sym = CNBC_MAP[a]
+    sym = CNBC_MAP.get(a, a)
     q = get("https://quote.cnbc.com/quote-html-webservice/restQuote/symbolType/symbol?symbols=" + urllib.parse.quote(sym) + "&requestMethod=itv&noform=1&partnerId=2&fund=1&exthrs=1&output=json", tries=2)
     q = q["FormattedQuoteResult"]["FormattedQuote"][0]
     p = float(str(q["last"]).replace(",", ""))
@@ -70,7 +70,7 @@ def write_json(path, obj):
 def get(url, tries=3):
     for i in range(tries):
         try:
-            req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 EarlyCall"})
+            req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "application/json"})
             with urllib.request.urlopen(req, timeout=10) as r: return json.loads(r.read())
         except Exception as e:
             err = e; time.sleep(1.5 * (i + 1))
@@ -86,6 +86,7 @@ def _ycache():
         try: _YMEM["_disk"] = json.load(open(YCACHE_PATH))
         except Exception: _YMEM["_disk"] = {}
     return _YMEM["_disk"]
+YQUOTE_TTL = 300  # live quote responses reused for 5 min (memory + disk) so back-to-back runs don't re-hit Yahoo
 def _ypast(qs):
     m = re.search(r"period2=(\d+)", qs); return bool(m) and int(m.group(1)) < time.time() - 3600
 def ychart(sym, qs):
@@ -93,7 +94,10 @@ def ychart(sym, qs):
     key = f"{sym}?{qs}"
     if key in _YMEM: return _YMEM[key]
     disk = _ycache()
-    if key in disk: return disk[key]
+    if key in disk:
+        hit = disk[key]
+        if not (isinstance(hit, dict) and "_t" in hit): return hit
+        if time.time() - hit["_t"] < YQUOTE_TTL: return hit["v"]
     if time.time() < YAHOO_429: raise RuntimeError(f"yahoo cooling down after 429 ({YAHOO_429 - time.time():.0f}s left)")
     err = None; delay = 2
     for attempt, h in enumerate(YH * 2):
@@ -102,8 +106,8 @@ def ychart(sym, qs):
             req = urllib.request.Request(f"{h}/v8/finance/chart/{urllib.parse.quote(sym)}?{qs}", headers={"User-Agent": UA, "Accept": "application/json"})
             with urllib.request.urlopen(req, timeout=10) as r: out = json.loads(r.read())
             _YMEM[key] = out
-            if _ypast(qs):
-                disk[key] = out
+            if _ypast(qs) or "range=1d" in qs:
+                disk[key] = out if _ypast(qs) else {"_t": time.time(), "v": out}
                 try:
                     fd, tmp = tempfile.mkstemp(dir=DATA, suffix=".tmp")
                     with os.fdopen(fd, "w") as f: json.dump(disk, f, separators=(",", ":"))
@@ -112,6 +116,8 @@ def ychart(sym, qs):
             return out
         except Exception as e:
             err = e
+            stale = disk.get(key)
+            if "429" in str(e) and isinstance(stale, dict) and "_t" in stale and time.time() - stale["_t"] < 3600: return stale["v"]  # 429: serve <1h-old cached quote
             if "429" in str(e):
                 if attempt >= 3: YAHOO_429 = time.time() + YAHOO_COOLDOWN; break
                 ra = getattr(e, "headers", None) and e.headers.get("Retry-After")
@@ -184,6 +190,8 @@ def norm(asset):
     if a in ALIAS: return ALIAS[a]
     t = label_ticker(asset)
     if t: return t
+    m = re.fullmatch(r"([A-Z]{1,5}(?:[.-][A-Z]{1,2})?)\s*\(.*\)", a)  # "QQQ (US Tech 100)" -> QQQ
+    if m: return LABEL_TICKER.get(m.group(1), m.group(1))
     return a.split("/")[0] if "/" in a and not a.endswith("/USD") else a
 def kraken_pair(a):
     """Kraken pair for a token (static map or discovered at runtime via public Ticker)."""
@@ -216,7 +224,10 @@ def fetch(asset, force=None):
         try: return _cnbc(a)
         except Exception as e: log(f"cnbc failed for {a}: {e}; trying Yahoo")
     try: return _yahoo(a)
-    except Exception as e: log(f"yahoo failed for {a}: {e}; trying Stooq")
+    except Exception as e: log(f"yahoo failed for {a}: {e}; trying CNBC/Stooq")
+    if a not in CNBC_MAP and re.fullmatch(r"[A-Z]{1,5}", a):
+        try: return _cnbc(a)
+        except Exception as e: log(f"cnbc failed for {a}: {e}")
     try: return _stooq(a)
     except Exception as e:
         log(f"stooq failed for {a}: {e}; trying Nasdaq")
@@ -421,6 +432,16 @@ def add_feed(rows):
     for r in rows:
         n = r.get("notes", "").lower(); acc = r.get("account", "").lstrip("@").lower()
         r["feed"] = "following" if "source following" in n else "famous" if acc in calls else "discovery"
+FLOW_RE = re.compile(r"options? flow|unusual (?:options )?(?:volume|activity)|type=(?:unusual[-_ ]options|options?[-_ ]flow)", re.I)
+LOWCONF_FOLLOWERS = 5000
+STALE_MIN = 45  # site shows stale banner when pricesUpdatedAt or ledgerUpdatedAt is older than this
+def add_kind(rows):
+    """kind = flow (options-flow alert) | news (early-signal/context) | call; low_confidence = account under 5k followers (shown, not hidden)."""
+    for r in rows:
+        n = r.get("notes") or ""; d = r.get("direction") or ""
+        news = bool(re.match(r"early[- ]signal", n, re.I) or "(context)" in d.lower())
+        r["kind"] = "flow" if FLOW_RE.search(d + " | " + r.get("account", "") + " | " + " ".join(re.findall(r"type=[\w-]+", n))) else "news" if news else "call"
+        r["low_confidence"] = r.get("followers") is not None and r["followers"] < LOWCONF_FOLLOWERS
 def _ts_utc(r):
     try:
         from zoneinfo import ZoneInfo
@@ -601,18 +622,26 @@ def main():
                 rows.append(r)
     except Exception as e:
         log(f"ERROR reading ledger {SRC}: {e}"); return 1
-    add_feed(rows); add_spam_fields(rows); add_baselines(rows)
+    add_feed(rows); add_kind(rows); add_spam_fields(rows); add_baselines(rows)
     for r in rows:
         if r.get("exit_price") is not None and r.get("exit_pct") is None and r.get("baseline"):
             r["exit_pct"] = round((-1 if is_short(r.get("direction")) else 1) * (r["exit_price"] - r["baseline"]) / r["baseline"] * 100, 4)
     clusters = mark_clusters(rows)
     farm = sorted({a for c in clusters for a in c["accounts"]})
-    out = {"generated_at": now(), "calls": rows, "clusters": clusters, "spam_farm_accounts": farm}
+    def _iso(x):
+        try:
+            from zoneinfo import ZoneInfo
+            return datetime.datetime.strptime(x, "%Y-%m-%d %H:%M").replace(tzinfo=ZoneInfo("Europe/Lisbon")).isoformat()
+        except Exception: return None
+    lu = max((t for t in (_iso(r.get("logged_at_lisbon", "")) for r in rows) if t), default=None)
+    try: pu = json.load(open(os.path.join(DATA, "prices.json"))).get("fetched_at")
+    except Exception: pu = None
+    out = {"generated_at": now(), "ledgerUpdatedAt": lu, "pricesUpdatedAt": pu, "staleAfterMin": STALE_MIN, "calls": rows, "clusters": clusters, "spam_farm_accounts": farm}
     lp = os.path.join(DATA, "ledger.json")
     try:
         old = json.load(open(lp)); same = {k: v for k, v in old.items() if k != "generated_at"} == {k: v for k, v in out.items() if k != "generated_at"}
     except Exception: same = False
-    if not same: write_json(lp, out)
+    write_json(lp, out)  # always rewrite so generated_at = last successful sync (stale banner reads it)
     log(f"ledger: {len(rows)} calls, {len(clusters)} copy clusters, farm={farm}{' (unchanged)' if same else ''}")
     if LEDGER_ONLY: return 0
     try: watch = json.load(open(os.path.join(DATA, "watchlist.json")))
@@ -646,8 +675,9 @@ def main():
         m = norm(asset)
         if m != asset and prices.get(m, {}).get("price") is not None:
             prices[asset] = {**prices[m], "symbol": f'{prices[m].get("symbol")} (from {asset})'}; bad.remove(asset); ok.append(asset)
-    write_json(ppath, {"fetched_at": now(), "prices": prices, "ok": ok, "failed": bad})
+    write_json(ppath, {"fetched_at": now(), "pricesUpdatedAt": now(), "staleAfterMin": STALE_MIN, "prices": prices, "ok": ok, "failed": bad})
     log(f"prices ok={ok} failed={bad}")
+    out["pricesUpdatedAt"] = json.load(open(ppath))["fetched_at"]; write_json(lp, out)  # stale banner reads both ages from ledger.json
     # candles only for symbols with open calls + portfolio + watch symbols (not every asset ever logged)
     try: port = [str(x.get("asset") or x.get("symbol") or x) if isinstance(x, dict) else str(x) for x in json.load(open(os.path.join(DATA, "portfolio.json")))]
     except Exception: port = []
