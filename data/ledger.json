@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-27T09:45:35+00:00",
+  "generated_at": "2026-10-27T10:16:26+00:00",
   "calls": [
     {
       "id": "1",
@@ -15645,6 +15645,35 @@
       "feed": "following",
       "spam_flags": [],
       "spam_override": null,
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "534",
+      "logged_at_lisbon": "2026-10-27 10:08",
+      "account": "@CryptoMichNL",
+      "post_url": "https://x.com/CryptoMichNL/status/2115022916622369243",
+      "asset": "BTC",
+      "direction": "short (short-term bias, sweep then bounce)",
+      "entry": "",
+      "stop": "",
+      "target": "~78,500 (sweep)",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "source watchlist; role call; @CryptoMichNL (822k followers) \"Price couldn't break through $81,000 and therefore, we continue to fall... Wouldn't be surprised that we're seeing a sweep here towards $78,500ish and a quick bounce upwards after that. I remain short-term bearish\" while calling the correction a long-term buying opportunity (10:08 Lisbon); no entry given (scored from price at post time); BTC ~79,530 at scan (24h 79,456-80,850); directional bias with target only, no entry/stop, so log only, not alerted (same handling as #529/#532). Rest of scan (window ~09:12-10:14 Lisbon): watchlist commentary only (CryptoTony__ LTC update \"hold $56 or next support $50\" conditional with no stated bias, LTC ~55.75; CryptoTony__ \"next pump will catch many off guard\" paid-notification promo, no asset; scottmelker Binance Brazil licence/delists 22 tokens news); following timeline news/off-topic (pedrosilva LINK gold-RWA and NVDA-into-META commentary, no call; Kalshi Nvidia $3B Meta investment, BYD Japan-base ban, GSK oncology; NoLimitGains China AI bubble quip; MarioNawfal Israel election/Saudi-Iran/Ukraine; RoundtableSpace AI tools) - left to early-signal watch; discovery all rejected (tosingraycrypto/moyayith0w/FedeGonzalgh/azimakelvin/randytimwilson/sonukum16623724/Anthony10382/Xauusdexpert11 Telegram/private-group copy-paste spam and <5k, enormousgem1/aamon1428/Matisafi7 BTC setups under 5k followers); no resolutions (BTC ~79,530, 1H highs since 09:00 <=79,886 so #533 short zone 80,380-80,820 not reached, #527 zone 80.3K not filled, stop 77.4K intact; HYPE ~77.30 within #528 zone; CRV ~0.3325, #518 limit below 0.3275 not filled; ETH ~2,300); not financial advice",
+      "after_the_fact": false,
+      "call_notes": "Price couldn't break through $81,000 and therefore, we continue to fall... Wouldn't be surprised that we're seeing a sweep here towards $78,500ish and a quick bounce upwards after that. I remain short-term bearish ; hold $56 or next support $50 ; next pump will catch many off guard",
+      "ratio_call": false,
+      "conditional": false,
+      "entry_filled": null,
+      "waiting_for_entry": false,
+      "followers": 822000,
+      "source": "X",
+      "feed": "famous",
+      "spam_flags": [],
+      "spam_override": null,
+      "baseline": 79620.0,
+      "baseline_source": "OKX",
       "copy_of": "",
       "spam_farm": false
     }
