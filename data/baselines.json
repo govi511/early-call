@@ -2825,6 +2825,16 @@
     "source": "CNBC 1m (next bar)",
     "at": "2026-10-27 18:18"
   },
+  "565|ETH|2026-10-27 18:54": {
+    "price": 2343.76,
+    "source": "OKX",
+    "at": "2026-10-27 18:54"
+  },
+  "566|HYPE|2026-10-27 18:58": {
+    "price": 81.606,
+    "source": "OKX",
+    "at": "2026-10-27 18:58"
+  },
   "248|PONS|2026-10-13 21:56": {
     "price": null,
     "source": "unavailable",
@@ -2834,7 +2844,7 @@
   "255|HMM|2026-10-14 03:39": {
     "price": null,
     "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for HMM; yahoo: yahoo cooling down after 429 (89s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
+    "error": "cnbc: cnbc: no bars for HMM; yahoo: yahoo cooling down after 429 (90s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
     "at": "2026-10-14 03:39"
   },
   "282|DOPE|2026-10-14 20:38": {
@@ -2846,17 +2856,7 @@
   "485|USELESS|2026-10-23 13:06": {
     "price": null,
     "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for USELESS; yahoo: yahoo cooling down after 429 (88s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
+    "error": "cnbc: cnbc: no bars for USELESS; yahoo: yahoo cooling down after 429 (89s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
     "at": "2026-10-23 13:06"
-  },
-  "565|ETH|2026-10-27 18:54": {
-    "price": 2343.76,
-    "source": "OKX",
-    "at": "2026-10-27 18:54"
-  },
-  "566|HYPE|2026-10-27 18:58": {
-    "price": 81.606,
-    "source": "OKX",
-    "at": "2026-10-27 18:58"
   }
 }
