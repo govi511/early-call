@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-27T07:44:09+00:00",
+  "generated_at": "2026-10-27T08:14:07+00:00",
   "calls": [
     {
       "id": "1",
@@ -9425,6 +9425,8 @@
       "spam_override": null,
       "baseline": 0.215681,
       "baseline_source": "Kraken",
+      "locked_pct": 5.3231,
+      "locked_at": "2026-10-27T08:13+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -15585,6 +15587,35 @@
       "feed": "famous",
       "spam_flags": [],
       "spam_override": null,
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "532",
+      "logged_at_lisbon": "2026-10-27 07:35",
+      "account": "@SalsaTekila",
+      "post_url": "https://x.com/SalsaTekila/status/2114984210037670091",
+      "asset": "BTC",
+      "direction": "long",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "source watchlist; role call; @SalsaTekila (228k followers) \"Bears winning the narrative war = BTC is cheap. Whether it dips to 72k or bottoms here, I'm a buyer.\" (07:35 Lisbon); no entry given (scored from price at post time); BTC ~79,894 at scan (24h 79,456-80,850); directional with no entry/stop/target, so log only, not alerted (same handling as #529). Rest of scan (window ~07:13-08:12 Lisbon): watchlist commentary only (CryptoTony__ BTC \"no buyers, waiting for long scalps below\" conditional no level and Fear&Greed 43 \"bottom not in\"; DaanCrypto slow-bleed vs capitulation education; scottmelker HK Gold Exchange XGZ token on Chainlink CCIP news); following timeline news/off-topic (Polymarket EU tariffs on Chinese goods Q1 2027, Algeria military to Niger; Kalshi US gas prices, China space weapons, France spending; MarioNawfal Microsoft ~60k voluntary buyouts repeat; dethective Predictfun drain report; pedrosilva Portuguese AI account launch and Bitfunded Halloween prop-challenge promo (affiliate, no call); cryptugapt <5k memecoin bags) - left to early-signal watch; discovery all rejected (Futures_Expert/BaldwinDunas/Mohammadtradez/DiegoCryptoTip/CapitalM_1/Seoyun3616/flynyc98btc join-group/Telegram copy-paste spam or <5k, Finora_EN AI bot, cil_signal_ai/KempTradingDesk/ZyntoMarkets new bots, ThreadooorDAO <5k); no resolutions (BTC ~79,894, #527 zone not filled, stop 77.4K intact; HYPE ~78.25 within #528 zone; CRV ~0.338, #518 limit below 0.3275 not filled); not financial advice",
+      "after_the_fact": false,
+      "call_notes": "Bears winning the narrative war = BTC is cheap. Whether it dips to 72k or bottoms here, I'm a buyer. ; no buyers, waiting for long scalps below ; bottom not in",
+      "ratio_call": false,
+      "conditional": false,
+      "entry_filled": null,
+      "waiting_for_entry": false,
+      "followers": 228000,
+      "source": "X",
+      "feed": "famous",
+      "spam_flags": [],
+      "spam_override": null,
+      "baseline": 79691.9,
+      "baseline_source": "OKX",
       "copy_of": "",
       "spam_farm": false
     }
