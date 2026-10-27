@@ -1848,12 +1848,18 @@
   "353|BTC|2026-10-20 21:01": {
     "price": 82511.2,
     "source": "Kraken",
-    "at": "2026-10-20 21:01"
+    "at": "2026-10-20 21:01",
+    "locked_pct": -2.0655,
+    "locked_price": 80806.9,
+    "locked_at": "2026-10-27T20:01+00:00"
   },
   "354|MRNA|2026-10-20 21:07": {
     "price": 226.89,
     "source": "Nasdaq daily (close)",
-    "at": "2026-10-20 21:07"
+    "at": "2026-10-20 21:07",
+    "locked_pct": -8.546,
+    "locked_price": 207.5,
+    "locked_at": "2026-10-27T20:07+00:00"
   },
   "356|BTC|2026-10-20 21:23": {
     "price": 82492.6,
@@ -2856,7 +2862,22 @@
   "485|USELESS|2026-10-23 13:06": {
     "price": null,
     "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for USELESS; yahoo: yahoo cooling down after 429 (89s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
+    "error": "cnbc: cnbc: no bars for USELESS; yahoo: yahoo cooling down after 429 (88s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
     "at": "2026-10-23 13:06"
+  },
+  "568|NEAR|2026-10-27 19:57": {
+    "price": 4.636,
+    "source": "OKX",
+    "at": "2026-10-27 19:57"
+  },
+  "569|TAO|2026-10-27 20:00": {
+    "price": 253.7,
+    "source": "OKX",
+    "at": "2026-10-27 20:00"
+  },
+  "570|HYPE|2026-10-27 19:24": {
+    "price": 81.354,
+    "source": "OKX",
+    "at": "2026-10-27 19:24"
   }
 }
