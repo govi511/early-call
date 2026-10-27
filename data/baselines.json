@@ -1736,7 +1736,10 @@
   "333|NVDA/SPY/TSLA/SPACEX/WTI|2026-10-20 16:22": {
     "price": 217.09,
     "source": "Nasdaq daily (close)",
-    "at": "2026-10-20 16:22"
+    "at": "2026-10-20 16:22",
+    "locked_pct": 0.3178,
+    "locked_price": 217.78,
+    "locked_at": "2026-10-27T15:22+00:00"
   },
   "337|AEHR|2026-10-20 17:00": {
     "price": 63.33,
@@ -2317,12 +2320,18 @@
   "335|XAUUSD|2026-10-20 16:44": {
     "price": 4155.1,
     "source": "CNBC 1m",
-    "at": "2026-10-20 16:44"
+    "at": "2026-10-20 16:44",
+    "locked_pct": 2.8086,
+    "locked_price": 4038.4,
+    "locked_at": "2026-10-27T15:44+00:00"
   },
   "336|SILVER|2026-10-20 16:44": {
     "price": 57.98,
     "source": "CNBC 1m (next bar)",
-    "at": "2026-10-20 16:44"
+    "at": "2026-10-20 16:44",
+    "locked_pct": 6.2763,
+    "locked_price": 54.341,
+    "locked_at": "2026-10-27T15:44+00:00"
   },
   "355|KOSPI|2026-10-20 22:04": {
     "price": 5666.34,
@@ -2700,13 +2709,13 @@
   "485|USELESS|2026-10-23 13:06": {
     "price": null,
     "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for USELESS; yahoo: yahoo cooling down after 429 (89s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
+    "error": "cnbc: cnbc: no bars for USELESS; yahoo: yahoo cooling down after 429 (88s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
     "at": "2026-10-23 13:06"
   },
   "506|ZS (ZSCALER)|2026-10-23 22:14": {
     "price": null,
     "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for ZS (ZSCALER); yahoo: yahoo cooling down after 429 (88s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
+    "error": "cnbc: cnbc: no bars for ZS (ZSCALER); yahoo: yahoo cooling down after 429 (87s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
     "at": "2026-10-23 22:14"
   },
   "510|SPY (US 500)|2026-10-24 00:15": {
@@ -2736,13 +2745,13 @@
   "526|SPCX (SPACEX)|2026-10-27 00:12": {
     "price": null,
     "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for SPCX (SPACEX); yahoo: yahoo cooling down after 429 (83s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
+    "error": "cnbc: cnbc: no bars for SPCX (SPACEX); yahoo: yahoo cooling down after 429 (85s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-27 00:12"
   },
   "530|BE (BLOOM ENERGY)|2026-10-27 04:12": {
     "price": null,
     "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for BE (BLOOM ENERGY); yahoo: yahoo cooling down after 429 (83s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
+    "error": "cnbc: cnbc: no bars for BE (BLOOM ENERGY); yahoo: yahoo cooling down after 429 (84s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-27 04:12"
   },
   "546|TSLA (TESLA)|2026-10-27 14:20": {
@@ -2754,13 +2763,13 @@
   "547|GOOGL (ALPHABET)|2026-10-27 14:20": {
     "price": null,
     "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for GOOGL (ALPHABET); yahoo: yahoo cooling down after 429 (80s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
+    "error": "cnbc: cnbc: no bars for GOOGL (ALPHABET); yahoo: yahoo cooling down after 429 (82s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-27 14:20"
   },
   "548|GLD (GOLD)|2026-10-27 14:42": {
     "price": null,
     "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for GLD (GOLD); yahoo: yahoo cooling down after 429 (79s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
+    "error": "cnbc: cnbc: no bars for GLD (GOLD); yahoo: yahoo cooling down after 429 (81s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-27 14:42"
   }
 }
