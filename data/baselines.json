@@ -1760,7 +1760,10 @@
   "340|SYK|2026-10-20 17:17": {
     "price": 297.94,
     "source": "Nasdaq daily (close)",
-    "at": "2026-10-20 17:17"
+    "at": "2026-10-20 17:17",
+    "locked_pct": 0.3977,
+    "locked_price": 299.125,
+    "locked_at": "2026-10-27T16:17+00:00"
   },
   "341|CVX|2026-10-20 17:56": {
     "price": 224.37,
@@ -2721,7 +2724,7 @@
   "506|ZS (ZSCALER)|2026-10-23 22:14": {
     "price": null,
     "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for ZS (ZSCALER); yahoo: yahoo cooling down after 429 (88s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
+    "error": "cnbc: cnbc: no bars for ZS (ZSCALER); yahoo: yahoo cooling down after 429 (87s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
     "at": "2026-10-23 22:14"
   },
   "510|SPY (US 500)|2026-10-24 00:15": {
@@ -2733,7 +2736,7 @@
   "513|GOLD (XAU)|2026-10-24 05:03": {
     "price": null,
     "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for GOLD (XAU); yahoo: yahoo cooling down after 429 (87s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
+    "error": "cnbc: cnbc: no bars for GOLD (XAU); yahoo: yahoo cooling down after 429 (86s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
     "at": "2026-10-24 05:03"
   },
   "516|QQQ (US TECH 100)|2026-10-26 19:20": {
@@ -2757,7 +2760,7 @@
   "530|BE (BLOOM ENERGY)|2026-10-27 04:12": {
     "price": null,
     "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for BE (BLOOM ENERGY); yahoo: yahoo cooling down after 429 (83s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
+    "error": "cnbc: cnbc: no bars for BE (BLOOM ENERGY); yahoo: yahoo cooling down after 429 (84s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-27 04:12"
   },
   "546|TSLA (TESLA)|2026-10-27 14:20": {
@@ -2781,19 +2784,25 @@
   "549|MSFT (MICROSOFT)|2026-10-27 16:01": {
     "price": null,
     "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for MSFT (MICROSOFT); yahoo: yahoo cooling down after 429 (80s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
+    "error": "cnbc: cnbc: no bars for MSFT (MICROSOFT); yahoo: yahoo cooling down after 429 (81s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-27 16:01"
   },
   "550|IWM (RUSSELL 2000)|2026-10-27 15:23": {
     "price": null,
     "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for IWM (RUSSELL 2000); yahoo: yahoo cooling down after 429 (79s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
+    "error": "cnbc: cnbc: no bars for IWM (RUSSELL 2000); yahoo: yahoo cooling down after 429 (80s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-27 15:23"
   },
   "551|XLY (CONSUMER DISCRETIONARY ETF)|2026-10-27 15:22": {
     "price": null,
     "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for XLY (CONSUMER DISCRETIONARY ETF); yahoo: yahoo cooling down after 429 (78s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
+    "error": "cnbc: cnbc: no bars for XLY (CONSUMER DISCRETIONARY ETF); yahoo: yahoo cooling down after 429 (79s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-27 15:22"
+  },
+  "553|TSLA (TESLA)|2026-10-27 16:25": {
+    "price": null,
+    "source": "unavailable",
+    "error": "cnbc: cnbc: no bars for TSLA (TESLA); yahoo: yahoo cooling down after 429 (78s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
+    "at": "2026-10-27 16:25"
   }
 }
