@@ -1584,7 +1584,10 @@
   "304|PLTR/OIL/BTC|2026-10-20 02:18": {
     "price": 194.15,
     "source": "Nasdaq daily (close)",
-    "at": "2026-10-20 02:18"
+    "at": "2026-10-20 02:18",
+    "locked_pct": 1.3392,
+    "locked_price": 196.75,
+    "locked_at": "2026-10-27T01:18+00:00"
   },
   "306|CRV|2026-10-20 04:38": {
     "price": 0.3678,
@@ -2594,7 +2597,7 @@
   "255|HMM|2026-10-14 03:39": {
     "price": null,
     "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for HMM; yahoo: yahoo cooling down after 429 (90s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
+    "error": "cnbc: cnbc: no bars for HMM; yahoo: yahoo cooling down after 429 (89s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
     "at": "2026-10-14 03:39"
   },
   "282|DOPE|2026-10-14 20:38": {
@@ -2606,7 +2609,7 @@
   "485|USELESS|2026-10-23 13:06": {
     "price": null,
     "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for USELESS; yahoo: yahoo cooling down after 429 (89s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
+    "error": "cnbc: cnbc: no bars for USELESS; yahoo: yahoo cooling down after 429 (88s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
     "at": "2026-10-23 13:06"
   },
   "506|ZS (ZSCALER)|2026-10-23 22:14": {
@@ -2642,7 +2645,7 @@
   "526|SPCX (SPACEX)|2026-10-27 00:12": {
     "price": null,
     "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for SPCX (SPACEX); yahoo: yahoo cooling down after 429 (84s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
+    "error": "cnbc: cnbc: no bars for SPCX (SPACEX); yahoo: yahoo cooling down after 429 (85s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-27 00:12"
   }
 }
