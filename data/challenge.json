@@ -23,7 +23,7 @@
       "opened_at": "2026-10-13T11:48:00+01:00",
       "opened_at_utc": "2026-10-13T10:48:00Z",
       "venue": "Trading 212 CFD",
-      "notes": "Call #1 challenge. Size ~0.005 BTC \u2248 -\u20ac2.25 at SL, +\u20ac3 at TP (prompt \u2248+\u20ac2.70).",
+      "notes": "Call #1 challenge. Size ~0.005 BTC ≈ -€2.25 at SL, +€3 at TP (prompt ≈+€2.70).",
       "resolved_at": "2026-10-13T14:42:23Z",
       "exit_price": 83750.0,
       "pnl_eur": -2.25,
@@ -59,23 +59,23 @@
       "resolved_at_pt": "2026-10-20T15:01+0100"
     }
   ],
-  "last_check_at": "2026-10-27T09:25:00+00:00",
-  "last_check_btc": 79713,
+  "last_check_at": "2026-10-27T10:26:00+00:00",
+  "last_check_btc": 79575,
   "last_proposal_at": "2026-10-20T07:18+01:00",
   "last_alert_trade_id": 2,
   "last_resolution_alerted_id": 2,
   "open_trade_id": null,
-  "last_setup_eval": "Oct 27 09:25 Lisbon fresh OKX read: BTC ~79,713, lower part of 24h 79,427-80,823; 1H lows 79,554-79,690 holding, 07:00 rejected 80,013, 08:00/09:00 small inside bars. Funding +0.0100%, L/S 2.35. Tight range chop, no break of edges, no clean setup, no call.",
-  "last_check_note": "Oct 27 09:25 Lisbon: no trade open; fresh read done, no call.",
-  "last_fresh_read": "2026-10-27T09:25:00+00:00",
+  "last_setup_eval": "Oct 27 10:26 Lisbon fresh OKX read: BTC ~79,575, near bottom of 24h 79,427-80,823; 10:00 1H candle (in progress) dipped to 79,478, testing range low but no close below; 07:00 rejected 80,013. Funding +0.0100%, L/S 2.36 (longs crowded). Range-low test without confirmed breakdown, no clean setup, no call.",
+  "last_check_note": "Oct 27 10:26 Lisbon: no trade open; fresh read done, no call.",
+  "last_fresh_read": "2026-10-27T10:26:00+00:00",
   "last_read": {
-    "at": "2026-10-27T09:25+00:00",
-    "btc": 79713,
+    "at": "2026-10-27T10:26+00:00",
+    "btc": 79575,
     "range_recent": [
       79427.5,
       80822.6
     ],
     "funding": "+0.0100%",
-    "ls_ratio": 2.35
+    "ls_ratio": 2.36
   }
 }

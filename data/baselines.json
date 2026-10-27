@@ -2620,6 +2620,11 @@
     "source": "OKX",
     "at": "2026-10-27 07:35"
   },
+  "534|BTC|2026-10-27 10:08": {
+    "price": 79620.0,
+    "source": "OKX",
+    "at": "2026-10-27 10:08"
+  },
   "248|PONS|2026-10-13 21:56": {
     "price": null,
     "source": "unavailable",
@@ -2641,7 +2646,7 @@
   "485|USELESS|2026-10-23 13:06": {
     "price": null,
     "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for USELESS; yahoo: yahoo cooling down after 429 (88s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
+    "error": "cnbc: cnbc: no bars for USELESS; yahoo: yahoo cooling down after 429 (89s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
     "at": "2026-10-23 13:06"
   },
   "506|ZS (ZSCALER)|2026-10-23 22:14": {
@@ -2653,7 +2658,7 @@
   "510|SPY (US 500)|2026-10-24 00:15": {
     "price": null,
     "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for SPY (US 500); yahoo: yahoo cooling down after 429 (87s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
+    "error": "cnbc: cnbc: no bars for SPY (US 500); yahoo: yahoo cooling down after 429 (88s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
     "at": "2026-10-24 00:15"
   },
   "513|GOLD (XAU)|2026-10-24 05:03": {
@@ -2683,12 +2688,7 @@
   "530|BE (BLOOM ENERGY)|2026-10-27 04:12": {
     "price": null,
     "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for BE (BLOOM ENERGY); yahoo: yahoo cooling down after 429 (85s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
+    "error": "cnbc: cnbc: no bars for BE (BLOOM ENERGY); yahoo: yahoo cooling down after 429 (84s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-27 04:12"
-  },
-  "534|BTC|2026-10-27 10:08": {
-    "price": 79620.0,
-    "source": "OKX",
-    "at": "2026-10-27 10:08"
   }
 }
