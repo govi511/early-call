@@ -2872,6 +2872,11 @@
     "source": "CNBC daily (close)",
     "at": "2026-10-27 20:28"
   },
+  "575|HOOD (ROBINHOOD)|2026-10-27 20:57": {
+    "price": 90.2,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-27 20:57"
+  },
   "248|PONS|2026-10-13 21:56": {
     "price": null,
     "source": "unavailable",
@@ -2899,12 +2904,7 @@
   "574|US 500 (ES DEC-26 FUTURES)|2026-10-27 20:46": {
     "price": null,
     "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for US 500 (ES DEC-26 FUTURES); yahoo: yahoo cooling down after 429 (87s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
+    "error": "cnbc: cnbc: no bars for US 500 (ES DEC-26 FUTURES); yahoo: yahoo cooling down after 429 (88s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-27 20:46"
-  },
-  "575|HOOD (ROBINHOOD)|2026-10-27 20:57": {
-    "price": 90.2,
-    "source": "CNBC 1m (next bar)",
-    "at": "2026-10-27 20:57"
   }
 }
