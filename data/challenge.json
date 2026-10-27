@@ -59,23 +59,23 @@
       "resolved_at_pt": "2026-10-20T15:01+0100"
     }
   ],
-  "last_check_at": "2026-10-26T22:26:00+00:00",
+  "last_check_at": "2026-10-27T00:18:00+00:00",
   "last_check_btc": 79970,
   "last_proposal_at": "2026-10-20T07:18+01:00",
   "last_alert_trade_id": 2,
   "last_resolution_alerted_id": 2,
   "open_trade_id": null,
   "last_setup_eval": "Oct 26 22:26 Lisbon fresh OKX read: BTC ~79,970, mid-range of 24h 79,323-80,823, last 4h tight 79,800-80,200 chop, funding +0.0100%, L/S 2.22. No clean setup, no call.",
-  "last_check_note": "Oct 26 22:26 Lisbon: no trade open; fresh read, no call.",
-  "last_fresh_read": "2026-10-26T22:26:00+00:00",
+  "last_check_note": "Oct 27 00:18 Lisbon: no trade open; last fresh read 23:50 (28 min ago), no new read, no call.",
+  "last_fresh_read": "2026-10-26T23:50:00+00:00",
   "last_read": {
-    "at": "2026-10-26T22:26+00:00",
-    "btc": 79970,
+    "at": "2026-10-26T23:50+00:00",
+    "btc": 80095,
     "range_recent": [
-      79322.9,
-      80822.6
+      79323,
+      80823
     ],
     "funding": "+0.0100%",
-    "ls_ratio": 2.22
+    "ls_ratio": 2.23
   }
 }
