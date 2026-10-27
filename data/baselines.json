@@ -1720,7 +1720,10 @@
   "331|QQQ|2026-10-20 15:42": {
     "price": 718.36,
     "source": "Nasdaq daily (close)",
-    "at": "2026-10-20 15:42"
+    "at": "2026-10-20 15:42",
+    "locked_pct": -0.8575,
+    "locked_price": 712.2,
+    "locked_at": "2026-10-27T14:42+00:00"
   },
   "332|BTC|2026-10-20 15:17": {
     "price": 83116.4,
@@ -2685,7 +2688,7 @@
   "255|HMM|2026-10-14 03:39": {
     "price": null,
     "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for HMM; yahoo: yahoo cooling down after 429 (89s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
+    "error": "cnbc: cnbc: no bars for HMM; yahoo: yahoo cooling down after 429 (90s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
     "at": "2026-10-14 03:39"
   },
   "282|DOPE|2026-10-14 20:38": {
