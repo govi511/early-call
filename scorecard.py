@@ -6,10 +6,12 @@ Robust: csv module (quoted commas/newlines), utf-8-sig/CRLF, duplicate ids, bad 
 import csv, sys, os, re, datetime, collections, subprocess
 HERE = os.path.dirname(os.path.abspath(__file__))
 DEF = "/cursor/stores/store-9d60204b-cf80-460e-a058-55dafdd15548/call-ledger.csv"
-args = [a for a in sys.argv[1:] if not a.startswith("--")]
-src = args[0] if args else DEF
 we = None
-if "--week-end" in sys.argv: we = datetime.date.fromisoformat(sys.argv[sys.argv.index("--week-end") + 1]); args = [a for a in args if a != str(we)]
+_av = sys.argv[1:]
+if "--week-end" in _av:
+    _i = _av.index("--week-end"); we = datetime.date.fromisoformat(_av[_i + 1]); del _av[_i:_i + 2]
+args = [a for a in _av if not a.startswith("--")]
+src = args[0] if args else DEF
 today = we or datetime.date.today()
 wk_start = today - datetime.timedelta(days=today.weekday())  # Monday
 try:

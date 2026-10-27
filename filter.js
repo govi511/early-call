@@ -3,7 +3,7 @@ const SPAM_RULES=[[/telegram/i,'Telegram promo'],[/\bvip\b/i,'VIP promo'],[/refe
 // Shared short-direction rule (mirrors is_short in refresh.py)
 const isShort=d=>{d=String(d||'').trim().toLowerCase();return/^(short|bear|put|hike)/.test(d)||d.includes('short')};window.isShort=isShort;
 // One scored call per source link: earliest row wins
-const dupOfLink=c=>{if(!c.post_url||typeof LEDGER==='undefined'||!LEDGER)return null;const f=LEDGER.calls.filter(o=>o.post_url===c.post_url).sort((a,b)=>String(a.logged_at_lisbon).localeCompare(String(b.logged_at_lisbon))||(+a.id)-(+b.id))[0];return f&&f!==c?f:null};
+const dupOfLink=c=>{if(c.split_of||!c.post_url||typeof LEDGER==='undefined'||!LEDGER)return null;const f=LEDGER.calls.filter(o=>o.post_url===c.post_url&&!o.split_of).sort((a,b)=>String(a.logged_at_lisbon).localeCompare(String(b.logged_at_lisbon))||(+a.id)-(+b.id))[0];return f&&f!==c?f:null};
 const normEntry=e=>String(e||'').replace(/\s+/g,'').toLowerCase();
 // Negation covers whole lists: "no Telegram/VIP/referral in post", "no spam, referral or VIP text"
 const NEG_LIST=/\b(?:no|not|without|never|isn't|is not|not a)\s+(?:an?\s+|any\s+)?[\w-]+(?:\s*(?:\/|,|\bor\b|\band\b|&)\s*[\w-]+)*(?:\s+(?:links?|promos?|posts?|accounts?|text|group|groups))?/gi;
@@ -34,7 +34,7 @@ const _spamCache=new WeakMap();
 const isSpam=c=>{if(!_spamCache.has(c))_spamCache.set(c,spamWhy(c).length>0);return _spamCache.get(c)};
 const isEarlySignal=c=>/early[- ]signal/i.test(c.notes||'');
 // Calls that count toward win rates / leaderboard: not spam, not early-signal rows
-const countsForRecord=c=>c.status!=='not_filled'&&!isSpam(c)&&!isEarlySignal(c)&&!dupOfLink(c);
+const countsForRecord=c=>!c.split_into&&c.status!=='not_filled'&&!isSpam(c)&&!isEarlySignal(c)&&!dupOfLink(c);
 function srcOf(c){const n=(c.notes||'').toLowerCase();return/early[- ]signal|\bsec\b|filing|13f|form 4/.test(n)?['Early signal','filing']:/source following|watchlist/.test(n)?['Following','watchlist']:/source discovery/.test(n)?['X search','x']:null}
 function srcHTML(c){const s=srcOf(c);return s?`<span class="src ${s[1]}">${s[0]}</span>`:''}
 const MIN_CLOSED=10;

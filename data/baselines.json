@@ -3048,18 +3048,6 @@
     "locked_price": 771.25,
     "locked_at": "2026-10-20T22:14+01:00"
   },
-  "248|PONS|2026-10-13 21:56": {
-    "price": null,
-    "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for PONS; yahoo: HTTP Error 429: Too Many Requests; nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
-    "at": "2026-10-13 21:56"
-  },
-  "255|HMM|2026-10-14 03:39": {
-    "price": null,
-    "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for HMM; yahoo: yahoo cooling down after 429 (89s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
-    "at": "2026-10-14 03:39"
-  },
   "274-SOXX|SOXX|2026-10-14 19:46": {
     "price": 500.43,
     "source": "CNBC daily (open)",
@@ -3075,12 +3063,6 @@
     "locked_pct": 2.1856,
     "locked_price": 557.77,
     "locked_at": "2026-10-21T19:46+01:00"
-  },
-  "282|DOPE|2026-10-14 20:38": {
-    "price": null,
-    "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for DOPE; yahoo: yahoo cooling down after 429 (88s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
-    "at": "2026-10-14 20:38"
   },
   "294-TSLA|TSLA|2026-10-19 20:18": {
     "price": 369.03,
@@ -3157,12 +3139,6 @@
     "source": "CNBC 1m (next bar)",
     "at": "2026-10-21 19:02"
   },
-  "485|USELESS|2026-10-23 13:06": {
-    "price": null,
-    "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for USELESS; yahoo: yahoo cooling down after 429 (85s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
-    "at": "2026-10-23 13:06"
-  },
   "493-BTC|BTC|2026-10-23 17:16": {
     "price": 81587.0,
     "source": "OKX",
@@ -3202,5 +3178,1677 @@
     "price": 7756.25,
     "source": "CNBC 1m (next bar)",
     "at": "2026-10-27 20:46"
+  },
+  "202-OIL|OIL|2026-10-13 09:52": {
+    "price": 94.75,
+    "source": "CNBC daily (open)",
+    "at": "2026-10-13 09:52",
+    "locked_pct": 5.7414,
+    "locked_price": 100.19,
+    "locked_at": "2026-10-20T09:52+01:00"
+  },
+  "202-GOLD|GOLD|2026-10-13 09:52": {
+    "price": 4184.2,
+    "source": "CNBC daily (open)",
+    "at": "2026-10-13 09:52",
+    "locked_pct": -1.1496,
+    "locked_price": 4136.1,
+    "locked_at": "2026-10-20T09:52+01:00"
+  },
+  "202-SPY|SPY|2026-10-13 09:52": {
+    "price": 774.92,
+    "source": "CNBC daily (open)",
+    "at": "2026-10-13 09:52",
+    "locked_pct": -1.0924,
+    "locked_price": 766.455,
+    "locked_at": "2026-10-20T09:52+01:00"
+  },
+  "204-SPY|SPY|2026-10-13 12:28": {
+    "price": 774.92,
+    "source": "CNBC daily (open)",
+    "at": "2026-10-13 12:28",
+    "locked_pct": -1.2259,
+    "locked_price": 765.42,
+    "locked_at": "2026-10-20T12:28+01:00"
+  },
+  "204-QQQ|QQQ|2026-10-13 12:28": {
+    "price": 737.98,
+    "source": "CNBC daily (open)",
+    "at": "2026-10-13 12:28",
+    "locked_pct": -3.2697,
+    "locked_price": 713.85,
+    "locked_at": "2026-10-20T12:28+01:00"
+  },
+  "204-DXY|DXY|2026-10-13 12:28": {
+    "price": 102.212,
+    "source": "CNBC daily (open)",
+    "at": "2026-10-13 12:28",
+    "locked_pct": -0.3326,
+    "locked_price": 101.872,
+    "locked_at": "2026-10-20T12:28+01:00"
+  },
+  "205-SPY|SPY|2026-10-13 12:47": {
+    "price": 774.92,
+    "source": "CNBC daily (open)",
+    "at": "2026-10-13 12:47",
+    "locked_pct": -1.265,
+    "locked_price": 765.1169,
+    "locked_at": "2026-10-20T12:47+01:00"
+  },
+  "205-OIL|OIL|2026-10-13 12:47": {
+    "price": 94.75,
+    "source": "CNBC daily (open)",
+    "at": "2026-10-13 12:47",
+    "locked_pct": 6.4169,
+    "locked_price": 100.83,
+    "locked_at": "2026-10-20T12:47+01:00"
+  },
+  "208-SPY|SPY|2026-10-13 13:26": {
+    "price": 774.92,
+    "source": "CNBC daily (open)",
+    "at": "2026-10-13 13:26",
+    "locked_pct": -1.4298,
+    "locked_price": 763.84,
+    "locked_at": "2026-10-20T13:26+01:00"
+  },
+  "208-OIL|OIL|2026-10-13 13:26": {
+    "price": 94.75,
+    "source": "CNBC daily (open)",
+    "at": "2026-10-13 13:26",
+    "locked_pct": 5.4565,
+    "locked_price": 99.92,
+    "locked_at": "2026-10-20T13:26+01:00"
+  },
+  "211-OIL|OIL|2026-10-13 14:00": {
+    "price": 94.75,
+    "source": "CNBC daily (open)",
+    "at": "2026-10-13 14:00",
+    "locked_pct": 5.4776,
+    "locked_price": 99.94,
+    "locked_at": "2026-10-20T14:00+01:00"
+  },
+  "211-SPY|SPY|2026-10-13 14:00": {
+    "price": 774.92,
+    "source": "CNBC daily (open)",
+    "at": "2026-10-13 14:00",
+    "locked_pct": -1.213,
+    "locked_price": 765.52,
+    "locked_at": "2026-10-20T14:00+01:00"
+  },
+  "211-BTC|BTC|2026-10-13 14:00": {
+    "price": 83367.4,
+    "source": "OKX",
+    "at": "2026-10-13 14:00",
+    "locked_pct": -2.0961,
+    "locked_price": 81619.9,
+    "locked_at": "2026-10-20T14:00+01:00"
+  },
+  "212-BTC|BTC|2026-10-13 14:35": {
+    "price": 83311.6,
+    "source": "OKX",
+    "at": "2026-10-13 14:35",
+    "locked_pct": -2.2741,
+    "locked_price": 81417.0,
+    "locked_at": "2026-10-20T14:35+01:00"
+  },
+  "212-ETH|ETH|2026-10-13 14:35": {
+    "price": 2506.62,
+    "source": "OKX",
+    "at": "2026-10-13 14:35",
+    "locked_pct": -4.7004,
+    "locked_price": 2388.8,
+    "locked_at": "2026-10-20T14:35+01:00"
+  },
+  "212-SPY|SPY|2026-10-13 14:35": {
+    "price": 774.92,
+    "source": "CNBC daily (open)",
+    "at": "2026-10-13 14:35",
+    "locked_pct": -1.1421,
+    "locked_price": 766.07,
+    "locked_at": "2026-10-20T14:35+01:00"
+  },
+  "212-OIL|OIL|2026-10-13 14:35": {
+    "price": 94.75,
+    "source": "CNBC daily (open)",
+    "at": "2026-10-13 14:35",
+    "locked_pct": 4.6332,
+    "locked_price": 99.14,
+    "locked_at": "2026-10-20T14:35+01:00"
+  },
+  "215-OIL|OIL|2026-10-13 15:07": {
+    "price": 94.75,
+    "source": "CNBC daily (open)",
+    "at": "2026-10-13 15:07",
+    "locked_pct": 3.6095,
+    "locked_price": 98.17,
+    "locked_at": "2026-10-20T15:07+01:00"
+  },
+  "215-SPY|SPY|2026-10-13 15:07": {
+    "price": 774.92,
+    "source": "CNBC daily (open)",
+    "at": "2026-10-13 15:07",
+    "locked_pct": -0.824,
+    "locked_price": 768.535,
+    "locked_at": "2026-10-20T15:07+01:00"
+  },
+  "215-RIG|RIG|2026-10-13 15:07": {
+    "price": 5.78,
+    "source": "CNBC daily (open)",
+    "at": "2026-10-13 15:07",
+    "locked_pct": 0.519,
+    "locked_price": 5.81,
+    "locked_at": "2026-10-20T15:07+01:00"
+  },
+  "224-TSLA|TSLA|2026-10-13 16:36": {
+    "price": 371.16,
+    "source": "CNBC daily (open)",
+    "at": "2026-10-13 16:36",
+    "locked_pct": 0.6493,
+    "locked_price": 373.57,
+    "locked_at": "2026-10-20T16:36+01:00"
+  },
+  "224-NVDA|NVDA|2026-10-13 16:36": {
+    "price": 225.53,
+    "source": "CNBC daily (open)",
+    "at": "2026-10-13 16:36",
+    "locked_pct": -3.9973,
+    "locked_price": 216.515,
+    "locked_at": "2026-10-20T16:36+01:00"
+  },
+  "227-OIL|OIL|2026-10-13 18:36": {
+    "price": 94.75,
+    "source": "CNBC daily (open)",
+    "at": "2026-10-13 18:36",
+    "locked_pct": 3.2929,
+    "locked_price": 97.87,
+    "locked_at": "2026-10-20T18:36+01:00"
+  },
+  "227-GOLD|GOLD|2026-10-13 18:36": {
+    "price": 4184.2,
+    "source": "CNBC daily (open)",
+    "at": "2026-10-13 18:36",
+    "locked_pct": -0.9894,
+    "locked_price": 4142.8,
+    "locked_at": "2026-10-20T18:36+01:00"
+  },
+  "227-SPY|SPY|2026-10-13 18:36": {
+    "price": 774.92,
+    "source": "CNBC daily (open)",
+    "at": "2026-10-13 18:36",
+    "locked_pct": -0.6981,
+    "locked_price": 769.51,
+    "locked_at": "2026-10-20T18:36+01:00"
+  },
+  "228-SPCX|SPCX|2026-10-13 18:36": {
+    "price": 154.98,
+    "source": "CNBC daily (open)",
+    "at": "2026-10-13 18:36",
+    "locked_pct": -4.6754,
+    "locked_price": 147.734,
+    "locked_at": "2026-10-20T18:36+01:00"
+  },
+  "228-NVDA|NVDA|2026-10-13 18:36": {
+    "price": 225.53,
+    "source": "CNBC daily (open)",
+    "at": "2026-10-13 18:36",
+    "locked_pct": -3.7644,
+    "locked_price": 217.0401,
+    "locked_at": "2026-10-20T18:36+01:00"
+  },
+  "228-GOOGL|GOOGL|2026-10-13 18:36": {
+    "price": 355.57,
+    "source": "CNBC daily (open)",
+    "at": "2026-10-13 18:36",
+    "locked_pct": -3.9711,
+    "locked_price": 341.45,
+    "locked_at": "2026-10-20T18:36+01:00"
+  },
+  "234-OIL|OIL|2026-10-13 20:27": {
+    "price": 94.75,
+    "source": "CNBC daily (open)",
+    "at": "2026-10-13 20:27",
+    "locked_pct": 3.7573,
+    "locked_price": 98.31,
+    "locked_at": "2026-10-20T20:27+01:00"
+  },
+  "234-SPY|SPY|2026-10-13 20:27": {
+    "price": 774.92,
+    "source": "CNBC daily (open)",
+    "at": "2026-10-13 20:27",
+    "locked_pct": -0.8801,
+    "locked_price": 768.1,
+    "locked_at": "2026-10-20T20:27+01:00"
+  },
+  "234-BTC|BTC|2026-10-13 20:27": {
+    "price": 83273.1,
+    "source": "OKX",
+    "at": "2026-10-13 20:27",
+    "locked_pct": -1.0391,
+    "locked_price": 82407.8,
+    "locked_at": "2026-10-20T20:27+01:00"
+  },
+  "237-OIL|OIL|2026-10-13 22:14": {
+    "price": 94.75,
+    "source": "CNBC daily (open)",
+    "at": "2026-10-13 22:14",
+    "locked_pct": 3.6201,
+    "locked_price": 98.18,
+    "locked_at": "2026-10-20T22:14+01:00"
+  },
+  "237-BAC|BAC|2026-10-13 22:14": {
+    "price": 49.83,
+    "source": "CNBC daily (open)",
+    "at": "2026-10-13 22:14",
+    "locked_pct": 2.0134,
+    "locked_price": 50.8333,
+    "locked_at": "2026-10-20T22:14+01:00"
+  },
+  "237-SPY|SPY|2026-10-13 22:14": {
+    "price": 774.92,
+    "source": "CNBC daily (open)",
+    "at": "2026-10-13 22:14",
+    "locked_pct": -0.4684,
+    "locked_price": 771.29,
+    "locked_at": "2026-10-20T22:14+01:00"
+  },
+  "238-NVDA|NVDA|2026-10-13 22:14": {
+    "price": 225.53,
+    "source": "CNBC daily (open)",
+    "at": "2026-10-13 22:14",
+    "locked_pct": -1.9776,
+    "locked_price": 221.07,
+    "locked_at": "2026-10-20T22:14+01:00"
+  },
+  "238-ABT|ABT|2026-10-13 22:14": {
+    "price": 104.06,
+    "source": "CNBC daily (open)",
+    "at": "2026-10-13 22:14",
+    "locked_pct": -2.316,
+    "locked_price": 101.65,
+    "locked_at": "2026-10-20T22:14+01:00"
+  },
+  "238-ADI|ADI|2026-10-13 22:14": {
+    "price": 410.21,
+    "source": "CNBC daily (open)",
+    "at": "2026-10-13 22:14",
+    "locked_pct": -1.448,
+    "locked_price": 404.27,
+    "locked_at": "2026-10-20T22:14+01:00"
+  },
+  "238-CACI|CACI|2026-10-13 22:14": {
+    "price": 606.79,
+    "source": "CNBC daily (open)",
+    "at": "2026-10-13 22:14",
+    "locked_pct": 0.1582,
+    "locked_price": 607.75,
+    "locked_at": "2026-10-20T22:14+01:00"
+  },
+  "248|PONS|2026-10-13 21:56": {
+    "price": null,
+    "source": "unavailable",
+    "error": "cnbc: cnbc: no bars for PONS; yahoo: HTTP Error 429: Too Many Requests; nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
+    "at": "2026-10-13 21:56"
+  },
+  "249-SPCX|SPCX|2026-10-14 00:18": {
+    "price": 154.98,
+    "source": "CNBC daily (open)",
+    "at": "2026-10-14 00:18",
+    "locked_pct": 2.3229,
+    "locked_price": 158.58,
+    "locked_at": "2026-10-21T00:18+01:00"
+  },
+  "249-MSFT|MSFT|2026-10-14 00:18": {
+    "price": 545.27,
+    "source": "CNBC daily (open)",
+    "at": "2026-10-14 00:18",
+    "locked_pct": -3.0095,
+    "locked_price": 528.86,
+    "locked_at": "2026-10-21T00:18+01:00"
+  },
+  "249-OIL|OIL|2026-10-14 00:18": {
+    "price": 94.75,
+    "source": "CNBC daily (open)",
+    "at": "2026-10-14 00:18",
+    "locked_pct": 3.7573,
+    "locked_price": 98.31,
+    "locked_at": "2026-10-21T00:18+01:00"
+  },
+  "253-TSLA|TSLA|2026-10-14 02:23": {
+    "price": 371.16,
+    "source": "CNBC daily (open)",
+    "at": "2026-10-14 02:23",
+    "locked_pct": 2.3009,
+    "locked_price": 379.7,
+    "locked_at": "2026-10-21T02:23+01:00"
+  },
+  "253-OIL|OIL|2026-10-14 02:23": {
+    "price": 94.75,
+    "source": "CNBC daily (open)",
+    "at": "2026-10-14 02:23",
+    "locked_pct": 4.4116,
+    "locked_price": 98.93,
+    "locked_at": "2026-10-21T02:23+01:00"
+  },
+  "253-BTC|BTC|2026-10-14 02:23": {
+    "price": 83364.4,
+    "source": "OKX",
+    "at": "2026-10-14 02:23",
+    "locked_pct": -0.5839,
+    "locked_price": 82877.6,
+    "locked_at": "2026-10-21T02:23+01:00"
+  },
+  "255|HMM|2026-10-14 03:39": {
+    "price": null,
+    "source": "unavailable",
+    "error": "cnbc: cnbc: no bars for HMM; yahoo: yahoo cooling down after 429 (89s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
+    "at": "2026-10-14 03:39"
+  },
+  "257-BTC|BTC|2026-10-14 04:15": {
+    "price": 83723.3,
+    "source": "OKX",
+    "at": "2026-10-14 04:15",
+    "locked_pct": -1.117,
+    "locked_price": 82788.1,
+    "locked_at": "2026-10-21T04:15+01:00"
+  },
+  "257-ETH|ETH|2026-10-14 04:15": {
+    "price": 2513.87,
+    "source": "OKX",
+    "at": "2026-10-14 04:15",
+    "locked_pct": -2.5491,
+    "locked_price": 2449.79,
+    "locked_at": "2026-10-21T04:15+01:00"
+  },
+  "257-OIL|OIL|2026-10-14 04:15": {
+    "price": 94.75,
+    "source": "CNBC daily (open)",
+    "at": "2026-10-14 04:15",
+    "locked_pct": 4.7177,
+    "locked_price": 99.22,
+    "locked_at": "2026-10-21T04:15+01:00"
+  },
+  "258-ASML|ASML|2026-10-14 06:15": {
+    "price": 1616.14,
+    "source": "CNBC daily (open)",
+    "at": "2026-10-14 06:15",
+    "locked_pct": 2.4559,
+    "locked_price": 1655.83,
+    "locked_at": "2026-10-21T06:15+01:00"
+  },
+  "258-NVDA|NVDA|2026-10-14 06:15": {
+    "price": 215.3,
+    "source": "CNBC daily (open)",
+    "at": "2026-10-14 06:15",
+    "locked_pct": 2.5406,
+    "locked_price": 220.77,
+    "locked_at": "2026-10-21T06:15+01:00"
+  },
+  "258-OIL|OIL|2026-10-14 06:15": {
+    "price": 95.19,
+    "source": "CNBC daily (open)",
+    "at": "2026-10-14 06:15",
+    "locked_pct": 3.992,
+    "locked_price": 98.99,
+    "locked_at": "2026-10-21T06:15+01:00"
+  },
+  "259-SPCX|SPCX|2026-10-14 08:15": {
+    "price": 146.91,
+    "source": "CNBC daily (open)",
+    "at": "2026-10-14 08:15",
+    "locked_pct": 9.5909,
+    "locked_price": 161.0,
+    "locked_at": "2026-10-21T08:15+01:00"
+  },
+  "259-OIL|OIL|2026-10-14 08:15": {
+    "price": 95.19,
+    "source": "CNBC daily (open)",
+    "at": "2026-10-14 08:15",
+    "locked_pct": 3.8765,
+    "locked_price": 98.88,
+    "locked_at": "2026-10-21T08:15+01:00"
+  },
+  "259-BTC|BTC|2026-10-14 08:15": {
+    "price": 83500.0,
+    "source": "OKX",
+    "at": "2026-10-14 08:15",
+    "locked_pct": -0.8158,
+    "locked_price": 82818.8,
+    "locked_at": "2026-10-21T08:15+01:00"
+  },
+  "265-OIL|OIL|2026-10-14 12:21": {
+    "price": 95.19,
+    "source": "CNBC daily (open)",
+    "at": "2026-10-14 12:21",
+    "locked_pct": 4.2546,
+    "locked_price": 99.24,
+    "locked_at": "2026-10-21T12:21+01:00"
+  },
+  "265-SPCX|SPCX|2026-10-14 12:21": {
+    "price": 146.91,
+    "source": "CNBC daily (open)",
+    "at": "2026-10-14 12:21",
+    "locked_pct": 7.6714,
+    "locked_price": 158.18,
+    "locked_at": "2026-10-21T12:21+01:00"
+  },
+  "265-BAC|BAC|2026-10-14 12:21": {
+    "price": 51.46,
+    "source": "CNBC daily (open)",
+    "at": "2026-10-14 12:21",
+    "locked_pct": -1.2825,
+    "locked_price": 50.8,
+    "locked_at": "2026-10-21T12:21+01:00"
+  },
+  "266-DXY|DXY|2026-10-14 14:18": {
+    "price": 102.391,
+    "source": "CNBC daily (open)",
+    "at": "2026-10-14 14:18",
+    "locked_pct": -0.6807,
+    "locked_price": 101.694,
+    "locked_at": "2026-10-21T14:18+01:00"
+  },
+  "266-SPX|SPX|2026-10-14 14:18": {
+    "price": 7687.31,
+    "source": "CNBC daily (open)",
+    "at": "2026-10-14 14:18",
+    "locked_pct": 0.639,
+    "locked_price": 7736.43,
+    "locked_at": "2026-10-21T14:18+01:00"
+  },
+  "266-BTC|BTC|2026-10-14 14:18": {
+    "price": 82577.6,
+    "source": "OKX",
+    "at": "2026-10-14 14:18",
+    "locked_pct": 1.4798,
+    "locked_price": 83799.6,
+    "locked_at": "2026-10-21T14:18+01:00"
+  },
+  "266-GOLD|GOLD|2026-10-14 14:18": {
+    "price": 4128.3,
+    "source": "CNBC daily (open)",
+    "at": "2026-10-14 14:18",
+    "locked_pct": 0.7267,
+    "locked_price": 4158.3,
+    "locked_at": "2026-10-21T14:18+01:00"
+  },
+  "280-DXY|DXY|2026-10-14 20:22": {
+    "price": 102.391,
+    "source": "CNBC daily (open)",
+    "at": "2026-10-14 20:22",
+    "locked_pct": -0.5733,
+    "locked_price": 101.804,
+    "locked_at": "2026-10-21T20:22+01:00"
+  },
+  "280-SPX|SPX|2026-10-14 20:22": {
+    "price": 7687.31,
+    "source": "CNBC daily (open)",
+    "at": "2026-10-14 20:22",
+    "locked_pct": 0.8073,
+    "locked_price": 7749.37,
+    "locked_at": "2026-10-21T20:22+01:00"
+  },
+  "280-BTC|BTC|2026-10-14 20:22": {
+    "price": 81852.8,
+    "source": "OKX",
+    "at": "2026-10-14 20:22",
+    "locked_pct": 3.033,
+    "locked_price": 84335.4,
+    "locked_at": "2026-10-21T20:22+01:00"
+  },
+  "282|DOPE|2026-10-14 20:38": {
+    "price": null,
+    "source": "unavailable",
+    "error": "cnbc: cnbc: no bars for DOPE; yahoo: yahoo cooling down after 429 (85s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
+    "at": "2026-10-14 20:38"
+  },
+  "295-OIL|OIL|2026-10-19 20:18": {
+    "price": 98.37,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-19 20:18",
+    "locked_pct": 4.0968,
+    "locked_price": 102.4,
+    "locked_at": "2026-10-26T19:18+00:00"
+  },
+  "295-BTC|BTC|2026-10-19 20:18": {
+    "price": 81926.7,
+    "source": "OKX",
+    "at": "2026-10-19 20:18",
+    "locked_pct": -2.2374,
+    "locked_price": 80093.7,
+    "locked_at": "2026-10-26T19:18+00:00"
+  },
+  "301-NVDA|NVDA|2026-10-19 22:20": {
+    "price": 217.5757,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-19 22:20",
+    "locked_pct": -0.7035,
+    "locked_price": 216.045,
+    "locked_at": "2026-10-26T21:20+00:00"
+  },
+  "301-AMZN|AMZN|2026-10-19 22:20": {
+    "price": 262.67,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-19 22:20",
+    "locked_pct": -5.1905,
+    "locked_price": 249.0361,
+    "locked_at": "2026-10-26T21:20+00:00"
+  },
+  "301-TSLA|TSLA|2026-10-19 22:20": {
+    "price": 367.77,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-19 22:20",
+    "locked_pct": 6.534,
+    "locked_price": 391.8,
+    "locked_at": "2026-10-26T21:20+00:00"
+  },
+  "301-SPY|SPY|2026-10-19 22:20": {
+    "price": 766.98,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-19 22:20",
+    "locked_pct": -0.2203,
+    "locked_price": 765.29,
+    "locked_at": "2026-10-26T21:20+00:00"
+  },
+  "302-AAPL|AAPL|2026-10-20 00:18": {
+    "price": 342.78,
+    "source": "CNBC 1m",
+    "at": "2026-10-20 00:18",
+    "locked_pct": 0.0462,
+    "locked_price": 342.9382,
+    "locked_at": "2026-10-26T23:18+00:00"
+  },
+  "302-USDCAD|USDCAD|2026-10-20 00:18": {
+    "price": 1.4105,
+    "source": "CNBC 1m",
+    "at": "2026-10-20 00:18",
+    "locked_pct": -0.6664,
+    "locked_price": 1.4011,
+    "locked_at": "2026-10-26T23:18+00:00"
+  },
+  "302-BA|BA|2026-10-20 00:18": {
+    "price": 192.3935,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-20 00:18",
+    "locked_pct": -2.2566,
+    "locked_price": 188.052,
+    "locked_at": "2026-10-26T23:18+00:00"
+  },
+  "302-BTC|BTC|2026-10-20 00:18": {
+    "price": 81963.4,
+    "source": "OKX",
+    "at": "2026-10-20 00:18",
+    "locked_pct": -2.5092,
+    "locked_price": 79906.8,
+    "locked_at": "2026-10-26T23:18+00:00"
+  },
+  "304-PLTR|PLTR|2026-10-20 02:18": {
+    "price": 194.15,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-20 02:18",
+    "locked_pct": 1.916,
+    "locked_price": 197.87,
+    "locked_at": "2026-10-27T01:18+00:00"
+  },
+  "304-OIL|OIL|2026-10-20 02:18": {
+    "price": 98.9,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-20 02:18",
+    "locked_pct": 2.1436,
+    "locked_price": 101.02,
+    "locked_at": "2026-10-27T01:18+00:00"
+  },
+  "304-BTC|BTC|2026-10-20 02:18": {
+    "price": 81440.7,
+    "source": "OKX",
+    "at": "2026-10-20 02:18",
+    "locked_pct": -1.5199,
+    "locked_price": 80202.9,
+    "locked_at": "2026-10-27T01:18+00:00"
+  },
+  "305-ORCL|ORCL|2026-10-20 04:22": {
+    "price": 128.68,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-20 04:22",
+    "locked_pct": -1.9195,
+    "locked_price": 126.21,
+    "locked_at": "2026-10-27T03:22+00:00"
+  },
+  "305-NVDA|NVDA|2026-10-20 04:22": {
+    "price": 216.55,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-20 04:22",
+    "locked_pct": -0.7158,
+    "locked_price": 215.0,
+    "locked_at": "2026-10-27T03:22+00:00"
+  },
+  "305-BTC|BTC|2026-10-20 04:22": {
+    "price": 81894.7,
+    "source": "OKX",
+    "at": "2026-10-20 04:22",
+    "locked_pct": -2.6115,
+    "locked_price": 79756.0,
+    "locked_at": "2026-10-27T03:22+00:00"
+  },
+  "307-DXY|DXY|2026-10-20 06:19": {
+    "price": 101.77,
+    "source": "CNBC 1m",
+    "at": "2026-10-20 06:19",
+    "locked_pct": 0.3017,
+    "locked_price": 102.077,
+    "locked_at": "2026-10-27T05:19+00:00"
+  },
+  "307-SILVER|SILVER|2026-10-20 06:19": {
+    "price": 57.385,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-20 06:19",
+    "locked_pct": -6.9356,
+    "locked_price": 53.405,
+    "locked_at": "2026-10-27T05:19+00:00"
+  },
+  "307-TSLA|TSLA|2026-10-20 06:19": {
+    "price": 367.63,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-20 06:19",
+    "locked_pct": 6.2617,
+    "locked_price": 390.65,
+    "locked_at": "2026-10-27T05:19+00:00"
+  },
+  "307-SPX|SPX|2026-10-20 06:19": {
+    "price": 7679.01,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-20 06:19",
+    "locked_pct": 0.2664,
+    "locked_price": 7699.47,
+    "locked_at": "2026-10-27T05:19+00:00"
+  },
+  "311-GBPUSD|GBPUSD|2026-10-20 08:17": {
+    "price": 1.3351,
+    "source": "CNBC 1m",
+    "at": "2026-10-20 08:17",
+    "locked_pct": -0.2322,
+    "locked_price": 1.332,
+    "locked_at": "2026-10-27T07:17+00:00"
+  },
+  "311-EURUSD|EURUSD|2026-10-20 08:17": {
+    "price": 1.1231,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-20 08:17",
+    "locked_pct": -0.6589,
+    "locked_price": 1.1157,
+    "locked_at": "2026-10-27T07:17+00:00"
+  },
+  "311-USDCAD|USDCAD|2026-10-20 08:17": {
+    "price": 1.4073,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-20 08:17",
+    "locked_pct": -0.3695,
+    "locked_price": 1.4021,
+    "locked_at": "2026-10-27T07:17+00:00"
+  },
+  "311-BTC|BTC|2026-10-20 08:17": {
+    "price": 81689.1,
+    "source": "OKX",
+    "at": "2026-10-20 08:17",
+    "locked_pct": -2.5121,
+    "locked_price": 79637.0,
+    "locked_at": "2026-10-27T07:17+00:00"
+  },
+  "314-NVDA|NVDA|2026-10-20 10:20": {
+    "price": 216.16,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-20 10:20",
+    "locked_pct": 0.0,
+    "locked_price": 216.16,
+    "locked_at": "2026-10-27T09:20+00:00"
+  },
+  "314-WTI|WTI|2026-10-20 10:20": {
+    "price": 100.36,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-20 10:20",
+    "locked_pct": 1.7039,
+    "locked_price": 102.07,
+    "locked_at": "2026-10-27T09:20+00:00"
+  },
+  "314-TSLA|TSLA|2026-10-20 10:20": {
+    "price": 367.36,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-20 10:20",
+    "locked_pct": 7.6029,
+    "locked_price": 395.29,
+    "locked_at": "2026-10-27T09:20+00:00"
+  },
+  "314-SPY|SPY|2026-10-20 10:20": {
+    "price": 766.11,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-20 10:20",
+    "locked_pct": 0.0078,
+    "locked_price": 766.17,
+    "locked_at": "2026-10-27T09:20+00:00"
+  },
+  "314-EURUSD|EURUSD|2026-10-20 10:20": {
+    "price": 1.1214,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-20 10:20",
+    "locked_pct": -0.6599,
+    "locked_price": 1.114,
+    "locked_at": "2026-10-27T09:20+00:00"
+  },
+  "315-SPX|SPX|2026-10-20 12:18": {
+    "price": 7679.01,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-20 12:18",
+    "locked_pct": 0.2664,
+    "locked_price": 7699.47,
+    "locked_at": "2026-10-27T11:18+00:00"
+  },
+  "315-NDX|NDX|2026-10-20 12:18": {
+    "price": 29393.964,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-20 12:18",
+    "locked_pct": 0.045,
+    "locked_price": 29407.189,
+    "locked_at": "2026-10-27T11:18+00:00"
+  },
+  "315-GM|GM|2026-10-20 12:18": {
+    "price": 78.7241,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-20 12:18",
+    "locked_pct": -0.7573,
+    "locked_price": 78.1279,
+    "locked_at": "2026-10-27T11:18+00:00"
+  },
+  "315-RTX|RTX|2026-10-20 12:18": {
+    "price": 194.72,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-20 12:18",
+    "locked_pct": 1.6845,
+    "locked_price": 198.0,
+    "locked_at": "2026-10-27T11:18+00:00"
+  },
+  "315-USDCAD|USDCAD|2026-10-20 12:18": {
+    "price": 1.4048,
+    "source": "CNBC 1m",
+    "at": "2026-10-20 12:18",
+    "locked_pct": -0.2278,
+    "locked_price": 1.4016,
+    "locked_at": "2026-10-27T11:18+00:00"
+  },
+  "315-WTI|WTI|2026-10-20 12:18": {
+    "price": 100.57,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-20 12:18",
+    "locked_pct": 0.2188,
+    "locked_price": 100.79,
+    "locked_at": "2026-10-27T11:18+00:00"
+  },
+  "317-WTI|WTI|2026-10-20 14:18": {
+    "price": 99.68,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-20 14:18",
+    "locked_pct": 1.4647,
+    "locked_price": 101.14,
+    "locked_at": "2026-10-27T13:18+00:00"
+  },
+  "317-XAUUSD|XAUUSD|2026-10-20 14:18": {
+    "price": 4138.6,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-20 14:18",
+    "locked_pct": -2.3969,
+    "locked_price": 4039.4,
+    "locked_at": "2026-10-27T13:18+00:00"
+  },
+  "317-SPX|SPX|2026-10-20 14:18": {
+    "price": 7679.01,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-20 14:18",
+    "locked_pct": 0.2664,
+    "locked_price": 7699.47,
+    "locked_at": "2026-10-27T13:18+00:00"
+  },
+  "317-EURUSD|EURUSD|2026-10-20 14:18": {
+    "price": 1.1224,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-20 14:18",
+    "locked_pct": -0.6949,
+    "locked_price": 1.1146,
+    "locked_at": "2026-10-27T13:18+00:00"
+  },
+  "333-NVDA|NVDA|2026-10-20 16:22": {
+    "price": 216.6553,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-20 16:22",
+    "locked_pct": 0.4822,
+    "locked_price": 217.7,
+    "locked_at": "2026-10-27T15:22+00:00"
+  },
+  "333-SPY|SPY|2026-10-20 16:22": {
+    "price": 769.37,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-20 16:22",
+    "locked_pct": 0.0208,
+    "locked_price": 769.53,
+    "locked_at": "2026-10-27T15:22+00:00"
+  },
+  "333-TSLA|TSLA|2026-10-20 16:22": {
+    "price": 374.8202,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-20 16:22",
+    "locked_pct": 8.2879,
+    "locked_price": 405.885,
+    "locked_at": "2026-10-27T15:22+00:00"
+  },
+  "333-SPCX|SPCX|2026-10-20 16:22": {
+    "price": 147.315,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-20 16:22",
+    "locked_pct": 1.5918,
+    "locked_price": 149.66,
+    "locked_at": "2026-10-27T15:22+00:00"
+  },
+  "333-WTI|WTI|2026-10-20 16:22": {
+    "price": 97.45,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-20 16:22",
+    "locked_pct": 2.7501,
+    "locked_price": 100.13,
+    "locked_at": "2026-10-27T15:22+00:00"
+  },
+  "342-WTI|WTI|2026-10-20 18:22": {
+    "price": 97.94,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-20 18:22",
+    "locked_pct": 2.1646,
+    "locked_price": 100.06,
+    "locked_at": "2026-10-27T17:22+00:00"
+  },
+  "342-TSLA|TSLA|2026-10-20 18:22": {
+    "price": 374.52,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-20 18:22",
+    "locked_pct": 8.3961,
+    "locked_price": 405.965,
+    "locked_at": "2026-10-27T17:22+00:00"
+  },
+  "342-SPY|SPY|2026-10-20 18:22": {
+    "price": 769.3833,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-20 18:22",
+    "locked_pct": 0.0067,
+    "locked_price": 769.435,
+    "locked_at": "2026-10-27T17:22+00:00"
+  },
+  "342-GOOG|GOOG|2026-10-20 18:22": {
+    "price": 337.695,
+    "source": "CNBC 1m",
+    "at": "2026-10-20 18:22",
+    "locked_pct": -6.0365,
+    "locked_price": 317.31,
+    "locked_at": "2026-10-27T17:22+00:00"
+  },
+  "342-MRNA|MRNA|2026-10-20 18:22": {
+    "price": 240.56,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-20 18:22",
+    "locked_pct": -17.1101,
+    "locked_price": 199.4,
+    "locked_at": "2026-10-27T17:22+00:00"
+  },
+  "352-TSLA|TSLA|2026-10-20 20:14": {
+    "price": 375.32,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-20 20:14",
+    "locked_pct": 8.6806,
+    "locked_price": 407.9,
+    "locked_at": "2026-10-27T19:14+00:00"
+  },
+  "352-META|META|2026-10-20 20:14": {
+    "price": 689.39,
+    "source": "CNBC 1m",
+    "at": "2026-10-20 20:14",
+    "locked_pct": -9.5142,
+    "locked_price": 623.8,
+    "locked_at": "2026-10-27T19:14+00:00"
+  },
+  "352-AAPL|AAPL|2026-10-20 20:14": {
+    "price": 339.19,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-20 20:14",
+    "locked_pct": 2.2996,
+    "locked_price": 346.99,
+    "locked_at": "2026-10-27T19:14+00:00"
+  },
+  "352-SPY|SPY|2026-10-20 20:14": {
+    "price": 768.59,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-20 20:14",
+    "locked_pct": 0.2017,
+    "locked_price": 770.14,
+    "locked_at": "2026-10-27T19:14+00:00"
+  },
+  "352-WTI|WTI|2026-10-20 20:14": {
+    "price": 98.14,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-20 20:14",
+    "locked_pct": 1.4469,
+    "locked_price": 99.56,
+    "locked_at": "2026-10-27T19:14+00:00"
+  },
+  "352-BRENT|BRENT|2026-10-20 20:14": {
+    "price": 109.14,
+    "source": "CNBC 1m",
+    "at": "2026-10-20 20:14",
+    "locked_pct": 4.1231,
+    "locked_price": 113.64,
+    "locked_at": "2026-10-27T19:14+00:00"
+  },
+  "357-TSLA|TSLA|2026-10-20 22:17": {
+    "price": 374.5807,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-20 22:17",
+    "locked_pct": 4.5489,
+    "locked_price": 391.62,
+    "locked_at": "2026-10-27T21:17+00:00"
+  },
+  "357-NVDA|NVDA|2026-10-20 22:17": {
+    "price": 221.07,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-20 22:17",
+    "locked_pct": -2.2934,
+    "locked_price": 216.0,
+    "locked_at": "2026-10-27T21:17+00:00"
+  },
+  "357-PLTR|PLTR|2026-10-20 22:17": {
+    "price": 193.0465,
+    "source": "CNBC 1m",
+    "at": "2026-10-20 22:17",
+    "locked_pct": 3.0011,
+    "locked_price": 198.84,
+    "locked_at": "2026-10-27T21:17+00:00"
+  },
+  "357-SPCX|SPCX|2026-10-20 22:17": {
+    "price": 155.14,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-20 22:17",
+    "locked_pct": -4.615,
+    "locked_price": 147.9803,
+    "locked_at": "2026-10-27T21:17+00:00"
+  },
+  "357-NFLX|NFLX|2026-10-20 22:17": {
+    "price": 64.7914,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-20 22:17",
+    "locked_pct": -1.3758,
+    "locked_price": 63.9,
+    "locked_at": "2026-10-27T21:17+00:00"
+  },
+  "357-SMCI|SMCI|2026-10-20 22:17": {
+    "price": 36.51,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-20 22:17",
+    "locked_pct": -10.4629,
+    "locked_price": 32.69,
+    "locked_at": "2026-10-27T21:17+00:00"
+  },
+  "357-SPY|SPY|2026-10-20 22:17": {
+    "price": 771.29,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-20 22:17",
+    "locked_pct": -0.7675,
+    "locked_price": 765.37,
+    "locked_at": "2026-10-27T21:17+00:00"
+  },
+  "357-WTI|WTI|2026-10-20 22:17": {
+    "price": 98.18,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-20 22:17",
+    "locked_pct": 3.6464,
+    "locked_price": 101.76,
+    "locked_at": "2026-10-27T21:17+00:00"
+  },
+  "358-SPCX|SPCX|2026-10-21 00:20": {
+    "price": 157.979,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-21 00:20"
+  },
+  "358-TSLA|TSLA|2026-10-21 00:20": {
+    "price": 378.75,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-21 00:20"
+  },
+  "358-WTI|WTI|2026-10-21 00:20": {
+    "price": 98.31,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-21 00:20"
+  },
+  "358-SPY|SPY|2026-10-21 00:20": {
+    "price": 770.45,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-21 00:20"
+  },
+  "362-TSLA|TSLA|2026-10-21 02:18": {
+    "price": 379.7,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-21 02:18"
+  },
+  "362-META|META|2026-10-21 02:18": {
+    "price": 700.1,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-21 02:18"
+  },
+  "362-NVDA|NVDA|2026-10-21 02:18": {
+    "price": 220.77,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-21 02:18"
+  },
+  "362-SPY|SPY|2026-10-21 02:18": {
+    "price": 770.77,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-21 02:18"
+  },
+  "362-WTI|WTI|2026-10-21 02:18": {
+    "price": 98.98,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-21 02:18"
+  },
+  "362-BRENT|BRENT|2026-10-21 02:18": {
+    "price": 110.14,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-21 02:18"
+  },
+  "363-SPCX|SPCX|2026-10-21 04:22": {
+    "price": 161.0,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-21 04:22"
+  },
+  "363-TSLA|TSLA|2026-10-21 04:22": {
+    "price": 379.7,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-21 04:22"
+  },
+  "363-WTI|WTI|2026-10-21 04:22": {
+    "price": 99.16,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-21 04:22"
+  },
+  "363-SPY|SPY|2026-10-21 04:22": {
+    "price": 770.77,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-21 04:22"
+  },
+  "366-SPCX|SPCX|2026-10-21 06:24": {
+    "price": 161.0,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-21 06:24"
+  },
+  "366-SPY|SPY|2026-10-21 06:24": {
+    "price": 770.77,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-21 06:24"
+  },
+  "369-GBPUSD|GBPUSD|2026-10-21 08:20": {
+    "price": 1.3376,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-21 08:20"
+  },
+  "369-UK100|UK100|2026-10-21 08:20": {
+    "price": 10714.6,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-21 08:20"
+  },
+  "369-SPCX|SPCX|2026-10-21 08:20": {
+    "price": 161.0,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-21 08:20"
+  },
+  "372-SPY|SPY|2026-10-21 10:18": {
+    "price": 769.65,
+    "source": "CNBC 1m",
+    "at": "2026-10-21 10:18"
+  },
+  "372-WTI|WTI|2026-10-21 10:18": {
+    "price": 99.12,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-21 10:18"
+  },
+  "377-SPCX|SPCX|2026-10-21 12:20": {
+    "price": 158.18,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-21 12:20"
+  },
+  "377-TSLA|TSLA|2026-10-21 12:20": {
+    "price": 378.82,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-21 12:20"
+  },
+  "377-BRENT|BRENT|2026-10-21 12:20": {
+    "price": 109.89,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-21 12:20"
+  },
+  "377-SPY|SPY|2026-10-21 12:20": {
+    "price": 770.78,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-21 12:20"
+  },
+  "379-GOOGL|GOOGL|2026-10-21 14:18": {
+    "price": 336.66,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-21 14:18"
+  },
+  "379-MSFT|MSFT|2026-10-21 14:18": {
+    "price": 530.61,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-21 14:18"
+  },
+  "379-COIN|COIN|2026-10-21 14:18": {
+    "price": 174.69,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-21 14:18"
+  },
+  "398-GOOGL|GOOGL|2026-10-21 16:24": {
+    "price": 332.5,
+    "source": "CNBC 1m",
+    "at": "2026-10-21 16:24"
+  },
+  "398-AMZN|AMZN|2026-10-21 16:24": {
+    "price": 262.0777,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-21 16:24"
+  },
+  "398-AAPL|AAPL|2026-10-21 16:24": {
+    "price": 344.64,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-21 16:24"
+  },
+  "398-TSLA|TSLA|2026-10-21 16:24": {
+    "price": 386.55,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-21 16:24"
+  },
+  "398-WTI|WTI|2026-10-21 16:24": {
+    "price": 97.49,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-21 16:24"
+  },
+  "398-SPY|SPY|2026-10-21 16:24": {
+    "price": 771.72,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-21 16:24"
+  },
+  "408-TSLA|TSLA|2026-10-21 18:20": {
+    "price": 387.4,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-21 18:20"
+  },
+  "408-NVDA|NVDA|2026-10-21 18:20": {
+    "price": 221.74,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-21 18:20"
+  },
+  "408-AAPL|AAPL|2026-10-21 18:20": {
+    "price": 344.625,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-21 18:20"
+  },
+  "408-AMZN|AMZN|2026-10-21 18:20": {
+    "price": 263.835,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-21 18:20"
+  },
+  "408-GOOGL|GOOGL|2026-10-21 18:20": {
+    "price": 334.42,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-21 18:20"
+  },
+  "408-SPY|SPY|2026-10-21 18:20": {
+    "price": 774.12,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-21 18:20"
+  },
+  "418-BRENT|BRENT|2026-10-21 20:21": {
+    "price": 109.97,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-21 20:21"
+  },
+  "418-WTI|WTI|2026-10-21 20:21": {
+    "price": 98.01,
+    "source": "CNBC 1m",
+    "at": "2026-10-21 20:21"
+  },
+  "418-GOLD|GOLD|2026-10-21 20:21": {
+    "price": 4135.8,
+    "source": "CNBC 1m",
+    "at": "2026-10-21 20:21"
+  },
+  "420-WTI|WTI|2026-10-21 22:00": {
+    "price": 97.71,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-21 22:00"
+  },
+  "420-GOLD|GOLD|2026-10-21 22:00": {
+    "price": 4159.5,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-21 22:00"
+  },
+  "421-TSLA|TSLA|2026-10-21 22:20": {
+    "price": 384.12,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-21 22:20"
+  },
+  "421-META|META|2026-10-21 22:20": {
+    "price": 722.66,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-21 22:20"
+  },
+  "421-SPY|SPY|2026-10-21 22:20": {
+    "price": 772.9608,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-21 22:20"
+  },
+  "423-META|META|2026-10-22 00:18": {
+    "price": 713.55,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-22 00:18"
+  },
+  "423-BRENT|BRENT|2026-10-22 00:18": {
+    "price": 110.04,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-22 00:18"
+  },
+  "423-WTI|WTI|2026-10-22 00:18": {
+    "price": 97.91,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-22 00:18"
+  },
+  "423-GOLD|GOLD|2026-10-22 00:18": {
+    "price": 4144.4,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-22 00:18"
+  },
+  "424-TSLA|TSLA|2026-10-22 02:21": {
+    "price": 367.0,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-22 02:21"
+  },
+  "424-SPY|SPY|2026-10-22 02:21": {
+    "price": 766.0,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-22 02:21"
+  },
+  "424-BRENT|BRENT|2026-10-22 02:21": {
+    "price": 110.09,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-22 02:21"
+  },
+  "424-WTI|WTI|2026-10-22 02:21": {
+    "price": 98.05,
+    "source": "CNBC 1m",
+    "at": "2026-10-22 02:21"
+  },
+  "425-BRENT|BRENT|2026-10-22 04:14": {
+    "price": 110.55,
+    "source": "CNBC 1m",
+    "at": "2026-10-22 04:14"
+  },
+  "425-WTI|WTI|2026-10-22 04:14": {
+    "price": 98.42,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-22 04:14"
+  },
+  "425-QQQ|QQQ|2026-10-22 04:14": {
+    "price": 713.28,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-22 04:14"
+  },
+  "425-KOSPI|KOSPI|2026-10-22 04:14": {
+    "price": 5606.87,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-22 04:14"
+  },
+  "428-BRENT|BRENT|2026-10-22 06:22": {
+    "price": 111.16,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-22 06:22"
+  },
+  "428-WTI|WTI|2026-10-22 06:22": {
+    "price": 98.96,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-22 06:22"
+  },
+  "428-GOLD|GOLD|2026-10-22 06:22": {
+    "price": 4102.8,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-22 06:22"
+  },
+  "428-META|META|2026-10-22 06:22": {
+    "price": 703.0,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-22 06:22"
+  },
+  "429-BRENT|BRENT|2026-10-22 08:20": {
+    "price": 111.58,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-22 08:20"
+  },
+  "429-WTI|WTI|2026-10-22 08:20": {
+    "price": 99.66,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-22 08:20"
+  },
+  "436-BRENT|BRENT|2026-10-22 10:18": {
+    "price": 111.9,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-22 10:18"
+  },
+  "436-WTI|WTI|2026-10-22 10:18": {
+    "price": 99.24,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-22 10:18"
+  },
+  "436-GOLD|GOLD|2026-10-22 10:18": {
+    "price": 4100.4,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-22 10:18"
+  },
+  "436-BTC|BTC|2026-10-22 10:18": {
+    "price": 81907.4,
+    "source": "OKX",
+    "at": "2026-10-22 10:18"
+  },
+  "436-ETH|ETH|2026-10-22 10:18": {
+    "price": 2406.53,
+    "source": "OKX",
+    "at": "2026-10-22 10:18"
+  },
+  "438-SPCX|SPCX|2026-10-22 12:20": {
+    "price": 155.69,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-22 12:20"
+  },
+  "438-BRENT|BRENT|2026-10-22 12:20": {
+    "price": 111.84,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-22 12:20"
+  },
+  "438-NVDA|NVDA|2026-10-22 12:20": {
+    "price": 217.2298,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-22 12:20"
+  },
+  "440-TSLA|TSLA|2026-10-22 14:17": {
+    "price": 371.19,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-22 14:17"
+  },
+  "440-SPCX|SPCX|2026-10-22 14:17": {
+    "price": 154.27,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-22 14:17"
+  },
+  "440-GOLD|GOLD|2026-10-22 14:17": {
+    "price": 4092.6,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-22 14:17"
+  },
+  "440-BRENT|BRENT|2026-10-22 14:17": {
+    "price": 112.24,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-22 14:17"
+  },
+  "447-SPY|SPY|2026-10-22 16:12": {
+    "price": 762.84,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-22 16:12"
+  },
+  "447-QQQ|QQQ|2026-10-22 16:12": {
+    "price": 707.29,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-22 16:12"
+  },
+  "447-META|META|2026-10-22 16:12": {
+    "price": 655.01,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-22 16:12"
+  },
+  "447-PLTR|PLTR|2026-10-22 16:12": {
+    "price": 198.565,
+    "source": "CNBC 1m",
+    "at": "2026-10-22 16:12"
+  },
+  "447-SILVER|SILVER|2026-10-22 16:12": {
+    "price": 55.245,
+    "source": "CNBC 1m",
+    "at": "2026-10-22 16:12"
+  },
+  "453-TSLA|TSLA|2026-10-22 18:22": {
+    "price": 379.11,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-22 18:22"
+  },
+  "453-NVDA|NVDA|2026-10-22 18:22": {
+    "price": 213.3099,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-22 18:22"
+  },
+  "453-AAPL|AAPL|2026-10-22 18:22": {
+    "price": 345.94,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-22 18:22"
+  },
+  "453-GOOGL|GOOGL|2026-10-22 18:22": {
+    "price": 326.88,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-22 18:22"
+  },
+  "453-SPY|SPY|2026-10-22 18:22": {
+    "price": 763.39,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-22 18:22"
+  },
+  "453-QQQ|QQQ|2026-10-22 18:22": {
+    "price": 706.4,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-22 18:22"
+  },
+  "458-SPY|SPY|2026-10-22 20:15": {
+    "price": 762.26,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-22 20:15"
+  },
+  "458-TSLA|TSLA|2026-10-22 20:15": {
+    "price": 377.02,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-22 20:15"
+  },
+  "458-SPCX|SPCX|2026-10-22 20:15": {
+    "price": 144.82,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-22 20:15"
+  },
+  "458-PLTR|PLTR|2026-10-22 20:15": {
+    "price": 195.96,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-22 20:15"
+  },
+  "458-GOOGL|GOOGL|2026-10-22 20:15": {
+    "price": 323.08,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-22 20:15"
+  },
+  "462-SPY|SPY|2026-10-22 22:14": {
+    "price": 764.02,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-22 22:14"
+  },
+  "462-NVDA|NVDA|2026-10-22 22:14": {
+    "price": 212.7908,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-22 22:14"
+  },
+  "462-AAPL|AAPL|2026-10-22 22:14": {
+    "price": 347.8667,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-22 22:14"
+  },
+  "462-AMZN|AMZN|2026-10-22 22:14": {
+    "price": 250.8381,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-22 22:14"
+  },
+  "462-MSFT|MSFT|2026-10-22 22:14": {
+    "price": 520.4,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-22 22:14"
+  },
+  "462-META|META|2026-10-22 22:14": {
+    "price": 646.2,
+    "source": "CNBC 1m",
+    "at": "2026-10-22 22:14"
+  },
+  "464-AAPL|AAPL|2026-10-23 00:17": {
+    "price": 348.35,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-23 00:17"
+  },
+  "464-TSLA|TSLA|2026-10-23 00:17": {
+    "price": 373.1649,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-23 00:17"
+  },
+  "464-SPCX|SPCX|2026-10-23 00:17": {
+    "price": 147.15,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-23 00:17"
+  },
+  "468-SPY|SPY|2026-10-23 02:15": {
+    "price": 764.7,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-23 02:15"
+  },
+  "468-TSLA|TSLA|2026-10-23 02:15": {
+    "price": 376.45,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-23 02:15"
+  },
+  "468-NVDA|NVDA|2026-10-23 02:15": {
+    "price": 213.36,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-23 02:15"
+  },
+  "468-SPCX|SPCX|2026-10-23 02:15": {
+    "price": 147.21,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-23 02:15"
+  },
+  "471-DGX|DGX|2026-10-23 04:17": {
+    "price": 239.63,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-23 04:17"
+  },
+  "471-TSLA|TSLA|2026-10-23 04:17": {
+    "price": 376.45,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-23 04:17"
+  },
+  "471-SPCX|SPCX|2026-10-23 04:17": {
+    "price": 147.21,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-23 04:17"
+  },
+  "482-OIL|OIL|2026-10-23 10:17": {
+    "price": 100.71,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-23 10:17"
+  },
+  "482-GOLD|GOLD|2026-10-23 10:17": {
+    "price": 4044.1,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-23 10:17"
+  },
+  "483-GOOGL|GOOGL|2026-10-23 12:14": {
+    "price": 323.6,
+    "source": "CNBC 1m",
+    "at": "2026-10-23 12:14"
+  },
+  "483-NVDA|NVDA|2026-10-23 12:14": {
+    "price": 212.93,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-23 12:14"
+  },
+  "483-AXP|AXP|2026-10-23 12:14": {
+    "price": 321.25,
+    "source": "CNBC 1m",
+    "at": "2026-10-23 12:14"
+  },
+  "483-DXY|DXY|2026-10-23 12:14": {
+    "price": 101.771,
+    "source": "CNBC 1m",
+    "at": "2026-10-23 12:14"
+  },
+  "485|USELESS|2026-10-23 13:06": {
+    "price": null,
+    "source": "unavailable",
+    "error": "cnbc: cnbc: no bars for USELESS; yahoo: yahoo cooling down after 429 (76s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
+    "at": "2026-10-23 13:06"
+  },
+  "487-OIL|OIL|2026-10-23 14:22": {
+    "price": 101.64,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-23 14:22"
+  },
+  "487-DXY|DXY|2026-10-23 14:22": {
+    "price": 101.705,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-23 14:22"
+  },
+  "487-AXP|AXP|2026-10-23 14:22": {
+    "price": 320.12,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-23 14:22"
+  },
+  "492-PLTR|PLTR|2026-10-23 16:24": {
+    "price": 196.84,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-23 16:24"
+  },
+  "492-TSLA|TSLA|2026-10-23 16:24": {
+    "price": 376.1601,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-23 16:24"
+  },
+  "492-GOLD|GOLD|2026-10-23 16:24": {
+    "price": 4012.4,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-23 16:24"
+  },
+  "498-GOLD|GOLD|2026-10-23 18:22": {
+    "price": 4006.8,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-23 18:22"
+  },
+  "498-OIL|OIL|2026-10-23 18:22": {
+    "price": 103.02,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-23 18:22"
+  },
+  "498-SPX|SPX|2026-10-23 18:22": {
+    "price": 7631.86,
+    "source": "CNBC 1m",
+    "at": "2026-10-23 18:22"
+  },
+  "507-GOLD|GOLD|2026-10-23 22:20": {
+    "price": 4010.0,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-23 22:20"
+  },
+  "507-OIL|OIL|2026-10-23 22:20": {
+    "price": 103.44,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-23 22:20"
+  },
+  "507-SPX|SPX|2026-10-23 22:20": {
+    "price": 7623.68,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-23 22:20"
   }
 }

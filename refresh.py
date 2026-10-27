@@ -28,7 +28,7 @@ def is_label(asset): return "/" in asset and " " in asset.strip()
 # Label words -> priceable tickers (multi-asset labels like "S&P 500/OIL" are split and the first priceable part is used)
 LABEL_TICKER = {"S&P 500":"SPY","S&P":"SPY","SP500":"SPY","SPX":"SPX","US500":"SPY","NASDAQ":"QQQ","NASDAQ 100":"QQQ","US TECH 100":"QQQ","NAS100":"QQQ","NDX":"NDX",
     "OIL":"OIL","WTI":"WTI","WTI OIL":"WTI","CRUDE":"OIL","BRENT":"BRENT","GOLD":"GOLD","XAU":"XAU","XAUUSD":"XAUUSD","SILVER":"SILVER","XAGUSD":"XAGUSD",
-    "KOSPI":"KOSPI","SKHYNIX":"SKHYNIX","SPACEX":"SPCX","SPCX":"SPCX","UK100":"UK100","FTSE":"UK100","CAD":"USDCAD","USD/CAD":"USDCAD","GBP":"GBPUSD","EUR":"EURUSD","USD":"DXY","DXY":"DXY"}
+    "KOSPI":"KOSPI","SKHYNIX":"SKHYNIX","SPACEX":"SPCX","SPCX":"SPCX","UK100":"UK100","FTSE":"UK100","ES":"ES","ES_F":"ES","ES1!":"ES","US 500":"SPX","US500 INDEX":"SPX","CAD":"USDCAD","USD/CAD":"USDCAD","GBP":"GBPUSD","EUR":"EURUSD","USD":"DXY","DXY":"DXY"}
 LABEL_SKIP = {"FED","FOMC","RATES","CPI","SEMIS","MACRO","US HOUSING","STARLINK","OPENAI","IRAN","SAUDI","CHINA","PELOSI"}
 def label_parts(asset):
     a = re.sub(r"\(.*?\)", "", asset.upper()).strip()
@@ -37,6 +37,9 @@ def label_ticker(asset):
     """First priceable ticker for a label/multi-asset asset, or None."""
     a = asset.upper().strip()
     if a in LABEL_TICKER and LABEL_TICKER[a] != a: return LABEL_TICKER[a]
+    if re.match(r"(US ?500|S&P ?500|SPX)\b.*\(.*\bES\b", a): return "ES"  # "US 500 (ES futures levels)": levels are ES futures -> ES=F
+    b = re.sub(r"\(.*?\)", "", a).strip()
+    if b != a and b in LABEL_TICKER and LABEL_TICKER[b] != b and "/" not in a: return LABEL_TICKER[b]  # "US 500 (T212 CFD)" -> SPX
     m = re.search(r"\(([A-Z]{3})/([A-Z]{3})\)", a)
     if m: return LABEL_TICKER.get(f"{m.group(1)}/{m.group(2)}") or None
     parts = label_parts(asset)
@@ -46,8 +49,37 @@ def label_ticker(asset):
         if p in LABEL_TICKER: return LABEL_TICKER[p]
         if re.fullmatch(r"[A-Z]{1,5}", p): return p
     return None
+SPLIT_SKIP = {"AI","FX","JPY","RUB","SEMIS","BONDS"}  # theme/currency words that are not tickers
+def split_tickers(r):
+    """Multi-ticker label (e.g. "AAPL/TSLA/SPCX") -> list of priceable tickers, one derived call each. [] if not a multi-ticker call."""
+    asset = r.get("asset") or ""; a = asset.upper().strip()
+    if not re.search(r"[/,]| and ", re.sub(r"\(.*?\)", "", asset), re.I) or a in ALIAS or r.get("ratio_call"): return []
+    out = []
+    for p in label_parts(asset):
+        if p in LABEL_SKIP or p in NONPRICE or p in SPLIT_SKIP: continue
+        t = LABEL_TICKER.get(p) or LABEL_TICKER.get(re.sub(r"\s+OIL$", "", p)) or (p if re.fullmatch(r"[A-Z]{1,5}(?:[.-][A-Z]{1,2})?", p) or p in YAHOO_MAP else None)
+        if t and YAHOO_MAP.get(t, t) not in {YAHOO_MAP.get(x, x) for x in out}: out.append(t)  # Oil/WTI, Gold/XAU = one instrument
+    return out if len(out) >= 2 else []
+def add_splits(rows):
+    """Append one derived call per ticker for multi-ticker rows. The CSV row stays (split_into=[ids]) but is not scored itself.
+    First ticker keeps the row's levels/status (what the call was scored on before); the others have no levels, so they are
+    scored like any no-entry call: % move since the post (baseline at post time, locked at 7 days)."""
+    out = []
+    for r in rows:
+        out.append(r); ts = split_tickers(r)
+        if not ts: continue
+        r["split_into"] = []
+        for i, t in enumerate(ts):
+            d = dict(r); d.pop("split_into", None)
+            d.update({"id": f'{r["id"]}-{t}', "asset": t, "split_of": r["id"], "split_label": r["asset"]})
+            if i:
+                d.update({"entry": "", "stop": "", "target": "", "resolved_at": ""})
+                if d.get("status") in ("hit_target", "stopped", "expired", "unclear"): d["status"] = "open"
+                d.pop("exit_price", None); d.pop("exit_pct", None); d["conditional"] = False; d["entry_filled"] = None; d["waiting_for_entry"] = False
+            r["split_into"].append(d["id"]); out.append(d)
+    rows[:] = out
 KRAKEN = {"XMR":"XMRUSD"}  # Binance XMR pair is delisted/stale
-CNBC_MAP = {"NATGAS":"@NG.1","NG":"@NG.1","GOLD":"@GC.1","XAU":"@GC.1","XAUUSD":"@GC.1","XAGUSD":"@SI.1","SILVER":"@SI.1","OIL":"@CL.1","WTI":"@CL.1","BRENT":"@LCO.1","SPX":".SPX","NDX":".NDX",
+CNBC_MAP = {"NATGAS":"@NG.1","NG":"@NG.1","GOLD":"@GC.1","XAU":"@GC.1","XAUUSD":"@GC.1","XAGUSD":"@SI.1","SILVER":"@SI.1","OIL":"@CL.1","WTI":"@CL.1","BRENT":"@LCO.1","SPX":".SPX","NDX":".NDX","ES":"@SP.1",
     "VIX":".VIX","EURJPY":"EURJPY=","KOSPI":".KS11","NYSE COMPOSITE":".NYA","NYA":".NYA","NYSE":".NYA"}
 CNBC_CCY = {"EURJPY=":"JPY",".KS11":"KRW"}
 def _cnbc(a):
@@ -60,7 +92,7 @@ def _cnbc(a):
     try: ch = float(str(q.get("change_pct", "")).replace("%", "").replace("+", ""))
     except ValueError: ch = None
     return {"price": p, "change_pct": ch, "symbol": sym, "currency": CNBC_CCY.get(sym) or q.get("currencyCode") or "USD", "source": "CNBC", "as_of": now()}
-YAHOO_MAP = {"KOSPI":"^KS11","SKHYNIX":"000660.KS","UK100":"^FTSE","USDCAD":"CAD=X","GBPUSD":"GBPUSD=X","EURUSD":"EURUSD=X","DXY":"DX-Y.NYB","NATGAS":"NG=F","NG":"NG=F","GOLD":"GC=F","XAU":"GC=F","XAUUSD":"GC=F","XAGUSD":"SI=F","SILVER":"SI=F","OIL":"CL=F","WTI":"CL=F","BRENT":"BZ=F","SPX":"^GSPC","NDX":"^NDX"}
+YAHOO_MAP = {"KOSPI":"^KS11","SKHYNIX":"000660.KS","UK100":"^FTSE","USDCAD":"CAD=X","GBPUSD":"GBPUSD=X","EURUSD":"EURUSD=X","DXY":"DX-Y.NYB","NATGAS":"NG=F","NG":"NG=F","GOLD":"GC=F","XAU":"GC=F","XAUUSD":"GC=F","XAGUSD":"SI=F","SILVER":"SI=F","OIL":"CL=F","WTI":"CL=F","BRENT":"BZ=F","SPX":"^GSPC","ES":"ES=F","NDX":"^NDX"}
 now = lambda: datetime.datetime.now().astimezone().isoformat(timespec="seconds")
 def log(m): print(f"[{now()}] {m}", flush=True)
 def write_json(path, obj):
@@ -125,7 +157,7 @@ def ychart(sym, qs):
             elif "404" in str(e): break
     raise err
 # ---- Stooq (no key, CSV). Fallback for stocks/indices when Yahoo 429s. File cache + per-run circuit breaker. ----
-STOOQ_MAP = {"VIX": "^vix", "SPX": "^spx", "SPY": "spy.us", "NDX": "^ndx", "DJI": "^dji", "DJIA": "^dji", "UK100": "^ukx", "FTSE": "^ukx",
+STOOQ_MAP = {"VIX": "^vix", "SPX": "^spx", "ES": "es.f", "SPY": "spy.us", "NDX": "^ndx", "DJI": "^dji", "DJIA": "^dji", "UK100": "^ukx", "FTSE": "^ukx",
     "DAX": "^dax", "NIKKEI": "^nkx", "KOSPI": "^kospi", "HSI": "^hsi", "DXY": "dx.f", "GOLD": "xauusd", "XAU": "xauusd", "XAUUSD": "xauusd",
     "XAGUSD": "xagusd", "SILVER": "xagusd", "EURUSD": "eurusd", "GBPUSD": "gbpusd", "USDCAD": "usdcad", "OIL": "cl.f", "WTI": "cl.f",
     "BRENT": "cb.f", "NATGAS": "ng.f", "NG": "ng.f", "NYSE COMPOSITE": "^nya", "BESI": "besi.nl"}
@@ -622,7 +654,7 @@ def main():
                 rows.append(r)
     except Exception as e:
         log(f"ERROR reading ledger {SRC}: {e}"); return 1
-    add_feed(rows); add_kind(rows); add_spam_fields(rows); add_baselines(rows)
+    add_feed(rows); add_kind(rows); add_spam_fields(rows); add_splits(rows); add_baselines(rows)
     for r in rows:
         if r.get("exit_price") is not None and r.get("exit_pct") is None and r.get("baseline"):
             r["exit_pct"] = round((-1 if is_short(r.get("direction")) else 1) * (r["exit_price"] - r["baseline"]) / r["baseline"] * 100, 4)
