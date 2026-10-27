@@ -59,23 +59,23 @@
       "resolved_at_pt": "2026-10-20T15:01+0100"
     }
   ],
-  "last_check_at": "2026-10-27T03:25:00+00:00",
-  "last_check_btc": 79703,
+  "last_check_at": "2026-10-27T04:24:00+00:00",
+  "last_check_btc": 79788,
   "last_proposal_at": "2026-10-20T07:18+01:00",
   "last_alert_trade_id": 2,
   "last_resolution_alerted_id": 2,
   "open_trade_id": null,
-  "last_setup_eval": "Oct 27 03:25 Lisbon fresh OKX read: BTC ~79,703, lower half of 24h 79,323-80,823 (drifting down from 80,357 at 00:00, 03:00 low 79,612), funding +0.0100%, L/S 2.28. No break of 24h low, no clean setup, no call.",
-  "last_check_note": "Oct 27 03:25 Lisbon: no trade open; fresh read done, no call.",
-  "last_fresh_read": "2026-10-27T03:25:00+00:00",
+  "last_setup_eval": "Oct 27 04:24 Lisbon fresh OKX read: BTC ~79,788, lower half of 24h 79,427-80,823 (03:00 low 79,612, 04:00 candle 79,740-79,824 tight), funding +0.0100%, L/S 2.33. No break of 24h low, no clean setup, no call.",
+  "last_check_note": "Oct 27 04:24 Lisbon: no trade open; fresh read done, no call.",
+  "last_fresh_read": "2026-10-27T04:24:00+00:00",
   "last_read": {
-    "at": "2026-10-27T03:25+00:00",
-    "btc": 79703,
+    "at": "2026-10-27T04:24+00:00",
+    "btc": 79788,
     "range_recent": [
-      79323,
+      79427,
       80823
     ],
     "funding": "+0.0100%",
-    "ls_ratio": 2.28
+    "ls_ratio": 2.33
   }
 }
