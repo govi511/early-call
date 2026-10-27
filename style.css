@@ -249,3 +249,9 @@ main{padding-bottom:calc(100px + env(safe-area-inset-bottom))!important}
 .pill-spam{color:#f87171;background:rgba(248,113,113,.12);border-color:rgba(248,113,113,.4)}
 .pill-flow{color:#c084fc;background:rgba(192,132,252,.12);border-color:rgba(192,132,252,.4)}
 #feed .card.lowconf{opacity:.7}
+/* card-level badge tags (G BOT sets .flow/.lowconf/.spam on #feed .card) */
+#feed .card.lowconf{opacity:.7}
+#feed .card.lowconf>.row:first-child>div::after,#feed .card.flow>.row:first-child>div::after,#feed .card.spam>.row:first-child>div::after{display:inline-block;font-size:11px;font-weight:700;padding:0 6px;margin:0 4px;border:1px solid;border-radius:999px;white-space:nowrap;line-height:1.5}
+#feed .card.lowconf>.row:first-child>div::after{content:'low confidence';color:#9ca3af;background:rgba(156,163,175,.12);border-color:rgba(156,163,175,.35)}
+#feed .card.flow>.row:first-child>div::after{content:'flow';color:#c084fc;background:rgba(192,132,252,.12);border-color:rgba(192,132,252,.4)}
+#feed .card.spam>.row:first-child>div::after{content:'spam';color:#f87171;background:rgba(248,113,113,.12);border-color:rgba(248,113,113,.4)}
