@@ -2259,7 +2259,10 @@
   "311|GBP/EUR/CAD/BTC|2026-10-20 08:17": {
     "price": 1.335,
     "source": "CNBC 1m (next bar)",
-    "at": "2026-10-20 08:17"
+    "at": "2026-10-20 08:17",
+    "locked_pct": -0.2022,
+    "locked_price": 1.3323,
+    "locked_at": "2026-10-27T07:17+00:00"
   },
   "315|SPX/NDX/GM/RTX/CAD/WTI|2026-10-20 12:18": {
     "price": 7679.01,
@@ -2627,7 +2630,7 @@
   "485|USELESS|2026-10-23 13:06": {
     "price": null,
     "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for USELESS; yahoo: yahoo cooling down after 429 (88s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
+    "error": "cnbc: cnbc: no bars for USELESS; yahoo: yahoo cooling down after 429 (89s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
     "at": "2026-10-23 13:06"
   },
   "506|ZS (ZSCALER)|2026-10-23 22:14": {
@@ -2639,13 +2642,13 @@
   "510|SPY (US 500)|2026-10-24 00:15": {
     "price": null,
     "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for SPY (US 500); yahoo: yahoo cooling down after 429 (87s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
+    "error": "cnbc: cnbc: no bars for SPY (US 500); yahoo: yahoo cooling down after 429 (88s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
     "at": "2026-10-24 00:15"
   },
   "513|GOLD (XAU)|2026-10-24 05:03": {
     "price": null,
     "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for GOLD (XAU); yahoo: yahoo cooling down after 429 (87s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
+    "error": "cnbc: cnbc: no bars for GOLD (XAU); yahoo: yahoo cooling down after 429 (88s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
     "at": "2026-10-24 05:03"
   },
   "516|QQQ (US TECH 100)|2026-10-26 19:20": {
@@ -2657,19 +2660,19 @@
   "520|DNUT (KRISPY KREME)|2026-10-26 20:15": {
     "price": null,
     "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for DNUT (KRISPY KREME); yahoo: yahoo cooling down after 429 (86s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
+    "error": "cnbc: cnbc: no bars for DNUT (KRISPY KREME); yahoo: yahoo cooling down after 429 (87s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-26 20:15"
   },
   "526|SPCX (SPACEX)|2026-10-27 00:12": {
     "price": null,
     "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for SPCX (SPACEX); yahoo: yahoo cooling down after 429 (85s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
+    "error": "cnbc: cnbc: no bars for SPCX (SPACEX); yahoo: yahoo cooling down after 429 (86s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-27 00:12"
   },
   "530|BE (BLOOM ENERGY)|2026-10-27 04:12": {
     "price": null,
     "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for BE (BLOOM ENERGY); yahoo: yahoo cooling down after 429 (85s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
+    "error": "cnbc: cnbc: no bars for BE (BLOOM ENERGY); yahoo: yahoo cooling down after 429 (86s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-27 04:12"
   }
 }

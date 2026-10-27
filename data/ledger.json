@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-27T07:14:32+00:00",
+  "generated_at": "2026-10-27T07:44:09+00:00",
   "calls": [
     {
       "id": "1",
@@ -9367,6 +9367,8 @@
       "spam_override": null,
       "baseline": 1.335,
       "baseline_source": "CNBC 1m (next bar)",
+      "locked_pct": -0.2022,
+      "locked_at": "2026-10-27T07:17+00:00",
       "copy_of": "",
       "spam_farm": false
     },
