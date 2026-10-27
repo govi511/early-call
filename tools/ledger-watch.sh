@@ -7,10 +7,11 @@ exec 8>.ledger-watch.lock; flock -n 8 || exit 0
 SRC=/cursor/stores/store-9d60204b-cf80-460e-a058-55dafdd15548/call-ledger.csv
 last=""
 while true; do
+  date -Is > data/.ledger-watch.heartbeat
   m=$(stat -c %Y "$SRC" 2>/dev/null || echo 0)
   if [ "$m" != "$last" ]; then
-    sleep 20  # let the writer finish
-    ./sync-ledger.sh >> .ledger-watch.log 2>&1 && last="$m" || echo "[$(date -Is)] sync failed rc=$?" >> .ledger-watch.log
+    sleep 20 8>&-  # let the writer finish
+    ./sync-ledger.sh 8>&- >> .ledger-watch.log 2>&1 && last="$m" || echo "[$(date -Is)] sync failed rc=$?" >> .ledger-watch.log
   fi
-  sleep 60
+  sleep 60 8>&-
 done
