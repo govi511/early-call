@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-27T12:20:29+00:00",
+  "generated_at": "2026-10-27T12:45:50+00:00",
   "calls": [
     {
       "id": "1",
@@ -9601,6 +9601,8 @@
       "spam_override": null,
       "baseline": 81535.2,
       "baseline_source": "Kraken",
+      "locked_pct": 1.7543,
+      "locked_at": "2026-10-27T12:25+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -9659,6 +9661,8 @@
       "spam_override": null,
       "baseline": 1153.36,
       "baseline_source": "Kraken",
+      "locked_pct": 9.5625,
+      "locked_at": "2026-10-27T12:30+00:00",
       "copy_of": "",
       "spam_farm": false
     },
