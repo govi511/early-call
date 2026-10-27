@@ -2387,7 +2387,10 @@
   "355|KOSPI|2026-10-20 22:04": {
     "price": 5666.34,
     "source": "CNBC 1m (next bar)",
-    "at": "2026-10-20 22:04"
+    "at": "2026-10-20 22:04",
+    "locked_pct": -0.4941,
+    "locked_price": 5638.34,
+    "locked_at": "2026-10-27T21:04+00:00"
   },
   "369|GBP/UK100/SPCX|2026-10-21 08:20": {
     "price": 1.3377,
@@ -2892,5 +2895,16 @@
     "source": "unavailable",
     "error": "cnbc: cnbc: no bars for USELESS; yahoo: yahoo cooling down after 429 (88s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
     "at": "2026-10-23 13:06"
+  },
+  "574|US 500 (ES DEC-26 FUTURES)|2026-10-27 20:46": {
+    "price": null,
+    "source": "unavailable",
+    "error": "cnbc: cnbc: no bars for US 500 (ES DEC-26 FUTURES); yahoo: yahoo cooling down after 429 (87s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
+    "at": "2026-10-27 20:46"
+  },
+  "575|HOOD (ROBINHOOD)|2026-10-27 20:57": {
+    "price": 90.2,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-27 20:57"
   }
 }
