@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-27T05:16:16+00:00",
+  "generated_at": "2026-10-27T05:45:52+00:00",
   "calls": [
     {
       "id": "1",
@@ -9243,6 +9243,8 @@
       "spam_override": null,
       "baseline": 79.4,
       "baseline_source": "Nasdaq daily (close)",
+      "locked_pct": 28.5529,
+      "locked_at": "2026-10-27T05:19+00:00",
       "copy_of": "",
       "spam_farm": false
     },
