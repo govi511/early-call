@@ -7,10 +7,7 @@ import csv, sys, os, re, time, shutil, datetime, json
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 import refresh as R
 L = "/cursor/stores/store-9d60204b-cf80-460e-a058-55dafdd15548/call-ledger.csv"
-def nums(s):
-    s = re.sub(r"\(.*?\)", "", s or ""); s = re.sub(r"(\d),(?=\d{3}\b)", r"\1", s)
-    s = re.sub(r"\b\d{1,2}:\d{2}\b|\b\d+[- ](?:day|week|hour|h|d|w)\b", " ", s, flags=re.I)
-    return [float(x) for x in re.findall(r"\d+(?:\.\d+)?", s)]
+def nums(s): return R.level_nums(s)  # one shared level parser (drops notes, times, durations, dates, percentages)
 _C = {}
 def bars(asset, ts):
     """[(t, o, h, l, c)] hourly-ish bars from ts to now. Crypto: OKX 1H. Others: CNBC 1m (aggregated to 1H) or daily."""
@@ -47,6 +44,7 @@ def bars(asset, ts):
 def judge(r):
     st, tg, en = nums(r["stop"]), nums(r["target"]), nums(r["entry"])
     if not st and not tg: return None
+    if re.match(r"\s*neutral", r.get("direction") or "", re.I): return None  # range/condor calls (#508): no up/down target to hit
     short = R.is_short(r["direction"]); ts = R._ts_utc(r)
     b, src = bars(r["asset"], ts)
     if not b: return ("open", "no bars since post", src)

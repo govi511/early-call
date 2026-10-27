@@ -23,7 +23,13 @@ def level_nums(s):
     """Numbers in a level string, parsed exactly like lvl() in app.js: drop (...) notes, thousands commas, times and durations."""
     s = re.sub(r"\(.*?\)", "", str(s or "")); s = re.sub(r"(\d),(?=\d{3}\b)", r"\1", s)
     s = re.sub(r"\b\d{1,2}:\d{2}\b|\b\d+[- ](?:day|week|hour|h|d|w)\b", " ", s, flags=re.I)
+    s = NOT_LEVEL_RE.sub(" ", s)  # dates ("by Oct 30") and percentages ("10-20% bounce") are never price levels
     return [float(x) for x in re.findall(r"\d+(?:\.\d+)?", s)]
+_MON = r"(?:jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*\.?"
+NOT_LEVEL_RE = re.compile(r"\b" + _MON + r"[- ]?\d{1,2}(?:st|nd|rd|th)?\b(?:,?\s*\d{4}\b)?"   # Oct 30, Oct-30, Oct 30th, Oct 30, 2026
+    r"|\b\d{1,2}(?:st|nd|rd|th)?\s+" + _MON + r"(?![a-z])"                                     # 30 Oct
+    r"|\b\d{4}-\d{2}-\d{2}\b"                                     # 2026-10-30 (slash forms skipped: "17/22/28" are targets)
+    r"|[-+]?\d+(?:\.\d+)?\s*(?:-|–|to)\s*[-+]?\d+(?:\.\d+)?\s*%|[-+]?\d+(?:\.\d+)?\s*%", re.I)  # 10-20%, 5%
 def is_label(asset): return "/" in asset and " " in asset.strip()
 # Label words -> priceable tickers (multi-asset labels like "S&P 500/OIL" are split and the first priceable part is used)
 LABEL_TICKER = {"S&P 500":"SPY","S&P":"SPY","SP500":"SPY","SPX":"SPX","US500":"SPY","NASDAQ":"QQQ","NASDAQ 100":"QQQ","US TECH 100":"QQQ","NAS100":"QQQ","NDX":"NDX",

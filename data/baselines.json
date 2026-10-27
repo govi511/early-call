@@ -3483,12 +3483,6 @@
     "locked_price": 607.75,
     "locked_at": "2026-10-20T22:14+01:00"
   },
-  "248|PONS|2026-10-13 21:56": {
-    "price": null,
-    "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for PONS; yahoo: HTTP Error 429: Too Many Requests; nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
-    "at": "2026-10-13 21:56"
-  },
   "249-SPCX|SPCX|2026-10-14 00:18": {
     "price": 154.98,
     "source": "CNBC daily (open)",
@@ -3536,12 +3530,6 @@
     "locked_pct": -0.5839,
     "locked_price": 82877.6,
     "locked_at": "2026-10-21T02:23+01:00"
-  },
-  "255|HMM|2026-10-14 03:39": {
-    "price": null,
-    "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for HMM; yahoo: yahoo cooling down after 429 (89s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
-    "at": "2026-10-14 03:39"
   },
   "257-BTC|BTC|2026-10-14 04:15": {
     "price": 83723.3,
@@ -3694,12 +3682,6 @@
     "locked_pct": 3.033,
     "locked_price": 84335.4,
     "locked_at": "2026-10-21T20:22+01:00"
-  },
-  "282|DOPE|2026-10-14 20:38": {
-    "price": null,
-    "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for DOPE; yahoo: yahoo cooling down after 429 (85s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
-    "at": "2026-10-14 20:38"
   },
   "295-OIL|OIL|2026-10-19 20:18": {
     "price": 98.37,
@@ -4785,12 +4767,6 @@
     "source": "CNBC 1m",
     "at": "2026-10-23 12:14"
   },
-  "485|USELESS|2026-10-23 13:06": {
-    "price": null,
-    "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for USELESS; yahoo: yahoo cooling down after 429 (76s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
-    "at": "2026-10-23 13:06"
-  },
   "487-OIL|OIL|2026-10-23 14:22": {
     "price": 101.64,
     "source": "CNBC 1m (next bar)",
@@ -4850,5 +4826,29 @@
     "price": 7623.68,
     "source": "CNBC 1m (next bar)",
     "at": "2026-10-23 22:20"
+  },
+  "248|PONS|2026-10-13 21:56": {
+    "price": null,
+    "source": "unavailable",
+    "error": "cnbc: cnbc: no bars for PONS; yahoo: HTTP Error 429: Too Many Requests; nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
+    "at": "2026-10-13 21:56"
+  },
+  "255|HMM|2026-10-14 03:39": {
+    "price": null,
+    "source": "unavailable",
+    "error": "cnbc: cnbc: no bars for HMM; yahoo: yahoo cooling down after 429 (89s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
+    "at": "2026-10-14 03:39"
+  },
+  "282|DOPE|2026-10-14 20:38": {
+    "price": null,
+    "source": "unavailable",
+    "error": "cnbc: cnbc: no bars for DOPE; yahoo: yahoo cooling down after 429 (89s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
+    "at": "2026-10-14 20:38"
+  },
+  "485|USELESS|2026-10-23 13:06": {
+    "price": null,
+    "source": "unavailable",
+    "error": "cnbc: cnbc: no bars for USELESS; yahoo: yahoo cooling down after 429 (88s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
+    "at": "2026-10-23 13:06"
   }
 }

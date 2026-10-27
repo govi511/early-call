@@ -7,7 +7,7 @@ document.querySelectorAll('.tabbar button').forEach(b=>b.onclick=()=>showTab(b.d
 // Signals + leaderboard + live prices
 let LEDGER=null,PRICES={};
 const nums=s=>(String(s).match(/\d+(?:\.\d+)?/g)||[]).map(Number);
-const lvl=s=>{const n=nums(String(s).replace(/\(.*?\)/g,'').replace(/(\d),(?=\d{3}\b)/g,'$1').replace(/\b\d{1,2}:\d{2}\b|\b\d+[- ](?:day|week|hour|h|d|w)\b/gi,' '));return n.length?(n.length>1?(n[0]+n[1])/2:n[0]):null};
+const NOTLVL=/\b(?:jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*\.?[- ]?\d{1,2}(?:st|nd|rd|th)?\b(?:,?\s*\d{4}\b)?|\b\d{1,2}(?:st|nd|rd|th)?\s+(?:jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*\.?(?![a-z])|\b\d{4}-\d{2}-\d{2}\b|[-+]?\d+(?:\.\d+)?\s*(?:-|–|to)\s*[-+]?\d+(?:\.\d+)?\s*%|[-+]?\d+(?:\.\d+)?\s*%/gi,lvl=s=>{const n=nums(String(s).replace(/\(.*?\)/g,'').replace(/(\d),(?=\d{3}\b)/g,'$1').replace(/\b\d{1,2}:\d{2}\b|\b\d+[- ](?:day|week|hour|h|d|w)\b/gi,' ').replace(NOTLVL,' '));return n.length?(n.length>1?(n[0]+n[1])/2:n[0]):null};
 const pct=v=>v==null||!isFinite(v)?'n/a':(v>0?'▲ +':v<0?'▼ ':'')+v.toFixed(2)+'%';
 const NP=c=>!!(c&&(c.nonpriceable||PRICES[c.asset]?.nonpriceable)),NA=c=>NP(c)?'<span class="mut">not a tradable asset</span>':NOSRC(c)?'<span class="nopx" title="No price feed covers this ticker">no price source</span>':'n/a';
 const NOSRC=c=>{const a=String(c.asset||'').toUpperCase().trim();return(PRICES._failed||[]).some(f=>String(f).toUpperCase()===a)||(typeof PRICES._at!=='undefined'&&!PRICES[c.asset]&&/^[A-Z]{1,6}$/.test(a))};

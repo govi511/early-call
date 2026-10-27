@@ -35,9 +35,9 @@ for r in calls:
     c["all"] += 1; c[st] += 1
     if r["_dt"].date() >= wk_start: c["week"] += 1
     if re.search(r"after[- ]the[- ]fact", r.get("notes", ""), re.I) and not re.search(r"rejected[^;]*after[- ]the[- ]fact", r["notes"], re.I): c["atf"] += 1
+sys.path.insert(0, HERE); from refresh import level_nums  # shared level parser (dates/percentages are never levels)
 def _lv(t):
-    t = re.sub(r"\(.*?\)", "", t or ""); t = re.sub(r"(\d),(?=\d{3}\b)", r"\1", t)
-    n = [float(x) for x in re.findall(r"\d+(?:\.\d+)?", t)]; return sum(n[:2]) / len(n[:2]) if n else None
+    n = level_nums(t); return sum(n[:2]) / len(n[:2]) if n else None
 def call_pct(r):
     """% move from entry: hit -> first target, stopped -> stop, expired -> exit_close (that day's close). None if unscorable."""
     e = _lv(r.get("entry")); st = r.get("status")
@@ -46,7 +46,7 @@ def call_pct(r):
         except Exception: e = None
     if not e: return None
     if st == "hit_target":
-        n = re.findall(r"\d+(?:\.\d+)?", re.sub(r"(\d),(?=\d{3}\b)", r"\1", re.sub(r"\(.*?\)", "", r.get("target") or ""))); x = float(n[0]) if n else None
+        n = level_nums(r.get("target")); x = n[0] if n else None
     elif st == "stopped": x = _lv(r.get("stop"))
     elif st == "expired":
         m = re.search(r"\bexit_close=([\d.]+)", r.get("notes", "")); x = float(m.group(1)) if m else None
