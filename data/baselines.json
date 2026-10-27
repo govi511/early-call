@@ -1592,7 +1592,10 @@
   "306|CRV|2026-10-20 04:38": {
     "price": 0.3678,
     "source": "Kraken",
-    "at": "2026-10-20 04:38"
+    "at": "2026-10-20 04:38",
+    "locked_pct": -8.8363,
+    "locked_price": 0.3353,
+    "locked_at": "2026-10-27T03:38+00:00"
   },
   "307|USD/SILVER/TSLA/SPX|2026-10-20 06:19": {
     "price": 79.4,
@@ -2066,7 +2069,10 @@
   "305|FED/ORCL/NVDA/BTC|2026-10-20 04:22": {
     "price": 129.59,
     "source": "Nasdaq daily (close)",
-    "at": "2026-10-20 04:22"
+    "at": "2026-10-20 04:22",
+    "locked_pct": -2.6468,
+    "locked_price": 126.16,
+    "locked_at": "2026-10-27T03:22+00:00"
   },
   "330|UNI|2026-10-20 15:10": {
     "price": 7.456,
@@ -2597,7 +2603,7 @@
   "255|HMM|2026-10-14 03:39": {
     "price": null,
     "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for HMM; yahoo: yahoo cooling down after 429 (89s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
+    "error": "cnbc: cnbc: no bars for HMM; yahoo: yahoo cooling down after 429 (90s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
     "at": "2026-10-14 03:39"
   },
   "282|DOPE|2026-10-14 20:38": {
@@ -2621,7 +2627,7 @@
   "510|SPY (US 500)|2026-10-24 00:15": {
     "price": null,
     "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for SPY (US 500); yahoo: yahoo cooling down after 429 (88s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
+    "error": "cnbc: cnbc: no bars for SPY (US 500); yahoo: yahoo cooling down after 429 (87s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
     "at": "2026-10-24 00:15"
   },
   "513|GOLD (XAU)|2026-10-24 05:03": {

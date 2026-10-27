@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-27T02:16:02+00:00",
+  "generated_at": "2026-10-27T03:45:52+00:00",
   "calls": [
     {
       "id": "1",
@@ -9181,6 +9181,8 @@
       "spam_override": null,
       "baseline": 129.59,
       "baseline_source": "Nasdaq daily (close)",
+      "locked_pct": -2.6468,
+      "locked_at": "2026-10-27T03:22+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -9210,6 +9212,8 @@
       "spam_override": null,
       "baseline": 0.3678,
       "baseline_source": "Kraken",
+      "locked_pct": -8.8363,
+      "locked_at": "2026-10-27T03:38+00:00",
       "copy_of": "",
       "spam_farm": false
     },
