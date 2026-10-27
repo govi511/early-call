@@ -1824,17 +1824,26 @@
   "349|SOL|2026-10-20 19:54": {
     "price": 105.75,
     "source": "Kraken",
-    "at": "2026-10-20 19:54"
+    "at": "2026-10-20 19:54",
+    "locked_pct": -4.5768,
+    "locked_price": 100.91,
+    "locked_at": "2026-10-27T18:54+00:00"
   },
   "351|XBI|2026-10-20 19:59": {
     "price": 147.86,
     "source": "Nasdaq daily (close)",
-    "at": "2026-10-20 19:59"
+    "at": "2026-10-20 19:59",
+    "locked_pct": 4.4603,
+    "locked_price": 154.455,
+    "locked_at": "2026-10-27T18:59+00:00"
   },
   "352|TSLA/META/AAPL/SPY/WTI/BRENT|2026-10-20 20:14": {
     "price": 368.06,
     "source": "Nasdaq daily (close)",
-    "at": "2026-10-20 20:14"
+    "at": "2026-10-20 20:14",
+    "locked_pct": 6.4011,
+    "locked_price": 391.62,
+    "locked_at": "2026-10-27T19:14+00:00"
   },
   "353|BTC|2026-10-20 21:01": {
     "price": 82511.2,
@@ -2825,7 +2834,7 @@
   "255|HMM|2026-10-14 03:39": {
     "price": null,
     "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for HMM; yahoo: yahoo cooling down after 429 (90s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
+    "error": "cnbc: cnbc: no bars for HMM; yahoo: yahoo cooling down after 429 (89s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
     "at": "2026-10-14 03:39"
   },
   "282|DOPE|2026-10-14 20:38": {
@@ -2839,5 +2848,15 @@
     "source": "unavailable",
     "error": "cnbc: cnbc: no bars for USELESS; yahoo: yahoo cooling down after 429 (88s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
     "at": "2026-10-23 13:06"
+  },
+  "565|ETH|2026-10-27 18:54": {
+    "price": 2343.76,
+    "source": "OKX",
+    "at": "2026-10-27 18:54"
+  },
+  "566|HYPE|2026-10-27 18:58": {
+    "price": 81.606,
+    "source": "OKX",
+    "at": "2026-10-27 18:58"
   }
 }
