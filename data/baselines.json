@@ -2040,47 +2040,74 @@
   "387|BTC|2026-10-21 16:13": {
     "price": 84713.3,
     "source": "Kraken",
-    "at": "2026-10-21 16:13"
+    "at": "2026-10-21 16:13",
+    "locked_pct": -4.8017,
+    "locked_price": 80645.6,
+    "locked_at": "2026-10-28T15:13+00:00"
   },
   "388|ZEC|2026-10-21 16:13": {
     "price": 1338.53,
     "source": "Kraken",
-    "at": "2026-10-21 16:13"
+    "at": "2026-10-21 16:13",
+    "locked_pct": 4.5714,
+    "locked_price": 1277.34,
+    "locked_at": "2026-10-28T15:13+00:00"
   },
   "390|ETH|2026-10-21 16:13": {
     "price": 2509.65,
     "source": "Kraken",
-    "at": "2026-10-21 16:13"
+    "at": "2026-10-21 16:13",
+    "locked_pct": -6.9492,
+    "locked_price": 2335.25,
+    "locked_at": "2026-10-28T15:13+00:00"
   },
   "391|BTC|2026-10-21 16:13": {
     "price": 84713.3,
     "source": "Kraken",
-    "at": "2026-10-21 16:13"
+    "at": "2026-10-21 16:13",
+    "locked_pct": -4.8017,
+    "locked_price": 80645.6,
+    "locked_at": "2026-10-28T15:13+00:00"
   },
   "392|CRCL/MSTR|2026-10-21 16:13": {
     "price": 85.87,
     "source": "Nasdaq daily (close)",
-    "at": "2026-10-21 16:13"
+    "at": "2026-10-21 16:13",
+    "locked_pct": -7.1503,
+    "locked_price": 79.73,
+    "locked_at": "2026-10-28T15:13+00:00"
   },
   "393|CHIP/STRK|2026-10-21 16:13": {
     "price": 3492.513,
     "source": "Nasdaq daily (close)",
-    "at": "2026-10-21 16:13"
+    "at": "2026-10-21 16:13",
+    "locked_pct": -99.3632,
+    "locked_price": 22.24,
+    "locked_at": "2026-10-28T15:13+00:00"
   },
   "394|BTC|2026-10-21 16:13": {
     "price": 84713.3,
     "source": "Kraken",
-    "at": "2026-10-21 16:13"
+    "at": "2026-10-21 16:13",
+    "locked_pct": -4.8017,
+    "locked_price": 80645.6,
+    "locked_at": "2026-10-28T15:13+00:00"
   },
   "395|MRNA|2026-10-21 16:13": {
     "price": 242.08,
     "source": "Nasdaq daily (close)",
-    "at": "2026-10-21 16:13"
+    "at": "2026-10-21 16:13",
+    "locked_pct": -10.6514,
+    "locked_price": 216.295,
+    "locked_at": "2026-10-28T15:13+00:00"
   },
   "398|GOOGL/AMZN/AAPL/TSLA/WTI/SPY|2026-10-21 16:24": {
     "price": 340.275,
     "source": "Nasdaq daily (close)",
-    "at": "2026-10-21 16:24"
+    "at": "2026-10-21 16:24",
+    "locked_pct": -4.9475,
+    "locked_price": 323.44,
+    "locked_at": "2026-10-28T15:24+00:00"
   },
   "401|GOOGL|2026-10-21 16:43": {
     "price": 340.275,
@@ -2541,7 +2568,10 @@
   "389|BTC|2026-10-21 16:13": {
     "price": 84715.1,
     "source": "OKX",
-    "at": "2026-10-21 16:13"
+    "at": "2026-10-21 16:13",
+    "locked_pct": -4.8037,
+    "locked_price": 80645.6,
+    "locked_at": "2026-10-28T15:13+00:00"
   },
   "440|TSLA/SPCX/GOLD/BRENT OIL|2026-10-22 14:17": {
     "price": 386.47,
@@ -3186,22 +3216,34 @@
   "392-CRCL|CRCL|2026-10-21 16:13": {
     "price": 90.0,
     "source": "CNBC 1m",
-    "at": "2026-10-21 16:13"
+    "at": "2026-10-21 16:13",
+    "locked_pct": -11.4111,
+    "locked_price": 79.73,
+    "locked_at": "2026-10-28T15:13+00:00"
   },
   "392-MSTR|MSTR|2026-10-21 16:13": {
     "price": 153.06,
     "source": "CNBC 1m",
-    "at": "2026-10-21 16:13"
+    "at": "2026-10-21 16:13",
+    "locked_pct": -8.5403,
+    "locked_price": 139.9882,
+    "locked_at": "2026-10-28T15:13+00:00"
   },
   "393-CHIP|CHIP|2026-10-21 16:13": {
     "price": 22.66,
     "source": "CNBC 1m (next bar)",
-    "at": "2026-10-21 16:13"
+    "at": "2026-10-21 16:13",
+    "locked_pct": -1.8535,
+    "locked_price": 22.24,
+    "locked_at": "2026-10-28T15:13+00:00"
   },
   "393-STRK|STRK|2026-10-21 16:13": {
     "price": 72.165,
     "source": "CNBC 1m (next bar)",
-    "at": "2026-10-21 16:13"
+    "at": "2026-10-21 16:13",
+    "locked_pct": -2.5566,
+    "locked_price": 70.32,
+    "locked_at": "2026-10-28T15:13+00:00"
   },
   "415-WTI|WTI|2026-10-21 19:02": {
     "price": 96.94,
@@ -4483,32 +4525,50 @@
   "398-GOOGL|GOOGL|2026-10-21 16:24": {
     "price": 332.5,
     "source": "CNBC 1m",
-    "at": "2026-10-21 16:24"
+    "at": "2026-10-21 16:24",
+    "locked_pct": -2.7248,
+    "locked_price": 323.44,
+    "locked_at": "2026-10-28T15:24+00:00"
   },
   "398-AMZN|AMZN|2026-10-21 16:24": {
     "price": 262.0777,
     "source": "CNBC 1m (next bar)",
-    "at": "2026-10-21 16:24"
+    "at": "2026-10-21 16:24",
+    "locked_pct": -3.7137,
+    "locked_price": 252.345,
+    "locked_at": "2026-10-28T15:24+00:00"
   },
   "398-AAPL|AAPL|2026-10-21 16:24": {
     "price": 344.64,
     "source": "CNBC 1m (next bar)",
-    "at": "2026-10-21 16:24"
+    "at": "2026-10-21 16:24",
+    "locked_pct": 0.2002,
+    "locked_price": 345.33,
+    "locked_at": "2026-10-28T15:24+00:00"
   },
   "398-TSLA|TSLA|2026-10-21 16:24": {
     "price": 386.55,
     "source": "CNBC 1m (next bar)",
-    "at": "2026-10-21 16:24"
+    "at": "2026-10-21 16:24",
+    "locked_pct": 3.9167,
+    "locked_price": 401.69,
+    "locked_at": "2026-10-28T15:24+00:00"
   },
   "398-WTI|WTI|2026-10-21 16:24": {
     "price": 97.49,
     "source": "CNBC 1m (next bar)",
-    "at": "2026-10-21 16:24"
+    "at": "2026-10-21 16:24",
+    "locked_pct": 5.0262,
+    "locked_price": 102.39,
+    "locked_at": "2026-10-28T15:24+00:00"
   },
   "398-SPY|SPY|2026-10-21 16:24": {
     "price": 771.72,
     "source": "CNBC 1m (next bar)",
-    "at": "2026-10-21 16:24"
+    "at": "2026-10-21 16:24",
+    "locked_pct": -0.0544,
+    "locked_price": 771.3,
+    "locked_at": "2026-10-28T15:24+00:00"
   },
   "408-TSLA|TSLA|2026-10-21 18:20": {
     "price": 387.4,
@@ -5074,7 +5134,7 @@
   "255|HMM|2026-10-14 03:39": {
     "price": null,
     "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for HMM; yahoo: yahoo cooling down after 429 (89s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
+    "error": "cnbc: cnbc: no bars for HMM; yahoo: yahoo cooling down after 429 (90s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
     "at": "2026-10-14 03:39"
   },
   "282|DOPE|2026-10-14 20:38": {
@@ -5086,25 +5146,25 @@
   "485|USELESS|2026-10-23 13:06": {
     "price": null,
     "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for USELESS; yahoo: yahoo cooling down after 429 (88s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
+    "error": "cnbc: cnbc: no bars for USELESS; yahoo: yahoo cooling down after 429 (85s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
     "at": "2026-10-23 13:06"
   },
   "579|HMM (SMALL-CAP TOKEN)|2026-10-27 23:21": {
     "price": null,
     "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for HMM; yahoo: yahoo cooling down after 429 (88s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
+    "error": "cnbc: cnbc: no bars for HMM; yahoo: yahoo cooling down after 429 (85s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-27 23:21"
   },
   "580|ISRAEL ELECTION (CONTEXT)|2026-10-28 00:35": {
     "price": null,
     "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for ISRAEL ELECTION (CONTEXT); yahoo: yahoo cooling down after 429 (87s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
+    "error": "cnbc: cnbc: no bars for ISRAEL ELECTION (CONTEXT); yahoo: yahoo cooling down after 429 (84s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-28 00:35"
   },
   "589|PEPE|2026-10-28 11:08": {
     "price": null,
     "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for PEPE; yahoo: yahoo cooling down after 429 (86s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
+    "error": "cnbc: cnbc: no bars for PEPE; yahoo: yahoo cooling down after 429 (83s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-28 11:08"
   }
 }

@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-28T15:12:54+00:00",
+  "generated_at": "2026-10-28T15:40:21+00:00",
   "ledgerUpdatedAt": "2026-10-28T14:29:00+00:00",
-  "pricesUpdatedAt": "2026-10-28T14:48:05+00:00",
+  "pricesUpdatedAt": "2026-10-28T15:44:16+00:00",
   "staleAfterMin": 45,
   "calls": [
     {
@@ -19160,6 +19160,8 @@
       "spam_override": null,
       "baseline": 84713.3,
       "baseline_source": "Kraken",
+      "locked_pct": -4.8017,
+      "locked_at": "2026-10-28T15:13+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -19191,6 +19193,8 @@
       "spam_override": null,
       "baseline": 1338.53,
       "baseline_source": "Kraken",
+      "locked_pct": 4.5714,
+      "locked_at": "2026-10-28T15:13+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -19222,6 +19226,8 @@
       "spam_override": null,
       "baseline": 84715.1,
       "baseline_source": "OKX",
+      "locked_pct": -4.8037,
+      "locked_at": "2026-10-28T15:13+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -19253,6 +19259,8 @@
       "spam_override": null,
       "baseline": 2509.65,
       "baseline_source": "Kraken",
+      "locked_pct": -6.9492,
+      "locked_at": "2026-10-28T15:13+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -19284,6 +19292,8 @@
       "spam_override": null,
       "baseline": 84713.3,
       "baseline_source": "Kraken",
+      "locked_pct": -4.8017,
+      "locked_at": "2026-10-28T15:13+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -19319,6 +19329,8 @@
       ],
       "baseline": 85.87,
       "baseline_source": "Nasdaq daily (close)",
+      "locked_pct": -7.1503,
+      "locked_at": "2026-10-28T15:13+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -19352,6 +19364,8 @@
       "split_label": "CRCL/MSTR",
       "baseline": 90.0,
       "baseline_source": "CNBC 1m",
+      "locked_pct": -11.4111,
+      "locked_at": "2026-10-28T15:13+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -19385,6 +19399,8 @@
       "split_label": "CRCL/MSTR",
       "baseline": 153.06,
       "baseline_source": "CNBC 1m",
+      "locked_pct": -8.5403,
+      "locked_at": "2026-10-28T15:13+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -19420,6 +19436,8 @@
       ],
       "baseline": 3492.513,
       "baseline_source": "Nasdaq daily (close)",
+      "locked_pct": -99.3632,
+      "locked_at": "2026-10-28T15:13+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -19453,6 +19471,8 @@
       "split_label": "CHIP/STRK",
       "baseline": 22.66,
       "baseline_source": "CNBC 1m (next bar)",
+      "locked_pct": -1.8535,
+      "locked_at": "2026-10-28T15:13+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -19486,6 +19506,8 @@
       "split_label": "CHIP/STRK",
       "baseline": 72.165,
       "baseline_source": "CNBC 1m (next bar)",
+      "locked_pct": -2.5566,
+      "locked_at": "2026-10-28T15:13+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -19517,6 +19539,8 @@
       "spam_override": null,
       "baseline": 84713.3,
       "baseline_source": "Kraken",
+      "locked_pct": -4.8017,
+      "locked_at": "2026-10-28T15:13+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -19548,6 +19572,8 @@
       "spam_override": null,
       "baseline": 242.08,
       "baseline_source": "Nasdaq daily (close)",
+      "locked_pct": -10.6514,
+      "locked_at": "2026-10-28T15:13+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -19645,6 +19671,8 @@
       ],
       "baseline": 340.275,
       "baseline_source": "Nasdaq daily (close)",
+      "locked_pct": -4.9475,
+      "locked_at": "2026-10-28T15:24+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -19678,6 +19706,8 @@
       "split_label": "GOOGL/AMZN/AAPL/TSLA/WTI/SPY",
       "baseline": 332.5,
       "baseline_source": "CNBC 1m",
+      "locked_pct": -2.7248,
+      "locked_at": "2026-10-28T15:24+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -19711,6 +19741,8 @@
       "split_label": "GOOGL/AMZN/AAPL/TSLA/WTI/SPY",
       "baseline": 262.0777,
       "baseline_source": "CNBC 1m (next bar)",
+      "locked_pct": -3.7137,
+      "locked_at": "2026-10-28T15:24+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -19744,6 +19776,8 @@
       "split_label": "GOOGL/AMZN/AAPL/TSLA/WTI/SPY",
       "baseline": 344.64,
       "baseline_source": "CNBC 1m (next bar)",
+      "locked_pct": 0.2002,
+      "locked_at": "2026-10-28T15:24+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -19777,6 +19811,8 @@
       "split_label": "GOOGL/AMZN/AAPL/TSLA/WTI/SPY",
       "baseline": 386.55,
       "baseline_source": "CNBC 1m (next bar)",
+      "locked_pct": 3.9167,
+      "locked_at": "2026-10-28T15:24+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -19810,6 +19846,8 @@
       "split_label": "GOOGL/AMZN/AAPL/TSLA/WTI/SPY",
       "baseline": 97.49,
       "baseline_source": "CNBC 1m (next bar)",
+      "locked_pct": 5.0262,
+      "locked_at": "2026-10-28T15:24+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -19843,6 +19881,8 @@
       "split_label": "GOOGL/AMZN/AAPL/TSLA/WTI/SPY",
       "baseline": 771.72,
       "baseline_source": "CNBC 1m (next bar)",
+      "locked_pct": -0.0544,
+      "locked_at": "2026-10-28T15:24+00:00",
       "copy_of": "",
       "spam_farm": false
     },
