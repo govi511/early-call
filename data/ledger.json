@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-28T17:13:00+00:00",
+  "generated_at": "2026-10-28T17:48:31+00:00",
   "ledgerUpdatedAt": "2026-10-28T16:39:00+00:00",
-  "pricesUpdatedAt": "2026-10-28T16:47:34+00:00",
+  "pricesUpdatedAt": "2026-10-28T17:52:28+00:00",
   "staleAfterMin": 45,
   "calls": [
     {
@@ -20199,6 +20199,8 @@
       ],
       "baseline": 373.71,
       "baseline_source": "Nasdaq daily (close)",
+      "locked_pct": 7.5152,
+      "locked_at": "2026-10-28T17:20+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -20232,6 +20234,8 @@
       "split_label": "TSLA/NVDA/AAPL/AMZN/GOOGL/SPY",
       "baseline": 387.4,
       "baseline_source": "CNBC 1m (next bar)",
+      "locked_pct": 3.7158,
+      "locked_at": "2026-10-28T17:20+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -20265,6 +20269,8 @@
       "split_label": "TSLA/NVDA/AAPL/AMZN/GOOGL/SPY",
       "baseline": 221.74,
       "baseline_source": "CNBC 1m (next bar)",
+      "locked_pct": -2.0542,
+      "locked_at": "2026-10-28T17:20+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -20298,6 +20304,8 @@
       "split_label": "TSLA/NVDA/AAPL/AMZN/GOOGL/SPY",
       "baseline": 344.625,
       "baseline_source": "CNBC 1m (next bar)",
+      "locked_pct": 0.3032,
+      "locked_at": "2026-10-28T17:20+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -20331,6 +20339,8 @@
       "split_label": "TSLA/NVDA/AAPL/AMZN/GOOGL/SPY",
       "baseline": 263.835,
       "baseline_source": "CNBC 1m (next bar)",
+      "locked_pct": -4.0878,
+      "locked_at": "2026-10-28T17:20+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -20364,6 +20374,8 @@
       "split_label": "TSLA/NVDA/AAPL/AMZN/GOOGL/SPY",
       "baseline": 334.42,
       "baseline_source": "CNBC 1m (next bar)",
+      "locked_pct": -2.8736,
+      "locked_at": "2026-10-28T17:20+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -20397,6 +20409,8 @@
       "split_label": "TSLA/NVDA/AAPL/AMZN/GOOGL/SPY",
       "baseline": 774.12,
       "baseline_source": "CNBC 1m (next bar)",
+      "locked_pct": -0.3901,
+      "locked_at": "2026-10-28T17:20+00:00",
       "copy_of": "",
       "spam_farm": false
     },
