@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-28T20:40:50+00:00",
+  "generated_at": "2026-10-28T21:45:46+00:00",
   "ledgerUpdatedAt": "2026-10-28T20:27:00+00:00",
-  "pricesUpdatedAt": "2026-10-28T20:44:29+00:00",
+  "pricesUpdatedAt": "2026-10-28T21:49:34+00:00",
   "staleAfterMin": 45,
   "calls": [
     {
@@ -21020,6 +21020,8 @@
       "split_label": "Brent/WTI oil, Gold",
       "baseline": 97.71,
       "baseline_source": "CNBC 1m (next bar)",
+      "locked_pct": 4.3291,
+      "locked_at": "2026-10-28T21:00+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -21053,6 +21055,8 @@
       "split_label": "Brent/WTI oil, Gold",
       "baseline": 4159.5,
       "baseline_source": "CNBC 1m (next bar)",
+      "locked_pct": -1.8824,
+      "locked_at": "2026-10-28T21:00+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -21089,6 +21093,8 @@
       ],
       "baseline": 373.71,
       "baseline_source": "CNBC daily (close)",
+      "locked_pct": 7.6824,
+      "locked_at": "2026-10-28T21:20+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -21122,6 +21128,8 @@
       "split_label": "TSLA/META/SPY",
       "baseline": 384.12,
       "baseline_source": "CNBC 1m (next bar)",
+      "locked_pct": 4.7641,
+      "locked_at": "2026-10-28T21:20+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -21155,6 +21163,8 @@
       "split_label": "TSLA/META/SPY",
       "baseline": 722.66,
       "baseline_source": "CNBC 1m (next bar)",
+      "locked_pct": -14.2335,
+      "locked_at": "2026-10-28T21:20+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -21188,6 +21198,8 @@
       "split_label": "TSLA/META/SPY",
       "baseline": 772.9608,
       "baseline_source": "CNBC 1m (next bar)",
+      "locked_pct": -0.4295,
+      "locked_at": "2026-10-28T21:20+00:00",
       "copy_of": "",
       "spam_farm": false
     },
