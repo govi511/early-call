@@ -4964,7 +4964,7 @@
   "255|HMM|2026-10-14 03:39": {
     "price": null,
     "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for HMM; yahoo: yahoo cooling down after 429 (90s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
+    "error": "cnbc: cnbc: no bars for HMM; yahoo: yahoo cooling down after 429 (89s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
     "at": "2026-10-14 03:39"
   },
   "282|DOPE|2026-10-14 20:38": {
@@ -4976,7 +4976,7 @@
   "485|USELESS|2026-10-23 13:06": {
     "price": null,
     "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for USELESS; yahoo: yahoo cooling down after 429 (88s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
+    "error": "cnbc: cnbc: no bars for USELESS; yahoo: yahoo cooling down after 429 (89s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
     "at": "2026-10-23 13:06"
   },
   "579|HMM (SMALL-CAP TOKEN)|2026-10-27 23:21": {
@@ -4988,7 +4988,7 @@
   "580|ISRAEL ELECTION (CONTEXT)|2026-10-28 00:35": {
     "price": null,
     "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for ISRAEL ELECTION (CONTEXT); yahoo: yahoo cooling down after 429 (88s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
+    "error": "cnbc: cnbc: no bars for ISRAEL ELECTION (CONTEXT); yahoo: yahoo cooling down after 429 (84s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-28 00:35"
   }
 }
