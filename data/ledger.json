@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-28T00:16:42+00:00",
+  "generated_at": "2026-10-28T00:17:07+00:00",
   "ledgerUpdatedAt": "2026-10-27T23:21:00+00:00",
   "pricesUpdatedAt": "2026-10-27T23:44:12+00:00",
   "staleAfterMin": 45,
@@ -17349,6 +17349,8 @@
       ],
       "baseline": 1265.79,
       "baseline_source": "Kraken",
+      "locked_pct": 2.7943,
+      "locked_at": "2026-10-28T00:17+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -17382,6 +17384,8 @@
       "split_label": "ZEC/WLD",
       "baseline": 1267.15,
       "baseline_source": "OKX",
+      "locked_pct": 2.684,
+      "locked_at": "2026-10-28T00:17+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -17415,6 +17419,8 @@
       "split_label": "ZEC/WLD",
       "baseline": 0.5862,
       "baseline_source": "OKX",
+      "locked_pct": -25.2474,
+      "locked_at": "2026-10-28T00:17+00:00",
       "copy_of": "",
       "spam_farm": false
     },
