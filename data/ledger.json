@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-28T01:15:32+00:00",
+  "generated_at": "2026-10-28T01:46:54+00:00",
   "ledgerUpdatedAt": "2026-10-28T00:35:00+00:00",
-  "pricesUpdatedAt": "2026-10-28T00:50:21+00:00",
+  "pricesUpdatedAt": "2026-10-28T01:50:02+00:00",
   "staleAfterMin": 45,
   "calls": [
     {
@@ -17489,6 +17489,8 @@
       ],
       "baseline": 368.06,
       "baseline_source": "Nasdaq daily (close)",
+      "locked_pct": 6.4011,
+      "locked_at": "2026-10-28T01:18+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -17522,6 +17524,8 @@
       "split_label": "TSLA/META/NVDA/SPY/WTI/BRENT",
       "baseline": 379.7,
       "baseline_source": "CNBC 1m (next bar)",
+      "locked_pct": 3.1393,
+      "locked_at": "2026-10-28T01:18+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -17555,6 +17559,8 @@
       "split_label": "TSLA/META/NVDA/SPY/WTI/BRENT",
       "baseline": 700.1,
       "baseline_source": "CNBC 1m (next bar)",
+      "locked_pct": -9.9329,
+      "locked_at": "2026-10-28T01:18+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -17588,6 +17594,8 @@
       "split_label": "TSLA/META/NVDA/SPY/WTI/BRENT",
       "baseline": 220.77,
       "baseline_source": "CNBC 1m (next bar)",
+      "locked_pct": -2.1606,
+      "locked_at": "2026-10-28T01:18+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -17621,6 +17629,8 @@
       "split_label": "TSLA/META/NVDA/SPY/WTI/BRENT",
       "baseline": 770.77,
       "baseline_source": "CNBC 1m (next bar)",
+      "locked_pct": -0.7006,
+      "locked_at": "2026-10-28T01:18+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -17654,6 +17664,8 @@
       "split_label": "TSLA/META/NVDA/SPY/WTI/BRENT",
       "baseline": 98.98,
       "baseline_source": "CNBC 1m (next bar)",
+      "locked_pct": 2.0812,
+      "locked_at": "2026-10-28T01:18+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -17687,6 +17699,8 @@
       "split_label": "TSLA/META/NVDA/SPY/WTI/BRENT",
       "baseline": 110.14,
       "baseline_source": "CNBC 1m (next bar)",
+      "locked_pct": 4.6395,
+      "locked_at": "2026-10-28T01:18+00:00",
       "copy_of": "",
       "spam_farm": false
     },

@@ -1896,7 +1896,10 @@
   "362|TSLA/META/NVDA/SPY/WTI/BRENT|2026-10-21 02:18": {
     "price": 368.06,
     "source": "Nasdaq daily (close)",
-    "at": "2026-10-21 02:18"
+    "at": "2026-10-21 02:18",
+    "locked_pct": 6.4011,
+    "locked_price": 391.62,
+    "locked_at": "2026-10-28T01:18+00:00"
   },
   "363|SPCX/TSLA/WTI/SPY|2026-10-21 04:22": {
     "price": 147.79,
@@ -4234,32 +4237,50 @@
   "362-TSLA|TSLA|2026-10-21 02:18": {
     "price": 379.7,
     "source": "CNBC 1m (next bar)",
-    "at": "2026-10-21 02:18"
+    "at": "2026-10-21 02:18",
+    "locked_pct": 3.1393,
+    "locked_price": 391.62,
+    "locked_at": "2026-10-28T01:18+00:00"
   },
   "362-META|META|2026-10-21 02:18": {
     "price": 700.1,
     "source": "CNBC 1m (next bar)",
-    "at": "2026-10-21 02:18"
+    "at": "2026-10-21 02:18",
+    "locked_pct": -9.9329,
+    "locked_price": 630.56,
+    "locked_at": "2026-10-28T01:18+00:00"
   },
   "362-NVDA|NVDA|2026-10-21 02:18": {
     "price": 220.77,
     "source": "CNBC 1m (next bar)",
-    "at": "2026-10-21 02:18"
+    "at": "2026-10-21 02:18",
+    "locked_pct": -2.1606,
+    "locked_price": 216.0,
+    "locked_at": "2026-10-28T01:18+00:00"
   },
   "362-SPY|SPY|2026-10-21 02:18": {
     "price": 770.77,
     "source": "CNBC 1m (next bar)",
-    "at": "2026-10-21 02:18"
+    "at": "2026-10-21 02:18",
+    "locked_pct": -0.7006,
+    "locked_price": 765.37,
+    "locked_at": "2026-10-28T01:18+00:00"
   },
   "362-WTI|WTI|2026-10-21 02:18": {
     "price": 98.98,
     "source": "CNBC 1m (next bar)",
-    "at": "2026-10-21 02:18"
+    "at": "2026-10-21 02:18",
+    "locked_pct": 2.0812,
+    "locked_price": 101.04,
+    "locked_at": "2026-10-28T01:18+00:00"
   },
   "362-BRENT|BRENT|2026-10-21 02:18": {
     "price": 110.14,
     "source": "CNBC 1m (next bar)",
-    "at": "2026-10-21 02:18"
+    "at": "2026-10-21 02:18",
+    "locked_pct": 4.6395,
+    "locked_price": 115.25,
+    "locked_at": "2026-10-28T01:18+00:00"
   },
   "363-SPCX|SPCX|2026-10-21 04:22": {
     "price": 161.0,
@@ -4860,7 +4881,7 @@
   "255|HMM|2026-10-14 03:39": {
     "price": null,
     "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for HMM; yahoo: yahoo cooling down after 429 (89s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
+    "error": "cnbc: cnbc: no bars for HMM; yahoo: yahoo cooling down after 429 (90s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
     "at": "2026-10-14 03:39"
   },
   "282|DOPE|2026-10-14 20:38": {
@@ -4872,7 +4893,7 @@
   "485|USELESS|2026-10-23 13:06": {
     "price": null,
     "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for USELESS; yahoo: yahoo cooling down after 429 (88s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
+    "error": "cnbc: cnbc: no bars for USELESS; yahoo: yahoo cooling down after 429 (87s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
     "at": "2026-10-23 13:06"
   },
   "579|HMM (SMALL-CAP TOKEN)|2026-10-27 23:21": {
