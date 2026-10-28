@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-28T21:45:46+00:00",
+  "generated_at": "2026-10-28T22:42:18+00:00",
   "ledgerUpdatedAt": "2026-10-28T20:27:00+00:00",
-  "pricesUpdatedAt": "2026-10-28T21:49:34+00:00",
+  "pricesUpdatedAt": "2026-10-28T22:46:01+00:00",
   "staleAfterMin": 45,
   "calls": [
     {
@@ -21231,6 +21231,8 @@
       "spam_override": null,
       "baseline": 155.6,
       "baseline_source": "CNBC daily (close)",
+      "locked_pct": 3.8239,
+      "locked_at": "2026-10-28T21:50+00:00",
       "copy_of": "",
       "spam_farm": false
     },
