@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-28T19:16:10+00:00",
+  "generated_at": "2026-10-28T19:48:24+00:00",
   "ledgerUpdatedAt": "2026-10-28T18:10:00+00:00",
-  "pricesUpdatedAt": "2026-10-28T18:44:36+00:00",
+  "pricesUpdatedAt": "2026-10-28T19:52:10+00:00",
   "staleAfterMin": 45,
   "calls": [
     {
@@ -20744,6 +20744,8 @@
       "spam_override": null,
       "baseline": 694.25,
       "baseline_source": "Nasdaq daily (close)",
+      "locked_pct": 12.0,
+      "locked_at": "2026-10-28T19:21+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -20780,6 +20782,8 @@
       ],
       "baseline": 110.01,
       "baseline_source": "CNBC 1m (next bar)",
+      "locked_pct": 4.745,
+      "locked_at": "2026-10-28T19:21+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -20813,6 +20817,8 @@
       "split_label": "Brent/WTI oil, Gold",
       "baseline": 109.97,
       "baseline_source": "CNBC 1m (next bar)",
+      "locked_pct": 4.7831,
+      "locked_at": "2026-10-28T19:21+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -20846,6 +20852,8 @@
       "split_label": "Brent/WTI oil, Gold",
       "baseline": 98.01,
       "baseline_source": "CNBC 1m",
+      "locked_pct": 4.8056,
+      "locked_at": "2026-10-28T19:21+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -20879,6 +20887,8 @@
       "split_label": "Brent/WTI oil, Gold",
       "baseline": 4135.8,
       "baseline_source": "CNBC 1m",
+      "locked_pct": -1.7167,
+      "locked_at": "2026-10-28T19:21+00:00",
       "copy_of": "",
       "spam_farm": false
     },
