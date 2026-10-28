@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-28T09:10:13+00:00",
+  "generated_at": "2026-10-28T09:41:24+00:00",
   "ledgerUpdatedAt": "2026-10-28T08:27:00+00:00",
-  "pricesUpdatedAt": "2026-10-28T08:51:21+00:00",
+  "pricesUpdatedAt": "2026-10-28T09:45:24+00:00",
   "staleAfterMin": 45,
   "calls": [
     {
@@ -18359,6 +18359,8 @@
       ],
       "baseline": 769.05,
       "baseline_source": "Nasdaq daily (close)",
+      "locked_pct": 0.2185,
+      "locked_at": "2026-10-28T09:18+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -18392,6 +18394,8 @@
       "split_label": "SPY/WTI/RUB",
       "baseline": 769.65,
       "baseline_source": "CNBC 1m",
+      "locked_pct": 0.1403,
+      "locked_at": "2026-10-28T09:18+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -18425,6 +18429,8 @@
       "split_label": "SPY/WTI/RUB",
       "baseline": 99.12,
       "baseline_source": "CNBC 1m (next bar)",
+      "locked_pct": 2.502,
+      "locked_at": "2026-10-28T09:18+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -18456,6 +18462,8 @@
       "spam_override": null,
       "baseline": 83497.8,
       "baseline_source": "Kraken",
+      "locked_pct": -2.3966,
+      "locked_at": "2026-10-28T09:31+00:00",
       "copy_of": "",
       "spam_farm": false
     },
