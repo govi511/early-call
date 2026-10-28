@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-28T11:10:02+00:00",
+  "generated_at": "2026-10-28T11:40:27+00:00",
   "ledgerUpdatedAt": "2026-10-28T11:08:00+00:00",
-  "pricesUpdatedAt": "2026-10-28T10:46:36+00:00",
+  "pricesUpdatedAt": "2026-10-28T11:44:51+00:00",
   "staleAfterMin": 45,
   "calls": [
     {
@@ -18596,6 +18596,8 @@
       ],
       "baseline": 147.79,
       "baseline_source": "Nasdaq daily (close)",
+      "locked_pct": 1.0414,
+      "locked_at": "2026-10-28T11:20+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -18629,6 +18631,8 @@
       "split_label": "SPCX/TSLA/BRENT/SPY",
       "baseline": 158.18,
       "baseline_source": "CNBC 1m (next bar)",
+      "locked_pct": -5.5955,
+      "locked_at": "2026-10-28T11:20+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -18662,6 +18666,8 @@
       "split_label": "SPCX/TSLA/BRENT/SPY",
       "baseline": 378.82,
       "baseline_source": "CNBC 1m (next bar)",
+      "locked_pct": 7.9959,
+      "locked_at": "2026-10-28T11:20+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -18695,6 +18701,8 @@
       "split_label": "SPCX/TSLA/BRENT/SPY",
       "baseline": 109.89,
       "baseline_source": "CNBC 1m (next bar)",
+      "locked_pct": 4.7775,
+      "locked_at": "2026-10-28T11:20+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -18728,6 +18736,8 @@
       "split_label": "SPCX/TSLA/BRENT/SPY",
       "baseline": 770.78,
       "baseline_source": "CNBC 1m (next bar)",
+      "locked_pct": 0.0078,
+      "locked_at": "2026-10-28T11:20+00:00",
       "copy_of": "",
       "spam_farm": false
     },
