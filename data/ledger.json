@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-28T12:40:57+00:00",
+  "generated_at": "2026-10-28T13:22:00+00:00",
   "ledgerUpdatedAt": "2026-10-28T12:28:00+00:00",
   "pricesUpdatedAt": "2026-10-28T12:45:10+00:00",
   "staleAfterMin": 45,
@@ -18803,6 +18803,8 @@
       ],
       "baseline": 340.275,
       "baseline_source": "Nasdaq daily (close)",
+      "locked_pct": -5.788,
+      "locked_at": "2026-10-28T13:18+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -18836,6 +18838,8 @@
       "split_label": "GOOGL/MSFT/COIN",
       "baseline": 336.66,
       "baseline_source": "CNBC 1m (next bar)",
+      "locked_pct": -4.7763,
+      "locked_at": "2026-10-28T13:18+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -18869,6 +18873,8 @@
       "split_label": "GOOGL/MSFT/COIN",
       "baseline": 530.61,
       "baseline_source": "CNBC 1m (next bar)",
+      "locked_pct": 0.1357,
+      "locked_at": "2026-10-28T13:18+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -18902,6 +18908,8 @@
       "split_label": "GOOGL/MSFT/COIN",
       "baseline": 174.69,
       "baseline_source": "CNBC 1m (next bar)",
+      "locked_pct": -7.7852,
+      "locked_at": "2026-10-28T13:18+00:00",
       "copy_of": "",
       "spam_farm": false
     },
