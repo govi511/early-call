@@ -2008,22 +2008,34 @@
   "380|ZEC|2026-10-21 15:13": {
     "price": 1304.53,
     "source": "Kraken",
-    "at": "2026-10-21 15:13"
+    "at": "2026-10-21 15:13",
+    "locked_pct": -1.8551,
+    "locked_price": 1280.33,
+    "locked_at": "2026-10-28T14:13+00:00"
   },
   "381|BTC|2026-10-21 15:13": {
     "price": 83669.4,
     "source": "Kraken",
-    "at": "2026-10-21 15:13"
+    "at": "2026-10-21 15:13",
+    "locked_pct": -3.6047,
+    "locked_price": 80653.4,
+    "locked_at": "2026-10-28T14:13+00:00"
   },
   "382|NFLX|2026-10-21 15:13": {
     "price": 68.69,
     "source": "Nasdaq daily (close)",
-    "at": "2026-10-21 15:13"
+    "at": "2026-10-21 15:13",
+    "locked_pct": -9.9432,
+    "locked_price": 61.86,
+    "locked_at": "2026-10-28T14:13+00:00"
   },
   "384|ZEC|2026-10-21 15:13": {
     "price": 1304.53,
     "source": "Kraken",
-    "at": "2026-10-21 15:13"
+    "at": "2026-10-21 15:13",
+    "locked_pct": -1.8551,
+    "locked_price": 1280.33,
+    "locked_at": "2026-10-28T14:13+00:00"
   },
   "387|BTC|2026-10-21 16:13": {
     "price": 84713.3,
@@ -5042,13 +5054,13 @@
   "255|HMM|2026-10-14 03:39": {
     "price": null,
     "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for HMM; yahoo: yahoo cooling down after 429 (89s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
+    "error": "cnbc: cnbc: no bars for HMM; yahoo: yahoo cooling down after 429 (90s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
     "at": "2026-10-14 03:39"
   },
   "282|DOPE|2026-10-14 20:38": {
     "price": null,
     "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for DOPE; yahoo: yahoo cooling down after 429 (88s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
+    "error": "cnbc: cnbc: no bars for DOPE; yahoo: yahoo cooling down after 429 (89s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
     "at": "2026-10-14 20:38"
   },
   "485|USELESS|2026-10-23 13:06": {
@@ -5066,13 +5078,33 @@
   "580|ISRAEL ELECTION (CONTEXT)|2026-10-28 00:35": {
     "price": null,
     "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for ISRAEL ELECTION (CONTEXT); yahoo: yahoo cooling down after 429 (86s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
+    "error": "cnbc: cnbc: no bars for ISRAEL ELECTION (CONTEXT); yahoo: yahoo cooling down after 429 (87s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-28 00:35"
   },
   "589|PEPE|2026-10-28 11:08": {
     "price": null,
     "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for PEPE; yahoo: yahoo cooling down after 429 (85s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
+    "error": "cnbc: cnbc: no bars for PEPE; yahoo: yahoo cooling down after 429 (84s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-28 11:08"
+  },
+  "598|A (AGILENT)|2026-10-28 13:39": {
+    "price": 179.36,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-28 13:39"
+  },
+  "599|PACS|2026-10-28 13:41": {
+    "price": 49.81,
+    "source": "CNBC 1m",
+    "at": "2026-10-28 13:41"
+  },
+  "600|TEM (TEMPUS AI)|2026-10-28 13:55": {
+    "price": 76.39,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-28 13:55"
+  },
+  "601|LULU (LULULEMON)|2026-10-28 14:00": {
+    "price": 104.93,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-28 14:00"
   }
 }
