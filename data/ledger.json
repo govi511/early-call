@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-28T15:40:21+00:00",
+  "generated_at": "2026-10-28T15:53:52+00:00",
   "ledgerUpdatedAt": "2026-10-28T14:29:00+00:00",
   "pricesUpdatedAt": "2026-10-28T15:44:16+00:00",
   "staleAfterMin": 45,
@@ -19972,6 +19972,8 @@
       "spam_override": null,
       "baseline": 340.275,
       "baseline_source": "Nasdaq daily (close)",
+      "locked_pct": 4.8887,
+      "locked_at": "2026-10-28T15:43+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -20003,6 +20005,8 @@
       "spam_override": null,
       "baseline": 5.31,
       "baseline_source": "Nasdaq daily (close)",
+      "locked_pct": 14.6893,
+      "locked_at": "2026-10-28T15:44+00:00",
       "copy_of": "",
       "spam_farm": false
     },
