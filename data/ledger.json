@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-28T07:16:47+00:00",
+  "generated_at": "2026-10-28T07:46:10+00:00",
   "ledgerUpdatedAt": "2026-10-28T07:08:00+00:00",
-  "pricesUpdatedAt": "2026-10-28T06:45:44+00:00",
+  "pricesUpdatedAt": "2026-10-28T07:51:20+00:00",
   "staleAfterMin": 45,
   "calls": [
     {
@@ -18155,6 +18155,8 @@
       ],
       "baseline": 1.3377,
       "baseline_source": "CNBC 1m (next bar)",
+      "locked_pct": -0.77,
+      "locked_at": "2026-10-28T07:20+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -18188,6 +18190,8 @@
       "split_label": "GBP/UK100/SPCX",
       "baseline": 1.3376,
       "baseline_source": "CNBC 1m (next bar)",
+      "locked_pct": -0.7626,
+      "locked_at": "2026-10-28T07:20+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -18221,6 +18225,8 @@
       "split_label": "GBP/UK100/SPCX",
       "baseline": 10714.6,
       "baseline_source": "CNBC 1m (next bar)",
+      "locked_pct": -0.2619,
+      "locked_at": "2026-10-28T07:20+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -18254,6 +18260,8 @@
       "split_label": "GBP/UK100/SPCX",
       "baseline": 161.0,
       "baseline_source": "CNBC 1m (next bar)",
+      "locked_pct": -7.7143,
+      "locked_at": "2026-10-28T07:20+00:00",
       "copy_of": "",
       "spam_farm": false
     },
