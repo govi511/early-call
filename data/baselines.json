@@ -1928,7 +1928,10 @@
   "366|SPCX/SPY/JPY|2026-10-21 06:24": {
     "price": 147.79,
     "source": "Nasdaq daily (close)",
-    "at": "2026-10-21 06:24"
+    "at": "2026-10-21 06:24",
+    "locked_pct": 0.1288,
+    "locked_price": 147.9803,
+    "locked_at": "2026-10-28T05:24+00:00"
   },
   "367|ETH|2026-10-21 07:07": {
     "price": 2436.44,
@@ -4326,12 +4329,18 @@
   "366-SPCX|SPCX|2026-10-21 06:24": {
     "price": 161.0,
     "source": "CNBC 1m (next bar)",
-    "at": "2026-10-21 06:24"
+    "at": "2026-10-21 06:24",
+    "locked_pct": -8.0868,
+    "locked_price": 147.9803,
+    "locked_at": "2026-10-28T05:24+00:00"
   },
   "366-SPY|SPY|2026-10-21 06:24": {
     "price": 770.77,
     "source": "CNBC 1m (next bar)",
-    "at": "2026-10-21 06:24"
+    "at": "2026-10-21 06:24",
+    "locked_pct": -0.144,
+    "locked_price": 769.66,
+    "locked_at": "2026-10-28T05:24+00:00"
   },
   "369-GBPUSD|GBPUSD|2026-10-21 08:20": {
     "price": 1.3376,
@@ -4929,19 +4938,19 @@
   "485|USELESS|2026-10-23 13:06": {
     "price": null,
     "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for USELESS; yahoo: yahoo cooling down after 429 (86s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
+    "error": "cnbc: cnbc: no bars for USELESS; yahoo: yahoo cooling down after 429 (79s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
     "at": "2026-10-23 13:06"
   },
   "579|HMM (SMALL-CAP TOKEN)|2026-10-27 23:21": {
     "price": null,
     "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for HMM; yahoo: yahoo cooling down after 429 (85s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
+    "error": "cnbc: cnbc: no bars for HMM; yahoo: yahoo cooling down after 429 (79s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-27 23:21"
   },
   "580|ISRAEL ELECTION (CONTEXT)|2026-10-28 00:35": {
     "price": null,
     "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for ISRAEL ELECTION (CONTEXT); yahoo: yahoo cooling down after 429 (67s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
+    "error": "cnbc: cnbc: no bars for ISRAEL ELECTION (CONTEXT); yahoo: yahoo cooling down after 429 (78s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-28 00:35"
   }
 }
