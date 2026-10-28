@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-28T10:12:01+00:00",
+  "generated_at": "2026-10-28T10:42:11+00:00",
   "ledgerUpdatedAt": "2026-10-28T10:12:00+00:00",
-  "pricesUpdatedAt": "2026-10-28T09:45:24+00:00",
+  "pricesUpdatedAt": "2026-10-28T10:46:36+00:00",
   "staleAfterMin": 45,
   "calls": [
     {
@@ -18555,6 +18555,8 @@
       "spam_override": null,
       "baseline": 271.4376,
       "baseline_source": "Kraken",
+      "locked_pct": -5.4184,
+      "locked_at": "2026-10-28T10:35+00:00",
       "copy_of": "",
       "spam_farm": false
     },
