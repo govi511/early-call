@@ -4976,6 +4976,26 @@
     "source": "OKX",
     "at": "2026-10-28 08:27"
   },
+  "590|SYK (STRYKER)|2026-10-28 12:00": {
+    "price": 297.49,
+    "source": "CNBC 1m",
+    "at": "2026-10-28 12:00"
+  },
+  "591|APH (AMPHENOL)|2026-10-28 12:06": {
+    "price": 84.09,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-28 12:06"
+  },
+  "592|SKHY (SK HYNIX)|2026-10-28 12:07": {
+    "price": 156.15,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-10-28 12:07"
+  },
+  "593|HYPE|2026-10-28 11:57": {
+    "price": 81.406,
+    "source": "OKX",
+    "at": "2026-10-28 11:57"
+  },
   "248|PONS|2026-10-13 21:56": {
     "price": null,
     "source": "unavailable",
@@ -4997,13 +5017,13 @@
   "485|USELESS|2026-10-23 13:06": {
     "price": null,
     "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for USELESS; yahoo: yahoo cooling down after 429 (88s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
+    "error": "cnbc: cnbc: no bars for USELESS; yahoo: yahoo cooling down after 429 (89s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
     "at": "2026-10-23 13:06"
   },
   "579|HMM (SMALL-CAP TOKEN)|2026-10-27 23:21": {
     "price": null,
     "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for HMM; yahoo: yahoo cooling down after 429 (87s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
+    "error": "cnbc: cnbc: no bars for HMM; yahoo: yahoo cooling down after 429 (88s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-27 23:21"
   },
   "580|ISRAEL ELECTION (CONTEXT)|2026-10-28 00:35": {
@@ -5017,25 +5037,5 @@
     "source": "unavailable",
     "error": "cnbc: cnbc: no bars for PEPE; yahoo: yahoo cooling down after 429 (85s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-28 11:08"
-  },
-  "590|SYK (STRYKER)|2026-10-28 12:00": {
-    "price": 297.49,
-    "source": "CNBC 1m",
-    "at": "2026-10-28 12:00"
-  },
-  "591|APH (AMPHENOL)|2026-10-28 12:06": {
-    "price": 84.09,
-    "source": "CNBC 1m (next bar)",
-    "at": "2026-10-28 12:06"
-  },
-  "592|SKHY (SK HYNIX)|2026-10-28 12:07": {
-    "price": 156.15,
-    "source": "CNBC 1m (next bar)",
-    "at": "2026-10-28 12:07"
-  },
-  "593|HYPE|2026-10-28 11:57": {
-    "price": 81.406,
-    "source": "OKX",
-    "at": "2026-10-28 11:57"
   }
 }
