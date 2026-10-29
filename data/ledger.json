@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-29T17:55:27+00:00",
+  "generated_at": "2026-10-29T18:02:17+00:00",
   "ledgerUpdatedAt": "2026-10-29T16:54:00+00:00",
   "pricesUpdatedAt": "2026-10-29T17:47:12+00:00",
   "staleAfterMin": 45,
@@ -23737,6 +23737,8 @@
       "spam_override": null,
       "baseline": 19.52,
       "baseline_source": "CNBC 1m",
+      "locked_pct": -13.3709,
+      "locked_at": "2026-10-29T18:02+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -23830,6 +23832,8 @@
       "spam_override": null,
       "baseline": 646.77,
       "baseline_source": "CNBC 1m (next bar)",
+      "locked_pct": -5.3002,
+      "locked_at": "2026-10-29T17:57+00:00",
       "copy_of": "",
       "spam_farm": false
     },
