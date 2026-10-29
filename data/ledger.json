@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-29T11:15:55+00:00",
+  "generated_at": "2026-10-29T11:45:39+00:00",
   "ledgerUpdatedAt": "2026-10-29T10:50:00+00:00",
-  "pricesUpdatedAt": "2026-10-29T10:50:11+00:00",
+  "pricesUpdatedAt": "2026-10-29T11:49:37+00:00",
   "staleAfterMin": 45,
   "calls": [
     {
@@ -22574,6 +22574,8 @@
       ],
       "baseline": 156.7,
       "baseline_source": "CNBC daily (close)",
+      "locked_pct": -8.4747,
+      "locked_at": "2026-10-29T11:20+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -22607,6 +22609,8 @@
       "split_label": "SPCX/EUR bonds/Brent oil/NVDA",
       "baseline": 155.69,
       "baseline_source": "CNBC 1m (next bar)",
+      "locked_pct": -7.881,
+      "locked_at": "2026-10-29T11:20+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -22640,6 +22644,8 @@
       "split_label": "SPCX/EUR bonds/Brent oil/NVDA",
       "baseline": 111.84,
       "baseline_source": "CNBC 1m (next bar)",
+      "locked_pct": 1.833,
+      "locked_at": "2026-10-29T11:20+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -22673,6 +22679,8 @@
       "split_label": "SPCX/EUR bonds/Brent oil/NVDA",
       "baseline": 217.2298,
       "baseline_source": "CNBC 1m (next bar)",
+      "locked_pct": -1.2566,
+      "locked_at": "2026-10-29T11:20+00:00",
       "copy_of": "",
       "spam_farm": false
     },
