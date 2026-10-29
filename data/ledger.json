@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-29T20:39:31+00:00",
+  "generated_at": "2026-10-29T21:10:26+00:00",
   "ledgerUpdatedAt": "2026-10-29T20:30:00+00:00",
   "pricesUpdatedAt": "2026-10-29T20:43:27+00:00",
   "staleAfterMin": 45,
@@ -14792,7 +14792,7 @@
         "317-SPX",
         "317-EURUSD"
       ],
-      "baseline_rejected": "Nasdaq daily (close) 3.85 vs live 102.34",
+      "baseline_rejected": "Nasdaq daily (close) 3.85 vs live 102.83",
       "copy_of": "",
       "spam_farm": false
     },
@@ -15919,7 +15919,7 @@
         "342-GOOG",
         "342-MRNA"
       ],
-      "baseline_rejected": "Nasdaq daily (close) 3.85 vs live 102.34",
+      "baseline_rejected": "Nasdaq daily (close) 3.85 vs live 102.83",
       "copy_of": "",
       "spam_farm": false
     },
@@ -19422,7 +19422,7 @@
         "393-CHIP",
         "393-STRK"
       ],
-      "baseline_rejected": "Nasdaq daily (close) 3492.513 vs live 22.41",
+      "baseline_rejected": "Nasdaq daily (close) 3492.513 vs live 22.4",
       "copy_of": "",
       "spam_farm": false
     },
@@ -19489,7 +19489,7 @@
       "spam_override": null,
       "split_of": "393",
       "split_label": "CHIP/STRK",
-      "baseline_rejected": "CNBC 1m (next bar) 72.165 vs live 0.04598",
+      "baseline_rejected": "CNBC 1m (next bar) 72.165 vs live 0.04343",
       "copy_of": "",
       "spam_farm": false
     },
@@ -29274,7 +29274,7 @@
       "spam_override": null,
       "split_of": "581",
       "split_label": "BAT / STRK (small-cap tokens)",
-      "baseline_rejected": "CNBC daily (close) 69.86 vs live 0.04598",
+      "baseline_rejected": "CNBC daily (close) 69.86 vs live 0.04343",
       "copy_of": "",
       "spam_farm": false
     },
