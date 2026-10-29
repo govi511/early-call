@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-29T07:14:07+00:00",
+  "generated_at": "2026-10-29T07:47:19+00:00",
   "ledgerUpdatedAt": "2026-10-29T04:46:00+00:00",
-  "pricesUpdatedAt": "2026-10-29T06:44:25+00:00",
+  "pricesUpdatedAt": "2026-10-29T07:50:53+00:00",
   "staleAfterMin": 45,
   "calls": [
     {
@@ -22050,6 +22050,8 @@
       ],
       "baseline": 108.82,
       "baseline_source": "CNBC daily (close)",
+      "locked_pct": 5.2472,
+      "locked_at": "2026-10-29T07:20+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -22083,6 +22085,8 @@
       "split_label": "Brent/WTI oil/USDJPY/Nikkei",
       "baseline": 111.58,
       "baseline_source": "CNBC 1m (next bar)",
+      "locked_pct": 2.6438,
+      "locked_at": "2026-10-29T07:20+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -22116,6 +22120,8 @@
       "split_label": "Brent/WTI oil/USDJPY/Nikkei",
       "baseline": 99.66,
       "baseline_source": "CNBC 1m (next bar)",
+      "locked_pct": 2.1473,
+      "locked_at": "2026-10-29T07:20+00:00",
       "copy_of": "",
       "spam_farm": false
     },
