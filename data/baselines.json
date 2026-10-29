@@ -2746,7 +2746,10 @@
   "458|SPY/TSLA/SPCX/PLTR/GOOGL|2026-10-22 20:15": {
     "price": 773.09,
     "source": "CNBC daily (close)",
-    "at": "2026-10-22 20:15"
+    "at": "2026-10-22 20:15",
+    "locked_pct": -0.7386,
+    "locked_price": 767.38,
+    "locked_at": "2026-10-29T19:15+00:00"
   },
   "460|NVDA|2026-10-22 21:12": {
     "price": 221.97,
@@ -5124,27 +5127,42 @@
   "458-SPY|SPY|2026-10-22 20:15": {
     "price": 762.26,
     "source": "CNBC 1m (next bar)",
-    "at": "2026-10-22 20:15"
+    "at": "2026-10-22 20:15",
+    "locked_pct": 0.6717,
+    "locked_price": 767.38,
+    "locked_at": "2026-10-29T19:15+00:00"
   },
   "458-TSLA|TSLA|2026-10-22 20:15": {
     "price": 377.02,
     "source": "CNBC 1m (next bar)",
-    "at": "2026-10-22 20:15"
+    "at": "2026-10-22 20:15",
+    "locked_pct": 7.3405,
+    "locked_price": 404.695,
+    "locked_at": "2026-10-29T19:15+00:00"
   },
   "458-SPCX|SPCX|2026-10-22 20:15": {
     "price": 144.82,
     "source": "CNBC 1m (next bar)",
-    "at": "2026-10-22 20:15"
+    "at": "2026-10-22 20:15",
+    "locked_pct": -0.8977,
+    "locked_price": 143.52,
+    "locked_at": "2026-10-29T19:15+00:00"
   },
   "458-PLTR|PLTR|2026-10-22 20:15": {
     "price": 195.96,
     "source": "CNBC 1m (next bar)",
-    "at": "2026-10-22 20:15"
+    "at": "2026-10-22 20:15",
+    "locked_pct": -1.3765,
+    "locked_price": 193.2626,
+    "locked_at": "2026-10-29T19:15+00:00"
   },
   "458-GOOGL|GOOGL|2026-10-22 20:15": {
     "price": 323.08,
     "source": "CNBC 1m (next bar)",
-    "at": "2026-10-22 20:15"
+    "at": "2026-10-22 20:15",
+    "locked_pct": -12.4892,
+    "locked_price": 282.73,
+    "locked_at": "2026-10-29T19:15+00:00"
   },
   "462-SPY|SPY|2026-10-22 22:14": {
     "price": 764.02,
@@ -5643,61 +5661,61 @@
   "248|PONS|2026-10-13 21:56": {
     "price": null,
     "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for PONS; yahoo: yahoo cooling down after 429 (89s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
+    "error": "cnbc: cnbc: no bars for PONS; yahoo: yahoo cooling down after 429 (81s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
     "at": "2026-10-13 21:56"
   },
   "255|HMM|2026-10-14 03:39": {
     "price": null,
     "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for HMM; yahoo: yahoo cooling down after 429 (88s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
+    "error": "cnbc: cnbc: no bars for HMM; yahoo: yahoo cooling down after 429 (78s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
     "at": "2026-10-14 03:39"
   },
   "282|DOPE|2026-10-14 20:38": {
     "price": null,
     "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for DOPE; yahoo: yahoo cooling down after 429 (81s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
+    "error": "cnbc: cnbc: no bars for DOPE; yahoo: yahoo cooling down after 429 (78s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
     "at": "2026-10-14 20:38"
   },
   "485|USELESS|2026-10-23 13:06": {
     "price": null,
     "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for USELESS; yahoo: yahoo cooling down after 429 (80s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
+    "error": "cnbc: cnbc: no bars for USELESS; yahoo: yahoo cooling down after 429 (60s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
     "at": "2026-10-23 13:06"
   },
   "579|HMM (SMALL-CAP TOKEN)|2026-10-27 23:21": {
     "price": null,
     "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for HMM; yahoo: yahoo cooling down after 429 (78s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
+    "error": "cnbc: cnbc: no bars for HMM; yahoo: yahoo cooling down after 429 (58s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-27 23:21"
   },
   "580|ISRAEL ELECTION (CONTEXT)|2026-10-28 00:35": {
     "price": null,
     "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for ISRAEL ELECTION (CONTEXT); yahoo: yahoo cooling down after 429 (73s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
+    "error": "cnbc: cnbc: no bars for ISRAEL ELECTION (CONTEXT); yahoo: yahoo cooling down after 429 (57s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-28 00:35"
   },
   "589|PEPE|2026-10-28 11:08": {
     "price": null,
     "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for PEPE; yahoo: yahoo cooling down after 429 (66s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
+    "error": "cnbc: cnbc: no bars for PEPE; yahoo: yahoo cooling down after 429 (56s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-28 11:08"
   },
   "610|PONS (SMALL-CAP TOKEN)|2026-10-28 18:10": {
     "price": null,
     "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for PONS; yahoo: yahoo cooling down after 429 (57s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
+    "error": "cnbc: cnbc: no bars for PONS; yahoo: yahoo cooling down after 429 (55s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-28 18:10"
   },
   "615|PEPE / USELESS (SMALL-CAP TOKENS)|2026-10-28 20:13": {
     "price": null,
     "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for PEPE; yahoo: yahoo cooling down after 429 (56s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
+    "error": "cnbc: cnbc: no bars for PEPE; yahoo: yahoo cooling down after 429 (54s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-28 20:13"
   },
   "645|CASHCAT (ROBINHOOD CHAIN MEMECOIN)|2026-10-29 18:55": {
     "price": null,
     "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for CASHCAT (ROBINHOOD CHAIN MEMECOIN); yahoo: yahoo cooling down after 429 (52s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
+    "error": "cnbc: cnbc: no bars for CASHCAT (ROBINHOOD CHAIN MEMECOIN); yahoo: yahoo cooling down after 429 (48s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-29 18:55"
   }
 }

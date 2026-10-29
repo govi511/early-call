@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-29T19:15:16+00:00",
+  "generated_at": "2026-10-29T19:43:48+00:00",
   "ledgerUpdatedAt": "2026-10-29T19:10:00+00:00",
-  "pricesUpdatedAt": "2026-10-29T18:47:25+00:00",
+  "pricesUpdatedAt": "2026-10-29T19:48:49+00:00",
   "staleAfterMin": 45,
   "calls": [
     {
@@ -23872,6 +23872,8 @@
       ],
       "baseline": 773.09,
       "baseline_source": "CNBC daily (close)",
+      "locked_pct": -0.7386,
+      "locked_at": "2026-10-29T19:15+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -23905,6 +23907,8 @@
       "split_label": "SPY/TSLA/SPCX/PLTR/GOOGL",
       "baseline": 762.26,
       "baseline_source": "CNBC 1m (next bar)",
+      "locked_pct": 0.6717,
+      "locked_at": "2026-10-29T19:15+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -23938,6 +23942,8 @@
       "split_label": "SPY/TSLA/SPCX/PLTR/GOOGL",
       "baseline": 377.02,
       "baseline_source": "CNBC 1m (next bar)",
+      "locked_pct": 7.3405,
+      "locked_at": "2026-10-29T19:15+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -23971,6 +23977,8 @@
       "split_label": "SPY/TSLA/SPCX/PLTR/GOOGL",
       "baseline": 144.82,
       "baseline_source": "CNBC 1m (next bar)",
+      "locked_pct": -0.8977,
+      "locked_at": "2026-10-29T19:15+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -24004,6 +24012,8 @@
       "split_label": "SPY/TSLA/SPCX/PLTR/GOOGL",
       "baseline": 195.96,
       "baseline_source": "CNBC 1m (next bar)",
+      "locked_pct": -1.3765,
+      "locked_at": "2026-10-29T19:15+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -24037,6 +24047,8 @@
       "split_label": "SPY/TSLA/SPCX/PLTR/GOOGL",
       "baseline": 323.08,
       "baseline_source": "CNBC 1m (next bar)",
+      "locked_pct": -12.4892,
+      "locked_at": "2026-10-29T19:15+00:00",
       "copy_of": "",
       "spam_farm": false
     },
