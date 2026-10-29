@@ -2610,7 +2610,10 @@
   "436|BRENT/WTI OIL/GOLD/BTC/ETH|2026-10-22 10:18": {
     "price": 108.79,
     "source": "CNBC daily (close)",
-    "at": "2026-10-22 10:18"
+    "at": "2026-10-22 10:18",
+    "locked_pct": 4.8626,
+    "locked_price": 114.08,
+    "locked_at": "2026-10-29T09:18+00:00"
   },
   "437|ETH|2026-10-22 10:05": {
     "price": 2403.08,
@@ -4892,27 +4895,42 @@
   "436-BRENT|BRENT|2026-10-22 10:18": {
     "price": 111.9,
     "source": "CNBC 1m (next bar)",
-    "at": "2026-10-22 10:18"
+    "at": "2026-10-22 10:18",
+    "locked_pct": 1.9482,
+    "locked_price": 114.08,
+    "locked_at": "2026-10-29T09:18+00:00"
   },
   "436-WTI|WTI|2026-10-22 10:18": {
     "price": 99.24,
     "source": "CNBC 1m (next bar)",
-    "at": "2026-10-22 10:18"
+    "at": "2026-10-22 10:18",
+    "locked_pct": 2.0859,
+    "locked_price": 101.31,
+    "locked_at": "2026-10-29T09:18+00:00"
   },
   "436-GOLD|GOLD|2026-10-22 10:18": {
     "price": 4100.4,
     "source": "CNBC 1m (next bar)",
-    "at": "2026-10-22 10:18"
+    "at": "2026-10-22 10:18",
+    "locked_pct": -1.4706,
+    "locked_price": 4040.1,
+    "locked_at": "2026-10-29T09:18+00:00"
   },
   "436-BTC|BTC|2026-10-22 10:18": {
     "price": 81907.4,
     "source": "OKX",
-    "at": "2026-10-22 10:18"
+    "at": "2026-10-22 10:18",
+    "locked_pct": -2.0576,
+    "locked_price": 80222.1,
+    "locked_at": "2026-10-29T09:18+00:00"
   },
   "436-ETH|ETH|2026-10-22 10:18": {
     "price": 2406.53,
     "source": "OKX",
-    "at": "2026-10-22 10:18"
+    "at": "2026-10-22 10:18",
+    "locked_pct": -3.5358,
+    "locked_price": 2321.44,
+    "locked_at": "2026-10-29T09:18+00:00"
   },
   "438-SPCX|SPCX|2026-10-22 12:20": {
     "price": 155.69,
@@ -5390,37 +5408,37 @@
   "485|USELESS|2026-10-23 13:06": {
     "price": null,
     "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for USELESS; yahoo: yahoo cooling down after 429 (89s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
+    "error": "cnbc: cnbc: no bars for USELESS; yahoo: yahoo cooling down after 429 (88s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
     "at": "2026-10-23 13:06"
   },
   "579|HMM (SMALL-CAP TOKEN)|2026-10-27 23:21": {
     "price": null,
     "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for HMM; yahoo: yahoo cooling down after 429 (89s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
+    "error": "cnbc: cnbc: no bars for HMM; yahoo: yahoo cooling down after 429 (88s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-27 23:21"
   },
   "580|ISRAEL ELECTION (CONTEXT)|2026-10-28 00:35": {
     "price": null,
     "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for ISRAEL ELECTION (CONTEXT); yahoo: yahoo cooling down after 429 (88s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
+    "error": "cnbc: cnbc: no bars for ISRAEL ELECTION (CONTEXT); yahoo: yahoo cooling down after 429 (87s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-28 00:35"
   },
   "589|PEPE|2026-10-28 11:08": {
     "price": null,
     "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for PEPE; yahoo: yahoo cooling down after 429 (88s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
+    "error": "cnbc: cnbc: no bars for PEPE; yahoo: yahoo cooling down after 429 (86s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-28 11:08"
   },
   "610|PONS (SMALL-CAP TOKEN)|2026-10-28 18:10": {
     "price": null,
     "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for PONS; yahoo: yahoo cooling down after 429 (87s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
+    "error": "cnbc: cnbc: no bars for PONS; yahoo: yahoo cooling down after 429 (86s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-28 18:10"
   },
   "615|PEPE / USELESS (SMALL-CAP TOKENS)|2026-10-28 20:13": {
     "price": null,
     "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for PEPE; yahoo: yahoo cooling down after 429 (87s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
+    "error": "cnbc: cnbc: no bars for PEPE; yahoo: yahoo cooling down after 429 (85s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-28 20:13"
   }
 }

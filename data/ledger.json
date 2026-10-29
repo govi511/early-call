@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-29T09:15:48+00:00",
+  "generated_at": "2026-10-29T09:41:58+00:00",
   "ledgerUpdatedAt": "2026-10-29T08:35:00+00:00",
-  "pricesUpdatedAt": "2026-10-29T08:50:43+00:00",
+  "pricesUpdatedAt": "2026-10-29T09:45:35+00:00",
   "staleAfterMin": 45,
   "calls": [
     {
@@ -22342,6 +22342,8 @@
       ],
       "baseline": 108.79,
       "baseline_source": "CNBC daily (close)",
+      "locked_pct": 4.8626,
+      "locked_at": "2026-10-29T09:18+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -22375,6 +22377,8 @@
       "split_label": "Brent/WTI oil/Gold/BTC/ETH",
       "baseline": 111.9,
       "baseline_source": "CNBC 1m (next bar)",
+      "locked_pct": 1.9482,
+      "locked_at": "2026-10-29T09:18+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -22408,6 +22412,8 @@
       "split_label": "Brent/WTI oil/Gold/BTC/ETH",
       "baseline": 99.24,
       "baseline_source": "CNBC 1m (next bar)",
+      "locked_pct": 2.0859,
+      "locked_at": "2026-10-29T09:18+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -22441,6 +22447,8 @@
       "split_label": "Brent/WTI oil/Gold/BTC/ETH",
       "baseline": 4100.4,
       "baseline_source": "CNBC 1m (next bar)",
+      "locked_pct": -1.4706,
+      "locked_at": "2026-10-29T09:18+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -22474,6 +22482,8 @@
       "split_label": "Brent/WTI oil/Gold/BTC/ETH",
       "baseline": 81907.4,
       "baseline_source": "OKX",
+      "locked_pct": -2.0576,
+      "locked_at": "2026-10-29T09:18+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -22507,6 +22517,8 @@
       "split_label": "Brent/WTI oil/Gold/BTC/ETH",
       "baseline": 2406.53,
       "baseline_source": "OKX",
+      "locked_pct": -3.5358,
+      "locked_at": "2026-10-29T09:18+00:00",
       "copy_of": "",
       "spam_farm": false
     },
