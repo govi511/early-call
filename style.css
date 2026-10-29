@@ -141,7 +141,9 @@ footer{margin-bottom:90px}
 .lb-avatar{width:40px;height:40px;border-radius:50%;background:#222;object-fit:cover;flex:0 0 40px}
 .lb-name{flex:1;min-width:0}.lb-name b{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.lb-name small{color:var(--mut);font-size:12px}
 .lb-pnl{font-size:18px;font-weight:800;font-variant-numeric:tabular-nums}
-.lb-calls{display:flex;gap:6px;overflow-x:auto;padding:8px 0 2px;scrollbar-width:none}
+.lb-calls{display:flex;flex-wrap:wrap;gap:6px;padding:8px 0 2px}
+.lb-call.outlier{opacity:.45;border-style:dashed}
+.lb-call .review{font-size:10px;padding:0 5px;margin-left:4px;border-radius:6px;background:#3a2f12;color:#f5c451;opacity:1}
 .lb-call{flex:0 0 auto;font-size:12px;padding:4px 10px;border-radius:999px;background:#141414;border:1px solid #2a2a2a}
 .lb-call.up{border-color:rgba(74,222,128,.4)}.lb-call.dn{border-color:rgba(248,113,113,.4)}
 .flash-up{animation:fu 1s}.flash-dn{animation:fd 1s}
