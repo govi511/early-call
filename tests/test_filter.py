@@ -56,6 +56,17 @@ def test_470_ratio_call_skipped():
     assert R.is_ratio(r) and R.is_ratio("BTC vs ETH") and R.is_ratio("Brent-WTI spread")
     assert not R.is_ratio({"asset": "XAUUSD", "direction": "short"}) and not R.is_ratio("EUR/USD") and not R.is_ratio("Oil/Gold/S&P 500")
 
+def test_followers_only_from_posting_account():
+    """#570 (CryptoMichNL ~822k) and #581 + splits (AltcoinSherpa ~264k): 'N followers' of rejected discovery accounts later in notes must not stick."""
+    import json, re
+    calls = {c["id"]: c for c in json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data", "ledger.json")))["calls"]}
+    for i in ("570", "581", "581-BAT", "581-STRK"):
+        c = calls[i]
+        assert not re.search(r"\d\s*[km]?\s+followers", R.poster_notes(c["notes"]), re.I), i
+        assert c.get("followers") is None or c["followers"] >= 5000, (i, c.get("followers"))
+        assert not c.get("low_confidence") and not c.get("spam_flags"), i
+    assert R.poster_notes("source discovery; ~15.2k followers; rejected: foo 12 followers").startswith("source discovery; ~15.2k")
+
 if __name__ == "__main__":
     for n, f in list(globals().items()):
         if n.startswith("test_"): f(); print("ok", n)

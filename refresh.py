@@ -648,6 +648,11 @@ def pick(asset, ref):
         tried.append(f"{p['source']} {p['price']} far from entry {ref:g}")
         if ref is None: break
     raise RuntimeError("no matching price: " + "; ".join(tried))
+def poster_notes(n):
+    """Part of notes about the posting account: stops before scan recaps / rejected-discovery lists naming other accounts."""
+    return re.split(r"\b(?:rest of|discovery (?:all )?rejected|rejected|following (?:feed|timeline)|watchlist commentary)\b", n or "", maxsplit=1, flags=re.I)[0]
+
+
 def main():
     os.makedirs(DATA, exist_ok=True)
     # Shared lock with sync-ledger.sh / push-data.sh (data/.git.lock). Those scripts take it first and set
@@ -675,7 +680,7 @@ def main():
                 if m and r.get("status") == "expired":
                     r["exit_price"] = float(m.group(1)); en = level_nums(r.get("entry"))
                     if en: e0 = sum(en[:2]) / len(en[:2]); r["exit_pct"] = round((-1 if is_short(r.get("direction")) else 1) * (r["exit_price"] - e0) / e0 * 100, 4)
-                m = re.search(r"\b(\d+(?:[.,]\d+)?)\s*([km]?)\s+followers\b", r.get("notes", ""), re.I)
+                m = re.search(r"\b(\d+(?:[.,]\d+)?)\s*([km]?)\s+followers\b", poster_notes(r.get("notes", "")), re.I)  # posting account only
                 if r.get("followers", "").replace(",", "").isdigit(): r["followers"] = int(r["followers"].replace(",", ""))
                 else: r["followers"] = int(float(m.group(1).replace(",", ".")) * {"": 1, "k": 1e3, "m": 1e6}[m.group(2).lower()]) if m else None
                 r["source"] = "X" if any(d in r.get("post_url", "") for d in ("x.com", "twitter.com")) else "other"
