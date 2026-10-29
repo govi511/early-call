@@ -257,3 +257,5 @@ main{padding-bottom:calc(100px + env(safe-area-inset-bottom))!important}
 #feed .card.lowconf>.row:first-child>div::after{content:'low confidence';color:#9ca3af;background:rgba(156,163,175,.12);border-color:rgba(156,163,175,.35)}
 #feed .card.flow>.row:first-child>div::after{content:'flow';color:#c084fc;background:rgba(192,132,252,.12);border-color:rgba(192,132,252,.4)}
 #feed .card.spam>.row:first-child>div::after{content:'spam';color:#f87171;background:rgba(248,113,113,.12);border-color:rgba(248,113,113,.4)}
+
+.lbhow{margin:-4px 0 10px;font-size:13px}.lbhow summary{display:inline-block;padding:4px 0}.lbhow summary::-webkit-details-marker{display:none}.lbhow ul{margin:4px 0 0;padding-left:18px;color:var(--mut,#8b93a1);line-height:1.45}.lbhow li{margin:2px 0}
