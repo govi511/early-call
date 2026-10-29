@@ -5361,6 +5361,11 @@
     "source": "OKX",
     "at": "2026-10-29 01:38"
   },
+  "622|SOL|2026-10-29 08:27": {
+    "price": 100.03,
+    "source": "OKX",
+    "at": "2026-10-29 08:27"
+  },
   "248|PONS|2026-10-13 21:56": {
     "price": null,
     "source": "unavailable",
@@ -5388,36 +5393,31 @@
   "579|HMM (SMALL-CAP TOKEN)|2026-10-27 23:21": {
     "price": null,
     "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for HMM; yahoo: yahoo cooling down after 429 (88s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
+    "error": "cnbc: cnbc: no bars for HMM; yahoo: yahoo cooling down after 429 (89s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-27 23:21"
   },
   "580|ISRAEL ELECTION (CONTEXT)|2026-10-28 00:35": {
     "price": null,
     "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for ISRAEL ELECTION (CONTEXT); yahoo: yahoo cooling down after 429 (88s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
+    "error": "cnbc: cnbc: no bars for ISRAEL ELECTION (CONTEXT); yahoo: yahoo cooling down after 429 (89s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-28 00:35"
   },
   "589|PEPE|2026-10-28 11:08": {
     "price": null,
     "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for PEPE; yahoo: yahoo cooling down after 429 (87s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
+    "error": "cnbc: cnbc: no bars for PEPE; yahoo: yahoo cooling down after 429 (88s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-28 11:08"
   },
   "610|PONS (SMALL-CAP TOKEN)|2026-10-28 18:10": {
     "price": null,
     "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for PONS; yahoo: yahoo cooling down after 429 (87s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
+    "error": "cnbc: cnbc: no bars for PONS; yahoo: yahoo cooling down after 429 (88s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-28 18:10"
   },
   "615|PEPE / USELESS (SMALL-CAP TOKENS)|2026-10-28 20:13": {
     "price": null,
     "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for PEPE; yahoo: yahoo cooling down after 429 (86s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
+    "error": "cnbc: cnbc: no bars for PEPE; yahoo: yahoo cooling down after 429 (88s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-28 20:13"
-  },
-  "622|SOL|2026-10-29 08:27": {
-    "price": 100.03,
-    "source": "OKX",
-    "at": "2026-10-29 08:27"
   }
 }
