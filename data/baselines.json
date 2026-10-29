@@ -2562,12 +2562,18 @@
   "426|GOLD|2026-10-22 06:05": {
     "price": 4150.0,
     "source": "CNBC daily (close)",
-    "at": "2026-10-22 06:05"
+    "at": "2026-10-22 06:05",
+    "locked_pct": 2.3711,
+    "locked_price": 4051.6,
+    "locked_at": "2026-10-29T05:05+00:00"
   },
   "427|BTC|2026-10-22 06:05": {
     "price": 82881.5,
     "source": "OKX",
-    "at": "2026-10-22 06:05"
+    "at": "2026-10-22 06:05",
+    "locked_pct": -3.0891,
+    "locked_price": 80321.2,
+    "locked_at": "2026-10-29T05:05+00:00"
   },
   "428|BRENT/WTI OIL/GOLD/META|2026-10-22 06:22": {
     "price": 108.79,
@@ -5346,7 +5352,7 @@
   "485|USELESS|2026-10-23 13:06": {
     "price": null,
     "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for USELESS; yahoo: yahoo cooling down after 429 (89s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
+    "error": "cnbc: cnbc: no bars for USELESS; yahoo: yahoo cooling down after 429 (88s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
     "at": "2026-10-23 13:06"
   },
   "579|HMM (SMALL-CAP TOKEN)|2026-10-27 23:21": {
@@ -5376,7 +5382,7 @@
   "615|PEPE / USELESS (SMALL-CAP TOKENS)|2026-10-28 20:13": {
     "price": null,
     "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for PEPE; yahoo: yahoo cooling down after 429 (86s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
+    "error": "cnbc: cnbc: no bars for PEPE; yahoo: yahoo cooling down after 429 (87s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-28 20:13"
   }
 }
