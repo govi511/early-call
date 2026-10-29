@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-29T03:13:47+00:00",
+  "generated_at": "2026-10-29T03:14:45+00:00",
   "ledgerUpdatedAt": "2026-10-29T01:38:00+00:00",
   "pricesUpdatedAt": "2026-10-29T02:47:04+00:00",
   "staleAfterMin": 45,
@@ -21628,6 +21628,8 @@
       ],
       "baseline": 108.79,
       "baseline_source": "CNBC daily (close)",
+      "locked_pct": 6.0024,
+      "locked_at": "2026-10-29T03:14+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -21661,6 +21663,8 @@
       "split_label": "Brent/WTI oil/Nasdaq/KOSPI/Hang Seng",
       "baseline": 110.55,
       "baseline_source": "CNBC 1m",
+      "locked_pct": 4.3148,
+      "locked_at": "2026-10-29T03:14+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -21694,6 +21698,8 @@
       "split_label": "Brent/WTI oil/Nasdaq/KOSPI/Hang Seng",
       "baseline": 98.42,
       "baseline_source": "CNBC 1m (next bar)",
+      "locked_pct": 1.5038,
+      "locked_at": "2026-10-29T03:14+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -21727,6 +21733,8 @@
       "split_label": "Brent/WTI oil/Nasdaq/KOSPI/Hang Seng",
       "baseline": 713.28,
       "baseline_source": "CNBC 1m (next bar)",
+      "locked_pct": 1.1174,
+      "locked_at": "2026-10-29T03:14+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -21760,6 +21768,8 @@
       "split_label": "Brent/WTI oil/Nasdaq/KOSPI/Hang Seng",
       "baseline": 5606.87,
       "baseline_source": "CNBC 1m (next bar)",
+      "locked_pct": 7.2334,
+      "locked_at": "2026-10-29T03:14+00:00",
       "copy_of": "",
       "spam_farm": false
     },
