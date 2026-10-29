@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-29T14:46:15+00:00",
-  "ledgerUpdatedAt": "2026-10-29T14:14:00+00:00",
+  "generated_at": "2026-10-29T15:12:20+00:00",
+  "ledgerUpdatedAt": "2026-10-29T14:57:00+00:00",
   "pricesUpdatedAt": "2026-10-29T14:50:37+00:00",
   "staleAfterMin": 45,
   "calls": [
@@ -14792,7 +14792,7 @@
         "317-SPX",
         "317-EURUSD"
       ],
-      "baseline_rejected": "Nasdaq daily (close) 3.85 vs live 100.28",
+      "baseline_rejected": "Nasdaq daily (close) 3.85 vs live 100.6",
       "copy_of": "",
       "spam_farm": false
     },
@@ -15919,7 +15919,7 @@
         "342-GOOG",
         "342-MRNA"
       ],
-      "baseline_rejected": "Nasdaq daily (close) 3.85 vs live 100.25",
+      "baseline_rejected": "Nasdaq daily (close) 3.85 vs live 100.6",
       "copy_of": "",
       "spam_farm": false
     },
@@ -19422,7 +19422,7 @@
         "393-CHIP",
         "393-STRK"
       ],
-      "baseline_rejected": "Nasdaq daily (close) 3492.513 vs live 22.44",
+      "baseline_rejected": "Nasdaq daily (close) 3492.513 vs live 22.43",
       "copy_of": "",
       "spam_farm": false
     },
@@ -19489,7 +19489,7 @@
       "spam_override": null,
       "split_of": "393",
       "split_label": "CHIP/STRK",
-      "baseline_rejected": "CNBC 1m (next bar) 72.165 vs live 0.04719",
+      "baseline_rejected": "CNBC 1m (next bar) 72.165 vs live 0.04713",
       "copy_of": "",
       "spam_farm": false
     },
@@ -23048,6 +23048,8 @@
       "spam_override": null,
       "baseline": 232.95,
       "baseline_source": "CNBC 1m (next bar)",
+      "locked_pct": 5.2762,
+      "locked_at": "2026-10-29T14:54+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -23115,6 +23117,8 @@
       ],
       "baseline": 773.09,
       "baseline_source": "CNBC daily (close)",
+      "locked_pct": -0.1009,
+      "locked_at": "2026-10-29T15:12+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -23148,6 +23152,8 @@
       "split_label": "SPY/QQQ/META/PLTR/SILVER",
       "baseline": 762.84,
       "baseline_source": "CNBC 1m (next bar)",
+      "locked_pct": 1.2414,
+      "locked_at": "2026-10-29T15:12+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -23181,6 +23187,8 @@
       "split_label": "SPY/QQQ/META/PLTR/SILVER",
       "baseline": 707.29,
       "baseline_source": "CNBC 1m (next bar)",
+      "locked_pct": 2.5902,
+      "locked_at": "2026-10-29T15:12+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -23214,6 +23222,8 @@
       "split_label": "SPY/QQQ/META/PLTR/SILVER",
       "baseline": 655.01,
       "baseline_source": "CNBC 1m (next bar)",
+      "locked_pct": -6.4915,
+      "locked_at": "2026-10-29T15:12+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -23247,6 +23257,8 @@
       "split_label": "SPY/QQQ/META/PLTR/SILVER",
       "baseline": 198.565,
       "baseline_source": "CNBC 1m",
+      "locked_pct": -0.8838,
+      "locked_at": "2026-10-29T15:12+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -23280,6 +23292,8 @@
       "split_label": "SPY/QQQ/META/PLTR/SILVER",
       "baseline": 55.245,
       "baseline_source": "CNBC 1m",
+      "locked_pct": -2.8582,
+      "locked_at": "2026-10-29T15:12+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -29218,7 +29232,7 @@
       "spam_override": null,
       "split_of": "581",
       "split_label": "BAT / STRK (small-cap tokens)",
-      "baseline_rejected": "CNBC daily (close) 69.86 vs live 0.04719",
+      "baseline_rejected": "CNBC daily (close) 69.86 vs live 0.04713",
       "copy_of": "",
       "spam_farm": false
     },
@@ -31231,6 +31245,37 @@
       "spam_flags": [],
       "spam_override": null,
       "baseline": 2328.62,
+      "baseline_source": "OKX",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "635",
+      "logged_at_lisbon": "2026-10-29 14:57",
+      "account": "@CryptoMichNL",
+      "post_url": "https://x.com/CryptoMichNL/status/2115820400827306420",
+      "asset": "BTC",
+      "direction": "long (bias, bottom is in)",
+      "entry": "",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "source watchlist; role call; \"I'm calling it, I think that the bottom is in for #Bitcoin... markets have swept $80,000, but haven't been printing new lows\" (14:57 Lisbon); OKX BTC ~81,400 at scan; no entry given (scored from price at post time); bias without stop/target, logged not alerted. Rest of scan (window ~14:14-15:11 Lisbon): Following timeline news only (Alphabet -13% after earnings miss, Hassett says Trump believes rates can be lower, HYPE +15% on ICE/tradexyz Hyperliquid US perps, Nvidia-linked China spy report, Pentagon suspected cyberattack on base freezers, Dubai royal-backed $1.5B BTC strategy, explosion at aluminium plant near Tehran, Russia offers to mediate US-Iran, ECB chief stepping down early per Kalshi); rektcapital BTC weekly-level chop 80.4k/81.4k (no bias, not logged); AdamMancini4 ES repeat of #627 (not re-logged); CryptoTony HYPE/LTC updates and no-trade post (no clear call); Mr_Derivatives $OPEN eyes emoji (vague); traderstewie FTNT exit and ripster47/MuroCrypto after-the-fact brags; OptionsHawk market commentary and GOOGL put-selling note (not a directional call); sspencer_smb TSLA/SPCX risk-arb note (context); discovery all rejected (<5k followers/new accounts, Telegram/free signals groups, 25x/50x scalp signal spam, copy-paste REZ dupes, after-the-fact posts, Cali_Xauusd gold post truncated with no levels); resolutions: none (BTC 14:00 1H closed 81,182 above the #623 80,600-81,064 zone and below 81,500, so not triggered; CL no 1H close below 99.62, #625 open; gold (XAUT) 14:00 range 4,017.5-4,034.5 so #626 untagged and #621 stop untouched); not financial advice",
+      "after_the_fact": false,
+      "call_notes": "I'm calling it, I think that the bottom is in for #Bitcoin... markets have swept $80,000, but haven't been printing new lows",
+      "ratio_call": false,
+      "conditional": false,
+      "entry_filled": null,
+      "waiting_for_entry": false,
+      "followers": 5000,
+      "source": "X",
+      "feed": "famous",
+      "kind": "call",
+      "low_confidence": false,
+      "spam_flags": [],
+      "spam_override": null,
+      "baseline": 81140.7,
       "baseline_source": "OKX",
       "copy_of": "",
       "spam_farm": false
