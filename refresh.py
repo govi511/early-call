@@ -22,8 +22,9 @@ CONTEXT_ONLY = set()  # assets whose ledger rows are all early-signal context ro
 def level_nums(s):
     """Numbers in a level string, parsed exactly like lvl() in app.js: drop (...) notes, thousands commas, times and durations."""
     s = re.sub(r"\(.*?\)", "", str(s or "")); s = re.sub(r"(\d),(?=\d{3}\b)", r"\1", s)
-    s = re.sub(r"\b\d{1,2}:\d{2}\b|\b\d+[- ](?:day|week|hour|h|d|w)\b", " ", s, flags=re.I)
+    s = re.sub(r"\b\d{1,2}:\d{2}\b|\b\d+(?:\s*[-–]\s*\d+)?[- ]?(?:days?|weeks?|hours?|months?|h|d|w|m)\b", " ", s, flags=re.I)
     s = NOT_LEVEL_RE.sub(" ", s)  # dates ("by Oct 30") and percentages ("10-20% bounce") are never price levels
+    s = re.sub(r"\b(\d{3,})(?:\.\d+)?\s*[-–]\s*(\d{1,2})\b(?![.,]?\d)", lambda m: f"{m.group(1)}-{m.group(1)[:-len(m.group(2))]}{m.group(2)}" if len(m.group(2)) < len(m.group(1)) else m.group(0), s)  # 7750-55 -> 7750-7755
     return [float(x) for x in re.findall(r"\d+(?:\.\d+)?", s)]
 _MON = r"(?:jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*\.?"
 NOT_LEVEL_RE = re.compile(r"\b" + _MON + r"[- ]?\d{1,2}(?:st|nd|rd|th)?\b(?:,?\s*\d{4}\b)?"   # Oct 30, Oct-30, Oct 30th, Oct 30, 2026
@@ -66,6 +67,12 @@ def split_tickers(r):
         t = LABEL_TICKER.get(p) or LABEL_TICKER.get(re.sub(r"\s+OIL$", "", p)) or (p if re.fullmatch(r"[A-Z]{1,5}(?:[.-][A-Z]{1,2})?", p) or p in YAHOO_MAP else None)
         if t and YAHOO_MAP.get(t, t) not in {YAHOO_MAP.get(x, x) for x in out}: out.append(t)  # Oil/WTI, Gold/XAU = one instrument
     return out if len(out) >= 2 else []
+_LV = {}
+def _LIVE():
+    if not _LV:
+        try: _LV.update({k: (v or {}).get("price") for k, v in json.load(open(os.path.join(DATA, "prices.json")))["prices"].items()})
+        except Exception: _LV["_"] = None
+    return _LV
 def add_splits(rows):
     """Append one derived call per ticker for multi-ticker rows. The CSV row stays (split_into=[ids]) but is not scored itself.
     First ticker keeps the row's levels/status (what the call was scored on before); the others have no levels, so they are
@@ -78,7 +85,11 @@ def add_splits(rows):
         for i, t in enumerate(ts):
             d = dict(r); d.pop("split_into", None)
             d.update({"id": f'{r["id"]}-{t}', "asset": t, "split_of": r["id"], "split_label": r["asset"]})
-            if i:
+            lv = " ".join(str(r.get(k) or "") for k in ("entry", "stop", "target"))
+            mixed = any(re.search(rf"\b{re.escape(o)}\b", lv, re.I) for o in ts if o != t)  # levels text names another ticker
+            e0 = level_nums(r.get("entry")); lp = _LIVE().get(t)
+            if not i and e0 and lp and not (1/3 <= e0[0] / lp <= 3): mixed = True  # levels belong to another ticker
+            if i or mixed:
                 d.update({"entry": "", "stop": "", "target": "", "resolved_at": ""})
                 if d.get("status") in ("hit_target", "stopped", "expired", "unclear"): d["status"] = "open"
                 d.pop("exit_price", None); d.pop("exit_pct", None); d["conditional"] = False; d["entry_filled"] = None; d["waiting_for_entry"] = False
@@ -579,6 +590,9 @@ def add_baselines(rows):
     try: cache = json.load(open(bp))
     except Exception: cache = {}
     changed = False
+    try: live = {k: (v or {}).get("price") for k, v in json.load(open(os.path.join(DATA, "prices.json")))["prices"].items()}
+    except Exception: live = {}
+    sane = lambda a, b: bool(a) and bool(b) and 1/3 <= a / b <= 3  # catches ticker clashes (Gold vs GOLD stock, STRK token vs STRK stock)
     for r in rows:
         if level_nums(r.get("entry")) or not r.get("asset"): continue
         key = f'{r["id"]}|{r["asset"].upper()}|{r.get("logged_at_lisbon","")}'
@@ -598,12 +612,20 @@ def add_baselines(rows):
                 continue
             changed = True
         if cache[key]["price"] is None: continue
+        lp = live.get(r["asset"])
+        if lp and not sane(cache[key]["price"], lp):
+            r["baseline_rejected"] = f'{cache[key]["source"]} {cache[key]["price"]} vs live {lp}'; continue
+        c0 = cache[key]
+        if "locked_pct" in c0 and c0.get("locked_price") and not sane(c0["locked_price"], c0["price"]):
+            r["baseline_rejected"] = f'lock {c0["locked_price"]} vs baseline {c0["price"]}'; continue
         r["baseline"] = cache[key]["price"]; r["baseline_source"] = cache[key]["source"]
         # fixed scoring point: price 7 days after post, locked once and never changed
         c = cache[key]; ts = _ts_utc(r)
         if "locked_pct" not in c and ts and time.time() >= ts + 7 * 86400:
             try:
-                px7, _ = _hist(r["asset"], ts + 7 * 86400); d = -1 if is_short(r.get("direction")) else 1
+                px7, _ = _hist(r["asset"], ts + 7 * 86400)
+                if not sane(px7, c["price"]): raise RuntimeError(f"lock price {px7} not within 3x of baseline {c['price']}")
+                d = -1 if is_short(r.get("direction")) else 1
                 c["locked_pct"] = round(d * (px7 - c["price"]) / c["price"] * 100, 4); c["locked_price"] = px7
                 c["locked_at"] = datetime.datetime.fromtimestamp(ts + 7 * 86400).astimezone().isoformat(timespec="minutes"); changed = True
             except Exception as e: log(f"lock {key} failed: {str(e)[:400]}")
