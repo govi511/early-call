@@ -259,3 +259,5 @@ main{padding-bottom:calc(100px + env(safe-area-inset-bottom))!important}
 #feed .card.spam>.row:first-child>div::after{content:'spam';color:#f87171;background:rgba(248,113,113,.12);border-color:rgba(248,113,113,.4)}
 
 .lbhow{margin:-4px 0 10px;font-size:13px}.lbhow summary{display:inline-block;padding:4px 0}.lbhow summary::-webkit-details-marker{display:none}.lbhow ul{margin:4px 0 0;padding-left:18px;color:var(--mut,#8b93a1);line-height:1.45}.lbhow li{margin:2px 0}
+.lb-name small{display:block;margin-top:2px}.lb-name b{white-space:normal;overflow-wrap:anywhere}.lb-pnl{flex:0 1 auto;min-width:0;text-align:right}
+@media (max-width:480px){.lb-row{gap:10px;padding:12px}.lb-pnl{font-size:15px;max-width:42%}.lb-pnl .lb-avg{white-space:normal}}
