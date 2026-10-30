@@ -59,14 +59,14 @@
       "resolved_at_pt": "2026-10-20T15:01+0100"
     }
   ],
-  "last_check_at": "2026-10-30T18:53Z",
-  "last_check_btc": 76389,
+  "last_check_at": "2026-10-30T19:56Z",
+  "last_check_btc": 76958,
   "last_proposal_at": "2026-10-20T07:18+01:00",
   "last_alert_trade_id": 2,
   "last_resolution_alerted_id": 2,
   "open_trade_id": null,
-  "last_setup_eval": "2026-10-30 18:53 Lisbon No trade open. OKX BTC ~76,389; open 18:00 1H candle (not yet closed) broke below the 76.6k range floor to 76,260 after 17:00 closed 77,135. Breakdown unconfirmed (no 1H close) and already extended into the flush, so no chase short; no long reclaim. Funding ~+0.010%. No clean setup, no call.",
-  "last_check_note": "2026-10-30 18:53 Lisbon No trade open. OKX BTC ~76,389; open 18:00 1H candle (not yet closed) broke below the 76.6k range floor to 76,260 after 17:00 closed 77,135. Breakdown unconfirmed (no 1H close) and already extended into the flush, so no chase short; no long reclaim. Funding ~+0.010%. No clean setup, no call.",
-  "last_fresh_read": "2026-10-30T18:53Z",
-  "last_read": "2026-10-30T18:53Z"
+  "last_setup_eval": "2026-10-30 19:56 Lisbon No trade open. OKX BTC ~76,958; 18:00 1H closed 76,598 right at the 76.6k range floor (no decisive breakdown), 19:00 candle wicked 76,300 and bounced back toward 77k. Back inside the 76.6k-78.1k chop, no clean breakdown short or 77.6k reclaim long. Funding ~+0.010%. No clean setup, no call.",
+  "last_check_note": "2026-10-30 19:56 Lisbon No trade open. OKX BTC ~76,958; 18:00 1H closed 76,598 right at the 76.6k range floor (no decisive breakdown), 19:00 candle wicked 76,300 and bounced back toward 77k. Back inside the 76.6k-78.1k chop, no clean breakdown short or 77.6k reclaim long. Funding ~+0.010%. No clean setup, no call.",
+  "last_fresh_read": "2026-10-30T19:56Z",
+  "last_read": "2026-10-30T19:56Z"
 }
