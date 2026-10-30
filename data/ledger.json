@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-30T16:43:22+00:00",
-  "ledgerUpdatedAt": "2026-10-30T16:30:00+00:00",
+  "generated_at": "2026-10-30T17:15:56+00:00",
+  "ledgerUpdatedAt": "2026-10-30T17:07:00+00:00",
   "pricesUpdatedAt": "2026-10-30T16:48:42+00:00",
   "staleAfterMin": 45,
   "calls": [
@@ -14792,7 +14792,7 @@
         "317-SPX",
         "317-EURUSD"
       ],
-      "baseline_rejected": "Nasdaq daily (close) 3.85 vs live 103.96",
+      "baseline_rejected": "Nasdaq daily (close) 3.85 vs live 104.3",
       "copy_of": "",
       "spam_farm": false
     },
@@ -15919,7 +15919,7 @@
         "342-GOOG",
         "342-MRNA"
       ],
-      "baseline_rejected": "Nasdaq daily (close) 3.85 vs live 103.96",
+      "baseline_rejected": "Nasdaq daily (close) 3.85 vs live 104.3",
       "copy_of": "",
       "spam_farm": false
     },
@@ -19489,7 +19489,7 @@
       "spam_override": null,
       "split_of": "393",
       "split_label": "CHIP/STRK",
-      "baseline_rejected": "CNBC 1m (next bar) 72.165 vs live 0.04416",
+      "baseline_rejected": "CNBC 1m (next bar) 72.165 vs live 0.04386",
       "copy_of": "",
       "spam_farm": false
     },
@@ -26339,6 +26339,8 @@
       "spam_override": null,
       "baseline": 7.805,
       "baseline_source": "OKX",
+      "locked_pct": 8.4946,
+      "locked_at": "2026-10-30T17:09+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -26370,6 +26372,8 @@
       "spam_override": null,
       "baseline": 324.22,
       "baseline_source": "CNBC daily (close)",
+      "locked_pct": -12.4607,
+      "locked_at": "2026-10-30T17:09+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -29376,7 +29380,7 @@
       "spam_override": null,
       "split_of": "581",
       "split_label": "BAT / STRK (small-cap tokens)",
-      "baseline_rejected": "CNBC daily (close) 69.86 vs live 0.04416",
+      "baseline_rejected": "CNBC daily (close) 69.86 vs live 0.04386",
       "copy_of": "",
       "spam_farm": false
     },
@@ -33484,6 +33488,35 @@
       "split_label": "US 500 (SPY) / AMZN / PLTR / TSLA",
       "baseline": 403.3,
       "baseline_source": "CNBC daily (close)",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "671",
+      "logged_at_lisbon": "2026-10-30 17:07",
+      "account": "@AdamMancini4",
+      "post_url": "https://x.com/AdamMancini4/status/2116215360386969722",
+      "asset": "US 500 (ES futures levels)",
+      "direction": "long (conditional on trap/reclaim of 7616)",
+      "entry": "trap of 7616 ES",
+      "stop": "(none given)",
+      "target": "7625 / 7645-7649 ES",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "source watchlist; role call; \"There's 7616 next down in #ES_F. Today is a bearish control session... 7665/7677 must recover to see *sustained* green. Watch traps of 16 to see 7625, 7645-49. 7585 below\" (17:07 Lisbon); supersedes #664 trigger; ES ~7,613 at scan (day low 7,609.75); conditional failed-breakdown long, no stop, logged not alerted. Rest of scan (window ~16:13-17:14 Lisbon): Following news only (254k traders liquidated 24h, QQQ almost -4%, Anthropic may miss investment-grade rating post-IPO, RDDT ~-30%, 16 big tech names >20% off highs, Houthi strikes on Saudi airport, Russia-Ukraine talks set for Nov, MetaWin giveaway ad ignored; OptionsHawk GPN buyout-report quip, no trade); watchlist commentary only (CryptoTony BTC wants dump before longs, no levels; Tradermayne US500/Nasdaq weekly level breaks, BTC relative strength; ripster47 RDDT 100 psych short after-the-fact and SOXL exit; CryptoMichNL silver reaching first swing zone, no levels; Mr_Derivatives VIX Fridays, MRVL 3-month low; AltcoinSherpa chop); discovery rejected (<5k followers or new accounts, after-the-fact target-hit posts, copy-paste XAUUSD gold signal accounts, whale-tracker bots, AI signal bots); resolutions: none (#662 AMZN ~238.2, day low 229.36 > SL 228.9, TP1 245 not hit; #664 ES not triggered; gold GC ~3,905; BTC ~77.2k); not financial advice",
+      "after_the_fact": false,
+      "call_notes": "There's 7616 next down in #ES_F. Today is a bearish control session... 7665/7677 must recover to see *sustained* green. Watch traps of 16 to see 7625, 7645-49. 7585 below",
+      "ratio_call": false,
+      "conditional": true,
+      "entry_filled": null,
+      "waiting_for_entry": true,
+      "followers": null,
+      "source": "X",
+      "feed": "famous",
+      "kind": "call",
+      "low_confidence": false,
+      "spam_flags": [],
+      "spam_override": null,
       "copy_of": "",
       "spam_farm": false
     }
