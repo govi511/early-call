@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-30T19:40:51+00:00",
-  "ledgerUpdatedAt": "2026-10-30T19:10:00+00:00",
+  "generated_at": "2026-10-30T20:16:34+00:00",
+  "ledgerUpdatedAt": "2026-10-30T19:42:00+00:00",
   "pricesUpdatedAt": "2026-10-30T19:45:03+00:00",
   "staleAfterMin": 45,
   "calls": [
@@ -14792,7 +14792,7 @@
         "317-SPX",
         "317-EURUSD"
       ],
-      "baseline_rejected": "Nasdaq daily (close) 3.85 vs live 103.86",
+      "baseline_rejected": "Nasdaq daily (close) 3.85 vs live 103.42",
       "copy_of": "",
       "spam_farm": false
     },
@@ -15919,7 +15919,7 @@
         "342-GOOG",
         "342-MRNA"
       ],
-      "baseline_rejected": "Nasdaq daily (close) 3.85 vs live 103.84",
+      "baseline_rejected": "Nasdaq daily (close) 3.85 vs live 103.42",
       "copy_of": "",
       "spam_farm": false
     },
@@ -19422,7 +19422,7 @@
         "393-CHIP",
         "393-STRK"
       ],
-      "baseline_rejected": "Nasdaq daily (close) 3492.513 vs live 20.52",
+      "baseline_rejected": "Nasdaq daily (close) 3492.513 vs live 20.38",
       "copy_of": "",
       "spam_farm": false
     },
@@ -19489,7 +19489,7 @@
       "spam_override": null,
       "split_of": "393",
       "split_label": "CHIP/STRK",
-      "baseline_rejected": "CNBC 1m (next bar) 72.165 vs live 0.04378",
+      "baseline_rejected": "CNBC 1m (next bar) 72.165 vs live 0.04399",
       "copy_of": "",
       "spam_farm": false
     },
@@ -26783,6 +26783,8 @@
       ],
       "baseline": 369.0,
       "baseline_source": "CNBC daily (close)",
+      "locked_pct": -0.1165,
+      "locked_at": "2026-10-30T20:14+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -26816,6 +26818,8 @@
       "split_label": "GLD/SLV (Gold/Silver)",
       "baseline": 366.4,
       "baseline_source": "CNBC 1m (next bar)",
+      "locked_pct": 0.5922,
+      "locked_at": "2026-10-30T20:14+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -26849,6 +26853,8 @@
       "split_label": "GLD/SLV (Gold/Silver)",
       "baseline": 48.6878,
       "baseline_source": "CNBC 1m (next bar)",
+      "locked_pct": -2.8915,
+      "locked_at": "2026-10-30T20:14+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -26880,6 +26886,8 @@
       "spam_override": null,
       "baseline": 19.03,
       "baseline_source": "CNBC daily (close)",
+      "locked_pct": 9.6164,
+      "locked_at": "2026-10-30T20:14+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -29398,7 +29406,7 @@
       "spam_override": null,
       "split_of": "581",
       "split_label": "BAT / STRK (small-cap tokens)",
-      "baseline_rejected": "CNBC daily (close) 69.86 vs live 0.04378",
+      "baseline_rejected": "CNBC daily (close) 69.86 vs live 0.04399",
       "copy_of": "",
       "spam_farm": false
     },
@@ -33685,6 +33693,35 @@
       "conditional": true,
       "entry_filled": null,
       "waiting_for_entry": true,
+      "followers": null,
+      "source": "X",
+      "feed": "famous",
+      "kind": "call",
+      "low_confidence": false,
+      "spam_flags": [],
+      "spam_override": null,
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "675",
+      "logged_at_lisbon": "2026-10-30 19:42",
+      "account": "@IncomeSharks",
+      "post_url": "https://x.com/IncomeSharks/status/2116254471877701754",
+      "asset": "HD (Home Depot)",
+      "direction": "long (bias, defensive \"safe haven\", no levels)",
+      "entry": "~329.2 (HD at scan; no level)",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "source watchlist; role call; \"$HD - Not a bad time to sit in slow growth stocks that are cash positive paying out dividends. A safe haven in chaos\" (19:42 Lisbon); defensive investing bias, no levels; HD ~329.2 at scan; logged not alerted. Rest of scan (window ~19:13-20:14 Lisbon): Following news only (WatcherGuru $1.8T wiped from US stocks today; Trump looking into $6.3B Binance hack; BullTheory VIX +31%/VXN +22% with midterms Nov 3; Polymarket Cramer 'stock-pocalypse', $2.1B Patriot sale to Ukraine; Kalshi 71% Dems win Senate, Intel revenue warning; Poland Constitutional Tribunal standoff; Iran claims captured US drone near Hormuz; cozypront 'bounce Monday' talk, no levels; pedrosilva bought $10 BTC joke, no trade; BestTrader01 SPCX/TSLA quips); watchlist commentary only (ripster47 after-the-fact VIX-rejection Friday squeeze; Mr_Derivatives EOD bounce, MAGS chart; sspencer_smb QQQ 8 off low; IncomeSharks INTC gap fill, VIX 20 range/30 all-in; JC_ParetsX product promo); discovery skipped (usage slowdown); resolutions: none (#671 ES reclaimed 7616 briefly, high 7620.5 at 19:50, ES ~7,613.5, 7625 not hit; #674 ES 7575 reclaim now ~+38 pts, no target; #662 AMZN ~240.2, low 229.36 > SL 228.9, TP1 245 not hit; #660 gold GC ~3,883 inside 3,800-3,900 zone; BTC ~76.97k OKX); not financial advice",
+      "after_the_fact": false,
+      "call_notes": "$HD - Not a bad time to sit in slow growth stocks that are cash positive paying out dividends. A safe haven in chaos",
+      "ratio_call": false,
+      "conditional": false,
+      "entry_filled": null,
+      "waiting_for_entry": false,
       "followers": null,
       "source": "X",
       "feed": "famous",
