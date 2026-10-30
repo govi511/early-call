@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-30T20:42:49+00:00",
+  "generated_at": "2026-10-30T22:42:43+00:00",
   "ledgerUpdatedAt": "2026-10-30T20:30:00+00:00",
-  "pricesUpdatedAt": "2026-10-30T20:48:53+00:00",
+  "pricesUpdatedAt": "2026-10-30T22:46:40+00:00",
   "staleAfterMin": 45,
   "calls": [
     {
@@ -14792,7 +14792,7 @@
         "317-SPX",
         "317-EURUSD"
       ],
-      "baseline_rejected": "Nasdaq daily (close) 3.85 vs live 103.42",
+      "baseline_rejected": "Nasdaq daily (close) 3.85 vs live 102.91",
       "copy_of": "",
       "spam_farm": false
     },
@@ -15919,7 +15919,7 @@
         "342-GOOG",
         "342-MRNA"
       ],
-      "baseline_rejected": "Nasdaq daily (close) 3.85 vs live 103.42",
+      "baseline_rejected": "Nasdaq daily (close) 3.85 vs live 102.91",
       "copy_of": "",
       "spam_farm": false
     },
@@ -19422,7 +19422,7 @@
         "393-CHIP",
         "393-STRK"
       ],
-      "baseline_rejected": "Nasdaq daily (close) 3492.513 vs live 20.38",
+      "baseline_rejected": "Nasdaq daily (close) 3492.513 vs live 20.75",
       "copy_of": "",
       "spam_farm": false
     },
@@ -19489,7 +19489,7 @@
       "spam_override": null,
       "split_of": "393",
       "split_label": "CHIP/STRK",
-      "baseline_rejected": "CNBC 1m (next bar) 72.165 vs live 0.04399",
+      "baseline_rejected": "CNBC 1m (next bar) 72.165 vs live 0.04406",
       "copy_of": "",
       "spam_farm": false
     },
@@ -26919,6 +26919,8 @@
       "spam_override": null,
       "baseline": 255.0001,
       "baseline_source": "CNBC 1m (next bar)",
+      "locked_pct": -6.9804,
+      "locked_at": "2026-10-30T21:14+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -26955,6 +26957,8 @@
       ],
       "baseline": 4060.4,
       "baseline_source": "CNBC daily (close)",
+      "locked_pct": -4.3222,
+      "locked_at": "2026-10-30T21:20+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -26988,6 +26992,8 @@
       "split_label": "GOLD/OIL/SPX",
       "baseline": 4010.0,
       "baseline_source": "CNBC 1m (next bar)",
+      "locked_pct": -3.1197,
+      "locked_at": "2026-10-30T21:20+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -27021,6 +27027,8 @@
       "split_label": "GOLD/OIL/SPX",
       "baseline": 103.44,
       "baseline_source": "CNBC 1m (next bar)",
+      "locked_pct": -0.4737,
+      "locked_at": "2026-10-30T21:20+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -27054,6 +27062,8 @@
       "split_label": "GOLD/OIL/SPX",
       "baseline": 7623.68,
       "baseline_source": "CNBC 1m (next bar)",
+      "locked_pct": -0.572,
+      "locked_at": "2026-10-30T21:20+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -29406,7 +29416,7 @@
       "spam_override": null,
       "split_of": "581",
       "split_label": "BAT / STRK (small-cap tokens)",
-      "baseline_rejected": "CNBC daily (close) 69.86 vs live 0.04399",
+      "baseline_rejected": "CNBC daily (close) 69.86 vs live 0.04406",
       "copy_of": "",
       "spam_farm": false
     },
