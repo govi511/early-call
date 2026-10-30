@@ -59,14 +59,14 @@
       "resolved_at_pt": "2026-10-20T15:01+0100"
     }
   ],
-  "last_check_at": "2026-10-30T01:59Z",
-  "last_check_btc": 76750,
+  "last_check_at": "2026-10-30T02:58Z",
+  "last_check_btc": 77330,
   "last_proposal_at": "2026-10-20T07:18+01:00",
   "last_alert_trade_id": 2,
   "last_resolution_alerted_id": 2,
   "open_trade_id": null,
-  "last_setup_eval": "2026-10-30 00:58 Lisbon fresh OKX read: BTC ~77,240; 00:00 1H (unclosed) flushed to new low 76,739 below the 77,934 low; funding +0.01%, premium slightly negative. Mid-breakdown, no retest, no clean setup, no call.",
-  "last_check_note": "No trade open. OKX BTC ~76,750; 01:00 1H candle made new low 76,623 (below 76,739). Funding +0.01%. Still mid-breakdown, no retest, no clean setup; no call.",
-  "last_fresh_read": "2026-10-30T01:59Z",
-  "last_read": "2026-10-30T01:59Z"
+  "last_setup_eval": "2026-10-30 02:58 Lisbon No trade open. OKX BTC ~77,330; 02:00 1H candle (unclosed) made new low 76,472 then bounced ~850. Funding +0.01%, premium slightly negative. Still in downtrend with no retest of the 77.9k-78.2k breakdown zone; no clean setup, no call.",
+  "last_check_note": "No trade open. OKX BTC ~77,330; 02:00 1H candle (unclosed) made new low 76,472 then bounced ~850. Funding +0.01%, premium slightly negative. Still in downtrend with no retest of the 77.9k-78.2k breakdown zone; no clean setup, no call.",
+  "last_fresh_read": "2026-10-30T02:58Z",
+  "last_read": "2026-10-30T02:58Z"
 }

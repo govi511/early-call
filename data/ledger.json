@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-30T03:12:10+00:00",
+  "generated_at": "2026-10-30T03:40:40+00:00",
   "ledgerUpdatedAt": "2026-10-30T00:30:00+00:00",
-  "pricesUpdatedAt": "2026-10-30T02:48:06+00:00",
+  "pricesUpdatedAt": "2026-10-30T03:44:49+00:00",
   "staleAfterMin": 45,
   "calls": [
     {
@@ -24927,6 +24927,8 @@
       ],
       "baseline": 243.28,
       "baseline_source": "CNBC daily (close)",
+      "locked_pct": 3.9625,
+      "locked_at": "2026-10-30T03:17+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -24960,6 +24962,8 @@
       "split_label": "DGX/TSLA/SPCX",
       "baseline": 239.63,
       "baseline_source": "CNBC 1m (next bar)",
+      "locked_pct": 5.5461,
+      "locked_at": "2026-10-30T03:17+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -24993,6 +24997,8 @@
       "split_label": "DGX/TSLA/SPCX",
       "baseline": 376.45,
       "baseline_source": "CNBC 1m (next bar)",
+      "locked_pct": 7.1324,
+      "locked_at": "2026-10-30T03:17+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -25026,6 +25032,8 @@
       "split_label": "DGX/TSLA/SPCX",
       "baseline": 147.21,
       "baseline_source": "CNBC 1m (next bar)",
+      "locked_pct": -2.2553,
+      "locked_at": "2026-10-30T03:17+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -25057,6 +25065,8 @@
       "spam_override": null,
       "baseline": 81844.1,
       "baseline_source": "OKX",
+      "locked_pct": -4.6734,
+      "locked_at": "2026-10-30T03:39+00:00",
       "copy_of": "",
       "spam_farm": false
     },
