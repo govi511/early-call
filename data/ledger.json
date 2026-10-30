@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T03:40:40+00:00",
+  "generated_at": "2026-10-30T04:15:58+00:00",
   "ledgerUpdatedAt": "2026-10-30T00:30:00+00:00",
   "pricesUpdatedAt": "2026-10-30T03:44:49+00:00",
   "staleAfterMin": 45,
@@ -14792,7 +14792,7 @@
         "317-SPX",
         "317-EURUSD"
       ],
-      "baseline_rejected": "Nasdaq daily (close) 3.85 vs live 103.44",
+      "baseline_rejected": "Nasdaq daily (close) 3.85 vs live 103.37",
       "copy_of": "",
       "spam_farm": false
     },
@@ -15919,7 +15919,7 @@
         "342-GOOG",
         "342-MRNA"
       ],
-      "baseline_rejected": "Nasdaq daily (close) 3.85 vs live 103.44",
+      "baseline_rejected": "Nasdaq daily (close) 3.85 vs live 103.37",
       "copy_of": "",
       "spam_farm": false
     },
@@ -19489,7 +19489,7 @@
       "spam_override": null,
       "split_of": "393",
       "split_label": "CHIP/STRK",
-      "baseline_rejected": "CNBC 1m (next bar) 72.165 vs live 0.04145",
+      "baseline_rejected": "CNBC 1m (next bar) 72.165 vs live 0.0424",
       "copy_of": "",
       "spam_farm": false
     },
@@ -29318,7 +29318,7 @@
       "spam_override": null,
       "split_of": "581",
       "split_label": "BAT / STRK (small-cap tokens)",
-      "baseline_rejected": "CNBC daily (close) 69.86 vs live 0.04145",
+      "baseline_rejected": "CNBC daily (close) 69.86 vs live 0.0424",
       "copy_of": "",
       "spam_farm": false
     },
@@ -30968,15 +30968,15 @@
       "entry": "4,035-4,040",
       "stop": "(none given)",
       "target": "4,000; then 3,990-3,975",
-      "status": "open",
-      "resolved_at": "",
-      "notes": "source discovery; @XAUUSD_Luna 5.6k followers, account since 2017, no Telegram/VIP link in bio, passes source rules; \"resistance zone of 4035-4040. Short selling at higher levels is recommended. The downside target is the 4000 support level; a break below... 3990-3975\" (10:50 Lisbon); no stop given; gold (XAUT) ~4,032 at scan; opposes open #621 long; discovery, logged not alerted. Other discovery rejected: TRADECREW 'profit is guaranteed' dupes, JAMES_BUSH_ VIP/Telegram, LinxueGlod after-the-fact profits, Eagle_Trade01 '99% accuracy', tiny/new accounts (_nishantsuthar, Kolly264, 0xMtey, toji_crt <5k), whale/AI bots (Hyperbotai, Mentisai_, walbicom, Finora); not financial advice; UPDATE 16:14 Lisbon scan: still open, XAUT highs 4,034.5 (zone 4,035-4,040 not tagged on OKX XAUT); author claims at 16:14 her short filled at 4,035 with gold ~4,010 (https://x.com/XAUUSD_Luna/status/2115839594960961750), not verified on our feed; target 4,000 not hit",
+      "status": "hit_target",
+      "resolved_at": "2026-10-30 04:00",
+      "notes": "source discovery; @XAUUSD_Luna 5.6k followers, account since 2017, no Telegram/VIP link in bio, passes source rules; \"resistance zone of 4035-4040. Short selling at higher levels is recommended. The downside target is the 4000 support level; a break below... 3990-3975\" (10:50 Lisbon); no stop given; gold (XAUT) ~4,032 at scan; opposes open #621 long; discovery, logged not alerted. Other discovery rejected: TRADECREW 'profit is guaranteed' dupes, JAMES_BUSH_ VIP/Telegram, LinxueGlod after-the-fact profits, Eagle_Trade01 '99% accuracy', tiny/new accounts (_nishantsuthar, Kolly264, 0xMtey, toji_crt <5k), whale/AI bots (Hyperbotai, Mentisai_, walbicom, Finora); not financial advice; UPDATE 16:14 Lisbon scan: still open, XAUT highs 4,034.5 (zone 4,035-4,040 not tagged on OKX XAUT); author claims at 16:14 her short filled at 4,035 with gold ~4,010 (https://x.com/XAUUSD_Luna/status/2115839594960961750), not verified on our feed; target 4,000 not hit; RESOLVED 04:14 Lisbon scan: gold futures (GC) traded down to 3,997.3 at 04:00 Lisbon, first target 4,000 hit (entry fill at 4,035 only author-claimed, not verified on our feed); second target 3,990-3,975 not reached; resolution logged, not alerted (call was never alerted)",
       "after_the_fact": false,
       "call_notes": "resistance zone of 4035-4040. Short selling at higher levels is recommended. The downside target is the 4000 support level; a break below... 3990-3975",
       "ratio_call": false,
       "conditional": true,
       "entry_filled": null,
-      "waiting_for_entry": true,
+      "waiting_for_entry": false,
       "followers": 5600,
       "source": "X",
       "feed": "discovery",
