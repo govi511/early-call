@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-30T11:09:00+00:00",
+  "generated_at": "2026-10-30T11:45:38+00:00",
   "ledgerUpdatedAt": "2026-10-30T10:33:00+00:00",
-  "pricesUpdatedAt": "2026-10-30T10:44:22+00:00",
+  "pricesUpdatedAt": "2026-10-30T11:49:47+00:00",
   "staleAfterMin": 45,
   "calls": [
     {
@@ -25488,6 +25488,8 @@
       ],
       "baseline": 324.22,
       "baseline_source": "CNBC daily (close)",
+      "locked_pct": -12.9758,
+      "locked_at": "2026-10-30T11:14+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -25521,6 +25523,8 @@
       "split_label": "GOOGL/NVDA/AXP/USD",
       "baseline": 323.6,
       "baseline_source": "CNBC 1m",
+      "locked_pct": -12.809,
+      "locked_at": "2026-10-30T11:14+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -25554,6 +25558,8 @@
       "split_label": "GOOGL/NVDA/AXP/USD",
       "baseline": 212.93,
       "baseline_source": "CNBC 1m (next bar)",
+      "locked_pct": -2.7145,
+      "locked_at": "2026-10-30T11:14+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -25587,6 +25593,8 @@
       "split_label": "GOOGL/NVDA/AXP/USD",
       "baseline": 321.25,
       "baseline_source": "CNBC 1m",
+      "locked_pct": 1.3541,
+      "locked_at": "2026-10-30T11:14+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -25620,6 +25628,8 @@
       "split_label": "GOOGL/NVDA/AXP/USD",
       "baseline": 101.771,
       "baseline_source": "CNBC 1m",
+      "locked_pct": -0.1543,
+      "locked_at": "2026-10-30T11:14+00:00",
       "copy_of": "",
       "spam_farm": false
     },
