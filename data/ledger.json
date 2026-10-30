@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-30T15:19:29+00:00",
+  "generated_at": "2026-10-30T15:47:21+00:00",
   "ledgerUpdatedAt": "2026-10-30T14:49:00+00:00",
-  "pricesUpdatedAt": "2026-10-30T14:43:55+00:00",
+  "pricesUpdatedAt": "2026-10-30T15:51:18+00:00",
   "staleAfterMin": 45,
   "calls": [
     {
@@ -26032,6 +26032,8 @@
       ],
       "baseline": 196.19,
       "baseline_source": "CNBC daily (close)",
+      "locked_pct": -4.9034,
+      "locked_at": "2026-10-30T15:24+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -26065,6 +26067,8 @@
       "split_label": "PLTR/TSLA/GOLD",
       "baseline": 196.84,
       "baseline_source": "CNBC 1m (next bar)",
+      "locked_pct": -5.2174,
+      "locked_at": "2026-10-30T15:24+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -26098,6 +26102,8 @@
       "split_label": "PLTR/TSLA/GOLD",
       "baseline": 376.1601,
       "baseline_source": "CNBC 1m (next bar)",
+      "locked_pct": 6.7285,
+      "locked_at": "2026-10-30T15:24+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -26131,6 +26137,8 @@
       "split_label": "PLTR/TSLA/GOLD",
       "baseline": 4012.4,
       "baseline_source": "CNBC 1m (next bar)",
+      "locked_pct": -2.2879,
+      "locked_at": "2026-10-30T15:24+00:00",
       "copy_of": "",
       "spam_farm": false
     },
