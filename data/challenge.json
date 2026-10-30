@@ -23,7 +23,7 @@
       "opened_at": "2026-10-13T11:48:00+01:00",
       "opened_at_utc": "2026-10-13T10:48:00Z",
       "venue": "Trading 212 CFD",
-      "notes": "Call #1 challenge. Size ~0.005 BTC \u2248 -\u20ac2.25 at SL, +\u20ac3 at TP (prompt \u2248+\u20ac2.70).",
+      "notes": "Call #1 challenge. Size ~0.005 BTC ≈ -€2.25 at SL, +€3 at TP (prompt ≈+€2.70).",
       "resolved_at": "2026-10-13T14:42:23Z",
       "exit_price": 83750.0,
       "pnl_eur": -2.25,
@@ -59,14 +59,14 @@
       "resolved_at_pt": "2026-10-20T15:01+0100"
     }
   ],
-  "last_check_at": "2026-10-30T07:00Z",
-  "last_check_btc": 78600,
+  "last_check_at": "2026-10-30T07:55Z",
+  "last_check_btc": 78040,
   "last_proposal_at": "2026-10-20T07:18+01:00",
   "last_alert_trade_id": 2,
   "last_resolution_alerted_id": 2,
   "open_trade_id": null,
-  "last_setup_eval": "2026-10-30 07:00 Lisbon No trade open. OKX BTC ~78,600; 06:00 1H candle closed 78,604 (range 78,351-78,767), still capped below ~78.8k with no breakout or pullback-hold long. Funding ~+0.009%, premium slightly negative. No clean setup, no call.",
-  "last_check_note": "2026-10-30 07:00 Lisbon No trade open. OKX BTC ~78,600; 06:00 1H candle closed 78,604 (range 78,351-78,767), still capped below ~78.8k with no breakout or pullback-hold long. Funding ~+0.009%, premium slightly negative. No clean setup, no call.",
-  "last_fresh_read": "2026-10-30T07:00Z",
-  "last_read": "2026-10-30T07:00Z"
+  "last_setup_eval": "2026-10-30 07:55 Lisbon No trade open. OKX BTC ~78,040; the 07:00 1H candle (still open) dropped from 78,604 to a 78,026 low after the cap under ~78.8k, back into the 77.9k-78.2k zone; no candle close confirming a breakdown and no pullback-hold long. Funding ~+0.006%. No clean setup, no call.",
+  "last_check_note": "2026-10-30 07:55 Lisbon No trade open. OKX BTC ~78,040; the 07:00 1H candle (still open) dropped from 78,604 to a 78,026 low after the cap under ~78.8k, back into the 77.9k-78.2k zone; no candle close confirming a breakdown and no pullback-hold long. Funding ~+0.006%. No clean setup, no call.",
+  "last_fresh_read": "2026-10-30T07:55Z",
+  "last_read": "2026-10-30T07:55Z"
 }
