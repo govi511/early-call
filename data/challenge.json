@@ -59,14 +59,14 @@
       "resolved_at_pt": "2026-10-20T15:01+0100"
     }
   ],
-  "last_check_at": "2026-10-30T09:01Z",
-  "last_check_btc": 77990,
+  "last_check_at": "2026-10-30T09:55Z",
+  "last_check_btc": 77620,
   "last_proposal_at": "2026-10-20T07:18+01:00",
   "last_alert_trade_id": 2,
   "last_resolution_alerted_id": 2,
   "open_trade_id": null,
-  "last_setup_eval": "2026-10-30 09:01 Lisbon No trade open. OKX BTC ~77,990; the 08:00 1H candle closed 77,994 (range 77,860-78,215), drifting lower inside the 77.9k-78.2k zone but no close below the ~77.86k-77.88k range lows to confirm a breakdown, and no long setup. Funding ~+0.005%. No clean setup, no call.",
-  "last_check_note": "2026-10-30 09:01 Lisbon No trade open. OKX BTC ~77,990; the 08:00 1H candle closed 77,994 (range 77,860-78,215), drifting lower inside the 77.9k-78.2k zone but no close below the ~77.86k-77.88k range lows to confirm a breakdown, and no long setup. Funding ~+0.005%. No clean setup, no call.",
-  "last_fresh_read": "2026-10-30T09:01Z",
-  "last_read": "2026-10-30T09:01Z"
+  "last_setup_eval": "2026-10-30 09:55 Lisbon No trade open. OKX BTC ~77,620; the open 09:00 1H candle broke below the ~77.86k range lows to a 77,529 low, but the candle has not closed and price is already ~450 below the break, so a short here would be chasing with a wide stop; no long setup. Funding ~+0.007%. No clean setup, no call.",
+  "last_check_note": "2026-10-30 09:55 Lisbon No trade open. OKX BTC ~77,620; the open 09:00 1H candle broke below the ~77.86k range lows to a 77,529 low, but the candle has not closed and price is already ~450 below the break, so a short here would be chasing with a wide stop; no long setup. Funding ~+0.007%. No clean setup, no call.",
+  "last_fresh_read": "2026-10-30T09:55Z",
+  "last_read": "2026-10-30T09:55Z"
 }
