@@ -68,5 +68,10 @@
   "last_setup_eval": "2026-10-30 21:53 Lisbon No trade open. OKX BTC ~76,641; 21:00 1H candle open (high 77,000, low 76,543), drifting toward the 76.6k floor of the 76.6k-78.1k range but no 1H close below it; 20:00 closed 76,870. Funding ~+0.010%. No clean setup, no call.",
   "last_check_note": "2026-10-30 21:53 Lisbon No trade open. OKX BTC ~76,641; 21:00 1H candle open (high 77,000, low 76,543), drifting toward the 76.6k floor of the 76.6k-78.1k range but no 1H close below it; 20:00 closed 76,870. Funding ~+0.010%. No clean setup, no call.",
   "last_fresh_read": "2026-10-30T21:53Z",
-  "last_read": "2026-10-30T21:53Z"
+  "last_read": "2026-10-30T21:53Z",
+  "last_check": {
+    "at": "2026-10-30T22:59Z",
+    "btc": 76895,
+    "note": "No trade open; BTC chop in 76.6k-78.1k range, 21:00 1H closed 76,656 holding floor, 22:00 bouncing ~76.9k; funding +0.010%; no clean setup."
+  }
 }
