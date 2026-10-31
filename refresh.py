@@ -2,7 +2,7 @@
 """Early Call refresh: ledger CSV -> data/ledger.json, live prices -> data/prices.json.
 Unattended-safe: retries, timeouts, lock file, atomic writes, keeps last good price on failure.
 Exit code 0 = ok (even if some prices failed), 1 = ledger could not be read, 2 = another run in progress."""
-import re, csv, json, os, sys, time, datetime, urllib.request, urllib.parse, fcntl, tempfile
+import random, subprocess, re, csv, json, os, sys, time, datetime, urllib.request, urllib.parse, fcntl, tempfile
 HERE = os.path.dirname(os.path.abspath(__file__)); DATA = os.path.join(HERE, "data")
 ARGS = [a for a in sys.argv[1:] if not a.startswith("--")]
 LEDGER_ONLY = "--ledger-only" in sys.argv
@@ -14,7 +14,7 @@ def is_short(d):
     """Shared short-direction rule (mirrors isShort in filter.js)."""
     d = (d or "").strip().lower()
     return d.startswith(("short", "bear", "put", "hike")) or "short" in d
-ALIAS = {"QQQ/SPY":"QQQ","SPY/QQQ":"SPY","ETH/BTC":"ETHBTC"}  # multi-ticker calls -> first ticker
+ALIAS = {"QQQ/SPY":"QQQ","SPY/QQQ":"SPY","ETH/BTC":"ETHBTC","XAUUSD (GOLD)":"XAUUSD","WTI CRUDE OIL (CL)":"WTI"}  # multi-ticker calls -> first ticker
 NONPRICE = {"FED","FOMC","FEDFUNDS","RATES","CPI","US HOUSING","PELOSI"}  # macro calls, not tradable assets
 NP_NOTE = "not a tradable asset"
 NP_LABEL = "multi-asset/context label, no price expected"
@@ -151,7 +151,7 @@ def ychart(sym, qs):
     err = None; delay = 2
     for attempt, h in enumerate(YH * 2):
         try:
-            time.sleep(0.4)  # pace requests
+            time.sleep(1.0 + random.random() * 0.5)  # pace requests (1-1.5s) so Yahoo does not throttle with 429
             req = urllib.request.Request(f"{h}/v8/finance/chart/{urllib.parse.quote(sym)}?{qs}", headers={"User-Agent": UA, "Accept": "application/json"})
             with urllib.request.urlopen(req, timeout=10) as r: out = json.loads(r.read())
             _YMEM[key] = out
@@ -664,6 +664,13 @@ def main():
             except OSError:
                 if time.time() - t0 > 240: log("lock busy for 240s; giving up"); return 2
                 time.sleep(2)
+    # 7-day lock for calls with no levels: close them in the ledger (no network; tools/resolve_calls.py --no-levels)
+    if not ARGS:
+        try:
+            p = subprocess.run([sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), "tools", "resolve_calls.py"), "--no-levels", "--apply"],
+                               capture_output=True, text=True, timeout=120)
+            n = re.search(r"(\d+) to close", p.stdout or ""); log(f"no-level 7-day lock: {n.group(1) if n else '?'} closed" + (f"; err {p.stderr[-300:]}" if p.returncode else ""))
+        except Exception as e: log(f"no-level 7-day lock failed: {e}")
     try:
         with open(SRC, newline="", encoding="utf-8") as f: rows = []
         with open(SRC, newline="", encoding="utf-8") as f:

@@ -137,7 +137,7 @@ def never_filled(r):
         if ok: return None
     return (True, src)
 def main():
-    apply = "--apply" in sys.argv; reclass = "--reclassify-expired" in sys.argv
+    apply = "--apply" in sys.argv; reclass = "--reclassify-expired" in sys.argv; nolv = "--no-levels" in sys.argv
     rows = list(csv.DictReader(open(L, encoding="utf-8"))); fields = list(rows[0].keys())
     changes = []
     for r in rows:
@@ -148,6 +148,7 @@ def main():
                 if f: changes.append((r, ("not_filled", f"was expired; conditional entry never triggered before {r['resolved_at']}", f[1], None))); print(f'#{r["id"]} {r["asset"]} expired -> not_filled ({f[1]})')
             continue
         if r["status"] != "open" or "context" in r["direction"].lower(): continue
+        if nolv and (nums(r["entry"]) or nums(r["stop"]) or nums(r["target"])): continue  # --no-levels: only calls with no entry/stop/target (7-day lock), no price fetches
         if R.is_ratio(r): print(f'#{r["id"]} {r["asset"]} skipped: ratio/spread call, no single tradable price'); continue
         if not nums(r["stop"]) and not nums(r["target"]):  # no levels: time limit only, locks 7 days after post
             ts = R._ts_utc(r)

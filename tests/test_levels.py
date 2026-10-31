@@ -29,6 +29,9 @@ def test_508_523_not_judged():
     r523 = {"id": "523", "direction": "long (short-term bounce)", "entry": "~0.143 (market)", "stop": "below recent lows (~0.139)", "target": "10-20% bounce", "asset": "BAT"}
     assert RC.judge(r508) is None and RC.judge(r523) is None  # no network: returns before fetching bars
 
+def test_commodity_labels_priceable():
+    assert R.YAHOO_MAP[R.norm("XAUUSD (GOLD)")] == "GC=F" and R.YAHOO_MAP[R.norm("WTI CRUDE OIL (CL)")] == "CL=F"
+
 if __name__ == "__main__":
     for k, f in list(globals().items()):
         if k.startswith("test_"): f(); print("ok", k)
