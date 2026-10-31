@@ -6137,6 +6137,11 @@
     "source": "CNBC daily (close)",
     "at": "2026-10-31 08:32"
   },
+  "687|INJ|2026-10-31 10:10": {
+    "price": 7.083,
+    "source": "OKX",
+    "at": "2026-10-31 10:10"
+  },
   "209|STONK|2026-10-13 13:28": {
     "price": null,
     "source": "unavailable",
@@ -6170,7 +6175,7 @@
   "579|HMM (SMALL-CAP TOKEN)|2026-10-27 23:21": {
     "price": null,
     "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for HMM; yahoo: yahoo cooling down after 429 (88s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
+    "error": "cnbc: cnbc: no bars for HMM; yahoo: yahoo cooling down after 429 (89s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
     "at": "2026-10-27 23:21"
   },
   "580|ISRAEL ELECTION (CONTEXT)|2026-10-28 00:35": {
@@ -6212,12 +6217,7 @@
   "650-RUNE|RUNE|2026-10-30 05:24": {
     "price": null,
     "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for RUNE; yahoo: yahoo cooling down after 429 (86s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
+    "error": "cnbc: cnbc: no bars for RUNE; yahoo: yahoo cooling down after 429 (87s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-30 05:24"
-  },
-  "687|INJ|2026-10-31 10:10": {
-    "price": 7.083,
-    "source": "OKX",
-    "at": "2026-10-31 10:10"
   }
 }
