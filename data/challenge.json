@@ -59,19 +59,19 @@
       "resolved_at_pt": "2026-10-20T15:01+0100"
     }
   ],
-  "last_check_at": "2026-10-31T17:54:00Z",
-  "last_check_btc": 77696.0,
+  "last_check_at": "2026-10-31T18:52:00Z",
+  "last_check_btc": 77582.5,
   "last_proposal_at": "2026-10-20T07:18+01:00",
   "last_alert_trade_id": 2,
   "last_resolution_alerted_id": 2,
   "open_trade_id": null,
-  "last_setup_eval": "17:54 Lisbon: no open trade, balance 95.59. OKX BTC ~77,696, poking 24h high 77,734 (24h low 76,260) on thin weekend volume; 17:00 1H candle 77,503-77,734 forming, no confirmed breakout/retest; funding +0.010%. No clean setup, silent.",
-  "last_check_note": "17:54 Lisbon: no open trade, balance 95.59. OKX BTC ~77,696, poking 24h high 77,734 (24h low 76,260) on thin weekend volume; 17:00 1H candle 77,503-77,734 forming, no confirmed breakout/retest; funding +0.010%. No clean setup, silent.",
-  "last_fresh_read": "2026-10-31T17:54Z",
-  "last_read": "2026-10-31T17:54Z",
+  "last_setup_eval": "18:52 Lisbon: no open trade, balance 95.59. OKX BTC ~77,583, 17:00 1H candle tagged 24h high 77,734 and closed 77,654 without breakout; 18:00 candle drifting lower 77,567-77,692; funding +0.010%. Mid-range, no clean setup, silent.",
+  "last_check_note": "18:52 Lisbon: no open trade, balance 95.59. OKX BTC ~77,583, 17:00 1H candle tagged 24h high 77,734 and closed 77,654 without breakout; 18:00 candle drifting lower 77,567-77,692; funding +0.010%. Mid-range, no clean setup, silent.",
+  "last_fresh_read": "2026-10-31T18:52Z",
+  "last_read": "2026-10-31T18:52Z",
   "last_check": {
-    "at": "2026-10-31T17:54Z",
-    "btc": 77696.0,
-    "note": "17:54 Lisbon: no open trade, balance 95.59. OKX BTC ~77,696, poking 24h high 77,734 (24h low 76,260) on thin weekend volume; 17:00 1H candle 77,503-77,734 forming, no confirmed breakout/retest; funding +0.010%. No clean setup, silent."
+    "at": "2026-10-31T18:52Z",
+    "btc": 77582.5,
+    "note": "18:52 Lisbon: no open trade, balance 95.59. OKX BTC ~77,583, 17:00 1H candle tagged 24h high 77,734 and closed 77,654 without breakout; 18:00 candle drifting lower 77,567-77,692; funding +0.010%. Mid-range, no clean setup, silent."
   }
 }
