@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T03:40:56+00:00",
+  "generated_at": "2026-10-31T04:16:19+00:00",
   "ledgerUpdatedAt": "2026-10-31T00:30:00+00:00",
   "pricesUpdatedAt": "2026-10-31T03:44:58+00:00",
   "staleAfterMin": 45,
@@ -19489,7 +19489,7 @@
       "spam_override": null,
       "split_of": "393",
       "split_label": "CHIP/STRK",
-      "baseline_rejected": "CNBC 1m (next bar) 72.165 vs live 0.04375",
+      "baseline_rejected": "CNBC 1m (next bar) 72.165 vs live 0.04355",
       "copy_of": "",
       "spam_farm": false
     },
@@ -27248,6 +27248,8 @@
       "spam_override": null,
       "baseline": 4010.0,
       "baseline_source": "CNBC 1m (next bar)",
+      "locked_pct": 0.5337,
+      "locked_at": "2026-10-31T04:03+00:00",
       "copy_of": "",
       "spam_farm": false
     },
@@ -29420,7 +29422,7 @@
       "spam_override": null,
       "split_of": "581",
       "split_label": "BAT / STRK (small-cap tokens)",
-      "baseline_rejected": "CNBC daily (close) 69.86 vs live 0.04375",
+      "baseline_rejected": "CNBC daily (close) 69.86 vs live 0.04355",
       "copy_of": "",
       "spam_farm": false
     },

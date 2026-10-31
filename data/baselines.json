@@ -3069,7 +3069,10 @@
   "513|GOLD (XAU)|2026-10-24 05:03": {
     "price": 4010.0,
     "source": "CNBC 1m (next bar)",
-    "at": "2026-10-24 05:03"
+    "at": "2026-10-24 05:03",
+    "locked_pct": 0.5337,
+    "locked_price": 4031.4,
+    "locked_at": "2026-10-31T04:03+00:00"
   },
   "516|QQQ (US TECH 100)|2026-10-26 19:20": {
     "price": 713.7,
@@ -6147,13 +6150,13 @@
   "579|HMM (SMALL-CAP TOKEN)|2026-10-27 23:21": {
     "price": null,
     "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for HMM; yahoo: yahoo cooling down after 429 (88s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
+    "error": "cnbc: cnbc: no bars for HMM; yahoo: yahoo cooling down after 429 (87s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
     "at": "2026-10-27 23:21"
   },
   "580|ISRAEL ELECTION (CONTEXT)|2026-10-28 00:35": {
     "price": null,
     "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for ISRAEL ELECTION (CONTEXT); yahoo: yahoo cooling down after 429 (88s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
+    "error": "cnbc: cnbc: no bars for ISRAEL ELECTION (CONTEXT); yahoo: yahoo cooling down after 429 (87s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
     "at": "2026-10-28 00:35"
   },
   "589|PEPE|2026-10-28 11:08": {
@@ -6171,7 +6174,7 @@
   "615|PEPE / USELESS (SMALL-CAP TOKENS)|2026-10-28 20:13": {
     "price": null,
     "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for PEPE; yahoo: yahoo cooling down after 429 (87s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
+    "error": "cnbc: cnbc: no bars for PEPE; yahoo: yahoo cooling down after 429 (86s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
     "at": "2026-10-28 20:13"
   },
   "645|CASHCAT (ROBINHOOD CHAIN MEMECOIN)|2026-10-29 18:55": {
@@ -6183,13 +6186,13 @@
   "650|RUNE / XMR (ALSO HYPE, ENA, PEPE)|2026-10-30 05:24": {
     "price": null,
     "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for RUNE; yahoo: yahoo cooling down after 429 (86s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
+    "error": "cnbc: cnbc: no bars for RUNE; yahoo: yahoo cooling down after 429 (85s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-10-30 05:24"
   },
   "650-RUNE|RUNE|2026-10-30 05:24": {
     "price": null,
     "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for RUNE; yahoo: yahoo cooling down after 429 (85s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
+    "error": "cnbc: cnbc: no bars for RUNE; yahoo: yahoo cooling down after 429 (84s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: Remote end closed connection without response, etf: 'lastSalePrice')",
     "at": "2026-10-30 05:24"
   }
 }
