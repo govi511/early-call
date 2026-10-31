@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-31T15:45:57+00:00",
-  "ledgerUpdatedAt": "2026-10-31T14:07:00+00:00",
+  "generated_at": "2026-10-31T16:15:52+00:00",
+  "ledgerUpdatedAt": "2026-10-31T16:16:00+00:00",
   "pricesUpdatedAt": "2026-10-31T15:49:58+00:00",
   "staleAfterMin": 45,
   "calls": [
@@ -19489,7 +19489,7 @@
       "spam_override": null,
       "split_of": "393",
       "split_label": "CHIP/STRK",
-      "baseline_rejected": "CNBC 1m (next bar) 72.165 vs live 0.0444",
+      "baseline_rejected": "CNBC 1m (next bar) 72.165 vs live 0.04557",
       "copy_of": "",
       "spam_farm": false
     },
@@ -29422,7 +29422,7 @@
       "spam_override": null,
       "split_of": "581",
       "split_label": "BAT / STRK (small-cap tokens)",
-      "baseline_rejected": "CNBC daily (close) 69.86 vs live 0.0444",
+      "baseline_rejected": "CNBC daily (close) 69.86 vs live 0.04557",
       "copy_of": "",
       "spam_farm": false
     },
@@ -34660,6 +34660,35 @@
       "spam_override": null,
       "baseline": 0.2834,
       "baseline_source": "OKX",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "695",
+      "logged_at_lisbon": "2026-10-31 16:16",
+      "account": "@CryptoMichNL",
+      "post_url": "https://x.com/CryptoMichNL/status/2116553282315559182",
+      "asset": "NEAR",
+      "direction": "bullish (bias: expects new Q4 highs; correction likely done; no levels)",
+      "entry": "~4.48 (NEAR at scan; no level)",
+      "stop": "",
+      "target": "",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "source watchlist; role call; \"It's very likely that we'll see new highs for $NEAR in Q4... very likely concluded the correction\"; no levels, scored from price at scan (~4.48); NEAR not a T212 CFD, logged not alerted. Rest of scan (window ~15:06-16:10 Lisbon): Following news only (Hamburg/Cologne/Stuttgart and French city riots; US Embassy Moscow credible mass-casualty threat warning; Iran claims US strike on fishing boats near Qeshm, oil context; Musk says Tesla/SpaceX created wealth for employees, Shotwell gift of 2M SpaceX shares; Binance 90% hack losses replenished, crypto context; NoLimitGains S&P forward P/E 18.3x); OptionsHawk SPY/QQQ seasonality and NYAD caution commentary, ABSI after-the-fact options recap, not calls; Mr_Derivatives QQQ 200dma magnet commentary, conditional, not a call; rektcapital course/YouTube promos skipped; discovery skipped (usage slowdown); no resolutions (BTC ~77,582); not financial advice",
+      "after_the_fact": false,
+      "call_notes": "It's very likely that we'll see new highs for $NEAR in Q4... very likely concluded the correction",
+      "ratio_call": false,
+      "conditional": false,
+      "entry_filled": null,
+      "waiting_for_entry": false,
+      "followers": null,
+      "source": "X",
+      "feed": "famous",
+      "kind": "call",
+      "low_confidence": false,
+      "spam_flags": [],
+      "spam_override": null,
       "copy_of": "",
       "spam_farm": false
     }
