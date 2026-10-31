@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-31T06:47:23+00:00",
-  "ledgerUpdatedAt": "2026-10-31T00:30:00+00:00",
+  "generated_at": "2026-10-31T07:16:19+00:00",
+  "ledgerUpdatedAt": "2026-10-31T07:16:00+00:00",
   "pricesUpdatedAt": "2026-10-31T06:51:20+00:00",
   "staleAfterMin": 45,
   "calls": [
@@ -19489,7 +19489,7 @@
       "spam_override": null,
       "split_of": "393",
       "split_label": "CHIP/STRK",
-      "baseline_rejected": "CNBC 1m (next bar) 72.165 vs live 0.04323",
+      "baseline_rejected": "CNBC 1m (next bar) 72.165 vs live 0.04296",
       "copy_of": "",
       "spam_farm": false
     },
@@ -29422,7 +29422,7 @@
       "spam_override": null,
       "split_of": "581",
       "split_label": "BAT / STRK (small-cap tokens)",
-      "baseline_rejected": "CNBC daily (close) 69.86 vs live 0.04323",
+      "baseline_rejected": "CNBC daily (close) 69.86 vs live 0.04296",
       "copy_of": "",
       "spam_farm": false
     },
@@ -34203,6 +34203,35 @@
       "split_label": "SpaceX / Oil / AAPL (context)",
       "baseline": 348.91,
       "baseline_source": "CNBC daily (close)",
+      "copy_of": "",
+      "spam_farm": false
+    },
+    {
+      "id": "682",
+      "logged_at_lisbon": "2026-10-31 07:16",
+      "account": "@CredibleCrypto",
+      "post_url": "https://x.com/CredibleCrypto/status/2116424486434074930",
+      "asset": "BTC (alts e.g. SOL/ETH)",
+      "direction": "bullish (conditional: if BTC finds a floor shortly; bias, no entry)",
+      "entry": "~77.2k (BTC at post; no level)",
+      "stop": "",
+      "target": "90k+",
+      "status": "open",
+      "resolved_at": "",
+      "notes": "source watchlist; role call; \"assuming $BTC finds a floor here shortly and heads to 90k+ before a larger pullback... alts poised for outperformance\"; conditional bias without entry/stop, logged not alerted. Rest of scan (window ~06:15-07:15 Lisbon): Following news only (MarioNawfal OpenAI cuts raise to $20B, tech selloff Intel -28.6%; Kalshi Trump Iran nuclear; Polymarket Johannesburg water; Musk politics); watchlist SalsaTekila BTC bottom probabilities (commentary), CryptoTony good morning; discovery skipped (usage slowdown); no resolutions; not financial advice",
+      "after_the_fact": false,
+      "call_notes": "assuming $BTC finds a floor here shortly and heads to 90k+ before a larger pullback... alts poised for outperformance",
+      "ratio_call": false,
+      "conditional": true,
+      "entry_filled": null,
+      "waiting_for_entry": true,
+      "followers": null,
+      "source": "X",
+      "feed": "famous",
+      "kind": "call",
+      "low_confidence": false,
+      "spam_flags": [],
+      "spam_override": null,
       "copy_of": "",
       "spam_farm": false
     }
