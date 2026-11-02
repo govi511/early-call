@@ -35,6 +35,9 @@
    w.querySelectorAll('.lb-call.np').forEach(x=>{const m=x.textContent.match(/^(.*) — no price$/);if(!m)return;const k=m[1];
     if(seen.has(k)){const o=seen.get(k);o.n++;o.el.querySelector('.npn').textContent='×'+o.n;(x.closest('a')&&x.closest('a').parentNode===w?x.closest('a'):x).remove();return}
     x.textContent=k+' ';x.classList.add('nptr');x.append(tag(),Object.assign(document.createElement('small'),{className:'npn'}));seen.set(k,{n:1,el:x})})})}
+ // ±OUTLIER_PCT guard for the Best right now strip
+ function bestPrune(){const b=q('#best');if(!b||typeof LEDGER==='undefined'||!LEDGER)return;b.querySelectorAll('.best-card:not([data-oc])').forEach(a=>{a.dataset.oc=1;const c=LEDGER.calls.find(x=>x.id===a.dataset.id);if(c&&(isOutlier(c)||(()=>{const l=live(c);return l&&l.move!=null&&Math.abs(l.move)>OUTLIER_PCT})()))a.remove()});if(!b.querySelector('.best-card'))b.remove()}
+ new MutationObserver(()=>{const b=q('#best');b&&b.querySelector('.best-card:not([data-oc])')&&bestPrune()}).observe(document.body,{childList:true,subtree:true});
  const run=()=>{try{bar();wrapFns();cards();lb();pill()}catch(e){console.warn(e)}};
  const mo=new MutationObserver(()=>{mo.disconnect();run();obs()}),obs=()=>['#feed','#lb'].forEach(s=>{const e=q(s);e&&mo.observe(e,{childList:true})});
  run();obs();setTimeout(run,800);setTimeout(run,2000);setInterval(pill,1000);
