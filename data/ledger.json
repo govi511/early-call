@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-02T10:16:06+00:00",
+  "generated_at": "2026-11-02T10:49:25+00:00",
   "ledgerUpdatedAt": "2026-11-02T10:14:00+00:00",
-  "pricesUpdatedAt": "2026-11-02T09:51:41+00:00",
+  "pricesUpdatedAt": "2026-11-02T10:53:21+00:00",
   "staleAfterMin": 45,
   "calls": [
     {
@@ -14792,7 +14792,7 @@
         "317-SPX",
         "317-EURUSD"
       ],
-      "baseline_rejected": "Nasdaq daily (close) 3.85 vs live 99.59",
+      "baseline_rejected": "Nasdaq daily (close) 3.85 vs live 99.95",
       "copy_of": "",
       "spam_farm": false
     },
@@ -15919,7 +15919,7 @@
         "342-GOOG",
         "342-MRNA"
       ],
-      "baseline_rejected": "Nasdaq daily (close) 3.85 vs live 99.59",
+      "baseline_rejected": "Nasdaq daily (close) 3.85 vs live 99.95",
       "copy_of": "",
       "spam_farm": false
     },
@@ -19489,7 +19489,7 @@
       "spam_override": null,
       "split_of": "393",
       "split_label": "CHIP/STRK",
-      "baseline_rejected": "CNBC 1m (next bar) 72.165 vs live 0.04209",
+      "baseline_rejected": "CNBC 1m (next bar) 72.165 vs live 0.04187",
       "copy_of": "",
       "spam_farm": false
     },
@@ -29422,7 +29422,7 @@
       "spam_override": null,
       "split_of": "581",
       "split_label": "BAT / STRK (small-cap tokens)",
-      "baseline_rejected": "CNBC daily (close) 69.86 vs live 0.04209",
+      "baseline_rejected": "CNBC daily (close) 69.86 vs live 0.04187",
       "copy_of": "",
       "spam_farm": false
     },
