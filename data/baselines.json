@@ -6219,7 +6219,7 @@
   "615|PEPE / USELESS (SMALL-CAP TOKENS)|2026-10-28 20:13": {
     "price": null,
     "source": "unavailable",
-    "error": "cnbc: cnbc: no bars for PEPE; yahoo: yahoo cooling down after 429 (85s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
+    "error": "cnbc: cnbc: no bars for PEPE; yahoo: yahoo cooling down after 429 (86s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows)",
     "at": "2026-10-28 20:13"
   },
   "645|CASHCAT (ROBINHOOD CHAIN MEMECOIN)|2026-10-29 18:55": {
@@ -6245,5 +6245,25 @@
     "source": "unavailable",
     "error": "cnbc: cnbc: no bars for HMM; yahoo: yahoo cooling down after 429 (84s left); nasdaq hist: no nasdaq history (stocks: no rows, etf: no rows); nasdaq quote: no nasdaq price (stocks: 'lastSalePrice', etf: 'lastSalePrice')",
     "at": "2026-11-02 08:10"
+  },
+  "719|US TECH 100 (QQQ)|2026-11-02 15:24": {
+    "price": 698.66,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-11-02 15:24"
+  },
+  "720|ZROZ (25+Y ZERO COUPON TREASURY ETF)|2026-11-02 15:23": {
+    "price": 59.065,
+    "source": "CNBC 1m (next bar)",
+    "at": "2026-11-02 15:23"
+  },
+  "721|BTC|2026-11-02 15:53": {
+    "price": 77739.1,
+    "source": "OKX",
+    "at": "2026-11-02 15:53"
+  },
+  "722|ETH|2026-11-02 16:03": {
+    "price": 2274.64,
+    "source": "OKX",
+    "at": "2026-11-02 16:03"
   }
 }
