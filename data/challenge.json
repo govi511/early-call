@@ -59,19 +59,19 @@
       "resolved_at_pt": "2026-10-20T15:01+0100"
     }
   ],
-  "last_check_at": "2026-11-02T07:53Z",
-  "last_check_btc": 78028.0,
+  "last_check_at": "2026-11-02T08:52Z",
+  "last_check_btc": 78240.0,
   "last_proposal_at": "2026-10-20T07:18+01:00",
   "last_alert_trade_id": 2,
   "last_resolution_alerted_id": 2,
   "open_trade_id": null,
-  "last_setup_eval": "07:53 Lisbon: no open trade, balance 95.59. OKX BTC ~78,028 mid range (24h 77,555-78,831), drifting lower from 03:00 high 78,831 but no breakdown below 77,555; funding +0.009%, OKX L/S 2.2. No clean setup, silent.",
-  "last_check_note": "07:53 Lisbon: no open trade, balance 95.59. OKX BTC ~78,028 mid range (24h 77,555-78,831), drifting lower from 03:00 high 78,831 but no breakdown below 77,555; funding +0.009%, OKX L/S 2.2. No clean setup, silent.",
-  "last_fresh_read": "2026-11-02T07:53Z",
-  "last_read": "2026-11-02T07:53Z",
+  "last_setup_eval": "08:52 Lisbon: no open trade, balance 95.59. OKX BTC ~78,240 mid range (24h 77,555-78,831), bounced from 77,881 hourly low, no breakout/breakdown; funding +0.008%. No clean setup, silent.",
+  "last_check_note": "08:52 Lisbon: no open trade, balance 95.59. OKX BTC ~78,240 mid range (24h 77,555-78,831), bounced from 77,881 hourly low, no breakout/breakdown; funding +0.008%. No clean setup, silent.",
+  "last_fresh_read": "2026-11-02T08:52Z",
+  "last_read": "2026-11-02T08:52Z",
   "last_check": {
-    "at": "2026-11-02T07:53Z",
-    "btc": 78028.0,
-    "note": "07:53 Lisbon: no open trade, balance 95.59. OKX BTC ~78,028 mid range (24h 77,555-78,831), drifting lower from 03:00 high 78,831 but no breakdown below 77,555; funding +0.009%, OKX L/S 2.2. No clean setup, silent."
+    "at": "2026-11-02T08:52Z",
+    "btc": 78240.0,
+    "note": "08:52 Lisbon: no open trade, balance 95.59. OKX BTC ~78,240 mid range (24h 77,555-78,831), bounced from 77,881 hourly low, no breakout/breakdown; funding +0.008%. No clean setup, silent."
   }
 }
