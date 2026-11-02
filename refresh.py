@@ -19,9 +19,14 @@ NONPRICE = {"FED","FOMC","FEDFUNDS","RATES","CPI","US HOUSING","PELOSI"}  # macr
 NP_NOTE = "not a tradable asset"
 NP_LABEL = "multi-asset/context label, no price expected"
 CONTEXT_ONLY = set()  # assets whose ledger rows are all early-signal context rows (filled in main)
+def expand_suffix(s):
+    """Expand thousand/million suffixes on levels. K/k always; M only with a decimal (1.2M), since "15m" is a timeframe."""
+    s = re.sub(r"(?<![\w.])(\d+(?:\.\d+)?)\s?[kK](?![a-zA-Z])", lambda m: f"{float(m.group(1)) * 1000:g}" if float(m.group(1)) * 1000 < 1e15 else m.group(0), s)
+    return re.sub(r"(?<![\w.])(\d+\.\d+)\s?[mM](?![a-zA-Z])", lambda m: f"{round(float(m.group(1)) * 1e6):d}", s)
 def level_nums(s):
     """Numbers in a level string, parsed exactly like lvl() in app.js: drop (...) notes, thousands commas, times and durations."""
     s = re.sub(r"\(.*?\)", "", str(s or "")); s = re.sub(r"(\d),(?=\d{3}\b)", r"\1", s)
+    s = expand_suffix(s)  # 80K -> 80000, 20k+ -> 20000+, 1.2M -> 1200000 (bare "15m" stays a duration)
     s = re.sub(r"\b\d{1,2}:\d{2}\b|\b\d+(?:\s*[-–]\s*\d+)?[- ]?(?:days?|weeks?|hours?|months?|h|d|w|m)\b", " ", s, flags=re.I)
     s = NOT_LEVEL_RE.sub(" ", s)  # dates ("by Oct 30") and percentages ("10-20% bounce") are never price levels
     s = re.sub(r"\b(\d{3,})(?:\.\d+)?\s*[-–]\s*(\d{1,2})\b(?![.,]?\d)", lambda m: f"{m.group(1)}-{m.group(1)[:-len(m.group(2))]}{m.group(2)}" if len(m.group(2)) < len(m.group(1)) else m.group(0), s)  # 7750-55 -> 7750-7755
@@ -444,6 +449,22 @@ def break_condition(r):
     """Entry triggers on a break through the level, judged from the entry field or an explicit 'short if it breaks X'; invalidation clauses don't count."""
     return bool(BREAK_ENTRY.search(r.get("entry") or "") or BREAK_TEXT.search(call_text(r)))
 RATIO_RE = re.compile(r"\bratio\b|\bspread\b|\bvs\.?\b|\b(?:GC|SI|CL|NG|HG|BZ|ES|NQ)\s*/\s*(?:GC|SI|CL|NG|HG|BZ|ES|NQ)\b", re.I)
+def ratio_legs(asset):
+    m = re.fullmatch(r"\s*([A-Z0-9.]+)\s*/\s*([A-Z0-9.]+)\s*", (asset or "").upper())
+    return (m.group(1), m.group(2)) if m else None
+def ratio_price(asset, prices):
+    """Ratio of the two legs' USD prices, or an unpriced record. Never one leg's USD price."""
+    legs = ratio_legs(asset)
+    pa, pb = ((prices.get(l) or {}).get("price") for l in legs) if legs else (None, None)
+    if legs and pa is None:
+        try: pa = pick(legs[0], None)["price"]
+        except Exception: pa = None
+    if legs and pb is None:
+        try: pb = pick(legs[1], None)["price"]
+        except Exception: pb = None
+    if legs and pa and pb:
+        return {"price": pa / pb, "change_pct": None, "symbol": f"{legs[0]}/{legs[1]} (ratio of USD prices)", "currency": "ratio", "source": "ratio", "ratio": True, "as_of": now()}
+    return {"price": None, "unpriced": True, "ratio": True, "note": "ratio call: no price for both legs", "as_of": now()}
 def is_ratio(r):
     """Ratio / spread / relative-value calls (gold/silver ratio, GC/SI, X vs Y): no single tradable price, never resolve against one leg."""
     a = r if isinstance(r, str) else (r.get("asset") or "") + " " + (r.get("direction") or "")
@@ -743,6 +764,12 @@ def main():
             if prev.get("price") is not None and ref and not (1/3 <= prev["price"] / ref <= 3): prev = {}  # don't keep a mismatched old price
             prices[asset] = {**prev, "stale": prev.get("price") is not None, "error": str(e)[:120]} if prev.get("price") is not None else {"price": None, "error": str(e)[:120]}
             bad.append(asset)
+    ratios = {r["asset"].upper() for r in rows if r.get("asset") and (is_ratio(r) or r.get("ratio_call"))}
+    for asset in ratios:  # ratio calls (SOL/ETH): price = leg A USD / leg B USD, never one leg's USD price
+        prices[asset] = ratio_price(asset, prices)
+        if asset in bad: bad.remove(asset)
+        if asset in ok: ok.remove(asset)
+        (ok if prices[asset].get("price") is not None else bad).append(asset)
     for asset in list(bad):  # alias (e.g. QQQ/SPY) failed but its mapped ticker priced: reuse it
         m = norm(asset)
         if m != asset and prices.get(m, {}).get("price") is not None:
